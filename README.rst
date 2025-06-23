@@ -3,7 +3,7 @@ Snap documentation
 
 This repository contains the source files to build the Snap documentation, which is published here:
 
-https://canonical-checkbox.readthedocs-hosted.com/
+https://canonical-snap.readthedocs-hosted.com/
 
 The documentation is written in Markdown and built with Sphinx, all taken from the `Documentation starter pack`_.
 
