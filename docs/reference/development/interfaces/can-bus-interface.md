@@ -1,0 +1,11 @@
+(interfaces-can-bus-interface)=
+# can-bus-interface
+
+`can-bus` allows access to the Controller Area Network (CAN) bus.
+
+**Auto-connect**: no
+
+Requires snapd version _2.34+_.
+
+> ⓘ  This is a snap interface. See [Interface management](/) and [Supported interfaces](/interfaces/index) for further details on how interfaces are used.
+
