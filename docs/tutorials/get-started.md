@@ -7,24 +7,13 @@ This tour introduces all of snap's main features. We suggest going through the f
 
 By the end of the tour, you'll have a good understanding of how to use snaps, from how they're installed and updated, to how they're backed-up and removed.
 
-<!--
-|  |  |
-|--|--|
-| 1. [Requirements](#heading--requirements) |  2. [List installed snaps](#heading--listing) |
-| 3. [Discover and find snaps](#heading--searching) |  4. [Install a snap](#heading--install-snap) | 
-| 5. [Run apps from snaps](#heading--running) |  6. [Update snaps](#heading--refreshing) |
-|  7. [Pause or stop automatic updates](#heading--stop-updates) | 8. [Revert to an earlier revision](#heading--revert) |
-| 9. [See where snaps store data](#heading--data) | 10.  [Create and restore a snapshot](#heading--snapshots) | 
-| 11. [Connect an interface](#heading--connect) | 12. [Remove a snap](#heading--removing-snaps) |
--->
-
 ## Requirements
 
 Snaps can be installed and removed with a graphical package manager, such as Ubuntu Software Centre, but most advanced functionality is only available from the Linux command shell.
 
 The command shell is accessible from [Terminal](https://ubuntu.com/tutorials/command-line-for-beginners#1-overview) and many similar applications. It helps if you have some familiarity with this, but if you don't, this tour is itself an ideal introduction to get you started.
 
-Many Linux distributions, including Ubuntu, support _snap_ by default. You can check by running the `snap` command. If the snap command is not found, take a look at our [Installation guides](/snap-tutorials/install-the-daemon/index) for further help.
+Many Linux distributions, including Ubuntu, support _snap_ by default. You can check by running the `snap` command. If the snap command is not found, take a look at our [Installation guides](install-the-daemon/index) for further help.
 
 ## List installed snaps
 
@@ -59,7 +48,7 @@ Name  Version  Developer    Notes  Summary
 vlc   3.0.4     videolan✓   -      The ultimate media player.
 ```
 
-The `✓` alongside *videolan* in the above output indicates that the snap publisher has been [verified](/). Verified publishers are trusted to produce and maintain high-quality packages and include institutions, foundations, and companies.
+The `✓` alongside *videolan* in the above output indicates that the snap publisher has been _verified_. Verified publishers are trusted to produce and maintain high-quality packages and include institutions, foundations, and companies.
 
 ### Section categories
 
@@ -88,7 +77,7 @@ channels:
 installed:          3.0.19                                 (3721) 336MB -
 ```
 
-[Channels](/snap-explanation/how-snaps-work/channels-and-tracks) declare which release of a snap is installed and tracked for updates. The *latest/stable* channel is used by default, but opting to install from a different channel can be useful for testing new features, or for installing old legacy versions of an application. Which snaps are released to which channels is entirely up to the snap publisher.
+[Channels]() declare which release of a snap is installed and tracked for updates. The *latest/stable* channel is used by default, but opting to install from a different channel can be useful for testing new features, or for installing old legacy versions of an application. Which snaps are released to which channels is entirely up to the snap publisher.
 
 ## Install the snap
 

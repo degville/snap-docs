@@ -1,3 +1,5 @@
+# Snap documentation
+
 **Snaps** are Linux app packages for **desktop**, **cloud** and **IoT** that are self-contained, simple to install, secure, cross-platform, and dependency-free.
 
 They **update automatically** and typically run within a **confined** and **transaction-based** environment. **Security and robustness** are their key features, alongside being **easy to install**, **easy to maintain** and **easy to upgrade**.
@@ -12,8 +14,8 @@ For guidance and learning material about making snaps, see the [Snapcraft docume
 
 | | |
 |--|--|
-|  [Tutorials](/snap-tutorials/index)</br>  Get started - a hands-on introduction to using snap packages for new users </br> |  [How-to guides](/snap-how-to-guides/index) </br> Step-by-step guides covering key operations and common tasks |
-| [Explanation](/snap-explanation/index) </br> Concepts - discussion and clarification of key topics | [Reference](/snap-reference/index) </br> Technical information - specifications, APIs, architecture |
+|  [Tutorials](tutorials/index)</br>  Get started - a hands-on introduction to using snap packages for new users </br> |  [How-to guides](how-to-guides/index) </br> Step-by-step guides covering key operations and common tasks |
+| [Explanation](explanation/index) </br> Concepts - discussion and clarification of key topics | [Reference](reference/index) </br> Technical information - specifications, APIs, architecture |
 
 ---
 

@@ -37,5 +37,7 @@ Learn about how snaps use standard Linux security policies to isolate themselves
 :maxdepth: 2
 :glob:
 
-*
-*/index
+How snaps work <how-snaps-work/index>
+Interfaces <interfaces/index>
+Security <security/index>
+Snap development <snap-development/index>

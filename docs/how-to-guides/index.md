@@ -38,5 +38,6 @@ The vast majority of snap users and developers experience very few issues, but a
 :maxdepth: 2
 :glob:
 
-*
-*/index
+Work with snaps <work-with-snaps/index>
+Manage snaps <manage-snaps/index>
+Fix common issues <fix-common-issues/index>
