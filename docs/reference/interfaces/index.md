@@ -17,200 +17,200 @@ The following column names are used:
 
 | Interface | Description | Categories | Auto-connect |
 |---|----|---|---|
-| [account-control](/) | add/remove user accounts or change passwords | [System](/snap-reference/operations/interfaces/system-interfaces), Account | no |
-| [accounts-service](/) | allows communication with the accounts service | [System](/snap-reference/operations/interfaces/system-interfaces), Account | no |
-| [acrn](/) | allows access to user VMs using the ACRN hypervisor | VM, Hypervisor, Developer | no |
-| [adb-support](/) | allows operating as Android Debug Bridge service | ADB, Developer | no |
-| [allegro-vcu](/) | access the Allegro Video Core Unit | Video, Graphics | no |
-| [alsa](/) | play or record sound | Audio, [Media](/snap-reference/operations/interfaces/media-interfaces) | no |
-| [appstream-metadata](/) | allows access to AppStream metadata | [System](/snap-reference/operations/interfaces/system-interfaces), Developer, Manage software | no |
-| [audio-playback](/) | allows audio playback via supporting services | Audio, [Media](/snap-reference/operations/interfaces/media-interfaces), Playback | yes |
-| [audio-record](/) | allows audio recording via supported services | Audio, [Media](/snap-reference/operations/interfaces/media-interfaces), Record | no |
-| [autopilot-introspection](/) | be controlled by Autopilot software | [System](/snap-reference/operations/interfaces/system-interfaces), Developer | no |
-| [avahi-control](/) | advertise services over the local network | [Network](/snap-reference/operations/interfaces/network-interfaces), Local network, Nearby devices | no |
-| [avahi-observe](/) | detect services and devices over the local network | [Network](/snap-reference/operations/interfaces/network-interfaces), Local network, Nearby devices | no |
-| [block-devices](/) | access to disk block devices | [Super privileged](/snap-reference/operations/interfaces/super-privileged-interfaces), Storage, Low level | no |
-| [bluetooth-control](/) | access Bluetooth hardware directly | [Network](/snap-reference/operations/interfaces/network-interfaces), Bluetooth, Nearby devices | no |
-| [bluez](/) | use Bluetooth devices | [Network](/snap-reference/operations/interfaces/network-interfaces), Bluetooth, Nearby devices | no |
-| [bool-file](/) | allows access to specific file with bool semantics | [System](/snap-reference/operations/interfaces/system-interfaces), Low level, Privileged | no |
-| [broadcom-asic-control](/) | control Broadcom network switches | [Network](/snap-reference/operations/interfaces/network-interfaces), [System](/snap-reference/operations/interfaces/system-interfaces) | no |
-| [browser-support](/) | use functions essential for Web browsers | Browser, [Network](/snap-reference/operations/interfaces/network-interfaces) | no when allow-sandbox: true, yes otherwise |
-| [calendar-services](/) | allows communication with Evolution Data Server calendar | Personal data, Contacts and calendar | no |
-| [camera](/) | use your camera or webcam | Camera, [Media](/snap-reference/operations/interfaces/media-interfaces), Personal data | no |
-| [can-bus](/) | allows access to the CAN bus | [System](/snap-reference/operations/interfaces/system-interfaces), Developer | no |
-| [cifs-mount](/) | allows the mounting and unmounting of CIFS filesystems | [Network](/snap-reference/operations/interfaces/network-interfaces),Storage | no |
-| [classic-support](/) | enable resource access to classic snap | [Super privileged](/snap-reference/operations/interfaces/super-privileged-interfaces), Ubuntu Core | no |
-| [confdb](/) | permit access confdb configuration system | System | no |
-| [contacts-service](/) | allows communication with the Evolution Data Server address book | Personal data, Contacts and calendar| no |
-| [content](/) | access resources across snaps | Storage, Files, Attributes | yes for snaps from same publisher, no otherwise |
-| [core-support](/) | deprecated since snap 2.34 | [System](/snap-reference/operations/interfaces/system-interfaces), Other | no |
-| [cpu-control](/) | set certain CPU values | [System](/snap-reference/operations/interfaces/system-interfaces), Developer | no |
-| [cups](/) | access to the CUPS socket for printing | Printing | not applicable |
-| [cups-control](/) | print documents | Printing | no |
-| [custom-device](/) | permits access to a specific class of device | [Super privileged](/snap-reference/operations/interfaces/super-privileged-interfaces), Ubuntu Core | no |
-| [daemon-notify](/) | allows sending daemon status changes to service manager | [System](/snap-reference/operations/interfaces/system-interfaces), Developer | no |
-| [dbus](/) | allow snaps to communicate over D-Bus | [System](/snap-reference/operations/interfaces/system-interfaces), Developer | no |
-| [dcdbas-control](/) | shut down or restart Dell devices | Developer | no |
-| [desktop](/) | provides access to common desktop elements | Desktop | yes |
-| [desktop-launch](/) | identify and launch desktop apps from other snaps | [Super privileged](/snap-reference/operations/interfaces/super-privileged-interfaces), Desktop | no |
-| [desktop-legacy](/) | enables the use of legacy desktop methods (including input method and accessibility services) | Desktop | yes |
-| [device-buttons](/) | use any device-buttons | [Hardware](/snap-reference/operations/interfaces/hardware-interfaces), Developer | no |
-| [display-control](/) | allows configuring display parameters | Display, Graphics | no |
-| [dm-crypt](/) | access encrypted storage devices | [Super privileged](/snap-reference/operations/interfaces/super-privileged-interfaces), Ubuntu Core, Storage | no |
-| [docker](/) | start, stop, or manage Docker containers | [Super privileged](/snap-reference/operations/interfaces/super-privileged-interfaces), Containers | no |
-| [docker-support](/) | allows operating as the Docker daemon | [Super privileged](/snap-reference/operations/interfaces/super-privileged-interfaces), Containers | no |
-| [dsp](/) | enables the control of digital signal processors (DSPs) | [Hardware](/snap-reference/operations/interfaces/hardware-interfaces), Developer | no |
-| [dummy](/) | renamed to empty interface | [System](/snap-reference/operations/interfaces/system-interfaces), Other | no |
-| [dvb](/) | allows access to all DVB devices and APIs | [Hardware](/snap-reference/operations/interfaces/hardware-interfaces), Developer, [Media](/snap-reference/operations/interfaces/media-interfaces) | no |
-| [empty](/) | allows testing without additional permissions | [System](/snap-reference/operations/interfaces/system-interfaces), Other | no |
-| [firewall-control](/) | configure a network firewall | [Network](/snap-reference/operations/interfaces/network-interfaces) | no |
-| [fpga](/) | permits access to an FPGA subsystem | [Hardware](/snap-reference/operations/interfaces/hardware-interfaces), Developer | no |
-| [framebuffer](/) | access to universal framebuffer devices | [Hardware](/snap-reference/operations/interfaces/hardware-interfaces), Developer | no |
-| [fuse-support](/) | enables access to the FUSE filesystems | Storage | no |
-| [fwupd](/) | allows operating as the fwupd service | [System](/snap-reference/operations/interfaces/system-interfaces), [Security](/snap-reference/operations/interfaces/security-interfaces), Firmware | no |
-| [gconf](/) | access the legacy GConf config system | [System](/snap-reference/operations/interfaces/system-interfaces), Developer, Settings | no |
-| [gpg-keys](/) | read GPG user configuration and keys | GPG, Personal data, [Security](/snap-reference/operations/interfaces/security-interfaces) | no |
-| [gpg-public-keys](/) | read GPG non-sensitive configuration and public keys | GPG, Personal data, [Security](/snap-reference/operations/interfaces/security-interfaces) | no |
-| [gpio](/) | access specific GPIO pins | GPIO, [Hardware](/snap-reference/operations/interfaces/hardware-interfaces), Developer | no |
-| [gpio-control](/) | allows to export/unexport and control all GPIOs | [Super privileged](/snap-reference/operations/interfaces/super-privileged-interfaces), GPIO | no |
-| [gpio-memory-control](/) | allows write access to all GPIO memory | GPIO, [Hardware](/snap-reference/operations/interfaces/hardware-interfaces), Developer | no |
-| [greengrass-support](/) | allows operating as the Greengrass service | [Super privileged](/snap-reference/operations/interfaces/super-privileged-interfaces), Edge, AWS, Discrete | no |
-| [gsettings](/) | provides access to any GSettings item for current user | [System](/snap-reference/operations/interfaces/system-interfaces), Developer, Settings | yes |
-| [hardware-observe](/) | access hardware information | [System](/snap-reference/operations/interfaces/system-interfaces), [Hardware](/snap-reference/operations/interfaces/hardware-interfaces) | no |
-| [hardware-random-control](/) | provide entropy to hardware random number generator | [System](/snap-reference/operations/interfaces/system-interfaces), [Hardware](/snap-reference/operations/interfaces/hardware-interfaces) | no |
-| [hardware-random-observe](/) | use hardware-generated random numbers | [System](/snap-reference/operations/interfaces/system-interfaces), [Hardware](/snap-reference/operations/interfaces/hardware-interfaces) | no |
-| [hidraw](/) | access hidraw devices | [System](/snap-reference/operations/interfaces/system-interfaces) | no |
-| [home](/) | access non-hidden files in the home directory | Storage, Personal data | yes on classic (traditional distributions), no otherwise |
-| [hostname-control](/) | allows configuring the system hostname | [Network](/snap-reference/operations/interfaces/network-interfaces) | no |
-| [hugepages-control](/) | control HugePages memory blocks | [System](/snap-reference/operations/interfaces/system-interfaces), Memory, Kernel | no |
-| [i2c](/) | access i²c devices | [System](/snap-reference/operations/interfaces/system-interfaces), [Hardware](/snap-reference/operations/interfaces/hardware-interfaces) | no |
-| [iio](/) | access IIO devices | [System](/snap-reference/operations/interfaces/system-interfaces), [Hardware](/snap-reference/operations/interfaces/hardware-interfaces) | no |
-| [intel-mei](/) | access to the Intel MEI management interface | [System](/snap-reference/operations/interfaces/system-interfaces), Firmware | no |
-| [intel-qat](/) | provides permissions for Intel QAT devices | [Hardware](/snap-reference/operations/interfaces/hardware-interfaces) | no  | 
-| [io-ports-control](/) | allows access to all I/O ports | [System](/snap-reference/operations/interfaces/system-interfaces), | no |
-| [ion-memory-control](/) | access Android's ION memory allocator | [Super privileged](/snap-reference/operations/interfaces/super-privileged-interfaces), [System](/snap-reference/operations/interfaces/system-interfaces)  | no |
-| [jack1](/) | allows interaction with the JACK audio connection server | Audio, [Media](/snap-reference/operations/interfaces/media-interfaces) | no |
-| [joystick](/) | use any connected joystick | [Hardware](/snap-reference/operations/interfaces/hardware-interfaces), Developer | no |
-| [juju-client-observe](/) | read the Juju client configuration | Developer, Discrete | no |
-| [kernel-crypto-api](/) | read and manage kernel supported crypto ciphers | [System](/snap-reference/operations/interfaces/system-interfaces), Kernel, [Security](/snap-reference/operations/interfaces/security-interfaces) | no |
-| [kernel-firmware-control](/) | permits a custom kernel firmware search path | [Super privileged](/snap-reference/operations/interfaces/super-privileged-interfaces) | no |
-| [kernel-module-control](/) | insert, remove and query kernel modules | [Super privileged](/snap-reference/operations/interfaces/super-privileged-interfaces), [System](/snap-reference/operations/interfaces/system-interfaces), Kernel | no |
-| [kernel-module-load](/) | load, or deny loading, specific kernel modules | [Super privileged](/snap-reference/operations/interfaces/super-privileged-interfaces), [System](/snap-reference/operations/interfaces/system-interfaces), Kernel | no |
-| [kernel-module-observe](/) | query kernel modules | [System](/snap-reference/operations/interfaces/system-interfaces), Kernel | no |
-| [kubernetes-support](/) | use functions essential for Kubernetes | [Super privileged](/snap-reference/operations/interfaces/super-privileged-interfaces), Hypervisor, Discrete | no |
-| [kvm](/) | allows access to the kvm device | VM, Hypervisor, Developer | no |
-| [libvirt](/) | provides access to the libvirt service | VM, Hypervisor, Developer | no |
-| [locale-control](/) | change system language and region settings | Language and region, Personalisation | no |
-| [location-control](/) | allows operating as the location service | Location | no |
-| [location-observe](/) | access your location | Location | no |
-| [log-observe](/) | read system logs | [System](/snap-reference/operations/interfaces/system-interfaces), Developer | no |
-| [login-session-control](/) | allows setup of login sessions and grants privileged access to user sessions | [System](/snap-reference/operations/interfaces/system-interfaces), [Security](/snap-reference/operations/interfaces/security-interfaces) | no |
-| [login-session-observe](/) | allows reading login and session information | [System](/snap-reference/operations/interfaces/system-interfaces), [Security](/snap-reference/operations/interfaces/security-interfaces) | no |
-| [lxd](/) | provides access to the LXD socket | [Super privileged](/snap-reference/operations/interfaces/super-privileged-interfaces), Container, Discrete | no |
-| [lxd-support](/) | allows operating as the LXD service | [Super privileged](/snap-reference/operations/interfaces/super-privileged-interfaces), Container, Discrete | no |
-| [maliit](/) | use an on-screen keyboard | Developer | no |
-| [media-control](/t/the-media-control-interface/26504/) | access media control devices and Video4Linux (V4L) devices | [Hardware](/snap-reference/operations/interfaces/hardware-interfaces), Developer, [Media](/snap-reference/operations/interfaces/media-interfaces), Video | no |
-| [media-hub](/) | access snaps providing the media-hub interface | Developer, [Media](/snap-reference/operations/interfaces/media-interfaces) | yes |
-|  [microceph](/) |  permits access to the MicroCeph socket, which is used internally by the microceph snap | [Super privileged](/snap-reference/operations/interfaces/super-privileged-interfaces), Container | no |
-| [microceph-support](/) | permits the microceph snap to operate as the MicroCeph service | [Super privileged](/snap-reference/operations/interfaces/super-privileged-interfaces), Container | no |
-| [microovn](/) | used only by the MicroOVN snap for socket access | [Network](/snap-reference/operations/interfaces/network-interfaces), [Super privileged](/snap-reference/operations/interfaces/super-privileged-interfaces) | no |
-| [microstack-support](/t/the-microstack-support-interface/26505/) | multiple service access to the Microstack infrastructure | [Super privileged](/snap-reference/operations/interfaces/super-privileged-interfaces), Container, Discrete | no |
-| [mir](/) | enables access to the Mir display service | Display | yes |
-| [modem-manager](/) | use and configure modems | [Network](/snap-reference/operations/interfaces/network-interfaces) | no |
-| [mount-control](/) | mount and unmount transient and persistent filesystem mount points | [Super privileged](/snap-reference/operations/interfaces/super-privileged-interfaces), Storage | no |
-| [mount-observe](/) | read mount table and quota information | Storage | no |
-| [mpris](/) | media key control of music and video players | Sound | no |
-| [multipass-support](/) | multipass-support allows operating as the Multipass service | [Super privileged](/snap-reference/operations/interfaces/super-privileged-interfaces), VM, Discrete | no |
-| [netlink-audit](/) | allows access to kernel audit system through Netlink | Inter-process communication (IPC), Netlink, Developer | no |
-| [netlink-connector](/) | communicate through the kernel Netlink connector | Inter-process communication (IPC), Netlink, Developer | no |
-| [netlink-driver](/) | operate a kernel driver module exposed via Netlink | Inter-process communication (IPC), Netlink, Developer | no |
-| [network](/) | enables network access | [Network](/snap-reference/operations/interfaces/network-interfaces) | yes |
-| [network-bind](/) | operate as a network service | [Network](/snap-reference/operations/interfaces/network-interfaces) | yes |
-| [network-control](/) | change low-level network settings | [Network](/snap-reference/operations/interfaces/network-interfaces) | no |
-| [network-manager](/) | configure and observe networking via NetworkManager | [Network](/snap-reference/operations/interfaces/network-interfaces) | no |
-| [network-manager-observe](/) | allows observing NetworkManager settings | [Network](/snap-reference/operations/interfaces/network-interfaces) | no |
-| [network-observe](/) | query network status information | [Network](/snap-reference/operations/interfaces/network-interfaces) | no |
-| [network-setup-control](/) | change network settings via Netplan | [Network](/snap-reference/operations/interfaces/network-interfaces) | no |
-| [network-setup-observe](/) | read network settings | [Network](/snap-reference/operations/interfaces/network-interfaces) | no |
-| [network-status](/) | access the [Network](/snap-reference/operations/interfaces/network-interfaces)Status service | [Network](/snap-reference/operations/interfaces/network-interfaces) | yes |
-| [nfs-mount](/) | allows the mounting and unmounting of Network File System mount points | [Network](/snap-reference/operations/interfaces/network-interfaces), Service | no |
-| [nomad-support](/) |  enable's HashiCorp's Nomad to access CPU and memory management | [System](/snap-reference/operations/interfaces/system-interfaces), Containers, Service | no |
-| [nvidia-drivers-support](/) | internally used NVIDIA access | [Super privileged](/snap-reference/operations/interfaces/super-privileged-interfaces), Ubuntu Core | no |
-| [ofono](/) | allows operating as the oFono service | [Network](/snap-reference/operations/interfaces/network-interfaces), Discrete, Developer | no |
-| [online-accounts-service](/) | access to the Online Accounts service | Service, Developer | yes |
-| [opengl](/) | access OpenGL/GPU hardware | Display, Graphics | yes |
-| [openvswitch](/) | control Open vSwitch hardware | [Network](/snap-reference/operations/interfaces/network-interfaces), Service, Developer | no |
-| [openvswitch-support](/) | enables kernel support for Open vSwitch | [Network](/snap-reference/operations/interfaces/network-interfaces), Service, Developer | no |
-| [optical-drive](/) | read/write access to CD/DVD drives | Storage, [Hardware](/snap-reference/operations/interfaces/hardware-interfaces), Developer | yes, unless drive can write |
-| [packagekit-control](/) | control the PackageKit service | [Super privileged](/snap-reference/operations/interfaces/super-privileged-interfaces), Packaging | no |
-| [password-manager-service](/) | read, add, change, or remove saved passwords | [System](/snap-reference/operations/interfaces/system-interfaces), [Security](/snap-reference/operations/interfaces/security-interfaces) | no |
-| [pcscd](/) | permits communication with PCSD smart card daemon | [Security](/snap-reference/operations/interfaces/security-interfaces) | no |
-| [personal-files](/) | read or write files in the user's home directory | [Super privileged](/snap-reference/operations/interfaces/super-privileged-interfaces), Personal data, Attributes | no |
-| [physical-memory-control](/) | read and write memory used by any process | [System](/snap-reference/operations/interfaces/system-interfaces), Memory, Kernel | no |
-| [physical-memory-observe](/) | read memory used by any process | [System](/snap-reference/operations/interfaces/system-interfaces), Memory, Kernel | no |
-| [pipewire](/) | access the PipeWire server | Audio, [Media](/snap-reference/operations/interfaces/media-interfaces), Video | no |
-| [pkcs11](/) |  enables the cryptographic token interface standard to be used | [Security](/snap-reference/operations/interfaces/security-interfaces), [Super privileged](/snap-reference/operations/interfaces/super-privileged-interfaces) | no |
-| [polkit](/) | access to the polkit authorisation manager | [Security](/snap-reference/operations/interfaces/security-interfaces), [System](/snap-reference/operations/interfaces/system-interfaces), [Super privileged](/snap-reference/operations/interfaces/super-privileged-interfaces) | no |
-| [polkit-agent](/) | permits applications to register as _polkit_ agents | [Security](/snap-reference/operations/interfaces/security-interfaces), [System](/snap-reference/operations/interfaces/system-interfaces), [Super privileged](/snap-reference/operations/interfaces/super-privileged-interfaces) | no |
-| [posix-mq](/) | enables inter-process communication (IPC) messages | [Super privileged](/snap-reference/operations/interfaces/super-privileged-interfaces), IPC | no by default, yes with snaps from the same publisher |
-| [power-control](/) | read and write system power settings | [System](/snap-reference/operations/interfaces/system-interfaces), Power | no |
-| [ppp](/) | access to configure and observe PPP networking | [Network](/snap-reference/operations/interfaces/network-interfaces) | no |
-| [process-control](/) | pause or end any process on the system | [System](/snap-reference/operations/interfaces/system-interfaces) | no |
-| [ptp](/) | access to the Precision Time Protocol subsystem | [System](/snap-reference/operations/interfaces/system-interfaces), Developer | no |
-| [pulseaudio](/) | play and record sound | Audio, [Media](/snap-reference/operations/interfaces/media-interfaces) | no |
-| [pwm](/) | access specific PWM channels | [System](/snap-reference/operations/interfaces/system-interfaces), Developer, [Hardware](/snap-reference/operations/interfaces/hardware-interfaces), WIP | no |
-| [qualcomm-ipc-router](/) | access Qualcomm IPC router sockets | IPC, Kernel, [System](/snap-reference/operations/interfaces/system-interfaces) | no |
-| [raw-input](/) | access raw input devices directly | [System](/snap-reference/operations/interfaces/system-interfaces), Developer, [Hardware](/snap-reference/operations/interfaces/hardware-interfaces) | no |
-| [raw-usb](/) | access USB hardware directly | [System](/snap-reference/operations/interfaces/system-interfaces), Developer, [Hardware](/snap-reference/operations/interfaces/hardware-interfaces) | no |
-| [raw-volume](/) | access specific disk partitions | Storage | no |
-| [remoteproc](/) | interact with the kernel's Remote Processor Framework  |[Super privileged](/snap-reference/operations/interfaces/super-privileged-interfaces) | no |
-| [ros-opt-data](/) | read-only access to ROS directories | Storage | no |
-| [ros-snapd-support](/) | allows the snaps ros-snapd and ros2-snapd the use of snapd’s apps control API | [Super privileged](/snap-reference/operations/interfaces/super-privileged-interfaces) | no |
-| [removable-media](/) | read/write files on removable storage devices | Storage | no |
-| [screencast-legacy](/) | allows screen recording and audio recording alongside writing to arbitrary filesystem paths | Legacy | no |
-| [screen-inhibit-control](/) | prevent screen sleep, lock and screensaver | Display | yes |
-| [scsi-generic](/) | read and write access to SCSI Generic driver devices | Storage, [Super privileged](/snap-reference/operations/interfaces/super-privileged-interfaces) | no |
-| [sd-control](/) | control SD cards on specific devices | [Super privileged](/snap-reference/operations/interfaces/super-privileged-interfaces), Storage | no |
-| [serial-port](/) | access serial port hardware | [System](/snap-reference/operations/interfaces/system-interfaces), Developer, [Hardware](/snap-reference/operations/interfaces/hardware-interfaces) | no |
-| [shared-memory](/) | enables two snaps to access the same shared memory | [Super privileged](/snap-reference/operations/interfaces/super-privileged-interfaces), IPC | no by default, yes with snaps from the same publisher |
-| [shutdown](/) | restart or power off the device | [Super privileged](/snap-reference/operations/interfaces/super-privileged-interfaces), [System](/snap-reference/operations/interfaces/system-interfaces), Power | no |
-| [snap_interfaces_requests_control](/) | enables the prompting API and its access to prompting-related notice types | [System](/snap-reference/operations/interfaces/system-interfaces) | no |
-| [snap-refresh-control](/) | permits bespoke snap refresh control | [Super privileged](/snap-reference/operations/interfaces/super-privileged-interfaces), Packaging | no |
-| [snap-refresh-observe](/) | enables the tracking of snap refreshes | [Super privileged](/snap-reference/operations/interfaces/super-privileged-interfaces), Packaging | no |
-| [snapd-control](/) | install or remove software | [Super privileged](/snap-reference/operations/interfaces/super-privileged-interfaces), Packaging | no |
-| [spi](/) | access specific SPI devices | [System](/snap-reference/operations/interfaces/system-interfaces), Developer, [Hardware](/snap-reference/operations/interfaces/hardware-interfaces) | no |
-| [ssh-keys](/) | access SSH private and public keys | [Security](/snap-reference/operations/interfaces/security-interfaces) | no |
-| [ssh-public-keys](/) | access SSH public keys | [Security](/snap-reference/operations/interfaces/security-interfaces) | no |
-| [steam-support](/) | allows the Steam snap to access pressure-vessel containers | [Super privileged](/snap-reference/operations/interfaces/super-privileged-interfaces), Discrete | no |
-| [storage-framework-service](/) | operate as, or interact with, the Storage Framework | Storage | no |
-| [system-backup](/) | read-only access to the system for backups | Storage | no |
-| [system-files](/) | read or write files in the system | [Super privileged](/snap-reference/operations/interfaces/super-privileged-interfaces), Storage, Attributes | no |
-| [system-observe](/) | read process and system information | Monitoring, [System](/snap-reference/operations/interfaces/system-interfaces) | no |
-| [system-packages-doc](/) | access system documentation in /usr/share/doc | Developer | no |
-| [system-source-code](/) | access kernel source and headers in /usr/src | Developer | no |
-| [system-trace](/) | monitor or control any running program | Monitoring, [System](/snap-reference/operations/interfaces/system-interfaces) | no |
-| [tee](/) | permits access to the Trusted Execution Environment | [Super privileged](/snap-reference/operations/interfaces/super-privileged-interfaces), [Security](/snap-reference/operations/interfaces/security-interfaces), Ubuntu Core | no |
-| [thumbnailer-service](/) | create thumbnail images from local media files | Storage, [Media](/snap-reference/operations/interfaces/media-interfaces) | no |
-| [time-control](/) | change the date and time | Time | no |
-| [timeserver-control](/) | change time server settings | Time | no |
-| [timezone-control](/) | change the time zone | Time | no |
-| [tpm](/) | allows access to the Trusted Platform Module device | Kernel, [Security](/snap-reference/operations/interfaces/security-interfaces) | no |
-| [u2f-devices](/t/the-u2f-devices-interface/9722/) | use any U2F devices | [Security](/snap-reference/operations/interfaces/security-interfaces), [Hardware](/snap-reference/operations/interfaces/hardware-interfaces), Developer | no |
-| [ubuntu-download-manager](/) | use the Ubuntu Download Manager | [System](/snap-reference/operations/interfaces/system-interfaces), Developer, Manage software | yes |
-| [udisks2](/) | access the UDisks2 service | Storage | no |
-| [uhid](/) | create kernel UID devices from user-space | [Hardware](/snap-reference/operations/interfaces/hardware-interfaces), Kernel, [System](/snap-reference/operations/interfaces/system-interfaces) | no |
-| [uinput](/) | allows write access to /dev/uinput | [Super privileged](/snap-reference/operations/interfaces/super-privileged-interfaces), [Hardware](/snap-reference/operations/interfaces/hardware-interfaces) | no |
-| [uio](/) | access uio devices | [Hardware](/snap-reference/operations/interfaces/hardware-interfaces), [System](/snap-reference/operations/interfaces/system-interfaces) | no |
-| [unity7](/) | access legacy desktop resources from Unity7 | Display | yes |
-| [unity8](/) | share data with other Unity 8 apps | Display, [Super privileged](/snap-reference/operations/interfaces/super-privileged-interfaces) | yes |
-| [unity8-calendar](/) | read/change shared calendar events in Ubuntu Unity 8 | Personal data | no |
-| [unity8-contacts](/) | read/change shared contacts in Ubuntu Unity 8 | Personal data | no |
-| [upower-observe](/) | access battery level and power usage | [System](/snap-reference/operations/interfaces/system-interfaces), Power | yes |
-| [userns](/) | permits a snap to create a new namespace | [Super privileged](/snap-reference/operations/interfaces/super-privileged-interfaces) | no |
-| [vcio](/) | access a Raspberry Pi's VideoCore multimedia processor | Video, Graphics, Ubuntu Core | no |
-| [wayland](/) | access compositors providing the Wayland protocol | Display | yes |
-| [x11](/) | monitor mouse/keyboard input and graphics output of other apps | Display | yes |
-| [xilinx_dma](/) | allows access to Xilinx DMA IP from a connected PCIe card | Ubuntu Core, [Super privileged](/snap-reference/operations/interfaces/super-privileged-interfaces) | no |
+| [account-control](account-control-interface) | add/remove user accounts or change passwords | System, Account | no |
+| [accounts-service](accounts-service-interface) | allows communication with the accounts service | System, Account | no |
+| [acrn](acrn-interface) | allows access to user VMs using the ACRN hypervisor | VM, Hypervisor, Developer | no |
+| [adb-support](adb-support-interface) | allows operating as Android Debug Bridge service | ADB, Developer | no |
+| [allegro-vcu](allegro-vcu-interface) | access the Allegro Video Core Unit | Video, Graphics | no |
+| [alsa](alsa-interface) | play or record sound | Audio, Media | no |
+| [appstream-metadata](appstream-metadata-interface) | allows access to AppStream metadata | System, Developer, Manage software | no |
+| [audio-playback](audio-playback-interface) | allows audio playback via supporting services | Audio, Media, Playback | yes |
+| [audio-record](audio-record-interface) | allows audio recording via supported services | Audio, Media, Record | no |
+| [autopilot-introspection](autopilot-introspection-interface) | be controlled by Autopilot software | System, Developer | no |
+| [avahi-control](avahi-control-interface) | advertise services over the local network | Network, Local network, Nearby devices | no |
+| [avahi-observe](avahi-observe-interface) | detect services and devices over the local network | Network, Local network, Nearby devices | no |
+| [block-devices](block-devices-interface) | access to disk block devices | Super privileged, Storage, Low level | no |
+| [bluetooth-control](bluetooth-control-interface) | access Bluetooth hardware directly | Network, Bluetooth, Nearby devices | no |
+| [bluez](bluez-interface) | use Bluetooth devices | Network, Bluetooth, Nearby devices | no |
+| [bool-file](bool-file-interface) | allows access to specific file with bool semantics | System, Low level, Privileged | no |
+| [broadcom-asic-control](broadcom-asic-control-interface) | control Broadcom network switches | Network, System | no |
+| [browser-support](browser-support-interface) | use functions essential for Web browsers | Browser, Network | no when allow-sandbox: true, yes otherwise |
+| [calendar-services](calendar-services-interface) | allows communication with Evolution Data Server calendar | Personal data, Contacts and calendar | no |
+| [camera](camera-interface) | use your camera or webcam | Camera, Media, Personal data | no |
+| [can-bus](can-bus-interface) | allows access to the CAN bus | System, Developer | no |
+| [cifs-mount](cifs-mount-interface) | allows the mounting and unmounting of CIFS filesystems | Network,Storage | no |
+| [classic-support](classic-support-interface) | enable resource access to classic snap | Super privileged, Ubuntu Core | no |
+| [confdb](confdb-interface) | permit access confdb configuration system | System | no |
+| [contacts-service](contacts-service-interface) | allows communication with the Evolution Data Server address book | Personal data, Contacts and calendar| no |
+| [content](content-interface) | access resources across snaps | Storage, Files, Attributes | yes for snaps from same publisher, no otherwise |
+| [core-support](core-support-interface) | deprecated since snap 2.34 | System, Other | no |
+| [cpu-control](cpu-control-interface) | set certain CPU values | System, Developer | no |
+| [cups](cups-interface) | access to the CUPS socket for printing | Printing | not applicable |
+| [cups-control](cups-control-interface) | print documents | Printing | no |
+| [custom-device](custom-device-interface) | permits access to a specific class of device | Super privileged, Ubuntu Core | no |
+| [daemon-notify](daemon-notify-interface) | allows sending daemon status changes to service manager | System, Developer | no |
+| [dbus](dbus-interface) | allow snaps to communicate over D-Bus | System, Developer | no |
+| [dcdbas-control](dcdbas-control-interface) | shut down or restart Dell devices | Developer | no |
+| [desktop](desktop-interface) | provides access to common desktop elements | Desktop | yes |
+| [desktop-launch](desktop-launch-interface) | identify and launch desktop apps from other snaps | Super privileged, Desktop | no |
+| [desktop-legacy](desktop-legacy-interface) | enables the use of legacy desktop methods (including input method and accessibility services) | Desktop | yes |
+| [device-buttons](device-buttons-interface) | use any device-buttons | Hardware, Developer | no |
+| [display-control](display-control-interface) | allows configuring display parameters | Display, Graphics | no |
+| [dm-crypt](dm-crypt-interface) | access encrypted storage devices | Super privileged, Ubuntu Core, Storage | no |
+| [docker](docker-interface) | start, stop, or manage Docker containers | Super privileged, Containers | no |
+| [docker-support](docker-support-interface) | allows operating as the Docker daemon | Super privileged, Containers | no |
+| [dsp](dsp-interface) | enables the control of digital signal processors (DSPs) | Hardware, Developer | no |
+| [dummy](dummy-interface) | renamed to empty interface | System, Other | no |
+| [dvb](dvb-interface) | allows access to all DVB devices and APIs | Hardware, Developer, Media | no |
+| [empty](empty-interface) | allows testing without additional permissions | System, Other | no |
+| [firewall-control](firewall-control-interface) | configure a network firewall | Network | no |
+| [fpga](fpga-interface) | permits access to an FPGA subsystem | Hardware, Developer | no |
+| [framebuffer](framebuffer-interface) | access to universal framebuffer devices | Hardware, Developer | no |
+| [fuse-support](fuse-support-interface) | enables access to the FUSE filesystems | Storage | no |
+| [fwupd](fwupd-interface) | allows operating as the fwupd service | System, Security, Firmware | no |
+| [gconf](gconf-interface) | access the legacy GConf config system | System, Developer, Settings | no |
+| [gpg-keys](gpg-keys-interface) | read GPG user configuration and keys | GPG, Personal data, Security | no |
+| [gpg-public-keys](gpg-public-keys-interface) | read GPG non-sensitive configuration and public keys | GPG, Personal data, Security | no |
+| [gpio](gpio-interface) | access specific GPIO pins | GPIO, Hardware, Developer | no |
+| [gpio-control](gpio-control-interface) | allows to export/unexport and control all GPIOs | Super privileged, GPIO | no |
+| [gpio-memory-control](gpio-memory-control-interface) | allows write access to all GPIO memory | GPIO, Hardware, Developer | no |
+| [greengrass-support](greengrass-support-interface) | allows operating as the Greengrass service | Super privileged, Edge, AWS, Discrete | no |
+| [gsettings](gsettings-interface) | provides access to any GSettings item for current user | System, Developer, Settings | yes |
+| [hardware-observe](hardware-observe-interface) | access hardware information | System, Hardware | no |
+| [hardware-random-control](hardware-random-control-interface) | provide entropy to hardware random number generator | System, Hardware | no |
+| [hardware-random-observe](hardware-random-observe-interface) | use hardware-generated random numbers | System, Hardware | no |
+| [hidraw](hidraw-interface) | access hidraw devices | System | no |
+| [home](home-interface) | access non-hidden files in the home directory | Storage, Personal data | yes on classic (traditional distributions), no otherwise |
+| [hostname-control](hostname-control-interface) | allows configuring the system hostname | Network | no |
+| [hugepages-control](hugepages-control-interface) | control HugePages memory blocks | System, Memory, Kernel | no |
+| [i2c](i2c-interface) | access i²c devices | System, Hardware | no |
+| [iio](iio-interface) | access IIO devices | System, Hardware | no |
+| [intel-mei](intel-mei-interface) | access to the Intel MEI management interface | System, Firmware | no |
+| [intel-qat](intel-qat-interface) | provides permissions for Intel QAT devices | Hardware | no  | 
+| [io-ports-control](io-ports-control-interface) | allows access to all I/O ports | System, | no |
+| [ion-memory-control](ion-memory-control-interface) | access Android's ION memory allocator | Super privileged, System  | no |
+| [jack1](jack1-interface) | allows interaction with the JACK audio connection server | Audio, Media | no |
+| [joystick](joystick-interface) | use any connected joystick | Hardware, Developer | no |
+| [juju-client-observe](juju-client-observe-interface) | read the Juju client configuration | Developer, Discrete | no |
+| [kernel-crypto-api](kernel-crypto-api-interface) | read and manage kernel supported crypto ciphers | System, Kernel, Security | no |
+| [kernel-firmware-control](kernel-firmware-control-interface) | permits a custom kernel firmware search path | Super privileged | no |
+| [kernel-module-control](kernel-module-control-interface) | insert, remove and query kernel modules | Super privileged, System, Kernel | no |
+| [kernel-module-load](kernel-module-load-interface) | load, or deny loading, specific kernel modules | Super privileged, System, Kernel | no |
+| [kernel-module-observe](kernel-module-observe-interface) | query kernel modules | System, Kernel | no |
+| [kubernetes-support](kubernetes-support-interface) | use functions essential for Kubernetes | Super privileged, Hypervisor, Discrete | no |
+| [kvm](kvm-interface) | allows access to the kvm device | VM, Hypervisor, Developer | no |
+| [libvirt](libvirt-interface) | provides access to the libvirt service | VM, Hypervisor, Developer | no |
+| [locale-control](locale-control-interface) | change system language and region settings | Language and region, Personalisation | no |
+| [location-control](location-control-interface) | allows operating as the location service | Location | no |
+| [location-observe](location-observe-interface) | access your location | Location | no |
+| [log-observe](log-observe-interface) | read system logs | System, Developer | no |
+| [login-session-control](login-session-control-interface) | allows setup of login sessions and grants privileged access to user sessions | System, Security | no |
+| [login-session-observe](login-session-observe-interface) | allows reading login and session information | System, Security | no |
+| [lxd](lxd-interface) | provides access to the LXD socket | Super privileged, Container, Discrete | no |
+| [lxd-support](lxd-support-interface) | allows operating as the LXD service | Super privileged, Container, Discrete | no |
+| [maliit](maliit-interface) | use an on-screen keyboard | Developer | no |
+| [media-control](media-control-interface) | access media control devices and Video4Linux (V4L) devices | Hardware, Developer, Media, Video | no |
+| [media-hub](media-hub-interface) | access snaps providing the media-hub interface | Developer, Media | yes |
+|  [microceph](microceph-interface) |  permits access to the MicroCeph socket, which is used internally by the microceph snap | Super privileged, Container | no |
+| [microceph-support](microceph-support-interface) | permits the microceph snap to operate as the MicroCeph service | Super privileged, Container | no |
+| [microovn](microovn-interface) | used only by the MicroOVN snap for socket access | Network, Super privileged | no |
+| [microstack-support](microstack-support-interfacet/the-microstack-support-interface/26505/) | multiple service access to the Microstack infrastructure | Super privileged, Container, Discrete | no |
+| [mir](mir-interface) | enables access to the Mir display service | Display | yes |
+| [modem-manager](modem-manager-interface) | use and configure modems | Network | no |
+| [mount-control](mount-control-interface) | mount and unmount transient and persistent filesystem mount points | Super privileged, Storage | no |
+| [mount-observe](mount-observe-interface) | read mount table and quota information | Storage | no |
+| [mpris](mpris-interface) | media key control of music and video players | Sound | no |
+| [multipass-support](multipass-support-interface) | multipass-support allows operating as the Multipass service | Super privileged, VM, Discrete | no |
+| [netlink-audit](netlink-audit-interface) | allows access to kernel audit system through Netlink | Inter-process communication (IPC), Netlink, Developer | no |
+| [netlink-connector](netlink-connector-interface) | communicate through the kernel Netlink connector | Inter-process communication (IPC), Netlink, Developer | no |
+| [netlink-driver](netlink-driver-interface) | operate a kernel driver module exposed via Netlink | Inter-process communication (IPC), Netlink, Developer | no |
+| [network](network-interface) | enables network access | Network | yes |
+| [network-bind](network-bind-interface) | operate as a network service | Network | yes |
+| [network-control](network-control-interface) | change low-level network settings | Network | no |
+| [network-manager](network-manager-interface) | configure and observe networking via NetworkManager | Network | no |
+| [network-manager-observe](network-manager-observe-interface) | allows observing NetworkManager settings | Network | no |
+| [network-observe](network-observe-interface) | query network status information | Network | no |
+| [network-setup-control](network-setup-control-interface) | change network settings via Netplan | Network | no |
+| [network-setup-observe](network-setup-observe-interface) | read network settings | Network | no |
+| [network-status](network-status-interface) | access the NetworkStatus service | Network | yes |
+| [nfs-mount](nfs-mount-interface) | allows the mounting and unmounting of Network File System mount points | Network, Service | no |
+| [nomad-support](nomad-support-interface) |  enable's HashiCorp's Nomad to access CPU and memory management | System, Containers, Service | no |
+| [nvidia-drivers-support](nvidia-drivers-support-interface) | internally used NVIDIA access | Super privileged, Ubuntu Core | no |
+| [ofono](ofono-interface) | allows operating as the oFono service | Network, Discrete, Developer | no |
+| [online-accounts-service](online-accounts-service-interface) | access to the Online Accounts service | Service, Developer | yes |
+| [opengl](opengl-interface) | access OpenGL/GPU hardware | Display, Graphics | yes |
+| [openvswitch](openvswitch-interface) | control Open vSwitch hardware | Network, Service, Developer | no |
+| [openvswitch-support](openvswitch-support-interface) | enables kernel support for Open vSwitch | Network, Service, Developer | no |
+| [optical-drive](optical-drive-interface) | read/write access to CD/DVD drives | Storage, Hardware, Developer | yes, unless drive can write |
+| [packagekit-control](packagekit-control-interface) | control the PackageKit service | Super privileged, Packaging | no |
+| [password-manager-service](password-manager-service-interface) | read, add, change, or remove saved passwords | System, Security | no |
+| [pcscd](pcscd-interface) | permits communication with PCSD smart card daemon | Security | no |
+| [personal-files](personal-files-interface) | read or write files in the user's home directory | Super privileged, Personal data, Attributes | no |
+| [physical-memory-control](physical-memory-control-interface) | read and write memory used by any process | System, Memory, Kernel | no |
+| [physical-memory-observe](physical-memory-observe-interface) | read memory used by any process | System, Memory, Kernel | no |
+| [pipewire](pipewire-interface) | access the PipeWire server | Audio, Media, Video | no |
+| [pkcs11](pkcs11-interface) |  enables the cryptographic token interface standard to be used | Security, Super privileged | no |
+| [polkit](polkit-interface) | access to the polkit authorisation manager | Security, System, Super privileged | no |
+| [polkit-agent](polkit-agent-interface) | permits applications to register as _polkit_ agents | Security, System, Super privileged | no |
+| [posix-mq](posix-mq-interface) | enables inter-process communication (IPC) messages | Super privileged, IPC | no by default, yes with snaps from the same publisher |
+| [power-control](power-control-interface) | read and write system power settings | System, Power | no |
+| [ppp](ppp-interface) | access to configure and observe PPP networking | Network | no |
+| [process-control](process-control-interface) | pause or end any process on the system | System | no |
+| [ptp](ptp-interface) | access to the Precision Time Protocol subsystem | System, Developer | no |
+| [pulseaudio](pulseaudio-interface) | play and record sound | Audio, Media | no |
+| [pwm](pwm-interface) | access specific PWM channels | System, Developer, Hardware, WIP | no |
+| [qualcomm-ipc-router](qualcomm-ipc-router-interface) | access Qualcomm IPC router sockets | IPC, Kernel, System | no |
+| [raw-input](raw-input-interface) | access raw input devices directly | System, Developer, Hardware | no |
+| [raw-usb](raw-usb-interface) | access USB hardware directly | System, Developer, Hardware | no |
+| [raw-volume](raw-volume-interface) | access specific disk partitions | Storage | no |
+| [remoteproc](remoteproc-interface) | interact with the kernel's Remote Processor Framework  |Super privileged | no |
+| [ros-opt-data](ros-opt-data-interface) | read-only access to ROS directories | Storage | no |
+| [ros-snapd-support](ros-snapd-support-interface) | allows the snaps ros-snapd and ros2-snapd the use of snapd’s apps control API | Super privileged | no |
+| [removable-media](removable-media-interface) | read/write files on removable storage devices | Storage | no |
+| [screencast-legacy](screencast-legacy-interface) | allows screen recording and audio recording alongside writing to arbitrary filesystem paths | Legacy | no |
+| [screen-inhibit-control](screen-inhibit-control-interface) | prevent screen sleep, lock and screensaver | Display | yes |
+| [scsi-generic](scsi-generic-interface) | read and write access to SCSI Generic driver devices | Storage, Super privileged | no |
+| [sd-control](sd-control-interface) | control SD cards on specific devices | Super privileged, Storage | no |
+| [serial-port](serial-port-interface) | access serial port hardware | System, Developer, Hardware | no |
+| [shared-memory](shared-memory-interface) | enables two snaps to access the same shared memory | Super privileged, IPC | no by default, yes with snaps from the same publisher |
+| [shutdown](shutdown-interface) | restart or power off the device | Super privileged, System, Power | no |
+| [snap_interfaces_requests_control](snap_interfaces_requests_control-interface) | enables the prompting API and its access to prompting-related notice types | System | no |
+| [snap-refresh-control](snap-refresh-control-interface) | permits bespoke snap refresh control | Super privileged, Packaging | no |
+| [snap-refresh-observe](snap-refresh-observe-interface) | enables the tracking of snap refreshes | Super privileged, Packaging | no |
+| [snapd-control](snapd-control-interface) | install or remove software | Super privileged, Packaging | no |
+| [spi](spi-interface) | access specific SPI devices | System, Developer, Hardware | no |
+| [ssh-keys](ssh-keys-interface) | access SSH private and public keys | Security | no |
+| [ssh-public-keys](ssh-public-keys-interface) | access SSH public keys | Security | no |
+| [steam-support](steam-support-interface) | allows the Steam snap to access pressure-vessel containers | Super privileged, Discrete | no |
+| [storage-framework-service](storage-framework-service-interface) | operate as, or interact with, the Storage Framework | Storage | no |
+| [system-backup](system-backup-interface) | read-only access to the system for backups | Storage | no |
+| [system-files](system-files-interface) | read or write files in the system | Super privileged, Storage, Attributes | no |
+| [system-observe](system-observe-interface) | read process and system information | Monitoring, System | no |
+| [system-packages-doc](system-packages-doc-interface) | access system documentation in /usr/share/doc | Developer | no |
+| [system-source-code](system-source-code-interface) | access kernel source and headers in /usr/src | Developer | no |
+| [system-trace](system-trace-interface) | monitor or control any running program | Monitoring, System | no |
+| [tee](tee-interface) | permits access to the Trusted Execution Environment | Super privileged, Security, Ubuntu Core | no |
+| [thumbnailer-service](thumbnailer-service-interface) | create thumbnail images from local media files | Storage, Media | no |
+| [time-control](time-control-interface) | change the date and time | Time | no |
+| [timeserver-control](timeserver-control-interface) | change time server settings | Time | no |
+| [timezone-control](timezone-control-interface) | change the time zone | Time | no |
+| [tpm](tpm-interface) | allows access to the Trusted Platform Module device | Kernel, Security | no |
+| [u2f-devices](u2f-devices-interfacet/the-u2f-devices-interface/9722/) | use any U2F devices | Security, Hardware, Developer | no |
+| [ubuntu-download-manager](ubuntu-download-manager-interface) | use the Ubuntu Download Manager | System, Developer, Manage software | yes |
+| [udisks2](udisks2-interface) | access the UDisks2 service | Storage | no |
+| [uhid](uhid-interface) | create kernel UID devices from user-space | Hardware, Kernel, System | no |
+| [uinput](uinput-interface) | allows write access to /dev/uinput | Super privileged, Hardware | no |
+| [uio](uio-interface) | access uio devices | Hardware, System | no |
+| [unity7](unity7-interface) | access legacy desktop resources from Unity7 | Display | yes |
+| [unity8](unity8-interface) | share data with other Unity 8 apps | Display, Super privileged | yes |
+| [unity8-calendar](unity8-calendar-interface) | read/change shared calendar events in Ubuntu Unity 8 | Personal data | no |
+| [unity8-contacts](unity8-contacts-interface) | read/change shared contacts in Ubuntu Unity 8 | Personal data | no |
+| [upower-observe](upower-observe-interface) | access battery level and power usage | System, Power | yes |
+| [userns](userns-interface) | permits a snap to create a new namespace | Super privileged | no |
+| [vcio](vcio-interface) | access a Raspberry Pi's VideoCore multimedia processor | Video, Graphics, Ubuntu Core | no |
+| [wayland](wayland-interface) | access compositors providing the Wayland protocol | Display | yes |
+| [x11](x11-interface) | monitor mouse/keyboard input and graphics output of other apps | Display | yes |
+| [xilinx_dma](xilinx_dma-interface) | allows access to Xilinx DMA IP from a connected PCIe card | Ubuntu Core, Super privileged | no |
 
 
 ```{toctree}
