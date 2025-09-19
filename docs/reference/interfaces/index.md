@@ -210,7 +210,7 @@ The following column names are used:
 | [vcio](vcio-interface) | access a Raspberry Pi's VideoCore multimedia processor | Video, Graphics, Ubuntu Core | no |
 | [wayland](wayland-interface) | access compositors providing the Wayland protocol | Display | yes |
 | [x11](x11-interface) | monitor mouse/keyboard input and graphics output of other apps | Display | yes |
-| [xilinx_dma](xilinx_dma-interface) | allows access to Xilinx DMA IP from a connected PCIe card | Ubuntu Core, Super privileged | no |
+| [xilinx_dma](xilinx-dma-interface) | allows access to Xilinx DMA IP from a connected PCIe card | Ubuntu Core, Super privileged | no |
 
 
 ```{toctree}
