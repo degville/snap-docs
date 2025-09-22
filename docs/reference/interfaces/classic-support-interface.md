@@ -1,5 +1,5 @@
 (interfaces-classic-support-interface)=
-# classic-support-interface
+# The classic-support interface
 
 The `classic-support` interface sets special permissions for the [classic snap](https://snapcraft.io/classic), effectively giving device ownership to its connected snaps.
 

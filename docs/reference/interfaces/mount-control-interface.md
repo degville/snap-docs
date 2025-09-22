@@ -1,5 +1,5 @@
 (interfaces-mount-control-interface)=
-# mount-control-interface
+# The mount-control interface
 
 The `mount-control` interface allows the mounting and unmounting of both transient (non-persistent) and persistent filesystem mount points. The interface does not itself create or maintain mount points, but instead permits the snapped application or service to create and maintain its own.
 

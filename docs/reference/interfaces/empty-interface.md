@@ -1,5 +1,5 @@
 (interfaces-empty-interface)=
-# empty-interface
+# The empty interface
 
 `empty` allows testing without providing any additional permissions.
 

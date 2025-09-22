@@ -1,5 +1,5 @@
 (interfaces-accel)=
-# accel
+# The accel interface
 
 **This interface is under development and is not currently available for general use** .
 

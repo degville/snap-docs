@@ -1,5 +1,5 @@
 (interfaces-personal-files-interface)=
-# personal-files-interface
+# The personal-files interface
 
 The `personal-files` interface provides access to specified files in the user's home directory, and consequently, gives privileged access to the user's data.
 

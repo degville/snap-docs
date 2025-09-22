@@ -1,5 +1,5 @@
 (interfaces-physical-memory-control-interface)=
-# physical-memory-control-interface
+# The physical-memory-control interface
 
 `physical-memory-control` allows write access the to physical address space via the `/dev/mem` device. 
 

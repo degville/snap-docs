@@ -1,5 +1,5 @@
 (interfaces-pulseaudio-interface)=
-# pulseaudio-interface
+# The pulseaudio interface
 
 > :warning:  As of snapd 2.41, this interface is deprecated and the [`audio-playback`](/interfaces/audio-playback-interface) and [`audio-record`](/interfaces/audio-record-interface) interfaces should be used instead. They provide access to PulseAudio and will provide access to other sound servers in the future.
 

@@ -1,5 +1,5 @@
 (interfaces-alsa-interface)=
-# alsa-interface
+# The alsa interface
 
 `alsa` allows access to raw ALSA audio playback and recording devices. This is equivalent to direct driver access to your audio hardware and may block other applications from recording or playing sound.
 

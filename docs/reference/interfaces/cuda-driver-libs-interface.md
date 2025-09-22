@@ -1,5 +1,5 @@
 (interfaces-cuda-driver-libs)=
-# cuda-driver-libs
+# The cuda-driver-libs interface
 
 # cuda-driver-libs
 

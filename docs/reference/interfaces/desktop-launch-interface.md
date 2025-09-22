@@ -1,5 +1,5 @@
 (interfaces-desktop-launch-interface)=
-# desktop-launch-interface
+# The desktop-launch interface
 
 The `desktop-launch` interface allows [strictly confined](/) snaps to identify and launch desktop applications in (or from) other snaps.
 

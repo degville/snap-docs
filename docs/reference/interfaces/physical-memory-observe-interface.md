@@ -1,5 +1,5 @@
 (interfaces-physical-memory-observe-interface)=
-# physical-memory-observe-interface
+# The physical-memory-observe interface
 
 `physical-memory-observe ` allows read access the to physical address space via the /dev/mem device.
 

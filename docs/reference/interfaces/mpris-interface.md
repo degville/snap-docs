@@ -1,5 +1,5 @@
 (interfaces-mpris-interface)=
-# mpris-interface
+# The mpris interface
 
 `mpris` enables access to the Media Player Remote Interfacing Specification (mpris) via DBus, allowing a snap to control music and video players.
 

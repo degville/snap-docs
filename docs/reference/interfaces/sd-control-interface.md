@@ -1,5 +1,5 @@
 (interfaces-sd-control-interface)=
-# sd-control-interface
+# The sd-control interface
 
 The `sd-control` interface allows for the management and control of SD cards on certain devices using the DualSD driver.
 

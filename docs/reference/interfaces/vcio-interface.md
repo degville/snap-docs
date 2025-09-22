@@ -1,5 +1,5 @@
 (interfaces-vcio-interface)=
-# vcio-interface
+# The vcio interface
 
 The `vcio` interface permits input and output access to a Raspberry Pi's _VideoCore_ multimedia processor, typically used to improve graphics performance and to accelerate the encoding or decoding of media codecs.
  

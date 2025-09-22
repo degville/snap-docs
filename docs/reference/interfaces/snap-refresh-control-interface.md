@@ -1,5 +1,5 @@
 (interfaces-snap-refresh-control-interface)=
-# snap-refresh-control-interface
+# The snap-refresh-control interface
 
 The `snap-refresh-control` interface allows extended control, via [snapctl](/), of refreshes targeting the snap.
 

@@ -1,5 +1,5 @@
 (interfaces-qualcomm-ipc-router-interface)=
-# qualcomm-ipc-router-interface
+# The qualcomm-ipc-router interface
 
 The `qualcomm-ipc-router` interface allows access to the Qualcomm IPC Router sockets.
  

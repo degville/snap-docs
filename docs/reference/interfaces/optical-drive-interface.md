@@ -1,5 +1,5 @@
 (interfaces-optical-drive-interface)=
-# optical-drive-interface
+# The optical-drive interface
 
 `optical-drive` allows read/write access to optical drives, suitable for CD/DVD/Blu-Ray playback and burning. This interface is not currently available to use on Ubuntu Core, only classic systems can use this interface.
 

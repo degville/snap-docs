@@ -1,5 +1,5 @@
 (interfaces-ofono-interface)=
-# ofono-interface
+# The ofono interface
 
 `ofono` allows operating as the oFono service, enabling privileged access to configure, observe and use oFono devices.
 

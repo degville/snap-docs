@@ -1,5 +1,5 @@
 (interfaces-bluez-interface)=
-# bluez-interface
+# The bluez interface
 
 `bluez` enables access to the bluez Bluetooth service.
 

@@ -1,5 +1,5 @@
 (interfaces-hardware-observe-interface)=
-# hardware-observe-interface
+# The hardware-observe interface
 
 The `hardware-observe` interface allows for getting hardware information from the system.
 

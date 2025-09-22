@@ -1,5 +1,5 @@
 (interfaces-openvswitch-support-interface)=
-# openvswitch-support-interface
+# The openvswitch-support interface
 
 `openvswitch-support` enables kernel support for Open vSwitch.
 

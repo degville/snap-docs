@@ -1,5 +1,5 @@
 (interfaces-core-support-interface)=
-# core-support-interface
+# The core-support interface
 
 `core-support` enables special permissions for the core snap to be set.
 

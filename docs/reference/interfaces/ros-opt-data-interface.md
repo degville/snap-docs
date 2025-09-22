@@ -1,5 +1,5 @@
 (interfaces-ros-opt-data)=
-# ros-opt-data
+# The ros-opt-data interface
 
 The `ros-opt-data` interface creates a read-only mount from within a snap to the standard Robot Operating System (ROS) directory (`/opt/ros/*`) on the host system, enabling robotics-based snaps to share ROS robot data, such as the URDF.
 

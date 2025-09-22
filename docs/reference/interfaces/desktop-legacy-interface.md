@@ -1,5 +1,5 @@
 (interfaces-desktop-legacy-interface)=
-# desktop-legacy-interface
+# The desktop-legacy interface
 
 `desktop-legacy` allows privileged access to desktop legacy methods, including but not limited to support for input method frameworks(ibus/fcitx).
 

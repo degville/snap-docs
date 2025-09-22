@@ -1,5 +1,5 @@
 (interfaces-log-observe-interface)=
-# log-observe-interface
+# The log-observe interface
 
 `log-observe` enables a snap to read system logs and set kernel log rate-limiting.
 

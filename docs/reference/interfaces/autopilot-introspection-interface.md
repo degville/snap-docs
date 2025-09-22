@@ -1,5 +1,5 @@
 (interfaces-autopilot-introspection-interface)=
-# autopilot-introspection-interface
+# The autopilot-introspection interface
 
 `autopilot-introspection` allows introspection of application user interface.
 

@@ -1,5 +1,5 @@
 (interfaces-steam-support-interface)=
-# steam-support-interface
+# The steam-support interface
 
 The `steam-support` interface has been developed specifically to help Valve's Steam client configure [pressure-vessel](https://gitlab.steamos.cloud/steamrt/steam-runtime-tools/-/tree/master/pressure-vessel) containers from the [Steam snap](https://snapcraft.io/steam).
 

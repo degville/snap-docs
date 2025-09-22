@@ -1,5 +1,5 @@
 (interfaces-gconf-interface)=
-# gconf-interface
+# The gconf interface
 
 The `gconf`  interface  allows access to any item from the legacy [GConf configuration system](https://gitlab.gnome.org/Archive/gconf) for the current user, typically used by old GNOME desktop libraries and applications. 
 

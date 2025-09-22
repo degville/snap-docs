@@ -1,5 +1,5 @@
 (interfaces-media-hub-interface)=
-# media-hub-interface
+# The media-hub interface
 
 `media-hub` allows operating as the media-hub service.
 

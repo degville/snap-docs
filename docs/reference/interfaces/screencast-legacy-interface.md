@@ -1,5 +1,5 @@
 (interfaces-screencast-legacy-interface)=
-# screencast-legacy-interface
+# The screencast-legacy interface
 
 `screencast-legacy` allows screen recording and audio recording alongside writing to arbitrary filesystem paths.
 

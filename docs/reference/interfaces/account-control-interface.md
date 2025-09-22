@@ -1,5 +1,5 @@
 (interfaces-account-control-interface)=
-# account-control-interface
+# The account-control interface
 
 `account-control` allows managing non-system user accounts on [Ubuntu Core](https://ubuntu.com/core/docs) systems.
 

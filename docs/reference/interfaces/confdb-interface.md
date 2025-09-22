@@ -1,5 +1,5 @@
 (interfaces-confdb)=
-# confdb
+# The confdb interface
 
 The `confdb` interface enables snaps to access to specific  [confdb](/interfaces/confdb) views.
 

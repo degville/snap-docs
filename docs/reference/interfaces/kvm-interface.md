@@ -1,5 +1,5 @@
 (interfaces-kvm-interface)=
-# kvm-interface
+# The kvm interface
 
 `kvm` allows access to the `/dev/kvm` device, providing privileged access and control of the KVM hypervisor.
 

@@ -1,5 +1,5 @@
 (interfaces-avahi-observe-interface)=
-# avahi-observe-interface
+# The avahi-observe interface
 
 `avahi-observe` allows discovery on a local network via the mDNS/DNS-SD protocol suite.
 

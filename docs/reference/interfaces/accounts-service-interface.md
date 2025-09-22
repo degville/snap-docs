@@ -1,5 +1,5 @@
 (interfaces-accounts-service-interface)=
-# accounts-service-interface
+# The accounts-service interface
 
 `accounts-service` allows communication with the *accounts* service, such as [GNOME Online Accounts](https://wiki.gnome.org/Projects/GnomeOnlineAccounts).
 

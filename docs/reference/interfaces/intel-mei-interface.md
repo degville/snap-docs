@@ -1,5 +1,5 @@
 (interfaces-intel-mei-interface)=
-# intel-mei-interface
+# The intel-mei interface
 
 `intel-mei` enables access to the Intel MEI management interface.
 

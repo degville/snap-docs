@@ -1,5 +1,5 @@
 (interfaces-ptp-interface)=
-# ptp-interface
+# The ptp interface
 
 The `ptp` interface allows access to the Precision Time Protocol (PTP) [Hardware Clock subsystem](https://www.kernel.org/doc/Documentation/ptp/ptp.txt) in the Linux kernel, enabling the clock to be synced to sub-100 nanoseconds. 
  

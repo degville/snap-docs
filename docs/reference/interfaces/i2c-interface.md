@@ -1,5 +1,5 @@
 (interfaces-i2c-interface)=
-# i2c-interface
+# The i2c interface
 
 The `i2c` interface permits access to a specific I2C controller. It's intended to be used with Ubuntu Core and its scope and specification are defined as part of the [gadget snap](https://snapcraft.io/docs/the-gadget-snap) for the deployed Ubuntu Core image.
 

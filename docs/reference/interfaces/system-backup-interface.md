@@ -1,5 +1,5 @@
 (interfaces-system-backup-interface)=
-# system-backup-interface
+# The system-backup interface
 
 `system-backup` provides read-only access to the system via `/var/lib/snapd/hostfs`. This interface gives privileged access to system data.
 

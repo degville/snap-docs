@@ -1,5 +1,5 @@
 (interfaces-camera-interface)=
-# camera-interface
+# The camera interface
 
 `camera` allows access to all cameras, including webcams.
 

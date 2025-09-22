@@ -1,5 +1,5 @@
 (interfaces-storage-framework-service-interface)=
-# storage-framework-service-interface
+# The storage-framework-service interface
 
 `storage-framework-service` allows operating as, or interacting with, the Storage Framework.
 

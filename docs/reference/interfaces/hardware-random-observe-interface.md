@@ -1,5 +1,5 @@
 (interfaces-hardware-random-observe-interface)=
-# hardware-random-observe-interface
+# The hardware-random-observe interface
 
 `hardware-random-observe` enables the use of hardware-generated random numbers via read-only access to `/dev/hwrng`.
 

@@ -1,5 +1,5 @@
 (interfaces-intel-qat)=
-# intel-qat
+# The intel-qat interface
 
 The ` intel-qat` interface provides permissions for [Intel QAT](https://www.intel.com/content/www/us/en/architecture-and-technology/intel-quick-assist-technology-overview.html) devices to access `VFIO`, `IOMMU` and `QAT_ADF_CTL` nodes.
 

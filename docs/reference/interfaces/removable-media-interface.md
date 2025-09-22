@@ -1,5 +1,5 @@
 (interfaces-removable-media-interface)=
-# removable-media-interface
+# The removable-media interface
 
 `removable-media` allows read/write access to mounted removable storage in `/media`, `/run/media` and `/mnt`.
 

@@ -1,5 +1,5 @@
 (interfaces-iio-interface)=
-# iio-interface
+# The iio interface
 
 `iio` enables access to a specific IIO (Industrial I/O) device. This interface is restricted because it provides privileged access to IIO hardware.
 

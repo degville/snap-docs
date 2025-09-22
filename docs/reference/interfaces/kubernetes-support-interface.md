@@ -1,5 +1,5 @@
 (interfaces-kubernetes-support-interface)=
-# kubernetes-support-interface
+# The kubernetes-support interface
 
 `kubernetes-support` allows operating as the Kubernetes service and running application containers.
 

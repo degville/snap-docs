@@ -1,5 +1,5 @@
 (interfaces-framebuffer-interface)=
-# framebuffer-interface
+# The framebuffer interface
 
 `framebuffer` allows access to universal framebuffer devices (`/dev/fb[0-9]*`).
 

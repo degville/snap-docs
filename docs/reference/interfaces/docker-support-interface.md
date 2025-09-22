@@ -1,5 +1,5 @@
 (interfaces-docker-support-interface)=
-# docker-support-interface
+# The docker-support interface
 
 `docker-support` allows operating as the Docker daemon. This interface is for internal use by the [Docker snap](https://snapcraft.io/docker). You should not need to use this interface in your snap.
 

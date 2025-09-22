@@ -1,5 +1,5 @@
 (interfaces-network-status-interface)=
-# network-status-interface
+# The network-status interface
 
 `network-status` allows operating as the NetworkingStatus service.
 

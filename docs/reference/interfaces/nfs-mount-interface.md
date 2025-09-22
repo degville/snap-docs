@@ -1,5 +1,5 @@
 (interfaces-nfs-mount)=
-# nfs-mount
+# The nfs-mount interface
 
 The `nfs-mount` interface allows the mounting and unmounting of Network File System mount points within a snap's writable areas.
 

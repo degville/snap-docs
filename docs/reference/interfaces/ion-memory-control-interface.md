@@ -1,5 +1,5 @@
 (interfaces-ion-memory-control-interface)=
-# ion-memory-control-interface
+# The ion-memory-control interface
 
 The `ion-memory-control` interface allows access to the Android ION memory allocator, a Linux kernel feature for managing one or more memory pools.
 

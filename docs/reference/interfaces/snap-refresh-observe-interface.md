@@ -1,5 +1,5 @@
 (interfaces-snap-refresh-observe-interface)=
-# snap-refresh-observe-interface
+# The snap-refresh-observe interface
 
 The `snap-refresh-observe` interface permits tracking snap refreshes and their inhibition.
 

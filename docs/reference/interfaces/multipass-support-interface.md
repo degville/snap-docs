@@ -1,5 +1,5 @@
 (interfaces-multipass-support-interface)=
-# multipass-support-interface
+# The multipass-support interface
 
 `multipass-support` allows operating as the [Multipass](https://multipass.run/) service.
 

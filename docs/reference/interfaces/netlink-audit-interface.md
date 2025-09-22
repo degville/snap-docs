@@ -1,5 +1,5 @@
 (interfaces-netlink-audit-interface)=
-# netlink-audit-interface
+# The netlink-audit interface
 
 The `netlink-audit` interface allows access to the kernel part of the Linux Audit Subsystem through Netlink.
 

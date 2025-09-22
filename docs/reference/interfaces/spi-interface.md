@@ -1,5 +1,5 @@
 (interfaces-spi-interface)=
-# spi-interface
+# The spi interface
 
 `spi` allows access to a specific Serial Peripheral Interface (SPI) controller. This snap interface is restricted because it provides privileged access to SPI hardware.
 

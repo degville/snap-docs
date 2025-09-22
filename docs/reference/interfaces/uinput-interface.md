@@ -1,5 +1,5 @@
 (interfaces-uinput-interface)=
-# uinput-interface
+# The uinput interface
 
 `uinput` allows write access to `/dev/uinput` on the host system for emulating input devices from userspace that can send input events (such as a joystick).
 

@@ -1,5 +1,5 @@
 (interfaces-hostname-control-interface)=
-# hostname-control-interface
+# The hostname-control interface
 
 `hostname-control` allows configuring the system hostname.
 

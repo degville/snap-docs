@@ -1,5 +1,5 @@
 (interfaces-browser-support-interface)=
-# browser-support-interface
+# The browser-support interface
 
 `browser-support` allows access to various APIs needed by modern web browsers.
 

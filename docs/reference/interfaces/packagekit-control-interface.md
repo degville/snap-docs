@@ -1,5 +1,5 @@
 (interfaces-packagekit-control-interface)=
-# packagekit-control-interface
+# The packagekit-control interface
 
 `packagekit-control` allows control of the [PackageKit](https://www.freedesktop.org/software/PackageKit/) service, giving privileged access to native package management on the system.
 

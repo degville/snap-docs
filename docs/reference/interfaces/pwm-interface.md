@@ -1,5 +1,5 @@
 (interfaces-pwm-interface)=
-# pwm-interface
+# The pwm interface
 
 The `pwm` interface allows access to a specific PWM channel on a device. The interface is restricted because it provides privileged access to PWM hardware.
 

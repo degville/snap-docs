@@ -1,5 +1,5 @@
 (interfaces-x11-interface)=
-# x11-interface
+# The x11 interface
 
 `x11` allows interacting with or running as an X11 server.
 

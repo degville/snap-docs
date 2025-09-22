@@ -1,5 +1,5 @@
 (interfaces-gpio-chardev)=
-# gpio-chardev
+# The gpio-chardev interface
 
 The `gpio-chardev` interface allows access to specific GPIO chardev lines.
 

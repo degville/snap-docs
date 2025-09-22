@@ -1,5 +1,5 @@
 (interfaces-calendar-service-interface)=
-# calendar-service-interface
+# The calendar-service interface
 
 The `calendar-service` interface enables communication with Evolution Data Server calendar.
 

@@ -1,5 +1,5 @@
 (interfaces-firewall-control-interface)=
-# firewall-control-interface
+# The firewall-control interface
 
 `firewall-control` allows control over the network firewall.
 

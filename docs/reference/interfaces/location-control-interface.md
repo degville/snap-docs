@@ -1,5 +1,5 @@
 (interfaces-location-control-interface)=
-# location-control-interface
+# The location-control interface
 
 `location-control` allows operating as the location service, providing privileged access to configure, observe and use location services.
 

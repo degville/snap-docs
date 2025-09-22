@@ -1,5 +1,5 @@
 (interfaces-fwupd-interface)=
-# fwupd-interface
+# The fwupd interface
 
 `fwupd` allows operating as the fwupd service, enabling privileged access to update UEFI firmware.
 

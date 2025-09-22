@@ -1,5 +1,5 @@
 (interfaces-system-files-interface)=
-# system-files-interface
+# The system-files interface
 
 The `system-files` interface enables a snap to access specific system files and directories (such as files in `/etc`). Consequently,  the interface can provide access to privileged system data and is not connected by default.
 

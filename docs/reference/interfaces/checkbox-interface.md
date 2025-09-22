@@ -1,5 +1,5 @@
 (interfaces-checkbox)=
-# checkbox
+# The checkbox interface
 
 **This interface is under development and is not currently available for general use**.
 

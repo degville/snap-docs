@@ -1,5 +1,5 @@
 (interfaces-network-interface)=
-# network-interface
+# The network interface
 
 The `network` interface allows client access to the network.
 

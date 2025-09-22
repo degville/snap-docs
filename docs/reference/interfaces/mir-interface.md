@@ -1,5 +1,5 @@
 (interfaces-mir-interface)=
-# mir-interface
+# The mir interface
 
 `mir` allows operating as the Mir display service.
 

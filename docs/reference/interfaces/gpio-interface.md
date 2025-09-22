@@ -1,5 +1,5 @@
 (interfaces-gpio-interface)=
-# gpio-interface
+# The gpio interface
 
 `gpio` allows access to a specific GPIO pin. The interface is restricted because it provides privileged access to GPIO hardware.
 

@@ -1,5 +1,5 @@
 (interfaces-hugepages-control-interface)=
-# hugepages-control-interface
+# The hugepages-control interface
 
 The `hugepages-control` interface allows controlling [HugePages](https://www.kernel.org/doc/Documentation/vm/hugetlbpage.txt), a Linux kernel feature that enables memory blocks to be managed in larger page sizes.
 
