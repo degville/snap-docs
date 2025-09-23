@@ -1,7 +1,11 @@
+---
+orphan: true
+---
+
 (interfaces-accel)=
 # The accel interface
 
-**This interface is under development and is not currently available for general use** .
+**This interface is under development and is not currently available for general use.**
 
 The `accel` interface allows access to device nodes in `/dev/accel` , which are managed by the [Linux compute accelerators subsystem](https://docs.kernel.org/accel/introduction.html).
 
