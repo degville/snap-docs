@@ -1,5 +1,5 @@
 (interfaces-installing-snap-on-kali)=
-# installing-snap-on-kali
+# Kali Linux
 
 > :warning: Installing snap from a _live_ Kali Linux environment is not currently supported. These instructions only work when Kali Linux is installed.
 > <!-- source: https://forum.snapcraft.io/t/trying-to-run-any-snap-apps/9927/8 -->

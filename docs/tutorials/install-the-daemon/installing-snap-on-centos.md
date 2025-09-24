@@ -1,5 +1,5 @@
 (interfaces-installing-snap-on-centos)=
-# installing-snap-on-centos
+# CentOS
 
 Snap is available for [CentOS 9 Stream](https://www.centos.org/), CentOS 8 Stream, CentOS 8 and CentOS 7, from the 7.6 release onwards. It's also available for Red Hat Enterprise Linux (RHEL) 7.6+ (see [Installing snap on Red Hat Enterprise Linux](/interfaces/installing-snap-on-red-hat)).
 

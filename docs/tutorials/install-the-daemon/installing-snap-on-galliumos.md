@@ -1,5 +1,5 @@
 (interfaces-installing-snap-on-galliumos)=
-# installing-snap-on-galliumos
+# GalliumOS
 
 [GalliumOS](https://galliumos.org/) is an Ubuntu-based Linux distribution for Google's Chrome OS devices.
 
