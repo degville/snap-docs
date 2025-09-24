@@ -7,7 +7,7 @@ This section of our documentation contains step-by-step tutorials to help outlin
 
 Snap is installed by default on Ubuntu and many other Linux distributions. Our _Features tour_ is an ideal way to get started.
 
-* [Get started features tour](get-started): All of snap's main features on a single page
+* [Features tour](get-started): All of snap's main features on a single page
 
 ## Installation 
 
