@@ -1,5 +1,5 @@
 (snap-tutorials-install-the-daemon-elementary-os)=
-# Elementary OS
+# Install snap on Elementary OS
 
 Snap can be installed on elementary OS from the command line. Open *Terminal* from the Applications launcher and type the following:
 
@@ -19,5 +19,4 @@ $ hello-world
 Hello World!
 ```
 
-Snap is now installed and ready to go!  If you're using a desktop, a great next step is to [install the Snap Store app](/).
-
+Snap is now installed and ready to go!

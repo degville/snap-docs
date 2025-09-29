@@ -1,5 +1,5 @@
 (snap-tutorials-install-the-daemon-ubuntu)=
-# Ubuntu
+# Install snap on Ubuntu
 
 Snap is pre-installed and ready to go on all recent releases of Ubuntu.
 

@@ -1,5 +1,5 @@
 (snap-tutorials-install-the-daemon-arch-linux)=
-# Arch Linux
+# Install snap on Arch Linux
 
 On Arch Linux, *snap* can be installed from the [Arch User Repository (AUR)](https://aur.archlinux.org/packages/snapd/).
 
@@ -53,6 +53,3 @@ hello-world 6.3 from Canonical✓ installed
 $ hello-world
 Hello World!
 ```
-
-Snap is now installed and ready to go!  If you're using a desktop, a great next step is to [install the Snap Store app](/).
-

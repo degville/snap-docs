@@ -1,5 +1,5 @@
 (interfaces-installing-snap-on-kde-neon)=
-# KDE Neon
+# Install snap on KDE Neon
 
 Snap should be installed by default on KDE Neon. In case it has been removed, it can be re-installed from *Discover*, the KDE software centre application. This can be found in the Application Launcher. From Discover,  search for *snapd* and select **Install**.
 

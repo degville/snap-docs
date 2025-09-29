@@ -1,5 +1,5 @@
 (snap-tutorials-install-the-daemon-almalinux-os)=
-# AlmaLinux OS
+# Install snap on AlmaLinux OS
 
 Snap is available for [AlmaLinux OS](https://almalinux.org/), a Linux distribution that’s being actively developed to provide binary compatibility with Red Hat Enterprise Linux (RHEL) and 
 _pre-Stream_ CentOS.
@@ -34,6 +34,3 @@ sudo ln -s /var/lib/snapd/snap /snap
 ```
 
 Either log out and back in again or restart your system to ensure snap’s paths are updated correctly.
-
-Snap is now installed and ready to go!  If you're using a desktop, a great next step is to [install the Snap Store app](/).
-

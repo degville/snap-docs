@@ -1,5 +1,5 @@
 (snap-tutorials-install-the-daemon-opensuse)=
-# openSUSE
+# Install snap on openSUSE
 
 Snap can be installed from the command line on [openSUSE Tumbleweed](https://get.opensuse.org/tumbleweed/) and [openSUSE Leap 15.x](https://get.opensuse.org/leap/).
 

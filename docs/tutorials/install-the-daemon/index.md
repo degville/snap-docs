@@ -47,5 +47,21 @@ See [Troubleshooting](/snap-how-to-guides/fix-common-issues/index) for help reso
 :maxdepth: 2
 :glob:
 
-*
-*/index
+AlmaLinux OS <almalinux-os>
+Arch Linux <arch-linux>
+CentOS <centos>
+Debian <debian>
+Elementary OS <elementary-os>
+Fedora <fedora>
+GalliumOS <galliumos>
+Kali Linux <kali>
+Linux Mint <linux-mint>
+Manjaro Linux <manjaro-linux>
+KDE Neon <neon>
+openSUSE <opensuse>
+Parrot Security OS <parrot>
+Pop!_OS <pop-os>
+Raspberry Pi OS <raspberrypios>
+Red Hat <red-hat>
+Rocky Linux <rocky-linux> 
+Ubuntu <ubuntu>

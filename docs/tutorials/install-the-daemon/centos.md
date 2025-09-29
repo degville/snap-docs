@@ -1,5 +1,5 @@
 (interfaces-installing-snap-on-centos)=
-# CentOS
+# Install snap on CentOS
 
 Snap is available for [CentOS 9 Stream](https://www.centos.org/), CentOS 8 Stream, CentOS 8 and CentOS 7, from the 7.6 release onwards. It's also available for Red Hat Enterprise Linux (RHEL) 7.6+ (see [Installing snap on Red Hat Enterprise Linux](/interfaces/installing-snap-on-red-hat)).
 
@@ -64,6 +64,3 @@ sudo ln -s /var/lib/snapd/snap /snap
 ```
 
 Either log out and back in again or restart your system to ensure snap’s paths are updated correctly.
-
-Snap is now installed and ready to go!  If you're using a desktop, a great next step is to [install the Snap Store app](/interfaces/installing-snap-store-app).
-

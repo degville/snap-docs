@@ -1,5 +1,5 @@
 (snap-tutorials-install-the-daemon-manjaro-linux)=
-# Manjaro Linux
+# Install snap on Manjaro Linux
 
 Snap is often installed by default on Manjaro, especially if you're using a KDE Plasma desktop. If not, or if it's been removed,  it can easily be  installed.
 
@@ -38,5 +38,5 @@ $ hello-world
 Hello World!
 ```
 
-Snap is now installed and ready to go!  If you're using a desktop, a great next step is to [install the Snap Store app](/).
+Snap is now installed and ready to go!
 

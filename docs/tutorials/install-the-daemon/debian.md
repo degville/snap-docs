@@ -1,5 +1,5 @@
 (snap-tutorials-install-the-daemon-debian)=
-# Debian
+# Install snap on Debian
 
 On Debian, snap can be installed directly from the command line:
 
@@ -34,7 +34,6 @@ $ hello-world
 Hello World!
 ```
 
-Snap is now installed and ready to go!  If you're using a desktop, a great next step is to [install the Snap Store app](/).
+Snap is now installed and ready to go!
 
 _Snap is currently unavailable on versions of Debian prior to 9._
-

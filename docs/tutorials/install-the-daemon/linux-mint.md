@@ -1,5 +1,5 @@
 (snap-tutorials-install-the-daemon-linux-mint)=
-# Linux Mint
+# Install snap on Linux Mint
 
 Snap is available for the latest release of Linux Mint, 22.1 (Xia), and for older releases from Linux Mint 18.2 (Sonya) onwards.
 
@@ -40,5 +40,4 @@ $ hello-world
 Hello World!
 ```
 
-Snap is now installed and ready to go! If you’re using a desktop, a great next step is to [install the Snap Store app](https://snapcraft.io/docs/installing-snap-store-app).
-
+Snap is now installed and ready to go! 

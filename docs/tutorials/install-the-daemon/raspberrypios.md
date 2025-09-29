@@ -1,5 +1,5 @@
 (interfaces-installing-snap-on-raspbian)=
-# installing-snap-on-raspbian
+# Install snap on Raspberry Pi OS
 
 Snap can be installed on a [Raspberry Pi](https://www.raspberrypi.org/) running the latest version of [Raspberry Pi OS](https://www.raspberrypi.org/downloads/raspberry-pi-os/) by opening a terminal and typing a couple of commands.
 

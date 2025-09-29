@@ -1,5 +1,5 @@
 (snap-tutorials-install-the-daemon-pop-os)=
-# Pop!\_OS
+# Install snap on Pop!\_OS
 
 Snap can be installed on Pop!_OS from the command line. Open *Terminal* from the Applications launcher and type the following:
 
