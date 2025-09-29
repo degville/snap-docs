@@ -1,5 +1,5 @@
 (interfaces-developing-hotplug-interfaces)=
-# developing-hotplug-interfaces
+# Developing hotplug interfaces
 
 This page describes how developers can implement an [interface](/) that supports [USB hotplugging](https://www.kernel.org/doc/html/v4.13/driver-api/usb/hotplug.html),via snapd's built-in hotplug support.
 

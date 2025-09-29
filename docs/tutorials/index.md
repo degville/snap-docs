@@ -1,5 +1,5 @@
 (tutorials-index)=
-# Snap-Tutorials
+# Tutorials
 
 This section of our documentation contains step-by-step tutorials to help outline what snap is capable of while helping you achieve specific aims, such as installing your favourite applications, taking a data snapshot, removing snaps or reinstalling the snap daemon (snapd).
 
