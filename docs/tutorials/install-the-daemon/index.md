@@ -19,24 +19,7 @@ The snap daemon (snapd) is pre-installed and ready to go on the following:
 
 ## Without snap
 
-For distributions without the snap daemon pre-installed, use the links below for specific installation instructions:
-
-| | |
-|--|--|
-| [AlmaLinux OS](/snap-tutorials/install-the-daemon/almalinux-os) | [Arch Linux](/snap-tutorials/install-the-daemon/arch-linux)|
-| [CentOS](/) | [Debian](/snap-tutorials/install-the-daemon/debian)|
-| [elementary OS](/snap-tutorials/install-the-daemon/elementary-os) | [Fedora](/snap-tutorials/install-the-daemon/fedora) |
-| [GalliumOS](/) | [Kali Linux](/) |
-| [KDE Neon*](/) | [Kubuntu](/) |
-| [Linux Mint](/snap-tutorials/install-the-daemon/linux-mint) | [Lubuntu](/) | 
-|[Manjaro*](/snap-tutorials/install-the-daemon/manjaro-linux) | [openSUSE](/snap-tutorials/install-the-daemon/opensuse) |
-| [Parrot Security OS](/) | [Pop!_OS](/snap-tutorials/install-the-daemon/pop-os) |
-| [Raspberry Pi OS](/snap-tutorials/install-the-daemon/raspberry-pi-os) | [Red Hat Enterprise Linux (RHEL)](/) |
-| [Rocky Linux](/snap-tutorials/install-the-daemon/rocky-linux) | [Solus](/) |
-| [Ubuntu*](/snap-tutorials/install-the-daemon/ubuntu) | [Xubuntu](/) |
-| [Zorin OS*](/) | |
-
-**\*** While snapd is pre-installed on these systems, installation instructions can help if you're using older versions, or want to re-install snap after removing it.
+For distributions without the snap daemon pre-installed, use the links on the left for installation instructions.
 
 See [Troubleshooting](/snap-how-to-guides/fix-common-issues/index) for help resolving installation issues.
 
