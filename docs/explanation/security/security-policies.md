@@ -1,7 +1,7 @@
 (snap-explanation-security-security-policies)=
 # Security policies
 
-Without [custom flags at installation](https://snapcraft.io/docs/install-modes), or subsequent [interface connections](/snap-how-to-guides/work-with-snaps/connect-interfaces), snaps remain confined to a restrictive security sandbox, preventing access to system resources outside the snap.
+Without [custom flags at installation](https://snapcraft.io/docs/install-modes), or subsequent [interface connections](/how-to-guides/work-with-snaps/connect-interfaces), snaps remain confined to a restrictive security sandbox, preventing access to system resources outside the snap.
 
 Snap developers need to be aware which system resources their applications depend on from within the snap.
 
@@ -158,7 +158,7 @@ Interfaces can be declared either per-snap or per-command:
 - if declared per-snap, all the commands within the snap have the interface security policy added to each command’s security policy when the interface is connected
 - if declared per-command, only the commands within the snap that declare use of the interface have the specified interface security policy added to them
 
-An interface may either auto-connect upon install, or require the user to manually connect them. Interface connections and disconnections are performed via the  `snap connect`  and  `snap disconnect` commands. See [interfaces](/snap-how-to-guides/work-with-snaps/connect-interfaces) for details.
+An interface may either auto-connect upon install, or require the user to manually connect them. Interface connections and disconnections are performed via the  `snap connect`  and  `snap disconnect` commands. See [interfaces](/how-to-guides/work-with-snaps/connect-interfaces) for details.
 
 ### Policy switch during refresh
 
@@ -185,9 +185,9 @@ To help mitigate any potential issues when a restart is required, _snapd_ will c
 ##  Information security
 Snapd includes the following built-in features that interacts with user information:
 
-* [System configuration options](/snap-how-to-guides/manage-snaps/set-system-options)
-* [Snap specific configurations options](/snap-how-to-guides/work-with-snaps/configure-snaps)
-* [Snapshots](/snap-how-to-guides/manage-snaps/create-data-snapshots) of snap [user data](/t/data-locations/24905#p-94053-user-data)
+* [System configuration options](/how-to-guides/manage-snaps/set-system-options)
+* [Snap specific configurations options](/how-to-guides/work-with-snaps/configure-snaps)
+* [Snapshots](/how-to-guides/manage-snaps/create-data-snapshots) of snap [user data](/t/data-locations/24905#p-94053-user-data)
 * The [home](/) interface allows access to non-hidden files in the user’s home
 * The [personal-files](/) interface allows access to specified files in the user's home
 * [Persisted data on Ubuntu Core devices](/t/data-locations/24905#p-94053-ubuntu-core)
@@ -209,7 +209,7 @@ These guidelines are considered during store approval of permission requests. De
 Sometimes it is also required to extend what is allowed by an existing interface or even to implement a new interface. When in doubt, feel free to consult the [snapd team on the snapcraft forum](https://forum.snapcraft.io/c/snapd/5).
 
 * [How to create a simple confined snap](/)
-* [How to identify which interfaces are required to solve policy violations](/snap-how-to-guides/fix-common-issues/debug-snaps)
+* [How to identify which interfaces are required to solve policy violations](/how-to-guides/fix-common-issues/debug-snaps)
   * [AppArmor violations](/t/18420#heading--apparmor)
   * [Seccomp violations](/t/18420#heading--seccomp)
   * [File permissions and cgroups](/t/18420#heading--permissions)

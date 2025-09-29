@@ -81,5 +81,5 @@ When you move from one revision to the next, the revision-specific contents of *
 
 Revision-specific directories are retained inline with the [refresh-retain](/t/managing-updates/7022#heading--refresh-retain) system option.
 
-Other than the contents of the common directories, a [Snapshot](/snap-how-to-guides/manage-snaps/create-data-snapshots) stores only the data associated with the currently installed revision. See [What a snapshot stores](/t/snapshots/9468#heading--what-is-stored) for more details.
+Other than the contents of the common directories, a [Snapshot](/how-to-guides/manage-snaps/create-data-snapshots) stores only the data associated with the currently installed revision. See [What a snapshot stores](/t/snapshots/9468#heading--what-is-stored) for more details.
 

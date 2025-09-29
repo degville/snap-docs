@@ -1,4 +1,4 @@
-(snap-how-to-guides-work-with-snaps-apps-and-aliases)=
+(how-to-guides-work-with-snaps-apps-and-aliases)=
 # Apps and aliases
 
 When installing a snap, you're often installing an application. If an application uses a GUI, it will be integrated into your desktop environment and it can be launched just like any other GUI application. 

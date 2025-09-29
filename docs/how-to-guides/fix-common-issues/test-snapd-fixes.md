@@ -1,4 +1,4 @@
-(snap-how-to-guides-fix-common-issues-test-snapd-fixes)=
+(how-to-guides-fix-common-issues-test-snapd-fixes)=
 # Test snapd fixes
 
 The snap daemon, _snapd_, is the background service that manages and maintains your snaps.

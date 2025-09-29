@@ -1,7 +1,7 @@
-(snap-how-to-guides-manage-snaps-control-services)=
+(how-to-guides-manage-snaps-control-services)=
 # Control services
 
-The majority of snaps expose their functionality via applications that run on the local system. Most of these applications are started either from [the command line](/snap-how-to-guides/work-with-snaps/apps-and-aliases), the graphical desktop, or as services that run automatically.
+The majority of snaps expose their functionality via applications that run on the local system. Most of these applications are started either from [the command line](/how-to-guides/work-with-snaps/apps-and-aliases), the graphical desktop, or as services that run automatically.
 
 A single snap may provide multiple applications and services. With a database snap, for example, you might expect an interactive client application alongside the service daemon. 
 

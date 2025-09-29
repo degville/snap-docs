@@ -3,7 +3,7 @@
 
 Snap supports a set of system-wide options that allow you to customise your snap or Ubuntu Core environment. These are listed below.
 
-See [Setting system options](/snap-how-to-guides/manage-snaps/set-system-options) for further details on how they they are viewed and configured.
+See [Setting system options](/how-to-guides/manage-snaps/set-system-options) for further details on how they they are viewed and configured.
 
 ---
 
@@ -160,7 +160,7 @@ Available since snapd _2.59_, and only on Ubuntu Core 20 or later.
 
 <h2 id='heading--snapshots-automatic-retention'>system snapshots.automatic.retention</h2>
 
-[Automatic snapshot](/snap-how-to-guides/manage-snaps/create-data-snapshots) retention time is configured with the `snapshots.automatic.retention` system option. The default value is 31 days, and the value needs to be greater than 24 hours:
+[Automatic snapshot](/how-to-guides/manage-snaps/create-data-snapshots) retention time is configured with the `snapshots.automatic.retention` system option. The default value is 31 days, and the value needs to be greater than 24 hours:
 
 ```bash
 snap set system snapshots.automatic.retention=30h

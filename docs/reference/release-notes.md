@@ -24,7 +24,7 @@ This page outlines the release notes of all recent versions of Snapd, summarisin
 
 ## Release policy and schedule
 
-The snapd package updates automatically, and by default, checks for updates 4 times a day. To manually update or modify this process, see [Managing updates](/snap-how-to-guides/work-with-snaps/manage-updates).
+The snapd package updates automatically, and by default, checks for updates 4 times a day. To manually update or modify this process, see [Managing updates](/how-to-guides/work-with-snaps/manage-updates).
 
 [Channels](/snap-explanation/how-snaps-work/channels-and-tracks) are used to distinguish between stable releases, which are always available from the stable channel, and beta and testing releases, which can be installed from the candidate, beta and edge channels.
 

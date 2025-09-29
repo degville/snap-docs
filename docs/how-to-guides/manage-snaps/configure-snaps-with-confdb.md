@@ -1,4 +1,4 @@
-(snap-how-to-guides-manage-snaps-configure-snaps-with-confdb)=
+(how-to-guides-manage-snaps-configure-snaps-with-confdb)=
 # Configure snaps with confdb
 
 _Confdb_ is a configuration system that allows snaps to be configured in fine-grained ways using a [confdb-schema](https://documentation.ubuntu.com/core/reference/assertions/confdb-schema/) assertion.

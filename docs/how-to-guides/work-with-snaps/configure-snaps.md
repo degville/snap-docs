@@ -1,4 +1,4 @@
-(snap-how-to-guides-work-with-snaps-configure-snaps)=
+(how-to-guides-work-with-snaps-configure-snaps)=
 # Configure snaps
 
 Certain snaps, such as those providing a background service, expose  configuration options that can be viewed and changed.

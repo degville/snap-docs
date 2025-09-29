@@ -1,4 +1,4 @@
-(snap-how-to-guides-manage-snaps-create-data-snapshots)=
+(how-to-guides-manage-snaps-create-data-snapshots)=
 # Create data snapshots
 
 A *snapshot* is a copy of the user, system and configuration data stored by *snapd* for one or more snaps on your system. This data can be found in `$HOME/snap/<snap-name>` and `/var/snap/<snap-name>`.
@@ -147,7 +147,7 @@ Set  Snap              Age    Version               Rev   Size   Notes
 
 As with manual snapshots, automatically generated snapshots can be manually deleted with `snap forget <set-id>`.
 
-Automatic snapshot retention time is configured with the `snapshots.automatic.retention` [system option](/snap-how-to-guides/manage-snaps/set-system-options). The value needs to be greater than 24 hours:
+Automatic snapshot retention time is configured with the `snapshots.automatic.retention` [system option](/how-to-guides/manage-snaps/set-system-options). The value needs to be greater than 24 hours:
 
 ```bash
 $ snap set system snapshots.automatic.retention=30h

@@ -1,7 +1,7 @@
-(snap-how-to-guides-manage-snaps-use-resource-quotas)=
+(how-to-guides-manage-snaps-use-resource-quotas)=
 # Use resource quotas
 
-A quota group sets resource limits on [services](/snap-how-to-guides/manage-snaps/control-services) running inside snaps.
+A quota group sets resource limits on [services](/how-to-guides/manage-snaps/control-services) running inside snaps.
 
 Resource limits can be set for the following attributes:
 - **Journal log messages**: as a maximum size for the log and as a rate limit

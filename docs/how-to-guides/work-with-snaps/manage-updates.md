@@ -1,4 +1,4 @@
-(snap-how-to-guides-work-with-snaps-manage-updates)=
+(how-to-guides-work-with-snaps-manage-updates)=
 # Manage updates
 
 Snaps update automatically, and by default, the *snapd* daemon checks for updates 4 times a day. Each update check is called a **refresh**.
@@ -95,7 +95,7 @@ Removed auto-refresh hold on all snaps
 
 ## Control updates with system options
 
-The refresh rate is freely configurable, and can be set to any duration above a lower bound of once every 20 minutes. There are four [system-wide options](/snap-how-to-guides/manage-snaps/set-system-options) that manage how updates are handled:
+The refresh rate is freely configurable, and can be set to any duration above a lower bound of once every 20 minutes. There are four [system-wide options](/how-to-guides/manage-snaps/set-system-options) that manage how updates are handled:
 
 - **refresh.timer**: defines the refresh frequency and schedule
 - **refresh.hold**: delays the next refresh until the defined time and date

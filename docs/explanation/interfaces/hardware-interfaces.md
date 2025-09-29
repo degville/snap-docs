@@ -16,7 +16,7 @@ See [Supported interfaces](/snap-reference/operations/interfaces/index) for a co
 
 The extent of access an interface has is granted through both _connection permissions_ and the specifics of the _interface connections_ being requested.
 
-1. **Connection permissions**: [auto-connect](/snap-explanation/interfaces/interface-auto-connection) | [privileged](/snap-how-to-guides/work-with-snaps/connect-interfaces) | [super-privileged](/snap-reference/operations/interfaces/super-privileged-interfaces)
+1. **Connection permissions**: [auto-connect](/snap-explanation/interfaces/interface-auto-connection) | [privileged](/how-to-guides/work-with-snaps/connect-interfaces) | [super-privileged](/snap-reference/operations/interfaces/super-privileged-interfaces)
    </br>Connection requirements are dependent on which store a developer is using.
      - [Global Snap Store](https://forum.snapcraft.io/t/glossary/14612#heading--snap-store): privileged and super-privileged interfaces require store approval because of the level of trust and permissiveness these interfaces have, which is also why certain interfaces need certain oversight. See [Permission requests](/) for further details.
     * [Dedicated Snap Store](/t/glossary/14612#heading--dedicated): trust and permissiveness are now  the responsibility of the store owner, and many privileged interface connections can be self-served and defined within the dedicated snap store and the device context.

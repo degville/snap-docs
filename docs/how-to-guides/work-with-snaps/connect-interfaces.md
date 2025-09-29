@@ -1,4 +1,4 @@
-(snap-how-to-guides-work-with-snaps-connect-interfaces)=
+(how-to-guides-work-with-snaps-connect-interfaces)=
 # Connect interfaces
 
 [Interfaces](/snap-explanation/interfaces/all-about-interfaces) allow (or deny) access to a resource outside of a snap's confinement.
@@ -181,7 +181,7 @@ sudo snap disconnect vlc:audio-record
 
 <h3 id='heading--forget'>Forget manual disconnections</h3>
 
-When an automatic connection ([see above](#heading--auto-connections)) is manually disconnected, its disconnected state is retained after a [snap refresh](/snap-how-to-guides/work-with-snaps/manage-updates). This state is even stored **after a snap has been removed**, including removal with the `--purge` option.
+When an automatic connection ([see above](#heading--auto-connections)) is manually disconnected, its disconnected state is retained after a [snap refresh](/how-to-guides/work-with-snaps/manage-updates). This state is even stored **after a snap has been removed**, including removal with the `--purge` option.
 
 The `--forget` flag can be added to the disconnect command to reset this behaviour, and consequently, re-enable the automatic re-connection after a snap refresh.
 

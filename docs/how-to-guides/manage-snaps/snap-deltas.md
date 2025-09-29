@@ -1,4 +1,4 @@
-(snap-how-to-guides-manage-snaps-snap-deltas)=
+(how-to-guides-manage-snaps-snap-deltas)=
 # Snap deltas
 
 A snap delta contains only the differences between one revision of a snap and another. They're used to save bandwidth when downloading and uploading snap package updates to the [Snap Store](/t/glossary/14612#heading--snap-store).

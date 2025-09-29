@@ -145,7 +145,7 @@ An interface enables resources from one snap to be shared with another and with 
 
 For a snap to use an interface, its developer needs to have first defined its corresponding plugs and slots within a snap’s [snapcraft.yaml](/) file.
 
-See [Interfaces](/snap-explanation/interfaces/all-about-interfaces) and [Interface management](/snap-how-to-guides/work-with-snaps/connect-interfaces) for more details.
+See [Interfaces](/snap-explanation/interfaces/all-about-interfaces) and [Interface management](/how-to-guides/work-with-snaps/connect-interfaces) for more details.
 
 <h3 id='heading--layout'>Launchpad</h3>
 
@@ -217,7 +217,7 @@ Snaps update automatically, and by default, the snapd daemon checks for updates 
 
 When, and how often, these updates occur can be modified with the snap command. Updates can be set to occur on Friday at midnight, for example, or for specific days of the month, such as only the third Monday, or even the last Friday of the month, between 23:00 to 01:00 the next day.
 
-See [Managing updates](/snap-how-to-guides/work-with-snaps/manage-updates) for further details.
+See [Managing updates](/how-to-guides/work-with-snaps/manage-updates) for further details.
 
 <h3 id='heading--remote-build'>remote build</h3>
 
@@ -309,7 +309,7 @@ A  *snapshot*  is a copy of the user, system and configuration data stored by  *
 
 Snapshots are generated manually with the  `snap save`  command and automatically when a snap is removed. A snapshot can be used to backup the state of your snaps, revert snaps to a previous state and to restore a fresh snapd installation to a previously saved state.
 
-See [Snapshots](/snap-how-to-guides/manage-snaps/create-data-snapshots) for further details.
+See [Snapshots](/how-to-guides/manage-snaps/create-data-snapshots) for further details.
 
 <h3 id='heading--snap-store'>Snap Store</h3>
 
@@ -337,7 +337,7 @@ See [Tracks](/t/channels/551#heading--tracks) for more details.
 
 <h3 id='heading--transitional-interfaces'>Transitional interface</h3>
 
-A _transitional interface_ is an [interface](/snap-how-to-guides/work-with-snaps/connect-interfaces) that can be used by a trusted snap to access traditional Linux desktop environments that were not designed to integrate with [snap confinement](/snap-explanation/security/snap-confinement). These interfaces will become deprecated as replacement or modified technologies that enforce strong application isolation become available.
+A _transitional interface_ is an [interface](/how-to-guides/work-with-snaps/connect-interfaces) that can be used by a trusted snap to access traditional Linux desktop environments that were not designed to integrate with [snap confinement](/snap-explanation/security/snap-confinement). These interfaces will become deprecated as replacement or modified technologies that enforce strong application isolation become available.
 
 <h3 id='heading--ubuntu-core'>Ubuntu Core</h3>
 

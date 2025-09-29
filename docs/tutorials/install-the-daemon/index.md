@@ -21,7 +21,7 @@ The snap daemon (snapd) is pre-installed and ready to go on the following:
 
 For distributions without the snap daemon pre-installed, use the links on the left for installation instructions.
 
-See [Troubleshooting](/snap-how-to-guides/fix-common-issues/index) for help resolving installation issues.
+See [Troubleshooting](/how-to-guides/fix-common-issues/index) for help resolving installation issues.
 
 
 ```{toctree}

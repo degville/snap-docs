@@ -3,7 +3,7 @@
 
 The REST API provides access to snapd's state and many of its key functions, as listed below.
 
-For general information on how to use the API, including how to access it, its requests and responses, results fields and error types, see [Using the REST API](/snap-how-to-guides/manage-snaps/use-the-rest-api).
+For general information on how to use the API, including how to access it, its requests and responses, results fields and error types, see [Using the REST API](/how-to-guides/manage-snaps/use-the-rest-api).
 
 > As snapd development progresses, changes that are deemed backwards-compatible, such as adding methods or verbs, will not change an endpoint. Conversely, significant updates may necessitate a new endpoint being created.
 
@@ -2129,7 +2129,7 @@ Example:
 
 <h2 id='heading--quotas'>GET /v2/quotas</h2>
 
-* Description: get all [Quota groups](/snap-how-to-guides/manage-snaps/use-resource-quotas)
+* Description: get all [Quota groups](/how-to-guides/manage-snaps/use-resource-quotas)
 * Access: open
 * Operation: sync
 * Return: a list of quota groups and the constraints they contain
@@ -2727,7 +2727,7 @@ Keys can be dotted, the `null` value can be used to unset configuration options.
 * Description: get a list of snapshots
 * Access: open
 * Operation: sync
-* Return: list containing metadata for stored [snapshots](/snap-how-to-guides/manage-snaps/create-data-snapshots)
+* Return: list containing metadata for stored [snapshots](/how-to-guides/manage-snaps/create-data-snapshots)
 
 Returns an array containing all the snapshot metadata stored on the system.
 

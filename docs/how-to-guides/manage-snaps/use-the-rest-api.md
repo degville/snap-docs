@@ -1,4 +1,4 @@
-(snap-how-to-guides-manage-snaps-use-the-rest-api)=
+(how-to-guides-manage-snaps-use-the-rest-api)=
 # Use the REST API
 
 The REST API provides access to snapd's state and many of its key functions.

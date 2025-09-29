@@ -1,4 +1,4 @@
-(snap-how-to-guides-manage-snaps-using-components)=
+(how-to-guides-manage-snaps-using-components)=
 # Using components
 
 A snap *component* is part of a snap that has been declared as optional. A snap component may then be either installed or not installed alongside its host snap.

@@ -1,4 +1,4 @@
-(snap-how-to-guides-work-with-snaps-index)=
+(how-to-guides-work-with-snaps-index)=
 # Work-With-Snaps
 
 ```{toctree}

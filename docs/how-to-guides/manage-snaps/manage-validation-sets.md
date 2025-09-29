@@ -1,4 +1,4 @@
-(snap-how-to-guides-manage-snaps-manage-validation-sets)=
+(how-to-guides-manage-snaps-manage-validation-sets)=
 # Manage validation sets
 
 A [validation sets](/snap-explanation/how-snaps-work/validation-sets) ensures only specific snaps are installed, and optionally, only specific snaps at fixed [revisions](/t/glossary/14612#heading--revision).

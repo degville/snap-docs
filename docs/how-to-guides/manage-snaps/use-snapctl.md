@@ -1,4 +1,4 @@
-(snap-how-to-guides-manage-snaps-use-snapctl)=
+(how-to-guides-manage-snaps-use-snapctl)=
 # Use snapctl
 
 The `snapctl` tool is bundled with _snapd_ to provide specific environmental feedback and a limited set of controls from **within the context** of a snap's execution environment in relation to snapd. It can be used, for example, to retrieve and set snap configuration options, check the status of a running snap, and reboot an Ubuntu Core 20 environment.
@@ -23,7 +23,7 @@ From within a snap, _snapctl_ can do the following:
 
 <h2 id='heading--configuration-options'>Configuration options</h2>
 
-A snap's configuration options can be queried and altered with the `snapctl get`, `snapctl set` and `snapctl unset` commands. These work very similar to the analogous [`snap get/set/..` commands](/snap-how-to-guides/work-with-snaps/configure-snaps) outside the snap. The main difference is that using these commands from within a snap will *not* trigger [the `configure` hook](/t/supported-snap-hooks/3795#heading--the-configure-hook).
+A snap's configuration options can be queried and altered with the `snapctl get`, `snapctl set` and `snapctl unset` commands. These work very similar to the analogous [`snap get/set/..` commands](/how-to-guides/work-with-snaps/configure-snaps) outside the snap. The main difference is that using these commands from within a snap will *not* trigger [the `configure` hook](/t/supported-snap-hooks/3795#heading--the-configure-hook).
 
 The `snapctl` command uses the same get, set and unset syntax as the snap command:
 

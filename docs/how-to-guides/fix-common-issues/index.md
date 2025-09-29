@@ -1,4 +1,4 @@
-(snap-how-to-guides-fix-common-issues-index)=
+(how-to-guides-fix-common-issues-index)=
 # Fix-Common-Issues
 
 [quote]
