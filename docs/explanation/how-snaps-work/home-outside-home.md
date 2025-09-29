@@ -1,5 +1,5 @@
 (interfaces-home-outside-home)=
-# home-outside-home
+# Home outside home
 
 The snap daemon (snapd) looks for a user's home directory ($HOME) under `/home` on the local filesystem. However, from _snapd 2.59_ onwards, the snap daemon can access an additional location using the `homedirs` [system option](/t/system-options/29860#heading--home-dirs):
 
