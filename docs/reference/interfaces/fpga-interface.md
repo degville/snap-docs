@@ -1,0 +1,27 @@
+(interfaces-fpga-interface)=
+# The fpga interface
+
+The `fpga` interface allows access to the [FPGA subsystem](https://www.kernel.org/doc/html/latest/driver-api/fpga/index.html). 
+
+```{tip}
+
+See [Interface management](/) and [Supported interfaces](/interfaces/index) for further details on how interfaces are used.
+```
+
+---
+
+<h2 id='heading--dev-details'>Developer details </h2>
+
+**Auto-connect**: no
+**Allow-installation**: yes
+
+Devices:
+`/dev/fpga[0-9]* rw,`
+
+
+### Code examples
+
+The test code can be found in the snapd repository: https://github.com/snapcore/snapd/blob/master/interfaces/builtin/fpga_test.go
+
+The source code for the interface is in the snapd repository:[https://github.com/snapcore/snapd/blob/master/interfaces/builtin/fpga.go](https://github.com/snapcore/snapd/blob/master/interfaces/builtin/fpga.go)
+
