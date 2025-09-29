@@ -1,4 +1,4 @@
-(snap-tutorials-install-the-daemon-debian)=
+(tutorials-install-the-daemon-debian)=
 # Install snap on Debian
 
 On Debian, snap can be installed directly from the command line:

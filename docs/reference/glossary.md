@@ -22,7 +22,7 @@ dangerous
 
 There are a significant number of terms and definitions that are unique to the snap, snapd, and snapcraft ecosystem. This page defines the terminology and other terms touched by these tools and links to further information when required.
 
-If you're new to using snaps, take a look at [Getting started](/snap-tutorials/get-started), and if you're looking to build your own snaps, take a look at the [Snapcraft overview](/).
+If you're new to using snaps, take a look at [Getting started](/tutorials/get-started), and if you're looking to build your own snaps, take a look at the [Snapcraft overview](/).
 
 ## Terms and definitions
 
@@ -281,7 +281,7 @@ A snap series **is not correlated** to an Ubuntu series, such as _18_ for Ubuntu
 
 Snaps are app packages for desktop, cloud and IoT that are easy to install, secure, cross-platform and dependency-free, and _snap_ is both the command line interface and the application package format. The command is used to install and remove snaps and interact with the wider snap ecosystem.
 
-See [Getting started](/snap-tutorials/get-started) for more details.
+See [Getting started](/tutorials/get-started) for more details.
 
 <h3 id='heading--snapcraft'>snapcraft</h3>
 

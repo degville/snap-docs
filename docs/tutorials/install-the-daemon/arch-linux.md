@@ -1,4 +1,4 @@
-(snap-tutorials-install-the-daemon-arch-linux)=
+(tutorials-install-the-daemon-arch-linux)=
 # Install snap on Arch Linux
 
 On Arch Linux, *snap* can be installed from the [Arch User Repository (AUR)](https://aur.archlinux.org/packages/snapd/).

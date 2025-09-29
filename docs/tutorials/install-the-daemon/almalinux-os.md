@@ -1,4 +1,4 @@
-(snap-tutorials-install-the-daemon-almalinux-os)=
+(tutorials-install-the-daemon-almalinux-os)=
 # Install snap on AlmaLinux OS
 
 Snap is available for [AlmaLinux OS](https://almalinux.org/), a Linux distribution that’s being actively developed to provide binary compatibility with Red Hat Enterprise Linux (RHEL) and 

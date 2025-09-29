@@ -1,4 +1,4 @@
-(snap-tutorials-install-the-daemon-rocky-linux)=
+(tutorials-install-the-daemon-rocky-linux)=
 # Rocky Linux
 
 Snap is available for [Rocky Linux 8](https://rockylinux.org/), a Linux distribution that's being actively developed to provide binary compatibility with Red Hat Enterprise Linux (RHEL).

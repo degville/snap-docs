@@ -1,4 +1,4 @@
-(snap-tutorials-install-the-daemon-linux-mint)=
+(tutorials-install-the-daemon-linux-mint)=
 # Install snap on Linux Mint
 
 Snap is available for the latest release of Linux Mint, 22.1 (Xia), and for older releases from Linux Mint 18.2 (Sonya) onwards.

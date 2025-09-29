@@ -10,7 +10,7 @@ This document is a work-in-progress and will/can be updated to link to other pag
 
 [/quote]
 
-Snaps run on, and are built for, a diverse and constantly evolving set of [operating systems](/snap-tutorials/install-the-daemon/index) and [embedded devices](https://ubuntu.com/core/docs/supported-platforms#heading--supported).
+Snaps run on, and are built for, a diverse and constantly evolving set of [operating systems](/tutorials/install-the-daemon/index) and [embedded devices](https://ubuntu.com/core/docs/supported-platforms#heading--supported).
 
 The vast majority of our users and developers experience very few issues, but any technology this complex and diverse will likely encounter some issues and incompatibilities.
 
@@ -96,7 +96,7 @@ See [Extremely slow snap downoads](https://forum.snapcraft.io/t/extremely-slow-s
 
 When the snap daemon is installed, its executable components are added to the system path ($PATH). If this doesn't happen correctly, a warning is issued stating that snapd cannot be found.
 
-The first thing to do is check installation instructions for the specific operating system. See [Installing snapd](/snap-tutorials/install-the-daemon/index) for further details.
+The first thing to do is check installation instructions for the specific operating system. See [Installing snapd](/tutorials/install-the-daemon/index) for further details.
 
 Linux distributions differ, but most will need a restart after snapd has been installed to refresh paths and system security profiles. 
 

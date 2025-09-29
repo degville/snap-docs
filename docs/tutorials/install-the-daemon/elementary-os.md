@@ -1,4 +1,4 @@
-(snap-tutorials-install-the-daemon-elementary-os)=
+(tutorials-install-the-daemon-elementary-os)=
 # Install snap on Elementary OS
 
 Snap can be installed on elementary OS from the command line. Open *Terminal* from the Applications launcher and type the following:

@@ -1,4 +1,4 @@
-(snap-tutorials-install-the-daemon-fedora)=
+(tutorials-install-the-daemon-fedora)=
 # Install snap on Fedora
 
 Snap can be installed on Fedora from the command line:

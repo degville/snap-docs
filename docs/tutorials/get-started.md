@@ -1,4 +1,4 @@
-(snap-tutorials-get-started)=
+(tutorials-get-started)=
 # Get started
 
 A snap is a bundle of one or more applications that works without dependencies or modification across many different Linux distributions. Snaps are discoverable and installable from the [Snap Store](https://snapcraft.io/store), a public app store with an audience of millions.
