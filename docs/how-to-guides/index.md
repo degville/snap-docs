@@ -1,5 +1,5 @@
 (how-to-guides-index)=
-# Snap-How-To-Guides
+# How-to guides
 
 Our _How-to_ guides help you achieve a specific goal while working with snaps. They may require you to understand and adapt the steps to fit your specific requirements.
 

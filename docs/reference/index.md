@@ -1,5 +1,5 @@
 (reference-index)=
-# Snap-Reference
+# Reference
 
 This *Reference* section is for when you need to know which options can be used, what functions the API supports, which environment variables can be accessed and the contents of *gadget.yaml*. 
 

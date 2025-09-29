@@ -1,5 +1,5 @@
 (explanation-index)=
-# Snap-Explanation
+# Explanation
 
 Our explanatory and conceptual guides are written to provide a better understanding of how snap and the snap daemon (_snapd_) work. They enable you to expand your knowledge and become better at both building snaps and getting the most out of the snap ecosystem.
 
