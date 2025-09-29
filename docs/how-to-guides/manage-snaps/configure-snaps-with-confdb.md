@@ -7,7 +7,7 @@ This guide will detail the steps required to use confdb, as well as explore some
 
 We'll use an example where one snap creates a Wi-Fi configuration that another snap can view.
 
-> :information_source: Confdb is currently considered an [Experimental feature](https://forum.snapcraft.io/t/experimental-features/41241) and implementation details may change as development progresses.
+> ⓘ  Confdb is currently considered an [Experimental feature](https://forum.snapcraft.io/t/experimental-features/41241) and implementation details may change as development progresses.
 
 ## Prerequisites
 
