@@ -5,7 +5,7 @@ Snap is available for [CentOS 9 Stream](https://www.centos.org/), CentOS 8 Strea
 
 The packages for CentOS 8/9 and CentOS 7 are in each distribution's respective [Extra Packages for Enterprise Linux](https://fedoraproject.org/wiki/EPEL) (EPEL) repository. The instructions for adding this repository diverge slightly between CentOS 8/9 and CentOS 7, which is why they're listed separately below.
 
-> :information_source: If you need to know which version of CentOS you're running, type `cat /etc/centos-release`.
+> ⓘ  If you need to know which version of CentOS you're running, type `cat /etc/centos-release`.
 
 If you don't already have the CentOS repository added to your distribution, it can be added as follows:
 
@@ -17,7 +17,7 @@ The EPEL repository can be added to a CentOS 8/9 Stream system with the followin
 sudo dnf install epel-release
 sudo dnf upgrade
 ```
- > :information_source: If you're interested in understanding how these packages are built, see  [Building a snap RPM for Red Hat Enterprise Linux (RHEL) 8](/interfaces/building-snap-rpms-on-rhel).
+ > ⓘ  If you're interested in understanding how these packages are built, see  [Building a snap RPM for Red Hat Enterprise Linux (RHEL) 8](/interfaces/building-snap-rpms-on-rhel).
 
 [/details]
 

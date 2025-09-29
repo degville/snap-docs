@@ -22,7 +22,7 @@ The vast majority of snaps should be able to attain *strict* confinement, but th
 
 As a a result of these requirements, publishing a classic snap requires a [review and approval process](https://forum.snapcraft.io/t/process-for-reviewing-classic-confinement-snaps/1460), alongside the manual addition of `--classic` to the *snap* command when the snap is installed. 
 
-> :information_source: See [Snap confinement](/) for general details on confinement levels and the implications for the user.
+> ⓘ  See [Snap confinement](/) for general details on confinement levels and the implications for the user.
 
 ## From *devmode* to *strict*
 
@@ -36,7 +36,7 @@ confinement: strict
 ```
 
 [quote]
-:information_source: If you are working with an [Electron app](/interfaces/electron-apps), you will not have a snapcraft.yaml file. Set the `confinement` [property](https://www.electron.build/configuration/snap), under the top-level `snap` key in your package.json file. This defaults to `strict`.
+ⓘ  If you are working with an [Electron app](/interfaces/electron-apps), you will not have a snapcraft.yaml file. Set the `confinement` [property](https://www.electron.build/configuration/snap), under the top-level `snap` key in your package.json file. This defaults to `strict`.
 [/quote]
 
 You will also likely need to specify some interfaces. These are declarations that tell the system to give permission for a specific task, such as accessing a webcam or binding to a network port. You can find a list of interfaces and their intended purpose in the [reference documentation](https://forum.snapcraft.io/t/supported-interfaces/7744).

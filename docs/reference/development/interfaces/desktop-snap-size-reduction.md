@@ -55,7 +55,7 @@ You can remove those libraries manually by excluding them using the [`stage`]() 
 1. Replace `<CORE-SNAP>` in the `build-snaps` and `override-prime` sections with the `base` that you're using.
 1. List all your content snaps that you use in the `build-snaps` and `override-prime` sections.
 
-> :information_source: If your snap uses extensions, you can use the `snapcraft expand-extensions` command to see which content snaps the extension will add.
+> ⓘ  If your snap uses extensions, you can use the `snapcraft expand-extensions` command to see which content snaps the extension will add.
 
 > ⓘ See [Desktop applications](/interfaces/desktop-applications) for more information on how to snap a desktop application.
 

@@ -3,7 +3,7 @@
 
 The `kde-neon` extension helps developers to create snaps that use [Qt 5](https://doc.qt.io/qt-5/), with or without the add-on [KDE Frameworks 5](https://kde.org/products/frameworks/) libraries.
 
-> :information_source: Snapcraft extensions simplify and streamline the process of adding commonly used elements to a snap, such as libraries, themes and environment variables. See [Snapcraft extensions](/) for further details.
+> ⓘ  Snapcraft extensions simplify and streamline the process of adding commonly used elements to a snap, such as libraries, themes and environment variables. See [Snapcraft extensions](/) for further details.
 
 The extension is maintained and supported for use with the `core22` base snap. Whilst older versions of the extension are still available for `core20` and `core18`, these bases are no longer actively supported.
 

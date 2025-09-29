@@ -23,7 +23,7 @@ Uptime tracking for these end-points can be found on [https://status.snapcraft.i
  * *.cdn.snapcraft.io:443  [_deprecated_]
  * public.apps.ubuntu.com:443 [_deprecated_]
 
-> :information_source:  We are currently migrating some services, and consequently, the above deprecated domains remain active until the transition is complete. We will update the list when they are no longer used.
+> ⓘ   We are currently migrating some services, and consequently, the above deprecated domains remain active until the transition is complete. We will update the list when they are no longer used.
 
 As of 2021-10-25, the *.snapcraftcontent.com domains are the following:
 

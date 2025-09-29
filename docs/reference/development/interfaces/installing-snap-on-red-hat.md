@@ -5,7 +5,7 @@ Snap is available for [Red Hat Enterprise Linux (RHEL) 9.x](https://developers.r
 
 The packages for RHEL are in the distribution's respective [Extra Packages for Enterprise Linux](https://fedoraproject.org/wiki/EPEL) (EPEL) repository. The instructions for adding this repository diverge slightly between RHEL9, RHEL 8 and RHEL 7, which is why they're listed separately below.
 
-> :information_source: If you need to know which version of Red Hat you're running, type `cat /etc/redhat-release`.
+> ⓘ  If you need to know which version of Red Hat you're running, type `cat /etc/redhat-release`.
 
 If you don't already have the EPEL repository added to your distribution, it can be added as follows:
 
@@ -17,7 +17,7 @@ The EPEL repository can be added to a RHEL 9 system with the following command:
 sudo dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-9.noarch.rpm
 sudo dnf upgrade
 ```
- > :information_source: If you're interested in understanding how these packages are built, see  [Building a snap RPM for Red Hat Enterprise Linux (RHEL) 8](/interfaces/building-snap-rpms-on-rhel).
+ > ⓘ  If you're interested in understanding how these packages are built, see  [Building a snap RPM for Red Hat Enterprise Linux (RHEL) 8](/interfaces/building-snap-rpms-on-rhel).
 
 [/details]
 
@@ -29,7 +29,7 @@ The EPEL repository can be added to a RHEL 8 system with the following command:
 sudo dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
 sudo dnf upgrade
 ```
- > :information_source: If you're interested in understanding how these packages are built, see  [Building a snap RPM for Red Hat Enterprise Linux (RHEL) 8](/interfaces/building-snap-rpms-on-rhel).
+ > ⓘ  If you're interested in understanding how these packages are built, see  [Building a snap RPM for Red Hat Enterprise Linux (RHEL) 8](/interfaces/building-snap-rpms-on-rhel).
 
 [/details]
 

@@ -52,7 +52,7 @@ $ sudo curl -sS --unix-socket /run/snapd.socket http://localhost/v2/apps \
 }
 ```
 
-> :information_source: HTTPS connections over a TCP socket are under consideration for a future release.
+> ⓘ  HTTPS connections over a TCP socket are under consideration for a future release.
 
 <h2 id='heading--authentication'>Authentication</h2>
 

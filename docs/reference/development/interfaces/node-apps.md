@@ -22,7 +22,7 @@ Snaps address these gaps while building upon the work you've already done to tea
 
 Ready to get started? By the end of this guide, you'll understand how to make a snap of your Node.js app that can be published in the [Snap Store](https://snapcraft.io/store), showcasing it to millions of Linux users.
 
-> :information_source: For a brief overview of the snap creation process, including how to install *snapcraft* and how it's used, see [Snapcraft overview](/). For a more comprehensive breakdown of the steps involved, take a look at [Creating a snap](/).
+> ⓘ  For a brief overview of the snap creation process, including how to install *snapcraft* and how it's used, see [Snapcraft overview](/). For a more comprehensive breakdown of the steps involved, take a look at [Creating a snap](/).
 
 ## Getting started
 

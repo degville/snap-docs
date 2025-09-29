@@ -24,7 +24,7 @@ $ sudo snap install core
 core 16-2.45.2 from Canonical✓ installed
 ```
 
-> :information_source: Note: some snaps require new snapd features and will show an error such as `snap "lxd" assumes unsupported features"` during install. You can solve this issue by making sure the core snap is installed (`snap install core`) and it's the latest version (`snap refresh core`).
+> ⓘ  Note: some snaps require new snapd features and will show an error such as `snap "lxd" assumes unsupported features"` during install. You can solve this issue by making sure the core snap is installed (`snap install core`) and it's the latest version (`snap refresh core`).
 
 
 To test your system, install the [hello-world](https://snapcraft.io/hello-world) snap and make sure it runs correctly:

@@ -31,7 +31,7 @@ Consumers of this interface require a [snap declaration](https://forum.snapcraft
   Access to `/dev` device nodes requires both AppArmor policy and device control group inclusion, but the _system-files_ interface does not have enough information to generate the necessary policy to enable these use cases. As such, purpose-specific interfaces should be used instead, such as  [block-devices](/interfaces/block-devices-interface) or [raw-volume](/interfaces/raw-volume-interface).
 
 
-> :information_source: Do not share data between snaps
+> ⓘ  Do not share data between snaps
 </br>While `system-files` can be used to share data with another snap, such as within a configuration file, this behaviour is not recommended. The [content interface](/interfaces/content-interface) should be used instead.
 
 

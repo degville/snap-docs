@@ -70,7 +70,7 @@ LD_PRELOAD=$SNAP_COMMON/wraplib.so $SNAP/usr/bin/setpriv \
 
 Some applications may try to drop privileges themselves using `initgroups()` which under the hood uses `setgroups()` in a way that is blocked by the sandbox. In this case, the snap would need to use the LD_PRELOAD method. See the [test-setpriv snap](https://git.launchpad.net/~jdstrand/+git/test-setpriv/tree/) for how to use `setpriv` with and without LD_PRELOAD.
 
-> :information_source: Future releases of snapd will support setting `User=snap_daemon` and `Group=snap_daemon` in the systemd unit file.
+> ⓘ  Future releases of snapd will support setting `User=snap_daemon` and `Group=snap_daemon` in the systemd unit file.
 
 ## Process management via signals
 

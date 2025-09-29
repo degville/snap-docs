@@ -20,7 +20,7 @@ private    {...}
 The `{...}` in the output indicates that there are further options beneath the current key name level.
 
 [quote]
-:information_source: If there are no configuration options, you will see `error: snap <snap name> has no configuration`.
+ⓘ  If there are no configuration options, you will see `error: snap <snap name> has no configuration`.
 [/quote]
 
 To explore configuration options, append the key name to the *get* command:
@@ -105,5 +105,5 @@ Similarly, if the configuration update process takes longer than a reasonable am
 
 
 
-> :information_source: For background details on how snap developers set configuration options, see [Adding snap configuration](/) and [The configure hook](/t/supported-snap-hooks/3795#heading--the-configure-hook).
+> ⓘ  For background details on how snap developers set configuration options, see [Adding snap configuration](/) and [The configure hook](/t/supported-snap-hooks/3795#heading--the-configure-hook).
 

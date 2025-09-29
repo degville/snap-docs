@@ -121,7 +121,7 @@ snap set system resilience.vitality-hint=snapA,snapB,snapC
 In the above example, services inside `snapA` are the **least likely** to be killed in _out of memory_ situations, followed by services in `snapB`, services in `snapC`, and then the services in all the other snaps not referenced by the `vitality-hint` option.
 
 ```{note}
-:information_source: Snaps added to `resilience.vitality-hint` are still _more likely_ to be killed than the snap daemon, snapd, itself.
+ⓘ  Snaps added to `resilience.vitality-hint` are still _more likely_ to be killed than the snap daemon, snapd, itself.
 ```
 
 <h2 id="heading--console">system service.console-conf.disable</h2>
@@ -449,7 +449,7 @@ snap set system watchdog.runtime-timeout=1m
 ```
 
 [note type=warning"]
-:information_source:  **Raspberry Pi timer limitations**</br>
+ⓘ   **Raspberry Pi timer limitations**</br>
 
 The Raspberry Pi hardware watchdog timer is limited to a maximum timeout of 15 seconds.
 ```

@@ -5,7 +5,7 @@ These are the release notes for [Snapcraft 3.7](https://github.com/snapcore/snap
 
 For general details, including installation instructions, see [Snapcraft overview](/), or take a look at [Snapcraft release notes](/) for other *Snapcraft* releases.
 
-> :information_source: Many of the improvements in this release are thanks to the great work done in collaboration with the attendees of the [2019 Snapcraft Summit](https://snapcraft.io/blog/snapcraft-summit-montreal) that took place in Montreal.
+> ⓘ  Many of the improvements in this release are thanks to the great work done in collaboration with the attendees of the [2019 Snapcraft Summit](https://snapcraft.io/blog/snapcraft-summit-montreal) that took place in Montreal.
 
 ## New *core* features
 

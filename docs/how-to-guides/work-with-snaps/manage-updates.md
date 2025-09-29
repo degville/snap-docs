@@ -178,7 +178,7 @@ sudo snap set system refresh.metered=null
 By default, *refresh.metered* is enabled when a metered connection is detected.
 
 [quote]
-:information_source: refresh.metered is available in snap 2.33 and later.
+ⓘ  refresh.metered is available in snap 2.33 and later.
 [/quote]
 
 <a name="retain"></a>
@@ -193,7 +193,7 @@ sudo snap set system refresh.retain=3
 The *refresh.retain* value can be a number between 2 and 20. The default is `refresh.retain=3` on Ubuntu Core systems and `refresh.retain=2` on *classic* Ubuntu systems, such as those running an Ubuntu LTS release.
 
 [quote]
-:information_source: refresh.retain is available in snap 2.34 and later.
+ⓘ  refresh.retain is available in snap 2.34 and later.
 [/quote]
 
 ## Manual updates

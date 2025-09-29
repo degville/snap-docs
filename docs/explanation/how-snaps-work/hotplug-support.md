@@ -5,13 +5,13 @@ Hotplug support gives snaps the ability to integrate with Linux's [USB hotpluggi
 
 Developers wishing to add hotplug functionality to their own interfaces should see [Developing hotplug interfaces](/interfaces/developing-hotplug-interfaces).
 
-> :information_source: Hotplug support is currently [under active development](/interfaces/snapd-roadmap), and will become widely available with a future release of snapd. It can be tested by installing *snapd* from its [edge channel](/) (see below).
+> ⓘ  Hotplug support is currently [under active development](/interfaces/snapd-roadmap), and will become widely available with a future release of snapd. It can be tested by installing *snapd* from its [edge channel](/) (see below).
 
 Initially, only USB serial port adapters using the [serial-port interface](/interfaces/serial-port-interface) are supported. Other types of device, such as USB cameras, will be added in the future.
 
 In addition to creating a slot, snapd's hotplug support also remembers connections. If the device is unplugged, its slot disappears from the system. When the device is reconnected, its slot and connections are restored. 
 
->  :information_source: *snapd* tracks devices by matching specific udev attributes. This means that even when a device is reconnected with a different udev path, such when it uses a different USB port or gets a non-deterministic enumeration by the kernel, it is still recognised as the old device by snapd and its old connections are restored with updated attributes.
+>  ⓘ  *snapd* tracks devices by matching specific udev attributes. This means that even when a device is reconnected with a different udev path, such when it uses a different USB port or gets a non-deterministic enumeration by the kernel, it is still recognised as the old device by snapd and its old connections are restored with updated attributes.
 
 ### Enabling hotplug
 

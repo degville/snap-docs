@@ -22,7 +22,7 @@ You're also left with the question of how to update ROS 2 and your application o
 
 Ready to get started? By the end of this guide, you'll understand how to make a snap of your app that can be published in the [Snap Store](https://snapcraft.io/store), showcasing it to millions of Linux users.
 
-> :information_source: For a brief overview of the snap creation process, including how to install *snapcraft* and how it's used, see [Snapcraft overview](/). For a more comprehensive breakdown of the steps involved, take a look at [Creating a snap](/).
+> ⓘ  For a brief overview of the snap creation process, including how to install *snapcraft* and how it's used, see [Snapcraft overview](/). For a more comprehensive breakdown of the steps involved, take a look at [Creating a snap](/).
 
 ## Getting started
 There are currently four supported bases for ROS 2, core18, core20, core22 and core24.

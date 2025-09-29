@@ -14,7 +14,7 @@ $ sudo dnf upgrade
 
 If you use a root user rather than _sudo_ to handle security privileges, run `su` first and remove _sudo_ from subsequent commands.
 
- > :information_source: If you're interested in understanding how these packages are built, see  [Building a snap RPM for Red Hat Enterprise Linux (RHEL) 8](/).
+ > ⓘ  If you're interested in understanding how these packages are built, see  [Building a snap RPM for Red Hat Enterprise Linux (RHEL) 8](/).
 
 ### Installing snapd
 

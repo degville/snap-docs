@@ -52,7 +52,7 @@ For further details on packaging, see [How to package and upload a snap with com
 Just like snaps, components have [revisions](/explanation/how-snaps-work/revisions). If a snap defines components, each snap file uploaded to the store will be matched to components with their own specific revisions 
 This forms a unique tuple between the snap and each respective component. 
 
-> :information_source: While it will become possible to update components in a tuple, the snapcraft functionality required to individually upload an updated component has not yet been implemented.
+> ⓘ  While it will become possible to update components in a tuple, the snapcraft functionality required to individually upload an updated component has not yet been implemented.
 
 ## Component hooks
 

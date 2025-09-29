@@ -14,7 +14,7 @@ Components can be installed with the snap install command:
 snap install my-snap+comp1+comp2
 ```
 
-> :information_source: The syntax `<snap_name>+<comp_1>+...+<comp_N>` will be used to refer to components from the command line.
+> ⓘ  The syntax `<snap_name>+<comp_1>+...+<comp_N>` will be used to refer to components from the command line.
 
 The above command will install _my-snap_ alongside components _comp1_ and _comp2_. If the snap is already installed, the command will instead install only the missing components.
 

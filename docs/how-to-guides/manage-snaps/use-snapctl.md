@@ -92,7 +92,7 @@ If these commands are run from a hook, the components will be installed/removed 
 
 <h2 id='heading--health-state'>Health state</h2>
 
-> :information_source: Health reporting is under development and its capabilities and syntax may change.
+> ⓘ  Health reporting is under development and its capabilities and syntax may change.
 
 Snap developers can use `snapctl set-health` to provide feedback on the operational state, or health, of a snap.
 

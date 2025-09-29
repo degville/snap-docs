@@ -1,7 +1,7 @@
 (reference-development-yaml-schemas-the-snap-format)=
 # The snap format
 
-> :information_source: This page documents the format of the **built** snaps. See [The snapcraft format](/) for more information about the `snapcraft.yaml` file used to build these snaps. 
+> ⓘ  This page documents the format of the **built** snaps. See [The snapcraft format](/) for more information about the `snapcraft.yaml` file used to build these snaps. 
 
 A snap is a *SquashFS* file carrying content alongside metadata to tell the system how it should be manipulated. When installed, the SquashFS file for the snap is mounted read-only at the following location:
 

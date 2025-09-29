@@ -46,5 +46,5 @@ It also configures each application entry with these additional plugs:
 - [wayland](/interfaces/wayland-interface)
 - [x11](/interfaces/x11-interface)
 
-> :information_source:  Snapcraft extensions enable snap developers to easily incorporate a set of common requirements into a snap. See [Snapcraft extensions](/) for further details.
+> ⓘ   Snapcraft extensions enable snap developers to easily incorporate a set of common requirements into a snap. See [Snapcraft extensions](/) for further details.
 

@@ -7,7 +7,7 @@ The snap daemon, _snapd_, can check whether there is enough free disk space befo
 - **snap refresh and update**: checks storage required to download updates and to store previous snap revisions
 - **snap removal**: checks storage required to create the [automatic snapshot](/how-to-guides/manage-snaps/create-data-snapshots) generated when the last revision of a snap is removed (unless disabled)
 
-> :information_source: Disk space awareness is currently an experimental feature and requires snapd version *2.47+* .
+> ⓘ  Disk space awareness is currently an experimental feature and requires snapd version *2.47+* .
 
 When enabled, snapd checks whether there is enough space in `/var/lib/snapd` to complete an operation, such as enough space to store a requested snap to download. If there isn't enough space, an error is returned and the operation is not performed:
 

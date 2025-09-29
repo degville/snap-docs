@@ -32,7 +32,7 @@ sudo snap unset system homedirs
 
 While the _homedirs_ system option should work for the majority users, it's also possible to _bind mount_ an alternative $HOME location to `/home` to allow other locations to be found by snapd. This process is outlined below.
 
-> :information_source: A **bind mount** allows a mounted filesystem to be accessible from more than one location at the filesystem level. This is unlike a hard or symbolic link, for instance, which operate as special additional files that point to a destination. 
+> ⓘ  A **bind mount** allows a mounted filesystem to be accessible from more than one location at the filesystem level. This is unlike a hard or symbolic link, for instance, which operate as special additional files that point to a destination. 
 
 There are two steps to bind mount a home directory to a different location:
 1. **the bind mount:** create the mount point and run the _mount_ command: 

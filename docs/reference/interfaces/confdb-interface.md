@@ -21,7 +21,7 @@ See [Interface management](/) and [Supported interfaces](/interfaces/index) for 
 
 [comment]: <> (```)
 
-> :information_source: Confdb is currently considered an [Experimental feature](https://forum.snapcraft.io/t/experimental-features/41241) and implementation details may change as development progresses.
+> ⓘ  Confdb is currently considered an [Experimental feature](https://forum.snapcraft.io/t/experimental-features/41241) and implementation details may change as development progresses.
 
 ---
 

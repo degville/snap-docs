@@ -153,5 +153,5 @@ Su Mo Tu We Th Fr Sa   Su Mo Tu We Th Fr Sa
 
 In the above context, `mon1-fri` corresponds describes a span from 5th of August to the 9th of August, while `mon-fri1` covers 29th of July until 2nd of August.
 
-> :information_source:  Before snapd _2.42_, week spans for a specific week within a month could be ambiguous. Consequently, from snapd 2.43, week spans using syntax `mon1-fri2` are deprecated and are automatically translated to `mon1-fri`.
+> ⓘ   Before snapd _2.42_, week spans for a specific week within a month could be ambiguous. Consequently, from snapd 2.43, week spans using syntax `mon1-fri2` are deprecated and are automatically translated to `mon1-fri`.
 

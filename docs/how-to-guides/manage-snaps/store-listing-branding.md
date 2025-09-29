@@ -42,7 +42,7 @@ Icon/logo requirements:
 - max resolution: 512x512
 - aspect ratio: 1:1
 
-> :information_source: this icon will only be used in graphical stores frontends, _not_ the desktop menu and dock. Those use the icon specified in the desktop entry files: [Desktop files for menu integration](https://snapcraft.io/docs/desktop-menu-icon-support).
+> ⓘ  this icon will only be used in graphical stores frontends, _not_ the desktop menu and dock. Those use the icon specified in the desktop entry files: [Desktop files for menu integration](https://snapcraft.io/docs/desktop-menu-icon-support).
 
 <h3 id='heading--screenshots'>Screenshots</h2>
 
@@ -59,7 +59,7 @@ Screenshot requirements:
 - animation max fps: 30
 - animation max length: 40 seconds
 
-> :information_source: PNG-formatted icons, logos and screenshots look better than JPEG.
+> ⓘ  PNG-formatted icons, logos and screenshots look better than JPEG.
 
 <h3 id='heading--banner'>Banner and banner icon</h2>
 

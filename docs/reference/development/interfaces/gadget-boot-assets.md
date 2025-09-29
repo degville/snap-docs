@@ -7,7 +7,7 @@ A [gadget snap's](/) boot assets can be automatically updated when the snap is r
 - gadget and kernel snap versions are not coupled. This means updated boot assets must be able to boot the old and new kernels of a given gadget
 - a device will reboot after boot assets have been updated
 
-> :information_source: _snapd 2.42+_ is required for automatic boot assets updates and _snapd 2.43+_ employs early consistency checks when building gadget snaps. 
+> ⓘ  _snapd 2.42+_ is required for automatic boot assets updates and _snapd 2.43+_ employs early consistency checks when building gadget snaps. 
 
 ## Enabling boot asset updates
 
@@ -36,7 +36,7 @@ A rollback is only performed when the process of writing updated boot assets fai
 
 Snapd analyses the `volumes` declaration in `gadget.yaml` to map its members against partitions on the main block device used by the system.
 
-> :information_source:  The main block device is the one with `/writable` partition on it.
+> ⓘ   The main block device is the one with `/writable` partition on it.
 
 A volume layout is built with the following constraints:
 

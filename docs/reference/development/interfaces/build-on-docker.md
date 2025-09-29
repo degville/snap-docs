@@ -7,7 +7,7 @@ However, Docker can still be used, and is particularly useful when you're alread
 All you need is a working *snapcraft.yaml* (see [Creating a snap](/) for more details). 
 
 [quote]
-:information_source: Electron apps are built slightly differently, and do not use a `snapcraft.yaml` file.  [Follow this guide](/interfaces/electron-apps) to build a snap of an Electron app using electron-builder.
+ⓘ  Electron apps are built slightly differently, and do not use a `snapcraft.yaml` file.  [Follow this guide](/interfaces/electron-apps) to build a snap of an Electron app using electron-builder.
 [/quote]
 
 To create a snap with Docker, first make sure you have [Docker installed](https://docs.docker.com/install/). You can test that Docker is correctly set up with:

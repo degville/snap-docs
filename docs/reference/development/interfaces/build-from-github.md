@@ -13,7 +13,7 @@ With _Build from GitHub_, a snap is rebuilt whenever a change is merged into the
 
 Supported build architectures are: **amd64** , **arm64** , **armhf** , **i386** , **ppc64el** and **s390x** .
 
-> :information_source: See [Creating a snap](/) for details on creating the metadata required to build a snap. For other ways to build a snap, see [Build options](/).
+> ⓘ  See [Creating a snap](/) for details on creating the metadata required to build a snap. For other ways to build a snap, see [Build options](/).
 
 
 - [Prerequisites](#heading--prerequisites)

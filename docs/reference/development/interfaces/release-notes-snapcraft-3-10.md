@@ -48,7 +48,7 @@ snapcraft --use-lxd \
           --https-proxy http://10.155.149.232:3128
 ```
 
-> :information_source: While an argument can be overridden, it cannot be unset. For instance, if using `http-proxy` or `debug`, there is no method to currently unset these values.
+> ⓘ  While an argument can be overridden, it cannot be unset. For instance, if using `http-proxy` or `debug`, there is no method to currently unset these values.
 
 ### Remote Build
 
