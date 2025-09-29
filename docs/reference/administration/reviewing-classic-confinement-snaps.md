@@ -1,5 +1,5 @@
 (interfaces-reviewing-classic-confinement-snaps)=
-# reviewing-classic-confinement-snaps
+# Reviewing classic confinement snaps
 
 ## Classic confinement review process
 

@@ -1,5 +1,5 @@
 (interfaces-data-locations)=
-# data-locations
+# Data locations
 
 A vast majority of snaps use strict confinement to isolate both their execution environments and their data from your system (see [Snap Confinement](/) for further details).
 

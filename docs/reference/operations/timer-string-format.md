@@ -1,5 +1,5 @@
 (interfaces-timer-string-format)=
-# timer-string-format
+# Timer string format
 
 Timer strings are used in both `refresh.timer` stetting and timer services as the `timer: ..` app property. See https://forum.snapcraft.io/t/refresh-scheduling-on-specific-days-of-the-month/1239/6 for details on how the syntax conceived and evolved over time.
 

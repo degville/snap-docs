@@ -1,5 +1,5 @@
 (interfaces-debugging-building-snaps)=
-# debugging-building-snaps
+# Debug snap building
 
 Building snaps can be a new experience for many developers. Here's some tips which can help you successfully, reliably build snaps for publication in the Snap Store. This is a wiki post so feel free to add more tips to this page, to help build successful snaps!
 

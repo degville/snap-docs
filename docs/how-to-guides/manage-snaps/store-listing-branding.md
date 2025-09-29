@@ -1,14 +1,9 @@
 (interfaces-store-listing-branding)=
-# store-listing-branding
+# Store listing branding
 
 The store listing page of your application is an important tool to increase its visibility and discoverability. This listing is shown in the online [Snap Store](https://snapcraft.io/store), the [desktop app](https://snapcraft.io/snap-store) and in various other graphical store frontends such as GNOME Software and KDE Discover.
 
-- [Metadata](#heading--metadata) such as a description and contact information helps users understand what your application has to offer and helps direct feedback to the right channels.
-- [Media](#heading--media), including screenshots, a video and an icon, show off application functionality, design and brand.
-- Create a [banner](#heading--banner) to help your application get featured in the store.
-- For larger projects and ISVs, it might be useful to [Create a brand account](https://snapcraft.io/docs/t/creating-snap-store-brand-accounts/6271) in the name of the project or company.
-
-<h2 id='heading--metadata'>Metadata</h2>
+## Metadata
 
 A snap's most important descriptive metadata, initially taken from its [snapcraft.yaml](/), can be conveniently edited from the Snap Store's web UI. The following fields are vitally important to help users find what they're looking for:
 
@@ -20,7 +15,7 @@ A snap's most important descriptive metadata, initially taken from its [snapcraf
   - URLs: `https://foo.bar`
   - Lists: `* Foo`
   - Italics: `_Foo_`
-  - Code: Text indented with 3 spaces or inside `
+  - Code: Text indented with 3 spaces or inside \`
 
 Use the **Additional information** section to add a license for your project, and also to select whether you want users to see where your snap is being used.
 
@@ -28,11 +23,11 @@ Under **Website and contact links**, include a link to the application website o
 
 The Snap Advocacy team love accurate and detailed metadata because they can create effective social campaigns and blog posts to highlight an application. Similarly, it can help to provide a brief functional overview in the *Description* and provide links for further detailed documentation.
 
-<h2 id='heading--media'>Media</h2>
+## Media
 
 Second only in importance to the quality of a snap's metadata is the addition screenshots and other media to allow prospective users to preview the application.
 
-<h3 id='heading--logo-icon'>Logo and icon</h2>
+### Logo and icon
 
 Uploading an icon or a logo will significantly improves the appearance of the application listing in graphical storefronts.
 
@@ -44,7 +39,7 @@ Icon/logo requirements:
 
 > ⓘ  this icon will only be used in graphical stores frontends, _not_ the desktop menu and dock. Those use the icon specified in the desktop entry files: [Desktop files for menu integration](https://snapcraft.io/docs/desktop-menu-icon-support).
 
-<h3 id='heading--screenshots'>Screenshots</h2>
+### Screenshots
 
 Each store entry can feature up to 5 screenshots (or animated GIFs). If the application is cross-platform, please upload screenshots taken from a Linux workstation rather than reusing screenshots from other platforms. The images or GIFs need to fit the following requirements:
 
@@ -61,11 +56,9 @@ Screenshot requirements:
 
 > ⓘ  PNG-formatted icons, logos and screenshots look better than JPEG.
 
-<h3 id='heading--banner'>Banner and banner icon</h2>
+### Banner and banner icon
 
 ![image|690x471](upload://ratdSJxHa8Icx3mgOdId7JxDITH.png) 
-
-<br>
 
 The above image shows how a banner and banner icon (top right) are used by the Snap Store.
 
