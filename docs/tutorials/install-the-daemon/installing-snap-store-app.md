@@ -3,7 +3,7 @@
 
 Snaps can be easily installed and managed from the [command line](/getting-started/3876).
 
-But if you use a desktop environment,  snaps can be more readily discovered, installed and managed from the [Snap Store desktop  app](https://snapcraft.io/snap-store).
+But if you use a desktop environment, snaps can be more readily discovered, installed and managed from the [Snap Store desktop  app](https://snapcraft.io/snap-store).
 
 The Snap Store app is installed with the following command:
 

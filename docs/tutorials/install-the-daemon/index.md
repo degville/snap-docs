@@ -1,5 +1,5 @@
 (snap-tutorials-install-the-daemon-index)=
-# Install-The-Daemon
+# Install the daemon
 
 Snaps are app packages for desktop, cloud and IoT that are easy to install, secure, cross-platform and dependency-free. 
 

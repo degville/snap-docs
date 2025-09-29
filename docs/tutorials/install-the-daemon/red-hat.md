@@ -1,5 +1,5 @@
 (interfaces-installing-snap-on-red-hat)=
-# installing-snap-on-red-hat
+# Red Hat 
 
 Snap is available for [Red Hat Enterprise Linux (RHEL) 9.x](https://developers.redhat.com/products/rhel/overview), RHEL 8 and RHEL 7, from the 7.6 release onwards. It's also available for CentOS 7.6+ (see [Installing snap on CentOS](/interfaces/installing-snap-on-centos)).
 

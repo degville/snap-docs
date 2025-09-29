@@ -1,5 +1,5 @@
 (interfaces-installing-snap-on-parrot-security-os)=
-# installing-snap-on-parrot-security-os
+# Parrot Security OS
 
 If you're running [Parrot Security OS 4.1](https://www.parrotsec.org/) and above, you don't need to do anything. Snap is already installed and ready to go.
 
