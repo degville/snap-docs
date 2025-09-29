@@ -1,4 +1,4 @@
-(snap-reference-development-supported-snap-hooks)=
+(reference-development-supported-snap-hooks)=
 # Supported snap hooks
 
 A hook is an executable file that runs within a snap's confined environment when a certain action occurs.
@@ -34,7 +34,7 @@ The following hooks are currently implemented:
 
 If a hook requires access to system resources outside of a snap's confined environment, it will need to use [slots and plugs](/t/interface-management/6154#slots-plugs) via the [interface](/how-to-guides/work-with-snaps/connect-interfaces) mechanism to access those resources.
 
-When using *Snapcraft* to build the snap, the interface definition will go inside [snapcraft.yaml](/), and the *snapcraft* command create a [snap.yaml](/snap-reference/development/yaml-schemas/the-snap-format) within the snap to hold the required metadata.
+When using *Snapcraft* to build the snap, the interface definition will go inside [snapcraft.yaml](/), and the *snapcraft* command create a [snap.yaml](/reference/development/yaml-schemas/the-snap-format) within the snap to hold the required metadata.
 
 For example, the following excerpt registers an _install_ hook making use of a [network](/) plug:
 
@@ -101,7 +101,7 @@ The same hook can also modify the configuration of a snap within the context of 
 
 <h2 id='heading--default-configure'>The default-configure hook</h2>
 
-The default-configure-hook is an optional extension to the [configure hook](/t/supported-snap-hooks/3795#heading--the-configure-hook) that executes only on snap installation and _before_ services are started to provide access to the default configuration values stored in a device’s [gadget snap](/snap-reference/development/yaml-schemas/the-gadget-snap).
+The default-configure-hook is an optional extension to the [configure hook](/t/supported-snap-hooks/3795#heading--the-configure-hook) that executes only on snap installation and _before_ services are started to provide access to the default configuration values stored in a device’s [gadget snap](/reference/development/yaml-schemas/the-gadget-snap).
 
 The default-configure hook should be located within `meta/hooks` and requires a configure hook to be present. A missing configure hook will result in an error.
 
@@ -165,7 +165,7 @@ For further details, see [Interface hooks](/explanation/interfaces/interface-hoo
 
 This hook is only supported in gadget snaps.
 
-See [The gadget snap](/snap-reference/development/yaml-schemas/the-gadget-snap) documentation for more details.
+See [The gadget snap](/reference/development/yaml-schemas/the-gadget-snap) documentation for more details.
 
 <h2 id='heading--pre-refresh'>The pre-refresh hook</h2>
 

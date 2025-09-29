@@ -1,4 +1,4 @@
-(snap-reference-administration-distribution-support)=
+(reference-administration-distribution-support)=
 # Distribution support
 
 Latest public release: 2.68 [github releases](https://github.com/snapcore/snapd/releases). See [snapd roadmap](https://forum.snapcraft.io/t/the-snapd-roadmap/1973) for details.

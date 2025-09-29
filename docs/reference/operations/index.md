@@ -1,4 +1,4 @@
-(snap-reference-operations-index)=
+(reference-operations-index)=
 # Operations
 
 ```{toctree}

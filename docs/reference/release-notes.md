@@ -1,4 +1,4 @@
-(snap-reference-release-notes)=
+(reference-release-notes)=
 # Release notes
 
 This page outlines the release notes of all recent versions of Snapd, summarising new features, bug fixes and changes in each version.

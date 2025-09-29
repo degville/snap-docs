@@ -14,7 +14,7 @@ provides the power it needs.
 
 ![How an interfaces uses a plug and a slot](https://assets.ubuntu.com/v1/59c290a8-snapd-interfaces.png) 
 
-Connections are made either automatically at install time or manually, depending on their function. The desktop interface is connected automatically, for instance, whereas the camera interface is not. The *Auto-connect* column in the [Supported interfaces](/snap-reference/operations/interfaces/index) table for lists  whether an interface automatically connects or not. See the [Interface Auto-connection mechanism](https://forum.snapcraft.io/t/interface-auto-connection-mechanism/20179) for implementation details.
+Connections are made either automatically at install time or manually, depending on their function. The desktop interface is connected automatically, for instance, whereas the camera interface is not. The *Auto-connect* column in the [Supported interfaces](/reference/operations/interfaces/index) table for lists  whether an interface automatically connects or not. See the [Interface Auto-connection mechanism](https://forum.snapcraft.io/t/interface-auto-connection-mechanism/20179) for implementation details.
 
 As with [classic confinement](/), a snap's publisher can request an *assertion* to automatically connect an otherwise non-auto-connecting interface. For example, the *guvcview* snap [requested](https://forum.snapcraft.io/t/auto-connect-request-for-the-guvcview-brlin-snap/6042) the camera interface be automatically-connected when the snap is installed.
 

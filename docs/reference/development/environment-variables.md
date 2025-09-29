@@ -1,4 +1,4 @@
-(snap-reference-development-environment-variables)=
+(reference-development-environment-variables)=
 # Environment variables
 
 Environment variables are widely used across Linux to provide convenient access to system and application properties.

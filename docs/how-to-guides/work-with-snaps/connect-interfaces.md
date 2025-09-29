@@ -7,7 +7,7 @@ Most users don't need to worry about interfaces. Snaps are designed for strong a
 
 An interface is most commonly used to enable a snap to access sound playback or recording, your network, and your $HOME directory. But which interfaces a snap requires, and *provides*, is very much dependent on the type of snap and its own requirements.
 
-See [Supported interfaces](/snap-reference/operations/interfaces/index) for a comprehensive list of interfaces and what kind of access they permit.
+See [Supported interfaces](/reference/operations/interfaces/index) for a comprehensive list of interfaces and what kind of access they permit.
 
 <h2 id='heading--slots-plugs'>Plugs and slots</h2>
 
@@ -132,7 +132,7 @@ If a snap is installed prior to an interface being granted auto-connect permissi
 
 For more technical details on how interface auto-connections are processed, see [The interface auto-connection mechanism](/explanation/interfaces/interface-auto-connection).
 
-> ⓘ See the _Auto-connect_ column in the [Supported interfaces](/snap-reference/operations/interfaces/index) table for which interfaces are connected automatically.
+> ⓘ See the _Auto-connect_ column in the [Supported interfaces](/reference/operations/interfaces/index) table for which interfaces are connected automatically.
 
 <h3 id='heading--manual-connections'>Manual connections</h3>
 

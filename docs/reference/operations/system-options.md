@@ -1,4 +1,4 @@
-(snap-reference-operations-system-options)=
+(reference-operations-system-options)=
 # System options
 
 Snap supports a set of system-wide options that allow you to customise your snap or Ubuntu Core environment. These are listed below.
@@ -132,7 +132,7 @@ May be set to _true_ on devices running Ubuntu Core to disable the console-conf 
 snap set system service.console-conf.disable=true
 ```
 
-This option is defined in the [gadget snap](/snap-reference/development/yaml-schemas/the-gadget-snap) and cannot be changed at runtime.
+This option is defined in the [gadget snap](/reference/development/yaml-schemas/the-gadget-snap) and cannot be changed at runtime.
 
 <h2 id="heading--ssh">system service.ssh.disable</h2>
 
@@ -219,7 +219,7 @@ Value can be any integer multiple of a megabyte that is either larger than or eq
 snap set system swap.size=200M
 ```
 
-This option is typically defined in the [gadget.yaml](/snap-reference/development/yaml-schemas/the-gadget-snap) file when building an Ubuntu Core image:
+This option is typically defined in the [gadget.yaml](/reference/development/yaml-schemas/the-gadget-snap) file when building an Ubuntu Core image:
 
 ```yaml
 defaults:
@@ -243,7 +243,7 @@ Dynamically add permitted kernel boot parameters to the default kernel command l
 ```bash
 snap set system system.kernel.cmdline-append=”opt1=val1 opt2=val2”
 ```
-Proposed kernel boot parameters are verified against an _allow list_ in the [gadget snap](/snap-reference/development/yaml-schemas/the-gadget-snap). See [gadget.yaml](/t/gadget-snaps/696#heading--gadget) for further details on the list syntax.
+Proposed kernel boot parameters are verified against an _allow list_ in the [gadget snap](/reference/development/yaml-schemas/the-gadget-snap). See [gadget.yaml](/t/gadget-snaps/696#heading--gadget) for further details on the list syntax.
 
 This options requires the system or device to be manually restarted. The system will not restart automatically.
 

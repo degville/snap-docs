@@ -1,7 +1,7 @@
-(snap-reference-development-rest-api-error-responses)=
+(reference-development-rest-api-error-responses)=
 # Error responses
 
-When [Using the snapd REST API](/how-to-guides/manage-snaps/use-the-rest-api), requests sent to the [snapd REST API](/snap-reference/development/rest-api/snapd-rest-api) can return both standard HTTP error responses, and a snapd-specific _error kind_, in the body of the response. These are detailed below.
+When [Using the snapd REST API](/how-to-guides/manage-snaps/use-the-rest-api), requests sent to the [snapd REST API](/reference/development/rest-api/snapd-rest-api) can return both standard HTTP error responses, and a snapd-specific _error kind_, in the body of the response. These are detailed below.
 
 - [Error response](#heading--error-response)
    - [Status codes](#heading--status-codes)

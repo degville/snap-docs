@@ -1,4 +1,4 @@
-(snap-reference-operations-glossary)=
+(reference-operations-glossary)=
 # Glossary
 
 <!--
@@ -131,13 +131,13 @@ See [Snapcraft extensions](/) for more details.
 
 A gadget is a device or other deployment running Ubuntu Core alongside a vendor-specified, managed and maintained set of snaps. A gadget could be a router, for example, a home automation device or even a VM cloud instance. Its properties are defined within an embedded _gadget snap_.
 
-See [The gadget snap](/snap-reference/development/yaml-schemas/the-gadget-snap) for more details.
+See [The gadget snap](/reference/development/yaml-schemas/the-gadget-snap) for more details.
 
 <h3 id='heading--hook'>hook</h3>
 
 A hook is an executable that runs within a snap’s confined environment when a certain action occurs. Actions include snap installation and removal, changes to its configuration or connection state, and before or after a refresh.
 
-For more details, see [Supported snap hooks](/snap-reference/development/supported-snap-hooks).
+For more details, see [Supported snap hooks](/reference/development/supported-snap-hooks).
 
 <h3 id='heading--interfaces'>interface</h3>
 

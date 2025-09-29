@@ -35,7 +35,7 @@ Snap developers experiencing issues should take a look at [Troubleshoot snap bui
 
 Both the snap daemon (snapd) and [Snapcraft](https://forum.snapcraft.io/t/snapcraft-overview/8940) require network access to install, update, build and publish snaps. Local network and port configurations can affect their access.
 
-See [Network requirements](/snap-reference/administration/network-requirements) for which hosts and ports are required to ensure consistent communication.
+See [Network requirements](/reference/administration/network-requirements) for which hosts and ports are required to ensure consistent communication.
 
 ## Cannot communicate with the server / connection refused
 
@@ -146,7 +146,7 @@ sudo sysctl kernel.unprivileged_userns_clone=1
 
 After installing the snap daemon, _snapd_, it can take a short amount of time to initialise its environment.
 
-During this initialisation period, if certain instructions are attempted either from the `snap` command or the [REST API](/snap-reference/development/rest-api/snapd-rest-api), the following error may be generated:
+During this initialisation period, if certain instructions are attempted either from the `snap` command or the [REST API](/reference/development/rest-api/snapd-rest-api), the following error may be generated:
 
 `error: too early for operation, device not yet seeded or device model not acknowledged`
 

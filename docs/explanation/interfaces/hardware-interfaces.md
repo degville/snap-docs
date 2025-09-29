@@ -1,7 +1,7 @@
-(snap-reference-operations-interfaces-hardware-interfaces)=
+(reference-operations-interfaces-hardware-interfaces)=
 # Hardware interfaces
 
-Hardware IO (input/output) interfaces, including the [serial-port](/), [gpio](/), [gpio-chardev](/) and [i2c](/) interfaces, are designed to be used on devices running [Ubuntu Core](/t/glossary/14612#heading--ubuntu-core). These interfaces are exposed as _slots_ from a device's [gadget snap](/snap-reference/development/yaml-schemas/the-gadget-snap) which is used to define and configure a device's system properties.
+Hardware IO (input/output) interfaces, including the [serial-port](/), [gpio](/), [gpio-chardev](/) and [i2c](/) interfaces, are designed to be used on devices running [Ubuntu Core](/t/glossary/14612#heading--ubuntu-core). These interfaces are exposed as _slots_ from a device's [gadget snap](/reference/development/yaml-schemas/the-gadget-snap) which is used to define and configure a device's system properties.
 
 This approach is more robust because it allows the gadget snap providing the slot to centralise and arbitrate the connection conditions. These conditions include which other snaps, identified by their snap ID, can connect to the slots the gadget offers and, consequently, gain privileged access to the hardware.  For the application snap, usually no change is required other than to declare and use an appropriately-configured plug.
 
@@ -10,13 +10,13 @@ The following are exceptions to the above, and can be used without being declare
 - [gpio-control interface](/)
 - [serial-port interface](/) (experimental support)
 
-See [Supported interfaces](/snap-reference/operations/interfaces/index) for a complete list of interfaces.
+See [Supported interfaces](/reference/operations/interfaces/index) for a complete list of interfaces.
 
 ## Interface considerations
 
 The extent of access an interface has is granted through both _connection permissions_ and the specifics of the _interface connections_ being requested.
 
-1. **Connection permissions**: [auto-connect](/explanation/interfaces/interface-auto-connection) | [privileged](/how-to-guides/work-with-snaps/connect-interfaces) | [super-privileged](/snap-reference/operations/interfaces/super-privileged-interfaces)
+1. **Connection permissions**: [auto-connect](/explanation/interfaces/interface-auto-connection) | [privileged](/how-to-guides/work-with-snaps/connect-interfaces) | [super-privileged](/reference/operations/interfaces/super-privileged-interfaces)
    </br>Connection requirements are dependent on which store a developer is using.
      - [Global Snap Store](https://forum.snapcraft.io/t/glossary/14612#heading--snap-store): privileged and super-privileged interfaces require store approval because of the level of trust and permissiveness these interfaces have, which is also why certain interfaces need certain oversight. See [Permission requests](/) for further details.
     * [Dedicated Snap Store](/t/glossary/14612#heading--dedicated): trust and permissiveness are now  the responsibility of the store owner, and many privileged interface connections can be self-served and defined within the dedicated snap store and the device context.
@@ -30,7 +30,7 @@ The extent of access an interface has is granted through both _connection permis
     * **App-provided interfaces**: slots are defined by apps, or occasionally from the gadget snap, 
       * May require access, such as from the [content](/) or [shared-memory](/) interfaces.
       * A slot might may be provided by the system snap to cover the case of an equivalent system service, such as [audio-playback](/)
-      * the slot might be [super-privileged](/snap-reference/operations/interfaces/super-privileged-interfaces)
+      * the slot might be [super-privileged](/reference/operations/interfaces/super-privileged-interfaces)
     * **Other interfaces**: For more system level access, slots are provided by the system snap.
 
 <h3 id='heading--code-examples'>Code examples</h3>

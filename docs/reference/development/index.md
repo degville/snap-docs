@@ -1,4 +1,4 @@
-(snap-reference-development-index)=
+(reference-development-index)=
 # Development
 
 ```{toctree}

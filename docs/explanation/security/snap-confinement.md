@@ -21,7 +21,7 @@ An additional mode is useful during the development process:
 
 Strict confinement uses security features of the Linux kernel, including AppArmor, seccomp and namespaces, to prevent applications and services accessing the wider system.
 
-For details on how confinement is implemented, see [Snap system architecture](/snap-reference/operations/system-architecture).
+For details on how confinement is implemented, see [Snap system architecture](/reference/operations/system-architecture).
 
 ## Getting the confinement level
 

@@ -9,7 +9,7 @@ Just like a snap, a component is implemented as a squashfs file. If installed, t
 
 Components can be thought of as either an internal implementation detail of the host snap that remains transparent to the user, or as a visible snap component that can be installed, refreshed and removed similarly to snaps.
 
-See [Using components](/how-to-guides/manage-snaps/using-components) for installation, removal and listing options. To control components from within a snap, see [snapctl components](/t/15002#heading--components). Components can also be managed through the [Snapd REST API](/snap-reference/development/rest-api/snapd-rest-api).
+See [Using components](/how-to-guides/manage-snaps/using-components) for installation, removal and listing options. To control components from within a snap, see [snapctl components](/t/15002#heading--components). Components can also be managed through the [Snapd REST API](/reference/development/rest-api/snapd-rest-api).
 
 Component requires *snapd 2.67+* .
 
@@ -56,7 +56,7 @@ This forms a unique tuple between the snap and each respective component.
 
 ## Component hooks
 
-Components can implement the following  [hooks](/snap-reference/development/supported-snap-hooks):
+Components can implement the following  [hooks](/reference/development/supported-snap-hooks):
 
 * install
 * pre-refresh
@@ -90,7 +90,7 @@ components:
 
 ## Environment variables
 
-The execution environment for component hooks will be similar to the one defined for snap applications/hooks, with the injection of the following additional [environment variables](/snap-reference/development/environment-variables):
+The execution environment for component hooks will be similar to the one defined for snap applications/hooks, with the injection of the following additional [environment variables](/reference/development/environment-variables):
 
 - `SNAP_COMPONENT`: directory where the component is mounted
 - `SNAP_COMPONENT_NAME`: name of the component as specified in component.yaml

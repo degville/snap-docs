@@ -1,4 +1,4 @@
-(snap-reference-development-yaml-schemas-index)=
+(reference-development-yaml-schemas-index)=
 # Yaml-Schemas
 
 ```{toctree}

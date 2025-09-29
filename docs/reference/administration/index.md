@@ -1,4 +1,4 @@
-(snap-reference-administration-index)=
+(reference-administration-index)=
 # Administration
 
 ```{toctree}

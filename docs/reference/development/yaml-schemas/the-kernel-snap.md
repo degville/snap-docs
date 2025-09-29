@@ -1,4 +1,4 @@
-(snap-reference-development-yaml-schemas-the-kernel-snap)=
+(reference-development-yaml-schemas-the-kernel-snap)=
 # The kernel snap
 
 As the name implies, the _kernel_ snap is responsible for defining the Linux kernel that will run in a snap-based system. The correct kernel snap for a given system is selected via the model assertion, produced and signed by the device's brand account before the image is built. Once the image is built, the kernel snap may be updated, but it cannot be replaced by a completely different kernel snap.

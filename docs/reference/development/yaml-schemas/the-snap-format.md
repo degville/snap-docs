@@ -1,4 +1,4 @@
-(snap-reference-development-yaml-schemas-the-snap-format)=
+(reference-development-yaml-schemas-the-snap-format)=
 # The snap format
 
 > :information_source: This page documents the format of the **built** snaps. See [The snapcraft format](/) for more information about the `snapcraft.yaml` file used to build these snaps. 
@@ -241,7 +241,7 @@ apps:
 
 ## Hooks
 
-Hooks provide a mechanism for snapd to alert snaps that something has happened, or to ask the snap to provide its opinion about an operation that is in progress. See the topic on [supported hooks](/snap-reference/development/supported-snap-hooks) for more details.
+Hooks provide a mechanism for snapd to alert snaps that something has happened, or to ask the snap to provide its opinion about an operation that is in progress. See the topic on [supported hooks](/reference/development/supported-snap-hooks) for more details.
 
 <a name="interfaces"></a>
 
@@ -249,7 +249,7 @@ Hooks provide a mechanism for snapd to alert snaps that something has happened, 
 
 Interfaces allow snaps to communicate or share resources according to the protocol established by the interface. They play an important part in security policy configuration. 
 
-See [Supported interfaces](/snap-reference/operations/interfaces/index) for more details.
+See [Supported interfaces](/reference/operations/interfaces/index) for more details.
 
 <a name="layouts"></a>
 

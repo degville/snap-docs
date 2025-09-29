@@ -3,7 +3,7 @@
 
 The `snapctl` tool is bundled with _snapd_ to provide specific environmental feedback and a limited set of controls from **within the context** of a snap's execution environment in relation to snapd. It can be used, for example, to retrieve and set snap configuration options, check the status of a running snap, and reboot an Ubuntu Core 20 environment.
 
-`snapctl` is typically run from a script _within a snap_, rather than on the host system. These scripts are used by snap developers to implement [hooks](/snap-reference/development/supported-snap-hooks), or from within [snapcraft.yaml](/), to augment a snap's execution environment.
+`snapctl` is typically run from a script _within a snap_, rather than on the host system. These scripts are used by snap developers to implement [hooks](/reference/development/supported-snap-hooks), or from within [snapcraft.yaml](/), to augment a snap's execution environment.
 
 For details on using _snapctl_ to add user options to a snap, see [Adding snap configuration](/) and see [Creating a snap](/) for an overview of the snap development process.
 
@@ -78,7 +78,7 @@ snapctl install +<comp_name>
 snapctl remove +<comp_name>
 ```
 
-If these commands are run from a [hook](/snap-reference/development/supported-snap-hooks), the components will be installed/removed after the hook itself has run if it ended successfully.
+If these commands are run from a [hook](/reference/development/supported-snap-hooks), the components will be installed/removed after the hook itself has run if it ended successfully.
 
 ## snapctl commands
 
@@ -172,7 +172,7 @@ fundamental definition of a snap-based device, such as a device running [Ubuntu 
 The _snap model_ command can be used to return to the active model identification for the device, and `snapctl model` returns the equivalent to `snap model --verbose` from within a snap. However, for this to work, the requesting snap needs to meet _one_ of the following criteria:
 
 The requesting snap must be either:
-1. a [gadget snap](/snap-reference/development/yaml-schemas/the-gadget-snap)
+1. a [gadget snap](/reference/development/yaml-schemas/the-gadget-snap)
 1. published from the same brand as the device model assertion 
 1. have the [snapd-control](/) plug
 

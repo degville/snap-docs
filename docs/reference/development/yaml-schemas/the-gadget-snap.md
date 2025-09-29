@@ -1,4 +1,4 @@
-(snap-reference-development-yaml-schemas-the-gadget-snap)=
+(reference-development-yaml-schemas-the-gadget-snap)=
 # The gadget snap
 
 The gadget snap is responsible for defining and configuring system properties specific to one or more devices.
@@ -10,7 +10,7 @@ The gadget metadata and content defines:
 -  Interface connections configured in the `connections:` section are executed on the device’s first boot only. Later changes to this section -- that is, changes added to the device at run time through gadget refreshes -- are not applied.
 -   Optional hooks that are invoked to control and customise the behaviour over the device lifecycle, e.g. installation, initialisation and establishing device identity, factory reset.
 
-See [Building a gadget snap](https://ubuntu.com/core/docs/gadget-building) for details on how a gadget snap can be built. For store deployment, gadget snaps must be produced by the device [brand](/snap-reference/operations/glossary), as defined in the [model assertion](https://ubuntu.com/core/docs/reference/assertions/model), or a reference gadget must be used. It is perfectly possible for different models to share a gadget snap.
+See [Building a gadget snap](https://ubuntu.com/core/docs/gadget-building) for details on how a gadget snap can be built. For store deployment, gadget snaps must be produced by the device [brand](/reference/operations/glossary), as defined in the [model assertion](https://ubuntu.com/core/docs/reference/assertions/model), or a reference gadget must be used. It is perfectly possible for different models to share a gadget snap.
 
 ---
 A typical gadget snap will consist of the following:
@@ -108,7 +108,7 @@ The structure section lists entities with gadget data inside the image, most of 
 
 <h3 id='heading--dynamic'>Dynamic kernel parameters</h3>
 
-There are two [system options](/snap-reference/operations/system-options) that can be used to add new kernel boot parameters to a system that has been deployed and is running:
+There are two [system options](/reference/operations/system-options) that can be used to add new kernel boot parameters to a system that has been deployed and is running:
 
 1. [system.kernel.cmdline-append](https://snapcraft.io/docs/system-options#heading--kernel-cmdline-append)
 2. [system.kernel.dangerous-cmdline-append](https://snapcraft.io/docs/system-options#heading--kernel-dangerous-cmdline-append)

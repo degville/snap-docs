@@ -1,4 +1,4 @@
-(snap-reference-development-rest-api-index)=
+(reference-development-rest-api-index)=
 # Rest-Api
 
 ```{toctree}
