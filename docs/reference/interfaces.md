@@ -1,7 +1,7 @@
 (snap-reference-operations-interfaces-index)=
 # Interfaces
 
-[Interfaces](/snap-explanation/interfaces/all-about-interfaces) enable resources from one snap to be shared with another and with the system. The table below lists currently supported interfaces, with links to further details for each interface.
+[Interfaces](/explanation/interfaces/all-about-interfaces) enable resources from one snap to be shared with another and with the system. The table below lists currently supported interfaces, with links to further details for each interface.
 
 The following column names are used:
 
@@ -11,7 +11,7 @@ The following column names are used:
 
 - **Categories** are used to split interfaces into broad types, and also to indicate what kind of access they permit. Video, graphics and audio are typical desktop requirements, for example, while VM, Container, Kernel and Developer imply more specific roles. The Ubuntu Core category is used to denote when an interface is intended for [Ubuntu Core](https://forum.snapcraft.io/t/glossary/14612#heading--ubuntu-core), and _Super privileged_ is used when an interface requires extra security scrutiny. See [Super-privileged interfaces](/snap-reference/operations/interfaces/super-privileged-interfaces) for more information.
 
-- **Auto-connect** indicates that the interface will be connected by default when the snap is first installed, requiring no further user action. If `Auto-connect=no`, an interface can still be automatically connected if the snap developer has requested, and been granted, explicit permission. See [Interface connection mechanism](/snap-explanation/interfaces/interface-auto-connection) for details.
+- **Auto-connect** indicates that the interface will be connected by default when the snap is first installed, requiring no further user action. If `Auto-connect=no`, an interface can still be automatically connected if the snap developer has requested, and been granted, explicit permission. See [Interface connection mechanism](/explanation/interfaces/interface-auto-connection) for details.
 
 ---
 

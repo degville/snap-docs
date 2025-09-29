@@ -1,4 +1,4 @@
-(snap-explanation-how-snaps-work-channels-and-tracks)=
+(explanation-how-snaps-work-channels-and-tracks)=
 # Channels and tracks
 
 Channels are an important snap concept. They define which release of a snap is installed and tracked for updates.

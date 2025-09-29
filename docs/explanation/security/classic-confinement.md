@@ -1,7 +1,7 @@
-(snap-explanation-security-classic-confinement)=
+(explanation-security-classic-confinement)=
 # Classic confinement
 
-Classic confinement is the most permissive level of [snap confinement](/snap-explanation/security/snap-confinement), equivalent to the full system access that traditional, unsandboxed packages have.
+Classic confinement is the most permissive level of [snap confinement](/explanation/security/snap-confinement), equivalent to the full system access that traditional, unsandboxed packages have.
 
 It's often used as a stop-gap measure to enable developers to publish apps that need more access than snapd interfaces and permissions allow.
 

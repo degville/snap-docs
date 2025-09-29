@@ -7,7 +7,7 @@ Updates can be set to occur on Friday at midnight, or for specific days of the m
 
 When, if, and how often, these updates occur can is the job of the *snap refresh* command. 
 
-> :information_source: Snaps running in [_devmode_](/snap-explanation/security/snap-confinement), or installed locally, are typically intended for testing and do not update automatically until they've been published and downloaded from the store.
+> :information_source: Snaps running in [_devmode_](/explanation/security/snap-confinement), or installed locally, are typically intended for testing and do not update automatically until they've been published and downloaded from the store.
 
 ## Refresh update control
 

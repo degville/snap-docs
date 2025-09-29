@@ -1,7 +1,7 @@
 (how-to-guides-fix-common-issues-debug-snaps)=
 # Debug snaps
 
-Each snap runs inside its own [confined environment](/snap-explanation/security/snap-confinement), also called "sandbox". The policy of each sandbox describes what the application is allowed to do. When an application tries to do something that is not allowed, the system logs a policy violation.
+Each snap runs inside its own [confined environment](/explanation/security/snap-confinement), also called "sandbox". The policy of each sandbox describes what the application is allowed to do. When an application tries to do something that is not allowed, the system logs a policy violation.
 
 The following techniques can help you investigate and solve these policy violations.
 
@@ -16,7 +16,7 @@ The following techniques can help you investigate and solve these policy violati
 - Investigate [file permissions and cgroup device access](#heading--permissions) violations.
 - Use [GDB and gdbserver from within a snap's environment](/) to isolate and identify potential issues.
 
-For more details on how AppArmor, seccomp and device permission security policies are implemented, see [Security policy and sandboxing](/snap-explanation/security/security-policies).
+For more details on how AppArmor, seccomp and device permission security policies are implemented, see [Security policy and sandboxing](/explanation/security/security-policies).
 
 <h2 id='heading--shell'>Run a shell in the confined environment</h2>
 
@@ -40,7 +40,7 @@ Note that this requires _snapd 2.62_.
 
 Viewing which [system calls](https://en.wikipedia.org/wiki/System_call) are made by an application, and how the Linux kernel responds to them,  can be beneficial in gaining insights into a failure.  This can be accomplished with the widely used [strace](https://strace.io/) utility.
 
-Running the standard _strace_ command on a snapped application, however, can produce confusing results due to the [confined environment](/snap-explanation/security/snap-confinement) most snaps run within. To solve this problem, _snapd_ includes specific support for running an application under strace.
+Running the standard _strace_ command on a snapped application, however, can produce confusing results due to the [confined environment](/explanation/security/snap-confinement) most snaps run within. To solve this problem, _snapd_ includes specific support for running an application under strace.
 
 To use this, you first have to install the [strace-static](https://snapcraft.io/strace-static) snap:
 

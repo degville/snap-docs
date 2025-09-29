@@ -56,7 +56,7 @@ User-specific locations:
 - **SNAP_USER_COMMON** (`/home/<username>/snap/<snap-name>/common`)
 - **SNAP_USER_DATA** (`/home/<username>/snap/<snap-name>/<revision>`)
 
-It's important to note that **SNAP_DATA** and **SNAP_USER_DATA** place their data within a directory specific to each snap [revision](/snap-explanation/how-snaps-work/revisions), whereas  **SNAP_COMMON** and  **SNAP_USER_COMMON** do not.
+It's important to note that **SNAP_DATA** and **SNAP_USER_DATA** place their data within a directory specific to each snap [revision](/explanation/how-snaps-work/revisions), whereas  **SNAP_COMMON** and  **SNAP_USER_COMMON** do not.
 
 You need to be aware of what data is copied forward when you move from one revision to the next and which data will be restored if you switch to a previous snapshot.
 

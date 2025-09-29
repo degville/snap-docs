@@ -2,7 +2,7 @@
 # Using components
 
 A snap *component* is part of a snap that has been declared as optional. A snap component may then be either installed or not installed alongside its host snap.
-See [Components](/snap-explanation/how-snaps-work/snap-components) for further details.
+See [Components](/explanation/how-snaps-work/snap-components) for further details.
 
 Component support requires _snapd 2.67+_.
 
@@ -20,7 +20,7 @@ The above command will install _my-snap_ alongside components _comp1_ and _comp2
 
 Once installed, the (asserted) components will refresh when new revisions are available in the store, in the same way as for snaps.
 
-It is also possible to install components from local files. If [unasserted](/snap-explanation/security/assertions), they can be installed only if the host snap is unasserted too and you will need to use the --dangerous flag:
+It is also possible to install components from local files. If [unasserted](/explanation/security/assertions), they can be installed only if the host snap is unasserted too and you will need to use the --dangerous flag:
 
 ```sh
 snap install --dangerous ./my-snap+comp1+comp2_1.0.comp

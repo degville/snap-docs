@@ -1,4 +1,4 @@
-(snap-explanation-how-snaps-work-snap-performance)=
+(explanation-how-snaps-work-snap-performance)=
 # Snap performance
 
 The performance of a running application should not be affected by its snap environment, and any  performance or system monitoring tool will work on snapped processes in exactly the same way they would on other applications and processes.

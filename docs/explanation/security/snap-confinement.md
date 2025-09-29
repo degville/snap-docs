@@ -1,4 +1,4 @@
-(snap-explanation-security-snap-confinement)=
+(explanation-security-snap-confinement)=
 # Snap confinement
 
 Snap confinement determines the amount of access an application has to system resources, such as files, the network, peripherals and services. There are several levels of confinement.
@@ -48,5 +48,5 @@ wormhole  0.11.2    112   stable    snapcrafters    -
 
 ## Interfaces and confinement
 
-Snaps with strict confinement must use [interfaces](/snap-explanation/interfaces/all-about-interfaces) to access resources on the user's system, including those provided by other snaps.
+Snaps with strict confinement must use [interfaces](/explanation/interfaces/all-about-interfaces) to access resources on the user's system, including those provided by other snaps.
 

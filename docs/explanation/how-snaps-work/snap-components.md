@@ -1,4 +1,4 @@
-(snap-explanation-how-snaps-work-snap-components)=
+(explanation-how-snaps-work-snap-components)=
 # Snap components
 
 Snap _components_ are parts of a snap that can be built and uploaded in conjunction with a host snap and later optionally installed beside it.
@@ -49,7 +49,7 @@ For further details on packaging, see [How to package and upload a snap with com
 
 ## Revisions
 
-Just like snaps, components have [revisions](/snap-explanation/how-snaps-work/revisions). If a snap defines components, each snap file uploaded to the store will be matched to components with their own specific revisions 
+Just like snaps, components have [revisions](/explanation/how-snaps-work/revisions). If a snap defines components, each snap file uploaded to the store will be matched to components with their own specific revisions 
 This forms a unique tuple between the snap and each respective component. 
 
 > :information_source: While it will become possible to update components in a tuple, the snapcraft functionality required to individually upload an updated component has not yet been implemented.

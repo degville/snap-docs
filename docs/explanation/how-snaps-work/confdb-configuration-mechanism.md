@@ -1,4 +1,4 @@
-(snap-explanation-how-snaps-work-confdb-configuration-mechanism)=
+(explanation-how-snaps-work-confdb-configuration-mechanism)=
 # Confdb configuration mechanism
 
 *Confdb* is a configuration mechanism that replaces individual [snap-specific configuration](/how-to-guides/manage-snaps/set-system-options) with an external [confdb-schema](https://documentation.ubuntu.com/core/reference/assertions/confdb-schema/) assertion, separating the configuration data from the snap installation. This allows for advanced configuration functionality, including:

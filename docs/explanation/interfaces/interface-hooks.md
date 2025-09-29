@@ -1,7 +1,7 @@
-(snap-explanation-interfaces-interface-hooks)=
+(explanation-interfaces-interface-hooks)=
 # Interface hooks
 
-Interface hooks are [hooks](/snap-reference/development/supported-snap-hooks) that can be executed when an [interface](/snap-explanation/interfaces/all-about-interfaces) is either connected or disconnected via the interface's plugs and slots mechanism. They can be used to read or write attributes from a connection and, for example, acquire new resources, update internal options or update databases.
+Interface hooks are [hooks](/snap-reference/development/supported-snap-hooks) that can be executed when an [interface](/explanation/interfaces/all-about-interfaces) is either connected or disconnected via the interface's plugs and slots mechanism. They can be used to read or write attributes from a connection and, for example, acquire new resources, update internal options or update databases.
 
 > ⓘ An interface consists of a connection between a plug and a slot. The slot is the provider of the interface while the plug is the consumer, and a slot can support multiple plug connections. For more details, see [Interface management](/how-to-guides/work-with-snaps/connect-interfaces).
 

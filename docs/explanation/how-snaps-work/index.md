@@ -1,4 +1,4 @@
-(snap-explanation-how-snaps-work-index)=
+(explanation-how-snaps-work-index)=
 # How-Snaps-Work
 
 ```{toctree}

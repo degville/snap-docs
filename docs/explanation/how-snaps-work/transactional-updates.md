@@ -1,4 +1,4 @@
-(snap-explanation-how-snaps-work-transactional-updates)=
+(explanation-how-snaps-work-transactional-updates)=
 # Transactional updates
 
 A transactional update is an install or refresh operation on a set of snaps that either succeeds for all the snaps, or, if even one snap encounters an error, fails for all the entire set. If the process fails, all affected snaps revert to their state before the process started, even snaps that successfully updated.

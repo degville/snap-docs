@@ -53,7 +53,7 @@ Hooks are called with no parameters. When a hook needs to request or modify info
 
 A hook is executed as a single transaction, where a transaction object holds all the configuration changes for that hook. These changes are invisible to the running system until the hook completely finishes.
 
-This allows for changes to be rolled back or *unset* if errors occur during the execution of a hook. This happens if a non-zero value is returned with either the _configure_ or _default-configure_ hooks, for example, or if an error occurs with any hook involved with an [interface auto-connection](/snap-explanation/interfaces/interface-auto-connection).
+This allows for changes to be rolled back or *unset* if errors occur during the execution of a hook. This happens if a non-zero value is returned with either the _configure_ or _default-configure_ hooks, for example, or if an error occurs with any hook involved with an [interface auto-connection](/explanation/interfaces/interface-auto-connection).
 
 ---
 
@@ -159,7 +159,7 @@ Interface hooks are executed when an interface is either connected or disconnect
 
 They can be used to read or write attributes from a connection and, for example, acquire new resources, update internal options or update databases.
 
-For further details, see [Interface hooks](/snap-explanation/interfaces/interface-hooks).
+For further details, see [Interface hooks](/explanation/interfaces/interface-hooks).
 
 <h2 id='heading--prepare-device'>The prepare-device hook</h2>
 

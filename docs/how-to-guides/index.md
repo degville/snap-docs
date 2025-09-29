@@ -21,7 +21,7 @@ Outside of whatever facilities a snapped application may provide, snaps also pro
 * [Disk space awareness](/how-to-guides/manage-snaps/disk-space-awareness): Check whether there's enough disk space before certain operations.
 * [Set system options](/how-to-guides/manage-snaps/set-system-options): The main way to configure your snapped applications.
 * [Control services](/how-to-guides/manage-snaps/control-services): Start, stop and restart snapped background service.
-* [Validation sets](/snap-explanation/how-snaps-work/validation-sets): Ensure a defined set of snaps are installed and updated together.
+* [Validation sets](/explanation/how-snaps-work/validation-sets): Ensure a defined set of snaps are installed and updated together.
 * [Use the REST API](/how-to-guides/manage-snaps/use-the-rest-api): Learn how to access and use our REST API.
 
 ## Problem solving

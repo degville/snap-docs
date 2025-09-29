@@ -1,4 +1,4 @@
-(snap-explanation-security-snapd-release-process)=
+(explanation-security-snapd-release-process)=
 # Snapd release process
 
 snapd is the background service that manages and maintains your snaps. It is itself delivered either as a snap or as a traditional Linux package, such as a _deb_ or an RPM.

@@ -1,4 +1,4 @@
-(snap-explanation-interfaces-all-about-interfaces)=
+(explanation-interfaces-all-about-interfaces)=
 # All about interfaces
 
 By default, snaps with strict confinement are only able to access a limited set of resources outside the environment they run in. Snaps can only access resources from the system and other snaps via interfaces that describe the resources they provide.

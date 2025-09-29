@@ -16,7 +16,7 @@ See [Supported interfaces](/snap-reference/operations/interfaces/index) for a co
 
 The extent of access an interface has is granted through both _connection permissions_ and the specifics of the _interface connections_ being requested.
 
-1. **Connection permissions**: [auto-connect](/snap-explanation/interfaces/interface-auto-connection) | [privileged](/how-to-guides/work-with-snaps/connect-interfaces) | [super-privileged](/snap-reference/operations/interfaces/super-privileged-interfaces)
+1. **Connection permissions**: [auto-connect](/explanation/interfaces/interface-auto-connection) | [privileged](/how-to-guides/work-with-snaps/connect-interfaces) | [super-privileged](/snap-reference/operations/interfaces/super-privileged-interfaces)
    </br>Connection requirements are dependent on which store a developer is using.
      - [Global Snap Store](https://forum.snapcraft.io/t/glossary/14612#heading--snap-store): privileged and super-privileged interfaces require store approval because of the level of trust and permissiveness these interfaces have, which is also why certain interfaces need certain oversight. See [Permission requests](/) for further details.
     * [Dedicated Snap Store](/t/glossary/14612#heading--dedicated): trust and permissiveness are now  the responsibility of the store owner, and many privileged interface connections can be self-served and defined within the dedicated snap store and the device context.
@@ -26,7 +26,7 @@ The extent of access an interface has is granted through both _connection permis
       * Each plug should therefore be connected to a slot, for example:
         * green led plug on app => green led slot on gadget
         * red led plug on app => red led slot on gadget
-      - This kind of 1-to-1 connections can usually be established via [slot rules in the snap-declaration](/snap-explanation/interfaces/interface-auto-connection) for the gadget.
+      - This kind of 1-to-1 connections can usually be established via [slot rules in the snap-declaration](/explanation/interfaces/interface-auto-connection) for the gadget.
     * **App-provided interfaces**: slots are defined by apps, or occasionally from the gadget snap, 
       * May require access, such as from the [content](/) or [shared-memory](/) interfaces.
       * A slot might may be provided by the system snap to cover the case of an equivalent system service, such as [audio-playback](/)

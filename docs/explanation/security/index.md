@@ -1,4 +1,4 @@
-(snap-explanation-security-index)=
+(explanation-security-index)=
 # Security
 
 ```{toctree}

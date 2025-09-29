@@ -1,7 +1,7 @@
 (how-to-guides-manage-snaps-manage-validation-sets)=
 # Manage validation sets
 
-A [validation sets](/snap-explanation/how-snaps-work/validation-sets) ensures only specific snaps are installed, and optionally, only specific snaps at fixed [revisions](/t/glossary/14612#heading--revision).
+A [validation sets](/explanation/how-snaps-work/validation-sets) ensures only specific snaps are installed, and optionally, only specific snaps at fixed [revisions](/t/glossary/14612#heading--revision).
 
 > :information_source: For devices running [Ubuntu Core](/t/glossary/14612#heading--ubuntu-core), a validation set can be declared as part of the [model](https://ubuntu.com/core/docs/reference/assertions/model) definition.
 

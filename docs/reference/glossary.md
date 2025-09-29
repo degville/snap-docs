@@ -38,7 +38,7 @@ An assertion is a digitally signed document that either verifies the validity of
 
 Snapcraft, snapd, Ubuntu Core and the Snap Store all use assertions to handle a variety of functions and processes, including authentication, policy setting, identification and validation.
 
-See [Assertions](/snap-explanation/security/assertions) for more details.
+See [Assertions](/explanation/security/assertions) for more details.
 
 <h3 id='heading--base'>base</h3>
 
@@ -60,19 +60,19 @@ See [dedicated Snap Store](#heading--dedicated)
 
 Channels define which release of a snap is installed and tracked for updates. They consist of, and are subdivided by, tracks (`latest`, or developer defined, e.g `1.0`), risk-levels (stable, candidate, beta and edge), and optional branches. The _tracking_ value for an installed snap shows which channel is being installed and followed.
 
-See [Channels](/snap-explanation/how-snaps-work/channels-and-tracks) for more details.
+See [Channels](/explanation/how-snaps-work/channels-and-tracks) for more details.
 
 <h3 id='heading--classic'>classic</h3>
 
 _Classic_ is a snap confinement level that allows access to your system’s resources in much the same way traditional packages do. It's used sparingly and only after a manual review.
 
-See [Snap confinement](/snap-explanation/security/snap-confinement) for more details.
+See [Snap confinement](/explanation/security/snap-confinement) for more details.
 
 <h3 id='heading--confinement'>confinement</h3>
 
 A snap’s confinement level is the degree of isolation it has from your system. There are three levels of snap confinement: strict, classic and devmode. The majority of snaps use _strict_ confinement, and run in complete isolation up to a level of minimal access that's always deemed safe, or through access given via explicit interface connections.
 
-See [Snap confinement](/snap-explanation/security/snap-confinement) for more details.
+See [Snap confinement](/explanation/security/snap-confinement) for more details.
 
 <h3 id='heading--core'>core</h3>
 
@@ -111,7 +111,7 @@ See [Store overview](https://core.docs.ubuntu.com/en/build-store/#brand-stores) 
 
 _devmode_ is a snap confinement level used by snap developers when creating their snaps. With *devmode*, a snap runs as a strictly confined snap with full access to system resources, and produces debug output to identify unspecified interfaces.
 
-See [Snap confinement](/snap-explanation/security/snap-confinement) for more details.
+See [Snap confinement](/explanation/security/snap-confinement) for more details.
 
 <h3 id='heading--epoch'>epoch</h3>
 
@@ -145,7 +145,7 @@ An interface enables resources from one snap to be shared with another and with 
 
 For a snap to use an interface, its developer needs to have first defined its corresponding plugs and slots within a snap’s [snapcraft.yaml](/) file.
 
-See [Interfaces](/snap-explanation/interfaces/all-about-interfaces) and [Interface management](/how-to-guides/work-with-snaps/connect-interfaces) for more details.
+See [Interfaces](/explanation/interfaces/all-about-interfaces) and [Interface management](/how-to-guides/work-with-snaps/connect-interfaces) for more details.
 
 <h3 id='heading--layout'>Launchpad</h3>
 
@@ -248,7 +248,7 @@ In the above example output, the latest/edge snap has a revision of `26758` and 
 
 However, neither the revision number (nor its version) enforce an order of release. The local system will simply attempt to install whatever snap is recommended by the publisher in the channel being tracked.
 
-See [Revisions](/snap-explanation/how-snaps-work/revisions) for further details.
+See [Revisions](/explanation/how-snaps-work/revisions) for further details.
 
 <h3 id='heading--seeding'>seeding</h3>
 
@@ -327,7 +327,7 @@ See [https://github.com/snapcore/spread](https://github.com/snapcore/spread) for
 
 _Strict_ is the default snap confinement level. It runs snaps in complete isolation, and consequently, with no access your files, network, processes or any other system resource without requesting specific access via an interface. 
 
-See [Snap confinement](/snap-explanation/security/snap-confinement) for more details.
+See [Snap confinement](/explanation/security/snap-confinement) for more details.
 
 <h3 id='heading--tracks'>tracks</h3>
 
@@ -337,7 +337,7 @@ See [Tracks](/t/channels/551#heading--tracks) for more details.
 
 <h3 id='heading--transitional-interfaces'>Transitional interface</h3>
 
-A _transitional interface_ is an [interface](/how-to-guides/work-with-snaps/connect-interfaces) that can be used by a trusted snap to access traditional Linux desktop environments that were not designed to integrate with [snap confinement](/snap-explanation/security/snap-confinement). These interfaces will become deprecated as replacement or modified technologies that enforce strong application isolation become available.
+A _transitional interface_ is an [interface](/how-to-guides/work-with-snaps/connect-interfaces) that can be used by a trusted snap to access traditional Linux desktop environments that were not designed to integrate with [snap confinement](/explanation/security/snap-confinement). These interfaces will become deprecated as replacement or modified technologies that enforce strong application isolation become available.
 
 <h3 id='heading--ubuntu-core'>Ubuntu Core</h3>
 

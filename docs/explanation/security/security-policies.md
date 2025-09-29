@@ -1,4 +1,4 @@
-(snap-explanation-security-security-policies)=
+(explanation-security-security-policies)=
 # Security policies
 
 Without [custom flags at installation](https://snapcraft.io/docs/install-modes), or subsequent [interface connections](/how-to-guides/work-with-snaps/connect-interfaces), snaps remain confined to a restrictive security sandbox, preventing access to system resources outside the snap.
@@ -7,7 +7,7 @@ Snap developers need to be aware which system resources their applications depen
 
 Security policies and store policies work together to allow developers to quickly confine and update their applications to provide safety to end users. This document provides an overview of core mechanisms that underpins the secure snap sandbox as well as information on how to configure and work with the security policies for snaps you publish.
 
-For more general details on what confinement entails, see [Snap confinement](/snap-explanation/security/snap-confinement), and see below for implementation details.
+For more general details on what confinement entails, see [Snap confinement](/explanation/security/snap-confinement), and see below for implementation details.
 
 ## Security overview
 
@@ -180,7 +180,7 @@ To help mitigate any potential issues when a restart is required, _snapd_ will c
 
 * if **no processes are running**, the refresh is performed.
 * if **systemd-initiated processes** are detected, their associated units are first stopped, the snap refreshed, and those units started again.
-* if other **snap-initiated processes** are detected, [refresh awareness](/snap-explanation/how-snaps-work/refresh-awareness) is used to mediate the update.
+* if other **snap-initiated processes** are detected, [refresh awareness](/explanation/how-snaps-work/refresh-awareness) is used to mediate the update.
 
 ##  Information security
 Snapd includes the following built-in features that interacts with user information:

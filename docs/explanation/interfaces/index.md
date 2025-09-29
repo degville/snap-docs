@@ -1,4 +1,4 @@
-(snap-explanation-interfaces-index)=
+(explanation-interfaces-index)=
 # Interfaces
 
 ```{toctree}

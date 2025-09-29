@@ -1067,7 +1067,7 @@ Takes an interface name. When set, the results are limited to the selected inter
 
 <h4>`name`</h4>
 
-Search for snaps or [components](/snap-explanation/how-snaps-work/snap-components) whose name matches the given string.
+Search for snaps or [components](/explanation/how-snaps-work/snap-components) whose name matches the given string.
 Can’t be used together with  `q` . This is meant for things like
 autocompletion. The match is exact (i.e. find would return 0 or 1 results)
 unless the string ends in  `*` .
@@ -1241,7 +1241,7 @@ http://localhost/v2/find\?q\=libreoffice | jq
 
 <h4>Component fields</h4>
 
-Each component will have fields matching the fields in [component.yaml](/snap-explanation/how-snaps-work/snap-components) and also the revision:
+Each component will have fields matching the fields in [component.yaml](/explanation/how-snaps-work/snap-components) and also the revision:
 
 * `description`: component description
 * `name`: the component name
@@ -2331,7 +2331,7 @@ Example:
 
 <h2 id='heading--snaps'>GET /v2/snaps</h2>
 
-* Description: list installed snaps and installed or available [components](/snap-explanation/how-snaps-work/snap-components)
+* Description: list installed snaps and installed or available [components](/explanation/how-snaps-work/snap-components)
 * Access: open
 * Operation: sync
 * Return: list of packages, as for `/v2/find`
@@ -2437,7 +2437,7 @@ Responses will show the installed and non-installed components for each snap in 
 
 Non-installed components will have only “name” and “type” fields, as that is the only information available locally in snap metadata (extra information could be retrieved by clients with a call to GET /v2/find with “name” set to the snap we are interested in).
 
-Each component will have fields matching the fields in [component.yaml](/snap-explanation/how-snaps-work/snap-components), alongside revision, installed-size and install date:
+Each component will have fields matching the fields in [component.yaml](/explanation/how-snaps-work/snap-components), alongside revision, installed-size and install date:
 
 * `description`: component description
 * `install-date`: time when the component was installed
@@ -2512,7 +2512,7 @@ Example:
 
 * `action`: either `install`, `refresh`, `remove`, `revert`, `hold`, `unhold`, `enable`, `disable` or `switch`
 * `snaps`: array of package names to perform action on (optional, interpreted as all packages if not present for a refresh)
-* `transaction`: optional string field, defaulting to **per-package** if not present. If **all-package** is used, the action field will be performed such that the corresponding change will have a single transaction covering all the packages. If in this case there is a failure, the state of all affected packages will be fully reverted, even if for some packages the action had been successful. This field is valid for _install_ and _refresh_ actions. See [Transactional updates](/snap-explanation/how-snaps-work/transactional-updates) for more details
+* `transaction`: optional string field, defaulting to **per-package** if not present. If **all-package** is used, the action field will be performed such that the corresponding change will have a single transaction covering all the packages. If in this case there is a failure, the state of all affected packages will be fully reverted, even if for some packages the action had been successful. This field is valid for _install_ and _refresh_ actions. See [Transactional updates](/explanation/how-snaps-work/transactional-updates) for more details
 * `system-restart-immediate`: if `true`, makes any system restart, needed by the action, immediate and without delay (requires _snapd 2.52_)
 * `validation-sets`: array of validation sets to enforce, refreshing and installing as required. Cannot be used in tandem with the 'snaps' field (optional)
 * `terminate`: kill running processes associated with specified snaps before removal (optional, only applicable with `action` set to `remove`) (requires _snapd 2.66_)
@@ -3356,7 +3356,7 @@ Example:
 
 <h2 id='heading--validation-sets'>GET /v2/validation-sets</h2>
 
-* Description: get all enabled [validation sets](/snap-explanation/how-snaps-work/validation-sets)
+* Description: get all enabled [validation sets](/explanation/how-snaps-work/validation-sets)
 * Access: authenticated
 * Operation: sync
 * Return: list of validation sets

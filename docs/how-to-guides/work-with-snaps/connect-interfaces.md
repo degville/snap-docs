@@ -1,7 +1,7 @@
 (how-to-guides-work-with-snaps-connect-interfaces)=
 # Connect interfaces
 
-[Interfaces](/snap-explanation/interfaces/all-about-interfaces) allow (or deny) access to a resource outside of a snap's confinement.
+[Interfaces](/explanation/interfaces/all-about-interfaces) allow (or deny) access to a resource outside of a snap's confinement.
 
 Most users don't need to worry about interfaces. Snaps are designed for strong application isolation and safe interface connections are made automatically. 
 
@@ -130,7 +130,7 @@ Interfaces not connected automatically require the user to make a manual connect
 
 If a snap is installed prior to an interface being granted auto-connect permission, and permission is subsequently granted and the snap updated, when the installed snap updates, the interface will be auto-connected.
 
-For more technical details on how interface auto-connections are processed, see [The interface auto-connection mechanism](/snap-explanation/interfaces/interface-auto-connection).
+For more technical details on how interface auto-connections are processed, see [The interface auto-connection mechanism](/explanation/interfaces/interface-auto-connection).
 
 > ⓘ See the _Auto-connect_ column in the [Supported interfaces](/snap-reference/operations/interfaces/index) table for which interfaces are connected automatically.
 

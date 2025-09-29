@@ -1,4 +1,4 @@
-(snap-explanation-interfaces-interface-auto-connection)=
+(explanation-interfaces-interface-auto-connection)=
 # Interface auto-connection
 
 Interfaces allow (or deny) access to a resource outside of a snap’s confinement, but they're also designed to be convenient for users.

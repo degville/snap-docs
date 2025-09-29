@@ -1,7 +1,7 @@
-(snap-explanation-how-snaps-work-revisions)=
+(explanation-how-snaps-work-revisions)=
 # Revisions
 
-A snap's *revision* is a number assigned automatically by the [Snap Store](/t/glossary/14612#heading--snap-store) with each snap upload, giving each snap binary a unique identity within, and across, its [channels](/snap-explanation/how-snaps-work/channels-and-tracks).
+A snap's *revision* is a number assigned automatically by the [Snap Store](/t/glossary/14612#heading--snap-store) with each snap upload, giving each snap binary a unique identity within, and across, its [channels](/explanation/how-snaps-work/channels-and-tracks).
 
 The revision number increments with each new upload. But this number is arbitrary, and only used to differentiate between uploads. 
 

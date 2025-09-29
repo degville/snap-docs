@@ -67,7 +67,7 @@ For more information, see [Adding snap configuration](/) and [The `configure` ho
 
 Component support requires *snapd 2.67+* .
 
-[Components](/snap-explanation/how-snaps-work/snap-components) are exposed in the snap mountspace under `/snap/<snap_name>/components/<snap_revision>/<component_name>`. This is a symlink to `/snap/<snap_name>/components/mnt/<component_name>/<component_revision>`.
+[Components](/explanation/how-snaps-work/snap-components) are exposed in the snap mountspace under `/snap/<snap_name>/components/<snap_revision>/<component_name>`. This is a symlink to `/snap/<snap_name>/components/mnt/<component_name>/<component_revision>`.
 
 There is only one component revision active for a snap revision at a given time.
 

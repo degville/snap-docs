@@ -1,4 +1,4 @@
-(snap-explanation-security-assertions)=
+(explanation-security-assertions)=
 # Assertions
 
 An assertion is a digitally signed document that either verifies the validity of a process, as attested by the signer, or carries policy information, as formulated by the signer.  

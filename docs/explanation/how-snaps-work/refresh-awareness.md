@@ -1,4 +1,4 @@
-(snap-explanation-how-snaps-work-refresh-awareness)=
+(explanation-how-snaps-work-refresh-awareness)=
 # Refresh awareness
 
 Snaps update automatically, and by default, the *snapd* daemon checks for updates 4 times a day. Each update check is called a *refresh* and is described in more detail in [Managing updates](/how-to-guides/work-with-snaps/manage-updates).
