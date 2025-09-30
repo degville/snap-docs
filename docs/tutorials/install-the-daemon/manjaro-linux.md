@@ -5,8 +5,6 @@ Snap is often installed by default on Manjaro, especially if you're using a KDE 
 
 The easiest way to install Snap is from Manjaro's *Add/Remove Software* application (Pamac), found in the launch menu. From the application, search for `snapd`, select the result, and click *Apply*.
 
-![Screenshot_20190326_174507|690x359](upload://3dOlmhlyQKYYxySSFgMWoDW9bYO.png)
-
 An optional dependency is *bash completion support*, which we recommend leaving enabled when prompted.
 
 Alternatively, *snapd* can be installed from the command line:
@@ -39,4 +37,3 @@ Hello World!
 ```
 
 Snap is now installed and ready to go!
-

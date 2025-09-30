@@ -24,7 +24,7 @@ hello-world 6.3 from Canonical✓ installed
 $ hello-world
 Hello World!
 ```
-Snap is now installed and ready to go!  If you're using a desktop, a great next step is to [install the Snap Store app](/).
+Snap is now installed and ready to go.
 
 ### Troubleshooting
 
@@ -41,7 +41,7 @@ If using a container, install the _fuse_ and _squashfuse_ packages (`sudo dnf in
 
 Otherwise install _kernel-modules_ package (`sudo dnf install kernel-modules`).
 
-#### Fedora Silverblue prevents symlinking
+#### Fedora Silverblue prevents symbolic links
 
-[Fedora Silverblue](https://silverblue.fedoraproject.org/) implements a read-only root filesystem and, consequently, cannot allow the above symbolic link to be created. See the following associated GitHub issue for further details: [Make it easier to link in or bind folders to the root directory?](https://github.com/projectatomic/rpm-ostree/issues/1711)
+[Fedora Silverblue](https://silverblue.fedoraproject.org/) implements a read-only root filesystem and, consequently, cannot allow symbolic links to be created. See the following associated GitHub issue for further details: [Make it easier to link in or bind folders to the root directory?](https://github.com/projectatomic/rpm-ostree/issues/1711)
 

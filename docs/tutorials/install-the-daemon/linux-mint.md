@@ -5,8 +5,6 @@ Snap is available for the latest release of Linux Mint, 22.1 (Xia), and for olde
 
 You can find out which version of Linux Mint you're running by opening *System info* from the *Preferences* menu.
 
-![Linux Mint 21 system info page](upload://44khepvlHcDy2YZdmcRGbkiuKms.png)
-
 From Linux Mint 20 onwards, installing Snap is blocked by a file called `nosnap.pref` in the directory `/etc/apt/preferences.d/`; this file needs to be either moved or removed from the directory, or renamed with an extension other than `.pref` before Snap can be installed.
 
 This can be accomplished from the command line, and the following command (for example) renames `nosnap.pref` to `nosnap.backup`:

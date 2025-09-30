@@ -35,5 +35,3 @@ Hello World!
 ```
 
 Snap is now installed and ready to go!
-
-_Snap is currently unavailable on versions of Debian prior to 9._
