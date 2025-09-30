@@ -4,8 +4,8 @@
 Snap can be installed on Pop!_OS from the command line. Open *Terminal* from the Applications launcher and type the following:
 
 ```bash
-$ sudo apt update
-$ sudo apt install snapd
+sudo apt update
+sudo apt install snapd
 ```
 
 Either log out and back in again, or restart your system, to ensure snap’s paths are updated correctly.
@@ -19,5 +19,4 @@ $ hello-world
 Hello World!
 ```
 
-Snap is now installed and ready to go!  If you're using a desktop, a great next step is to [install the Snap Store app](/).
-
+Snap is now installed and ready to go!

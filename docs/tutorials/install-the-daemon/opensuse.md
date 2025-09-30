@@ -3,9 +3,10 @@
 
 Snap can be installed from the command line on [openSUSE Tumbleweed](https://get.opensuse.org/tumbleweed/) and [openSUSE Leap 15.x](https://get.opensuse.org/leap/).
 
-[note type="important" status="Older openSUSE releases"]
 
-The snap daemon, snapd, is only built for currently supported openSUSE releases. See [support lifetime](https://en.opensuse.org/Lifetime) for details about which releases are currently within the support timeframe.
+```{admonition} Older openSUSE releases
+
+The snap daemon, snapd, is only built for currently supported openSUSE releases. See [Support lifetime](https://en.opensuse.org/Lifetime) for details about which releases are currently within the support timeframe.
 
 ```
 

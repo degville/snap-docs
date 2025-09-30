@@ -4,8 +4,8 @@
 Snap can be installed on elementary OS from the command line. Open *Terminal* from the Applications launcher and type the following:
 
 ```bash
-$ sudo apt update
-$ sudo apt install snapd
+sudo apt update
+sudo apt install snapd
 ```
 
 Either log out and back in again, or restart your system, to ensure snap’s paths are updated correctly.
