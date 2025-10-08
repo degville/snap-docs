@@ -1,11 +1,9 @@
 (how-to-guides-work-with-snaps-configure-snaps)=
 # Configure snaps
 
-Certain snaps, such as those providing a background service, expose  configuration options that can be viewed and changed.
+Certain snaps, such as those providing a background service, have configuration options that can be viewed and changed. The commands for viewing and changing these configuration options are `snap get`, `snap set` and `snap unset`.
 
-The commands for viewing and changing these configuration options are `snap get`, `snap set` and `snap unset`.
-
-For example, to see the configuration options exposed by an installed snap, enter `snap get <snap name>`:
+To see the configuration options of an installed snap, enter `snap get <snap name>`:
 
 ```bash
 $ sudo snap get nextcloud
@@ -102,8 +100,3 @@ $ sudo snap set nextcloud ports.https! ports.http=81
 The update process will test the validity of the configuration options. If any errors are detected, the overall change is cancelled and the previous configuration reinstated.
 
 Similarly, if the configuration update process takes longer than a reasonable amount of time, currently 5 minutes, the update is forcefully aborted and the once again the configuration is rolled back.
-
-
-
-> ⓘ  For background details on how snap developers set configuration options, see [Adding snap configuration](/) and [The configure hook](/t/supported-snap-hooks/3795#heading--the-configure-hook).
-

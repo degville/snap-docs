@@ -97,7 +97,7 @@ snap start --enable lxd.daemon
 
 User-services cannot be disabled or enabled individually for users currently, they can only be enabled globally or disabled globally (i.e for all users).
 
-<h2 id='heading--logs'>Inspecting logs</h2>
+## Inspecting logs
 
 If you need to see the log output for a snap's services, use the `logs`
 command. As with the _services_ command, you can specify either a snap name to
@@ -131,8 +131,7 @@ snap logs -n=all lxd.daemon
 Adding the `-f` option will keep log output open so you can follow new entries as they occur:
 
 ```bash
-$ sudo snap logs lxd -f
+sudo snap logs lxd -f
 ```
 
-The size and rate of log output can be limited by placing a snap within a quota group. See [Journal log limits](/t/quota-groups/25553#heading--journal) for more details.
-
+The size and rate of log output can be limited by placing a snap within a quota group. See [Journal log limits](use-resource-quotas) for more details.

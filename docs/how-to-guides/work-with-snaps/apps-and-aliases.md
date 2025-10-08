@@ -9,7 +9,7 @@ The following sections describe how to work with such snap applications.
 
 ## Running applications
 
-As covered in [Getting started](/tutorials/get-started), a snap's installed application(s) can be found under `/snap/bin`, and subsequently, often added to _$PATH_. This makes commands directly accessible from the command line. 
+As covered in [Get started](/tutorials/get-started), a snap's installed application(s) can be found under `/snap/bin`, and subsequently, often added to _$PATH_. This makes commands directly accessible from the command line. 
 
 If executing a command directly doesn't work, try prefixing it with the */snap/bin* path:
 
@@ -45,7 +45,7 @@ The first option is used automatically when the exposed application name matches
 
 The namespace syntax (see above) is effective at preventing conflicts, but it's not ideal when applications have well known names that third-party scripts depend upon. This is where *aliases* are useful.
 
-For example, the [LXD container manager](https://linuxcontainers.org/lxd/introduction/) snap exposes the application as *lxd*. However, many third-party scripts depend on this being  *lxc*. To solve this issue, the LXD snap creates an alias for *lxc*.
+For example, [LXD](https://canonical.com/lxd) snap exposes the application as *lxd*. However, many third-party scripts depend on this being  *lxc*. To solve this issue, the LXD snap creates an alias for *lxc*.
 
 Aliases can be viewed with the `snap aliases` command: 
 
@@ -84,7 +84,7 @@ As there is no guarantee that an alias is going to be unique, and potential conf
 
 The same review process also ensures that any default commands exposed by a snap are either named after the snap or, when different, reviewed to ensure the alias is relevant within the context of the application. This helps maintain a sane shared namespace for everyone.
 
-If you want an alias enabled for your snap, please open a small forum topic [in the store requests category](https://forum.snapcraft.io/c/store-requests) with the details.
+If you want an alias enabled for your snap, please open a forum topic [in the store requests forum category](https://forum.snapcraft.io/c/store-requests) with the details.
 
 ## Manual aliases
 

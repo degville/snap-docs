@@ -1,13 +1,13 @@
 (how-to-guides-manage-snaps-manage-validation-sets)=
 # Manage validation sets
 
-A [validation sets](/explanation/how-snaps-work/validation-sets) ensures only specific snaps are installed, and optionally, only specific snaps at fixed [revisions](/t/glossary/14612#heading--revision).
+A [validation sets](/explanation/how-snaps-work/validation-sets) ensures only specific snaps are installed, and optionally, only specific snaps at fixed [revisions](/reference/glossary.md#revisions).
 
-> ⓘ  For devices running [Ubuntu Core](/t/glossary/14612#heading--ubuntu-core), a validation set can be declared as part of the [model](https://ubuntu.com/core/docs/reference/assertions/model) definition.
+> ⓘ  For devices running [Ubuntu Core](/reference/glossary.md#ubuntu-core), a validation set can be declared as part of the [model](https://ubuntu.com/core/docs/reference/assertions/model) definition.
 
 ## Create a validation set
 
-Ensure you have a [developer account](https://forum.snapcraft.io/t/create-a-developer-account/6760) and know your *Developer account id*.
+Ensure you have an [Ubuntu One](https://documentation.ubuntu.com/core/tutorials/build-your-first-image/access-ubuntu-one/) and know your *Developer account id*.
 
 The `snapcraft edit-validation-sets` command is used to create a validation set from the command line:
 

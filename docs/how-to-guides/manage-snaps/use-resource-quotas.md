@@ -20,27 +20,14 @@ Quota groups require snap version _2.59+_. Setting quotas for journal log messag
 ```
 sudo snap set system experimental.quota-groups=true
 ```
----
 
-- [Create a quota group](#heading--creating)
-   - [Add snaps to a quota group](#heading--add)</br>
-- [Set quota group limits](#heading--attributes)
-	- [Journal log](#heading--journal)
-	- [Memory](#heading--memory)
-	- [CPU](#heading--cpu)
-- [View quota groups](#heading--view)	
-- [Nested quota groups](#heading--nested)
-- [Update quota groups](#heading--updating)
-- [View group members and resource usage](#heading--usage)
-- [Remove snaps and quota groups](#heading--removing)
-
-<h2 id='heading--creating'>Create a quota group</h2>
+## Create a quota group
 
 To create a quota group, use the `snap set-quota` command with a group name and a limiting attribute, such as `--memory=<amount>`:
 
 `snap set-quota mygroup --memory=64MB`
 
-<h3 id='heading--add'>Add snaps to a quota group</h3>
+### Add snaps to a quota group
 
 Snaps that contain services can be optionally added to a quota group when a group is created:
 
@@ -56,15 +43,16 @@ A pre-installed snap can be added to a pre-existing quota group by running the `
 
 See below for details on which limiting attributes are supported by quota groups.
 
-<h2 id='heading--attributes'>Limiting attributes</h2>
+## Limiting attributes
 
-<h3 id='heading--journal'>Journal log limits</h3>
+### Journal log limits
 
-While the `snap logs` command is used to retrieve the _systemd journal_ logs for a specific service, or for all services within a snap (see [Inspecting logs](/t/service-management/3965#heading--logs) for further details), a quota can be used to limit the output.
+While the `snap logs` command is used to retrieve the _systemd journal_ logs for a specific service, or for all services within a snap (see [Inspecting logs](/how-to-guides/manage-snaps/control-services#inspecting-logs) for further details), a quota can be used to limit the output.
 
-Log output can be limited by both size and rate within a quota group:
+Log output can be limited by both size and rate within a quota group.
 
-#### 1. **Journal size**</br>
+####  Journal size
+
 `journal-size=<value>[KB|MB|GB]`
 
 Limit the size of the aggregated journal log for all the snaps in the quota group. This is useful when service log output is verbose on devices with limited storage capacity.
@@ -75,7 +63,7 @@ Accepts a value in either kilobytes(KB), megabytes(MB) or gigabytes(GB), includi
 sudo snap set-quota loggroup --journal-size=64MB
 ```
 
-#### 2. **Journal rate limit**
+#### Journal rate limit
 
 `journal-rate-limit=<number-of-messages>/<time-period>`
 
@@ -87,7 +75,7 @@ The time period is can be nanoseconds(us), milliseconds (ms), seconds(s), minute
 sudo snap set-quota loggroup --journal-rate-limit=10/1h2m3s4ms5us
 ```
 
-<h3 id='heading--memory'>Memory limits</h3>
+### Memory limits
 
 `memory=value[KB|MB|GB]`
 
@@ -101,23 +89,23 @@ The memory limit for a quota group can only be increased.  Increasing the memory
 
 To decrease the memory limit for a quota group, the entire group must be removed with the _remove-quota_ command and recreated with a lower limit.
 
-<h3 id='heading--cpu'>CPU limits</h3>
+### CPU limits
 
 CPU limits can be set in 4 different ways, some of which can be combined depending on requirements:
 
- 1. **Percentage of total CPU resources**
- 2. **Percentage of a given number of CPU cores**
- 3. **Percentage for specific cores**
- 4. **Limit the number of threads**
+- Percentage of total CPU resources
+- Percentage of a given number of CPU cores
+- Percentage for specific cores
+- Limit the number of threads
 
 Without a specified CPU limit, all quota groups can use the full system capacity. 
 
-#### 1. Percentage of total CPU resources 
+#### Percentage of total CPU resources 
 `cpu=<percentage>%`
 
 Sets a relative percentage limit on how much execution time a process receives, regardless of the number of cores available, up to 100%.
 
-#### 2. Percentage of a given number of CPU cores
+#### Percentage of a given number of CPU cores
 `--cpu=<number of cores>x<percentage>%`
 
 <!-- TODO: this behaviour is on systems using cgroupsv2 (grep ^cgroup /etc/mtab).  Without this, CPU limits use CPUQuota (200% means two cores). This needs to be tested and documented. -->
@@ -126,7 +114,7 @@ One or more cores can be specified alongside a CPU percentage to allocate relati
 
 For example, `--cpu=2x100%` on a 4 core system would permit a process to run at full capacity on only two cores, which is equivalent to 50% of full system capacity. 
 
-#### 3. Percentage for specific cores
+#### Percentage for specific cores
 
  `cpu-set=<core number 1>,<core number 2> --cpu=<percentage>%`
 
@@ -159,7 +147,7 @@ snap set-quota max-two-specific-cores --cpu-set=0,1,2,3 --cpu=50% --threads=8092
 By default, quota groups are not limited in the number of threads they can create.
 
 
-<h2 id='heading--view'>View quotas</h2>
+## View quotas
 
 If the group already exists, _set-quota_ will update its resource limits.
 
@@ -178,7 +166,7 @@ loggroup           journal-size=64.0MB,journal-rate=10/1h2m3.004005s
 ```
 Snaps can belong to only one quota group, but quota groups can be nested.
 
-<h2 id='heading--nested'>Nested quota groups</h2>
+## Nested quota groups
 
 To create a nested quota group, add the `--parent=<parent group>` argument to the _set-quota_ command when creating a new quota group:
 
@@ -196,7 +184,7 @@ lowmem   highmem  memory=1.00GB
 ```
 The total resource use of nested quota groups cannot exceed that of the parent group.
 
-<h2 id='heading--updating'>Update a quota group</h2>
+## Update a quota group
  
 Add the names of one or more snaps to the _set-quota_ command to include those snaps in the quota group when its created:
 
@@ -223,7 +211,7 @@ with the remove-quota command and recreated with a lower limit.
 
 Updating quotas in a group, or imposing new quotas on an existing quota group, will per default require restarting any running services in that quota group.
 
-<h2 id='heading--usage'>View group members and resource usage</h2>
+## View group members and resource usage
 
 The _quota_ command shows information about a quota group, including the set of 
 snaps it includes and any subgroups it contains, as well as its resource constraints and 
@@ -254,7 +242,7 @@ subgroups:
   - lowmem
 ```
 
-<h2 id='heading--removing'>Remove snaps and quota groups</h2>
+## Remove snaps and quota groups
 
 To remove a snap from a quota group, the entire group must be removed with the _remove-quota_ command and the quota group recreated without the snaps:
 
