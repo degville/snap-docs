@@ -47,7 +47,7 @@ See below for details on which limiting attributes are supported by quota groups
 
 ### Journal log limits
 
-While the `snap logs` command is used to retrieve the _systemd journal_ logs for a specific service, or for all services within a snap (see [Inspecting logs](/how-to-guides/manage-snaps/control-services#inspecting-logs) for further details), a quota can be used to limit the output.
+While the `snap logs` command is used to retrieve the _systemd journal_ logs for a specific service, or for all services within a snap (see [Inspecting logs](/how-to-guides/manage-snaps/control-services.md#inspecting-logs) for further details), a quota can be used to limit the output.
 
 Log output can be limited by both size and rate within a quota group.
 

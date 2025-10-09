@@ -3,7 +3,7 @@
 
 A snap delta contains only the differences between one revision of a snap and another. They're used to save bandwidth when downloading and uploading snap package updates to the [Snap Store](/t/glossary/14612#heading--snap-store).
 
-Snap deltas come in two forms,  [download](#heading--download-deltas) deltas and [upload deltas](/).
+Snap deltas come in two forms, _download_ deltas and _upload_ deltas.
 
 ## Download deltas
 
