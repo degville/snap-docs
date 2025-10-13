@@ -1,14 +1,5 @@
 (how-to-guides-fix-common-issues-index)=
-# Fix-Common-Issues
-
-[quote]
-:construction: **NOTE TO EDITORS** :construction:
-
-Some issues re-occur but the causes can be difficult to define or change over time. 
-
-This document is a work-in-progress and will/can be updated to link to other pages helping users with any issues they encounter and guiding them to any relevant forum posts. 
-
-[/quote]
+# Fix common issues
 
 Snaps run on, and are built for, a diverse and constantly evolving set of [operating systems](/tutorials/install-the-daemon/index) and [embedded devices](https://ubuntu.com/core/docs/supported-platforms#heading--supported).
 

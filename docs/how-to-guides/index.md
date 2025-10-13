@@ -28,8 +28,9 @@ Outside of whatever facilities a snapped application may provide, snaps also pro
 
 The vast majority of snap users and developers experience very few issues, but any technology this complex and diverse will likely encounter some issues and incompatibilities. 
 
-* [Fix common issues](/how-to-guides/fix-common-issues/index): If you do run into problems, find common solutions here.
-* [Test snapd fixes](/how-to-guides/fix-common-issues/test-snapd-fixes): Run a bugfix build of the snap daemon.
+* [Fix common issues](/how-to-guides/work-with-snaps/fix-common-issues): If you do run into problems, find common solutions here.
+* [Test snapd fixes](/how-to-guides/work-with-snaps/test-snapd-fixes): Run a bugfix build of the snap daemon.
+* [Debug running snaps](how-to-guides/work-with-snaps/debug-snaps): Test bugfix releases of snapd.
 
 
 ```{toctree}
@@ -40,4 +41,3 @@ The vast majority of snap users and developers experience very few issues, but a
 
 Work with snaps <work-with-snaps/index>
 Manage snaps <manage-snaps/index>
-Fix common issues <fix-common-issues/index>
