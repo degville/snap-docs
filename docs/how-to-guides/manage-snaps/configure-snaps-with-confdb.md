@@ -3,11 +3,11 @@
 
 _Confdb_ is a configuration system that allows snaps to be configured in fine-grained ways using a [confdb-schema](https://documentation.ubuntu.com/core/reference/assertions/confdb-schema/) assertion.
 
-This guide will detail the steps required to use confdb, as well as explore some of its features. For implementation details, see the [Confdb configuration mechanism](https://forum.snapcraft.io/t/confdb-configuration-mechanism/46986/2). 
+This guide will detail the steps required to use confdb, as well as explore some of its features. For implementation details, see the [Confdb configuration mechanism](/explanation/how-snaps-work/confdb-configuration-mechanism). 
 
 We'll use an example where one snap creates a Wi-Fi configuration that another snap can view.
 
-> ⓘ  Confdb is currently considered an [Experimental feature](https://forum.snapcraft.io/t/experimental-features/41241) and implementation details may change as development progresses.
+> ⓘ  Confdb is currently considered an [Experimental feature](/reference/development/experimental-features) and implementation details may change as development progresses.
 
 ## Prerequisites
 
@@ -202,11 +202,11 @@ Then exit the editor and sign the assertion when prompted.
 
 ## Creating the snaps
 
-See [Create a new snap](https://forum.snapcraft.io/t/create-a-new-snap/81020) for a general overview of the snap creation process.
+See [Create a new snap](https://documentation.ubuntu.com/snapcraft/stable/tutorials/craft-a-snap/) for a general overview of the snap creation process.
 
 There are two things a snap needs to be able to use confdb:
 * a plug to declare its intent to use a confdb namespace and 
-* an optional set of [hooks](https://forum.snapcraft.io/t/supported-snap-hooks/3795) that snapd invokes when the namespace is accessed
+* an optional set of [hooks](/reference/development/supported-snap-hooks) that snapd invokes when the namespace is accessed
 
 ### Custodian snap
 
@@ -227,13 +227,13 @@ plugs:
     role: custodian
 ```
 
-The other component that must be defined in the snap are the [hooks](https://forum.snapcraft.io/t/supported-snap-hooks/3795). 
+The other component that must be defined in the snap are the [hooks](/reference/development/supported-snap-hooks). 
 
-Snaps interact with confdb through [snapctl](https://forum.snapcraft.io/t/using-the-snapctl-tool/15002) and, in turn, snapd invokes various hooks when confdb is read from or written to.
+Snaps interact with confdb through [snapctl](/how-to-guides/manage-snaps/use-snapct) and, in turn, snapd invokes various hooks when confdb is read from or written to.
 
 In this case, the custodian snap will only define the `change-view-<plug>`, which provides an opportunity for the snap to modify values being set.
 
-As an example, we’ll say that the SSID must be prefixed with our company’s name: “Acme”. The configuration can be set by the administrator using [snap set](https://forum.snapcraft.io/t/configure-snaps/510) or by any other snap with access to that view, so it’s the custodian snap’s responsibility to enforce that the prefix is enforced.
+As an example, we’ll say that the SSID must be prefixed with our company’s name: “Acme”. The configuration can be set by the administrator using [snap set](/how-to-guides/work-with-snaps/configure-snaps) or by any other snap with access to that view, so it’s the custodian snap’s responsibility to enforce that the prefix is enforced.
 
 Our `change-view-configure-wifi` hook looks like this:
 

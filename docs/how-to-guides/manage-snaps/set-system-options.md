@@ -6,11 +6,11 @@ Snap supports a set of system-wide options that allow you to customise your snap
 As with [Configuration in snaps](/how-to-guides/work-with-snaps/configure-snaps), these options are changed with the `set` and `get` commands, but with a target of  *system* instead of a specific snap:
 
 ```bash
-$ snap set system some.option="some value"
-$ snap get system some.option
+snap set system some.option="some value"
+snap get system some.option
 ```
 
-Configuration options can be unset by either passing their names to the unset command or by adding an exclamation mark (!) to the end of an option name: (from _snapd 2.41+_):
+Configuration options can be unset by either passing their names to the unset command or by adding an exclamation mark (!) to the end of an option name:
 
 ```bash
 $ snap unset system some.option
@@ -18,10 +18,10 @@ $ # or
 $ snap set system some.option!
 ```
 
-If a setting is part of the system snap, provided by either the core snap or snapd itself, the command syntax will include two instances of _system_, such as with [system.timezone](#heading--timezone):
+If a setting is part of the system snap, provided by either the core snap or snapd itself, the command syntax will include two instances of _system_, such as with `system.timezone`:
 
 ```bash
-$ snap set system system.timezone="Europe/London"  
+snap set system system.timezone="Europe/London"  
 ```
 
 Typing `snap get system` outputs a top-level view of system-wide option categories which can be added as arguments to view their contents:

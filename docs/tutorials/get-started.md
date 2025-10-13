@@ -19,7 +19,7 @@ Many Linux distributions, including Ubuntu, support _snap_ by default. You can c
 
 Snap is installed with a few other snaps, and a good place to start is to display these with the `snap list` command:
 
-```bash
+```console
 $ snap list
 Name             Version        Rev    Tracking         Publisher   Notes
 core22           20231123       1033   latest/stable    canonical✓  base
@@ -42,7 +42,7 @@ The best way to find new snaps is to use the online [Snap Store](https://snapcra
 
 To search for snaps with ‘media player’ in either their names or descriptions, type `snap find "media player"` into your terminal:
 
-```bash
+```console
 $ snap find "media player"
 Name  Version  Developer    Notes  Summary
 vlc   3.0.4     videolan✓   -      The ultimate media player.

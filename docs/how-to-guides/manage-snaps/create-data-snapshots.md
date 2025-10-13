@@ -5,18 +5,7 @@ A *snapshot* is a copy of the user, system and configuration data stored by *sna
 
 Snapshots are generated **manually** with the `snap save` command and **automatically when a snap is removed** (unless `--purge` is used with remove, in which case no snapshot is created). A snapshot can be used to backup the state of your snaps, revert snaps to a previous state and to restore a fresh snapd installation to a previously saved state.
 
-- [Generating a snapshot](#heading--generating)
-- [What a snapshot stores](#heading--what-is-stored)
-- [Verifying a snapshot](#heading--verifying)
-- [Restoring a snapshot](#heading--restoring)
-- [Exporting and import a snapshot](#heading--export)
-- [Deleting a snapshot](#heading--deleting)
-- [Automatic snapshots](#heading--automatic-snapshots)
-- [Inside a snapshot](#heading--anatomy)
-
----
-
-<h2 id='heading--generating'>Generating a snapshot</h2>
+## Generating a snapshot
 
 The `snap save` command creates a snapshot for all installed snaps, or if declared individually, specific snaps:
 
@@ -42,7 +31,7 @@ Set  Snap             Age    Version               Rev   Size   Notes
 ```
 > ⓘ  Both the _saved_ and _check-snapshot_ commands accept a `–users=` option with a comma-separated list of users to filter on.
 
-<h2 id='heading--what-is-stored'>What a snapshot stores</h2>
+## What a snapshot stores
 
 A snapshot is a copy of the user, system and configuration data stored by *snapd* for one or more snaps on your system. For each snap, this data can be found in `$HOME/snap/<snap-name>` and `/var/snap/<snap-name>`.
 
@@ -67,9 +56,9 @@ When a snapshot is restored:
 
 1. The revision-specific contents of **SNAP_DATA** and  **SNAP_USER_DATA** will be copied into and _overwrite_ the contents of the revision-specific directory of the currently installed revision.
 
-See [Data locations](/) for more details on how these locations are intended to be used by a snap, and see [Inside a snapshot](#heading--anatomy) to see how they're stored within a snapshot.
+See [Data locations](/reference/operations/data-locations) for more details on how these locations are intended to be used by a snap, and see [Inside a snapshot](#inside-a-snapshot) to see how they're stored within a snapshot.
 
-<h2 id='heading--verifying'>Verifying a snapshot</h2>
+## Verifying a snapshot
 
 To verify the integrity of a snapshot, use the `check-snapshot` command:
 
@@ -78,7 +67,7 @@ $ sudo snap check-snapshot 30
 Snapshot #30 verified successfully.
 ```
 
-<h2 id='heading--export'>Exporting and importing a snapshot</h2>
+## Exporting and importing a snapshot
 
 By default, snapshots are maintained and stored on the system that created them. However, to help with backup and recovery, individual snapshots can also be exported and restored.
 
@@ -102,7 +91,7 @@ Set  Snap  Age    Version  Rev   Size    Notes
 
 If the snapshot with the same snapshot identifier exists, the import will overwrite it. If the snapshot doesn't exist, it will be imported and assigned a new snapshot identifier.
 
-<h2 id='heading--restoring'>Restoring a snapshot</h2>
+## Restoring a snapshot
 
 The `restore` command replaces the current user, system and configuration data with the corresponding data from the specified snapshot:
 
@@ -111,14 +100,14 @@ $ sudo snap restore 30
 Restored snapshot #30.
 ```
 
-Before using this command, make sure you have the snap application installed, and that its services, if any, are [stopped](/t/service-management/3965#starting-and-stopping-services) (`snap stop <snap-name>`). 
+Before using this command, make sure you have the snap application installed, and that its services, if any, are stopped (`snap stop <snap-name>`). 
 Start them again once the snapshot has been successfully restored.
 
 By default, this command restores all the data for all the snaps in a snapshot. You can restore data for specific snaps by simply listing them after the command and for specific users with the `--users=<usernames>` argument.
 
 Excluding a snap's system and configuration data from *snap restore* is not currently possible. 
 
-<h2 id='heading--deleting'>Deleting a snapshot</h2>
+## Deleting a snapshot
 
 The `forget` command deletes a snapshot. This operation removes a snapshot from local storage and can not be undone:
 
@@ -131,7 +120,7 @@ No snapshots found.
 
 By default, this command deletes all the data for all the snaps in a snapshot. You can delete the data for specific snaps by listing them after the command.
 
-<h2 id=`heading--automatic-snapshots`>Automatic snapshots</h2>
+## Automatic snapshots
 
 Apart from on [Ubuntu Core](https://www.ubuntu.com/core) devices, where the feature is disabled by default, a snapshot is generated automatically when a snap is removed. These snapshots are retained for 31 days before being deleted automatically.
 
@@ -150,22 +139,22 @@ As with manual snapshots, automatically generated snapshots can be manually dele
 Automatic snapshot retention time is configured with the `snapshots.automatic.retention` [system option](/how-to-guides/manage-snaps/set-system-options). The value needs to be greater than 24 hours:
 
 ```bash
-$ snap set system snapshots.automatic.retention=30h
+snap set system snapshots.automatic.retention=30h
 ```
 
 To disable automatic snapshots, set the retention time to `no`:
 
 ```bash
-$ snap set system snapshots.automatic.retention=no
+snap set system snapshots.automatic.retention=no
 ```
 
 > Disabling automatic snapshots will *not* affect pre-existing automatically generated snapshots, only those generated by the removal of subsequent snaps.
 
 Automatic snapshots require snap version _2.39+_. 
 
-<h2 id='heading--anatomy'>Inside a snapshot</h2>
+## Inside a snapshot
 
-On Ubuntu-based systems, snapshots are stored in the `/var/lib/snapd/snapshots` directory and are both stored and [exported](#heading--export) as a *zip* file. This zip file contains the following:
+On Ubuntu-based systems, snapshots are stored in the `/var/lib/snapd/snapshots` directory and are both stored and exported as a *zip* file. This zip file contains the following:
 
 ```yaml
 <snap-snapshot-zip>

@@ -5,7 +5,7 @@ The snap daemon, _snapd_, can check whether there is enough free disk space befo
 
 - **snap installation**: checks storage required to download a snap
 - **snap refresh and update**: checks storage required to download updates and to store previous snap revisions
-- **snap removal**: checks storage required to create the [automatic snapshot](/how-to-guides/manage-snaps/create-data-snapshots) generated when the last revision of a snap is removed (unless disabled)
+- **snap removal**: checks storage required to create the [automatic snapshot](/how-to-guides/manage-snaps/create-data-snapshots.md#automatic-snapshots) generated when the last revision of a snap is removed (unless disabled)
 
 > ⓘ  Disk space awareness is currently an experimental feature and requires snapd version *2.47+* .
 
@@ -23,7 +23,7 @@ $ snap remove foo
 error: cannot remove "foo" due to low disk space, use --purge to avoid creating a snapshot
 ```
 
-The [REST API](/how-to-guides/manage-snaps/use-the-rest-api) will also return an `insufficient-disk-space` [Error kind](/t/using-the-rest-api/18603#heading--errors) object when disk space awareness is enabled and an error is encountered.
+The [REST API](/how-to-guides/manage-snaps/use-the-rest-api) will also return an `insufficient-disk-space` [Error kind](/reference/development/rest-api/error-responses) object when disk space awareness is enabled and an error is encountered.
 
 ## Enable disk space awareness
 

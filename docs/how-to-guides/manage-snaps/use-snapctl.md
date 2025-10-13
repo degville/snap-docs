@@ -3,28 +3,13 @@
 
 The `snapctl` tool is bundled with _snapd_ to provide specific environmental feedback and a limited set of controls from **within the context** of a snap's execution environment in relation to snapd. It can be used, for example, to retrieve and set snap configuration options, check the status of a running snap, and reboot an Ubuntu Core 20 environment.
 
-`snapctl` is typically run from a script _within a snap_, rather than on the host system. These scripts are used by snap developers to implement [hooks](/reference/development/supported-snap-hooks), or from within [snapcraft.yaml](/), to augment a snap's execution environment.
+`snapctl` is typically run from a script _within a snap_, rather than on the host system. These scripts are used by snap developers to implement [hooks](/reference/development/supported-snap-hooks), or from within [snapcraft.yaml](https://documentation.ubuntu.com/snapcraft/stable/reference/project-file/snapcraft-yaml/), to augment a snap's execution environment.
 
-For details on using _snapctl_ to add user options to a snap, see [Adding snap configuration](/) and see [Creating a snap](/) for an overview of the snap development process.
+For details on using _snapctl_ to add user options to a snap, see [Adding snap configuration](set-system-options).
 
-From within a snap, _snapctl_ can do the following:
+## Configuration options
 
-* **[Configure options](#heading--configuration-options)**: retrieve, remove and set options
-* **[Access confdb](#heading--confdb)**: access and modify confdb data
-* **[Components](#heading--components)**: install and remove snap components
-* **[Health state](#heading--health-state)**: define the operational state of the snap
-* **[Interface connections](#heading--interface-connections)**: query a connection state
-* **[Model information](#heading--model)**: retrieve the model assertion for the current device
-* **[Mount control](#heading--mount-control)**: create and unmount both persistent and transient mount points
-* **[Reboot control](#heading--reboot)**:  controls reboot behaviour from `install-device` hook
-* **[Refresh control](#heading--refresh)**: manages when snaps will be refreshed
-* **[Services](#heading--services)**: start, stop and restart services and daemons
-* **[System mode](#heading--system-mode)**: returns various values about the system state
----
-
-<h2 id='heading--configuration-options'>Configuration options</h2>
-
-A snap's configuration options can be queried and altered with the `snapctl get`, `snapctl set` and `snapctl unset` commands. These work very similar to the analogous [`snap get/set/..` commands](/how-to-guides/work-with-snaps/configure-snaps) outside the snap. The main difference is that using these commands from within a snap will *not* trigger [the `configure` hook](/t/supported-snap-hooks/3795#heading--the-configure-hook).
+A snap's configuration options can be queried and altered with the `snapctl get`, `snapctl set` and `snapctl unset` commands. These work very similar to the analogous [`snap get/set/..` commands](/how-to-guides/work-with-snaps/configure-snaps) outside the snap. The main difference is that using these commands from within a snap will *not* trigger [the `configure` hook](/reference/development/supported-snap-hooks).
 
 The `snapctl` command uses the same get, set and unset syntax as the snap command:
 
@@ -62,11 +47,9 @@ $ snapctl get ports
 
 To see this in action, look at the [NextCloud snap](https://github.com/nextcloud/nextcloud-snap). It uses `snapctl` within its [various hooks](https://github.com/nextcloud/nextcloud-snap/blob/master/src/hooks/utilities/configuration-utilities) to set configuration options such as `snapctl get private.mode` and `snapctl set private.mode="$1"`.
 
-For more information, see [Adding snap configuration](/) and [The `configure` hook](/t/supported-snap-hooks/3795#heading--the-configure-hook).
+## Confdb
 
-<h2 id='heading--confdb'>Confdb</h2>
-
-The `snapctl get`, `snapctl set` and `snapctl unset` commands can also be used to access and modify [confdb configurations](/explanation/how-snaps-work/confdb-configuration-mechanism.md). To use `snapctl` to access confdb, you can include the `--view` flag as well as the name of the snap's [interface plug](/explanation/how-snaps-work/confdb-configuration-mechanism/#interface-plugs) that refers to the [confdb view](https://documentation.ubuntu.com/core/reference/assertions/confdb-schema/) being accessed, prefixed with a colon.
+The `snapctl get`, `snapctl set` and `snapctl unset` commands can also be used to access and modify [confdb configurations](/explanation/how-snaps-work/confdb-configuration-mechanism.md). To use `snapctl` to access confdb, you can include the `--view` flag as well as the name of the snap's [interface plug](/explanation/how-snaps-work/confdb-configuration-mechanism.md/#interface-plugs) that refers to the [confdb view](https://documentation.ubuntu.com/core/reference/assertions/confdb-schema/) being accessed, prefixed with a colon.
 
 ```sh
 $ snapctl get --view :setup-wifi ssid
@@ -84,7 +67,7 @@ You can also use the `--default` flag to provide a default value to be returned 
 
 For further information on confdb, see [Configure snaps with confdb](/how-to-guides/manage-snaps/configure-snaps-with-confdb.md) and [Confdb configuration mechanism](/explanation/how-snaps-work/confdb-configuration-mechanism.md).
 
-<h2 id='heading--components'>Components</h2>
+## Components
 
 Component support requires *snapd 2.67+* .
 
@@ -111,7 +94,7 @@ $ snapctl remove +<comp_name>
 
 If these commands are run from a hook, the components will be installed/removed after the hook itself has run if it ended successfully.
 
-<h2 id='heading--health-state'>Health state</h2>
+## Health state
 
 > ⓘ  Health reporting is under development and its capabilities and syntax may change.
 
@@ -144,7 +127,7 @@ health:
 
 For more comprehensive information on using `snapctl set-health`, see [Health checks](https://forum.snapcraft.io/t/health-checks/10605).
 
-<h2 id='heading--interface-connections'>Interface connections</h2> 
+## Interface connections<
 
 (from _snapd 2.43+_)
 
@@ -183,7 +166,7 @@ Snaps can only query their own plugs and slots because the snap name is implicit
 
 See [Snapcraft interfaces](/) for more details on manipulating interfaces from a snap.
 
-<h2 id='heading--model'>Model information</h2>
+## Model information
 
 (from _snapd 2.56+_ onwards)
 
@@ -228,7 +211,7 @@ This can be changed to JSON with the `--json` flag:
 
 The raw assertion can also be requested with the `--assertion` flag.
 
-<h2 id='heading--mount-control'>Mount control</h2>
+## Mount control
 
 When the [mount-control interface](/) is connected, a snapped application or service can use the _mount_ command to mount transient (non-persistent) and persistent filesystem mount points:
 
@@ -251,13 +234,13 @@ snapctl umount </path/to/mount/point>
 See [mount-control interface](/) for further details on permitted filesystems and mount options.
 
 
-<h2 id='heading--reboot'> Reboot control (from the UC20+ install-device hook)</h2>
+##  Reboot control (from the UC20+ install-device hook)
 
 The `snapctl reboot` command can be used to control reboot behaviour from the gadget `install-device hook` during UC20+ **install mode**.
 
 See the [UC20+ installation process](https://ubuntu.com/core/docs/uc20/installation-process#heading--install-device) documentation for further details.
 
-<h2 id='heading--refresh'>Refresh control (from the UC20+ gate-auto-refresh hook)</h2>
+## Refresh control (from the UC20+ gate-auto-refresh hook)
 
 The gate-auto-refresh hook is executed by snapd for every snap that will be updated with the next automatic refresh. It's also executed for every snap that is dependent on a snap that will be updated.
 
@@ -288,7 +271,7 @@ The output from `snapctl refresh --pending` includes the following details:
 
 The pending output value is set to "none" if there is no pending refresh for the snap and the value is "ready" if there is a pending refresh. A pending value of "inhibited" indicates that the next refresh is inhibited because one or more of the snap's applications are running. This currently requires the experimental refresh app awareness feature to be enabled (see below).
 
-<h2 id='heading--refresh-control-interface'>The snap-refresh-control interface</h2>
+## The snap-refresh-control interface
 
 The `snapctl refresh --proceed` command can be executed by a snapped application outside of the gate-auto-refresh hook if the snap has the `snap-refresh-control` interface and the interface is connected. This enables the snap to trigger an auto-refresh outside of the normal auto-refresh schedule and should be used cautiously.
 
@@ -298,7 +281,7 @@ If the gate-auto-refresh hook doesn't invoke "snapctl refresh --proceed" or "sna
 
 If the hook fails with an error, snapd assumes "hold" as long as the maximum deadline hasn't been reached.
 
-<h2 id='heading--services'>Services</h2>
+## Services
 
 As with configuration options (see above), snapctl sub-commands for managing services are the same as those used by the snap command. See [Services and daemons](/) for further details.
 
@@ -328,7 +311,7 @@ $ snapctl stop nextcloud.mysql --disable
 
 Snaps can only query their own services.
 
-<h2 id='heading--system-mode'>System mode</h2>
+## System mode
 
 The `snapctl system-mode` command returns YAML-formatted details about specific system states:
 
