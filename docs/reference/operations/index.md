@@ -7,5 +7,7 @@
 :maxdepth: 2
 :glob:
 
-*
-*/index
+Data locations <data-locations>
+System options <system-options>
+System architecture <system-architecture>
+Timer string format <timer-string-format>
