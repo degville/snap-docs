@@ -175,9 +175,6 @@ html_context = {
 # Sitemap configuration: https://sphinx-sitemap.readthedocs.io/
 #######################
 
-# GM: try to clear sitemap recursion error
-sys.setrecursionlimit(1_500)
-
 # Base URL of RTD hosted project
 
 html_baseurl = 'https://canonical-starter-pack.readthedocs-hosted.com/'

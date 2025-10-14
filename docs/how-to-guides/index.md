@@ -41,3 +41,4 @@ The vast majority of snap users and developers experience very few issues, but a
 
 Work with snaps <work-with-snaps/index>
 Manage snaps <manage-snaps/index>
+Snap development <snap-development/index>

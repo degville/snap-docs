@@ -11,17 +11,6 @@ For help with Robot Operating System (ROS) issues, see [ROS Troubleshooting](/).
 
 Snap developers experiencing issues should take a look at [Troubleshoot snap building](/).
 
-<!--
-| | |
-|--|--|
-| **[Network access](#heading--network)** | **[Empty response from the server](#heading--empty-response)** |
-| **[`Connection refused` error](#heading--connection)** | **[Slow snap downloads](#heading--slow)** |
-| **[Missing binaries](#heading--missing)** |  **[Home directory location](#heading--home)** | 
-| **[Domain served /home directories](#heading--domainhome)** | **[`chmod` errors](#heading--chmod)** | 
-| **[`Too early for operation` errors](#heading--early)** | **[Generate debug info](#heading--debug)** |
-| **[GitHub builds have old account details](#heading--account-details)** |
--->
-
 ## Network access
 
 Both the snap daemon (snapd) and [Snapcraft](https://forum.snapcraft.io/t/snapcraft-overview/8940) require network access to install, update, build and publish snaps. Local network and port configurations can affect their access.
@@ -190,13 +179,3 @@ Due to the nature of the GitHub to Snapcraft authentication link, account detail
   * Select on the GitHub “Log in” button and reconnect to the appropriate GitHub repo
 
 This should trigger a new build of each snap, with your new publisher details.
-
-
-```{toctree}
-:hidden:
-:titlesonly:
-:maxdepth: 2
-:glob:
-
-*
-*/index

@@ -7,5 +7,8 @@
 :maxdepth: 2
 :glob:
 
-*
-*/index
+Assertions <assertions>
+Classic confinement <classic-confinement>
+Security policies <security-policies>
+Snap confinement <snap-confinement>
+Release process <snapd-release-process>
