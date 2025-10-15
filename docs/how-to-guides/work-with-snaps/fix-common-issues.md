@@ -39,19 +39,6 @@ There are various causes for this error.  Try the following steps, and if the pr
 
 See [cannot communicate with server connection refused ](https://forum.snapcraft.io/t/snap-d-error-cannot-communicate-with-server-connection-refused/6093) for discussions on this issue.
 
-
-## Empty response from the server
-
-When [building a snap](/), you may occasionally see an _empty response from the server_ error in the build log output, such as the following:
-
-```
-error: cannot refresh "core20": unexpectedly empty response from the server (try again later)
-Error while refreshing snap 'core20' to channel 'latest/stable'
-Run the same command again with --debug to shell into the environment if you wish to introspect this failure.
-```
-
-This error isn't a problem with the snap build, or with its snapcraft.yaml, but is instead a symptom of updates to the _core18_ or _core20_ [base snaps](/) being only part-complete; the metadata has been updated, but the actual package is still being distributed across the installation base. The solution is to wait a few minutes and try again.
-
 ## Slow snap downloads
 
 When a snap is installed, it's downloaded and authenticated against one or more servers attached to the [Snap Store](https://snapcraft.io/store) (or a local proxy). If a server is unavailable, or suffering bandwidth issues, installation progress will be slow.
@@ -157,21 +144,3 @@ ID    Status  Spawn                   Ready                   Label             
 
 Don't forget to include the output from `sudo snap version` if you wish to share your output to get further help on the forum.
 
-## GitHub builds have old account details
-
-If your Ubuntu One account details change after [Build from GitHub](/) has been configured, the new account details are not reflected in the packages built and published from GitHub.
-
-Due to the nature of the GitHub to Snapcraft authentication link, account details are retained for the lifetime of that link from the point of its creation. To force an update after changing your publisher details, you need to recreate that link as follows:
-
-* For each snap that you control:
-  * Go to the Build tab (`https://snapcraft.io/<SNAP-NAME>/builds`)
-  * Select “Disconnect repo”
-* Sign out of [snapcraft.io](http://snapcraft.io/) AND [login.ubuntu.com](http://login.ubuntu.com/)
-  * For good measure, purge all cookies
-* Sign back into [snapcraft.io](http://snapcraft.io/)
-* Confirm that your account name and other details are correct
-* For each snap that you control:
-  * Go to the Build tab
-  * Select on the GitHub “Log in” button and reconnect to the appropriate GitHub repo
-
-This should trigger a new build of each snap, with your new publisher details.
