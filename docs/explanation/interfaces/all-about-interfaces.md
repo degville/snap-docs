@@ -3,7 +3,7 @@
 
 By default, snaps with strict confinement are only able to access a limited set of resources outside the environment they run in. Snaps can only access resources from the system and other snaps via interfaces that describe the resources they provide.
 
-The creator of a snap selects the interfaces that a snap requires in order to function correctly. Common interfaces include those that provide access to the [network](/), [desktop features](/) and the [sound system](/).
+The creator of a snap selects the interfaces that a snap requires in order to function correctly. Common interfaces include those that provide access to the [network](/reference/interfaces/network-interface), [desktop features](/reference/interfaces/desktop-interface) and [audio recording](/reference/interfaces/audio-record-interface).
 
 ## Connecting interfaces
 
@@ -14,9 +14,9 @@ provides the power it needs.
 
 ![How an interfaces uses a plug and a slot](https://assets.ubuntu.com/v1/59c290a8-snapd-interfaces.png) 
 
-Connections are made either automatically at install time or manually, depending on their function. The desktop interface is connected automatically, for instance, whereas the camera interface is not. The *Auto-connect* column in the [Supported interfaces](/reference/operations/interfaces/index) table for lists  whether an interface automatically connects or not. See the [Interface Auto-connection mechanism](https://forum.snapcraft.io/t/interface-auto-connection-mechanism/20179) for implementation details.
+Connections are made either automatically at install time or manually, depending on their function. The desktop interface is connected automatically, for instance, whereas the camera interface is not. The *Auto-connect* column in the [Supported interfaces](/reference/interfaces) table for lists  whether an interface automatically connects or not. See the [Interface Auto-connection mechanism](/explanation/interfaces/interface-auto-connection) for implementation details.
 
-As with [classic confinement](/), a snap's publisher can request an *assertion* to automatically connect an otherwise non-auto-connecting interface. For example, the *guvcview* snap [requested](https://forum.snapcraft.io/t/auto-connect-request-for-the-guvcview-brlin-snap/6042) the camera interface be automatically-connected when the snap is installed.
+As with [classic confinement](/explanation/security/classic-confinement), a snap's publisher can request an *assertion* to automatically connect an otherwise non-auto-connecting interface.
 
 * If a snap is upgraded and includes a new assertion, the user will still need to connect the interface manually. Similarly, if an installed classic snap is upgraded to use strict confinement, its interfaces won't be automatically configured.
 
@@ -39,5 +39,5 @@ mount-observe     vlc:mount-observe     -                  -
 
 In the above example,  we can see that the `vlc:camera` interface is disconnected because it has an empty *Slot* entry.
 
-See [Interface management](/how-to-guides/work-with-snaps/connect-interfaces) for further interface details, including how to disconnect interfaces and make manual connections, and [Security policy and sandboxing](https://forum.snapcraft.io/t/security-policy-and-sandboxing/554) for more information on how confinement is implemented.
+See [Interface management](/how-to-guides/work-with-snaps/connect-interfaces) for further interface details, including how to disconnect interfaces and make manual connections, and [Security policy and sandboxing](/explanation/security/security-policies) for more information on how confinement is implemented.
 
