@@ -1,4 +1,4 @@
-(how-to-guides-fix-common-issues-index)=
+ome how-to-guides-fix-common-issues-index)=
 # Fix common issues
 
 Snaps run on, and are built for, a diverse and constantly evolving set of [operating systems](/tutorials/install-the-daemon/index) and [embedded devices](https://ubuntu.com/core/docs/supported-platforms#heading--supported).
@@ -7,13 +7,9 @@ The vast majority of our users and developers experience very few issues, but an
 
 This page attempts to guide users to either an appropriate solution to their issues, or the correct forum/thread where they can get help.
 
-For help with Robot Operating System (ROS) issues, see [ROS Troubleshooting](/).
-
-Snap developers experiencing issues should take a look at [Troubleshoot snap building](/).
-
 ## Network access
 
-Both the snap daemon (snapd) and [Snapcraft](https://forum.snapcraft.io/t/snapcraft-overview/8940) require network access to install, update, build and publish snaps. Local network and port configurations can affect their access.
+The snap daemon (snapd) requires network access to install, update, build and publish snaps. Local network and port configurations can affect their access.
 
 See [Network requirements](/reference/administration/network-requirements) for which hosts and ports are required to ensure consistent communication.
 
