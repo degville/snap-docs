@@ -1,11 +1,16 @@
 (how-to-guides-manage-snaps-manage-validation-sets)=
 # Manage validation sets
 
-A [validation sets](/explanation/how-snaps-work/validation-sets) ensures only specific snaps are installed, and optionally, only specific snaps at fixed [revisions](/reference/glossary.md#revisions).
+A [validation sets](/explanation/how-snaps-work/validation-sets) ensures only specific snaps are installed, and optionally, only specific snaps at fixed [revisions](/reference/glossary.md#revision).
 
-> ⓘ  For devices running [Ubuntu Core](/reference/glossary.md#ubuntu-core), a validation set can be declared as part of the [model](https://ubuntu.com/core/docs/reference/assertions/model) definition.
+For [Landscape](https://ubuntu.com/landscape)-managed devices, see [How to manage snaps in Landscape with validation sets](https://documentation.ubuntu.com/landscape/how-to-guides/iot-for-devices/manage-snaps-with-validation-sets/) after a validation set has been created.
 
 ## Create a validation set
+
+```{tip}
+For devices running [Ubuntu Core](/reference/glossary.md#ubuntu-core), a validation set can be declared as part of the [model](https://ubuntu.com/core/docs/reference/assertions/model) definition.
+```
+
 
 Ensure you have an [Ubuntu One](https://documentation.ubuntu.com/core/tutorials/build-your-first-image/access-ubuntu-one/) and know your *Developer account id*.
 
@@ -61,7 +66,7 @@ The template validation set assertion needs to be populated with the details of 
    `required` snaps need to be installed, `optional` snaps are permitted to be installed and `invalid` snaps explicitly must not be installed.
    Defaults to _required_.
 - **`revision`** (*optional*):
-   Specifies which [revision](/t/glossary/14612#heading--revision) of the snap needs to be installed.
+   Specifies which revision of the snap needs to be installed.
 
 We strongly recommend incrementing the sequence number whenever a validation set used on production devices is modified—especially when updating snap revisions.
 
