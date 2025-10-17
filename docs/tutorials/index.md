@@ -26,7 +26,7 @@ The snap daemon (snapd) is pre-installed and ready to go on the following:
  | Most [Ubuntu flavours](https://wiki.ubuntu.com/DerivativeTeam/Derivatives#Official_Ubuntu_Flavors) | [Zorin OS](https://zorinos.com/) |
 
 
-## Without snap
+### Without snap
 
 For distributions without the snap daemon pre-installed, use the links below for specific installation instructions:
 
