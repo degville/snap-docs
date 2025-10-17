@@ -11,7 +11,6 @@ For [Landscape](https://ubuntu.com/landscape)-managed devices, see [How to manag
 For devices running [Ubuntu Core](/reference/glossary.md#ubuntu-core), a validation set can be declared as part of the [model](https://ubuntu.com/core/docs/reference/assertions/model) definition.
 ```
 
-
 Ensure you have an [Ubuntu One](https://documentation.ubuntu.com/core/tutorials/build-your-first-image/access-ubuntu-one/) and know your *Developer account id*.
 
 The `snapcraft edit-validation-sets` command is used to create a validation set from the command line:
