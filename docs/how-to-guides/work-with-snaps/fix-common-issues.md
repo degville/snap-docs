@@ -51,8 +51,6 @@ The Snap Store Status page also includes a status history for the servers over t
 
 ![iSnap Store incident report](https://assets.ubuntu.com/v1/5af8a398-image.png) 
 
-Additionally, there's an [RSS feed](https://www.site24x7.com/sv.do?id=pRLp4QuAuM72wxfZ%2FaadgBsFWM22mY2tEo2FW4nJ9L3crq2RDhW3Slfjbmm%2Bi4YnRiMraYtfmcUB%0Auczx2dcQYpMFH9kz4UDDYfhKR01n%2FDc%3D&rss=true) that tracks the current Snap Store Status. This can be subscribed to from any RSS client or hosted service.
-
 See [Extremely slow snap downoads](https://forum.snapcraft.io/t/extremely-slow-snap-downloads/4668/38) for further discussions on snap download speeds.
 
 ## Missing binaries / command not found
