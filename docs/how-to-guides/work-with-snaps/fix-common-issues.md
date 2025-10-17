@@ -1,4 +1,4 @@
-ome how-to-guides-fix-common-issues-index)=
+(how-to-guides-fix-common-issues-index)=
 # Fix common issues
 
 Snaps run on, and are built for, a diverse and constantly evolving set of [operating systems](/tutorials/install-the-daemon/index) and [embedded devices](https://ubuntu.com/core/docs/supported-platforms#heading--supported).
