@@ -1,9 +1,11 @@
-# .github/workflows/fetch-openapi-docs.yml
-name: Fetch OpenAPI Docs
+name: Fetch OpenAPI Docs and Build Documentation
 
 on:
   push:
     branches: [ main ]
+  pull_request:
+    paths:
+      - 'docs/**'
 
 jobs:
   fetch-docs:
@@ -15,12 +17,13 @@ jobs:
       - name: Download OpenAPI HTML
         uses: dawidd6/action-download-artifact@v3
         with:
-          # The repository owner and name
           repo: canonical/snapd-rest-openapi
-          # The name of the artifact to download
           name: api-docs
-          # The local path to download the artifact to
           path: docs/_static/api
 
-      # You would then have your regular ReadTheDocs build process here
-      # which would now include the files from docs/_static/api
+  documentation-checks:
+    needs: fetch-docs
+    uses: canonical/documentation-workflows/.github/workflows/documentation-checks.yaml@main
+    with:
+      working-directory: "docs"
+      fetch-depth: 0
