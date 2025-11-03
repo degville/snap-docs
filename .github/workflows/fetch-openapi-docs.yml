@@ -20,6 +20,7 @@ jobs:
           repo: canonical/snapd-rest-openapi
           name: api-docs
           path: docs/_static/api
+          workflow: "Lint and build"
 
   documentation-checks:
     needs: fetch-docs
