@@ -1,0 +1,26 @@
+# .github/workflows/fetch-openapi-docs.yml
+name: Fetch OpenAPI Docs
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  fetch-docs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Download OpenAPI HTML
+        uses: dawidd6/action-download-artifact@v3
+        with:
+          # The repository owner and name
+          repo: canonical/snapd-rest-openapi
+          # The name of the artifact to download
+          name: api-docs
+          # The local path to download the artifact to
+          path: docs/_static/api
+
+      # You would then have your regular ReadTheDocs build process here
+      # which would now include the files from docs/_static/api

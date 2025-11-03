@@ -26,6 +26,7 @@ Extend snap functionality with API access and customised environments for your a
 * [Environment variables](/reference/development/environment-variables): Internal values accessible to snapped applications.
 * [Snapd REST API](/reference/development/rest-api/snapd-rest-api): Provides access to snapd’s state and many of its key functions.
 * [REST API error codes](/reference/development/rest-api/error-responses): The types of errors returned by the API.
+* [OpenAPI Documentation](/_static/api/index.html): Interactive OpenAPI documentation for the Snapd REST API.
 
 YAML schemas define exactly what a device, kernel and snap is capable of.
  - [snap.yaml](/reference/development/yaml-schemas/the-snap-format): The metadata for a snap.
