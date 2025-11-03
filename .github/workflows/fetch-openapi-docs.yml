@@ -17,10 +17,11 @@ jobs:
       - name: Download OpenAPI HTML
         uses: dawidd6/action-download-artifact@v3
         with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           repo: canonical/snapd-rest-openapi
           name: api-docs
           path: docs/_static/api
-          workflow: "Lint and build"
+          workflow: "redocly.yaml"
 
   documentation-checks:
     needs: fetch-docs
