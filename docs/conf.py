@@ -197,7 +197,6 @@ sitemap_show_lastmod = True
 #######################
 
 #html_static_path = ["_static"]
-#html_extra_path = ["reference/api"]
 #templates_path = ["_templates"]
 
 
