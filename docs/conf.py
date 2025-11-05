@@ -196,7 +196,8 @@ sitemap_show_lastmod = True
 # Template and asset locations
 #######################
 
-html_static_path = ["_static", "_static/api"]
+#html_static_path = ["_static"]
+#html_extra_path = ["reference/api"]
 #templates_path = ["_templates"]
 
 
