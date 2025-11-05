@@ -2,7 +2,6 @@
 *env*/
 .sphinx/venv/
 
-
 # Sphinx
 .sphinx/warnings.txt
 .sphinx/.wordlist.dic
