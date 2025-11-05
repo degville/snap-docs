@@ -44,8 +44,8 @@ help:
 
 .PHONY: full-help spellcheck-install pa11y-install install run html \
         epub serve clean clean-doc spelling spellcheck linkcheck woke \
-        allmetrics pa11y pdf-prep-force pdf-prep pdf vale-install vale fetch-openapi-docs \
-		update
+        allmetrics pa11y pdf-prep-force pdf-prep pdf vale-install vale \
+		fetch-openapi-docs update
 
 full-help: $(VENVDIR)
 	@. $(VENV); $(SPHINXBUILD) -M help "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
