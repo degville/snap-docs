@@ -78,7 +78,7 @@ $ sudo snap export-snapshot 30 my-snapshot.zip
 Exported snapshot #30 into "my-snapshot.zip"
 ```
 
-The resultant snapshot file is a _zip_ archive that contains two _json_ files to validate the snapshot and a _zip_ archive containing the user, system and configuration data for the specific revision of the snap installed when the snapshot was created (see [Inside a snapshot](#heading--anatomy) for more details).
+The resultant snapshot file is a _zip_ archive that contains two _json_ files to validate the snapshot and a _zip_ archive containing the user, system and configuration data for the specific revision of the snap installed when the snapshot was created.
 
 To import a previously exported snap shot, use the `snap import-snapshot` command:
 
@@ -176,4 +176,3 @@ On Ubuntu-based systems, snapshots are stored in the `/var/lib/snapd/snapshots` 
 ```
 
 - **meta.json**: describes the contents of the snapshot, alongside its configuration and checksums for the archives.
-
