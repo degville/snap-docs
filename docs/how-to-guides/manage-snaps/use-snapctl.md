@@ -337,4 +337,3 @@ The following keys and values can potentially be returned:
     Set when the installation of seeded snaps for the model has finished.
 - **factory**: `true`</br>
    Only possible on a [UC20+](https://ubuntu.com/core/docs/uc20) system in install mode (`system-mode: install`) with the factory image hint set. This  value can be used to govern whether factory-only resources may be available. See [Factory image hint](  https://ubuntu.com/core/docs/uc20/installation-process#heading--factory) for more details.
-
