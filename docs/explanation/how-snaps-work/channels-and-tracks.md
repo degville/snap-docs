@@ -142,7 +142,7 @@ Branch names convey their purpose, such as `fix-for-bug123`, but the name isn't 
 
 After 30 days with no further updates, a branch will be closed automatically. The replacement snap will then be chosen as it would be with closed channels (see below). For example, *beta/fix-for-bug123* will fall back to *beta* after the *fix-for-bug123* branch is closed.
 
-See [Publish to a branch](/) for more details on how snap developers can use branches to publish temporary snap releases.
+See Snapcraft's [Manage revisions and releases](https://documentation.ubuntu.com/snapcraft/stable/how-to/publishing/manage-revisions-and-releases/) for more details on how snap developers can use branches to publish temporary snap releases.
 
 ## Closing channels
 
