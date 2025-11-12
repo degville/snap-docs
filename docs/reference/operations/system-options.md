@@ -428,10 +428,10 @@ The following example will set the timeout to 1 minute:
 snap set system watchdog.runtime-timeout=1m
 ```
 
-**Raspberry Pi timer limitations**
+```{important}
 
 The Raspberry Pi hardware watchdog timer is limited to a maximum timeout of 15 seconds.
-
+```
 
 ## system watchdog.shutdown-timeout
 
