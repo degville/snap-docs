@@ -5,27 +5,7 @@ Snap supports a set of system-wide options that allow you to customise your snap
 
 See [Setting system options](/how-to-guides/manage-snaps/set-system-options) for further details on how they they are viewed and configured.
 
----
-
-| Supported options | |
-|--|--|
-| [pi-config](#heading--pi-config) | [system homedirs](#heading--homedirs) |
-| [system journal.persistent](#heading--journal-persistent) | [system proxy.{http,https,ftp}](#heading--proxy) |
-| [system refresh](#heading--refresh) | [system resilience.vitality-hint](#heading--resilience) |
-| [system service.console-conf.disable](#heading--console) | [system service.ssh.disable](#heading--ssh) |
-| [system service.ssh.listen-address](#heading--ssh-listen) | [system snapshots.automatic.retention](#heading--snapshots-automatic-retention) |
-| [system store.access](#heading--store-access) | [system store-certs](#heading--store-certs) |
-| [system swap.size](#heading--swap-size) | [system system.disable-backlight](#heading--backlight) |
-| [system system.kernel.cmdline-append](#heading--kernel-cmdline-append) | [system system.kernel.dangerous-cmdline-append](#heading--kernel-dangerous-cmdline-append) |
-| [system system.kernel.printk.console-loglevel](#heading--kernel-printk-console-loglevel) | [system system.network.netplan](#heading--netplan) |
-| [system system.power-key-action](#heading--power-key-action) | [system system.timezone](#heading--timezone) |
-| [system tmp.size](#heading--tmp-size) | [system users.create.automatic](#heading--users-create-automatic) |
-| [system users.lockout](#heading--users-lockout) | [system watchdog.runtimetimeout](#heading--watchdog-runtime-timeout) |
-| [system watchdog.shutdown-timeout](#heading--watchdog-shutdown-timeout) || 
-
----
-
-<h2 id="heading--pi-config">pi-config</h2>
+## pi-config
 
 On a Raspberry Pi, the following options set corresponding values in the _config.txt_ system configuration file:
 
@@ -58,7 +38,7 @@ On a Raspberry Pi, the following options set corresponding values in the _config
 
 Further details on the above, see the [official Raspberry Pi documentation](https://www.raspberrypi.com/documentation/computers/config_txt.html).
 
-<h2 id='heading--journal-persistent'>system journal.persistent</h2>
+## system journal.persistent
 
 Enables or disables journal persistence. Can be `true` or `false`. If persistent journals were previously enabled by this setting, changing the value to `false` will **delete all saved logs**.
 
@@ -67,7 +47,7 @@ Example to enable the journal:
 snap set system journal.persistent=true
 ```
 
-<h2 id="heading--proxy">system proxy.{http,https,ftp}</h2>
+## system proxy.{http,https,ftp}
 
 These options may be set to change the proxies to be used by the system when communicating with external sites that speak the respective protocols:
 
@@ -76,7 +56,7 @@ snap set system proxy.http="http://<proxy_addr>:<proxy_port>"
 snap set system proxy.https="http://<proxy_addr>:<proxy_port>"
 ```
 
-<h2 id="heading--refresh">system refresh</h2>
+## system refresh
 
 There are four system-wide options that are used to manage how updates are handed:
 
@@ -91,9 +71,9 @@ The following example asks the system to only refresh snaps between 4.00am and 7
 snap set system refresh.timer=4:00-7:00,19:00-22:10 
 ```
 
-See [Controlling updates](/t/managing-updates/7022#heading--controlling-updates) for further details on how the above options are used.
+See [Controlling updates](/how-to-guides/work-with-snaps/manage-updates.md#control-updates-with-system-options) for further details on how the above options are used.
 
-<h2 id='heading--homedirs'>system homedirs</h2>
+## system homedirs
 
 Allows a snap’s user data to be stored in a user’s home location other under `/home`.
 
@@ -101,12 +81,12 @@ Allows a snap’s user data to be stored in a user’s home location other under
 snap set system homedirs=<destination-directory>
 ```
 
-See [Home directories outside of ‘/home’](/) for further details.
+See [Home directories outside of ‘/home’](/explanation/how-snaps-work/home-outside-home) for further details.
 
 Available since snapd 2.59.
 
 
-<h2 id='heading--resilience'>system resilience.vitality-hint</h2>
+## system resilience.vitality-hint
 
 This option adjusts the Linux kernel's out-of-memory ([OOM](https://www.kernel.org/doc/gorman/html/understand/understand016.html)) killer behaviour for specific snap services.
 
@@ -124,7 +104,7 @@ In the above example, services inside `snapA` are the **least likely** to be kil
 ⓘ  Snaps added to `resilience.vitality-hint` are still _more likely_ to be killed than the snap daemon, snapd, itself.
 ```
 
-<h2 id="heading--console">system service.console-conf.disable</h2>
+## system service.console-conf.disable
 
 May be set to _true_ on devices running Ubuntu Core to disable the console-conf system configuration wizard that is launched by default when booting an initialised Ubuntu Core image.
 
@@ -134,7 +114,7 @@ snap set system service.console-conf.disable=true
 
 This option is defined in the [gadget snap](/reference/development/yaml-schemas/the-gadget-snap) and cannot be changed at runtime.
 
-<h2 id="heading--ssh">system service.ssh.disable</h2>
+## system service.ssh.disable
 
 Can be set to _true_ to disable the SSH service at startup.
 
@@ -142,7 +122,7 @@ Can be set to _true_ to disable the SSH service at startup.
 snap set system service.ssh.disable=true
 ```
 
-<h2 id="heading--ssh-listen">system service.ssh.listen-address</h2>
+## system service.ssh.listen-address
 
 Specifies the local address that the SSH daemon should listen on.
 
@@ -158,7 +138,7 @@ snap set system service.ssh.listen-address=192.168.1.2,myhost,foo:8022
 
 Available since snapd _2.59_, and only on Ubuntu Core 20 or later.
 
-<h2 id='heading--snapshots-automatic-retention'>system snapshots.automatic.retention</h2>
+## system snapshots.automatic.retention
 
 [Automatic snapshot](/how-to-guides/manage-snaps/create-data-snapshots) retention time is configured with the `snapshots.automatic.retention` system option. The default value is 31 days, and the value needs to be greater than 24 hours:
 
@@ -175,7 +155,7 @@ snap set system snapshots.automatic.retention=no
 
 Automatic snapshots require snap version _2.39+_. 
 
-<h2 id='heading--store-access'>system store.access</h2>
+## system store.access
 
 When set to `offline`, prevents the system for initiating connections to the Store. 
 
@@ -193,7 +173,7 @@ snap unset system store.access
 
 Available since snapd 2.61
 
-<h2 id='heading--store-certs'>system store-certs</h2>
+## system store-certs
 
 A custom SSL certificate can be added to snapd's trusted certificates pool for the store communication with the `store-certs.<name>=<value>` system option.
 
@@ -209,7 +189,7 @@ A certificate can be removed with _unset_:
 snap unset system store-certs.cert1
 ```
 
-<h2 id='heading--swap-size'>system swap.size</h2>
+## system swap.size
 
 Sets the swap size for the base system.
 
@@ -228,7 +208,7 @@ defaults:
       size: 200M
 ```
 
-<h2 id='heading--backlight'>system system.disable-backlight-service</h2>
+## system system.disable-backlight-service
 
 May be set to _true_ to disable the backlight service:
 
@@ -236,14 +216,14 @@ May be set to _true_ to disable the backlight service:
 snap set core system.disable-backlight-service=true
 ```
 
-<h2 id='heading--kernel-cmdline-append'>system system.kernel.cmdline-append</h2>
+## system system.kernel.cmdline-append
 
 Dynamically add permitted kernel boot parameters to the default kernel command line on devices using the GRUB bootloader and with [Ubuntu Core 20/22](https://ubuntu.com/core/docs/uc20/inside) or later.
 
 ```bash
 snap set system system.kernel.cmdline-append=”opt1=val1 opt2=val2”
 ```
-Proposed kernel boot parameters are verified against an _allow list_ in the [gadget snap](/reference/development/yaml-schemas/the-gadget-snap). See [gadget.yaml](/t/gadget-snaps/696#heading--gadget) for further details on the list syntax.
+Proposed kernel boot parameters are verified against an _allow list_ in the [gadget snap](/reference/development/yaml-schemas/the-gadget-snap). See [gadget.yaml](reference/development/yaml-schemas/the-gadget-snap) for further details on the list syntax.
 
 This options requires the system or device to be manually restarted. The system will not restart automatically.
 
@@ -252,7 +232,7 @@ Consider using [system.kernel.dangerous-cmdline-append](#heading--system.kernel.
  - the gadget snap on your device is either the pc-gadget or pi-gadget, as the allow list isn’t defined.
  - you need to add kernel boot parameters without any verification filter.
 
-<h2 id='heading--kernel-dangerous-cmdline-append'>system system.kernel.dangerous-cmdline-append</h2>
+## system system.kernel.dangerous-cmdline-append
 
 Dynamically add any kernel boot parameters to the default kernel command line on devices using the GRUB bootloader with [Ubuntu Core 20](https://ubuntu.com/core/docs/uc20/inside) or later.
 
@@ -264,7 +244,7 @@ This system setting is considered **dangerous** because any boot parameter is pe
 
 This options requires the system or device to be manually restarted. The system will not restart automatically.
 
-<h2 id='heading--kernel-printk-console-loglevel'>system system.kernel.printk.console-loglevel</h2>
+## system system.kernel.printk.console-loglevel
 
 Override the console log level with a number between 0 and 7.
 
@@ -278,7 +258,7 @@ $ cat /etc/sysctl.d/99-snapd.conf
 kernel.printk = 1 4 1 7
 ```
 
-<h2 id='heading--netplan'>system system.network.netplan</h2>
+## system system.network.netplan
 
 On systems that support [Netplan](https://netplan.io/), such as Ubuntu Core 20 and 22, snapd can both query and configure the Netplan key and value notation through its _get_ and _set_ system options commands:
 
@@ -337,7 +317,7 @@ See [Netplan reference](https://netplan.io/reference) for details on the key and
 
 Available since snapd 2.55.4
 
-<h2 id='heading--power-key-action'>system system.power-key-action</h2>
+## system system.power-key-action
 
 Defines the behaviour of the system when the power key is pressed.
 
@@ -359,7 +339,7 @@ To set the system power button behaviour to _hibernate_, for example, enter the 
 snap set system system.power-key-action=hibernate
 ```
 
-<h2 id='heading--timezone'>system system.timezone</h2>
+## system system.timezone
 
 May be used to set a time zone value, as typically found in `/usr/share/zoneinfo`, such as `America/Chicago`.
 
@@ -389,7 +369,7 @@ $ snap get -d system
 }
 ```
 
-<h2 id='heading--tmp-size'>system tmp.size</h2>
+## system tmp.size
 
 Configures the default size for the `/tmp` mount point on Ubuntu Core devices:
 
@@ -418,7 +398,7 @@ snap unset system tmp.size
 ```
 By default, `/tmp` is set to use 50% of physical RAM.
 
-<h2 id='heading--users-create-automatic'>system users.create.automatic</h2>
+## system users.create.automatic
 
 When _true_, permits the system to create users automatically from a valid [system-user assertion](https://ubuntu.com/core/docs/reference/assertions/system-user), such as an assertion stored on external storage (see [System user](https://ubuntu.com/core/docs/system-user) for more details). When _false_, users can only created manually with _create user_ API calls:
 
@@ -428,13 +408,13 @@ snap set system users.create.automatic=false
 
 Default is **true**. 
 
-<h2 id='heading--users-lockout'>system users.lockout</h2>
+## system users.lockout
 
 When set to `True`, Ubuntu Core user accounts will be locked for 900 seconds after 3 wrong passwords.
 
 Can be either `True` or `False`.
 
-<h2 id='heading--watchdog-runtime-timeout'>system watchdog.runtime-timeout</h2>
+## system watchdog.runtime-timeout
 
 Configures the system's hardware watchdog _runtime_ timeout.
 
@@ -448,13 +428,12 @@ The following example will set the timeout to 1 minute:
 snap set system watchdog.runtime-timeout=1m
 ```
 
-[note type=warning"]
-ⓘ   **Raspberry Pi timer limitations**</br>
+**Raspberry Pi timer limitations**
 
 The Raspberry Pi hardware watchdog timer is limited to a maximum timeout of 15 seconds.
-```
 
-<h2 id='heading--watchdog-shutdown-timeout'>system watchdog.shutdown-timeout</h2>
+
+## system watchdog.shutdown-timeout
 
 Configures the system's hardware watchdog _shutdown_ timeout.
 
