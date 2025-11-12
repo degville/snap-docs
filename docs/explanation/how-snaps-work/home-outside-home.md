@@ -1,7 +1,7 @@
 (interfaces-home-outside-home)=
 # Home outside home
 
-The snap daemon (snapd) looks for a user's home directory ($HOME) under `/home` on the local filesystem. However, from _snapd 2.59_ onwards, the snap daemon can access an additional location using the `homedirs` [system option](/t/system-options/29860#heading--home-dirs):
+The snap daemon (snapd) looks for a user's home directory ($HOME) under `/home` on the local filesystem. However, from _snapd 2.59_ onwards, the snap daemon can access an additional location using the `homedirs` [system option](/reference/operations/system-options):
 
 ```bash
 sudo snap set system homedirs=<destination-directory>
@@ -10,8 +10,8 @@ This allows a snap's user data to be stored in a user's home location other unde
 
 The following command will permit home directories to be accessible from `/remote/users`, for instance:
 
-```
-$ sudo snap set system homedirs=/remote/users
+```bash
+sudo snap set system homedirs=/remote/users
 ```
 The new location needs to exist and be accessible, but it can be on a different filesystem or even mounted across a network. The original `/home` location remains valid but it is no longer a requirement that directories be stored there.
 
@@ -41,12 +41,12 @@ There are two steps to bind mount a home directory to a different location:
     $ sudo mount --bind <original-home-location> /home/$USER
     ```
 1. **edit `/etc/passwd`**: backup `passwd` and edit the home location for your user:
-    ````bash
+    ```bash
    $ cp /etc/passwd passwd.backup
-   $ # sudo edit /etc/passwd with your favourite editor
+   # sudo edit /etc/passwd with your favourite editor
    $ cat /etc/passwd | grep $USER
       ubuntu:x:1000:1000:ubuntu,,,:/home/ubuntu:/bin/bash
-    ````
+    ```
     The following `awk` command can be used to edit `/etc/passwd` (change OLD_HOME to your old home directory):
     ```bash
     $ awk -vold=$"OLD_HOME" -vnew=$"/home/$USER" -F: ' BEGIN {OFS = ":"} \
