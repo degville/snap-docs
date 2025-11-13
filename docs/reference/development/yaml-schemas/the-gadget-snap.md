@@ -10,21 +10,9 @@ The gadget metadata and content defines:
 -  Interface connections configured in the `connections:` section are executed on the device’s first boot only. Later changes to this section -- that is, changes added to the device at run time through gadget refreshes -- are not applied.
 -   Optional hooks that are invoked to control and customise the behaviour over the device lifecycle, e.g. installation, initialisation and establishing device identity, factory reset.
 
-See [Building a gadget snap](https://ubuntu.com/core/docs/gadget-building) for details on how a gadget snap can be built. For store deployment, gadget snaps must be produced by the device [brand](/reference/operations/glossary), as defined in the [model assertion](https://ubuntu.com/core/docs/reference/assertions/model), or a reference gadget must be used. It is perfectly possible for different models to share a gadget snap.
+See [Build a gadget snap](https://ubuntu.com/core/docs/gadget-building) for details on how a gadget snap can be built. For store deployment, gadget snaps must be produced by the device [brand store](/reference/glossary.md#brand-store), as defined in the [model assertion](https://ubuntu.com/core/docs/reference/assertions/model), or a reference gadget must be used. It is perfectly possible for different models to share a gadget snap.
 
----
-A typical gadget snap will consist of the following:
-- [Setup files](#heading--setup)
-- Example gadget snaps
-- [Gadget.yaml](#heading--gadget)
-  - [Volumes](#heading--volumes)
-  - [Kernel parameters](#heading--dynamic)
-  - [Specification](#heading--specification)
-  - [Raspberry Pi example](#heading--piexample)
-- [Prepare-device hook](#heading--prepare)
-  - [Example script](#heading--example-prepare)
-
-<h2 id='heading--setup'>Setup files</h2>
+## Setup files
 
 In addition to traditional snap metadata, the gadget snap also holds some setup files fundamental to the initialisation and lifecycle of the device:
 
@@ -49,11 +37,11 @@ In addition to the above, the IoT Devices Field team maintains a GitHub reposito
 - [amd64-pc](https://github.com/canonical/iot-field-gadget-snap/tree/22-amd64-pc)
 - [amd64-pc-classic](https://github.com/canonical/iot-field-gadget-snap/tree/22-amd64-pc-classic)
 - [risc64-icicle](https://github.com/canonical/iot-field-gadget-snap/tree/22-riscv64-icicle)
-- [risc64-nezha](https://github.com/canonical/iot-field-gadget-snap/tree/devel-riscv64-nezha)
+- [risc64-nezha](https://github.com/canonical/iot-field-gadget-snap/tree/22-riscv64-nezha)
 
 In the near future, we expect to add a RISC-V reference gadget snap to this list.
 
-<h2 id='heading--gadget'>The gadget.yaml file</h2>
+## The gadget.yaml file
 
 Two YAML keys are used to describe your target device:
 
@@ -72,7 +60,7 @@ Two YAML keys are used to describe your target device:
 
 Defaults only become available during snap installation.</br></br>
 
-Values in `defaults:` (other than `system:`) are not consumed and do not become available until either the [configure hook](/t/supported-snap-hooks/3795#heading--the-configure-hook) or the [default-configure hook](/t/supported-snap-hooks/3795#heading--default-configure) are run as part of the corresponding snap installation. `system:` values are set immediately.
+Values in `defaults:` (other than `system:`) are not consumed and do not become available until either the `configure hook` or the `default-configure hook` are run as part of the corresponding snap installation. See [Supported snap hooks]( reference/development/supported-snap-hooks.md) for further details. `system:` values are set immediately.
 
 - **volumes** (YAML sub-section, required): the volumes layout, where each disk image is represented as a YAML sub-section.
 
@@ -83,7 +71,7 @@ The gadget defines valid size ranges with two parameters:
 
 See [Calculate partition sizes](https://ubuntu.com/core/docs/partition-sizes) for more details.
 
-<h3 id='heading--volumes'>The volumes mapping sub-section</h3>
+### The volumes mapping sub-section
 
 Each volume entry  is described by:
 -   a name as defined by the entry key
@@ -106,7 +94,7 @@ Ubuntu Core typically uses the following storage partitions:
 
 The structure section lists entities with gadget data inside the image, most of which are partitions with a file system inside, with the exception of structures of type: bare, which can describe a region of data without a corresponding entry in the partition table.
 
-<h3 id='heading--dynamic'>Dynamic kernel parameters</h3>
+### Dynamic kernel parameters
 
 There are two [system options](/reference/operations/system-options) that can be used to add new kernel boot parameters to a system that has been deployed and is running:
 
@@ -128,7 +116,7 @@ The `*` character can be used as a wildcard to accept any parameter argument. It
 
 See [Modifying kernel boot parameters](https://ubuntu.com/core/docs/kernel-options) for more details on defining kernel boot parameters.
 
-<h3 id='heading--static'>Static kernel parameters</h3>
+### Static kernel parameters
 
 ```yaml
 kernel-cmdline:
@@ -147,15 +135,16 @@ To which we should add
 
 The parameters from `append` will be added to the default command line. The parameters matched by `remove` will be removed from the default command line.
 
-<h3 id='heading--specification'>Specification</h3>
+### Specification
 
 The `meta/gadget.yaml` file contains the basic metadata for gadget-specific functionality, including a detailed specification of which structure items compose an image. The latter is used both by snapd and by ubuntu-image when creating images for these devices.
 
-A gadget snap's boot assets can also be automatically updated when the snap is refreshed. See [Updating gadget boot assets](/) for further details.
+A gadget snap's boot assets can also be automatically updated when the snap is refreshed. See [Updating gadget boot assets](https://documentation.ubuntu.com/core/how-to-guides/manage-ubuntu-core/gadget-boot-assets/) for further details.
 
 The following specification defines what is supported in `gadget.yaml`:
 
-[details="gadget.yaml"]
+``` {dropdown} gadget.yaml
+
 ```yaml
 # Define the format of this file. The default and latest format is zero.
 # Clients reading this file must reject it the format is greater than
@@ -298,11 +287,12 @@ volumes:
             preserve: 
               - <filename>
 ```
-[/details]
-<h3 id='heading--piexample'>Example: Raspberry Pi 3 gadget.yaml</h3>
 
+The following is an example `gadget.yaml` for a Raspberry Pi:
 
-[details="Raspberry Pi gadget.yaml"]
+```{dropdown} Raspberry Pi gadget.yaml
+:closed:
+
 ```yaml
 device-tree: bcm2709-rpi-3-b-plus
 volumes:
@@ -352,10 +342,10 @@ connections:
     slot: RmBXKl6HO6YOC2DE4G2q1JzWImC04EUy:service
   - plug: LVkazk0JLrL0ivuHRlv3wp3bK1nAgwtN:shell-config-files
     slot: system:system-files           
-```
-[/details]
 
-<h2 id='heading--prepare'> prepare-device hook</h2>
+```
+
+##  prepare-device hook
 
 The optional `prepare-device` hook will be called on the gadget at the start of the device initialisation process, after the gadget snap has been installed.
 
@@ -367,8 +357,7 @@ The `prepare-device` hook can for example redirect this exchange and dynamically
 
 One must ensure that `registration.proposed-serial`  is set to a _unique value_  across all devices of the brand and model and that it does not contain a `/`. It is going to be used as the "serial number" (a string, not necessarily a number) part of the identification in case the device service supports setting it or **requires** it, as is the case with the *serial-vault*. **Important:** Ensure the `-s` option is used with `set` when setting the serial.
 
-<h3 id='heading--example-prepare'>prepare-device options</h3>
-
+### prepare-device options
 
 ```bash
 #!/bin/sh
