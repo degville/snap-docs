@@ -17,9 +17,9 @@ private    {...}
 
 The `{...}` in the output indicates that there are further options beneath the current key name level.
 
-[quote]
-ⓘ  If there are no configuration options, you will see `error: snap <snap name> has no configuration`.
-[/quote]
+```{caution}
+If there are no configuration options, you will see `error: snap <snap name> has no configuration`.
+```
 
 To explore configuration options, append the key name to the *get* command:
 
@@ -88,11 +88,13 @@ ports.https  443
 ```
 
 Adding an exclamation mark (`!`) to the end of an option name  also clears its value:
+
 ```bash
 $ sudo snap set nextcloud ports.http!
 ```
 
 Un-setting with an exclamation mark can be mixed with setting other options at the same time:
+
 ```bash
 $ sudo snap set nextcloud ports.https! ports.http=81
 ```
