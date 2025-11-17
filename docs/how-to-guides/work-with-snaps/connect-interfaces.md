@@ -132,7 +132,9 @@ If a snap is installed prior to an interface being granted auto-connect permissi
 
 For more technical details on how interface auto-connections are processed, see [The interface auto-connection mechanism](/explanation/interfaces/interface-auto-connection).
 
-> ⓘ See the _Auto-connect_ column in the [Supported interfaces](/reference/interfaces) table for which interfaces are connected automatically.
+```{tip}
+See the _Auto-connect_ column in the [Supported interfaces](/reference/interfaces) table for which interfaces are connected automatically.
+```
 
 ### Manual connections
 
