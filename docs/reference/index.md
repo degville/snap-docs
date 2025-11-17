@@ -8,7 +8,7 @@ This *Reference* section is for when you need to know which options can be used,
 Details that help with the day-to-day operations of working with snaps.
 
 * [Glossary](glossary): Terms and definitions specific to the world of snaps.
-* [Interfaces](interfaces): Every interface, listed by category.
+* [Interfaces](interfaces): Every interface alongside their most important attributes.
 * [Snap system architecture](/reference/operations/system-architecture): What snapd uses to manage confinement and security. 
 * [System options](/reference/operations/system-options): Configurations options for the system and native snap devices.
 
