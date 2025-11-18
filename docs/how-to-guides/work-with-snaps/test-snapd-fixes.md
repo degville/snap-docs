@@ -56,4 +56,3 @@ To revert the local installation to an official _snapd_ release, simply refresh 
 ```
 $ snap refresh snapd --stable --amend
 ```
-
