@@ -1,19 +1,13 @@
 (explanation-how-snaps-work-revisions)=
 # Revisions
 
-A snap's *revision* is a number assigned automatically by the [Snap Store](/t/glossary/14612#heading--snap-store) with each snap upload, giving each snap binary a unique identity within, and across, its [channels](/explanation/how-snaps-work/channels-and-tracks).
+A snap's *revision* is a number assigned automatically by the [Snap Store](/reference/glossary.md#snap-store) with each snap upload, giving each snap binary a unique identity within, and across, its [channels](/explanation/how-snaps-work/channels-and-tracks).
 
 The revision number increments with each new upload. But this number is arbitrary, and only used to differentiate between uploads. 
 
 Neither the revision number (nor its version) enforce an order of release. The local system will attempt to install whatever snap is recommended by the publisher in the channel being tracked.
 
----
-
-- [Viewing revision numbers](#heading--viewing)
-- [Revision package management](#heading--package)
-- [Data management](#heading--data-management)
-
-<h2 id='heading--viewing'>Viewing revision numbers</h2>
+## Viewing revision numbers
 
 The output to `snap info <snapname>` includes the revision number for each snap in each track and channel as a number in brackets after the publishing date:
 
@@ -38,9 +32,9 @@ chromium     112.0    2424   latest/stable  canonical✓            -
 ffmpeg       4.3.1    1286   latest/stable  snapcrafters✪         -
 ```
 
-<h2 id='heading--package'>Revision  package management</h2>
+## Revision package management
 
-The [Snap Store](/t/glossary/14612#heading--snap-store) caches several older revisions of every snap, as does the local system. By default, 2 revisions are stored locally, while [Ubuntu Core](/t/glossary/14612#heading--ubuntu-core) systems store 3. These defaults can be changed with the [refresh-retain](/t/managing-updates/7022#heading--refresh-retain) system option.
+The store caches several older revisions of every snap, as does the local system. By default, 2 revisions are stored locally, while Ubuntu Core systems store 3. These defaults can be changed with the [refresh-retain](/how-to-guides/work-with-snaps/manage-updates.md#refresh-retain) system option.
 
 The snap `install`, `refresh` and `download` commands can operate on these available revisions with an optional `--revision` argument.
 
@@ -64,11 +58,11 @@ hello-world 6.3 from Canonical✓ refreshed
 
 The revision number of the snap being operated upon will appear in the output during these operations.
 
-[Release management](/) details how a snap developer can publish or promote specific revisions of their snap.
+[Manage revisions and releases](https://documentation.ubuntu.com/snapcraft/latest/how-to/publishing/manage-revisions-and-releases/) details how a snap developer can publish or promote specific revisions of their snap.
 
-<h2 id='heading--data-management'>Data management</h2>
+## Data management
 
-The revision identity is used as a reference for revision-specific data. As described in [Data locations](/), revision-specific data for a snap is stored in a either system-wide location, or a user-specific home location:
+The revision identity is used as a reference for revision-specific data. As described in [Data locations](/reference/operations/data-locations), revision-specific data for a snap is stored in a either system-wide location, or a user-specific home location:
 
 * **SNAP_ DATA**: `/var/snap/<snap name>/<revision number>`</br>
 This location is also used to store data, mostly information utilised by background application and services, for logging, and other tasks that require persistence between snap launches.
@@ -79,7 +73,6 @@ This location contains any user data that the snap writes to its own home. This 
 
 When you move from one revision to the next, the revision-specific contents of **SNAP_DATA** and **SNAP_USER_DATA** are copied into new directories for the new revision. This includes moving from a higher revision number to a lower revision number (because revision numbers are arbitrary).
 
-Revision-specific directories are retained inline with the [refresh-retain](/t/managing-updates/7022#heading--refresh-retain) system option.
+Revision-specific directories are retained inline with the [refresh-retain](/how-to-guides/work-with-snaps/manage-updates.md#refresh-retain) system option.
 
-Other than the contents of the common directories, a [Snapshot](/how-to-guides/manage-snaps/create-data-snapshots) stores only the data associated with the currently installed revision. See [What a snapshot stores](/t/snapshots/9468#heading--what-is-stored) for more details.
-
+Other than the contents of the common directories, a [Snapshot](/how-to-guides/manage-snaps/create-data-snapshots) stores only the data associated with the currently installed revision. See [What a snapshot stores](/how-to-guides/manage-snaps/create-data-snapshots.md#what-a-snapshot-stores) for more details.

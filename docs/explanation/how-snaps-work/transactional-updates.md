@@ -7,11 +7,9 @@ This can help when a set of snaps with specific revisions are tested to ensure t
 
 Transactional updates can also help when you know that one snap is dependent on a specific revision of another, or when you need multiple snaps to update at the same time. On the firmware for device running Ubuntu Core, for example, it can help to update both the kernel snap and the gadget snap at the same time. Transactional updates enable this.
 
-A transactional update or installation can be instantiated from either the **snap** command, or from [POST /v2/snaps of the Snapd REST API](/t/snapd-rest-api/17954#heading--snaps-post).
+A transactional update or installation can be instantiated from either the **snap** command, or from the [SnapD REST API](/reference/development/rest-api/snapd-rest-api).
 
-Requires *snapd 2.55*.
-
-<h2 id='heading--cli'>Transactional updates from the snap command</h2>
+## Transactional updates from the snap command
 
 The **snap install** and **snap refresh** commands accept an additional `--transaction=` argument with either `all-snaps` to instantiate the process as a single transaction, or `per-snap`, which is the default, for a separate transaction per listed snap:
 

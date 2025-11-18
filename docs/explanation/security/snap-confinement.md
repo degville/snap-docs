@@ -13,7 +13,7 @@ There are two levels of snap confinement for published snaps:
 - **Strict** 
    Used by the majority of snaps. Strictly confined snaps run in complete isolation, up to a minimal access level that's deemed always safe. Consequently, strictly confined snaps can not access files, network, processes or any other system resource without requesting specific access via an interface ([see below](#interfaces)).
 - **Classic**
-   Allows access to the system's resources in much the same way traditional packages do. To safeguard against abuse, publishing a classic snap requires [manual approval](/), and installation requires the `--classic` command line argument.
+   Allows access to the system's resources in much the same way traditional packages do. To safeguard against abuse, publishing a classic snap requires [manual approval](/reference/administration/reviewing-classic-confinement-snaps), and installation requires the `--classic` command line argument.
 
 An additional mode is useful during the development process:
 - **Devmode**

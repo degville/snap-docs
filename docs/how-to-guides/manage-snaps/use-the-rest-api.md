@@ -5,16 +5,7 @@ The REST API provides access to snapd's state and many of its key functions.
 
 See below for details on accessing the API,  authentication, JSON elements and error types, and see the [API reference](/reference/development/rest-api/snapd-rest-api) for which actions can be performed and which elements can be requested.
 
-
-- [Accessing the API](#heading--accessing)
-- [Authentication](#heading--authentication)
-- [General response](#heading--responses)
-  - [synchronous responses](#heading--sync)
-  - [asynchronous responses](#heading--async)
-
----
-
-<h2 id='heading--accessing'>Accessing the API</h2>
+## Accessing the API
 
 The `/run/snapd.socket` UNIX socket is used to connect a client to the API.
 
@@ -26,7 +17,7 @@ http://localhost/v2/snaps/hello \
 -X POST -d '{"action": "install", "channel": "edge"}'
 ```
 
-Similarly, the following curl command will remove a [Quota group](/t/snapd-rest-api/17954#heading--quotas) called _allquotas_:
+Similarly, the following curl command will remove a [quota group](/how-to-guides/manage-snaps/use-resource-quotas) called _allquotas_:
 
 ```bash
 sudo curl -sS --unix-socket /run/snapd.socket \
@@ -52,9 +43,11 @@ $ sudo curl -sS --unix-socket /run/snapd.socket http://localhost/v2/apps \
 }
 ```
 
-> ⓘ  HTTPS connections over a TCP socket are under consideration for a future release.
+```{caution}
+HTTPS connections over a TCP socket are under consideration for a future release.
+```
 
-<h2 id='heading--authentication'>Authentication</h2>
+## Authentication
 
 The API incorporates three levels of access:
 - **open**: API requests will succeed without authorisation
@@ -75,7 +68,7 @@ If available, [Polkit](https://www.freedesktop.org/wiki/Software/polkit/) can al
 X-Allow-Interaction: true
 ```
 
-<h2 id='heading--responses'>Responses</h2>
+## Responses
 
 For each request, the following JSON object is returned:
 
@@ -105,7 +98,7 @@ Example:
 * `kind`: Kind of maintenance restart, one of `system-restart` or `daemon-restart`
 * `message`: Text to show to user
 
-<h3 id='heading--sync'>Synchronous response</h3>
+### Synchronous response
 
 For a standard synchronous operation, the following JSON object is returned:
 
@@ -125,7 +118,7 @@ In addition to the standard response fields, the following can also be present:
 
 * `result`: Result from the request. This can be any JSON structure and is commonly either an object or an array.
 
-<h3 id='heading--async'>Asynchronous Response</h3>
+### Asynchronous Response
 
 When a request takes time to complete, an asynchronous response is returned.
 
@@ -147,7 +140,7 @@ In addition to the standard response fields the following can be present:
 
 * `change`: identifier for the change in progress
 
-<h2 id='heading--error-response'>Error response</h2>
+## Error response
 
 If a request cannot be completed, an error response is returned.
 

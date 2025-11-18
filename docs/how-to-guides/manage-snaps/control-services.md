@@ -134,4 +134,4 @@ Adding the `-f` option will keep log output open so you can follow new entries a
 sudo snap logs lxd -f
 ```
 
-The size and rate of log output can be limited by placing a snap within a quota group. See [Journal log limits](use-resource-quotas) for more details.
+The size and rate of log output can be limited by placing a snap within a quota group. See [Journal log limits](use-resource-quotas.md#journal-log-limits) for more details.

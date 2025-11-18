@@ -29,4 +29,4 @@ Manage validation sets <manage-validation-sets>
 Snap deltas <snap-deltas>
 Use the REST API <use-the-rest-api> 
 Use snapctl <use-snapctl>
-Store listing <configure-snaps-with-confdb>
+Store listing <store-listing-branding>

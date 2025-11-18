@@ -7,13 +7,7 @@ Occasionally, _snapd_ may develop an issue or bug that is only apparent on speci
 
 In such cases, a patched _snapd_ can be provided via a pull request and installed by those affected so they can report on whether it solves the original issue. This process is outlined below.
 
-- [Access GitHub](#heading--github)
-- [Locate the pull request](#heading--locate)
-- [Download the artifact](#heading--download)
-- [Install the test version](#heading--install)
-
----
-<h2 id='heading--github'>Access GitHub</h2>
+## Access GitHub
 
 The snap daemon, and its associated tools and projects are hosted [GitHub](https://github.com/) (see [https://github.com/snapcore](https://github.com/snapcore/)). The [snapd repository](https://github.com/snapcore/snapd) contains all the branches, pull requests, automated tests and discussions applicable to _snapd_.
 
@@ -21,23 +15,23 @@ A fix will typically be contained within a [pull request](https://docs.github.co
 
 A test release, especially from a pull request, should only be installed in a test environment as its behaviour could obviously be unpredictable. To install a test release, you will first need a GitHub account and you will need to be logged in from your favourite web browser.
 
-<h2 id='heading--locate'>Locate the pull request</h2>
+## Locate the pull request
 
 This location of the pull request will usually have been communicated separately, but open pull requests can be found linked to from the _snapd_ repository ([https://github.com/snapcore/snapd/pulls](https://github.com/snapcore/snapd/pulls)). Each pull request has a unique number identifier, such as `#11085`.
 
 With the pull request opened in your web browser, select the _Checks_ tab. This contains the output from the automated tests and build processes initiated when an approved pull request is created or updated. If a pull request has only recently been submitted or updated, it can take some time for this page to become fully populated.
 
-![image|669x453](upload://gYE0lIp6yS4vBGKMGJoNWiJbcDB.png) 
+![image|669x453](/images/access-github.png) 
 
-<h2 id='heading--download'>Download the artifact</h2>
+## Download the artifact
 
 Select _Tests_ from the menu on the left. This will take you to the _Actions_ tab for the snapd repository showing the test runs for the previously selected pull request. Scroll to the bottom of this list and you'll see the _artifacts_ section containing a link to the downloadable `snap-files` zip archive (GitHub stores build logs and artifacts for 90 days):
 
-![image|669x453](upload://8MukDXtI1WK8W9USGn2AQb24gIL.png) 
+![image|669x453](/images/download-artefact.png) 
 
 Click on _snap-files_ to download the archive.
 
-<h2 id='heading--install'>Install the test version</h2>
+## Install the test version
 
 First, unzip the file we downloaded:
 
@@ -47,7 +41,7 @@ Archive:  snap-files.zip
   inflating: snapd_2.53.2+git6345be5.6345be5-dirty_amd64.snap 
 ```
 
-This resultant snap for the specific pull request we selected earlier can now be installed with snap's [dangerous mode](/t/snap-install-modes/26389#heading--dangerous):
+This resultant snap for the specific pull request we selected earlier can now be installed with snap's [dangerous mode](/explanation/snap-development/install-modes.md#dangerous-mode):
 
 ```bash
 $ snap install --dangerous snapd_2.53.2+git6345be5.6345be5-dirty_amd64.snap
@@ -62,4 +56,3 @@ To revert the local installation to an official _snapd_ release, simply refresh 
 ```
 $ snap refresh snapd --stable --amend
 ```
-

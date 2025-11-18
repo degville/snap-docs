@@ -8,7 +8,7 @@ This *Reference* section is for when you need to know which options can be used,
 Details that help with the day-to-day operations of working with snaps.
 
 * [Glossary](glossary): Terms and definitions specific to the world of snaps.
-* [Interfaces](glossary): Every interface, listed by category.
+* [Interfaces](interfaces): Every interface alongside their most important attributes.
 * [Snap system architecture](/reference/operations/system-architecture): What snapd uses to manage confinement and security. 
 * [System options](/reference/operations/system-options): Configurations options for the system and native snap devices.
 
@@ -28,9 +28,9 @@ Extend snap functionality with API access and customised environments for your a
 * [REST API error codes](/reference/development/rest-api/error-responses): The types of errors returned by the API.
 
 YAML schemas define exactly what a device, kernel and snap is capable of.
-   - [snap.yaml](/reference/development/yaml-schemas/the-snap-format): The metadata for a snap.
-   - [Gadget snap](/reference/development/yaml-schemas/the-gadget-snap): System and device properties. 
-   - [Kernel snap](/reference/development/yaml-schemas/the-kernel-snap): The Linux kernel snap, its metadata and setup files.
+ - [snap.yaml](/reference/development/yaml-schemas/the-snap-format): The metadata for a snap.
+ - [Gadget snap](/reference/development/yaml-schemas/the-gadget-snap): System and device properties. 
+ - [Kernel snap](/reference/development/yaml-schemas/the-kernel-snap): The Linux kernel snap, its metadata and setup files.
 
 
 ```{toctree}
