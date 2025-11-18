@@ -20,7 +20,9 @@ Set  Snap         Age    Version               Rev   Size   Notes
 
 Each snapshot has a unique ID, or revision, shown in the *Set* column above. This value is unique to each *save* operation, regardless of the number of snaps it includes. *Age* is the period of time since the snapshot was created, while *Version* and *Rev* refer to the specific snap at the time of the snapshot. *Size* is the amount of storage used by a snapshot. 
 
-> ⓘ  If you'd rather not wait for the *save* operation to complete before regaining access to your terminal, add the `--no-wait` argument.
+```{note}
+If you'd rather not wait for the *save* operation to complete before regaining access to your terminal, add the `--no-wait` argument.
+```
 
 You can see the state of your system's snapshots with the `snap saved` command. Adding `--id=<set/unique ID>` allows you to query a specific snapshot:
 
@@ -29,7 +31,10 @@ $ snap saved --id=29
 Set  Snap             Age    Version               Rev   Size   Notes
 29   vlc              2h41m  3.0.6                 770   882kB  -
 ```
-> ⓘ  Both the _saved_ and _check-snapshot_ commands accept a `–users=` option with a comma-separated list of users to filter on.
+
+```{note}
+Both the _saved_ and _check-snapshot_ commands accept a `–users=` option with a comma-separated list of users to filter on.
+```
 
 ## What a snapshot stores
 
