@@ -5,23 +5,13 @@ The performance of a running application should not be affected by its snap envi
 
 But monitoring specific snap operations, alongside installation and distribution performance, can help with both snap _packaging_ and _configuration_ decisions, and also help to discover potential performance issues outside of an application's control. Several such approaches are outlined below.
 
-- [Snap debug timing](#heading--debug-timings)
-  * [Execution time](#heading--execution)
-  * [Internal (ensure) activities](#heading--ensure)
-  * [Subsystem startup times](#heading--startup)
-- [SquashFS performance](#heading--squashfs)
+On devices running Ubuntu Core, a [kernel boot parameter](https://ubuntu.com/core/docs/kernel-boot-parameters#heading--bootchart) can be used to generate a bootchart showing system startup times and performance.
 
-On devices running Ubuntu Core, a system option can be used to generate a bootchart showing system startup times and performance:
+## Snap debug timing
 
-- [Kernel boot parameters](https://ubuntu.com/core/docs/kernel-boot-parameters#heading--bootchart)
+Timing output from a snap can be a useful measure of overall performance, but it can also reveal performance bottlenecks and targets for improvement. The [snap debug](/how-to-guides/work-with-snaps/fix-common-issues.md#generate-debug-info) command includes several options to produce timing output for execution time, internal _ensure_ activities and subsystem startup times.
 
----
-
-<h2 id='heading--debug-timings'>Snap debug timing</h2>
-
-Timing output from a snap can be a useful measure of overall performance, but it can also reveal performance bottlenecks and targets for improvement. The [snap debug](/t/troubleshooting/20595#heading--debug) command includes several options to produce timing output for execution time, internal _ensure_ activities and subsystem startup times.
-
-<h3 id='heading--execution'>Execution time</h3>
+### Execution time
 
 By default, the `snap debug timings` command will produce timing output for a specific _change_, which itself represents a set of operations performed by the snap daemon.
 
@@ -52,11 +42,13 @@ ID     Status Doing  Undoing  Label          Summary
 
 The ID represents a numerical identifier for tasks spawned by the change logic, with nested tasks denoted with the `^` symbol beneath their parent.
 
-The following charts were produced from the `Doing` column output of  `snap debug timings --last=install` after installing the [chromium snap](https://snapcraft.io/chromium), first from the cache, and secondly after a fresh install:
+The following charts were produced from the `Doing` column output of  `snap debug timings --last=install` after installing the [Chromium snap](https://snapcraft.io/chromium), first from the cache, and secondly after a fresh install:
 
 ![Chromium snap cached install timing data](https://assets.ubuntu.com/v1/54cae8e8-chromium-cached-install-pie.png)
 
-[details=Debug timing data for cached install of Chromium snap]
+
+```{dropdown} Debug timing data for cached install of Chromium snap
+:closed:
 
 ```pre
 ID      Status        Doing      Undoing  Label                          Summary
@@ -120,11 +112,12 @@ ID      Status        Doing      Undoing  Label                          Summary
 160254  Done         4239ms            -  run-hook                       Run configure hook of "chromium" snap if present
 160255  Done           41ms            -  run-hook                       Run health check of "chromium" snap
 ```
-[/details]
 
 ![Chromium snap cold install timing data](https://assets.ubuntu.com/v1/49e70e0e-chromium-cold-install-pie.png)
 
-[details=Debug timing data for cold install of Chromium snap]
+```{dropdown} Debug timing data for cold install of Chromium snap
+:closed:
+
 ```pre
 ID      Status        Doing      Undoing  Label                          Summary
 160162  Done          750ms            -  prerequisites                  Ensure prerequisites for "chromium" are available
@@ -189,9 +182,8 @@ ontrol
 160175  Done         4247ms            -  run-hook                       Run configure hook of "chromium" snap if present
 160176  Done           43ms            -  run-hook                       Run health check of "chromium" snap
 ```
-[/details]
 
-<h3 id='heading--ensure'>Internal activities</h3>
+### Internal activities
 
 Alongside the execution time for a *change*, the time a taken to process internal  _snapd_ activities, called *ensure activities*, is also tracked. Ensure activities are performed on a regular basis, and they occasionally generate new tasks, as changes, to continue an initial action. They include the following:
 
@@ -214,7 +206,7 @@ refresh-catalogs                309ms            -
  ^                              170ms            -    query store for catalogs
 ```
 
-<h2 id='heading--startup'>Subsystem startup times</h2>
+## Subsystem startup times
 
 The startup timing data for two subsystems, `load-state` and `ifacemgr`, are also tracked and can be output with the `--startup` argument:
 
@@ -232,7 +224,7 @@ ifacemgr                    -            -
 
 The above example shows execution times related to snapd’s interface manager, which includes the time to set up the security profiles for all installed snaps and their interfaces before snapd becomes operational.
 
-<h2 id='heading--squashfs'>SquashFS performance and compression</h2>
+## SquashFS performance and compression
 
 [SquashFS](https://www.kernel.org/doc/Documentation/filesystems/squashfs.txt) is a standard Linux file system that encases an operational directory structure within a single compressed file. It’s commonly used to provide bootable live Linux environments on USB storage, but it’s also used to package a snap.
 
@@ -242,7 +234,9 @@ SquashFS decompression occurs when a snap is first run on a system and its perfo
 
 Snaps can use one of two different types of compression, either `xz` or `lzo`, with the majority of snaps defaulting to `xz`. These algorithms were chosen for their compression ratios and speed when used with snaps that differ in the number of files they contain, and their size.
 
-> See [Top-level metadata](/t/8334#heading--compression) for schema details on how to build a snap using compression.
+```{note}
+See [snapcraft.yaml compression](https://documentation.ubuntu.com/snapcraft/stable/reference/project-file/snapcraft-yaml/#compression) for schema details on how to build a snap using compression.
+```
 
 Chromium, for example, contains over 300MB across almost 1000 files and it takes significantly longer to access every file than it does to launch the application. In this case, the xz compression format is the slowest by more than double the next slowest format, gzip. This is shown in the following “box chart”, where each test was run 10 times across 6 different compression options. Each test itself is an aggregate of times for installation, running the application twice, and hashing every file in the SquashFS archive:
 
