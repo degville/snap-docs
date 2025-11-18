@@ -57,4 +57,3 @@ Name        Version            Rev    Tracking        Publisher     Notes
 liquidctl   1.7.1-11-g6295354  1      latest/stable   morrisong     devmode
 snapcraft   5.0                6751   latest/stable   canonical✓    classic
 ```
-
