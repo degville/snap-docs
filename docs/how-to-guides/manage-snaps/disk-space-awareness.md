@@ -35,7 +35,7 @@ To enable disk space awareness, set one or more of the following _experimental_ 
 
 To enable the pre-install check, for example, use the following command:
 ```bash
-$ snap set system experimental.check-disk-space-install=true
+snap set system experimental.check-disk-space-install=true
 ```
 
 See [System options](/how-to-guides/manage-snaps/set-system-options) for more details on setting and disabling options.
