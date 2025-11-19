@@ -298,5 +298,4 @@ $ sudo snap remove vlc --purge
 vlc removed
 ```
 
-For more details information on using snaps, see our [Snap How-to guides](/how-to-guides/index).
-
+For more details information on using snaps, see our [How-to guides](/how-to-guides/index).
