@@ -196,9 +196,8 @@ sitemap_show_lastmod = True
 # Template and asset locations
 #######################
 
-#html_static_path = ["_static"]
+html_static_path = ["_static"]
 #templates_path = ["_templates"]
-
 
 #############
 # Redirects #
@@ -290,8 +289,7 @@ exclude_patterns = [
 
 # Adds custom JavaScript files, located under 'html_static_path'
 
-# html_js_files = []
-
+html_js_files = ['js/theme-sync.js']
 
 # Specifies a reST snippet to be appended to each .rst file
 
