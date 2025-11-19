@@ -240,7 +240,7 @@ home       nethack:home  :home  -
 
 Regardless of whether the home interface is used or not, a snap can also store user data, such as a database or configuration files, within its own directory under _$HOME/snap_. Data within this snap-specific directory is stored in one of two further directories, depending on whether the data needs to be tied to a specific release, or whether it can be used across multiple releases.
 
-Data for a specific release is stored within a directory named after the [revision](/reference/glossary) of a release. This is a numeric value, such as `55` or `56`. The data for each specific revision is often copied from one release to the next, so that reverting from one revision to a previous revision will restore a working configuration, for instance. The snap directory also contains a symbolic link called `current` that points to the snap revision currently active.
+Data for a specific release is stored within a directory named after the [revision](/reference/glossary.md#revision) of a release. This is a numeric value, such as `55` or `56`. The data for each specific revision is often copied from one release to the next, so that reverting from one revision to a previous revision will restore a working configuration, for instance. The snap directory also contains a symbolic link called `current` that points to the snap revision currently active.
 
 Data that can be shared across releases is stored in a directory called `common`, and might include image or audio caches, or a database. This data is not copied between releases.
 
