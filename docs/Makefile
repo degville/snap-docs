@@ -92,7 +92,7 @@ install: $(VENVDIR)
 
 run: install fetch-openapi-docs
 	mkdir -p $(BUILDDIR)/reference/api
-	. $(VENV); $(VENVDIR)/bin/sphinx-autobuild -b dirhtml --host $(SPHINX_HOST) --port $(SPHINX_PORT) "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) --post-build "mv $(SOURCEDIR)/reference/api/redoc-static.html $(BUILDDIR)/reference/api/redoc-static.html"
+	. $(VENV); $(VENVDIR)/bin/sphinx-autobuild -b dirhtml --host $(SPHINX_HOST) --port $(SPHINX_PORT) "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) --post-build "mv $(SOURCEDIR)/reference/api/ $(BUILDDIR)/reference/"
 
 # Doesn't depend on $(BUILDDIR) to rebuild properly at every run.
 html: install fetch-openapi-docs
