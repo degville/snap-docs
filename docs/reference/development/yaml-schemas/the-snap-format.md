@@ -163,11 +163,11 @@ apps:
       refresh-mode:  endure | restart
 
       # Maps a daemon’s sockets to services and activates them.
-     sockets:
+      sockets:
           - <socket name>
 
       # The mode of a socket in octal, such as `0644`.
-     socket-mode: <mode>
+      socket-mode: <mode>
      
       # Controls how the daemon should be stopped.  The given signal is sent to the main PID 
       # (when used without -all) or to all PIDs in the process group when the -all suffix is used.
