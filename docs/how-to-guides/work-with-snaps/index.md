@@ -11,8 +11,6 @@ The snap system has been designed to look after itself with automatic security a
 ## Problem solving
 
 - [Fix common issues](fix-common-issues): If you do run into problems, find common solutions here.
-- [Test snapd fixes](test-snapd-fixes): Run a bugfix build of the snap daemon.
-- [Debug running snaps](debug-snaps): Test bugfix releases of snapd.
 
 
 ```{toctree}
@@ -26,5 +24,3 @@ Connect interfaces <connect-interfaces>
 Configure snaps <configure-snaps>
 Apps and aliases <apps-and-aliases>
 Fix common issues <fix-common-issues>
-Test snapd fixes <test-snapd-fixes>
-Debug snaps <debug-snaps>
