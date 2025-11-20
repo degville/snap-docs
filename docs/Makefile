@@ -92,13 +92,10 @@ install: $(VENVDIR)
 
 run: install fetch-openapi-docs
 	mkdir -p $(BUILDDIR)/reference/api
-	. $(VENV); $(VENVDIR)/bin/sphinx-autobuild -b dirhtml --host $(SPHINX_HOST) --port $(SPHINX_PORT) "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) --post-build "mv $(SOURCEDIR)/reference/api/ $(BUILDDIR)/reference/"
-
+	. $(VENV); $(VENVDIR)/bin/sphinx-autobuild -b dirhtml --host $(SPHINX_HOST) --port $(SPHINX_PORT) "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) --post-build "./$(SOURCEDIR)/jobs/post-build-job.sh"
 # Doesn't depend on $(BUILDDIR) to rebuild properly at every run.
 html: install fetch-openapi-docs
 	. $(VENV); $(SPHINXBUILD) -W --keep-going -b dirhtml "$(SOURCEDIR)" "$(BUILDDIR)" -w $(SPHINXDIR)/warnings.txt $(SPHINXOPTS)
-# @mkdir -p $(BUILDDIR)/reference/api
-# @mv $(SOURCEDIR)/reference/api/redoc-static.html $(BUILDDIR)/reference/api/redoc-static.html
 
 epub: install
 	. $(VENV); $(SPHINXBUILD) -b epub "$(SOURCEDIR)" "$(BUILDDIR)" -w $(SPHINXDIR)/warnings.txt $(SPHINXOPTS)
@@ -159,14 +156,10 @@ vale-spelling: vale-install
 	@. $(VENV); vale --config="$(VALE_CONFIG)" --filter='$(SPHINXDIR)/styles/spelling.filter' --glob='*.{md,rst}' $(TARGET)
 	@cat $(SPHINXDIR)/styles/config/vocabularies/Canonical/accept_backup.txt > $(SPHINXDIR)/styles/config/vocabularies/Canonical/accept.txt && rm $(SPHINXDIR)/styles/config/vocabularies/Canonical/accept_backup.txt
 
-fetch-openapi-docs: $(SOURCEDIR)/reference/api/index.html
+fetch-openapi-docs: $(SOURCEDIR)/reference/api/redoc-static.html
 
-$(SOURCEDIR)/reference/api/index.html:
-	@mkdir -p $(SOURCEDIR)/reference/api
-	@echo "Downloading OpenAPI docs from canonical/snapd-rest-openapi..."
-	@LATEST_RUN_ID=$$(gh run list -R canonical/snapd-rest-openapi --workflow redocly.yaml --limit 1 --json databaseId -q '.[0].databaseId'); \
-	gh run download $$LATEST_RUN_ID -R canonical/snapd-rest-openapi -n api-docs -D $(SOURCEDIR)/reference/api
-	@echo "OpenAPI docs downloaded to $(SOURCEDIR)/reference/api"
+$(SOURCEDIR)/reference/api/redoc-static.html:
+	./jobs/pre-build-job.sh
 
 pdf-prep: install
 	@for packageName in $(REQPDFPACKS); do (dpkg-query -W -f='$${Status}' $$packageName 2>/dev/null | \
