@@ -92,7 +92,7 @@ install: $(VENVDIR)
 
 run: install fetch-openapi-docs
 	mkdir -p $(BUILDDIR)/reference/api
-	. $(VENV); $(VENVDIR)/bin/sphinx-autobuild -b dirhtml --host $(SPHINX_HOST) --port $(SPHINX_PORT) "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) --post-build "./$(SOURCEDIR)/jobs/post-build-job.sh"
+	. $(VENV); $(VENVDIR)/bin/sphinx-autobuild -b dirhtml --host $(SPHINX_HOST) --port $(SPHINX_PORT) "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) --pre-build "./$(SOURCEDIR)/jobs/pre-build-job.sh"
 # Doesn't depend on $(BUILDDIR) to rebuild properly at every run.
 html: install fetch-openapi-docs
 	. $(VENV); $(SPHINXBUILD) -W --keep-going -b dirhtml "$(SOURCEDIR)" "$(BUILDDIR)" -w $(SPHINXDIR)/warnings.txt $(SPHINXOPTS)
