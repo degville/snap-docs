@@ -23,9 +23,21 @@ build:
         exit 183;
       fi
     pre_build:
-    - bash docs/jobs/pre-build-job.sh
+      # 1. Download gh CLI
+      - wget https://github.com/cli/cli/releases/download/v2.40.0/gh_2.40.0_linux_amd64.tar.gz
+      # 2. Extract it
+      - tar -xf gh_2.40.0_linux_amd64.tar.gz
+      # 3. Move binary to a local bin folder so it's in your path (or just call it directly)
+      - mkdir -p $HOME/bin
+      - cp gh_2.40.0_linux_amd64/bin/gh $HOME/bin/gh
+      # 4. Verify it works
+      - $HOME/bin/gh --version
+      # 5. Authenticate using a GitHub token stored in RTD's environment variables
+      - $HOME/bin/gh auth login --with-token < $RTD_TOKEN
+      # 6. Run pre-build script (Handles the fetching of OpenAPI spec from GitHub)
+      - bash docs/jobs/pre-build-job.sh
     post_build:
-    - bash docs/jobs/post-build-job.sh
+      - bash docs/jobs/post-build-job.sh
 
 # Build documentation in the docs/ directory with Sphinx
 sphinx:
