@@ -32,9 +32,11 @@ build:
       - cp gh_2.40.0_linux_amd64/bin/gh $HOME/bin/gh
       # 4. Verify it works
       - $HOME/bin/gh --version
-      # 5. Authenticate using a GitHub token stored in RTD's environment variables
-      - $HOME/bin/gh auth login --with-token < $RTD_TOKEN
-      # 6. Run pre-build script (Handles the fetching of OpenAPI spec from GitHub)
+      # 5. Export token for GH
+      - export GITHUB_TOKEN=$RTD_TOKEN
+      # 6. Authenticate using a GitHub token stored in RTD's environment variables
+      - $HOME/bin/gh auth login --with-token
+      # 7. Run pre-build script (Handles the fetching of OpenAPI spec from GitHub)
       - bash docs/jobs/pre-build-job.sh
     post_build:
       - bash docs/jobs/post-build-job.sh
