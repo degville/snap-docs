@@ -27,17 +27,15 @@ build:
       - wget https://github.com/cli/cli/releases/download/v2.40.0/gh_2.40.0_linux_amd64.tar.gz
       # 2. Extract it
       - tar -xf gh_2.40.0_linux_amd64.tar.gz
-      # 3. Move binary to a local bin folder so it's in your path (or just call it directly)
+      # 3. Move binary to a local bin folder
       - mkdir -p $HOME/bin
       - cp gh_2.40.0_linux_amd64/bin/gh $HOME/bin/gh
       # 4. Verify it works
       - $HOME/bin/gh --version
-      # 5. Export token for GH
-      - export GITHUB_TOKEN=$RTD_TOKEN
-      # 6. Authenticate using a GitHub token stored in RTD's environment variables
-      - $HOME/bin/gh auth login --with-token
-      # 7. Run pre-build script (Handles the fetching of OpenAPI spec from GitHub)
-      - bash docs/jobs/pre-build-job.sh
+      # 5. Run the script with the PATH and TOKEN set specifically for this command
+      #    We add $HOME/bin to PATH so the script can just say 'gh' instead of full path
+      #    We map RTD_TOKEN to GITHUB_TOKEN so gh finds it automatically
+      - PATH=$HOME/bin:$PATH GITHUB_TOKEN=$RTD_TOKEN bash docs/jobs/pre-build-job.sh
     post_build:
       - bash docs/jobs/post-build-job.sh
 
