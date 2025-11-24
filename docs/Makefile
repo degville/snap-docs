@@ -93,7 +93,7 @@ install: $(VENVDIR)
 run: install
 	mkdir -p $(BUILDDIR)/reference/api
 	. $(VENV); $(VENVDIR)/bin/sphinx-autobuild -b dirhtml --host $(SPHINX_HOST) --port $(SPHINX_PORT) "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) \
-	--pre-build "env SOURCEDIR=. BUILDDIR=./_build ./$(SOURCEDIR)/jobs/pre-build-job.sh"
+	--pre-build "env SOURCEDIR=. ./$(SOURCEDIR)/jobs/pre-build-job.sh"
 # Doesn't depend on $(BUILDDIR) to rebuild properly at every run.
 html: install
 	. $(VENV); $(SPHINXBUILD) -W --keep-going -b dirhtml "$(SOURCEDIR)" "$(BUILDDIR)" -w $(SPHINXDIR)/warnings.txt $(SPHINXOPTS)
