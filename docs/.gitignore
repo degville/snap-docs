@@ -17,7 +17,7 @@
 _build
 
 # OpenAPI documentation Artifacts
-reference/api/
+_html_extra/reference/api/
 
 # Node.js
 package*.json

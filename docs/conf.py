@@ -286,6 +286,7 @@ exclude_patterns = [
 
 # html_css_files = []
 
+html_extra_path = ["_html_extra"]
 
 # Adds custom JavaScript files, located under 'html_static_path'
 
