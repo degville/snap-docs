@@ -45,7 +45,7 @@ help:
 .PHONY: full-help spellcheck-install pa11y-install install run html \
         epub serve clean clean-doc spelling spellcheck linkcheck woke \
         allmetrics pa11y pdf-prep-force pdf-prep pdf vale-install vale \
-		fetch-openapi-docs update
+		update
 
 full-help: $(VENVDIR)
 	@. $(VENV); $(SPHINXBUILD) -M help "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
@@ -90,11 +90,12 @@ pa11y-install:
 
 install: $(VENVDIR)
 
-run: install fetch-openapi-docs
+run: install
 	mkdir -p $(BUILDDIR)/reference/api
-	. $(VENV); $(VENVDIR)/bin/sphinx-autobuild -b dirhtml --host $(SPHINX_HOST) --port $(SPHINX_PORT) "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) --pre-build "./$(SOURCEDIR)/jobs/pre-build-job.sh"
+	. $(VENV); $(VENVDIR)/bin/sphinx-autobuild -b dirhtml --host $(SPHINX_HOST) --port $(SPHINX_PORT) "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) \
+	--pre-build "env SOURCEDIR=. BUILDDIR=./_build ./$(SOURCEDIR)/jobs/pre-build-job.sh"
 # Doesn't depend on $(BUILDDIR) to rebuild properly at every run.
-html: install fetch-openapi-docs
+html: install
 	. $(VENV); $(SPHINXBUILD) -W --keep-going -b dirhtml "$(SOURCEDIR)" "$(BUILDDIR)" -w $(SPHINXDIR)/warnings.txt $(SPHINXOPTS)
 
 epub: install
@@ -109,7 +110,7 @@ clean: clean-doc
 	rm -rf $(SPHINXDIR)/node_modules/
 	rm -rf $(SPHINXDIR)/styles
 	rm -rf $(VALE_CONFIG)
-	rm -rf $(SOURCEDIR)/reference/api
+	rm -rf $(SOURCEDIR)/_html_extra
 
 clean-doc:
 	git clean -fx "$(BUILDDIR)"
@@ -155,11 +156,6 @@ vale-spelling: vale-install
 	@echo "Running Vale against $(TARGET). To change target set TARGET= with make command"
 	@. $(VENV); vale --config="$(VALE_CONFIG)" --filter='$(SPHINXDIR)/styles/spelling.filter' --glob='*.{md,rst}' $(TARGET)
 	@cat $(SPHINXDIR)/styles/config/vocabularies/Canonical/accept_backup.txt > $(SPHINXDIR)/styles/config/vocabularies/Canonical/accept.txt && rm $(SPHINXDIR)/styles/config/vocabularies/Canonical/accept_backup.txt
-
-fetch-openapi-docs: $(SOURCEDIR)/reference/api/redoc-static.html
-
-$(SOURCEDIR)/reference/api/redoc-static.html:
-	./jobs/pre-build-job.sh
 
 pdf-prep: install
 	@for packageName in $(REQPDFPACKS); do (dpkg-query -W -f='$${Status}' $$packageName 2>/dev/null | \
