@@ -102,10 +102,10 @@ Modifying a validation set without updating the sequence can violate the constra
 
 <h2 id='heading--listing'>Listing validation sets</h2>
 
-Use the `snapcraft list-validation-sets` command to check which validation sets area available in the store:
+Use the `snapcraft validation-sets` command to check which validation sets area available in the store:
 
 ```bash
-$ snapcraft list-validation-sets
+$ snapcraft validation-sets
 Account-ID                       Name      Sequence  Revision  When
 xSfWKGdLoQBoQx88vIM1MpbFNMq53t1f myset1    1         0         2021-04-08
 xSfWKGdLoQBoQx88vIM1MpbFNMq53t1f testset1  2         0         2021-03-31
@@ -114,7 +114,7 @@ xSfWKGdLoQBoQx88vIM1MpbFNMq53t1f testset1  2         0         2021-03-31
 To list only validation-sets with a specific set name, use the additional `--name` argument:
 
 ```bash
-$ snapcraft list-validation-sets --name myset1
+$ snapcraft validation-sets --name myset1
 Account-ID                       Name      Sequence  Revision  When
 xSfWKGdLoQBoQx88vIM1MpbFNMq53t1f myset1    1         0         2021-04-08
 ```
@@ -122,7 +122,7 @@ xSfWKGdLoQBoQx88vIM1MpbFNMq53t1f myset1    1         0         2021-04-08
 An additional `--sequence` argument can be used to list validation sets with a specific sequence number:
 
 ```bash
-$ snapcraft list-validation-sets --name myset1 --sequence 1
+$ snapcraft validation-sets --name myset1 --sequence 1
 Account-ID                       Name      Sequence  Revision  When
 xSfWKGdLoQBoQx88vIM1MpbFNMq53t1f myset1    1         0         2021-04-08
 ```
