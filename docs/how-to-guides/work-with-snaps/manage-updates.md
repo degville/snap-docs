@@ -200,7 +200,7 @@ The *refresh.retain* value can be a number between 2 and 20. The default is `ref
 
 ## Manual updates
 
-Regardless of when a refresh is scheduled, an update refresh can be initiated with the `snap refresh` command:
+Regardless of when a refresh is scheduled, a refresh can be initiated with the `snap refresh` command:
 
 ```bash
 $ snap refresh
@@ -227,6 +227,11 @@ core           16-2.45.1+git2022.b6b3c25  9584  canonical✓    core
 get-iplayer    3.26                       250   snapcrafters  -
 qt551          5.5                        30    keshavnrj     -
 ```
+
+## Locally installed snaps
+
+The `snap refresh --ammend` command can be used to replace a locally installed snap with an identically named snap on the store.
+
 ## Monitor changes
 
 Use the `snap changes` and `snap tasks <change-id>` commands to see details about what changed during the last refresh:

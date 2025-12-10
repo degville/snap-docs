@@ -27,6 +27,7 @@ The `--dangerous` argument will install a local snap without validating or check
 
 This option is useful when testing snaps shared through a trusted channel, and for testing snaps built locally, before eventually being published to the store.
 
+The `snap refresh --ammend` command can be used to replace a locally installed snap with an identically named snap on the store.
 
 ## Developer mode
 
@@ -40,7 +41,7 @@ A strictly confined snap running in _devmode_ will generate log and AppArmor pro
 
 The _devmode_ argument is also a requirement  if a snap has been built and published with `confinement: devmode` in its snapcraft.yaml. These snaps are built for testing and cannot be released to their respective stable channels.
 
-Additionally, snaps running in development mode will not be updated. This is because it's assumed the snap developer wishes to test, and continue testing, a specific release. To update a snap, it will first need to be removed and reinstalled without `--devmode`.
+Additionally, snaps running in development mode will not be updated. This is because it's assumed the snap developer wishes to test, and continue testing, a specific release.
 
 ## Jail mode
 
