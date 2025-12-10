@@ -3,7 +3,7 @@
 
 The `custom-device` interface permits access to a device of a specific class and model without requiring the creation of an interface for that device alone. It’s intended to be used with [Ubuntu Core](/t/glossary/14612#heading--ubuntu-core) and its scope and specification are defined as part of the [gadget snap](/) for the deployed Ubuntu Core image.
 
-To permit access, the application snaps defines a custom-device *plug*, which is associated with a corresponding and identically-named custom-device *slot* in the [gadget snap](/).
+To permit access, the application snaps define a custom-device plug and the [gadget snap](https://documentation.ubuntu.com/core/reference/gadget-snap-format/) defines a custom-device slot, where both the plug and the slot have the identically-named `custom-device` attribute.
 
 Under specific and appropriate circumstances, it is possible to define the slot directly from the consuming application itself, together with the plug, which is an acceptable approach for applications that will be widely distributed but support very specific hardware.
 
@@ -20,7 +20,7 @@ slots:
       - /dev/DualSD
 ```
 
-To prevent connection to arbitrary custom-device slots, the plug and slot must share the same custom-device attributes, including the name of the plug or slot:
+To prevent connection to arbitrary custom-device slots, the plug and slot must share the same custom-device attributes:
 
 ```yaml
 plugs:
