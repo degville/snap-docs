@@ -3,7 +3,6 @@
 
 `network-bind` allows operating as a network service, typically enabling a snap to run a server.
 
-**Auto-connect**: yes
+## Developer details
 
-> ⓘ  This is a snap interface. See [Interface management](/) and [Supported interfaces](/interfaces/index) for further details on how interfaces are used.
-
+**[Auto-connect](/t/interface-management/6154#heading--auto-connections)**: yes</br>
