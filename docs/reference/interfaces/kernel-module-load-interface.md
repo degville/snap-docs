@@ -5,7 +5,6 @@
 
 See also the [kernel-module-control interface](/interfaces/kernel-module-control-interface) for inserting, removing and querying kernel modules.
 
-> ⓘ  This is a snap interface. See [Interface management](/) and [Supported interfaces](/interfaces/index) for further details on how interfaces are used.
 
 ---
 

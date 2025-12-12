@@ -10,5 +10,4 @@ This interface is intended to work in tandem with [the AppStream interface](/int
 
 Requires snapd version _2.41+_.`
 
-> ⓘ  This is a snap interface. See [Interface management](/) and [Supported interfaces](/interfaces/index) for further details on how interfaces are used.
 

@@ -9,5 +9,4 @@ The interface can access `/dev/input/js*` (with snap version _2.24+_) and `/dev/
 
 Requires snapd version _2.24+_.
 
-> ⓘ  This is a snap interface. See [Interface management](/) and [Supported interfaces](/interfaces/index) for further details on how interfaces are used.
 

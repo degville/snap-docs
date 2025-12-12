@@ -80,5 +80,4 @@ The test code for this interface can be found in the snapd repository:</br>
 The source code for the interface is in the snapd repository:</br>
 [https://github.com/snapcore/snapd/blob/master/interfaces/builtin/bool_file.go](https://github.com/snapcore/snapd/blob/master/interfaces/builtin/bool_file.go)
 
-> ⓘ  This is a snap interface. See [Interface management](/) and [Supported interfaces](/interfaces/index) for further details on how interfaces are used.
 

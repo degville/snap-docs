@@ -10,5 +10,4 @@ https://www.kernel.org/doc/Documentation/misc-devices/mei/mei.txt
 
 Requires snapd version 2.38+.
 
-> ⓘ  This is a snap interface. See [Interface management](/) and [Supported interfaces](/interfaces/index) for further details on how interfaces are used.
 

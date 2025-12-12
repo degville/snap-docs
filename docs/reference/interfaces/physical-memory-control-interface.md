@@ -11,5 +11,4 @@ This interface can write to all physical memory when the kernel is compiled with
 
 Requires snapd version _2.21+_.
 
-> ⓘ  This is a snap interface. See [Interface management](/) and [Supported interfaces](/interfaces/index) for further details on how interfaces are used.
 

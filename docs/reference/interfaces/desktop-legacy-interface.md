@@ -14,5 +14,4 @@ See [The desktop interfaces](/interfaces/desktop-interfaces) for further details
 * If your snap has a graphical interface, you *should* connect to this interface.
 * If your snap is expected to receive text input from CJKV(Chinese, Japanese, Korean, Vietnamese etc.) users, you **must** connect to this interface, *failing to do so will cause frustration to these users*.
 
-> ⓘ  This is a snap interface. See [Interface management](/) and [Supported interfaces](/interfaces/index) for further details on how interfaces are used.
 
