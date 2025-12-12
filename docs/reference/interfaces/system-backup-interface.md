@@ -21,5 +21,4 @@ With the following exceptions:
 
 Importantly, neither snapd nor this interface provide any mechanisms to ensure the system is in a ready state for backups. Reliable backup strategies with snaps utilising this interface will need to account for this themselves.
 
-> ⓘ  This is a snap interface. See [Interface management](/) and [Supported interfaces](/interfaces/index) for further details on how interfaces are used.
 

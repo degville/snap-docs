@@ -7,5 +7,4 @@
 
 Requires snapd version *2.43+*.
 
-> ⓘ  This is a snap interface. See [Interface management](/) and [Supported interfaces](/interfaces/index) for further details on how interfaces are used.
 

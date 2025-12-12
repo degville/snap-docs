@@ -1,8 +1,6 @@
 (interfaces-cuda-driver-libs)=
 # The cuda-driver-libs interface
 
-# cuda-driver-libs
-
 **This interface is under development and is not currently available for general use**.
 
 The `cuda-driver-libs` interface permits access to CUDA acceleration on Nvidia GPUs.

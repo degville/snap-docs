@@ -10,5 +10,4 @@ See [The desktop interfaces](/interfaces/desktop-interfaces) for further details
 
 **Condition to Connect**: If your snap has a graphical user interface, you *should* connect to this interface.
 
-> ⓘ  This is a snap interface. See [Interface management](/) and [Supported interfaces](/interfaces/index) for further details on how interfaces are used.
 

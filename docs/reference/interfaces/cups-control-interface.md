@@ -7,5 +7,4 @@ This interface has been superseded by [the cups interface](/interfaces/cups-inte
 
 **Auto-connect**: no
 
-> ⓘ  This is a snap interface. See [Interface management](/) and [Supported interfaces](/interfaces/index) for further details on how interfaces are used.
 

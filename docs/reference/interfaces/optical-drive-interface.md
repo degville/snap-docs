@@ -9,5 +9,4 @@
 
 `write` available in snap versions _2.33+_.
 
-> ⓘ  This is a snap interface. See [Interface management](/) and [Supported interfaces](/interfaces/index) for further details on how interfaces are used.
 

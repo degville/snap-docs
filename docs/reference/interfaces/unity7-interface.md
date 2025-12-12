@@ -12,5 +12,4 @@ See [The desktop interfaces](/interfaces/desktop-interfaces) for further details
 
 **Condition to Connect**: If your snap has a graphical user interface and is expected to be launched on Unity desktop environment(the default DE on Ubuntu 16.04), you *should* connect this interface.
 
-> ⓘ  This is a snap interface. See [Interface management](/) and [Supported interfaces](/interfaces/index) for further details on how interfaces are used.
 

@@ -24,5 +24,4 @@ Certain application types may be granted an exception for the following reasons:
 
 `removable-media` is considered a _transitional_ interface because, when connected, only traditional UNIX permissions are considered for file access. This allows a background service in a snap to setup _inotify_, for example, to monitor, catalogue and modify files on external media.
 
-> ⓘ  This is a snap interface. See [Interface management](/) and [Supported interfaces](/interfaces/index) for further details on how interfaces are used.
 

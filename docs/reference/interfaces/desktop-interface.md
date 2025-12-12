@@ -9,5 +9,4 @@
 
 See [The desktop interfaces](/interfaces/desktop-interfaces) for further details.
 
-> ⓘ  This is a snap interface. See [Interface management](/) and [Supported interfaces](/interfaces/index) for further details on how interfaces are used.
 

@@ -1,7 +1,7 @@
 (interfaces-kernel-firmware-control-interface)=
 # The kernel-firmware-control interface
 
-The ` kernel-firmware-control` interface permits the setting of a custom  [kernel firmware search path](https://www.kernel.org/doc/html/v4.18/driver-api/firmware/fw_search_path.html), and is typically used with [the remoteproc interface](/) to upload microcontroller firmware.
+The ` kernel-firmware-control` interface permits the setting of a custom  [kernel firmware search path](https://www.kernel.org/doc/html/v4.18/driver-api/firmware/fw_search_path.html), and is typically used with [the remoteproc interface](remoteproc-interface) to upload microcontroller firmware.
 
 ```{tip}
 

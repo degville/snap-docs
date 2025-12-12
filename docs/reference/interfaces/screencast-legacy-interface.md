@@ -7,5 +7,4 @@
 
 Can access common desktop screenshot, screencast and recording methods thus giving privileged access to screen output and microphone via the desktop session manager.
 
-> ⓘ  This is a snap interface. See [Interface management](/) and [Supported interfaces](/interfaces/index) for further details on how interfaces are used.
 

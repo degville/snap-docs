@@ -10,7 +10,6 @@
     * `SNAP_USER_{DATA,COMMON}`
     * `SNAP_{DATA,COMMON}`
 
-> ⓘ  This is a snap interface. See [Interface management](/) and [Supported interfaces](/interfaces/index) for further details on how interfaces are used.
 
 ## Corresponding Source
 
