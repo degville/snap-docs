@@ -274,6 +274,7 @@ extensions = [
     "sphinx_last_updated_by_git",
     "sphinx.ext.intersphinx",
     "sphinx_sitemap",
+    "sphinxext.rediraffe",
 ]
 
 # Excludes files or directories from processing
@@ -288,6 +289,10 @@ exclude_patterns = [
 
 # Used for copying OpenAPI HTML file
 html_extra_path = ["_html_extra"]
+
+# Add redirects, so they can be updated here to land with docs being moved
+rediraffe_branch = "main"
+rediraffe_redirects = "redirects.txt"
 
 # Adds custom JavaScript files, located under 'html_static_path'
 

@@ -27,6 +27,6 @@ Using components <using-components>
 Configure snaps with confdb <configure-snaps-with-confdb>
 Manage validation sets <manage-validation-sets>
 Snap deltas <snap-deltas>
-Use the REST API <use-the-rest-api> 
+Use the REST API <use-the-rest-api>
 Use snapctl <use-snapctl>
 Store listing <store-listing-branding>
