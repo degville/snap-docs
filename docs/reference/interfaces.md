@@ -66,6 +66,7 @@ The following column names are used:
 | [dsp](interfaces/dsp-interface) | enables the control of digital signal processors (DSPs) | Hardware, Developer | no |
 | [dummy](interfaces/dummy-interface) | renamed to empty interface | System, Other | no |
 | [dvb](interfaces/dvb-interface) | allows access to all DVB devices and APIs | Hardware, Developer, Media | no |
+| [egl-driver](interfaces/egl-driver-interface) | access to EGL the graphics sub-system | Under development | no |
 | [empty](interfaces/empty-interface) | allows testing without additional permissions | System, Other | no |
 | [firewall-control](interfaces/firewall-control-interface) | configure a network firewall | Network | no |
 | [firmware-update-support](interfaces/firmware-updater-support-interface) | allows a snap to operate as the Firmware Updater | Super privileged | no |
