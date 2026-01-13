@@ -40,7 +40,7 @@ The following column names are used:
 | [calendar-services](interfaces/calendar-services-interface) | allows communication with Evolution Data Server calendar | Personal data, Contacts and calendar | no |
 | [camera](interfaces/camera-interface) | use your camera or webcam | Camera, Media, Personal data | no |
 | [can-bus](interfaces/can-bus-interface) | allows access to the CAN bus | System, Developer | no |
-| [checkbox](interfaces/checkbox-interface) | access for the Canonical checkbox test and certification system | Super privileged | no |
+| [checkbox-support](interfaces/checkbox-support-interface) | access for the Canonical checkbox test and certification system | Super privileged | no |
 | [cifs-mount](interfaces/cifs-mount-interface) | allows the mounting and unmounting of CIFS filesystems | Network,Storage | no |
 | [classic-support](interfaces/classic-support-interface) | enable resource access to classic snap | Super privileged, Ubuntu Core | no |
 | [confdb](interfaces/confdb-interface) | permit access confdb configuration system | System | no |
@@ -66,6 +66,7 @@ The following column names are used:
 | [dsp](interfaces/dsp-interface) | enables the control of digital signal processors (DSPs) | Hardware, Developer | no |
 | [dummy](interfaces/dummy-interface) | renamed to empty interface | System, Other | no |
 | [dvb](interfaces/dvb-interface) | allows access to all DVB devices and APIs | Hardware, Developer, Media | no |
+| [egl-driver](interfaces/egl-driver-interface) | access to EGL the graphics sub-system | Under development | no |
 | [empty](interfaces/empty-interface) | allows testing without additional permissions | System, Other | no |
 | [firewall-control](interfaces/firewall-control-interface) | configure a network firewall | Network | no |
 | [firmware-update-support](interfaces/firmware-updater-support-interface) | allows a snap to operate as the Firmware Updater | Super privileged | no |
@@ -100,6 +101,7 @@ The following column names are used:
 | [jack1](interfaces/jack1-interface) | allows interaction with the JACK audio connection server | Audio, Media | no |
 | [joystick](interfaces/joystick-interface) | use any connected joystick | Hardware, Developer | no |
 | [juju-client-observe](interfaces/juju-client-observe-interface) | read the Juju client configuration | Developer, Discrete | no |
+| [kerberos-tickets](interfaces/kerberos-tickets-interface) | access Kerberos tickets in /tmp | Under development | no |
 | [kernel-crypto-api](interfaces/kernel-crypto-api-interface) | read and manage kernel supported crypto ciphers | System, Kernel, Security | no |
 | [kernel-firmware-control](interfaces/kernel-firmware-control-interface) | permits a custom kernel firmware search path | Super privileged | no |
 | [kernel-module-control](interfaces/kernel-module-control-interface) | insert, remove and query kernel modules | Super privileged, System, Kernel | no |
