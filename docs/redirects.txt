@@ -117,7 +117,7 @@ nvidia-drivers-support-interface/ reference/interfaces/nvidia-drivers-support-in
 userns-interface/ reference/interfaces/userns-interface
 pcscd-interface/ reference/interfaces/pcscd-interface
 polkit-agent-interface/ reference/interfaces/polkit-agent-interface
-hardware-io-interfaces/ reference/interfaces/hardware-io-interfaces
+hardware-io-interfaces/ reference/interfaces/
 pwm-control-interface/ reference/interfaces/pwm-control-interface
 posix-mq-interface/ reference/interfaces/posix-mq-interface
 steam-support-interface/ reference/interfaces/steam-support-interface
@@ -159,7 +159,7 @@ uinput-interface/ reference/interfaces/uinput-interface
 system-source-code-interface/ reference/interfaces/system-source-code-interface
 xdg-desktop-portals/ explanation/snap-development/xdg-desktop-portals
 public-private-unlisted-snaps/ reference/administration/public-private-unlisted-snaps
-games-interfaces/ reference/interfaces/games-interfaces
+games-interfaces/ reference/interfaces/
 home-outside-home/ explanation/how-snaps-work/home-outside-home
 system-backup-interface/ reference/interfaces/system-backup-interface
 screencast-legacy-interface/ reference/interfaces/screencast-legacy-interface
@@ -205,7 +205,7 @@ process-for-aliases-auto-connections-and-tracks/  reference/administration/proce
 reviewing-classic-confinement-snaps/ reference/administration/reviewing-classic-confinement-snaps
 registering-your-app-name/ reference/development/registering-your-app-name
 releasing-to-the-snap-store/ how-to-guides/manage-snaps/store-listing-branding
-snap-documentation/ /
+snap-documentation/ index.md
 snapcraft-docs-roadmap/ explanation/security/snapd-release-process
 account-control-interface/ reference/interfaces/account-control-interface
 accounts-service-interface/ reference/interfaces/accounts-service-interface
@@ -230,14 +230,12 @@ cups-control-interface/ reference/interfaces/cups-control-interface
 daemon-notify-interface/ reference/interfaces/daemon-notify-interface
 dbus-interface/ reference/interfaces/dbus-interface
 dcdbas-control-interface/ reference/interfaces/dcdbas-control-interface
-desktop-interface/ reference/interfaces/desktop-interface
-desktop-interfaces/ reference/interfaces/desktop-interfaces
+desktop-interface/ reference/interfaces/
 desktop-legacy-interface/ reference/interfaces/desktop-legacy-interface
 device-buttons-interface/ reference/interfaces/device-buttons-interface
 display-control-interface/ reference/interfaces/display-control-interface
 docker-interface/ reference/interfaces/docker-interface
 docker-support-interface/ reference/interfaces/docker-support-interface
-documentation-roadmap/ reference/interfaces/documentation-roadmap
 empty-interface/ reference/interfaces/empty-interface
 dvb-interface/ reference/interfaces/dvb-interface
 firewall-control-interface/ reference/interfaces/firewall-control-interface
@@ -307,13 +305,12 @@ screen-inhibit-control-interface/ reference/interfaces/screen-inhibit-control-in
 serial-port-interface/ reference/interfaces/serial-port-interface
 shutdown-interface/ reference/interfaces/shutdown-interface
 snapd-control-interface/ reference/interfaces/snapd-control-interface
-snapd-roadmap/ reference/interfaces/snapd-roadmap
 spi-interface/ reference/interfaces/spi-interface
 ssh-keys-interface/ reference/interfaces/ssh-keys-interface
 ssh-public-keys-interface/ reference/interfaces/ssh-public-keys-interface
 storage-framework-service-interface/ reference/interfaces/storage-framework-service-interface
 system-observe-interface/ reference/interfaces/system-observe-interface
-system-snap-directory/ reference/interfaces/system-snap-directory
+system-snap-directory/ explanation/how-snaps-work/system-snap-directory
 system-trace-interface/ reference/interfaces/system-trace-interface
 thumbnailer-service-interface/ reference/interfaces/thumbnailer-service-interface
 time-control-interface/ reference/interfaces/time-control-interface

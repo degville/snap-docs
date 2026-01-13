@@ -356,3 +356,14 @@ if os.path.exists('./reuse/substitutions.yaml'):
 intersphinx_mapping = {
     'starter-pack': ('https://canonical-example-product-documentation.readthedocs-hosted.com/en/latest', None)
 }
+
+# Ignore missing cross-reference warnings
+
+def on_missing_reference(app, env, node, contnode):
+    if node['reftype'] == 'any':
+        return contnode
+    else:
+        return None
+
+def setup(app):
+    app.connect('missing-reference', on_missing_reference)
