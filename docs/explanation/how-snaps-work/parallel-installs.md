@@ -1,12 +1,12 @@
 (interfaces-parallel-installs)=
-# parallel-installs
+# Parallel installs
 
 Parallel installs enable you to run multiple instances of the same snap on the same system. Each instance is completely isolated from all other instances, including its name, configuration, interface connections, data locations, services, applications and aliases.
 
 This feature is currently considered experimental. In particular, *snap install* will fail if the same snap is already installed. See below for a workaround and see [Current limitations](#limitations) for more details. As a result, to experiment with parallel installs, an *experimental feature-flag* must first be enabled:
 
 ```bash
-$ sudo snap set system experimental.parallel-instances=true
+sudo snap set system experimental.parallel-instances=true
 ```
 
 We recommend rebooting the system after toggling the _experimental.parallel-instances_  flag state to avoid potential namespace problems with snap applications that have already been run.
