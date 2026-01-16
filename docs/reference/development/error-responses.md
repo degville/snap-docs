@@ -3,14 +3,7 @@
 
 When [Using the snapd REST API](/how-to-guides/manage-snaps/use-the-rest-api), requests sent to the [snapd REST API](/reference/development/rest-api/snapd-rest-api) can return both standard HTTP error responses, and a snapd-specific _error kind_, in the body of the response. These are detailed below.
 
-- [Error response](#heading--error-response)
-   - [Status codes](#heading--status-codes)
-   - [Error kinds](#heading--errors)
-   - [Maintenance error kinds](#heading--maint-errors)
-
----
-
-<h2 id='heading--status-codes'>Status codes</h2>
+## Status codes
 
 The REST API returns standard HTTP error response status ranges and codes, such as _4xx_ for client errors and _5xx_ for server side issues, with descriptions. For example:
 
@@ -26,7 +19,7 @@ The REST API returns standard HTTP error response status ranges and codes, such 
 
 Conflict errors (409) may be temporary. They are often returned when a new operation on an entity cannot be initiated because a previous operation is still in progress. This might cause new operations on one or more snaps to see errors with the `snap-change-conflict` error kind, for example.  When a conflicting operation completes, new operations may be retried and should later succeed, assuming the completed operation didn't break any dependent state for the new operation.
 
-<h2 id='heading--errors'>Error kinds</h2>
+## Error kinds
 
 The following error `kind` values provide extra context on an error response:
 

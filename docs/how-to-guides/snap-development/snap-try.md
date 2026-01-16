@@ -1,5 +1,5 @@
 (interfaces-snap-try)=
-# snap-try
+# Test snaps with snap try
 
 The `snap try` command installs a snap from its unpackaged components within a directory. After installation, most changes to the components in that directory will immediately by visible in the installed snap.
 

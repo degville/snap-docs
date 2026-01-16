@@ -1,5 +1,5 @@
 (interfaces-using-in-development-features)=
-# using-in-development-features
+# Using in-development features
 
 If you need to use a new feature of ``snapd`` as soon as it is available, but
 before it is supported by the validation mechanisms in Snapcraft, you have the

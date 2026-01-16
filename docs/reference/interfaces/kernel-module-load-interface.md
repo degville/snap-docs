@@ -18,6 +18,7 @@ See also the [kernel-module-control interface](/interfaces/kernel-module-control
   * `load` (plug): string to declare when, or whether, to load this module. Values can be one of the following:
      - `on-boot` (default): loads the kernel module at boot time (eg. `load: on-boot`)
      - `denied`: prevents the module from being loaded at all (eg. `load: denied`). Also known as _denylisting_ in the Linux kernel. 
+     - `dynamic`: enables runtime loading and unloading of the kernel module. The snap can load and unload the module using snapctl kmod.
   * `options` (plug): string of options to use when loading the module (eg, `options: p1=3 p2=true p3`)
 
 **In addition to the `name` attribute being required, either `options` or `load` must also be specified.**

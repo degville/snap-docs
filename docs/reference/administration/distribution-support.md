@@ -81,7 +81,7 @@ Resources for developers:
  - [system:snappy/snapd source code](https://build.opensuse.org/package/show/system:snappy/snapd)
 - [OSB#1127366 include snapd in Factory WIP](https://bugzilla.opensuse.org/show_bug.cgi?id=1127366)
 
-# Arch Linux
+## Arch Linux
 
 [![AUR package](https://repology.org/badge/version-for-repo/aur/snapd.svg)](https://repology.org/project/snapd/versions)
 

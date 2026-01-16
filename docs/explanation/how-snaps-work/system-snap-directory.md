@@ -1,5 +1,5 @@
 (interfaces-system-snap-directory)=
-# system-snap-directory
+# System snap directory
 
 The `/snap` directory is, by default, where the files and folders from installed snap packages appear on your system.
 

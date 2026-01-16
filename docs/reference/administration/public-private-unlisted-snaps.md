@@ -1,5 +1,5 @@
 (interfaces-public-private-unlisted-snaps)=
-# public-private-unlisted-snaps
+# Public, private and unlisted-snaps
 
 Alongside using [tracks and channels](/) to control which releases are available, and [restrictions per-territory](/t/release-management/12442#heading--distribution), Snap developers can also control _who_ has access to their snaps by marking a published snap as either public, private or unlisted.
 

@@ -8,7 +8,7 @@ See [Interface management](/t/interface-management/6154) and [Supported interfac
 
 ## Developer details 
 
-**[Auto-connect](/t/interface-management/6154#heading--auto-connections)**: yes </br>
+**[Auto-connect](/t/interface-management/6154#heading--auto-connections)**: no </br>
 **[Super-privileged](/t/super-privileged-interfaces/34740)**: yes</br>
 
 ### Code examples

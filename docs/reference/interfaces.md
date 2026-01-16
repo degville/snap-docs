@@ -61,6 +61,7 @@ The following column names are used:
 | [device-buttons](interfaces/device-buttons-interface) | use any device-buttons | Hardware, Developer | no |
 | [display-control](interfaces/display-control-interface) | allows configuring display parameters | Display, Graphics | no |
 | [dm-crypt](interfaces/dm-crypt-interface) | access encrypted storage devices | Super privileged, Ubuntu Core, Storage | no |
+| [dm-multipath](interfaces/dm-multipath-interface) | access device-mapper multipath maps though the multipathd daemon | Super privileged, Ubuntu Core, Storage | no |
 | [docker](interfaces/docker-interface) | start, stop, or manage Docker containers | Super privileged, Containers | no |
 | [docker-support](interfaces/docker-support-interface) | allows operating as the Docker daemon | Super privileged, Containers | no |
 | [dsp](interfaces/dsp-interface) | enables the control of digital signal processors (DSPs) | Hardware, Developer | no |
@@ -97,7 +98,7 @@ The following column names are used:
 | [intel-qat](interfaces/intel-qat-interface) | provides permissions for Intel QAT devices | Hardware | no  | 
 | [io-ports-control](interfaces/io-ports-control-interface) | allows access to all I/O ports | System, | no |
 | [ion-memory-control](interfaces/ion-memory-control-interface) | access Android's ION memory allocator | Super privileged, System  | no |
-| [iscsi-initiator](interfaces/iscsi-initiator-interface) |  discover, connect to, and manage iSCSI targets for block storage access | Super privileged | yes |
+| [iscsi-initiator](interfaces/iscsi-initiator-interface) |  discover, connect to, and manage iSCSI targets for block storage access | Super privileged | no |
 | [jack1](interfaces/jack1-interface) | allows interaction with the JACK audio connection server | Audio, Media | no |
 | [joystick](interfaces/joystick-interface) | use any connected joystick | Hardware, Developer | no |
 | [juju-client-observe](interfaces/juju-client-observe-interface) | read the Juju client configuration | Developer, Discrete | no |
