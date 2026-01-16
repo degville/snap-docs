@@ -104,7 +104,7 @@ Snapd takes great care to avoid overlapping with other container technologies (o
 
 Some administrators may adjust their non-snap container runtimes to use non-default values (eg, via `/etc/subuid`, `/etc/subgid`, etc). While it is non-fatal for other container ranges to overlap with snapd's range, best practice dictates that a different range should always be used to ensure a clean separation between snapd and other container ranges in the kernel on the system.
 
-# References
+## References
 
 * https://forum.snapcraft.io/t/multiple-users-and-groups-in-snaps/1461
 
