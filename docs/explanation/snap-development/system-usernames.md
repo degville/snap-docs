@@ -1,23 +1,17 @@
 (interfaces-system-usernames)=
-# system-usernames
+# System usernames
 
-System usernames can be used by snap developers to enable them to run [services and daemons](https://forum.snapcraft.io/t/services-and-daemons/12601) as a user other than the default `root`.
+System usernames can be used by snap developers to enable them to [control services](/how-to-guides/manage-snaps/control-services) as a user other than the default `root`.
 
 Outside of snaps, applications traditionally adopt the concept of users and groups from the host operating system to use as a security mechanism that grants access to specific system and software resources.
 
 Snap confinement prohibits a system's users and groups from being used in this way within a snap but a *snap_daemon* user and group can alternatively be created within a snap to provide similar user and group level control outside of a snap's confinement.
 
-<h2 id='heading--snap_daemon'>snap_daemon user and group</h2>
+## snap_daemon user and group
 
-From version 2.41 onwards, snapd supports the creation of a `snap_daemon` user and group within a snap, exposed as user ID (UID) and group ID (GID) `584788` on the host system.
+**From snapd 2.61 onwards, `snap_daemon` is being deprecated and replaced with `_daemon_` (with underscores), which now possesses a UID of `584792`.**
 
-> :warning:  From snapd 2.61 onwards, `snap_daemon` is being deprecated and replaced with `_daemon_` (with underscores), which now possesses a UID of `584792`.
-
-
-
-
-To create the `snap_daemon` user/group inside a snap, add the following `system-usernames` section to the snap's [snapcraft.yaml](/) (or 
-`snap.yaml`):
+To create the `snap_daemon` user/group inside a snap, add the following `system-usernames` section to the snap's snapcraft.yaml:
 
 ```yaml
 system-usernames:
@@ -57,12 +51,14 @@ if (setuid(pwd->pw_uid) < 0) {
 The observant reader will notice that the call to `setgroups()` uses the non-portable, Linux-specific, invocation  _size 0_ and _NULL list_ to clear the list completely. This contrasts with a more portable _size 1_ and a list consisting of the single primary group. This is due to current sandbox limitations. If desired, `setgroups()` may be overridden via LD_PRELOAD. See the [test-setgroups snap](https://git.launchpad.net/~jdstrand/+git/test-setgroups/tree/) for an example).
 
 For those using `base: core18` or higher, the `setpriv` command may be used to drop privileges like so:
+
 ```
 $SNAP/usr/bin/setpriv --clear-groups --reuid snap_daemon \
   --regid snap_daemon -- <your command>
 ```
 
-`base: core18` snaps should stage `setpriv` while `base: core20` should stage `util-linux`. On snapd < 2.45, LD_PRELOAD is still needed due to how the sandbox is configured and how `setpriv --clear-groups` is using `setgroups(0, <NON_NULL>)`:
+`base: core18` snaps should stage `setpriv` while `base: core20` should stage `util-linux`. 
+
 ```
 LD_PRELOAD=$SNAP_COMMON/wraplib.so $SNAP/usr/bin/setpriv \
   --clear-groups --reuid snap_daemon --regid snap_daemon -- <your command>
@@ -70,7 +66,6 @@ LD_PRELOAD=$SNAP_COMMON/wraplib.so $SNAP/usr/bin/setpriv \
 
 Some applications may try to drop privileges themselves using `initgroups()` which under the hood uses `setgroups()` in a way that is blocked by the sandbox. In this case, the snap would need to use the LD_PRELOAD method. See the [test-setpriv snap](https://git.launchpad.net/~jdstrand/+git/test-setpriv/tree/) for how to use `setpriv` with and without LD_PRELOAD.
 
-> ⓘ  Future releases of snapd will support setting `User=snap_daemon` and `Group=snap_daemon` in the systemd unit file.
 
 ## Process management via signals
 
@@ -80,7 +75,7 @@ When developing a snap, care must therefore be taken to drop privileges _before_
  
 For example, a management process that runs as root may fork off worker processes that drop privileges to the snap_daemon user. Whenever this management process wants to send a signal to its workers, it must drop privileges to the snap_daemon user first. Alternatively, the snap could use `plugs: [ process-control ]`, which among other things, grants CAP_KILL.
 
-Since the [process-control](https://snapcraft.io/docs/process-control-interface) interface grants considerable access for system-wide process management, best practice dictates that privileges _must_ be dropped as needed when sending signals to other processes in the snap.
+Since the [process-control](/reference/interfaces/process-control-interface) interface grants considerable access for system-wide process management, best practice dictates that privileges _must_ be dropped as needed when sending signals to other processes in the snap.
 
 ## Ownership (discretionary access controls)
 
@@ -110,5 +105,6 @@ Snapd takes great care to avoid overlapping with other container technologies (o
 Some administrators may adjust their non-snap container runtimes to use non-default values (eg, via `/etc/subuid`, `/etc/subgid`, etc). While it is non-fatal for other container ranges to overlap with snapd's range, best practice dictates that a different range should always be used to ensure a clean separation between snapd and other container ranges in the kernel on the system.
 
 # References
+
 * https://forum.snapcraft.io/t/multiple-users-and-groups-in-snaps/1461
 

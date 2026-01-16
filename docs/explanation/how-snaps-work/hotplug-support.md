@@ -1,5 +1,5 @@
 (interfaces-hotplug-support)=
-# hotplug-support
+# Hotplug support
 
 Hotplug support gives snaps the ability to integrate with Linux's [USB hotplugging](https://www.kernel.org/doc/html/v4.13/driver-api/usb/hotplug.html) and Udev device management subsystem. This enables snaps to recognise specific classes of device and create corresponding [system slots](/) when a device is connected.
 

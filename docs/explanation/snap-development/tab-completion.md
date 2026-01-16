@@ -1,5 +1,5 @@
 (interfaces-tab-completion)=
-# tab-completion
+# Tab completion
 
 Starting with snapd 2.30, commands and aliases packaged in snaps are able to perform tab-completion in the bash shell, and in the future that same mechanism may be enabled in other shells as well.
 

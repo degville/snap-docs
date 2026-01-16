@@ -1,7 +1,7 @@
 (interfaces-building-snap-rpms-on-rhel)=
-# building-snap-rpms-on-rhel
+# Building snap rpms on RHEL
 
-Snap is  currently available for  [Red Hat Enterprise Linux (RHEL) 8](https://www.redhat.com/en/enterprise-linux-8) and RHEL 7.6+. See [Installing snap on Red Hat Enterprise Linux (RHEL)](/interfaces/installing-snap-on-red-hat) for installation instructions.
+Snap is  currently available for  [Red Hat Enterprise Linux (RHEL) 8](https://www.redhat.com/en/enterprise-linux-8) and RHEL 7.6+. See [Installing snap on Red Hat Enterprise Linux (RHEL)](/tutorials/install-the-daemon/red-hat) for installation instructions.
 
 However, if you are an advanced user and wish to see how *snap* is built, its RPMs can be built and manually installed relatively easily, as outlined below.
 
