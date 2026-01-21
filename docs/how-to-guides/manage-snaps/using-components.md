@@ -2,7 +2,7 @@
 # Work with components
 
 A snap *component* is part of a snap that has been declared as optional. A snap component may then be either installed or not installed alongside its host snap.
-See [Components](/explanation/how-snaps-work/snap-components) for further details.
+See [How components work](/explanation/how-snaps-work/snap-components) for further details.
 
 Component support requires _snapd 2.67+_.
 

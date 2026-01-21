@@ -7,7 +7,9 @@ This guide will detail the steps required to use confdb, as well as explore some
 
 We'll use an example where one snap creates a Wi-Fi configuration that another snap can view.
 
-> ⓘ  Confdb is currently considered an [Experimental feature](/reference/development/experimental-features) and implementation details may change as development progresses.
+```{caution}
+Confdb is currently considered an [Experimental feature](/reference/development/experimental-features) and implementation details may change as development progresses.
+```
 
 ## Prerequisites
 
