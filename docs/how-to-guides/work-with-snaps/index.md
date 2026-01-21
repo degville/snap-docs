@@ -14,7 +14,3 @@ The snap system has been designed to look after itself with automatic security a
 :maxdepth: 2
 :glob:
 
-Connect interfaces <connect-interfaces>
-Configure snaps <configure-snaps>
-Apps and aliases <apps-and-aliases>
-Fix common issues <fix-common-issues>
