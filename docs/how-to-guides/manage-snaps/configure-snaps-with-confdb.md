@@ -233,7 +233,7 @@ Snaps interact with confdb through [snapctl](/how-to-guides/manage-snaps/use-sna
 
 In this case, the custodian snap will only define the `change-view-<plug>`, which provides an opportunity for the snap to modify values being set.
 
-As an example, we’ll say that the SSID must be prefixed with our company’s name: “Acme”. The configuration can be set by the administrator using [snap set](/how-to-guides/work-with-snaps/configure-snaps) or by any other snap with access to that view, so it’s the custodian snap’s responsibility to enforce that the prefix is enforced.
+As an example, we’ll say that the SSID must be prefixed with our company’s name: “Acme”. The configuration can be set by the administrator using [snap set](/how-to-guides/manage-snaps/configure-snaps) or by any other snap with access to that view, so it’s the custodian snap’s responsibility to enforce that the prefix is enforced.
 
 Our `change-view-configure-wifi` hook looks like this:
 

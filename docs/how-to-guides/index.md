@@ -28,7 +28,7 @@ Outside of whatever facilities a snapped application may provide, snaps also pro
 
 The vast majority of snap users and developers experience very few issues, but any technology this complex and diverse will likely encounter some issues and incompatibilities. 
 
-* [Fix common issues](/how-to-guides/work-with-snaps/fix-common-issues): If you do run into problems, find common solutions here.
+* [Fix common issues](/how-to-guides/manage-snaps/fix-common-issues): If you do run into problems, find common solutions here.
 * [Test snapd fixes](/how-to-guides/snap-development/test-snapd-fixes): Run a bugfix build of the snap daemon.
 * [Debug running snaps](how-to-guides/snap-development/debug-snaps): Test bugfix releases of snapd.
 

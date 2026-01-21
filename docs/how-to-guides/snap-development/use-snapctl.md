@@ -9,7 +9,7 @@ For details on using _snapctl_ to add user options to a snap, see [Adding snap c
 
 ## Configuration options
 
-A snap's configuration options can be queried and altered with the `snapctl get`, `snapctl set` and `snapctl unset` commands. These work very similar to the analogous [`snap get/set/..` commands](/how-to-guides/work-with-snaps/configure-snaps) outside the snap. The main difference is that using these commands from within a snap will *not* trigger [the `configure` hook](/reference/development/supported-snap-hooks).
+A snap's configuration options can be queried and altered with the `snapctl get`, `snapctl set` and `snapctl unset` commands. These work very similar to the analogous [`snap get/set/..` commands](/how-to-guides/manage-snaps/configure-snaps) outside the snap. The main difference is that using these commands from within a snap will *not* trigger [the `configure` hook](/reference/development/supported-snap-hooks).
 
 The `snapctl` command uses the same get, set and unset syntax as the snap command:
 
