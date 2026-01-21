@@ -1,16 +1,10 @@
 (interfaces-network-interface)=
-# The network interface
+#  network interface
 
 The `network` interface allows client access to the network.
 
-```{tip}
 
-See [Interface management](/) and [Supported interfaces](/interfaces/index) for further details on how interfaces are used.
-```
-
----
-
-<h2 id='heading--dev-details'>Developer details </h2>
+## Developer details
 
 **[Auto-connect](/t/6154#heading--auto-connections)** : yes</br>
 

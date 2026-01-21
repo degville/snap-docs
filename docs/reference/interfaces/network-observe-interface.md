@@ -1,5 +1,5 @@
 (interfaces-network-observe-interface)=
-# The network-observe interface
+#  network-observe interface
 
 `network-observe` enables the querying of the network's status, giving privileged read-only access to networking information.
 

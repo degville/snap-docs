@@ -1,18 +1,12 @@
 (interfaces-scsi-generic-interface)=
-# The scsi-generic interface
+#  scsi-generic interface
 
 The `scsi-generic` interface allows read and write access to [SCSI Generic driver](https://www.kernel.org/doc/html/latest/scsi/scsi-generic.html) (sg)  devices.
  
  
 
-```{tip}
 
-See [Interface management](/) and [Supported interfaces](/interfaces/index) for further details on how interfaces are used.
-```
-
----
-
-<h2 id='heading--dev-details'>Developer details </h2>
+## Developer details
 
 **[Auto-connect](/t/6154#heading--auto-connections)** : no</br>
 **[Super-privileged](/)** : yes

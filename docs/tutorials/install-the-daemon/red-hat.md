@@ -40,9 +40,7 @@ Adding the *optional* and *extras* repositories is also recommended:
 sudo subscription-manager repos --enable "rhel-*-optional-rpms" --enable "rhel-*-extras-rpms"
 sudo yum update
 ```
-```{tip}
 If you're interested in understanding how these packages are built, see  [Building a snap RPM for Red Hat Enterprise Linux (RHEL)](/explanation/snap-development/building-snap-rpms-on-rhel).
-```
 
 ## Installing snapd
 

@@ -1,18 +1,12 @@
 (interfaces-media-control-interface)=
-# The media-control interface
+#  media-control interface
 
 The `media-control` interface permits access to media control devices and Video4Linux (V4L) devices via the Linux kernel's [Media Controller API](https://www.kernel.org/doc/html/latest/userspace-api/media/mediactl/media-controller.html).
 
 
 
-```{tip}
 
-See [Interface management](/) and [Supported interfaces](/interfaces/index) for further details on how interfaces are used.
-```
-
----
-
-<h2 id='heading--dev-details'>Developer details </h2>
+## Developer details
 
 **Auto-connect**: no
 

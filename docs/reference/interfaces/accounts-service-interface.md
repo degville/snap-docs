@@ -1,5 +1,5 @@
 (interfaces-accounts-service-interface)=
-# The accounts-service interface
+#  accounts-service interface
 
 `accounts-service` allows communication with the *accounts* service, such as [GNOME Online Accounts](https://wiki.gnome.org/Projects/GnomeOnlineAccounts).
 
@@ -7,14 +7,8 @@
 
 This interface automatically connected by the [ONLY OFFICE Document Server](https://snapcraft.io/onlyoffice-ds) snap to provide better integration with pre-configured accounts.
 
-```{tip}
 
-See [Interface management](/) and [Supported interfaces](/interfaces/index) for further details on how interfaces are used.
-```
-
----
-
-<h2 id='heading--dev-details'>Developer details </h2>
+## Developer details
 
 **Auto-connect**: no
 

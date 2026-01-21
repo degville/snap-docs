@@ -1,18 +1,12 @@
 (interfaces-steam-support-interface)=
-# The steam-support interface
+#  steam-support interface
 
 The `steam-support` interface has been developed specifically to help Valve's Steam client configure [pressure-vessel](https://gitlab.steamos.cloud/steamrt/steam-runtime-tools/-/tree/master/pressure-vessel) containers from the [Steam snap](https://snapcraft.io/steam).
 
 Only the Steam snap may establish this interface. See [Introducing early access to the Steam snap](https://discourse.ubuntu.com/t/introducing-early-access-to-the-steam-snap/28082) for more details.
 
-```{tip}
 
-See [Interface management](/) and [Supported interfaces](/interfaces/index) for further details on how interfaces are used.
-```
-
----
-
-<h2 id='heading--dev-details'>Developer details </h2>
+## Developer details
 
 **[Auto-connect](/t/interface-management/6154#heading--auto-connections)**: no</br>
 **[Super-privileged](/)**: yes</br>

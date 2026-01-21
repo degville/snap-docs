@@ -1,5 +1,5 @@
 (interfaces-hardware-observe-interface)=
-# The hardware-observe interface
+#  hardware-observe interface
 
 The `hardware-observe` interface allows for getting hardware information from the system.
 
@@ -7,10 +7,6 @@ The `hardware-observe` interface allows for getting hardware information from th
 
 `hardware-observe` is a more general and broad interface. If more specific hardware access is required, such as for GPIO or I2C devices, See the [gpio](https://snapcraft.io/docs/gpio-interface) and [i2c](https://snapcraft.io/docs/i2c-interface) interfaces.
 
-```{tip}
-
-See [Interface management](/) and [Supported interfaces](/interfaces/index) for further details on how interfaces are used.
-```
 
 ---
 

@@ -1,5 +1,5 @@
 (interfaces-content-interface)=
-# The content interface
+#  content interface
 
 The `content` interface allows sharing code and data from a slot on a _producer_ snap to one or more plugs on _consumer_ snaps. It's often used to share common themes and icons from a producer snap, for example, to many snapped applications.
 
@@ -9,14 +9,8 @@ Sharing happens at the filesystem level, which means anything that can be expres
 
 The [Yaru MATE Icons](https://github.com/ubuntu-mate/icon-theme-yaru-mate-snap) snap is a good producer snap example, letting other applications access the wonderful MATE icon theme. But there are many other producer snaps too, including several for [GTK Common Themes](https://snapcraft.io/gtk-common-themes) and [KDE Frameworks](https://snapcraft.io/kde-frameworks-5-core18) for better application integration with the desktop. 
 
-```{tip}
 
-See [Interface management](/) and [Supported interfaces](/interfaces/index) for further details on how interfaces are used.
-```
-
----
-
-<h2 id='heading--dev-details'>Developer details </h2>
+## Developer details
 
 
 **Auto-connect**: no, unless connecting to snaps from the same publisher.

@@ -1,4 +1,4 @@
-# The opengles-driver-libs interface
+#  opengles-driver-libs interface
 
 The `opengles-driver-libs` interface allows exposing OpenGLES driver libraries to the system.
 

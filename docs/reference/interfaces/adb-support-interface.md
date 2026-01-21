@@ -1,5 +1,5 @@
 (interfaces-adb-support-interface)=
-# The adb-support interface
+#  adb-support interface
 
 `adb-support` allows a snap to operating the Android Debug Bridge service, providing privileged access to an Android device.
 
@@ -7,14 +7,8 @@
 
 [guiscrcpy](https://snapcraft.io/guiscrcpy) uses _adb-support_ to help share an Android screen on a Linux desktop.
 
-```{tip}
 
-See [Interface management](/) and [Supported interfaces](/interfaces/index) for further details on how interfaces are used.
-```
-
----
-
-<h2 id='heading--dev-details'>Developer details </h2>
+## Developer details
 
 **Auto-connect**: no
 

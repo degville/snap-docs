@@ -1,5 +1,5 @@
 (interfaces-gpio-interface)=
-# The gpio interface
+#  gpio interface
 
 `gpio` allows access to a specific GPIO pin. The interface is restricted because it provides privileged access to GPIO hardware.
 
@@ -25,14 +25,8 @@ The [pi-fancontrol](https://snapcraft.io/pi-fancontrol) snap provides simple fan
 snap connect pi-fancontrol:gpio pi:bcm-gpio-14
 ```
 
-```{tip}
 
-See [Interface management](/) and [Supported interfaces](/interfaces/index) for further details on how interfaces are used.
-```
-
----
-
-<h2 id='heading--dev-details'>Developer details </h2>
+## Developer details
 
 **Auto-connect**: no</br>
 **Attributes**:

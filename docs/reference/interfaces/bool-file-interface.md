@@ -1,5 +1,5 @@
 (interfaces-bool-file-interface)=
-# The bool-file interface
+#  bool-file interface
 
 The `bool-file` interface allows access to a specific class of file that contains boolean semantics, typically used to toggle or represent the state of binary hardware values.
 
@@ -21,14 +21,8 @@ slots:
 [...]
 ```
 
-```{tip}
 
-See [Interface management](/) and [Supported interfaces](/interfaces/index) for further details on how interfaces are used.
-```
-
----
-
-<h2 id='heading--dev-details'>Developer details </h2>
+## Developer details
 
 
 **[Auto-connect](/t/interface-management/6154#heading--auto-connections)**: no</br>

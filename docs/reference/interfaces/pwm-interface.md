@@ -1,5 +1,5 @@
 (interfaces-pwm-interface)=
-# The pwm interface
+#  pwm interface
 
 The `pwm` interface allows access to a specific PWM channel on a device. The interface is restricted because it provides privileged access to PWM hardware.
 
@@ -25,14 +25,8 @@ With an example snap application called _app_ installed, the following command w
 $  snap connect app:activity-led gadget:led-1
 ```
 
-```{tip}
 
-See [Interface management](/) and [Supported interfaces](/interfaces/index) for further details on how interfaces are used.
-```
-
----
-
-<h2 id='heading--dev-details'>Developer details </h2>
+## Developer details
 
 **Auto-connect**: no
 **Attributes**:

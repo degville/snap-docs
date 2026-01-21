@@ -1,17 +1,11 @@
 (interfaces-dsp-interface)=
-# The dsp interface
+#  dsp interface
 
 The `dsp` interface allows for the control of digital signal processors (DSPs) on specific devices and systems (such as specific _Ambarella_ devices)
 
 
-```{tip}
 
-See [Interface management](/) and [Supported interfaces](/interfaces/index) for further details on how interfaces are used.
-```
-
----
-
-<h2 id='heading--dev-details'>Developer details </h2>
+## Developer details
 
 **Auto-connect**: no
 

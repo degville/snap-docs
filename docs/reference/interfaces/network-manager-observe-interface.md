@@ -1,5 +1,5 @@
 (interfaces-network-manager-observe-interface)=
-# The network-manager-observe interface
+#  network-manager-observe interface
 
 `network-manager-observe` allows observing [NetworkManager](https://docs.ubuntu.com/core/en/stacks/network/network-manager/docs/) settings.
 

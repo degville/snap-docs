@@ -1,5 +1,5 @@
 (interfaces-avahi-control-interface)=
-# The avahi-control interface
+#  avahi-control interface
 
 `avahi-control` allows control over service discovery on a local network via the mDNS/DNS-SD protocol suite.
 

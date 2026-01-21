@@ -1,4 +1,4 @@
-# The gbm-driver-libs interface
+#  gbm-driver-libs interface
 
 The `gbm-driver-libs` interface allows exposing GBM driver libraries to the system.
 

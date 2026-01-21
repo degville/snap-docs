@@ -1,5 +1,5 @@
 (interfaces-microstack-support-interface)=
-# The microstack-support interface
+#  microstack-support interface
 
 The `microstack-support` interface enables multiple service access for the _Microstack infrastructure_. It's used by the [Microstack](https://microstack.run/) snap, a full OpenStack deployment within a single snap package.
  
@@ -9,14 +9,8 @@ Networking is provided largely via OpenVSwitch and Neutron, with dnsmasq acting 
 
 Virtual machines rely on KVM for virtualisation acceleration and the vhost framework in the kernel (vhost_net, vhost_scsi, vhost_vsock).
 
-```{tip}
 
-See [Interface management](/) and [Supported interfaces](/interfaces/index) for further details on how interfaces are used.
-```
-
----
-
-<h2 id='heading--dev-details'>Developer details </h2>
+## Developer details
 
 **[Auto-connect](/t/interface-management/6154#heading--auto-connections)**: no</br>
 **[Super-privileged](/)**: yes</br>

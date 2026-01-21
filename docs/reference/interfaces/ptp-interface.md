@@ -1,18 +1,12 @@
 (interfaces-ptp-interface)=
-# The ptp interface
+#  ptp interface
 
 The `ptp` interface allows access to the Precision Time Protocol (PTP) [Hardware Clock subsystem](https://www.kernel.org/doc/Documentation/ptp/ptp.txt) in the Linux kernel, enabling the clock to be synced to sub-100 nanoseconds. 
  
 This interface is primarily intended to be used with [Ubuntu Core](/t/glossary/14612#heading--ubuntu-core).
 
-```{tip}
 
-See [Interface management](/) and [Supported interfaces](/interfaces/index) for further details on how interfaces are used.
-```
-
----
-
-<h2 id='heading--dev-details'>Developer details </h2>
+## Developer details
 
 **Auto-connect**: no
 

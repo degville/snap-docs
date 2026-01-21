@@ -1,5 +1,5 @@
 (interfaces-system-source-code-interface)=
-# The system-source-code interface
+#  system-source-code interface
 
 `system-source-code`  allows read-only access to  `/usr/src`  on the host system, a directory that typically contains either the headers or the full source code and configuration of the host's Linux kernel 
 

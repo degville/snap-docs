@@ -1,18 +1,12 @@
 (interfaces-nfs-mount)=
-# The nfs-mount interface
+#  nfs-mount interface
 
 The `nfs-mount` interface allows the mounting and unmounting of Network File System mount points within a snap's writable areas.
 
 **Note:** This interface only supports NFSv4. This should not cause problems as earlier versoins are now considerably old and are unlikely to be being used.
 
-```{tip}
 
-See [Interface management](/) and [Supported interfaces](/interfaces/index) for further details on how interfaces are used.
-```
-
----
-
-<h2 id='heading--dev-details'>Developer details </h2>
+## Developer details
 
 **[Auto-connect](/t/6154#heading--auto-connections)** : no</br>
 **[Super-privileged](/)** : no

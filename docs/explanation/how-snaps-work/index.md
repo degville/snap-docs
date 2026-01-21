@@ -9,6 +9,7 @@
 
 Channels and tracks <channels-and-tracks>
 ConfDB <confdb-configuration-mechanism>
+Snap deltas <snap-deltas>
 Debug snaps <debug-snaps>
 Startup performance <debuging-startup-performance>
 Hotplug development <developing-hotplug-interfaces>

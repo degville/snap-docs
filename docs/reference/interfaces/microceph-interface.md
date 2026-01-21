@@ -1,16 +1,10 @@
 (interfaces-microceph)=
-# The microceph interface
+#  microceph interface
 
 The `microceph` interface permits access to  the [MicroCeph](https://canonical-microceph.readthedocs-hosted.com/en/reef-stable/) socket, which is used internally by the [microceph](https://snapcraft.io/microceph) snap.
 
-```{tip}
 
-See [Interface management](/) and [Supported interfaces](/interfaces/index) for further details on how interfaces are used.
-```
-
----
-
-<h2 id='heading--dev-details'>Developer details </h2>
+## Developer details
 
 **[Auto-connect](/t/interface-management/6154#heading--auto-connections)**: no</br>
 **[Super-privileged](/)**: yes</br>

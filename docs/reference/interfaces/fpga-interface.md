@@ -1,16 +1,10 @@
 (interfaces-fpga-interface)=
-# The fpga interface
+#  fpga interface
 
 The `fpga` interface allows access to the [FPGA subsystem](https://www.kernel.org/doc/html/latest/driver-api/fpga/index.html). 
 
-```{tip}
 
-See [Interface management](/) and [Supported interfaces](/interfaces/index) for further details on how interfaces are used.
-```
-
----
-
-<h2 id='heading--dev-details'>Developer details </h2>
+## Developer details
 
 **Auto-connect**: no
 **Allow-installation**: yes

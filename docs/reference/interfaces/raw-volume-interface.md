@@ -1,5 +1,5 @@
 (interfaces-raw-volume-interface)=
-# The raw-volume interface
+#  raw-volume interface
 
 `raw-volume` provides access to a specific disk partition. This interface is restricted because it provides privileged access to device partitions.
 

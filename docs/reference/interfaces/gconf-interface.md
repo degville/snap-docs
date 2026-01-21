@@ -1,18 +1,12 @@
 (interfaces-gconf-interface)=
-# The gconf interface
+#  gconf interface
 
 The `gconf`  interface  allows access to any item from the legacy [GConf configuration system](https://gitlab.gnome.org/Archive/gconf) for the current user, typically used by old GNOME desktop libraries and applications. 
 
 This interface needs to be manually connected because _gconf_ is a global database for GNOME desktop and application settings and offers no application isolation.
 
-```{tip}
 
-See [Interface management](/) and [Supported interfaces](/interfaces/index) for further details on how interfaces are used.
-```
-
----
-
-<h2 id='heading--dev-details'>Developer details </h2>
+## Developer details
 
 **Auto-connect**: no
 

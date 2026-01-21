@@ -39,9 +39,9 @@ YAML schemas define exactly what a device, kernel and snap is capable of.
 :maxdepth: 2
 :glob:
 
-Interfaces <interfaces>
 Glossary <glossary>
 Release notes <release-notes>
+Interfaces <interfaces/index>
 Operations <operations/index>
 Administration <administration/index>
 Development <development/index>

@@ -1,5 +1,5 @@
 (interfaces-serial-port-interface)=
-# The serial-port interface
+#  serial-port interface
 
 The `serial-port` interface enables input and output access to a specific serial port on a device typically running [Ubuntu Core](/t/glossary/14612#heading--ubuntu-core). As a result, and because it provides such privileged access to configure serial port hardware,  `serial-port` is considered a restricted interface.
 
@@ -16,14 +16,8 @@ slots:
 
 Once connected, the consuming snap can use the device via the path specified by the connected slot.
 
-```{tip}
 
-See [Interface management](/) and [Supported interfaces](/interfaces/index) for further details on how interfaces are used.
-```
-
----
-
-<h2 id='heading--dev-details'>Developer details </h2>
+## Developer details
 
 **Auto-Connect**: no</br>
 **Attributes**:

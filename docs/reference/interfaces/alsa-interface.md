@@ -1,5 +1,5 @@
 (interfaces-alsa-interface)=
-# The alsa interface
+#  alsa interface
 
 `alsa` allows access to raw ALSA audio playback and recording devices. This is equivalent to direct driver access to your audio hardware and may block other applications from recording or playing sound.
 
@@ -17,14 +17,8 @@ To connect a snap to the ALSA interface, run the following command:
 $ sudo snap connect <snap name>:alsa
 ```
 
-```{tip}
 
-See [Interface management](/) and [Supported interfaces](/interfaces/index) for further details on how interfaces are used.
-```
-
----
-
-<h2 id='heading--dev-details'>Developer details </h2>
+## Developer details
 
 **Auto-connect**: no
 

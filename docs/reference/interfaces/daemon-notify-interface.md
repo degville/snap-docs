@@ -1,5 +1,5 @@
 (interfaces-daemon-notify-interface)=
-# The daemon-notify interface
+#  daemon-notify interface
 
 `daemon-notify` allows sending daemon status changes to the service manager.
 

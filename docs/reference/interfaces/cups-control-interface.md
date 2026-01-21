@@ -1,5 +1,5 @@
 (interfaces-cups-control-interface)=
-# The cups-control interface
+#  cups-control interface
 
 `cups-control` allows access to the CUPS control socket, giving privileged access to configure printing.
 

@@ -1,5 +1,5 @@
 (interfaces-audio-playback-interface)=
-# The audio-playback interface
+#  audio-playback interface
 
 The `audio-playback` interface allows a snap to play sounds and music, via the supporting audio service running on the system, such as PulseAudio. It's used by many applications and utilities, and as such, is enabled by default.
 
@@ -29,14 +29,8 @@ The connect command can be used to re-enable audio playback:
 snap connect vlc:audio-playback
 ```
 
-```{tip}
 
-See [Interface management](/) and [Supported interfaces](/interfaces/index) for further details on how interfaces are used.
-```
-
----
-
-<h2 id='heading--dev-details'>Developer details </h2>
+## Developer details
 
 **Auto-connect**: yes
 

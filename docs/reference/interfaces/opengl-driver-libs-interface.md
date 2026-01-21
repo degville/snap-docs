@@ -1,4 +1,4 @@
-# The opengl-driver-libs interface 
+#  opengl-driver-libs interface 
 
 The `opengl-driver-libs` interface allows exposing OpenGL driver libraries to the system
 

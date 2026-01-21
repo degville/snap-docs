@@ -1,5 +1,5 @@
 (interfaces-account-control-interface)=
-# The account-control interface
+#  account-control interface
 
 `account-control` allows managing non-system user accounts on [Ubuntu Core](https://ubuntu.com/core/docs) systems.
 
@@ -9,15 +9,9 @@ The interface **does not** allow the management of users and groups for the syst
 
 Due to the privileged nature of access enabled by this interface, its use is reserved exclusively for "management snaps" from [brand stores](/t/glossary/14612#heading--brand-store).
 
-```{tip}
-
-See [Interface management](/) and [Supported interfaces](/interfaces/index) for further details on how interfaces are used.
-```
 
 
----
-
-<h2 id='heading--dev-details'>Developer details </h2>
+## Developer details
 
 **Auto-connect**: no
 

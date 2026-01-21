@@ -1,5 +1,5 @@
 (interfaces-hardware-random-control-interface)=
-# The hardware-random-control interface
+#  hardware-random-control interface
 
 `hardware-random-control` enables control over the hardware random number generator by allowing read/write access to `/dev/hwrng`.
 

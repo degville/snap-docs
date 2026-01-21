@@ -1,19 +1,13 @@
 (interfaces-tee-interface)=
-# The tee interface
+#  tee interface
 
 The `tee` interface  permits access to Trusted Execution Environment (TEE) devices via the [TEE subsystem](https://www.kernel.org/doc/html/latest/staging/tee.html) in the Linux kernel.
 
  
 This interface is primarily intended to be used with [Ubuntu Core](/t/glossary/14612#heading--ubuntu-core).
 
-```{tip}
 
-See [Interface management](/) and [Supported interfaces](/interfaces/index) for further details on how interfaces are used.
-```
-
----
-
-<h2 id='heading--dev-details'>Developer details </h2>
+## Developer details
 
 **[Auto-connect](/t/interface-management/6154#heading--auto-connections)**: no</br>
 **[Super-privileged](/)**: yes</br>

@@ -1,5 +1,5 @@
 (interfaces-broadcom-asic-control-interface)=
-# The broadcom-asic-control interface
+#  broadcom-asic-control interface
 
 `broadcom-asic-control` allows using the broadcom-asic kernel module.
 

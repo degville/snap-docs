@@ -1,5 +1,5 @@
 (interfaces-maliit-interface)=
-# The maliit interface
+#  maliit interface
 
 `maliit` allows operating as the Maliit service, commonly useful to enabling an on-screen keyboard.
 

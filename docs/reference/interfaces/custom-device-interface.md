@@ -1,5 +1,5 @@
 (interfaces-custom-device-interface)=
-# The custom-device interface
+#  custom-device interface
 
 The `custom-device` interface permits access to a device of a specific class and model without requiring the creation of an interface for that device alone. It’s intended to be used with [Ubuntu Core](/t/glossary/14612#heading--ubuntu-core) and its scope and specification are defined as part of the [gadget snap](/) for the deployed Ubuntu Core image.
 
@@ -44,10 +44,6 @@ If the `udev-tagging` attribute is used, this default udev rule is replaced with
 
 Requires snapd version *2.55+*, while `udev-tagging.for-device` attribute support requires snapd version *2.66+*.
 
-```{tip}
-
-See [Interface management](/) and [Supported interfaces](/interfaces/index) for further details on how interfaces are used.
-```
 
 ---
 

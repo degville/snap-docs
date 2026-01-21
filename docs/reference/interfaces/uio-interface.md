@@ -1,5 +1,5 @@
 (interfaces-uio-interface)=
-# The uio interface
+#  uio interface
 
 `uio` provides access to a specific uio device. This interface is restricted because it provides privileged access to uio hardware.
 

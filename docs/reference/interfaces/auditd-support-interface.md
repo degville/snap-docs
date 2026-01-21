@@ -1,5 +1,5 @@
 (interfaces-auditd-support)=
-# The auditd-support interface
+#  auditd-support interface
 
 The `auditd-support` interface permits snaps to operate as the [`auditd`](https://www.man7.org/linux/man-pages/man8/auditd.8.html) service on the system.
 
@@ -9,9 +9,7 @@ See [Interface management](/) and [Supported interfaces](/interfaces/index) for 
 
 [comment]: <> (```)
 
----
-
-<h2 id='heading--dev-details'>Developer details </h2>
+## Developer details
 
 **[Auto-connect](/t/interface-management/6154#heading--auto-connections)**: no</br>
 **[Super-privileged](/)**: yes</br>

@@ -1,5 +1,5 @@
 (interfaces-cifs-mount-interface)=
-# The cifs-mount interface
+#  cifs-mount interface
 
 `cifs-mount` allows the mounting and unmounting of CIFS filesystems.
 

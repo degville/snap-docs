@@ -1,5 +1,5 @@
 (interfaces-udisks2-interface)=
-# The udisks2 interface
+#  udisks2 interface
 
 `udisks2` enables access to the UDisks2 service, giving privileged access to storage on the device.
 

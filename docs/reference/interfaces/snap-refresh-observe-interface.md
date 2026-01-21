@@ -1,18 +1,12 @@
 (interfaces-snap-refresh-observe-interface)=
-# The snap-refresh-observe interface
+#  snap-refresh-observe interface
 
 The `snap-refresh-observe` interface permits tracking snap refreshes and their inhibition.
 
 It is intended to be used _only_ to mark the existence of a refresh awareness client, such as [snapd-desktop-integration](https://snapcraft.io/install/snapd-desktop-integration/ubuntu) snap.
 
-```{tip}
 
-See [Interface management](/) and [Supported interfaces](/interfaces/index) for further details on how interfaces are used.
-```
-
----
-
-<h2 id='heading--dev-details'>Developer details </h2>
+## Developer details
 
 **[Auto-connect](/t/interface-management/6154#heading--auto-connections)**: no</br>
 **[Super-privileged](/)**: yes</br>

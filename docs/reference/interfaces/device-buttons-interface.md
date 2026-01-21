@@ -1,5 +1,5 @@
 (interfaces-device-buttons-interface)=
-# The device-buttons interface
+#  device-buttons interface
 
 `device-buttons` allows read and write access to device buttons exposed as input events. Such buttons can be defined using `gpio-keys` inside the device tree bindings. Consult kernel documentation on [gpio-keys](https://www.kernel.org/doc/Documentation/devicetree/bindings/input/gpio-keys.txt) for more details.
 

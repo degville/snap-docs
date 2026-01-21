@@ -1,18 +1,12 @@
 (interfaces-snap-refresh-control-interface)=
-# The snap-refresh-control interface
+#  snap-refresh-control interface
 
 The `snap-refresh-control` interface allows extended control, via [snapctl](/), of refreshes targeting the snap.
 
 **This interface and the full set of features it requires to function are currently under development.**
 
-```{tip}
 
-See [Interface management](/) and [Supported interfaces](/interfaces/index) for further details on how interfaces are used.
-```
-
----
-
-<h2 id='heading--dev-details'>Developer details </h2>
+## Developer details
 
 **[Auto-connect](/t/interface-management/6154#heading--auto-connections)**: no</br>
 **[Super-privileged](/)**: yes</br>

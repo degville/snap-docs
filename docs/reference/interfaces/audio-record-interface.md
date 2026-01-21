@@ -1,5 +1,5 @@
 (interfaces-audio-record-interface)=
-# The audio-record interface
+#  audio-record interface
 
 The `audio-record` interface allows an application to access your audio recording hardware, such as a microphone, via your system's audio service, such as PulseAudio. It's disabled by default.
 
@@ -13,14 +13,8 @@ The brilliant [OBS Studio](https://snapcraft.io/obs-studio) is a good example of
 $ sudo snap connect obs-studio:audio-record
 ```
 
-```{tip}
 
-See [Interface management](/) and [Supported interfaces](/interfaces/index) for further details on how interfaces are used.
-```
-
----
-
-<h2 id='heading--dev-details'>Developer details </h2>
+## Developer details
 
 **Auto-connect**: no
 

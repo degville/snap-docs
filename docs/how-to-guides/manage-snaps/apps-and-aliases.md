@@ -18,7 +18,10 @@ $ /snap/bin/vlc
 ```
 Adding `/snap/bin` to your default _$PATH_ makes running snaps that don't automatically add themselves more convenient.
 
-> ⓘ A few Linux distributions use a path of `/var/lib/snapd/snap/bin` instead of the standard `/snap/bin`. You may need to experiment and update your path accordingly.
+
+```{caution}
+A few Linux distributions use a path of `/var/lib/snapd/snap/bin` instead of the standard `/snap/bin`. You may need to experiment and update your path accordingly.
+```
 
 ## Application commands
 

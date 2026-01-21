@@ -1,5 +1,5 @@
 (interfaces-personal-files-interface)=
-# The personal-files interface
+#  personal-files interface
 
 The `personal-files` interface provides access to specified files in the user's home directory, and consequently, gives privileged access to the user's data.
 
@@ -9,10 +9,6 @@ By default, snaps have access to everything under `~/snap/<snap name>/<revision>
 
 Requires snapd version _2.37+_.
 
-```{tip}
-
-See [Interface management](/) and [Supported interfaces](/interfaces/index) for further details on how interfaces are used.
-```
 
 ## Developer details
 

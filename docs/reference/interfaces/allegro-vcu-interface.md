@@ -1,18 +1,12 @@
 (interfaces-allegro-vcu-interface)=
-# The allegro-vcu interface
+#  allegro-vcu interface
 
 The `allegro-vcu` interface enables access to the Allegro Video Core Unit, using a kernel module which directly controls hardware on the device.
 
 This interface is intended primarily to be used with [Ubuntu Core](/t/glossary/14612#heading--ubuntu-core).
 
-```{tip}
 
-See [Interface management](/) and [Supported interfaces](/interfaces/index) for further details on how interfaces are used.
-```
-
----
-
-<h2 id='heading--dev-details'>Developer details </h2>
+## Developer details
 
 **Auto-connect**: no
 

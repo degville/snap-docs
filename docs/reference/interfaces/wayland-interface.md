@@ -1,5 +1,5 @@
 (interfaces-wayland-interface)=
-# The wayland interface
+#  wayland interface
 
 `wayland` allows access to compositors supporting Wayland protocol.
 

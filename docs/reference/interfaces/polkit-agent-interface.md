@@ -1,18 +1,12 @@
 (interfaces-polkit-agent-interface)=
-# The polkit-agent interface
+#  polkit-agent interface
 
 The `polkit-agent` interface is a low level interface that permits applications to register with the [polkit authorisation manager](https://www.freedesktop.org/software/polkit/docs/latest/polkit.8.html), _polkitd_,  as a polkit agent. It's primarily intended for systems running [Ubuntu Core](/t/14612#heading--ubuntu-core).
 
 This interface enables the higher level [polkit interface](/interfaces/polkit-interface) to make access control decisions for requests from unprivileged clients.
 
-```{tip}
 
-See [Interface management](/) and [Supported interfaces](/interfaces/index) for further details on how interfaces are used.
-```
-
----
-
-<h2 id='heading--dev-details'>Developer details </h2>
+## Developer details
 
 **[Auto-connect](/t/interface-management/6154#heading--auto-connections)**: no</br>
 **[Super-privileged](/)**: yes</br>

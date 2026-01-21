@@ -3,7 +3,7 @@
 
 Snap supports a set of system-wide options that allow you to customise your snap environment. See [System options](/reference/operations/system-options) for which options are supported.
 
-As with [Configuration in snaps](/how-to-guides/work-with-snaps/configure-snaps), these options are changed with the `set` and `get` commands, but with a target of  *system* instead of a specific snap:
+As with [Configuration in snaps](/how-to-guides/manage-snaps/configure-snaps), these options are changed with the `set` and `get` commands, but with a target of  *system* instead of a specific snap:
 
 ```bash
 snap set system some.option="some value"

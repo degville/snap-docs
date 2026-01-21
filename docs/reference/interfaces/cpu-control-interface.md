@@ -1,5 +1,5 @@
 (interfaces-cpu-control-interface)=
-# The cpu-control interface
+#  cpu-control interface
 
 `cpu-control` allows setting CPU tunables.
 

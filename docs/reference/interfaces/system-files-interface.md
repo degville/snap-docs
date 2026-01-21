@@ -1,5 +1,5 @@
 (interfaces-system-files-interface)=
-# The system-files interface
+#  system-files interface
 
 The `system-files` interface enables a snap to access specific system files and directories (such as files in `/etc`). Consequently,  the interface can provide access to privileged system data and is not connected by default.
 
@@ -12,9 +12,7 @@ The [Firefox](https://snapcraft.io/firefox), [Chromium](https://snapcraft.io/chr
 > See [Interface management](/) and [Supported interfaces](/interfaces/index) for further details on how interfaces are used.
 
 
----
-
-<h2 id='heading--dev-details'>Developer details </h2>
+## Developer details
 
 **[Auto-connect](/t/interface-management/6154#heading--auto-connections)**: no</br>
 **[Super-privileged](/)**: yes</br>

@@ -1,5 +1,5 @@
 (interfaces-pwm-control-interface)=
-# The pwm-control interface
+#  pwm-control interface
 
 `pwm-control` permits control over any aspect of all PWM channels.
 

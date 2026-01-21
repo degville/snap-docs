@@ -1,4 +1,4 @@
-# The usb-gadget interface 
+#  usb-gadget interface 
 
 The `usb-gadget` interface permits snaps to access the [USB Gadget API](https://www.kernel.org/doc/html/v4.17/driver-api/usb/gadget.html) using [configfs](https://www.kernel.org/doc/Documentation/filesystems/configfs/configfs.txt).
 

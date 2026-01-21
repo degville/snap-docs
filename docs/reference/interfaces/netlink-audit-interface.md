@@ -1,18 +1,12 @@
 (interfaces-netlink-audit-interface)=
-# The netlink-audit interface
+#  netlink-audit interface
 
 The `netlink-audit` interface allows access to the kernel part of the Linux Audit Subsystem through Netlink.
 
 See also [netlink-driver](/interfaces/netlink-driver-interface) and [netlink-connector]().
 
-```{tip}
 
-See [Interface management](/) and [Supported interfaces](/interfaces/index) for further details on how interfaces are used.
-```
-
----
-
-<h2 id='heading--dev-details'>Developer details </h2>
+## Developer details
 
 **Auto-connect**: no
 

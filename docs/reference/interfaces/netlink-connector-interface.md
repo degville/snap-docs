@@ -1,18 +1,12 @@
 (interfaces-netlink-connector-interface)=
-# The netlink-connector interface
+#  netlink-connector interface
 
 The `netlink-connector` interface allows communication through the kernel Netlink connector.
 
 See also [netlink-driver](/interfaces/netlink-driver-interface) and [netlink-audit](/interfaces/netlink-audit-interface).
 
-```{tip}
 
-See [Interface management](/) and [Supported interfaces](/interfaces/index) for further details on how interfaces are used.
-```
-
----
-
-<h2 id='heading--dev-details'>Developer details </h2>
+## Developer details
 
 **Auto-connect**: no
 

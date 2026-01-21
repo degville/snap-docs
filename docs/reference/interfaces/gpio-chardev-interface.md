@@ -1,12 +1,8 @@
 (interfaces-gpio-chardev)=
-# The gpio-chardev interface
+#  gpio-chardev interface
 
 The `gpio-chardev` interface allows access to specific GPIO chardev lines.
 
-```{tip}
-
-See [Interface management](/) and [Supported interfaces](/interfaces/index) for further details on how interfaces are used.
-```
 
 Use  `snap interface gpio-chardev` to see which gpio chardev devices are available on the system:
 
