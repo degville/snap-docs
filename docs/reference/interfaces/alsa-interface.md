@@ -18,9 +18,7 @@ $ sudo snap connect <snap name>:alsa
 ```
 
 
----
-
-<h2 id='heading--dev-details'>Developer details </h2>
+## Developer details
 
 **Auto-connect**: no
 

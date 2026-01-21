@@ -6,9 +6,7 @@ The `shared-memory` interface allows two snaps to communicate with each other us
 Requires snapd version *2.54+* .
 
 
----
-
-<h2 id='heading--dev-details'>Developer details </h2>
+## Developer details
 
 | Permissions |  |  |
 |--|--|--|

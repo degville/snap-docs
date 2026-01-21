@@ -5,9 +5,7 @@ The `dsp` interface allows for the control of digital signal processors (DSPs) o
 
 
 
----
-
-<h2 id='heading--dev-details'>Developer details </h2>
+## Developer details
 
 **Auto-connect**: no
 

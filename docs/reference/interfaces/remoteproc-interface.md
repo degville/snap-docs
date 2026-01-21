@@ -11,9 +11,7 @@ Requires snapd version _2.62+_.
 
 
 
----
-
-<h2 id='heading--dev-details'>Developer details </h2>
+## Developer details
 
 **[Auto-connect](/t/6154#heading--auto-connections)** : no</br>
 **[Super-privileged](/)** : yes

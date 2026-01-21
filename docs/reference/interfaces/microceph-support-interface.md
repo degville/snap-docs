@@ -9,9 +9,7 @@ See [Interface management](/) and [Supported interfaces](/interfaces/index) for 
 
 [comment]: <> (```)
 
----
-
-<h2 id='heading--dev-details'>Developer details </h2>
+## Developer details
 
 **[Auto-connect](/t/interface-management/6154#heading--auto-connections)**: no</br>
 **[Super-privileged](/)**: yes</br>

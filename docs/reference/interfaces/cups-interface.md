@@ -20,9 +20,7 @@ The CUPS snap will run in proxy mode, working as a proxy or firewall between the
 The CUPS snap will run in standalone mode, listening not only on `$SNAP_COMMON/run/cups.sock` but also on `/run/cups/cups.sock`. This way all applications, both classically installed or snapped, print via the CUPS Snap. Queues have to be created on the snapped CUPS, drivers have to be [Printer Applications](https://snapcraft.io/search?q=OpenPrinting). Also here the user sees the same print queues for both classic and snapped applications.
 
 
----
-
-<h2 id='heading--dev-details'>Developer details </h2>
+## Developer details
 
 **[Auto-connect](/)**: not applicable
 

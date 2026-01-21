@@ -23,9 +23,7 @@ See [Interface management](/) and [Supported interfaces](/interfaces/index) for 
 
 > ⓘ  Confdb is currently considered an [Experimental feature](https://forum.snapcraft.io/t/experimental-features/41241) and implementation details may change as development progresses.
 
----
-
-<h2 id='heading--dev-details'>Developer details </h2>
+## Developer details
 
 **Auto-connect**: no, but plugs are auto-connected if the confdb's account is the same as the snap's publisher.
 

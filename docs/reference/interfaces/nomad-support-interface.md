@@ -5,9 +5,7 @@ The `nomad-support` interface provides permissions to enable [HashiCorp Nomad](h
 
 See [Interface management](/) and [Supported interfaces](/interfaces/index) for further details on how interfaces are used.
 
----
-
-<h2 id='heading--dev-details'>Developer details </h2>
+## Developer details
 
 **Auto-connect**: no
 

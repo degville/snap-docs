@@ -4,9 +4,7 @@
 The `hugepages-control` interface allows controlling [HugePages](https://www.kernel.org/doc/Documentation/vm/hugetlbpage.txt), a Linux kernel feature that enables memory blocks to be managed in larger page sizes.
 
 
----
-
-<h2 id='heading--dev-details'>Developer details </h2>
+## Developer details
 
 **Auto-connect**: no
 

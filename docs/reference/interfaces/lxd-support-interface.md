@@ -3,9 +3,7 @@
 
 `lxd-support` enables operating as the LXD service. This interface can currently only be established with the upstream LXD project.
 
----
-
-<h2 id='heading--dev-details'>Developer details </h2>
+## Developer details
 
 **[Auto-connect](/t/interface-management/6154#heading--auto-connections)**: no</br>
 **[Super-privileged](/)**: yes</br>

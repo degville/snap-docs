@@ -6,9 +6,7 @@ The `snap-refresh-observe` interface permits tracking snap refreshes and their i
 It is intended to be used _only_ to mark the existence of a refresh awareness client, such as [snapd-desktop-integration](https://snapcraft.io/install/snapd-desktop-integration/ubuntu) snap.
 
 
----
-
-<h2 id='heading--dev-details'>Developer details </h2>
+## Developer details
 
 **[Auto-connect](/t/interface-management/6154#heading--auto-connections)**: no</br>
 **[Super-privileged](/)**: yes</br>

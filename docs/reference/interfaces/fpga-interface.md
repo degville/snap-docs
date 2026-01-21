@@ -4,9 +4,7 @@
 The `fpga` interface allows access to the [FPGA subsystem](https://www.kernel.org/doc/html/latest/driver-api/fpga/index.html). 
 
 
----
-
-<h2 id='heading--dev-details'>Developer details </h2>
+## Developer details
 
 **Auto-connect**: no
 **Allow-installation**: yes

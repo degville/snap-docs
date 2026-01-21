@@ -6,9 +6,7 @@ The `allegro-vcu` interface enables access to the Allegro Video Core Unit, using
 This interface is intended primarily to be used with [Ubuntu Core](/t/glossary/14612#heading--ubuntu-core).
 
 
----
-
-<h2 id='heading--dev-details'>Developer details </h2>
+## Developer details
 
 **Auto-connect**: no
 

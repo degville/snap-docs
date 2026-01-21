@@ -26,9 +26,7 @@ $  snap connect app:activity-led gadget:led-1
 ```
 
 
----
-
-<h2 id='heading--dev-details'>Developer details </h2>
+## Developer details
 
 **Auto-connect**: no
 **Attributes**:

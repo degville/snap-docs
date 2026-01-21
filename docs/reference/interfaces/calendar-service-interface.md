@@ -4,9 +4,7 @@
 The `calendar-service` interface enables communication with Evolution Data Server calendar.
 
 
----
-
-<h2 id='heading--dev-details'>Developer details </h2>
+## Developer details
 
 **Auto-connect**: no
 

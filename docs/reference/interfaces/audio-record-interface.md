@@ -14,9 +14,7 @@ $ sudo snap connect obs-studio:audio-record
 ```
 
 
----
-
-<h2 id='heading--dev-details'>Developer details </h2>
+## Developer details
 
 **Auto-connect**: no
 

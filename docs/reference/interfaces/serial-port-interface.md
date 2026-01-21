@@ -17,9 +17,7 @@ slots:
 Once connected, the consuming snap can use the device via the path specified by the connected slot.
 
 
----
-
-<h2 id='heading--dev-details'>Developer details </h2>
+## Developer details
 
 **Auto-Connect**: no</br>
 **Attributes**:

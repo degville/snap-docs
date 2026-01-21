@@ -4,9 +4,7 @@
 The `network` interface allows client access to the network.
 
 
----
-
-<h2 id='heading--dev-details'>Developer details </h2>
+## Developer details
 
 **[Auto-connect](/t/6154#heading--auto-connections)** : yes</br>
 

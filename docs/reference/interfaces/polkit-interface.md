@@ -6,9 +6,7 @@ The `polkit` interface provides daemons with:
 2. The ability to install custom polkit rules.
 
 
----
-
-<h2 id='heading--dev-details'>Developer details </h2>
+## Developer details
 
 **[Auto-connect](/t/interface-management/6154#heading--auto-connections)**: no</br>
 **[Super-privileged](/)**: yes</br>

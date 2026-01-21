@@ -8,9 +8,7 @@
 [guiscrcpy](https://snapcraft.io/guiscrcpy) uses _adb-support_ to help share an Android screen on a Linux desktop.
 
 
----
-
-<h2 id='heading--dev-details'>Developer details </h2>
+## Developer details
 
 **Auto-connect**: no
 

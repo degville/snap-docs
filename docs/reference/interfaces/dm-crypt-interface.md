@@ -10,9 +10,7 @@ The `dm-crypt`  interface enables the following access functions to  [dm-crypt](
 - mounting of encrypted partition(s)
 
 
----
-
-<h2 id='heading--dev-details'>Developer details </h2>
+## Developer details
 
 **[Auto-connect](/t/interface-management/6154#heading--auto-connections)**: no</br>
 **[Super-privileged](/)**: yes</br>

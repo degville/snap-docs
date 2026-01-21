@@ -6,9 +6,7 @@ The `media-control` interface permits access to media control devices and Video4
 
 
 
----
-
-<h2 id='heading--dev-details'>Developer details </h2>
+## Developer details
 
 **Auto-connect**: no
 

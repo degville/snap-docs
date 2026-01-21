@@ -6,9 +6,7 @@ The `netlink-driver` interface allows a kernel module to expose itself to user-s
 See also [netlink-audit](/interfaces/netlink-audit-interface) and [netlink-connector](/interfaces/netlink-connector-interface).
 
 
----
-
-<h2 id='heading--dev-details'>Developer details </h2>
+## Developer details
 
 **Auto-connect**: no
 

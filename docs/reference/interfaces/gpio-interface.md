@@ -26,9 +26,7 @@ snap connect pi-fancontrol:gpio pi:bcm-gpio-14
 ```
 
 
----
-
-<h2 id='heading--dev-details'>Developer details </h2>
+## Developer details
 
 **Auto-connect**: no</br>
 **Attributes**:

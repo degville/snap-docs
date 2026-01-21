@@ -11,9 +11,7 @@ Due to the privileged nature of access enabled by this interface, its use is res
 
 
 
----
-
-<h2 id='heading--dev-details'>Developer details </h2>
+## Developer details
 
 **Auto-connect**: no
 

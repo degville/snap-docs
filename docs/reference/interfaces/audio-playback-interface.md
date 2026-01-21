@@ -30,9 +30,7 @@ snap connect vlc:audio-playback
 ```
 
 
----
-
-<h2 id='heading--dev-details'>Developer details </h2>
+## Developer details
 
 **Auto-connect**: yes
 

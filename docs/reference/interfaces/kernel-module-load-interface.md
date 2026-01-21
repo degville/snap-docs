@@ -6,9 +6,7 @@
 See also the [kernel-module-control interface](/interfaces/kernel-module-control-interface) for inserting, removing and querying kernel modules.
 
 
----
-
-<h2 id='heading--dev-details'>Developer details </h2>
+## Developer details
 
 **[Auto-connect](/t/interface-management/6154#heading--auto-connections)**: no<br />
 **[Super-privileged](/)**: yes</br>

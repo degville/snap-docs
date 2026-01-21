@@ -6,9 +6,7 @@ The `nfs-mount` interface allows the mounting and unmounting of Network File Sys
 **Note:** This interface only supports NFSv4. This should not cause problems as earlier versoins are now considerably old and are unlikely to be being used.
 
 
----
-
-<h2 id='heading--dev-details'>Developer details </h2>
+## Developer details
 
 **[Auto-connect](/t/6154#heading--auto-connections)** : no</br>
 **[Super-privileged](/)** : no

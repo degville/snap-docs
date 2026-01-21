@@ -8,9 +8,7 @@ This interface is intended to be used only with [Ubuntu Core](/t/glossary/14612#
 Requires snapd version _2.23+_.
 
 
----
-
-<h2 id='heading--dev-details'>Developer details </h2>
+## Developer details
 
 
 **[Auto-connect](/t/interface-management/6154#heading--auto-connections)**: no</br>

@@ -6,9 +6,7 @@ The `gconf`  interface  allows access to any item from the legacy [GConf configu
 This interface needs to be manually connected because _gconf_ is a global database for GNOME desktop and application settings and offers no application isolation.
 
 
----
-
-<h2 id='heading--dev-details'>Developer details </h2>
+## Developer details
 
 **Auto-connect**: no
 

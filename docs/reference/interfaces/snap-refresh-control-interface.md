@@ -6,9 +6,7 @@ The `snap-refresh-control` interface allows extended control, via [snapctl](/), 
 **This interface and the full set of features it requires to function are currently under development.**
 
 
----
-
-<h2 id='heading--dev-details'>Developer details </h2>
+## Developer details
 
 **[Auto-connect](/t/interface-management/6154#heading--auto-connections)**: no</br>
 **[Super-privileged](/)**: yes</br>

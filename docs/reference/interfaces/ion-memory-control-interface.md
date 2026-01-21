@@ -6,9 +6,7 @@ The `ion-memory-control` interface allows access to the Android ION memory alloc
 This interface is primarily intended to be used with [Ubuntu Core](/t/glossary/14612#heading--ubuntu-core).
 
 
----
-
-<h2 id='heading--dev-details'>Developer details </h2>
+## Developer details
 
 **[Auto-connect](/t/interface-management/6154#heading--auto-connections)**: no</br>
 **[Super-privileged](/)**: yes</br>

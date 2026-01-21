@@ -8,9 +8,7 @@ Due to its ability to permit the installation any snap at potentially any confin
 Consequently, consumers of this interface require [approval](/t/process-for-aliases-auto-connections-and-tracks/455/) for distribution via the Snap Store, and this approval is only likely to be given under strict and specific circumstances.
 
 
----
-
-<h2 id='heading--dev-details'>Developer details </h2>
+## Developer details
 
 
 **[Auto-connect](/t/interface-management/6154#heading--auto-connections)**: no</br>
