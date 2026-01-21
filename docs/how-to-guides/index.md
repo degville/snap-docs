@@ -22,15 +22,15 @@ Outside of whatever facilities a snapped application may provide, snaps also pro
 * [Set system options](/how-to-guides/manage-snaps/set-system-options): The main way to configure your snapped applications.
 * [Control services](/how-to-guides/manage-snaps/control-services): Start, stop and restart snapped background service.
 * [Validation sets](/explanation/how-snaps-work/validation-sets): Ensure a defined set of snaps are installed and updated together.
-* [Use the REST API](/how-to-guides/manage-snaps/use-the-rest-api): Learn how to access and use our REST API.
+* [Use the REST API](/how-to-guides/snap-development/use-the-rest-api): Learn how to access and use our REST API.
 
 ## Problem solving
 
 The vast majority of snap users and developers experience very few issues, but any technology this complex and diverse will likely encounter some issues and incompatibilities. 
 
 * [Fix common issues](/how-to-guides/work-with-snaps/fix-common-issues): If you do run into problems, find common solutions here.
-* [Test snapd fixes](/how-to-guides/work-with-snaps/test-snapd-fixes): Run a bugfix build of the snap daemon.
-* [Debug running snaps](how-to-guides/work-with-snaps/debug-snaps): Test bugfix releases of snapd.
+* [Test snapd fixes](/how-to-guides/snap-development/test-snapd-fixes): Run a bugfix build of the snap daemon.
+* [Debug running snaps](how-to-guides/snap-development/debug-snaps): Test bugfix releases of snapd.
 
 
 ```{toctree}
