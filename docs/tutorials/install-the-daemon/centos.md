@@ -5,7 +5,9 @@ Snap is available for [CentOS 9 Stream](https://www.centos.org/), CentOS 8 Strea
 
 The packages for CentOS 8/9 and CentOS 7 are in each distribution's respective [Extra Packages for Enterprise Linux](https://fedoraproject.org/wiki/EPEL) (EPEL) repository. The instructions for adding this repository diverge slightly between CentOS 8/9 and CentOS 7, which is why they're listed separately below.
 
-> ⓘ  If you need to know which version of CentOS you're running, type `cat /etc/centos-release`.
+```{tip}
+If you need to know which version of CentOS you're running, type `cat /etc/centos-release`.
+```
 
 If you don't already have the EPEL repository added to your distribution, it can be added as follows:
 
@@ -37,9 +39,9 @@ Problem: package snapd-2.42.1-1.el8.x86_64 requires snapd-selinux = 2.42.1-1.el8
 but none of the providers can be installed.
 ```
 
-In such an event, rather than waiting for EPEL packages to be updated, you can enable the [continuous release (CR)](https://wiki.centos.org/AdditionalResources/Repositories/CR) repository. This repository contains packages destined for the next point release of CentOS and should satisfy any missing version mismatch dependencies.
+In such an event, rather than waiting for EPEL packages to be updated, you can enable the [continuous release (CR)](https://wiki.centos.org/AdditionalResources(2f)Repositories(2f)CR.html) repository. This repository contains packages destined for the next point release of CentOS and should satisfy any missing version mismatch dependencies.
 
-> ⓘ  If you're interested in understanding how these packages are built, see  [Building a snap RPM for Red Hat Enterprise Linux](/explanation/snap-development/building-snap-rpms-on-rhel).
+If you're interested in understanding how these packages are built, see  [Building a snap RPM for Red Hat Enterprise Linux](/explanation/snap-development/building-snap-rpms-on-rhel).
 
 ## Installing snapd
 
