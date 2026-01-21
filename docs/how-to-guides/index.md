@@ -7,10 +7,10 @@ Our _How-to_ guides help you achieve a specific goal while working with snaps. T
 
 The snap system has been designed to look after itself with automatic security and update policies. However, these elements, and many others, can also be configured and managed manually.
 
-* [Manage updates](/how-to-guides/work-with-snaps/manage-updates): Control when snaps update, or hold an update indefinitely .
-* [Connect interfaces](/how-to-guides/work-with-snaps/connect-interfaces): Control exactly what a snap can access, and what it can't.
-* [Configure snaps](/how-to-guides/work-with-snaps/configure-snaps): Learn how to set options for your servers and daemons.
-* [Apps and aliases](/how-to-guides/work-with-snaps/apps-and-aliases): Use your preferred names for your snapped applications.
+* [Manage updates](/how-to-guides/manage-snaps/manage-updates): Control when snaps update, or hold an update indefinitely .
+* [Connect interfaces](/how-to-guides/manage-snaps/connect-interfaces): Control exactly what a snap can access, and what it can't.
+* [Configure snaps](/how-to-guides/manage-snaps/configure-snaps): Learn how to set options for your servers and daemons.
+* [Apps and aliases](/how-to-guides/manage-snaps/apps-and-aliases): Use your preferred names for your snapped applications.
 
 ## Manage snaps
 
@@ -39,6 +39,5 @@ The vast majority of snap users and developers experience very few issues, but a
 :maxdepth: 2
 :glob:
 
-Work with snaps <work-with-snaps/index>
 Manage snaps <manage-snaps/index>
 Snap development <snap-development/index>

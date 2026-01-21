@@ -28,10 +28,10 @@ installing-snap-on-pop/ tutorials/install-the-daemon/pop-os
 installing-snap-on-rocky/ tutorials/install-the-daemon/rocky-linux
 installing-snap-on-ubuntu/ tutorials/install-the-daemon/ubuntu
 snap-howto/ how-to-guides/
-managing-updates/ how-to-guides/work-with-snaps/manage-updates
+managing-updates/ how-to-guides/manage-snaps/manage-updates
 interface-management/ explanation/interfaces/all-about-interfaces
-configuration-in-snaps/ how-to-guides/work-with-snaps/configure-snaps
-commands-and-aliases/ how-to-guides/work-with-snaps/apps-and-aliases
+configuration-in-snaps/ how-to-guides/manage-snaps/configure-snaps
+commands-and-aliases/ how-to-guides/manage-snaps/apps-and-aliases
 snapshots/ how-to-guides/manage-snaps/create-data-snapshots
 quota-groups/ how-to-guides/manage-snaps/use-resource-quotas
 disk-space-awareness/ how-to-guides/manage-snaps/disk-space-awareness
@@ -43,7 +43,7 @@ manage-validation-sets/ explanation/how-snaps-work/validation-sets
 snap-deltas/ how-to-guides/manage-snaps/snap-deltas
 using-the-api/ how-to-guides/manage-snaps/use-the-rest-api
 using-snapctl/ how-to-guides/manage-snaps/use-snapctl
-fix-common-issues/ how-to-guides/work-with-snaps/fix-common-issues
+fix-common-issues/ how-to-guides/manage-snaps/fix-common-issues
 snapd-testing/testing how-to-guides/snap-development/using-in-development-features
 debug-snaps/ explanation/how-snaps-work/debug-snaps
 snap-reference/ reference
@@ -336,6 +336,5 @@ opengl-driver-libs-interface/ reference/interfaces/opengl-driver-libs-interface
 opengles-driver-libs-interface/ reference/interfaces/opengles-driver-libs-interface
 using-in-development-features/ explanation/snap-development/index
 snapd-api/ reference/development/rest-api/snapd-rest-api
-migrating-bases/ how-to-guides/snap-development/migrating-bases
 store-listing-branding/ how-to-guides/manage-snaps/store-listing-branding
 tab-completion/ explanation/snap-development/tab-completion

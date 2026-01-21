@@ -3,6 +3,8 @@
 
 Outside of whatever facilities a snapped application may provide, additional snap functionality includes  data snapshots, usage quotas and control over if when when a service runs.
 
+
+- [Manage updates](manage-updates): Control when snaps update, or hold an update indefinitely .
 - [Create data snapshots](create-data-snapshots): Make a copy of a snap’s user, system and configuration data.
 - [Use quota resources](use-resource-quotas): Set processor and memory resource limits on your snaps.
 - [Disk space awareness](disk-space-awareness): Check whether there’s enough disk space before certain operations.
@@ -17,7 +19,7 @@ Outside of whatever facilities a snapped application may provide, additional sna
 :maxdepth: 2
 :glob:
 
-
+Manage updates <manage-updates>
 Create data snapshots <create-data-snapshots>
 Use resource quotas <use-resource-quotas>
 Disk space awareness <disk-space-awareness>
