@@ -33,5 +33,4 @@ Control services <control-services>
 Work with components <using-components>
 Configure with confdb <configure-snaps-with-confdb>
 Manage validation sets <manage-validation-sets>
-Snap deltas <snap-deltas>
 Fix common issues <fix-common-issues>
