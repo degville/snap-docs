@@ -9,10 +9,6 @@ Networking is provided largely via OpenVSwitch and Neutron, with dnsmasq acting 
 
 Virtual machines rely on KVM for virtualisation acceleration and the vhost framework in the kernel (vhost_net, vhost_scsi, vhost_vsock).
 
-```{tip}
-
-See [Interface management](/) and [Supported interfaces](/interfaces/index) for further details on how interfaces are used.
-```
 
 ---
 

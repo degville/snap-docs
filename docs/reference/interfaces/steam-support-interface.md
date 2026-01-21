@@ -5,10 +5,6 @@ The `steam-support` interface has been developed specifically to help Valve's St
 
 Only the Steam snap may establish this interface. See [Introducing early access to the Steam snap](https://discourse.ubuntu.com/t/introducing-early-access-to-the-steam-snap/28082) for more details.
 
-```{tip}
-
-See [Interface management](/) and [Supported interfaces](/interfaces/index) for further details on how interfaces are used.
-```
 
 ---
 

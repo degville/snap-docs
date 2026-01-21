@@ -13,10 +13,6 @@ The brilliant [OBS Studio](https://snapcraft.io/obs-studio) is a good example of
 $ sudo snap connect obs-studio:audio-record
 ```
 
-```{tip}
-
-See [Interface management](/) and [Supported interfaces](/interfaces/index) for further details on how interfaces are used.
-```
 
 ---
 

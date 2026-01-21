@@ -7,10 +7,6 @@
 
 This interface automatically connected by the [ONLY OFFICE Document Server](https://snapcraft.io/onlyoffice-ds) snap to provide better integration with pre-configured accounts.
 
-```{tip}
-
-See [Interface management](/) and [Supported interfaces](/interfaces/index) for further details on how interfaces are used.
-```
 
 ---
 

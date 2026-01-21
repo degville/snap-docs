@@ -21,10 +21,6 @@ This interface uses the standard snap location for mounted directories:
 
 For example, if this interface is used to access `/opt/ros/noetic/robot-urdf/models` on the host machine, it will be found within the snap at `/var/lib/snapd/hostfs/opt/ros/noetic/robot-urdf/models`.
 
-```{tip}
-
-See [Interface management](/) and [Supported interfaces](/interfaces/index) for further details on how interfaces are used.
-```
 
 ---
 

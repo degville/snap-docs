@@ -3,10 +3,6 @@
 
 The `calendar-service` interface enables communication with Evolution Data Server calendar.
 
-```{tip}
-
-See [Interface management](/) and [Supported interfaces](/interfaces/index) for further details on how interfaces are used.
-```
 
 ---
 

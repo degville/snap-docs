@@ -3,10 +3,6 @@
 
 The `snap-themes-control` interface permits the use of snapd's theme installation API.
 
-```{tip}
-
-See [Interface management](/) and [Supported interfaces](/interfaces/index) for further details on how interfaces are used.
-```
 
 ---
 

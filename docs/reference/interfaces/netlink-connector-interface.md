@@ -5,10 +5,6 @@ The `netlink-connector` interface allows communication through the kernel Netlin
 
 See also [netlink-driver](/interfaces/netlink-driver-interface) and [netlink-audit](/interfaces/netlink-audit-interface).
 
-```{tip}
-
-See [Interface management](/) and [Supported interfaces](/interfaces/index) for further details on how interfaces are used.
-```
 
 ---
 

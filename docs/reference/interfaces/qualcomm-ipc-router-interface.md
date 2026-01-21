@@ -5,10 +5,6 @@ The `qualcomm-ipc-router` interface allows access to the Qualcomm IPC Router soc
  
 This interface is primarily intended to be used with [Ubuntu Core](/t/glossary/14612#heading--ubuntu-core).
 
-```{tip}
-
-See [Interface management](/) and [Supported interfaces](/interfaces/index) for further details on how interfaces are used.
-```
 
 ---
 

@@ -25,10 +25,6 @@ With an example snap application called _app_ installed, the following command w
 $  snap connect app:activity-led gadget:led-1
 ```
 
-```{tip}
-
-See [Interface management](/) and [Supported interfaces](/interfaces/index) for further details on how interfaces are used.
-```
 
 ---
 

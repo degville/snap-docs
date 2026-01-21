@@ -3,10 +3,6 @@
 
 The `fpga` interface allows access to the [FPGA subsystem](https://www.kernel.org/doc/html/latest/driver-api/fpga/index.html). 
 
-```{tip}
-
-See [Interface management](/) and [Supported interfaces](/interfaces/index) for further details on how interfaces are used.
-```
 
 ---
 

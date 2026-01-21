@@ -9,10 +9,6 @@ The interface **does not** allow the management of users and groups for the syst
 
 Due to the privileged nature of access enabled by this interface, its use is reserved exclusively for "management snaps" from [brand stores](/t/glossary/14612#heading--brand-store).
 
-```{tip}
-
-See [Interface management](/) and [Supported interfaces](/interfaces/index) for further details on how interfaces are used.
-```
 
 
 ---

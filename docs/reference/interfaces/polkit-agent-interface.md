@@ -5,10 +5,6 @@ The `polkit-agent` interface is a low level interface that permits applications 
 
 This interface enables the higher level [polkit interface](/interfaces/polkit-interface) to make access control decisions for requests from unprivileged clients.
 
-```{tip}
-
-See [Interface management](/) and [Supported interfaces](/interfaces/index) for further details on how interfaces are used.
-```
 
 ---
 

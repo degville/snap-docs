@@ -25,10 +25,6 @@ The [pi-fancontrol](https://snapcraft.io/pi-fancontrol) snap provides simple fan
 snap connect pi-fancontrol:gpio pi:bcm-gpio-14
 ```
 
-```{tip}
-
-See [Interface management](/) and [Supported interfaces](/interfaces/index) for further details on how interfaces are used.
-```
 
 ---
 

@@ -21,10 +21,6 @@ slots:
 [...]
 ```
 
-```{tip}
-
-See [Interface management](/) and [Supported interfaces](/interfaces/index) for further details on how interfaces are used.
-```
 
 ---
 

@@ -10,10 +10,6 @@ This interface allows a snap to load a firmware to such microcontrollers via a s
 Requires snapd version _2.62+_.
 
 
-```{tip}
-
-See [Interface management](/) and [Supported interfaces](/interfaces/index) for further details on how interfaces are used.
-```
 
 ---
 

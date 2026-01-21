@@ -44,10 +44,6 @@ If the `udev-tagging` attribute is used, this default udev rule is replaced with
 
 Requires snapd version *2.55+*, while `udev-tagging.for-device` attribute support requires snapd version *2.66+*.
 
-```{tip}
-
-See [Interface management](/) and [Supported interfaces](/interfaces/index) for further details on how interfaces are used.
-```
 
 ---
 

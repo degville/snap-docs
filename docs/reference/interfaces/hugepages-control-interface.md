@@ -3,10 +3,6 @@
 
 The `hugepages-control` interface allows controlling [HugePages](https://www.kernel.org/doc/Documentation/vm/hugetlbpage.txt), a Linux kernel feature that enables memory blocks to be managed in larger page sizes.
 
-```{tip}
-
-See [Interface management](/) and [Supported interfaces](/interfaces/index) for further details on how interfaces are used.
-```
 
 ---
 

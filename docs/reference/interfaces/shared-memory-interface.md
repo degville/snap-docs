@@ -5,10 +5,6 @@ The `shared-memory` interface allows two snaps to communicate with each other us
 
 Requires snapd version *2.54+* .
 
-```{tip}
-
-See [Interface management](/) and [Supported interfaces](/interfaces/index) for further details on how interfaces are used.
-```
 
 ---
 

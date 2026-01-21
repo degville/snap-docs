@@ -5,10 +5,6 @@ The `scsi-generic` interface allows read and write access to [SCSI Generic drive
  
  
 
-```{tip}
-
-See [Interface management](/) and [Supported interfaces](/interfaces/index) for further details on how interfaces are used.
-```
 
 ---
 

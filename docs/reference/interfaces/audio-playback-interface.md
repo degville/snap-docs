@@ -29,10 +29,6 @@ The connect command can be used to re-enable audio playback:
 snap connect vlc:audio-playback
 ```
 
-```{tip}
-
-See [Interface management](/) and [Supported interfaces](/interfaces/index) for further details on how interfaces are used.
-```
 
 ---
 

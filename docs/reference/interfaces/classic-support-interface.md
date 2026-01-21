@@ -7,10 +7,6 @@ This interface is intended to be used only with [Ubuntu Core](/t/glossary/14612#
 
 Requires snapd version _2.23+_.
 
-```{tip}
-
-See [Interface management](/) and [Supported interfaces](/interfaces/index) for further details on how interfaces are used.
-```
 
 ---
 

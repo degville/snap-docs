@@ -5,10 +5,6 @@ The `media-control` interface permits access to media control devices and Video4
 
 
 
-```{tip}
-
-See [Interface management](/) and [Supported interfaces](/interfaces/index) for further details on how interfaces are used.
-```
 
 ---
 

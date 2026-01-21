@@ -5,10 +5,6 @@
 
 The `cuda-driver-libs` interface permits access to CUDA acceleration on Nvidia GPUs.
 
-```{tip}
-
-See [Interface management](/) and [Supported interfaces](/interfaces/index) for further details on how interfaces are used.
-```
 
 ---
 

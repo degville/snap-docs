@@ -9,10 +9,6 @@ To permit access, the application snaps define an i2c *plug* which is associated
 
 Using the `i2c` interface does not require Store approval and permission, but usage **is** restricted because it provides privileged access to hardware devices. Enabling the `i2c` interface to auto-connect can be managed in the [dashboard](https://dashboard.snapcraft.io). The snap user can also access a specific i2c device with a [manual interface connection](/t/interface-management/6154#heading--manual-connections).
 
-```{tip}
-
-See [Interface management](/) and [Supported interfaces](/interfaces/index) for further details on how interfaces are used.
-```
 
 ---
 

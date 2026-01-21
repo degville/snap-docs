@@ -3,10 +3,6 @@
 
 The `desktop-launch` interface allows [strictly confined](/) snaps to identify and launch desktop applications in (or from) other snaps.
 
-```{tip}
-
-See [Interface management](/) and [Supported interfaces](/interfaces/index) for further details on how interfaces are used.
-```
 
 ---
 

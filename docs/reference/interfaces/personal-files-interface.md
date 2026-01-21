@@ -9,10 +9,6 @@ By default, snaps have access to everything under `~/snap/<snap name>/<revision>
 
 Requires snapd version _2.37+_.
 
-```{tip}
-
-See [Interface management](/) and [Supported interfaces](/interfaces/index) for further details on how interfaces are used.
-```
 
 ## Developer details
 

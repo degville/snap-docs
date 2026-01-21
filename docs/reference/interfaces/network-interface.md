@@ -3,10 +3,6 @@
 
 The `network` interface allows client access to the network.
 
-```{tip}
-
-See [Interface management](/) and [Supported interfaces](/interfaces/index) for further details on how interfaces are used.
-```
 
 ---
 

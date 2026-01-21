@@ -16,10 +16,6 @@ slots:
 
 Once connected, the consuming snap can use the device via the path specified by the connected slot.
 
-```{tip}
-
-See [Interface management](/) and [Supported interfaces](/interfaces/index) for further details on how interfaces are used.
-```
 
 ---
 

@@ -9,10 +9,6 @@ Sharing happens at the filesystem level, which means anything that can be expres
 
 The [Yaru MATE Icons](https://github.com/ubuntu-mate/icon-theme-yaru-mate-snap) snap is a good producer snap example, letting other applications access the wonderful MATE icon theme. But there are many other producer snaps too, including several for [GTK Common Themes](https://snapcraft.io/gtk-common-themes) and [KDE Frameworks](https://snapcraft.io/kde-frameworks-5-core18) for better application integration with the desktop. 
 
-```{tip}
-
-See [Interface management](/) and [Supported interfaces](/interfaces/index) for further details on how interfaces are used.
-```
 
 ---
 

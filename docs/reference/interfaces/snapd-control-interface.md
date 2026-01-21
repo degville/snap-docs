@@ -7,10 +7,6 @@ Due to its ability to permit the installation any snap at potentially any confin
 
 Consequently, consumers of this interface require [approval](/t/process-for-aliases-auto-connections-and-tracks/455/) for distribution via the Snap Store, and this approval is only likely to be given under strict and specific circumstances.
 
-```{tip}
-
-See [Interface management](/) and [Supported interfaces](/interfaces/index) for further details on how interfaces are used.
-```
 
 ---
 

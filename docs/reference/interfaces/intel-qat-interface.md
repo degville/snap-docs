@@ -3,10 +3,6 @@
 
 The ` intel-qat` interface provides permissions for [Intel QAT](https://www.intel.com/content/www/us/en/architecture-and-technology/intel-quick-assist-technology-overview.html) devices to access `VFIO`, `IOMMU` and `QAT_ADF_CTL` nodes.
 
-```{tip}
-
-See [Interface management](/) and [Supported interfaces](/interfaces/index) for further details on how interfaces are used.
-```
 
 ---
 

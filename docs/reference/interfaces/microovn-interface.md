@@ -5,10 +5,6 @@ The `microovn` interface allows access to the MicroOVN socket, and can only be u
 
 See the [MicroOVN documentation](https://canonical-microovn.readthedocs-hosted.com/en/latest/) for further details.
 
-```{tip}
-
-See [Interface management](/) and [Supported interfaces](/interfaces/index) for further details on how interfaces are used.
-```
 
 ---
 

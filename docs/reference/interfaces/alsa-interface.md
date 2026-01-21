@@ -17,10 +17,6 @@ To connect a snap to the ALSA interface, run the following command:
 $ sudo snap connect <snap name>:alsa
 ```
 
-```{tip}
-
-See [Interface management](/) and [Supported interfaces](/interfaces/index) for further details on how interfaces are used.
-```
 
 ---
 
