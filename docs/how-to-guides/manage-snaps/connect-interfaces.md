@@ -1,13 +1,13 @@
 (how-to-guides-work-with-snaps-connect-interfaces)=
 # Connect interfaces
 
-[Interfaces](/explanation/interfaces/all-about-interfaces) allow (or deny) access to a resource outside of a snap's confinement.
+Interfaces permit or deny access to a resource outside of a snap's confinement.
 
 Most users don't need to worry about interfaces. Snaps are designed for strong application isolation and safe interface connections are made automatically. 
 
 An interface is most commonly used to enable a snap to access sound playback or recording, your network, and your $HOME directory. But which interfaces a snap requires, and *provides*, is very much dependent on the type of snap and its own requirements.
 
-See [Supported interfaces](/reference/interfaces) for a comprehensive list of interfaces and what kind of access they permit.
+See [Interfaces](/reference/interfaces) for a comprehensive list of interfaces and what kind of access they permit.
 
 ## Plugs and slots
 
