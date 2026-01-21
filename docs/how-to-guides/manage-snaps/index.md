@@ -14,7 +14,6 @@ Outside of whatever facilities a snapped application may provide, additional sna
 - [Set system options](set-system-options): The main way to configure your snapped applications.
 - [Control services](control-services): Start, stop and restart snapped background service.
 - [Validation sets](manage-validation-sets): Ensure a defined set of snaps are installed and updated together.
-- [Use the REST API](use-the-rest-api): Learn how to access and use our REST API.
 
 ```{toctree}
 :hidden:
@@ -36,6 +35,3 @@ Using components <using-components>
 Configure snaps with confdb <configure-snaps-with-confdb>
 Manage validation sets <manage-validation-sets>
 Snap deltas <snap-deltas>
-Use the REST API <use-the-rest-api>
-Use snapctl <use-snapctl>
-Store listing <store-listing-branding>

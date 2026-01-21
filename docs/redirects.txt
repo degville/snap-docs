@@ -41,8 +41,8 @@ using-components/ how-to-guides/manage-snaps/using-components
 configure-with-confdb/ reference/interfaces/confdb-interface
 manage-validation-sets/ explanation/how-snaps-work/validation-sets
 snap-deltas/ how-to-guides/manage-snaps/snap-deltas
-using-the-api/ how-to-guides/manage-snaps/use-the-rest-api
-using-snapctl/ how-to-guides/manage-snaps/use-snapctl
+using-the-api/ how-to-guides/snap-development/use-the-rest-api
+using-snapctl/ how-to-guides/snap-development/use-snapctl
 fix-common-issues/ how-to-guides/manage-snaps/fix-common-issues
 snapd-testing/testing how-to-guides/snap-development/using-in-development-features
 debug-snaps/ explanation/how-snaps-work/debug-snaps
@@ -170,7 +170,6 @@ contacts-service-interface/ reference/interfaces/contacts-service-interface
 cifs-mount-interface/ reference/interfaces/cifs-mount-interface
 timer-string-format/ reference/operations/timer-string-format
 jack1-interface/ reference/interfaces/jack1-interface
-store-brand-accounts/ how-to-guides/manage-snaps/store-listing-branding
 installing-snap-on-kali/ tutorials/install-the-daemon/kali
 uio-interface/ reference/interfaces/uio-interface
 login-session-observe-interface/ reference/interfaces/login-session-observe-interface
