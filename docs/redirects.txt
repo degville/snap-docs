@@ -203,7 +203,6 @@ parallel-installs/ explanation/how-snaps-work/parallel-installs
 process-for-aliases-auto-connections-and-tracks/  reference/administration/process-for-aliases-auto-connections-and-tracks
 reviewing-classic-confinement-snaps/ reference/administration/reviewing-classic-confinement-snaps
 registering-your-app-name/ reference/development/registering-your-app-name
-releasing-to-the-snap-store/ how-to-guides/manage-snaps/store-listing-branding
 snap-documentation/ index.md
 snapcraft-docs-roadmap/ explanation/security/snapd-release-process
 account-control-interface/ reference/interfaces/account-control-interface
@@ -335,5 +334,4 @@ opengl-driver-libs-interface/ reference/interfaces/opengl-driver-libs-interface
 opengles-driver-libs-interface/ reference/interfaces/opengles-driver-libs-interface
 using-in-development-features/ explanation/snap-development/index
 snapd-api/ reference/development/rest-api/snapd-rest-api
-store-listing-branding/ how-to-guides/manage-snaps/store-listing-branding
 tab-completion/ explanation/snap-development/tab-completion
