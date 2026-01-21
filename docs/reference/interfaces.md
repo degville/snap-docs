@@ -65,7 +65,6 @@ The following column names are used:
 | [docker](interfaces/docker-interface) | start, stop, or manage Docker containers | Super privileged, Containers | no |
 | [docker-support](interfaces/docker-support-interface) | allows operating as the Docker daemon | Super privileged, Containers | no |
 | [dsp](interfaces/dsp-interface) | enables the control of digital signal processors (DSPs) | Hardware, Developer | no |
-| [dummy](interfaces/dummy-interface) | renamed to empty interface | System, Other | no |
 | [dvb](interfaces/dvb-interface) | allows access to all DVB devices and APIs | Hardware, Developer, Media | no |
 | [egl-driver](interfaces/egl-driver-interface) | access to EGL the graphics sub-system | Under development | no |
 | [empty](interfaces/empty-interface) | allows testing without additional permissions | System, Other | no |
