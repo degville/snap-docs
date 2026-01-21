@@ -9,7 +9,7 @@ An interface is most commonly used to enable a snap to access sound playback or 
 
 See [Supported interfaces](/reference/interfaces) for a comprehensive list of interfaces and what kind of access they permit.
 
-<h2 id='heading--slots-plugs'>Plugs and slots</h2>
+## Plugs and slots
 
 An interface provides a level of access to resources, such as audio playback, as defined by a *slot*. One or more snaps can access this resource by connecting a corresponding *plug* to the slot.
 
@@ -21,7 +21,7 @@ In the output to `snap connections vlc` (see above), every interface used by VLC
 
 For instance, the `audio-playback` interface connects VLC's audio-playback plug to the system's audio-playback slot so you can hear the sound it produces.
 
-<h2 id='heading--listing'>Listing interfaces</h2>
+## Listing interfaces
 
 You can see which snaps are using an interface with the `interface` command:
 
@@ -43,7 +43,7 @@ To see all the interfaces being used by your system, run `snap interface`. To se
 
 <!-- GUI interface connections are currently not available.
 
-<h2 id='heading--snap-store'>Using a GUI</h2>
+## Using a GUI
 
 The Ubuntu Software/[Snap Store](https://snapcraft.io/snap-store) desktop application is installed by default on Ubuntu and can be used to list an application's interfaces and to connect and disconnect them.
 
@@ -59,7 +59,7 @@ Each interface can now be connected or disconnected by selecting the toggle swit
 
 -->
 
-<h2 id='heading--listing'>Snap connections</h2>
+## Snap connections
 
 On the terminal, the _snap_ command provides more granular control over interface connections and which interfaces are operational on your system.
 
@@ -132,9 +132,7 @@ If a snap is installed prior to an interface being granted auto-connect permissi
 
 For more technical details on how interface auto-connections are processed, see [The interface auto-connection mechanism](/explanation/interfaces/interface-auto-connection).
 
-```{tip}
 See the _Auto-connect_ column in the [Supported interfaces](/reference/interfaces) table for which interfaces are connected automatically.
-```
 
 ### Manual connections
 
@@ -162,9 +160,7 @@ A slot and a plug can only be connected if they have the same interface name.
 
 Add the `--no-wait` option to _snap connect_ or _snap disconnect_ to run the process in the background and return immediately to the command prompt.
 
-```{tip}
 A successful connection grants any necessary permissions that may be required by the interface to function.
-```
 
 ## Disconnect interfaces
 
@@ -181,7 +177,7 @@ Following our previous example, you would disconnect *vlc:audio-record* with the
 sudo snap disconnect vlc:audio-record
 ```
 
-<h3 id='heading--forget'>Forget manual disconnections</h3>
+### Forget manual disconnections
 
 When an _automatic connection_ is manually disconnected, its disconnected state is retained after a `snap refresh`. This state is even stored **after a snap has been removed**, including removal with the `--purge` option.
 
