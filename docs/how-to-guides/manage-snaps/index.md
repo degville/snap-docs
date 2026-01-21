@@ -30,7 +30,7 @@ Use resource quotas <use-resource-quotas>
 Disk space awareness <disk-space-awareness>
 Set system options <set-system-options>
 Control services <control-services>
-Using components <using-components>
+Work with components <using-components>
 Configure snaps with confdb <configure-snaps-with-confdb>
 Manage validation sets <manage-validation-sets>
 Snap deltas <snap-deltas>

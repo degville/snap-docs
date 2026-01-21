@@ -1,5 +1,5 @@
 (how-to-guides-manage-snaps-using-components)=
-# Using components
+# Work with components
 
 A snap *component* is part of a snap that has been declared as optional. A snap component may then be either installed or not installed alongside its host snap.
 See [Components](/explanation/how-snaps-work/snap-components) for further details.
@@ -14,7 +14,7 @@ Components can be installed with the snap install command:
 snap install my-snap+comp1+comp2
 ```
 
-> ⓘ  The syntax `<snap_name>+<comp_1>+...+<comp_N>` will be used to refer to components from the command line.
+The syntax `<snap_name>+<comp_1>+...+<comp_N>` will be used to refer to components from the command line.
 
 The above command will install _my-snap_ alongside components _comp1_ and _comp2_. If the snap is already installed, the command will instead install only the missing components.
 
