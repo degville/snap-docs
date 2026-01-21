@@ -1,5 +1,5 @@
 (interfaces-online-accounts-service-interface)=
-# The online-accounts-service interface
+#  online-accounts-service interface
 
 `online-accounts-service` allows access to the Online Accounts service.
 

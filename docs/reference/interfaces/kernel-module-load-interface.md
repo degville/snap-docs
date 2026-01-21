@@ -1,5 +1,5 @@
 (interfaces-kernel-module-load-interface)=
-# The kernel-module-load interface
+#  kernel-module-load interface
 
 `kernel-module-load` provides the ability to load, or deny loading, specific kernel modules. This interface gives privileged access to the device.
 

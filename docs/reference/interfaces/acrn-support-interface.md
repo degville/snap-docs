@@ -1,5 +1,5 @@
 (interfaces-acrn-support-interface)=
-# The acrn-support interface
+#  acrn-support interface
 
 The `acrn` interface  allows access to, and control of, user virtual machines using the [ACRN hypervisor](https://projectacrn.org/).
 

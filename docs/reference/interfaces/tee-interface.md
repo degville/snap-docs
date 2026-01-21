@@ -1,5 +1,5 @@
 (interfaces-tee-interface)=
-# The tee interface
+#  tee interface
 
 The `tee` interface  permits access to Trusted Execution Environment (TEE) devices via the [TEE subsystem](https://www.kernel.org/doc/html/latest/staging/tee.html) in the Linux kernel.
 

@@ -1,5 +1,5 @@
 (interfaces-nvidia-drivers-support-interface)=
-# The nvidia-drivers-support interface
+#  nvidia-drivers-support interface
 
 The `nvidia-drivers-support` interface is for internal Ubuntu Core use only.
 

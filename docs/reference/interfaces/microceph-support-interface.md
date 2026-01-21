@@ -1,5 +1,5 @@
 (interfaces-microceph-support)=
-# The microceph-support interface
+#  microceph-support interface
 
 The `microceph-support` interface permits the [microceph](https://snapcraft.io/microceph) snap to operate as the  [MicroCeph](https://canonical-microceph.readthedocs-hosted.com/en/reef-stable/) service.
 

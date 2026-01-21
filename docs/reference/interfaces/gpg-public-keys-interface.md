@@ -1,5 +1,5 @@
 (interfaces-gpg-public-keys-interface)=
-# The gpg-public-keys interface
+#  gpg-public-keys interface
 
 `gpg-public-keys` allows reading GnuPG (GPG) public keys and non-sensitive user configuration values.
 

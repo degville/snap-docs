@@ -1,4 +1,4 @@
-# The nvme-control interface 
+#  nvme-control interface 
 
 The `nvme-control` interface allows snaps to manage and access NVMe controllers,alongside namespaces via in-kernel NVMe interfaces (PCI & NVMe-oF).
 

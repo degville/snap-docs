@@ -1,5 +1,5 @@
 (interfaces-shared-memory-interface)=
-# The shared-memory interface
+#  shared-memory interface
 
 The `shared-memory` interface allows two snaps to communicate with each other using a specific predefined shared-memory path or directory in `/dev/shm`, an area of a POSIX-compliant filesystem reserved for shared memory. The location is defined by one snap and connected to from another.
 

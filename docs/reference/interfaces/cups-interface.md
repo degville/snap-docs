@@ -1,5 +1,5 @@
 (interfaces-cups-interface)=
-# The cups interface
+#  cups interface
 
 The `cups` interface allows access to the CUPS socket for printing via the [`cups` snap](https://snapcraft.io/cups).
 

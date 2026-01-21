@@ -1,5 +1,5 @@
 (interfaces-login-session-observe-interface)=
-# The login-session-observe interface
+#  login-session-observe interface
 
 `login-session-observe` allows reading login and session information.
 

@@ -1,5 +1,5 @@
 (interfaces-can-bus-interface)=
-# The can-bus interface
+#  can-bus interface
 
 `can-bus` allows access to the Controller Area Network (CAN) bus.
 

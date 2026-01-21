@@ -1,4 +1,4 @@
-# The kerberos-tickets interface
+#  kerberos-tickets interface
 
 The `kerberos-tickets` interface enables access to [Kerberos tickets](https://web.mit.edu/kerberos/krb5-latest/doc/user/tkt_mgmt.html) in `/tmp`
 

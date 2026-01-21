@@ -1,5 +1,5 @@
 (interfaces-dvb-interface)=
-# The dvb interface
+#  dvb interface
 
 `dvb` allows access to all DVB (Digital Video Broadcasting) devices and APIs.
 

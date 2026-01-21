@@ -1,5 +1,5 @@
 (interfaces-unity7-interface)=
-# The unity7 interface
+#  unity7 interface
 
 `unity7` allows interacting with Unity 7 services.
 

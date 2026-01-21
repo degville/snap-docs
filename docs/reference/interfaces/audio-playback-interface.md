@@ -1,5 +1,5 @@
 (interfaces-audio-playback-interface)=
-# The audio-playback interface
+#  audio-playback interface
 
 The `audio-playback` interface allows a snap to play sounds and music, via the supporting audio service running on the system, such as PulseAudio. It's used by many applications and utilities, and as such, is enabled by default.
 

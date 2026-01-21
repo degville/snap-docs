@@ -1,5 +1,5 @@
 (interfaces-pcscd-interface)=
-# The pcscd interface
+#  pcscd interface
 
 The `pcscd` interface  permits communication with [PCSD](https://manpages.ubuntu.com/manpages/focal/en/man8/pcscd.8.html), the PC/SC smart card daemon typically used to access smart cards and secure tokens via the SCard API.
 

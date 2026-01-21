@@ -1,5 +1,5 @@
 (interfaces-adb-support-interface)=
-# The adb-support interface
+#  adb-support interface
 
 `adb-support` allows a snap to operating the Android Debug Bridge service, providing privileged access to an Android device.
 

@@ -1,5 +1,5 @@
 (interfaces-allegro-vcu-interface)=
-# The allegro-vcu interface
+#  allegro-vcu interface
 
 The `allegro-vcu` interface enables access to the Allegro Video Core Unit, using a kernel module which directly controls hardware on the device.
 

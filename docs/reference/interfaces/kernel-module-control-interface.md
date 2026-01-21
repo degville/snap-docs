@@ -1,5 +1,5 @@
 (interfaces-kernel-module-control-interface)=
-# The kernel-module-control interface
+#  kernel-module-control interface
 
 `kernel-module-control` provides the ability to insert, remove and query kernel modules. This interface gives privileged access to the device.
 

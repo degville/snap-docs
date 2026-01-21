@@ -1,4 +1,4 @@
-# The dm-multipath interface 
+#  dm-multipath interface 
 
 The `dm-multipath` interface allows snaps to manage and access device-mapper multipath maps by communicating with the multipathd daemon. It is intended for storage orchestration software that needs to list, create, reload and remove multipath devices and react to path state changes. Direct unrestricted access to arbitrary raw block devices is not granted; normal snap device cgroup mediation still applies.
 

@@ -1,5 +1,5 @@
 (interfaces-snap-themes-control-interface)=
-# The snap-themes-control interface
+#  snap-themes-control interface
 
 The `snap-themes-control` interface permits the use of snapd's theme installation API.
 

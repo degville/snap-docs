@@ -1,5 +1,5 @@
 (interfaces-gsettings-interface)=
-# The gsettings interface
+#  gsettings interface
 
 `gsettings` provides access to any GSettings item for the current user.
 

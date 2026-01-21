@@ -1,5 +1,5 @@
 (interfaces-docker-interface)=
-# The docker interface
+#  docker interface
 
 The `docker` interface allows client access to the Docker socket. Use this interface when you want to interact with the Docker daemon.
 

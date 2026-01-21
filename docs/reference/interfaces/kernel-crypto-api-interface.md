@@ -1,5 +1,5 @@
 (interfaces-kernel-crypto-api-interface)=
-# The kernel-crypto-api interface
+#  kernel-crypto-api interface
 
 The `kernel-crypto-api` interface allows access to the [Linux kernel crypto API](https://www.kernel.org/doc/html/v4.11/crypto/index.html), which itself provides a set of cryptographic ciphers and other data transformation mechanisms.
  

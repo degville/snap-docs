@@ -1,5 +1,5 @@
 (interfaces-joystick-interface)=
-# The joystick interface
+#  joystick interface
 
 `joystick` allows access to joystick devices.
 

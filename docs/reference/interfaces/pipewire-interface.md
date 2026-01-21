@@ -1,5 +1,5 @@
 (interfaces-pipewire-interface)=
-# The pipewire interface
+#  pipewire interface
 
 The `pipewire` interface allows full access to the user's pipewire socket, for those cases where the available portals are not enough, like when running a snapped desktop environment.
 

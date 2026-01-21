@@ -1,5 +1,5 @@
 (interfaces-system-packages-doc)=
-# The system-packages-doc interface
+#  system-packages-doc interface
 
 The `system-packages-doc` interface permits access file system locations used to store system documentation. These include the following
 

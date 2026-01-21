@@ -1,5 +1,5 @@
 (interfaces-userns-interface)=
-# The userns interface
+#  userns interface
 
 The `userns` interface permits a snap to create new user [namespaces](https://man7.org/linux/man-pages/man7/namespaces.7.html). This is a system-level interface, and is not designed to be used with higher level snap applications.
 

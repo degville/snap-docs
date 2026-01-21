@@ -1,5 +1,5 @@
 (interfaces-remoteproc-interface)=
-# The remoteproc interface
+#  remoteproc interface
 
 The `remoteproc` interface enables developers to interact with the [Remote Processor Framework](https://docs.kernel.org/staging/remoteproc.html) of the Linux kernel, typically allowing them to upload firmware to a SoC embedded microcontroller.
 

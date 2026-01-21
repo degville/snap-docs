@@ -1,5 +1,5 @@
 (interfaces-dbus-interface)=
-# The dbus interface
+#  dbus interface
 
 `dbus` enables ownership of a specific name on the session or system D-Bus.
 

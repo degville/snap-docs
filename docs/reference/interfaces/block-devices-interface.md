@@ -1,5 +1,5 @@
 (interfaces-block-devices-interface)=
-# The block-devices interface
+#  block-devices interface
 
 `block-devices` provides the ability to perform operations on raw disk block devices (e.g. `/dev/sda`, `/dev/mmcblk0`). This interface grants privileged access to the device.
 

@@ -1,5 +1,5 @@
 (interfaces-gpio-control-interface)=
-# The gpio-control interface
+#  gpio-control interface
 
 The `gpio-control` interface provides privileged access to all aspects of GPIO pins. For accessing specific GPIO pins with limited scope, see [The gpio interface](/interfaces/gpio-interface) instead.
 

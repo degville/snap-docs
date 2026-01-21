@@ -1,5 +1,5 @@
 (interfaces-openvswitch-interface)=
-# The openvswitch interface
+#  openvswitch interface
 
 `openvswitch` allows access to the *openvswitch* socket, providing privileged access to control Open vSwitch on the host.
 

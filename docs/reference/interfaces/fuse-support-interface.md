@@ -1,5 +1,5 @@
 (interfaces-fuse-support-interface)=
-# The fuse-support interface
+#  fuse-support interface
 
 `fuse-support` allows access to FUSE filesystems.  
 

@@ -1,5 +1,5 @@
 (interfaces-scsi-generic-interface)=
-# The scsi-generic interface
+#  scsi-generic interface
 
 The `scsi-generic` interface allows read and write access to [SCSI Generic driver](https://www.kernel.org/doc/html/latest/scsi/scsi-generic.html) (sg)  devices.
  

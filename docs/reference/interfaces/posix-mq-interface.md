@@ -1,5 +1,5 @@
 (interfaces-posix-mq-interface)=
-# The posix-mq interface
+#  posix-mq interface
 
 The `posix-mq` interface enables inter-process communication (IPC) messages to be created, sent and received between snaps that need to use [POSIX message queues](https://man7.org/linux/man-pages/man7/mq_overview.7.html). 
 

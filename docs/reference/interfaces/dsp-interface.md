@@ -1,5 +1,5 @@
 (interfaces-dsp-interface)=
-# The dsp interface
+#  dsp interface
 
 The `dsp` interface allows for the control of digital signal processors (DSPs) on specific devices and systems (such as specific _Ambarella_ devices)
 

@@ -1,5 +1,5 @@
 (interfaces-netlink-connector-interface)=
-# The netlink-connector interface
+#  netlink-connector interface
 
 The `netlink-connector` interface allows communication through the kernel Netlink connector.
 

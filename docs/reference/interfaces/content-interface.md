@@ -1,5 +1,5 @@
 (interfaces-content-interface)=
-# The content interface
+#  content interface
 
 The `content` interface allows sharing code and data from a slot on a _producer_ snap to one or more plugs on _consumer_ snaps. It's often used to share common themes and icons from a producer snap, for example, to many snapped applications.
 

@@ -1,5 +1,5 @@
 (interfaces-audio-record-interface)=
-# The audio-record interface
+#  audio-record interface
 
 The `audio-record` interface allows an application to access your audio recording hardware, such as a microphone, via your system's audio service, such as PulseAudio. It's disabled by default.
 

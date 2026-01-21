@@ -1,5 +1,5 @@
 (interfaces-power-control-interface)=
-# The power-control interface
+#  power-control interface
 
 The `power-control` interface allows the reading and setting of system power settings.
  

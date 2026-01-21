@@ -1,5 +1,5 @@
 (interfaces-gpg-keys-interface)=
-# The gpg-keys interface
+#  gpg-keys interface
 
 `gpg-keys` allows reading GNU Privacy Guard (GPG) user configuration and keys as well as enabling GPG's random seed to be updated.
 

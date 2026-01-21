@@ -1,5 +1,5 @@
 (interfaces-lxd-support-interface)=
-# The lxd-support interface
+#  lxd-support interface
 
 `lxd-support` enables operating as the LXD service. This interface can currently only be established with the upstream LXD project.
 

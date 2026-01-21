@@ -1,5 +1,5 @@
 (interfaces-display-control-interface)=
-# The display-control interface
+#  display-control interface
 
 `display-control` allows configuring display parameters such as brightness.
 

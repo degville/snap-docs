@@ -1,5 +1,5 @@
 (interfaces-dm-crypt-interface)=
-# The dm-crypt interface
+#  dm-crypt interface
 
 The `dm-crypt`  interface enables the following access functions to  [dm-crypt](https://www.kernel.org/doc/html/latest/admin-guide/device-mapper/dm-crypt.html) encrypted external block storage devices:
 

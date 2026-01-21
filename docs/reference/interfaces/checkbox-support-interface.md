@@ -1,4 +1,4 @@
-# The checkbox-support interface
+#  checkbox-support interface
 
 The `checkbox-support` interface is a privileged interface designed for the Canonical checkbox test and certification system. The system is able to run a wide collection of system tests and is thus allowed to execute any command mostly bypassing the sandbox.
 

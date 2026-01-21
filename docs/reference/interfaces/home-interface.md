@@ -1,5 +1,5 @@
 (interfaces-home-interface)=
-# The home interface
+#  home interface
 
 The `home` [interface](/) allows access to non-hidden files owned by the user in the user's home ($HOME) directory where a user normally stores their personal files and documents.
 

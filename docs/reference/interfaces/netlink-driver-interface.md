@@ -1,5 +1,5 @@
 (interfaces-netlink-driver-interface)=
-# The netlink-driver interface
+#  netlink-driver interface
 
 The `netlink-driver` interface allows a kernel module to expose itself to user-space via the Netlink protocol, typically to transfer information between the kernel and user-space processes.
 

@@ -1,5 +1,5 @@
 (interfaces-appstream-metadata-interface)=
-# The appstream-metadata interface
+#  appstream-metadata interface
 
 [AppStream ](https://www.freedesktop.org/software/appstream/docs/) is a metadata standard used to describe a common set software components. The `appstream-metadata` interface allows access to AppStream metadata from the host system.
 

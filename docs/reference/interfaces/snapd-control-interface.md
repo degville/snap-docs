@@ -1,5 +1,5 @@
 (interfaces-snapd-control-interface)=
-# The snapd-control interface
+#  snapd-control interface
 
 The `snapd-control` interface enables snap management, such as snap installation, removal and refresh-control by communicating with the snapd daemon.
 

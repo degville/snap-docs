@@ -1,5 +1,5 @@
 (interfaces-raw-usb-interface)=
-# The raw-usb interface
+#  raw-usb interface
 
 `raw-usb`  allows access to all connected USB devices via a raw interface.
 

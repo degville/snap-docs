@@ -1,5 +1,5 @@
 (interfaces-xilinx-dma)=
-# The xilinx-dma interface
+#  xilinx-dma interface
 
 The `xilinx-dma` interface allows access to [Xilinx](https://en.wikipedia.org/wiki/Xilinx) DMA IP from a connected [PCIe card](https://github.com/Xilinx/dma_ip_drivers/) on a device typically running [Ubuntu Core](https://snapcraft.io/docs/glossary#heading--ubuntu-core).
 

@@ -1,5 +1,5 @@
 (interfaces-raw-input-interface)=
-# The raw-input interface
+#  raw-input interface
 
 The `raw-input` interface allows access to raw input devices.
 

@@ -1,5 +1,5 @@
 (interfaces-microstack-support-interface)=
-# The microstack-support interface
+#  microstack-support interface
 
 The `microstack-support` interface enables multiple service access for the _Microstack infrastructure_. It's used by the [Microstack](https://microstack.run/) snap, a full OpenStack deployment within a single snap package.
  

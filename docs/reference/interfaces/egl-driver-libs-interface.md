@@ -1,4 +1,4 @@
-# The egl-driver-libs interface
+#  egl-driver-libs interface
 
 The `egl-driver-libs` interface permits access to EGL the graphics sub-system.
 

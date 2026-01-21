@@ -1,5 +1,5 @@
 (interfaces-thumbnailer-service-interface)=
-# The thumbnailer-service interface
+#  thumbnailer-service interface
 
 `thumbnailer-service` allows operating as, or interacting with, the system Thumbnailer service, a DBus service for creating thumbnail images from local media files.
 
