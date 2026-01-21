@@ -4,10 +4,6 @@
 Snap can be installed on a [Raspberry Pi](https://www.raspberrypi.org/) running the latest version of [Raspberry Pi OS](https://www.raspberrypi.org/downloads/raspberry-pi-os/) by opening a terminal and typing a couple of commands.
 
 
-```{tip}
-The default terminal, also known as a command line, is called *LXTerminal* and it's launched from its icon on the desktop. Take a look at the [official Raspberry Pi documentation](https://www.raspberrypi.org/documentation/usage/terminal/) if you're unfamiliar with the terminal.
-```
-
 Enter the following into the terminal:
 
 ```bash
