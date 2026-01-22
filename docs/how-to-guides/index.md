@@ -30,7 +30,18 @@ The vast majority of snap users and developers experience very few issues, but a
 
 * [Fix common issues](/how-to-guides/manage-snaps/fix-common-issues): If you do run into problems, find common solutions here.
 * [Test snapd fixes](/how-to-guides/snap-development/test-snapd-fixes): Run a bugfix build of the snap daemon.
-* [Debug running snaps](how-to-guides/snap-development/debug-snaps): Test bugfix releases of snapd.
+* [Debug running snaps](/how-to-guides/snap-development/debug-snaps): Test bugfix releases of snapd.
+
+## Snap development
+
+Extend snap functionality with API access, internal tools, and customised environments for your applications and devices.
+
+* [Use the REST API](snap-development/use-the-rest-api): how to access the SnapD REST API.
+* [Use snapctl](snap-development/use-snapctl): use the snapctl tool within a snap application.
+* [Test snapd fixes](snap-development/test-snapd-fixes): test out the latest release of the snap daemon.
+* [Debug snaps](snap-development/debug-snaps): solve issues with snapped application.
+* [snap try](snap-development/snap-try): test a snap package on your system.
+* [Using in-development features](snap-development/using-in-development-features.md): learn how to use cutting edge snap features.
 
 
 ```{toctree}

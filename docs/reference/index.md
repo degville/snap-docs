@@ -19,7 +19,7 @@ Deepen your understanding of how snaps can run on all kinds of devices, in all k
 * [Network requirements](/reference/administration/network-requirements): What network access snaps require to operate correctly.
 * [Distribution support](/reference/administration/distribution-support): The status of current builds for Linux distributions with snap support.
 
-## Development
+## Snap development
 
 Extend snap functionality with API access and customised environments for your applications and devices.
 
