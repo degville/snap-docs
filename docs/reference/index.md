@@ -9,8 +9,8 @@ Details that help with the day-to-day operations of working with snaps.
 
 * [Glossary](glossary): Terms and definitions specific to the world of snaps.
 * [Interfaces](interfaces): Every interface alongside their most important attributes.
-* [Snap system architecture](/reference/operations/system-architecture): What snapd uses to manage confinement and security. 
-* [System options](/reference/operations/system-options): Configurations options for the system and native snap devices.
+* [Snap system architecture](/reference/administration/system-architecture): What snapd uses to manage confinement and security. 
+* [System options](/reference/administration/system-options): Configurations options for the system and native snap devices.
 
 ## Administration
 
@@ -42,6 +42,5 @@ YAML schemas define exactly what a device, kernel and snap is capable of.
 Glossary <glossary>
 Release notes <release-notes>
 Interfaces <interfaces/index>
-Operations <operations/index>
 Administration <administration/index>
 Snap development <development/index>

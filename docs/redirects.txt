@@ -35,7 +35,7 @@ commands-and-aliases/ how-to-guides/manage-snaps/apps-and-aliases
 snapshots/ how-to-guides/manage-snaps/create-data-snapshots
 quota-groups/ how-to-guides/manage-snaps/use-resource-quotas
 disk-space-awareness/ how-to-guides/manage-snaps/disk-space-awareness
-set-system-options/ reference/operations/system-options
+set-system-options/ reference/administration/system-options
 service-management/management how-to-guides/manage-snaps/control-services
 using-components/ how-to-guides/manage-snaps/using-components
 configure-with-confdb/ reference/interfaces/confdb-interface
@@ -48,8 +48,8 @@ snapd-testing/testing how-to-guides/snap-development/using-in-development-featur
 debug-snaps/ explanation/how-snaps-work/debug-snaps
 snap-reference/ reference
 glossary/ reference/glossary
-system-options/ reference/operations/system-options
-system-architecture/ reference/operations/system-architecture
+system-options/ reference/administration/system-options
+system-architecture/ reference/administration/system-architecture
 supported-interfaces/ reference/interfaces
 hardware-interfaces/ explanation/interfaces/hardware-interfaces
 media-interfaces/  reference/interfaces
@@ -153,7 +153,7 @@ raw-input-interface/ reference/interfaces/raw-input-interface
 dsp-interface/ reference/interfaces/dsp-interface
 sd-control-interface/ reference/interfaces/sd-control-interface
 netlink-driver-interface/ reference/interfaces/netlink-driver-interface
-data-locations/ reference/operations/data-locations
+data-locations/ reference/administration/data-locations
 snap-try/ how-to-guides/snap-development/snap-try
 uinput-interface/ reference/interfaces/uinput-interface
 system-source-code-interface/ reference/interfaces/system-source-code-interface
@@ -168,7 +168,7 @@ multipass-support-interface/ reference/interfaces/multipass-support-interface
 login-session-control-interface/ reference/interfaces/login-session-control-interface
 contacts-service-interface/ reference/interfaces/contacts-service-interface
 cifs-mount-interface/ reference/interfaces/cifs-mount-interface
-timer-string-format/ reference/operations/timer-string-format
+timer-string-format/ reference/administration/timer-string-format
 jack1-interface/ reference/interfaces/jack1-interface
 installing-snap-on-kali/ tutorials/install-the-daemon/kali
 uio-interface/ reference/interfaces/uio-interface
