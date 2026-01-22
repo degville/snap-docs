@@ -49,7 +49,7 @@ debug-snaps/ explanation/how-snaps-work/debug-snaps
 snap-reference/ reference
 glossary/ reference/glossary
 system-options/ reference/administration/system-options
-system-architecture/ reference/administration/system-architecture
+system-architecture/ reference/system-architecture
 supported-interfaces/ reference/interfaces
 hardware-interfaces/ explanation/interfaces/hardware-interfaces
 media-interfaces/  reference/interfaces
