@@ -10,7 +10,9 @@
 
 See [How to configure snaps with confdb](/how-to-guides/manage-snaps/configure-snaps-with-confdb) for instructions on using confdb with your own snaps, and read on for specific implementation details.
 
-> ⓘ  Confdb is currently considered an [Experimental feature](https://forum.snapcraft.io/t/experimental-features/41241) and implementation details may change as development progresses.
+```{info}
+Confdb is currently considered an [Experimental feature](https://forum.snapcraft.io/t/experimental-features/41241) and implementation details may change as development progresses.
+```
 
 ## Confdb views
 
@@ -232,7 +234,7 @@ The confdb interface plug can have one other attribute, `role`, which is optiona
 
 One of the key aspects of the custodian role relates to ephemeral data which we’ll cover in the next section.
 
-## Ephemeral Data
+## Ephemeral data
 
 In the context of confdb, ephemeral data is configuration data for which the authoritative version is stored outside of snapd. Snapd may retain data, but this should only be considered a cache, while the custodians are responsible for loading and storing the authoritative version during read and write accesses.
 
