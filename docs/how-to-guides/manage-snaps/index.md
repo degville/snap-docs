@@ -4,6 +4,9 @@
 Outside of whatever facilities a snapped application may provide, additional snap functionality includes  data snapshots, usage quotas and control over if when when a service runs.
 
 ## System configuration
+
+The snap system has been designed to look after itself with automatic security and update policies. However, these elements, and many others, can also be configured and managed manually.
+
 - [Connect interfaces](connect-interfaces): Control exactly what a snap can access, and what it can’t.
 - [Manage updates](manage-updates): Control when snaps update, or hold an update indefinitely .
 - [Configure snaps](configure-snaps): Learn how to set options for your servers and daemons.
