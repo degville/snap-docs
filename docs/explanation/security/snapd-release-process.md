@@ -12,15 +12,9 @@ The difference between a major and minor release is its planning, preparation an
 
 The differences between a major release and subsequent minor release (eg. 2.53 -> 2.53.1) are as small and targeted as possible, with major code refactoring and new features omitted. This is not always possible, because sometimes bugs or features are complex, but it’s our overarching goal.
 
-> Major unit releases, such as between snapd 2.x and 3.x, are extremely rare and no further unit releases are currently planned.
+Major unit releases, such as between snapd 2.x and 3.x, are extremely rare and no further unit releases are currently planned.
 
----
-
-- [Step-by-step release process](#heading--steps)
-- [Version number mapping](#heading--mapping)
-- [Release stability and planning](#heading--planning)
-
- <h2 id='heading--steps'>Step-by-step release process</h2>
+## Step-by-step release process
 
 The following is the typical release process for snapd, starting with creating a release branch and tagging it for release:
 
@@ -49,7 +43,7 @@ The following is the typical release process for snapd, starting with creating a
 
 10. We now start the SRU process to release an updated version of the Debian package of snapd to Ubuntu releases in the main archive, including doing ESM builds/uploads as necessary.
 
-<h2 id='heading--mapping'>Version number mapping</h2>
+## Version number mapping
 
 The version number of the snapd snap in its stable channel will always map 1:1 with the version number of a released revision of the snapd or core snap.
 
@@ -61,7 +55,7 @@ However, the edge channel version number of the snapd snap does not map 1:1 with
 
 The version number of the core snap released to the edge channel is slightly more complicated, as the git commit it displays is the commit of the snapd-vendor project in launchpad, which includes the snapd source code and the vendored Go dependencies.
 
-<h2 id='heading--planning'>Release stability and planning</h2>
+## Release stability and planning
 
 For production use, the edge channel is not recommended. Functionality may break in unstable ways that may not be upgradeable between one release and the next. A stable channel release, by comparison, will remain backwards compatible with the previous release to the extent that we are technically able to while still fixing bugs or security issues.
 
