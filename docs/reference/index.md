@@ -44,4 +44,4 @@ Release notes <release-notes>
 Interfaces <interfaces/index>
 Operations <operations/index>
 Administration <administration/index>
-Development <development/index>
+Snap development <development/index>
