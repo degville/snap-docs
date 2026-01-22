@@ -6,7 +6,7 @@ The `microceph` interface permits access to  the [MicroCeph](https://canonical-m
 
 ## Developer details
 
-**[Auto-connect](/t/interface-management/6154#heading--auto-connections)**: no</br>
+**[Auto-connect](/explanation/interfaces/interface-auto-connection)**: no</br>
 **[Super-privileged](/)**: yes</br>
 
 ### Code examples

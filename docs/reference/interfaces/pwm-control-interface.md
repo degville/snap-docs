@@ -9,7 +9,7 @@ interfaces: add pwm-control interface
 
 The `pwm-control` interface can potentially impact the system and other snaps, and allows privileged access to hardware. See [The pwm interface](/interfaces/pwm-interface) to access a specific channel.
 
-**[Auto-connect](/t/interface-management/6154#heading--auto-connections)**: no</br>
+**[Auto-connect](/explanation/interfaces/interface-auto-connection)**: no</br>
 **[Super-privileged](/t/the-interface-connection-mechanism/20179#heading--super)**: yes
 
 

@@ -6,7 +6,7 @@ The `snap-themes-control` interface permits the use of snapd's theme installatio
 
 ## Developer details
 
-**[Auto-connect](/t/interface-management/6154#heading--auto-connections)**: no</br>
+**[Auto-connect](/explanation/interfaces/interface-auto-connection)**: no</br>
 **[Super-privileged](/)**: yes</br>
 
 <h3 id='heading--endpoint-access'>Endpoint access permissions</h3>

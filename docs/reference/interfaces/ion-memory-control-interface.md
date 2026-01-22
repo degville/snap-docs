@@ -8,7 +8,7 @@ This interface is primarily intended to be used with [Ubuntu Core](/t/glossary/1
 
 ## Developer details
 
-**[Auto-connect](/t/interface-management/6154#heading--auto-connections)**: no</br>
+**[Auto-connect](/explanation/interfaces/interface-auto-connection)**: no</br>
 **[Super-privileged](/)**: yes</br>
 
 The device is expected in the following location:

@@ -6,8 +6,8 @@ For further details on interfaces, see [How to connect interfaces](/how-to-guide
 
 ## Developer details 
 
-**[Auto-connect](/t/interface-management/6154#heading--auto-connections)**: no</br>
-**[Super-privileged](/t/super-privileged-interfaces/34740)**: yes</br>
+**[Auto-connect](/explanation/interfaces/interface-auto-connection)**: no</br>
+**[Super-privileged](/explanation/interfaces/super-privileged-interfaces)**: yes</br>
 
 ### Code examples
 

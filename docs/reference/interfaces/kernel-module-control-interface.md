@@ -3,7 +3,7 @@
 
 `kernel-module-control` provides the ability to insert, remove and query kernel modules. This interface gives privileged access to the device.
 
-**[Auto-connect](/t/interface-management/6154#heading--auto-connections)**: no</br>
+**[Auto-connect](/explanation/interfaces/interface-auto-connection)**: no</br>
 **[Super-privileged](/)**: yes
 
 Consumers of this interface require a [snap declaration](https://forum.snapcraft.io/t/process-for-aliases-auto-connections-and-tracks/455/) for distribution via the Snap Store.

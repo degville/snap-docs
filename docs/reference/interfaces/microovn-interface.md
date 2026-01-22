@@ -10,7 +10,7 @@ See the [MicroOVN documentation](https://canonical-microovn.readthedocs-hosted.c
 
 ## Developer details
 
-**[Auto-connect](/t/interface-management/6154#heading--auto-connections)**: no</br>
+**[Auto-connect](/explanation/interfaces/interface-auto-connection)**: no</br>
 **[Super-privileged](/)**: yes</br>
 
 With the MicroOVN snap installed, the socket is located at the following location:</br> `/var/snap/microovn/common/state/control.socket`

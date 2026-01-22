@@ -8,7 +8,7 @@ This interface enables the higher level [polkit interface](/interfaces/polkit-in
 
 ## Developer details
 
-**[Auto-connect](/t/interface-management/6154#heading--auto-connections)**: no</br>
+**[Auto-connect](/explanation/interfaces/interface-auto-connection)**: no</br>
 **[Super-privileged](/)**: yes</br>
 
 This interface primarily intended for systems running Ubuntu Core. This is because polkit agents make use of a _setuid_ executable, `polkit-agent-helper-1`, which uses PAM. Outside of Ubuntu Core, the PAM environment inside the sandbox is unlikely to match that of the host system on classic. The only Ubuntu Core system currently shipping polkitd  is the Ubuntu Core Desktop.

@@ -26,7 +26,7 @@ For example, if this interface is used to access `/opt/ros/noetic/robot-urdf/mod
 
 ## Developer details
 
-**[Auto-connect](/t/interface-management/6154#heading--auto-connections)**: yes</br>
+**[Auto-connect](/explanation/interfaces/interface-auto-connection)**: yes</br>
 
 ### Code examples
 

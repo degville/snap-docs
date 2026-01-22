@@ -5,7 +5,7 @@ The `xilinx-dma` interface allows access to [Xilinx](https://en.wikipedia.org/wi
 
 ## Developer details 
 
-**[Auto-connect](/t/interface-management/6154#heading--auto-connections)**: no</br>
+**[Auto-connect](/explanation/interfaces/interface-auto-connection)**: no</br>
 **[Super-privileged](/)**: yes</br>
 
 ### Code examples

@@ -16,7 +16,7 @@ See [Interface management](/) and [Supported interfaces](/interfaces/index) for 
 
 ## Developer details
 
-**[Auto-connect](/t/interface-management/6154#heading--auto-connections)**: no</br>
+**[Auto-connect](/explanation/interfaces/interface-auto-connection)**: no</br>
 **[Super-privileged](/)**: yes</br>
 
 For distribution via the [Snap store ](https://snapcraft.io/store), consumers of this interface require an approved [snap declaration](https://forum.snapcraft.io/t/process-for-aliases-auto-connections-and-tracks/455/).

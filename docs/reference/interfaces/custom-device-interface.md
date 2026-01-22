@@ -49,7 +49,7 @@ Requires snapd version *2.55+*, while `udev-tagging.for-device` attribute suppor
 
 ## Developer details
 
-**[Auto-connect](/t/interface-management/6154#heading--auto-connections)**: no</br>
+**[Auto-connect](/explanation/interfaces/interface-auto-connection)**: no</br>
 **[Super-privileged](/)**: yes</br>
 
 **Attributes**:

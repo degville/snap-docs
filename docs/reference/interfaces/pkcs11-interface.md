@@ -6,7 +6,7 @@ The `pkcs11` interface enables the [PKCS#11 Cryptographic Token Interface Standa
 
 ## Developer details
 
-**[Auto-connect](/t/interface-management/6154#heading--auto-connections)**: no</br>
+**[Auto-connect](/explanation/interfaces/interface-auto-connection)**: no</br>
 **[Super-privileged](/)**: yes</br>
 
 ### Code examples
