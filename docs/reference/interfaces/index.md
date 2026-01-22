@@ -93,7 +93,7 @@ The following column names are used:
 | [i2c](i2c-interface) | access i²c devices | System, Hardware | no |
 | [iio](iio-interface) | access IIO devices | System, Hardware | no |
 | [intel-mei](intel-mei-interface) | access to the Intel MEI management interface | System, Firmware | no |
-| [intel-qat](intel-qat-interface) | provides permissions for Intel QAT devices | Hardware | no  | 
+| [intel-qat](intel-qat-interface) | provides permissions for Intel QAT devices | Hardware | no  |
 | [io-ports-control](io-ports-control-interface) | allows access to all I/O ports | System, | no |
 | [ion-memory-control](ion-memory-control-interface) | access Android's ION memory allocator | Super privileged, System  | no |
 | [iscsi-initiator](iscsi-initiator-interface) |  discover, connect to, and manage iSCSI targets for block storage access | Super privileged | no |
@@ -188,7 +188,7 @@ The following column names are used:
 | [shared-memory](shared-memory-interface) | enables two snaps to access the same shared memory | Super privileged, IPC | no by default, yes with snaps from the same publisher |
 | [shutdown](shutdown-interface) | restart or power off the device | Super privileged, System, Power | no |
 | [snap-fde-control](snap-fde-control-interface) | allows access to the FDE subset of snapd’s system-volumes API | Super privileged | no |
-| [snap_interfaces_requests_control](snap_interfaces_requests_control-interface) | enables the prompting API and its access to prompting-related notice types | System | no |
+| [snap-interfaces-requests-control](snap-interfaces-requests-control-interface) | enables the prompting API and its access to prompting-related notice types | System | no |
 | [snap-refresh-control](snap-refresh-control-interface) | permits bespoke snap refresh control | Super privileged, Packaging | no |
 | [snap-refresh-observe](snap-refresh-observe-interface) | enables the tracking of snap refreshes | Super privileged, Packaging | no |
 | [snap-themes-control](snap-themes-control-interface) | permits the use of snapd’s theme installation API | Super privileged | no |
@@ -226,7 +226,7 @@ The following column names are used:
 | [vcio](vcio-interface) | access a Raspberry Pi's VideoCore multimedia processor | Video, Graphics, Ubuntu Core | no |
 | [wayland](wayland-interface) | access compositors providing the Wayland protocol | Display | yes |
 | [x11](x11-interface) | monitor mouse/keyboard input and graphics output of other apps | Display | yes |
-| [xilinx_dma](xilinx-dma-interface) | allows access to Xilinx DMA IP from a connected PCIe card | Ubuntu Core, Super privileged | no |
+| [xilinx-dma](xilinx-dma-interface) | allows access to Xilinx DMA IP from a connected PCIe card | Ubuntu Core, Super privileged | no |
 
 
 ```{toctree}

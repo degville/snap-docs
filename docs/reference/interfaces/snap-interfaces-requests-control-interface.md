@@ -1,7 +1,7 @@
 (interfaces-snap-interfaces-requests-control)=
 #  snap-interfaces-requests-control interface
 
-The `snap_interfaces_requests_control` interface enables the prompting API and its access to prompting-related notice types. This is used internally by snapd to request and manage system resource access.
+The `snap-interfaces-requests-control` interface enables the prompting API and its access to prompting-related notice types. This is used internally by snapd to request and manage system resource access.
 
 ```{tip}
 
