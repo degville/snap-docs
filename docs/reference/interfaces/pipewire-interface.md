@@ -5,7 +5,7 @@ The `pipewire` interface allows full access to the user's pipewire socket, for t
 
 ## **Developer details**
 
-**[Auto-connect](/t/interface-management/6154#heading--auto-connections)**: no</br>
+**[Auto-connect](/explanation/interfaces/interface-auto-connection)**: no</br>
 
 ## **Path Access**
 

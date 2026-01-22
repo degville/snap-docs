@@ -6,7 +6,7 @@ The `desktop-launch` interface allows [strictly confined](/) snaps to identify a
 
 ## Developer details
 
-**[Auto-connect](/t/interface-management/6154#heading--auto-connections)**: no</br>
+**[Auto-connect](/explanation/interfaces/interface-auto-connection)**: no</br>
 **[Super-privileged](/)**: yes</br>
 
 <h3 id='heading--endpoint-access'>Endpoint access permissions</h3>

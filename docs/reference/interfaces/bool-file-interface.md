@@ -25,7 +25,7 @@ slots:
 ## Developer details
 
 
-**[Auto-connect](/t/interface-management/6154#heading--auto-connections)**: no</br>
+**[Auto-connect](/explanation/interfaces/interface-auto-connection)**: no</br>
 
 **Attributes**:
  * `path` (slot): path to the file in _sysfs_</br>

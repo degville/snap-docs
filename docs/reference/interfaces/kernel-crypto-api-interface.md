@@ -7,7 +7,7 @@ The `kernel-crypto-api` interface allows access to the [Linux kernel crypto API]
 ## Developer details
 
 
-**[Auto-connect](/t/interface-management/6154#heading--auto-connections)**: no</br>
+**[Auto-connect](/explanation/interfaces/interface-auto-connection)**: no</br>
 
 The kernel crypto API has been designed to be used by any process such that using it requires no special privileges. As this provides a kernel surface, and has a CVE history, this interface needs to be manually connected.
 

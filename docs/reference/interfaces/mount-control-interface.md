@@ -17,7 +17,7 @@ See [Interface management](/) and [Supported interfaces](/interfaces/index) for 
 
 <h2 id=`heading--dev-details`>Developer details </h2>
 
-**[Auto-connect](/t/interface-management/6154#heading--auto-connections)**: no</br>
+**[Auto-connect](/explanation/interfaces/interface-auto-connection)**: no</br>
 **[Super-privileged](/)**: yes</br>
 
 **Attributes**:

@@ -10,7 +10,7 @@ This interface permits the [nvidia-assemble](https://snapcraft.io/nvidia-assembl
 
 ## Developer details
 
-**[Auto-connect](/t/interface-management/6154#heading--auto-connections)**: no</br>
+**[Auto-connect](/explanation/interfaces/interface-auto-connection)**: no</br>
 **[Super-privileged](/)**: no</br>
 
 ### Code examples

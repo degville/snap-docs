@@ -14,7 +14,7 @@ Using the `i2c` interface does not require Store approval and permission, but us
 
 ## Developer details
 
-**[Auto-connect](/t/interface-management/6154#heading--auto-connections)**: no</br>
+**[Auto-connect](/explanation/interfaces/interface-auto-connection)**: no</br>
 
 **Attributes**:
  * **`path` (plug, slot)**: path to i2c device node.</br>

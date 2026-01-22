@@ -5,4 +5,4 @@
 
 ## Developer details
 
-**[Auto-connect](/t/interface-management/6154#heading--auto-connections)**: yes</br>
+**[Auto-connect](/explanation/interfaces/interface-auto-connection)**: yes</br>

@@ -8,7 +8,7 @@ Only the Steam snap may establish this interface. See [Introducing early access 
 
 ## Developer details
 
-**[Auto-connect](/t/interface-management/6154#heading--auto-connections)**: no</br>
+**[Auto-connect](/explanation/interfaces/interface-auto-connection)**: no</br>
 **[Super-privileged](/)**: yes</br>
 
 

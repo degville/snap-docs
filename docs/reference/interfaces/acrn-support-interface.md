@@ -8,7 +8,7 @@ The `acrn` interface  allows access to, and control of, user virtual machines us
 
 ## Developer details
 
-**[Auto-connect](/t/interface-management/6154#heading--auto-connections)**: no</br>
+**[Auto-connect](/explanation/interfaces/interface-auto-connection)**: no</br>
 **[Super-privileged](/t/the-interface-connection-mechanism/20179#heading--super)**: no</br>
 
 ### Code examples

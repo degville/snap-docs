@@ -11,7 +11,7 @@ See [Interface management](/) and [Supported interfaces](/interfaces/index) for 
 
 ## Developer details
 
-**[Auto-connect](/t/interface-management/6154#heading--auto-connections)**: no</br>
+**[Auto-connect](/explanation/interfaces/interface-auto-connection)**: no</br>
 **[Super-privileged](/)**: yes</br>
 
 Unlike other `*-support` interfaces, there is no single official `auditd` snap for which this interface was intended to be used. Instead, snap packagers who wish to ship their own snap containing `auditd` or serving the role of `auditd` may request installation and connection of this interface.

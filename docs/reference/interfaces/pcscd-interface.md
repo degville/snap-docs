@@ -6,7 +6,7 @@ The `pcscd` interface  permits communication with [PCSD](https://manpages.ubuntu
 
 ## Developer details
 
-**[Auto-connect](/t/interface-management/6154#heading--auto-connections)**: no</br>
+**[Auto-connect](/explanation/interfaces/interface-auto-connection)**: no</br>
 
 ### Code examples
 

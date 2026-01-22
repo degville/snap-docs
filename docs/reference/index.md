@@ -9,8 +9,8 @@ Details that help with the day-to-day operations of working with snaps.
 
 * [Glossary](glossary): Terms and definitions specific to the world of snaps.
 * [Interfaces](interfaces): Every interface alongside their most important attributes.
-* [Snap system architecture](/reference/operations/system-architecture): What snapd uses to manage confinement and security. 
-* [System options](/reference/operations/system-options): Configurations options for the system and native snap devices.
+* [Snap system architecture](/reference/system-architecture): What snapd uses to manage confinement and security. 
+* [System options](/reference/administration/system-options): Configurations options for the system and native snap devices.
 
 ## Administration
 
@@ -19,7 +19,7 @@ Deepen your understanding of how snaps can run on all kinds of devices, in all k
 * [Network requirements](/reference/administration/network-requirements): What network access snaps require to operate correctly.
 * [Distribution support](/reference/administration/distribution-support): The status of current builds for Linux distributions with snap support.
 
-## Development
+## Snap development
 
 Extend snap functionality with API access and customised environments for your applications and devices.
 
@@ -41,7 +41,7 @@ YAML schemas define exactly what a device, kernel and snap is capable of.
 
 Glossary <glossary>
 Release notes <release-notes>
+System architecture <system-architecture>
 Interfaces <interfaces/index>
-Operations <operations/index>
 Administration <administration/index>
-Development <development/index>
+Snap development <development/index>
