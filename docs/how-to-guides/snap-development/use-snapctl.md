@@ -271,6 +271,14 @@ The output from `snapctl refresh --pending` includes the following details:
 
 The pending output value is set to "none" if there is no pending refresh for the snap and the value is "ready" if there is a pending refresh. A pending value of "inhibited" indicates that the next refresh is inhibited because one or more of the snap's applications are running. This currently requires the experimental refresh app awareness feature to be enabled (see below).
 
+<h3 id='heading--refresh-tracking'>snapctl refresh --tracking</h3>
+
+Checks which channel the snap is currently tracking.
+
+The output from `snapctl refresh --tracking` includes the following details:
+
+- **channel**: tracking-channel
+
 ## The snap-refresh-control interface
 
 The `snapctl refresh --proceed` command can be executed by a snapped application outside of the gate-auto-refresh hook if the snap has the `snap-refresh-control` interface and the interface is connected. This enables the snap to trigger an auto-refresh outside of the normal auto-refresh schedule and should be used cautiously.
