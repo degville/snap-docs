@@ -248,15 +248,15 @@ This hook is capable of executing the _snapctl refresh_ command with 3 specific 
 
 This feature is currently considered experimental. See [Refresh control](/) for further details.
 
-<h3 id='heading--refresh-hold'>snapctl refresh --hold</h3>
+### snapctl refresh --hold
 
 Requests that snapd does not refresh the calling snap, nor the snaps it depends upon, during the current automatic refresh. A snap can hold its own refresh for up to 90 days and other snaps for up to 48 hours. The command prints an error and returns a non-zero exit status if these deadlines are reached and the refresh can no longer be held.
 
-<h3 id='heading--refresh-proceed'>snapctl refresh --proceed</h3>
+### snapctl refresh --proceed
 
 Signals to snapd that a refresh can proceed for both the calling snap and the snaps it depends upon. This does not necessarily mean the update will happen, because they may be held by other snaps, and snapd only proceeds with auto-refresh after consulting gate-auto-refresh hooks of all potentially affected snaps.
 
-<h3 id='heading--refresh-pending'>snapctl refresh --pending</h3>
+### snapctl refresh --pending
 
 Checks whether the executing snap has a pending refresh, or will be affected by the refresh of its base snap.
 
@@ -271,7 +271,7 @@ The output from `snapctl refresh --pending` includes the following details:
 
 The pending output value is set to "none" if there is no pending refresh for the snap and the value is "ready" if there is a pending refresh. A pending value of "inhibited" indicates that the next refresh is inhibited because one or more of the snap's applications are running. This currently requires the experimental refresh app awareness feature to be enabled (see below).
 
-<h3 id='heading--refresh-tracking'>snapctl refresh --tracking</h3>
+### snapctl refresh --tracking
 
 Checks which channel the snap is currently tracking.
 
