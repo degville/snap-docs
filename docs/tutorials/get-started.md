@@ -131,6 +131,12 @@ sudo snap refresh --channel=beta vlc
 
 Updates are automatically installed within 6 hours of a revision being made to a tracked channel, keeping most systems up-to-date. This schedule can be tuned via configuration options and disabled with the `--hold` option.
 
+To check which channel a snap is tracking use the following command:
+
+```bash
+snap refresh --tracking vlc
+```
+
 ## Pause or stop automatic updates
 
 The `snap refresh --hold` command holds, or postpones, snap updates for individual snaps, or for all snaps on the system, either indefinitely or for a specified period of time.
