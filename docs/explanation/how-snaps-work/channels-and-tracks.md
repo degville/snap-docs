@@ -17,7 +17,13 @@ The complete channel name can be structured as three distinct parts separated by
 
 The _tracking_ value for an installed snap, as shown in the output from the `snap list` command, shows which channel is installed and is being followed for that snap.
 
-<h2 id='heading--tracks'>Tracks</h2>
+To view the channel a snap is tracking, the following command may also be used:
+
+```bash
+snap refresh --tracking vlc
+```
+
+## Tracks
 
 All snaps have a default track. Without the snap developer specifying otherwise, the default track is called *latest*. Similarly, when no track is specified, a snap will implicitly install from the *latest* track. The track can also be specified explicitly:
 
@@ -67,7 +73,7 @@ Alternatively if using GNOME Software, select the ‘stable’ channel in the st
 
 Developers must currently make a request for tracks to be added to their snap via the [#store-requests](https://forum.snapcraft.io/c/store-requests) forum category. Releases are verified and checked to ensure that reasonable user expectations are being  met. For example, only _3.2.*_ versions are accepted into a _3.2_ track.
 
-<h2 id='heading--risk-levels'>Risk-levels</h2>
+## Risk-levels
 
 There are four risk-levels: stable, candidate, beta and edge. These represent decreasing levels of stability for a snap, although that decision is ultimately up to the snap's publisher. 
 
@@ -134,7 +140,7 @@ refresh-date: yesterday at 19:54 BST
 
 Risk-levels may not match a project's internal conventions. Some projects may use *alpha* instead of *edge*, for instance. However, a project's own release nomenclature should be close enough to a snap's risk-levels to allow you to judge the relative stability of the version you're installing.
 
-<h2 id='heading--branches'>Branches</h2>
+## Branches
 
 A branch is an optional, fine-grained subdivision of a channel for a published snap that allows for the creation of short-lived sequences of snaps that can be pushed on demand by snap developers to help with fixes or temporary experimentation.
 
