@@ -18,13 +18,14 @@ echo "Fetching latest successful Run ID from ${REPO} (branch: master)..."
 LATEST_RUN_ID=$(gh run list \
   -R "${REPO}" \
   --workflow "${WORKFLOW}" \
+  --branch "master" \
   --status success \
-  --json databaseId,headBranch,conclusion \
-  -q '.[] | select(.headBranch == "master") | .databaseId' \
-  | head -n 1)
+  --json databaseId \
+  -L 1 \
+  -q '.[0].databaseId')
 
 if [ -z "$LATEST_RUN_ID" ]; then
-  echo "Error: Could not find a successful run on branch 'master' within the last 20 attempts."
+  echo "Error: Could not find a successful run on branch 'master'."
   exit 1
 fi
 
