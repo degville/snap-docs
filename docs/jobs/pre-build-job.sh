@@ -8,41 +8,35 @@ TARGET_DIR="${SOURCEDIR}/_html_extra/reference/api"
 
 mkdir -p "${TARGET_DIR}"
 
-echo "Searching for the latest run that actually contains artifact '${ARTIFACT_NAME}'..."
+echo "Searching for the latest successful run that has artifact '${ARTIFACT_NAME}'..."
 
 RUN_IDS=$(gh run list \
   -R "${REPO}" \
   --workflow "${WORKFLOW}" \
   --status success \
-  --limit 1000 \
+  --limit 100 \
   --json databaseId \
   -q '.[].databaseId')
 
-FOUND_ID=""
+DOWNLOAD_SUCCESS=false
 
 for id in $RUN_IDS; do
-  # Check if the specific artifact exists in this run
-  # grep -q -x matches the exact line
-  if gh run view "$id" -R "${REPO}" --json artifacts -q '.artifacts[].name' | grep -q -x "${ARTIFACT_NAME}"; then
-    FOUND_ID="$id"
-    echo "✅ Found valid artifact in Run ID: $id"
+  echo -n "Checking Run ID $id... "
+  
+  gh run download "$id" -R "${REPO}" -n "${ARTIFACT_NAME}" -D "${TARGET_DIR}" >/dev/null 2>&1
+  
+  if [ $? -eq 0 ]; then
+    echo "Found and downloaded!"
+    DOWNLOAD_SUCCESS=true
     break
   else
-    echo "Skipping Run ID $id (Artifact not found, likely skipped job)..."
+    echo "Artifact not found (skipped)."
   fi
 done
 
-if [ -z "$FOUND_ID" ]; then
-  echo "Error: Checked the last 1000 successful runs, but none contained the artifact '${ARTIFACT_NAME}'."
+if [ "$DOWNLOAD_SUCCESS" = false ]; then
+  echo "Error: Checked the last 100 successful runs, but none contained the artifact '${ARTIFACT_NAME}'."
   exit 1
 fi
 
-echo "Downloading artifact..."
-gh run download "$FOUND_ID" -R "${REPO}" -n "${ARTIFACT_NAME}" -D "${TARGET_DIR}"
-
-if [ $? -eq 0 ]; then
-  echo "Docs successfully downloaded to ${TARGET_DIR}"
-else
-  echo "Error: Failed to download."
-  exit 1
-fi
+echo "OpenAPI docs successfully downloaded to ${TARGET_DIR}"
