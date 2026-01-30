@@ -8,33 +8,41 @@ TARGET_DIR="${SOURCEDIR}/_html_extra/reference/api"
 
 mkdir -p "${TARGET_DIR}"
 
-echo "Fetching the absolute latest successful Run ID from ${REPO} (any branch)..."
+echo "Searching for the latest run that actually contains artifact '${ARTIFACT_NAME}'..."
 
-# Logic:
-# 1. We removed '--branch'.
-# 2. We keep '--status success' to ensure we don't grab a failed run.
-# 3. We take the top result (-L 1).
-LATEST_RUN_ID=$(gh run list \
+RUN_IDS=$(gh run list \
   -R "${REPO}" \
   --workflow "${WORKFLOW}" \
   --status success \
-  --limit 1 \
+  --limit 1000 \
   --json databaseId \
-  -q '.[0].databaseId')
+  -q '.[].databaseId')
 
-if [ -z "$LATEST_RUN_ID" ] || [ "$LATEST_RUN_ID" == "null" ]; then
-  echo "Error: Could not find any successful run."
+FOUND_ID=""
+
+for id in $RUN_IDS; do
+  # Check if the specific artifact exists in this run
+  # grep -q -x matches the exact line
+  if gh run view "$id" -R "${REPO}" --json artifacts -q '.artifacts[].name' | grep -q -x "${ARTIFACT_NAME}"; then
+    FOUND_ID="$id"
+    echo "✅ Found valid artifact in Run ID: $id"
+    break
+  else
+    echo "Skipping Run ID $id (Artifact not found, likely skipped job)..."
+  fi
+done
+
+if [ -z "$FOUND_ID" ]; then
+  echo "Error: Checked the last 1000 successful runs, but none contained the artifact '${ARTIFACT_NAME}'."
   exit 1
 fi
 
-echo "Found latest successful Run ID: $LATEST_RUN_ID"
-
-echo "Downloading artifact '${ARTIFACT_NAME}'..."
-gh run download "$LATEST_RUN_ID" -R "${REPO}" -n "${ARTIFACT_NAME}" -D "${TARGET_DIR}"
+echo "Downloading artifact..."
+gh run download "$FOUND_ID" -R "${REPO}" -n "${ARTIFACT_NAME}" -D "${TARGET_DIR}"
 
 if [ $? -eq 0 ]; then
   echo "Docs successfully downloaded to ${TARGET_DIR}"
 else
-  echo "Error: Failed to download artifacts."
+  echo "Error: Failed to download."
   exit 1
 fi
