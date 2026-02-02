@@ -10,6 +10,6 @@ The `kerberos-tickets` interface enables access to [Kerberos tickets](https://we
 
 ### Code examples
 
-The test code can be found in the snapd repository: [https://github.com/snapcore/snapd/blob/master/interfaces/builtin/kerberos_tickets_test.go](https://github.com/snapcore/snapd/blob/master/interfaces/builtin/kerberos_tickets_test.go)
+The test code can be found in the snapd repository: [https://github.com/canonical/snapd/blob/master/interfaces/builtin/kerberos_tickets_test.go](https://github.com/canonical/snapd/blob/master/interfaces/builtin/kerberos_tickets_test.go)
 
-The source code for the interface is in the snapd repository:[ https://github.com/snapcore/snapd/blob/master/interfaces/builtin/kerberos_tickets.go](https://github.com/snapcore/snapd/blob/master/interfaces/builtin/kerberos_tickets.go)
+The source code for the interface is in the snapd repository:[ https://github.com/canonical/snapd/blob/master/interfaces/builtin/kerberos_tickets.go](https://github.com/canonical/snapd/blob/master/interfaces/builtin/kerberos_tickets.go)

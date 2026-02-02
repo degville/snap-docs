@@ -1,4 +1,4 @@
-#  nvme-control interface 
+#  nvme-control interface
 
 The `nvme-control` interface allows snaps to manage and access NVMe controllers,alongside namespaces via in-kernel NVMe interfaces (PCI & NVMe-oF).
 
@@ -8,14 +8,14 @@ Access is limited to NVMe management operations through sysfs, nvme-fabrics char
 
 For further details on interfaces, see [How to connect interfaces](/how-to-guides/work-with-snaps/connect-interfaces).
 
-## Developer details 
+## Developer details
 
 **[Auto-connect](/explanation/interfaces/interface-auto-connection)**: no</br>
 **[Super-privileged](/explanation/interfaces/super-privileged-interfaces)**: yes</br>
 
 ### Code examples
 
-The test code can be found in the snapd repository:</br>https://github.com/snapcore/snapd/blob/master/interfaces/builtin/onvme_control_test.go
+The test code can be found in the snapd repository:</br>https://github.com/canonical/snapd/blob/master/interfaces/builtin/onvme_control_test.go
 
 The source code for the interface is in the snapd repository:
-</br>https://github.com/snapcore/snapd/blob/master/interfaces/builtin/nvme_control.go
+</br>https://github.com/canonical/snapd/blob/master/interfaces/builtin/nvme_control.go

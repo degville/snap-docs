@@ -30,7 +30,7 @@ The CUPS snap will run in standalone mode, listening not only on `$SNAP_COMMON/r
 
 The slot side of the interface is intended to be provided by a reference snap, such as the [`cups` snap](https://snapcraft.io/cups). The reference snap will permit any connecting snap to connect automatically, which snaps with the `cups` plug can _auto-connect_ to the reference snap's `cups` slot, and print, without any further action from the user.
 
-On systems where this slot is provided by a snap application, the _cups_ interface is the companion interface to the [cups control interface](/interfaces/cups-control-interface). 
+On systems where this slot is provided by a snap application, the _cups_ interface is the companion interface to the [cups control interface](/interfaces/cups-control-interface).
 
 However, the _cups_ interface and the _cups-control_ interface should not be used as plugs in the same snap.
 
@@ -65,7 +65,7 @@ For background information and design discussions about this interface, see [Abo
 ### Code examples
 
 See the test CUPS consumer snap:
-https://github.com/snapcore/test-snapd-cups-consumer
+https://github.com/canonical/test-snapd-cups-consumer
 
-The source code for the interface is in the snapd repository:[ https://github.com/snapcore/snapd/blob/master/interfaces/builtin/cups.go](https://github.com/snapcore/snapd/blob/master/interfaces/builtin/cups.go)
+The source code for the interface is in the snapd repository: [https://github.com/canonical/snapd/blob/master/interfaces/builtin/cups.go](https://github.com/canonical/snapd/blob/master/interfaces/builtin/cups.go)
 

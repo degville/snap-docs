@@ -27,7 +27,7 @@ The extent of access an interface has is granted through both _connection permis
         * green led plug on app => green led slot on gadget
         * red led plug on app => red led slot on gadget
       - This kind of 1-to-1 connections can usually be established via [slot rules in the snap-declaration](/explanation/interfaces/interface-auto-connection) for the gadget.
-    * **App-provided interfaces**: slots are defined by apps, or occasionally from the gadget snap, 
+    * **App-provided interfaces**: slots are defined by apps, or occasionally from the gadget snap,
       * May require access, such as from the [content](/) or [shared-memory](/) interfaces.
       * A slot might may be provided by the system snap to cover the case of an equivalent system service, such as [audio-playback](/)
       * the slot might be [super-privileged](/reference/operations/interfaces/super-privileged-interfaces)
@@ -35,7 +35,7 @@ The extent of access an interface has is granted through both _connection permis
 
 <h3 id='heading--code-examples'>Code examples</h3>
 
-The [gadget snap](https://github.com/snapcore/pi-gadget/tree/20-arm64) definition for the reference [Raspberry Pi Ubuntu Core](https://ubuntu.com/core/docs/install-raspberry-pi) image contains interface definitions for various hardware IO interfaces on the system, including slots for each specific GPIO pin, i2c connections, the Bluetooth serial port, and the generic serial ports:
+The [gadget snap](https://github.com/canonical/pi-gadget/tree/20-arm64) definition for the reference [Raspberry Pi Ubuntu Core](https://ubuntu.com/core/docs/install-raspberry-pi) image contains interface definitions for various hardware IO interfaces on the system, including slots for each specific GPIO pin, i2c connections, the Bluetooth serial port, and the generic serial ports:
 
 ```yaml
 slots:

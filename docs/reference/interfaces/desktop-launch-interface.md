@@ -22,5 +22,5 @@ Requires snapd version _2.52+_.
 <h3 id='heading-code'>Code examples</h3>
 
 The source code for this interface is in the *snapd* repository:
-<https://github.com/snapcore/snapd/blob/master/interfaces/builtin/desktop_launch.go>
+<https://github.com/canonical/snapd/blob/master/interfaces/builtin/desktop_launch.go>
 

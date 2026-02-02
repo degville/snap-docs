@@ -28,8 +28,8 @@ See [Interface management](/) and [Supported interfaces](/interfaces/index) for 
 
 ### Code examples
 
-The test code can be found in the snapd repository:</br>https://github.com/snapcore/snapd/blob/master/interfaces/builtin/snap_interfaces_requests_control_test.go
+The test code can be found in the snapd repository:</br>https://github.com/canonical/snapd/blob/master/interfaces/builtin/snap_interfaces_requests_control_test.go
 
 The source code for the interface is in the snapd repository:
-</br>https://github.com/snapcore/snapd/blob/master/interfaces/builtin/snap_interfaces_requests_control.go
+</br>https://github.com/canonical/snapd/blob/master/interfaces/builtin/snap_interfaces_requests_control.go
 

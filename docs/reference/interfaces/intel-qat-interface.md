@@ -12,7 +12,7 @@ For Intel QAT implementation details, see the [kernel support](https://elixir.bo
 
 ### Code examples
 
-The test code can be found in the snapd repository:</br>https://github.com/snapcore/snapd/blob/master/interfaces/builtin/intel_qat_test.go
+The test code can be found in the snapd repository:</br>https://github.com/canonical/snapd/blob/master/interfaces/builtin/intel_qat_test.go
 
-The source code for the interface is in the snapd repository:</br>https://github.com/snapcore/snapd/blob/master/interfaces/builtin/intel_qat.go
+The source code for the interface is in the snapd repository:</br>https://github.com/canonical/snapd/blob/master/interfaces/builtin/intel_qat.go
 

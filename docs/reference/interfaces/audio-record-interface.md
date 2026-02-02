@@ -28,5 +28,5 @@ Mumble is a voice chat platform and a good example of an application using audio
 [https://github.com/snapcrafters/mumble/blob/master/snap/snapcraft.yaml](https://github.com/snapcrafters/mumble/blob/b5f1644a72a14cacd17b862cd0265d21d8ce604a/snap/snapcraft.yaml#L21)
 
 The source code for this interface is in the *snapd* repository:
-<https://github.com/snapcore/snapd/blob/master/interfaces/builtin/audio_record.go>
+<https://github.com/canonical/snapd/blob/master/interfaces/builtin/audio_record.go>
 

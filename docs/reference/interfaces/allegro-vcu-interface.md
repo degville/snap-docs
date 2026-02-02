@@ -16,7 +16,7 @@ These operations should be considered privileged since the driver assumes truste
 
 ### Code examples
 
-The test code can be found in the snapd repository: https://github.com/snapcore/snapd/blob/master/interfaces/builtin/allegro_vcu_test.go
+The test code can be found in the snapd repository: https://github.com/canonical/snapd/blob/master/interfaces/builtin/allegro_vcu_test.go
 
-The source code for the interface is in the snapd repository:[ https://github.com/snapcore/snapd/blob/master/interfaces/builtin/allegro_vcu.go](https://github.com/snapcore/snapd/blob/master/interfaces/builtin/allegro_vcu.go)
+The source code for the interface is in the snapd repository:[ https://github.com/canonical/snapd/blob/master/interfaces/builtin/allegro_vcu.go](https://github.com/canonical/snapd/blob/master/interfaces/builtin/allegro_vcu.go)
 

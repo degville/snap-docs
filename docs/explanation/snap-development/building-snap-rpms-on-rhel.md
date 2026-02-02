@@ -23,14 +23,14 @@ $ sudo dnf module install go-toolset
 $ sudo dnf install rpmdevtools
 ```
 
-The snapd code base includes an [RPM SPEC file](https://rpm-packaging-guide.github.io/#what-is-a-spec-file), which [contains the recipe](https://github.com/snapcore/snapd/blob/2.42/packaging/fedora/snapd.spec) used to build the RPM packages. To setup the RPM build environment, first prepare the RPM tree in your home directory, fetch the source tarballs and extract the RPM spec:
+The snapd code base includes an [RPM SPEC file](https://rpm-packaging-guide.github.io/#what-is-a-spec-file), which [contains the recipe](https://github.com/canonical/snapd/blob/2.42/packaging/fedora/snapd.spec) used to build the RPM packages. To setup the RPM build environment, first prepare the RPM tree in your home directory, fetch the source tarballs and extract the RPM spec:
 
 ```bash
 $ rpmdev-setuptree
 $ cd ~/rpmbuild/SOURCES
 $ curl -L \
-    https://github.com/snapcore/snapd/releases/download/2.42/snapd_2.42.no-vendor.tar.xz \
-    -o snapd_2.42.no-vendor.tar.xz 
+    https://github.com/canonical/snapd/releases/download/2.42/snapd_2.42.no-vendor.tar.xz \
+    -o snapd_2.42.no-vendor.tar.xz
 $ tar -xvJ -C ~/rpmbuild/SPECS --strip-components=3 \
     -f snapd_2.42.no-vendor.tar.xz \
     snapd-2.42/packaging/fedora/

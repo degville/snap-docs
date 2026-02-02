@@ -2,7 +2,7 @@
 #  power-control interface
 
 The `power-control` interface allows the reading and setting of system power settings.
- 
+
 This interface is primarily intended to be used with [Ubuntu Core](/t/glossary/14612#heading--ubuntu-core).
 
 
@@ -21,7 +21,7 @@ This interface enables:
 
 ### Code examples
 
-The test code can be found in the snapd repository: https://github.com/snapcore/snapd/blob/master/interfaces/builtin/power_control_test.go
+The test code can be found in the snapd repository: https://github.com/canonical/snapd/blob/master/interfaces/builtin/power_control_test.go
 
-The source code for the interface is in the snapd repository: https://github.com/snapcore/snapd/blob/master/interfaces/builtin/power_control.go
+The source code for the interface is in the snapd repository: https://github.com/canonical/snapd/blob/master/interfaces/builtin/power_control.go
 

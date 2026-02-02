@@ -54,7 +54,7 @@ With _strace-static_ installed, you can now use the `--strace` argument with the
 snap run --strace <snap-name>
 ```
 
-You will be asked for your password because the internal strace logic relies on _sudo_. 
+You will be asked for your password because the internal strace logic relies on _sudo_.
 
 Additionally, you can disable post-processing of the strace output by passing `--raw` to `--strace=`:
 
@@ -66,7 +66,7 @@ Strace is highly versatile. You can learn more about it by reading the manual pa
 
 <h2 id='heading--developer'>Developer mode</h2>
 
-To help isolate runtime errors when building and testing a snap, a snap can be installed using _developer mode_. 
+To help isolate runtime errors when building and testing a snap, a snap can be installed using _developer mode_.
 
 To install a snap in developer mode, use the `--devmode` argument:
 
@@ -228,7 +228,7 @@ For device cgroups, create or modify `/etc/udev/rules.d/70-snap.$SNAPNAME.rules`
 
 If you believe there is a bug in the security policy or want to request and/or contribute a new interface, please [file a bug](https://bugs.launchpad.net/snappy/+filebug), adding the `snapd-interface` tag.
 
-<!-- 
+<!--
 ### Interface development and security policy
 
 When participating in snappy development and implementing new interfaces for others to use, you will almost always need to write security policy for both the slots and the plugs side of the interface but keep in mind you are not expected to write perfect security policy on the first try. The review process for snapd includes a security review of the interface security policy and it is expected that the security policy will be iterated on during the review process (in other words, if you are stuck on writing security policy but the interface otherwise works, feel free to submit the interface and ask for help).
@@ -260,11 +260,11 @@ The above command has changed to snap-device-helper
 
 <h2 id='heading--further'>Further reading</h2>
 
-- https://github.com/snapcore/snapd/tree/master/interfaces for existing interface code and policy
+- https://github.com/canonical/snapd/tree/master/interfaces for existing interface code and policy
 - https://manpages.ubuntu.com/manpages/jammy/man5/apparmor.d.5.html
 - https://gitlab.com/apparmor/apparmor/-/wikis/Profiling_by_hand (but use the paths listed above and don't use the `aa-genprof` or `aa-logprof` tools because they are not yet snappy-aware)
-- https://github.com/snapcore/snapd/wiki/snap-confine-Overview
+- https://github.com/canonical/snapd/wiki/snap-confine-Overview
 - https://assets.ubuntu.com/v1/66fcd858-ubuntu-core-security-whitepaper.pdf
-- https://github.com/snapcore/snapd/wiki/Snap-Execution-Environment
+- https://github.com/canonical/snapd/wiki/Snap-Execution-Environment
 - https://forum.snapcraft.io/t/stracing-snap-commands/1433
 

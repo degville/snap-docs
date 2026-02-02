@@ -15,7 +15,7 @@ See also the [kernel-module-control interface](/interfaces/kernel-module-control
   * `name` (plug, required): provides the name of the kernel module to be loaded (eg, '`name: pcspkr`')
   * `load` (plug): string to declare when, or whether, to load this module. Values can be one of the following:
      - `on-boot` (default): loads the kernel module at boot time (eg. `load: on-boot`)
-     - `denied`: prevents the module from being loaded at all (eg. `load: denied`). Also known as _denylisting_ in the Linux kernel. 
+     - `denied`: prevents the module from being loaded at all (eg. `load: denied`). Also known as _denylisting_ in the Linux kernel.
      - `dynamic`: enables runtime loading and unloading of the kernel module. The snap can load and unload the module using snapctl kmod.
   * `options` (plug): string of options to use when loading the module (eg, `options: p1=3 p2=true p3`)
 
@@ -23,7 +23,7 @@ See also the [kernel-module-control interface](/interfaces/kernel-module-control
 
 Consumers of this interface require a [snap declaration](/t/process-for-aliases-auto-connections-and-tracks/455/) for distribution via the Snap Store.
 
-Requires snapd version _2.54+_. 
+Requires snapd version _2.54+_.
 
 <h3 id='heading-code'>Code examples</h3>
 
@@ -55,7 +55,7 @@ plugs:
       options: param=2
 ```
 
-The test code can be found in the snapd repository: [https://github.com/snapcore/snapd/blob/master/interfaces/builtin/kernel_module_load.go](https://github.com/snapcore/snapd/blob/master/interfaces/builtin/kernel_module_load.go)
+The test code can be found in the snapd repository: [https://github.com/canonical/snapd/blob/master/interfaces/builtin/kernel_module_load.go](https://github.com/canonical/snapd/blob/master/interfaces/builtin/kernel_module_load.go)
 
-The source code for the interface is in the snapd repository:[https://github.com/snapcore/snapd/blob/master/interfaces/builtin/kernel_module_load_test.go](https://github.com/snapcore/snapd/blob/master/interfaces/builtin/kernel_module_load_test.go)
+The source code for the interface is in the snapd repository:[https://github.com/canonical/snapd/blob/master/interfaces/builtin/kernel_module_load_test.go](https://github.com/canonical/snapd/blob/master/interfaces/builtin/kernel_module_load_test.go)
 

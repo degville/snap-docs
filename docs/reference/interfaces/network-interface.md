@@ -29,9 +29,9 @@ apps:
 
 Further network-related interfaces are typically not required, unless the application needs to interrogate or control network interfaces, or manage the local firewall. Most of these are not automatically connected, but can be manually connected by the end user. In addition, the publisher may request auto-connection of these interfaces via a snapcraft forum thread.
 
-The test code for this interface can be found in the snapd repository: 
-<https://github.com/snapcore/snapd/blob/master/interfaces/builtin/network_test.go>
+The test code for this interface can be found in the snapd repository:
+<https://github.com/canonical/snapd/blob/master/interfaces/builtin/network_test.go>
 
 The source code for this interface is in the *snapd* repository:
-<https://github.com/snapcore/snapd/blob/master/interfaces/builtin/network.go>
+<https://github.com/canonical/snapd/blob/master/interfaces/builtin/network.go>
 

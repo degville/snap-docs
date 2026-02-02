@@ -11,7 +11,7 @@ The `accel` interface allows access to device nodes in `/dev/accel` , which are 
 
 ### Code examples
 
-The test code can be found in the snapd repository: [https://github.com/snapcore/snapd/blob/master/interfaces/builtin/accel_test.go](https://github.com/snapcore/snapd/blob/master/interfaces/builtin/accel_test.go)
+The test code can be found in the snapd repository: [https://github.com/canonical/snapd/blob/master/interfaces/builtin/accel_test.go](https://github.com/canonical/snapd/blob/master/interfaces/builtin/accel_test.go)
 
-The source code for the interface is in the snapd repository:[ https://github.com/snapcore/snapd/blob/master/interfaces/builtin/accel.go](https://github.com/snapcore/snapd/blob/master/interfaces/builtin/accel.go)
+The source code for the interface is in the snapd repository:[ https://github.com/canonical/snapd/blob/master/interfaces/builtin/accel.go](https://github.com/canonical/snapd/blob/master/interfaces/builtin/accel.go)
 

@@ -12,7 +12,7 @@ The `system-packages-doc` interface permits access file system locations used to
 * `/usr/share/sphinx_rtd_theme/`
 * `/usr/share/xubuntu-docs/	`
 
-After the interface has been connected, the host’s `/usr/share/doc` directory replaces the `/usr/share/doc` for the context of the snap. 
+After the interface has been connected, the host’s `/usr/share/doc` directory replaces the `/usr/share/doc` for the context of the snap.
 
 This interface is helpful for *web browsers*, for example, because it enables them to open and view the host’s HTML system documentation.
 
@@ -31,7 +31,7 @@ The interface it is not connected automatically because the listed documentation
 
 ### Code examples
 
-The test code can be found in the snapd repository:</br>https://github.com/snapcore/snapd/blob/master/interfaces/builtin/system_packages_doc_test.go
+The test code can be found in the snapd repository:</br>https://github.com/canonical/snapd/blob/master/interfaces/builtin/system_packages_doc_test.go
 
-The source code for the interface is in the snapd repository:</br>https://github.com/snapcore/snapd/blob/master/interfaces/builtin/system_packages_doc.go
+The source code for the interface is in the snapd repository:</br>https://github.com/canonical/snapd/blob/master/interfaces/builtin/system_packages_doc.go
 

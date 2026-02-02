@@ -11,8 +11,8 @@ The `pkcs11` interface enables the [PKCS#11 Cryptographic Token Interface Standa
 
 ### Code examples
 
-The test code can be found in the snapd repository:</br>https://github.com/snapcore/snapd/blob/master/interfaces/builtin/pkcs11_test.go
+The test code can be found in the snapd repository:</br>https://github.com/canonical/snapd/blob/master/interfaces/builtin/pkcs11_test.go
 
 The source code for the interface is in the snapd repository:
-</br>https://github.com/snapcore/snapd/blob/master/interfaces/builtin/pkcs11.go
+</br>https://github.com/canonical/snapd/blob/master/interfaces/builtin/pkcs11.go
 

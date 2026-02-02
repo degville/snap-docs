@@ -18,7 +18,7 @@ Major unit releases, such as between snapd 2.x and 3.x, are extremely rare and n
 
 The following is the typical release process for snapd, starting with creating a release branch and tagging it for release:
 
-1. Code intended for the next version of snapd is merged to the [Master branch](https://github.com/snapcore/snapd) on GitHub.
+1. Code intended for the next version of snapd is merged to the [Master branch](https://github.com/canonical/snapd) on GitHub.
 2. For a major release, we create a new branch from master named `release/<VERSION>`, where `<VERSION>` is always the major version number. The eventual major version release tag for a given release is always on this branch, and it’s also where we will tag subsequent minor releases for this major version.
 3. If additional code is added to the new version branch, we first ensure that all required submissions are in the `release/VERSION` branch before tagging and signing the tag with the GPG key of one the maintainers of snapd who has permission to create the release.
 
@@ -47,7 +47,7 @@ The following is the typical release process for snapd, starting with creating a
 
 The version number of the snapd snap in its stable channel will always map 1:1 with the version number of a released revision of the snapd or core snap.
 
-For example, the git tag [2.51.1](https://github.com/snapcore/snapd/releases/tag/2.51.1), will only have a single revision published to the stable channel with this version number.
+For example, the git tag [2.51.1](https://github.com/canonical/snapd/releases/tag/2.51.1), will only have a single revision published to the stable channel with this version number.
 
 This single revision per version number policy helps simplify debugging, where the output of the snap version command enables us to isolate the revision of the snapd or core snaps that correspond to the version that was released.
 

@@ -7,8 +7,8 @@ Due to its wide-ranging access, it is a [super-privileged interface](/), and as 
 
 This interface is used for:
 
-* Fine-grained control of GPIO pins (input and output).  
-* Building custom hardware interfaces, such as LEDs, relays, or sensors.  
+* Fine-grained control of GPIO pins (input and output).
+* Building custom hardware interfaces, such as LEDs, relays, or sensors.
 * Low-level interaction with GPIO hardware using character devices or sysfs.
 
 ## **Developer Details**
@@ -20,13 +20,13 @@ This interface is used for:
 
 The `gpio-control` interface grants read-write access to the following paths:
 
-1. Sysfs Interface:  
-* `/sys/class/gpio/` paths for exporting, setting direction, toggling values, and more:  
-  * `/sys/class/gpio/{,un}export`  
-  * `/sys/class/gpio/gpio\[0-9\]\*/{active\_low,direction,value,edge}`  
-* Additional symlink paths (platform-specific):  
+1. Sysfs Interface:
+* `/sys/class/gpio/` paths for exporting, setting direction, toggling values, and more:
+  * `/sys/class/gpio/{,un}export`
+  * `/sys/class/gpio/gpio\[0-9\]\*/{active\_low,direction,value,edge}`
+* Additional symlink paths (platform-specific):
   * `/sys/devices/platform/\*\*/gpio/gpio\[0-9\]\*/{active\_low,direction,value,edge} `
-2. Gpiochip Interface:  
+2. Gpiochip Interface:
 * `/dev/gpiochip\[0-9\]\` paths for direct hardware interaction through the _gpiod_ API.
 
 The following UDev rules are applied to enable device access:
@@ -66,6 +66,6 @@ sudo snap connect gpio-control-app:gpio-pins-control
 
 This ensures clarity and aligns with the best practices for naming interface references when using `snap connections`, `snap interfaces`, `snap connect`, or `snap disconnect`.
 
-* The source code for the GPIO Control interface is in the snapd repository: [gpio\_control.go](https://github.com/snapcore/snapd/blob/master/interfaces/builtin/gpio_control.go)  
-* For further testing details, see: [gpio\_control\_test.go](https://github.com/snapcore/snapd/blob/master/interfaces/builtin/gpio_control_test.go)
+* The source code for the GPIO Control interface is in the snapd repository: [gpio\_control.go](https://github.com/canonical/snapd/blob/master/interfaces/builtin/gpio_control.go)
+* For further testing details, see: [gpio\_control\_test.go](https://github.com/canonical/snapd/blob/master/interfaces/builtin/gpio_control_test.go)
 

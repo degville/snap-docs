@@ -40,5 +40,5 @@ The snapcraft.yaml for [VLC](https://github.com/videolan/vlc) includes audio-pla
 [https://github.com/videolan/vlc/blob/master/extras/package/snap/snapcraft.yaml](https://github.com/videolan/vlc/blob/75bca603749d8bfb7048a84ea811cbdb19447596/extras/package/snap/snapcraft.yaml#L36)
 
 The source code for this interface is in the *snapd* repository:
-<https://github.com/snapcore/snapd/blob/master/interfaces/builtin/audio_playback.go>
+<https://github.com/canonical/snapd/blob/master/interfaces/builtin/audio_playback.go>
 

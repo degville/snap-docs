@@ -2,15 +2,15 @@
 #  scsi-generic interface
 
 The `scsi-generic` interface allows read and write access to [SCSI Generic driver](https://www.kernel.org/doc/html/latest/scsi/scsi-generic.html) (sg)  devices.
- 
- 
+
+
 
 
 ## Developer details
 
 **[Auto-connect](/t/6154#heading--auto-connections)** : no</br>
 **[Super-privileged](/)** : yes
- * `shared-memory` (slot and plug):   
+ * `shared-memory` (slot and plug):
 
 
 ### Code examples
@@ -22,7 +22,7 @@ apps:
   plugs: [scsi-generic]
 ```
 
-The test code can be found in the snapd repository: https://github.com/snapcore/snapd/blob/master/interfaces/builtin/scsi_generic_test.go
+The test code can be found in the snapd repository: https://github.com/canonical/snapd/blob/master/interfaces/builtin/scsi_generic_test.go
 
-The source code for the interface is in the snapd repository: https://github.com/snapcore/snapd/blob/master/interfaces/builtin/scsi_generic.go
+The source code for the interface is in the snapd repository: https://github.com/canonical/snapd/blob/master/interfaces/builtin/scsi_generic.go
 

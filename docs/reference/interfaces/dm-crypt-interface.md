@@ -19,7 +19,7 @@ Often, _dm-crypt_ is statically linked into the kernel (`CONFIG_DM_CRYPT=y`). Th
 
 ### Code examples
 
-The test code can be found in the snapd repository: https://github.com/snapcore/snapd/blob/master/interfaces/builtin/dm_crypt_test.go
+The test code can be found in the snapd repository: https://github.com/canonical/snapd/blob/master/interfaces/builtin/dm_crypt_test.go
 
-The source code for the interface is in the snapd repository:[ https://github.com/snapcore/snapd/blob/master/interfaces/builtin/dm_crypt.go](https://github.com/snapcore/snapd/blob/master/interfaces/builtin/dm_crypt.go)
+The source code for the interface is in the snapd repository:[ https://github.com/canonical/snapd/blob/master/interfaces/builtin/dm_crypt.go](https://github.com/canonical/snapd/blob/master/interfaces/builtin/dm_crypt.go)
 

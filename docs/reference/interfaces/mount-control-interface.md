@@ -66,7 +66,7 @@ The following filesystem-independent mount options are permitted:
 
 **Note:** Option `bind` is only allowed when no filesystem is specified.
 
-Filesystem-specific mount options are also permitted, so long as each is supported by every filesystem listed in the corresponding `type` section.  The mount options supported by a given filesystem can usually be found in its respective manpage or in the [mount](https://man7.org/linux/man-pages/man8/mount.8.html) manpage.  The complete list of supported filesystem-specific mount options for each filesystem type is included in the [source code](https://github.com/snapcore/snapd/blob/master/interfaces/builtin/mount_control.go) for this interface.
+Filesystem-specific mount options are also permitted, so long as each is supported by every filesystem listed in the corresponding `type` section.  The mount options supported by a given filesystem can usually be found in its respective manpage or in the [mount](https://man7.org/linux/man-pages/man8/mount.8.html) manpage.  The complete list of supported filesystem-specific mount options for each filesystem type is included in the [source code](https://github.com/canonical/snapd/blob/master/interfaces/builtin/mount_control.go) for this interface.
 
 ### Code examples
 
@@ -99,7 +99,7 @@ apps:
   plugs: [mntctl]
 ```
 
-The test code can be found in the snapd repository: [https://github.com/snapcore/snapd/blob/master/interfaces/builtin/mount_control_test.go](https://github.com/snapcore/snapd/blob/master/interfaces/builtin/mount_control_test.go)
+The test code can be found in the snapd repository: [https://github.com/canonical/snapd/blob/master/interfaces/builtin/mount_control_test.go](https://github.com/canonical/snapd/blob/master/interfaces/builtin/mount_control_test.go)
 
-The source code for the interface is in the snapd repository: [https://github.com/snapcore/snapd/blob/master/interfaces/builtin/mount_control.go](https://github.com/snapcore/snapd/blob/master/interfaces/builtin/mount_control.go)
+The source code for the interface is in the snapd repository: [https://github.com/canonical/snapd/blob/master/interfaces/builtin/mount_control.go](https://github.com/canonical/snapd/blob/master/interfaces/builtin/mount_control.go)
 

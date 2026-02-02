@@ -7,7 +7,7 @@ Sharing happens at the filesystem level, which means anything that can be expres
 
 <h2 id='heading--example'>Example</h2>
 
-The [Yaru MATE Icons](https://github.com/ubuntu-mate/icon-theme-yaru-mate-snap) snap is a good producer snap example, letting other applications access the wonderful MATE icon theme. But there are many other producer snaps too, including several for [GTK Common Themes](https://snapcraft.io/gtk-common-themes) and [KDE Frameworks](https://snapcraft.io/kde-frameworks-5-core18) for better application integration with the desktop. 
+The [Yaru MATE Icons](https://github.com/ubuntu-mate/icon-theme-yaru-mate-snap) snap is a good producer snap example, letting other applications access the wonderful MATE icon theme. But there are many other producer snaps too, including several for [GTK Common Themes](https://snapcraft.io/gtk-common-themes) and [KDE Frameworks](https://snapcraft.io/kde-frameworks-5-core18) for better application integration with the desktop.
 
 
 ## Developer details
@@ -32,7 +32,7 @@ The [Yaru MATE Icons](https://github.com/ubuntu-mate/icon-theme-yaru-mate-snap) 
 - [**Default provider**](#heading--default): define and potentially install a snap with a corresponding slot
 - [**Writable data**](#heading--writable): share data files and sockets between one or more snaps
 - [**Implementation details**](#heading--details): how AppArmor and _bind mounts_ help implement the interface
-- [**Code examples**](#heading--code) 
+- [**Code examples**](#heading--code)
 
 <h2 id='heading--sharing-content'>Sharing content</h2>
 
@@ -44,18 +44,18 @@ The _content identifier_ specified by the consuming snap (plug) must match the _
 
 At a very basic level, the content interface enables one directory, file or socket to appear in a place where another snap can access it.
 
-Each example below involve two snaps: the first provides some content (using a content _slot_) while the second consumes that content (using a content _plug_). 
+Each example below involve two snaps: the first provides some content (using a content _slot_) while the second consumes that content (using a content _plug_).
 
 In all of the cases we see a small set of attributes defined on the particular interface:
 - the producer declares which path can be read, using either the `read` attribute for read-only, or the `write` attribute for both read and write permissions
-- the consumer uses the `target` attribute to define where the content should become available at runtime. 
+- the consumer uses the `target` attribute to define where the content should become available at runtime.
 - both the producer and consumer use an arbitrary `content` attribute to describe the content. This attribute must match on both sides for the connection to happen.
 
 <h3 id='heading--using-source'>Using <code>source</code></h3>
 
 The `source` attribute presents one or more sub-directories, shared from a slot to a plug, beneath the plug's `target` path. Adding the `source` attribute ensures that sub-directories, shared from one or more producer snaps, are presented separately to the consumer snap beneath its `target` path.
 
-When multiple slots are connected to the same plug _and_ they share directories with the same name, those directories are given unique names with the following pattern:  `<directory>`, `<directory>-2`, `<directory>-3`, `<directory>-x`. The names of shared directories with unique names are retained, as defined by the slot. 
+When multiple slots are connected to the same plug _and_ they share directories with the same name, those directories are given unique names with the following pattern:  `<directory>`, `<directory>-2`, `<directory>-3`, `<directory>-x`. The names of shared directories with unique names are retained, as defined by the slot.
 
 With the following example, directories from the producer snap are shared in corresponding directories beneath the _consumer_ snap's `target` path:
 
@@ -67,7 +67,7 @@ slots:
     interface: content
     content: my-binaries
     source:
-      read: 
+      read:
         - $SNAP/bin
 ```
 
@@ -108,7 +108,7 @@ slots:
   _slot_name_:
     interface: content
     content: my-binaries
-    read: 
+    read:
       - $SNAP/bin
 ```
 
@@ -133,7 +133,7 @@ slots:
   old-libraries:
     interface: content
     content: lib0-1604
-    read: 
+    read:
       - $SNAP/lib
 ```
 
@@ -196,7 +196,7 @@ slots:
   _slot_name_:
     interface: content
     content: writable-data
-    write: 
+    write:
       - $SNAP_DATA
 ```
 
@@ -217,7 +217,7 @@ slots:
   _slot_name_:
     interface: content
     content: socket-directory
-    write: 
+    write:
       - $SNAP_DATA
 ```
 
@@ -251,5 +251,5 @@ The previously mentioned [Yaru MATE Icons](https://snapcraft.io/icon-theme-yaru-
 [https://github.com/ubuntu-mate/icon-theme-yaru-mate-snap/blob/main/snap/snapcraft.yaml](https://github.com/ubuntu-mate/icon-theme-yaru-mate-snap/blob/main/snap/snapcraft.yaml)
 
 The source code for this interface is in the *snapd* repository:
-<https://github.com/snapcore/snapd/blob/master/interfaces/builtin/content.go>
+<https://github.com/canonical/snapd/blob/master/interfaces/builtin/content.go>
 

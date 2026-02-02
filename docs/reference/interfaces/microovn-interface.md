@@ -17,7 +17,7 @@ With the MicroOVN snap installed, the socket is located at the following locatio
 
 ### Code examples
 
-The test code can be found in the snapd repository: https://github.com/snapcore/snapd/blob/master/interfaces/builtin/microovn_test.go
+The test code can be found in the snapd repository: https://github.com/canonical/snapd/blob/master/interfaces/builtin/microovn_test.go
 
-The source code for the interface is in the snapd repository: https://github.com/snapcore/snapd/blob/master/interfaces/builtin/microovn.go
+The source code for the interface is in the snapd repository: https://github.com/canonical/snapd/blob/master/interfaces/builtin/microovn.go
 
