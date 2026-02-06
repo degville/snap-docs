@@ -5,6 +5,8 @@ The `mount-control` interface allows the mounting and unmounting of both transie
 
 This interface gives privileged access to the device.
 
+To mount a local filesystem, `mount-control` must be used together with the [block-devices interface](/reference/interfaces/block-devices-interface).
+
 Requires snapd version *2.54+*.
 
 Use of `nfs` requires snapd version *2.67+*
