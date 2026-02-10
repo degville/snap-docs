@@ -333,5 +333,5 @@ gbm-driver-libs-interface/ reference/interfaces/gbm-driver-libs-interface
 opengl-driver-libs-interface/ reference/interfaces/opengl-driver-libs-interface
 opengles-driver-libs-interface/ reference/interfaces/opengles-driver-libs-interface
 using-in-development-features/ explanation/snap-development/index
-snapd-api/ reference/api
+snapd-api/ reference/api/redoc-static
 tab-completion/ explanation/snap-development/tab-completion
