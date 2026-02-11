@@ -70,7 +70,7 @@ copyright = "%s CC-BY-SA, %s" % (datetime.date.today().year, author)
 # NOTE: The Open Graph Protocol (OGP) enhances page display in a social graph
 #       and is used by social media platforms; see https://ogp.me/
 
-ogp_site_url = "https://canonical-snap.readthedocs-hosted.com/"
+ogp_site_url = "https://snapcraft.io/docs/"
 
 
 # Preview name of the documentation website
@@ -106,7 +106,7 @@ html_context = {
     # TODO: If there's no such website,
     #       remove the {{ product_page }} link from the page header template
     #       (usually .sphinx/_templates/header.html; also, see README.rst).
-    "product_page": "documentation.ubuntu.com",
+    "product_page": "snapcraft.io/store",
     # Product tag image; the orange part of your logo, shown in the page header
     #
     # TODO: To add a tag image, uncomment and update as needed.
@@ -177,7 +177,7 @@ html_context = {
 
 # Use RTD canonical URL to ensure duplicate pages have a specific canonical URL
 
-html_baseurl = os.environ.get("READTHEDOCS_CANONICAL_URL", "/")
+html_baseurl = "https://snapcraft.io/docs/"
 
 # sphinx-sitemap uses html_baseurl to generate the full URL for each page:
 
@@ -186,6 +186,10 @@ sitemap_url_scheme = '{link}'
 # Include `lastmod` dates in the sitemap:
 
 sitemap_show_lastmod = True
+
+
+# Default name conflicts with RTD's sitemap generation
+sitemap_filename = "snapcraft_docs_sitemap.xml"
 
 # Exclude generated pages from the sitemap:
 
@@ -203,7 +207,7 @@ sitemap_excludes = [
 #######################
 
 html_static_path = ["_static"]
-#templates_path = ["_templates"]
+templates_path = ["_templates"]
 
 #############
 # Redirects #
@@ -292,7 +296,7 @@ exclude_patterns = [
 
 # Adds custom CSS files, located under 'html_static_path'
 
-# html_css_files = []
+html_css_files = ["css/cookie-banner.css"]
 
 # Used for copying OpenAPI HTML file
 html_extra_path = ["_html_extra"]
@@ -303,7 +307,10 @@ rediraffe_redirects = "redirects.txt"
 
 # Adds custom JavaScript files, located under 'html_static_path'
 
-# html_js_files = []
+html_js_files = [
+    "js/bundle.js",
+    "js/rtd-flyout-overwrite.js"
+]
 
 
 # Specifies a reST snippet to be appended to each .rst file

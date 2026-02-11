@@ -17,6 +17,7 @@ Intersphinx
 lang
 LaTeX
 latexmk
+[Mm]aster
 Multipass
 otf
 plantuml
