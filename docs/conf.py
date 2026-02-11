@@ -307,7 +307,10 @@ rediraffe_redirects = "redirects.txt"
 
 # Adds custom JavaScript files, located under 'html_static_path'
 
-html_js_files = ["js/bundle.js"]
+html_js_files = [
+    "js/bundle.js",
+    "js/rtd-flyout-overwrite.js"
+]
 
 
 # Specifies a reST snippet to be appended to each .rst file
