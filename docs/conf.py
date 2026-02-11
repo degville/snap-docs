@@ -70,7 +70,7 @@ copyright = "%s CC-BY-SA, %s" % (datetime.date.today().year, author)
 # NOTE: The Open Graph Protocol (OGP) enhances page display in a social graph
 #       and is used by social media platforms; see https://ogp.me/
 
-ogp_site_url = "https://canonical-snap.readthedocs-hosted.com/"
+ogp_site_url = "https://snapcraft.io/docs/"
 
 
 # Preview name of the documentation website
