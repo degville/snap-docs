@@ -41,7 +41,7 @@ using-components/ how-to-guides/manage-snaps/using-components
 configure-with-confdb/ reference/interfaces/confdb-interface
 manage-validation-sets/ explanation/how-snaps-work/validation-sets
 snap-deltas/ explanation/how-snaps-work/snap-deltas
-using-the-api how-to-guides/snap-development/use-the-rest-api
+using-the-api/ how-to-guides/snap-development/use-the-rest-api/
 using-snapctl/ how-to-guides/snap-development/use-snapctl
 fix-common-issues/ how-to-guides/manage-snaps/fix-common-issues
 snapd-testing/testing how-to-guides/snap-development/using-in-development-features
