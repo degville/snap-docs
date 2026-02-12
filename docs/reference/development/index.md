@@ -23,5 +23,5 @@ YAML schemas define exactly what a device, kernel and snap is capable of.
 Environment variables <environment-variables>
 API Error codes <error-responses>
 Supported hooks <supported-snap-hooks>
-SnapD REST API <https://canonical-snap.readthedocs-hosted.com/reference/api/redoc-static.html>
+SnapD REST API <https://snapcraft.io/docs/reference/api/redoc-static.html>
 YAML schemas <yaml-schemas/index>
