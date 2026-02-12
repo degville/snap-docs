@@ -13,7 +13,7 @@
 # redirect/from/file/ redirect/to/file/
 
 # RTD reconfiguration
-get-started tutorials/get-started/
+get-started tutorials/get-started
 installing-snapd/ tutorials/install-the-daemon
 installing-snap-on-almalinux/  tutorials/install-the-daemon
 installing-snap-on-arch-linux/ tutorials/install-the-daemon/arch-linux
