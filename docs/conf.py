@@ -222,7 +222,11 @@ templates_path = ["_templates"]
 # NOTE: If undefined, set to None, or empty,
 #       the sphinx_reredirects extension will be disabled.
 
-redirects = {}
+redirects = {
+    "/snapcraft-overview/": "https://documentation.ubuntu.com/snapcraft/stable/tutorials/craft-a-snap/",
+    "/base-snaps/": "https://documentation.ubuntu.com/snapcraft/stable/how-to/crafting/specify-a-base/",
+    "/parts-lifecycle/": "https://documentation.ubuntu.com/snapcraft/stable/explanation/parts-lifecycle/",
+}
 
 
 ###########################
