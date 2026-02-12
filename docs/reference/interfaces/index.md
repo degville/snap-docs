@@ -232,6 +232,7 @@ The following column names are used:
 ```{toctree}
 :titlesonly:
 :maxdepth: 2
+:hidden:
 :glob:
 
 *
