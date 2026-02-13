@@ -13,6 +13,7 @@
 # redirect/from/file/ redirect/to/file/
 
 # RTD reconfiguration
+snapd-api/ reference/development/snapd-rest-api
 get-started tutorials/get-started
 installing-snapd/ tutorials/install-the-daemon
 installing-snap-on-almalinux/  tutorials/install-the-daemon
