@@ -5,7 +5,7 @@
 
 This interface is currently **under development** and has not yet been released for general use. See [
 interfaces: add pwm-control interface
-](https://github.com/snapcore/snapd/pull/12347) for further details on this work.
+](https://github.com/canonical/snapd/pull/12347) for further details on this work.
 
 The `pwm-control` interface can potentially impact the system and other snaps, and allows privileged access to hardware. See [The pwm interface](/interfaces/pwm-interface) to access a specific channel.
 

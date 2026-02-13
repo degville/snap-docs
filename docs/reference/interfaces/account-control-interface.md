@@ -21,5 +21,5 @@ Due to the privileged nature of access enabled by this interface, its use is res
 The account-control interface is used in the _usbtop_ snap to help monitor USB traffic: <https://github.com/ogra1/usbtop/blob/master/snap/snapcraft.yaml>
 
 The source code for this interface is in the *snapd* repository:
-<https://github.com/snapcore/snapd/blob/master/interfaces/builtin/account_control.go>
+<https://github.com/canonical/snapd/blob/master/interfaces/builtin/account_control.go>
 

@@ -115,7 +115,7 @@ See [Snap confinement](/explanation/security/snap-confinement) for more details.
 
 ### epoch
 
-Epochs enable snap developers to control how users receive a new application release when an application’s data format becomes incompatible with older versions of the application. 
+Epochs enable snap developers to control how users receive a new application release when an application’s data format becomes incompatible with older versions of the application.
 
 When a new release breaks data compatibility with an older version, incrementing the epoch in the new release stops old users automatically refreshing to the new version.
 
@@ -141,7 +141,7 @@ For more details, see [Supported snap hooks](/reference/development/supported-sn
 
 ### interface
 
-An interface enables resources from one snap to be shared with another and with the system. Interfaces require a connection, which is commonly made automatically, or manually with the `snap connect` command. 
+An interface enables resources from one snap to be shared with another and with the system. Interfaces require a connection, which is commonly made automatically, or manually with the `snap connect` command.
 
 For a snap to use an interface, its developer needs to have first defined its corresponding plugs and slots within a snap’s [snapcraft.yaml](/) file.
 
@@ -244,7 +244,7 @@ channels:
   20/stable:        20.0.7snap1               2021-02-05 (26119) 286MB -
 ```
 
-In the above example output, the latest/edge snap has a revision of `26758` and is the most recent published revision of the snap. 
+In the above example output, the latest/edge snap has a revision of `26758` and is the most recent published revision of the snap.
 
 However, neither the revision number (nor its version) enforce an order of release. The local system will simply attempt to install whatever snap is recommended by the publisher in the channel being tracked.
 
@@ -273,7 +273,7 @@ ubuntu  20.04
 kernel  5.13.0-31-generic
 ```
 
-The above output shows that the installed package is compatible with other `series: 16` snap assertions and namespaces. 
+The above output shows that the installed package is compatible with other `series: 16` snap assertions and namespaces.
 
 A snap series **is not correlated** to an Ubuntu series, such as _18_ for Ubuntu 18.04, or _20_ for Ubuntu 20.04, despite the numbers being the same or similar. This similarity is due to initial design considerations that have not yet been developed further, and the vast majority of snap series definitions simply take the value of _16_.
 
@@ -321,11 +321,11 @@ See [snapcraft.io/store](https://snapcraft.io/store) for more details.
 
 Spread is our open source testing utility that enables multiple shell scripts to run in parallel on many different systems in an entirely reproducible way. It currently runs a process that tests the snap ecosystem on real-world platforms 150,000 times a day.
 
-See [https://github.com/snapcore/spread](https://github.com/snapcore/spread) for the project's code repository.
+See [https://github.com/canonical/spread](https://github.com/canonical/spread) for the project's code repository.
 
 ### strict
 
-_Strict_ is the default snap confinement level. It runs snaps in complete isolation, and consequently, with no access your files, network, processes or any other system resource without requesting specific access via an interface. 
+_Strict_ is the default snap confinement level. It runs snaps in complete isolation, and consequently, with no access your files, network, processes or any other system resource without requesting specific access via an interface.
 
 See [Snap confinement](/explanation/security/snap-confinement) for more details.
 

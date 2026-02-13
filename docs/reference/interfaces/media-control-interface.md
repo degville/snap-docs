@@ -14,7 +14,7 @@ The kernel media controller API allows connecting and configuring media hardware
 
 ### Code examples
 
-The test code can be found in the snapd repository: https://github.com/snapcore/snapd/blob/master/interfaces/builtin/media_control_test.go
+The test code can be found in the snapd repository: https://github.com/canonical/snapd/blob/master/interfaces/builtin/media_control_test.go
 
-The source code for the interface is in the snapd repository: https://github.com/snapcore/snapd/blob/master/interfaces/builtin/media_control.go
+The source code for the interface is in the snapd repository: https://github.com/canonical/snapd/blob/master/interfaces/builtin/media_control.go
 

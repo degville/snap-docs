@@ -20,5 +20,5 @@ Requires snapd version _2.36+_.
 The adb-support interface is used in the _guiscrcpy_ snap: <https://github.com/srevinsaju/guiscrcpy/blob/master/snap/snapcraft.yaml>
 
 The source code for this interface is in the *snapd* repository:
-<https://github.com/snapcore/snapd/blob/master/interfaces/builtin/adb_support.go>
+<https://github.com/canonical/snapd/blob/master/interfaces/builtin/adb_support.go>
 

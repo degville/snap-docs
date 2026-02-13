@@ -11,5 +11,5 @@ Snapcraft has had support for the `completer` attribute of snap apps since versi
 
 Debugging tab completion of a strict snap can be hard, so we [wrote a guide for it](//forum.snapcraft.io/t/debugging-tab-completion/4198).
 
-Extending this tab completion mechanism to other shells (zsh for example) is relatively simple. All that is needed is a marshaller of the completion request. See [`complete.sh` in the snapd source](https://github.com/snapcore/snapd/blob/master/data/completion/bash/complete.sh) for details.
+Extending this tab completion mechanism to other shells (zsh for example) is relatively simple. All that is needed is a marshaller of the completion request. See [`complete.sh` in the snapd source](https://github.com/canonical/snapd/blob/master/data/completion/bash/complete.sh) for details.
 

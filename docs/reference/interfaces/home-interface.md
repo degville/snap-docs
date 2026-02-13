@@ -11,7 +11,7 @@ To check whether a snap can connect to $HOME, use the _snap connections_ command
 $ snap connections <snap-name>
 Interface  Plug                Slot         Notes
 home       <snap-name>:home    -        -
-``` 
+```
 
 The above output shows that `<snap-name>` does provide a home interface (in the _Plug_ column), but that it's not connected to any slot (denoted by the `-` in the slot column).
 
@@ -35,13 +35,13 @@ Requires snapd version _2.33+_.
 <h2 id='heading--dev'>Developer details</h2>
 
 **[Auto-Connect](/t/the-interface-connection-mechanism/20179#heading--autoconnect)**:
--  **yes** on traditional distributions 
+-  **yes** on traditional distributions
 -  **no** on all other systems, including [Ubuntu Core](/t/glossary/14612#heading--ubuntu-core)
 
 **Transitional**: yes</br>
 **Attributes**:
- * `read` (plug):   
-  optional, when set to 'all', also allows reading non-hidden files in the home directories of all users as traditional file permissions allow.  
+ * `read` (plug):
+  optional, when set to 'all', also allows reading non-hidden files in the home directories of all users as traditional file permissions allow.
   _When set to 'all' this plug becomes non-autoconnect._
 
 ### Example snaps
@@ -51,5 +51,5 @@ Requires snapd version _2.33+_.
 
 ### Interface source code
 
-[snapd/home.go at master · snapcore/snapd](https://github.com/snapcore/snapd/blob/master/interfaces/builtin/home.go)
+[snapd/home.go at master · canonical/snapd](https://github.com/canonical/snapd/blob/master/interfaces/builtin/home.go)
 

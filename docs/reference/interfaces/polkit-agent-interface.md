@@ -17,7 +17,7 @@ See https://forum.snapcraft.io/t/proposal-add-polkit-and-polkit-agent-interfaces
 
 ### Code examples
 
-The test code can be found in the snapd repository: https://github.com/snapcore/snapd/blob/master/interfaces/builtin/polkit_agent_test.go
+The test code can be found in the snapd repository: https://github.com/canonical/snapd/blob/master/interfaces/builtin/polkit_agent_test.go
 
-The source code for the interface is in the snapd repository: https://github.com/snapcore/snapd/blob/master/interfaces/builtin/polkit_agent.go
+The source code for the interface is in the snapd repository: https://github.com/canonical/snapd/blob/master/interfaces/builtin/polkit_agent.go
 

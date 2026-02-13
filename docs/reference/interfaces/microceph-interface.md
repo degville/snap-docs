@@ -11,8 +11,8 @@ The `microceph` interface permits access to  the [MicroCeph](https://canonical-m
 
 ### Code examples
 
-The test code can be found in the snapd repository:</br>https://github.com/snapcore/snapd/blob/master/interfaces/builtin/microceph_test.go
+The test code can be found in the snapd repository:</br>https://github.com/canonical/snapd/blob/master/interfaces/builtin/microceph_test.go
 
 The source code for the interface is in the snapd repository:
-</br>https://github.com/snapcore/snapd/blob/master/interfaces/builtin/microceph.go
+</br>https://github.com/canonical/snapd/blob/master/interfaces/builtin/microceph.go
 

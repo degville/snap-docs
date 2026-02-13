@@ -78,9 +78,9 @@ And the unmount script, `nfs-unmount.sh`:
 umount "${SNAP_COMMON}/mnt"
 ```
 
-The test code for this interface can be found in the snapd repository: 
-<https://github.com/snapcore/snapd/blob/master/interfaces/builtin/nfs_mount_test.go>
+The test code for this interface can be found in the snapd repository:
+<https://github.com/canonical/snapd/blob/master/interfaces/builtin/nfs_mount_test.go>
 
 The source code for this interface is in the *snapd* repository:
-<https://github.com/snapcore/snapd/blob/master/interfaces/builtin/nfs_mount.go>
+<https://github.com/canonical/snapd/blob/master/interfaces/builtin/nfs_mount.go>
 

@@ -5,7 +5,7 @@
 
 To provide better audio sharing and input and output configuration, it's  recommended that most snaps access audio functionality through the system audio layer, such as PulseAudio, via the [audio-playback](/interfaces/audio-playback-interface) and [audio-record](/interfaces/audio-record-interface) interfaces.
 
-However, raw access to ALSA devices using this interface can provide a slight performance advantage with input and output latency and avoid resampling which can reduce audio quality. 
+However, raw access to ALSA devices using this interface can provide a slight performance advantage with input and output latency and avoid resampling which can reduce audio quality.
 
 <h2 id='heading--example'>Example</h2>
 
@@ -32,5 +32,5 @@ The _snapcraft.yaml_ for MuseScore includes an ALSA interface definition:
 [https://github.com/pachulo/musescore-snap/blob/master/snap/snapcraft.yaml](https://github.com/pachulo/musescore-snap/blob/9d328cb48679542180b257e32131bbf23ea8cba0/snap/snapcraft.yaml#L32)
 
 The source code for this interface is in the *snapd* repository:
-<https://github.com/snapcore/snapd/blob/master/interfaces/builtin/alsa.go>
+<https://github.com/canonical/snapd/blob/master/interfaces/builtin/alsa.go>
 

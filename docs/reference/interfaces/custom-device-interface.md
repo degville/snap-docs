@@ -16,7 +16,7 @@ slots:
   dual-sd:
     interface: custom-device
     custom-device: my-dual-sd-device
-    devices: 
+    devices:
       - /dev/DualSD
 ```
 
@@ -54,7 +54,7 @@ Requires snapd version *2.55+*, while `udev-tagging.for-device` attribute suppor
 
 **Attributes**:
 * `custom-device` (optional) (plug, slot): A label for the custom device.</br>
- The label must be identical across the plug and slot connections.</br>If omitted, the label defaults to either local slot name or local plug name. 
+ The label must be identical across the plug and slot connections.</br>If omitted, the label defaults to either local slot name or local plug name.
 * `devices` (slot): paths to device nodes.</br>
     Example: `devices: [/dev/input/event[0-9], /dev/input/mice]`</br>
 * `files` (optional) (slot):
@@ -113,8 +113,8 @@ The above example will generate the following udev tags:
 
 ```
 spec.TagDevice(`KERNEL=="js{[0-9],[12][0-9],3[01]}"`)
-spec.TagDevice(`KERNEL=="input/js{[0-9],[12][0-9],3[01]}"`) 
-spec.TagDevice(`SUBSYSTEM=="input", KERNEL=="input/event[0-9]*", ENV{ID_INPUT_JOYSTICK}=="1"`) 
+spec.TagDevice(`KERNEL=="input/js{[0-9],[12][0-9],3[01]}"`)
+spec.TagDevice(`SUBSYSTEM=="input", KERNEL=="input/event[0-9]*", ENV{ID_INPUT_JOYSTICK}=="1"`)
 ```
 
 The following example shows the `udev-tagging` syntax:
@@ -160,8 +160,8 @@ An additional example, showing how to match udev rules with a device which appea
 The above example generates a udev rule to match `KERNEL=="msr[0-9]*", SUBSYSTEM=="msr"` and an AppArmor rule allowing read/write access through `/dev/cpu/[0-9]*/msr`.
 
 
-The test code can be found in the snapd repository: [https://github.com/snapcore/snapd/blob/master/interfaces/builtin/custom_device_test.go](https://github.com/snapcore/snapd/blob/master/interfaces/builtin/custom_device_test.go)
+The test code can be found in the snapd repository: [https://github.com/canonical/snapd/blob/master/interfaces/builtin/custom_device_test.go](https://github.com/canonical/snapd/blob/master/interfaces/builtin/custom_device_test.go)
 
 The source code for the interface is in the snapd repository:
-[https://github.com/snapcore/snapd/blob/master/interfaces/builtin/custom_device.go](https://github.com/snapcore/snapd/blob/master/interfaces/builtin/custom_device.go)
+[https://github.com/canonical/snapd/blob/master/interfaces/builtin/custom_device.go](https://github.com/canonical/snapd/blob/master/interfaces/builtin/custom_device.go)
 

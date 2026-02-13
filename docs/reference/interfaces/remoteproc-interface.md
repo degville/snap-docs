@@ -18,9 +18,9 @@ Requires snapd version _2.62+_.
 
 <h3 id='heading-code'>Code examples</h3>
 
-The test code can be found in the snapd repository: 
-<https://github.com/snapcore/snapd/blob/master/interfaces/builtin/remoteproc_test.go>
+The test code can be found in the snapd repository:
+<https://github.com/canonical/snapd/blob/master/interfaces/builtin/remoteproc_test.go>
 
 The source code for this interface is in the *snapd* repository:
-<https://github.com/snapcore/snapd/blob/master/interfaces/builtin/remoteproc.go>
+<https://github.com/canonical/snapd/blob/master/interfaces/builtin/remoteproc.go>
 

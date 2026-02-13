@@ -14,7 +14,7 @@ Consequently, consumers of this interface require [approval](/t/process-for-alia
 **[Auto-connect](/explanation/interfaces/interface-auto-connection)**: no</br>
 **[Super-privileged](/)**: yes</br>
 
-**Attributes** : 
+**Attributes** :
  * `refresh-schedule` (plug):  can be set to `managed` to signal an intention to permit only manual refreshes for the snap:
 
    ```yaml
@@ -27,13 +27,13 @@ Consequently, consumers of this interface require [approval](/t/process-for-alia
    Permitting only manual refreshes is a 3 stage process with the above being the first stage. The second stage is to connect the interface, effectively granting permission for refresh management while the third is to set the following _core_ system setting:
 
    ```bash
-   sudo snap set system refresh.timer=managed 
+   sudo snap set system refresh.timer=managed
    ```
    The last step activates the manual-only refresh option, skipping upcoming refresh attempts. These values are rechecked and reconfirmed before every future refresh attempt. If any of the steps stop being true, the snap refresh proceeds.
 
 ### Code examples
 
-The source code can be found in the snapd repository: https://github.com/snapcore/snapd/blob/master/interfaces/builtin/snapd_control.go
+The source code can be found in the snapd repository: https://github.com/canonical/snapd/blob/master/interfaces/builtin/snapd_control.go
 
-The test code for the interface is in the snapd repository: https://github.com/snapcore/snapd/blob/master/interfaces/builtin/snapd_control_test.go
+The test code for the interface is in the snapd repository: https://github.com/canonical/snapd/blob/master/interfaces/builtin/snapd_control_test.go
 

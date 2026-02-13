@@ -17,6 +17,6 @@ The `pipewire` interface grants read-write access to the following paths:
 
 It also offers `shmctl' access.
 
-* The source code for the Pipewire interface is in the snapd repository: [pipewire.go](https://github.com/snapcore/snapd/blob/master/interfaces/builtin/pipewire.go)  
-* For further testing details, see: [pipewire\_test.go](https://github.com/snapcore/snapd/blob/master/interfaces/builtin/pipewire_test.go)
+* The source code for the Pipewire interface is in the snapd repository: [pipewire.go](https://github.com/canonical/snapd/blob/master/interfaces/builtin/pipewire.go)
+* For further testing details, see: [pipewire\_test.go](https://github.com/canonical/snapd/blob/master/interfaces/builtin/pipewire_test.go)
 

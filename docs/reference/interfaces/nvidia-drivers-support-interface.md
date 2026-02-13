@@ -15,7 +15,7 @@ This interface permits the [nvidia-assemble](https://snapcraft.io/nvidia-assembl
 
 ### Code examples
 
-The test code can be found in the snapd repository: https://github.com/snapcore/snapd/blob/master/interfaces/builtin/nvidia_drivers_support_test.go
+The test code can be found in the snapd repository: https://github.com/canonical/snapd/blob/master/interfaces/builtin/nvidia_drivers_support_test.go
 
-The source code for the interface is in the snapd repository: https://github.com/snapcore/snapd/blob/master/interfaces/builtin/nvidia_drivers_support.go
+The source code for the interface is in the snapd repository: https://github.com/canonical/snapd/blob/master/interfaces/builtin/nvidia_drivers_support.go
 

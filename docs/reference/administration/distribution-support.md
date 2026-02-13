@@ -1,7 +1,7 @@
 (reference-administration-distribution-support)=
 # Distribution support
 
-Latest public release: 2.68 [github releases](https://github.com/snapcore/snapd/releases). See [snapd roadmap](https://forum.snapcraft.io/t/the-snapd-roadmap/1973) for details.
+Latest public release: 2.68 [github releases](https://github.com/canonical/snapd/releases). See [snapd roadmap](https://forum.snapcraft.io/t/the-snapd-roadmap/1973) for details.
 
 ## Repology overview
 
@@ -13,7 +13,7 @@ On some distributions, a non-snap package will install the snapd snap which will
 
 Distributions that have reached their end-of-life are excluded from the list.
 
-## Ubuntu 
+## Ubuntu
 
 [![Ubuntu 14.04 package](https://repology.org/badge/version-for-repo/ubuntu_14_04/snapd.svg)](https://repology.org/project/snapd/versions)
 [![Ubuntu 16.04 package](https://repology.org/badge/version-for-repo/ubuntu_16_04/snapd.svg)](https://repology.org/project/snapd/versions)
@@ -104,7 +104,7 @@ Resources for developers:
 [![Gentoo package](https://repology.org/badge/version-for-repo/gentoo/snapd.svg)](https://repology.org/project/snapd/versions)
 
 Resources for developers:
-- [packaging repository app-containers/snapd](https://packages.gentoo.org/packages/app-containers/snapd) 
+- [packaging repository app-containers/snapd](https://packages.gentoo.org/packages/app-containers/snapd)
 
 ## Solus
 
@@ -113,13 +113,13 @@ Resources for developers:
 Snapd is available in the distribution archive. You may have to run extra commands to enable the `snapd.socket` and the `snapd.apparmor.service`. See TBD - installation instructions missing.
 
 Resources for developers:
- - [packaging repository](https://github.com/getsolus/packages/tree/main/packages/s/snapd) 
+ - [packaging repository](https://github.com/getsolus/packages/tree/main/packages/s/snapd)
 
 ## Amazon Linux
 
 Package repo: [snapd-amazon-linux](https://github.com/bboozzoo/snapd-amazon-linux) (unofficial)
 
-Snapd upstream packaging: [snapd upstream](https://github.com/snapcore/snapd/blob/master/packaging)
+Snapd upstream packaging: [snapd upstream](https://github.com/canonical/snapd/blob/master/packaging)
 
 Instructions https://forum.snapcraft.io/t/unofficial-snapd-repositories-for-amazon-linux/38736
 
@@ -130,7 +130,7 @@ Instructions https://forum.snapcraft.io/t/unofficial-snapd-repositories-for-amaz
 
 ## Yocto layer
 
-A Yocto meta-layer called [meta-snapd](https://github.com/snapcore/meta-snapd) exists, allowing the use of snapd and snaps on custom-build system images. Individual branches are named after Yocto release names.
+A Yocto meta-layer called [meta-snapd](https://github.com/canonical/meta-snapd) exists, allowing the use of snapd and snaps on custom-build system images. Individual branches are named after Yocto release names.
 
 | Snapd Release | Yocto Release | Kernel Recipe | Kernel Version | Confinement |
 |--|--|--|--|--|

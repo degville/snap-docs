@@ -1,7 +1,7 @@
 (interfaces-posix-mq-interface)=
 #  posix-mq interface
 
-The `posix-mq` interface enables inter-process communication (IPC) messages to be created, sent and received between snaps that need to use [POSIX message queues](https://man7.org/linux/man-pages/man7/mq_overview.7.html). 
+The `posix-mq` interface enables inter-process communication (IPC) messages to be created, sent and received between snaps that need to use [POSIX message queues](https://man7.org/linux/man-pages/man7/mq_overview.7.html).
 
 
 ## Developer details
@@ -22,7 +22,7 @@ The `posix-mq` interface enables inter-process communication (IPC) messages to b
   Each path must adhere to the POSIX message queue naming scheme, outlined on the `mq_overview` [man page](https://man7.org/linux/man-pages/man7/mq_overview.7.html):
    - Each message queue is identified by a name of the form `/somename`; that is, a string of up 255 characters consisting of an initial slash, followed by one or more characters, none of which are slashes.
 
-  An array of paths should be used when the listed queues are meant to be used together, as 
+  An array of paths should be used when the listed queues are meant to be used together, as
   corresponding plugs will get access to all of them.
 
 * **`permissions`** (slot)</br>
@@ -49,7 +49,7 @@ The following definition will create a _posix-mq_ interface with read-only permi
 ```yaml
   test-ro-list:
     interface: posix-mq
-    path: 
+    path:
       - /test-ro-1
       - /test-ro-2
       - /test-ro-3
@@ -58,7 +58,7 @@ The following definition will create a _posix-mq_ interface with read-only permi
       - read
 ```
 
-The test code can be found in the snapd repository: https://github.com/snapcore/snapd/blob/master/interfaces/builtin/posix_mq_test.go
+The test code can be found in the snapd repository: https://github.com/canonical/snapd/blob/master/interfaces/builtin/posix_mq_test.go
 
-The source code for the interface is in the snapd repository: https://github.com/snapcore/snapd/blob/master/interfaces/builtin/posix_mq.go
+The source code for the interface is in the snapd repository: https://github.com/canonical/snapd/blob/master/interfaces/builtin/posix_mq.go
 

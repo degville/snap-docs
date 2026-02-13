@@ -11,7 +11,7 @@ See [Interface management](/) and [Supported interfaces](/interfaces/index) for 
 
 ### Code examples
 
-The test code can be found in the snapd repository:</br>https://github.com/snapcore/snapd/blob/master/interfaces/builtin/nomad_support_test.go
+The test code can be found in the snapd repository:</br>https://github.com/canonical/snapd/blob/master/interfaces/builtin/nomad_support_test.go
 
-The source code for the interface is in the snapd repository:</br>https://github.com/snapcore/snapd/blob/master/interfaces/builtin/nomad_support.go
+The source code for the interface is in the snapd repository:</br>https://github.com/canonical/snapd/blob/master/interfaces/builtin/nomad_support.go
 

@@ -19,5 +19,5 @@ The snap of the [usbtop]() kernel module, used to monitor the bandwidth of USB b
 
 
 The source code for this interface is in the *snapd* repository:
-<https://github.com/snapcore/snapd/blob/master/interfaces/builtin/netlink_audit.go>
+<https://github.com/canonical/snapd/blob/master/interfaces/builtin/netlink_audit.go>
 
