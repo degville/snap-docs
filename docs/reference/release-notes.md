@@ -7,14 +7,14 @@ This page outlines the release notes of all recent versions of Snapd, summarisin
 
 ### Latest stable release
 
-* **[Snapd 2.71](snapd-2-71-release-notes)** (14th August 2025)
+* **[Snapd 2.73](#snapd-2-73-release-notes)** (27th November 2025)
 
 ### Latest beta release
-
-* [Snapd 2.72](snapd-2-72-release-notes) (30th September 2025)
+* [Snapd 2.74](#snapd-2-74-release-notes) (21st January 2026)
 
 ### Older releases
-
+* [Snapd 2.73](#snapd-2-73-release-notes) (27th November 2025)
+* [Snapd 2.72](#snapd-2-72-release-notes) (30th September 2025)
 * [Snapd 2.71](#snapd-2-71-release-notes) (14th August 2025)
 * [Snapd 2.70](#snapd-2-70-release-notes) (31th June 2025)
 * [Snapd 2.68](#snapd-2-68-release-notes) (31st March 2025)
@@ -46,9 +46,163 @@ We greatly appreciate your contributions and support!
 
 ---
 
-## Snapd 2.72 release notes
+## Snapd 2.74 release notes
 
-We’re pleased to share that Snapd 2.72 snap is available for testing in the beta channel.
+We’re pleased to share that Snapd 2.74 snap is available for testing in the beta channel.
+
+# New in snapd 2.74
+* FDE: use new activation API from secboot
+* FDE: use activation API also with non keydata keys
+* FDE: ignore internal recovery key expiration during install
+* FDE: support adding/removing PINs post-installation
+* FDE: support changing PINs post-installation
+* FDE: support adding a recovery key post-installation
+* FDE: provide activation status via new endpoint v2/system-info/storage-encrypted
+* FDE: support sealing and resealing using the preinstall check result
+* FDE: disable passphrase support during install
+* FDE: add keyboard configuration helpers
+* FDE: lazily inject keyboard layout configuration in kernel cmdline
+* FDE: enable pin tries and limits PIN entry attempts to 3
+* FDE: extend secureboot endpoint to accept DB, KEK, and PK
+* FDE: simplify /v2/system-volumes keyslots handling by allowing name-only entries, implicitly expanding to all system containers
+* FDE: support extra non-system key slot names to support agents such as Landscape to set dedicated recovery keys
+* FDE: initialize fde state after device state
+* FDE: use device node to find the storage container and keys
+* FDE: provide user visible name for disk based on ID_MODEL
+* FDE: update secboot in snapd with latest additions and fixes
+* core-initrd: add systemd service for setting plymouth keyboard layout and X11 keyboard layouts
+* core-initrd: set plymouth cleartext toggle option
+* core-initrd: fix plymouth missing font issue
+* core-initrd: update dependency from libteec1 to libteec2
+* core-initrd: add new dlopened libs
+* LP: #2116949 Preseeding: add support for preseeding of hybrid systems via the installer API$
+* Preseeding: check whether a path is a mountpoint before remounting
+* Confdb: support tagging paths as secret in storage schemas
+* Confdb: support filtering on placeholder sub-keys
+* Confdb: support filtering in API and confdbstate
+* Confdb: support field filtering on reads
+* Confdb: support "parameters" stanza and check filters against them
+* Confdb: add support for '--with' contraints
+* Confdb: parsing fixes and error handling improvements
+* Assertions: restrict serials to new format in confdb-control
+* Assertions: add verify signature function
+* Remote device management: modify request-message assertion to expose its time constraints for remote device management
+* Remote device management: support polling of store messages
+* Remote device management: add signing of response messages with device key
+* Prompting: enable notify protocol v5 and test prompt restoration after snapd restart
+* snap: change malformed '--channel=' warning to error
+* snap: add 'snap report-issue' command to get the available contact details for the specified snap
+* snap: add 'snap version --verbose' flag to include information on snap binaries origin
+* snap: create the XDG_RUNTIME_DIR folder
+* LP: #2068493 snap: add support for 'snap refresh --tracking'
+* snapctl: add '--tracking' flag to 'snapctl refresh'
+* Reexec: include the info filepath in the version compare debug log
+* Reexec: add support for forcing reexec into and older snapd snap by setting SNAP_REEXEC=force in the environment
+* snap-confine: correct error message related to snap-confine group policy validation
+* snap-confine: ensure we only mount existing directories
+* LP: #2134364 snap-confine: handle potential race when creating /tmp/snap-private-tmp when lacking systemd-tmpfiles support
+* snap-confine: filter plus characters from security tags
+* Desktop: use desktop file IDs as desktop IDs
+* Desktop: store the common ID in the desktop file
+* Desktop: allow graphical daemons to show icons in the dock
+* Desktop: change user daemons with desktop plug defined to depend on graphical-session.target
+* dm-verity for essential snaps: made change to prerequisite struct
+* Cross-distro: modify SELinux profile to allow connecting to squid proxy
+* Cross-distro: add support for migrating snap mount directory
+* Packaging: drop ubuntu-14.04 packaging
+* Packaging: drop ubuntu-{14.04,16.04} transitional binary packages
+* Packaging: remove desktop files and state lock file during snapd purge
+* Packaging: fix inhibition hint file being left behind on failed unlink-current-snap
+* Disallow timeouts < 1us in systemd units
+* Add snap-store to the user-daemons support overrides
+* Support for `SuccessExitStatus=` generation for systemd daemon
+* Make standby output more verbose
+* Add prepare-serial-request hook
+* Try to discard snap mount namespaces when no processes are running during snap updates
+* Improve handling of snap downloads cache by introducing periodic cleanup with more aggressive policy
+* Interfaces: mediatek-accel | create new interface
+* Interfaces: nvidia-video-driver-libs | create new interface
+* Interfaces: *-driver-libs | accept component paths
+* Interfaces: desktop-legacy, unity7 | remove workaround for slash filtering in ibus address
+* Interfaces: fwupd | allow writing reboot notification in /run
+* Interfaces: add 'install' coreutil to base AppArmor template
+* Interfaces: u2f-devices | add apparmor permissions to allow the use of the libfido2 library in snaps
+* Interfaces: u2f-devices | add support for Thetis security key
+* Interfaces: add AppArmor workaround for mmap MAP_HUGETLB
+* Interfaces: timeserver-control | manage per-link ntp settings via systemd-networkd
+
+## Snapd 2.73 release notes
+
+* FDE: do not save incomplete FDE state when resealing was skipped
+* FDE: warn of inconsistent primary or policy counter
+* Confdb: document confdb in snapctl help messages
+* Confdb: only confdb hooks wait if snaps are disabled
+* Confdb: relax confdb change conflict checks
+* Confdb: remove empty parent when removing last leaf
+* Confdb: support parsing field filters
+* Confdb: wrap confdb write values under "values" key
+* dm-verity for essential snaps: add new naming convention for verity files
+* dm-verity for essential snaps: add snap integrity discovery
+* dm-verity for essential snaps: fix verity salt calculation
+* Assertions: add hardware identity assertion
+* Assertions: add integrity stanza in snap resources revisions
+* Assertions: add request message assertion required for remote device management
+* Assertions: add response-message assertion for secure remote device management
+* Assertions: expose WithStackedBackstore in RODatabase
+* Packaging: cross-distro | install upstream NEWS file into relevant snapd package doc directory
+* Packaging: cross-distro | tweak how the blocks injecting $SNAP_MOUNT_DIR/bin are generated as required for openSUSE
+* Packaging: remove deprecated snap-gdb-shim and all references now that snap run --gdb is unsupported and replaced by --gdbserver
+* Preseed: call systemd-tmpfiles instead handle-writable-paths on uc26
+* Preseed: do not remove the /snap dir but rather all its contents during reset
+* snap-confine: attach name derived from security tag to BPF maps and programs
+* snap-confine: ensure permitted capabilities match expectation
+* snap-confine: fix cached snap-confine profile cleanup to report the correct error instead of masking backend setup failures
+* snap-confine: Improve validation of user controlled paths
+* snap-confine: tighten snap cgroup checks to ensure a snap cannot start another snap in the same cgroup, preventing incorrect device-filter installation
+* core-initrd: add 26.04 ubuntu-core-initramfs package
+* core-initrd: add missing order dependency for setting default system files
+* core-initrd: avoid scanning loop and mmc boot partitions as the boot disk won't be any of these
+* core-initrd: make cpio a Depends and remove from Build-Depends
+* core-initrd: start plymouth sooner and reload when gadget is available
+* Cross-distro: modify syscheck to account for differences in openSUSE 16.0+
+* Validation sets: use in-flight validation sets when calling 'snapctl install' from hook
+* Prompting: enable prompting for the camera interface
+* Prompting: remove polkit authentication when modifying/deleting prompting rules
+* LP: #2127189 Prompting: do not record notices for unchanged rules on snapd startup
+* AppArmor: add free and pidof to the template
+* AppArmor: adjust interfaces/profiles to cope with coreutils paths
+* Interfaces: add support for compatibility expressions
+* Interfaces: checkbox-support | complete overhaul
+* Interfaces: define vulkan-driver-libs, cuda-driver-libs, egl-driver-libs, gbm-driver-libs, opengl-driver-libs, and opengles-driver-libs
+* Interfaces: allow snaps on classic access to nvidia graphics libraries exported by *-driver-libs interfaces
+* Interfaces: fwupd | broaden access to /boot/efi/EFI
+* Interfaces: gsettings | set dconf-service as profile for ca.desrt.dconf.Writer
+* Interfaces: iscsi-initiator, dm-multipath, nvme-control | add new interfaces
+* Interfaces: opengl | grant read/write permission to /run/nvidia-persistenced/socket
+* interfaces: ros-snapd-support | add access to /v2/changes/
+* Interfaces: system-observe | read access to btrfs/ext4/zfs filesystem information
+* Interfaces: system-trace | allow /sys/kernel/tracing/** rw
+* Interfaces: usb-gadget | add support for ffs mounts in attributes
+* Add autocompletion to run command
+* Introduce option for disallowing auto-connection of a specific interface
+* Only log errors for user service operations performed as a part of snap removal
+* Patch snap names in service requests for parallel installed snaps
+* Simplify traits for eMMC special partitions
+* Strip apparmor_parser from debug symbols shrinking snapd size by ~3MB
+* Fix InstallPathMany skipping refresh control
+* Fix waiting for GDB helper to stop before attaching gdbserver
+* Protect the per-snap tmp directory against being reaped by age
+* Prevent disabling base snaps to ensure dependent snaps can be removed
+* Modify API endpoint /v2/logs to reject n <= 0 (except for special case -1 meaning all)
+* Avoid potential deadlock when task is injected after the change was aborted
+* Avoid race between store download stream and cache cleanup executing in parallel when invoked by snap download task
+* LP: #1851490 Use "current" instead of revision number for icons
+* LP: #2121853 Add snapctl version command
+* LP: #2127214 Ensure no more than one partition on disk can match a gadget partition
+* LP: #2127244 snap-confine: update AppArmor profile to allow read/write to journal as workaround for snap-confine fd inheritance prevented by newer AppArmor  
+* LP: #2127766 Add new tracing mechanism with independently running strace and shim synchronization
+
+## Snapd 2.72 release notes
 
 ### **Highlights**
 
