@@ -226,6 +226,7 @@ redirects = {
    "snapcraft-overview": "https://documentation.ubuntu.com/snapcraft/stable/tutorials/craft-a-snap/",
    "base-snaps": "https://documentation.ubuntu.com/snapcraft/stable/how-to/crafting/specify-a-base/",
    "parts-lifecycle": "https://documentation.ubuntu.com/snapcraft/stable/explanation/parts-lifecycle/",
+   "snap-epochs": "https://documentation.ubuntu.com/snapcraft/stable/how-to/crafting/manage-data-compatibility/"
 }
 
 ###########################
