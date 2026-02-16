@@ -202,7 +202,7 @@ installing-snap-on-solus/ tutorials/install-the-daemon
 installing-snap-on-xubuntu/ tutorials/install-the-daemon/ubuntu
 installing-snap-on-zorin-os/ tutorials/install-the-daemon
 installing-snap-store-app/ tutorials/get-started
-parallel-installs/ explanation/how-snaps-work/parallel-installs
+parallel-installs/ explanation/how-snaps-work/parallel-installs/
 process-for-aliases-auto-connections-and-tracks/  reference/administration/process-for-aliases-auto-connections-and-tracks
 reviewing-classic-confinement-snaps/ reference/administration/reviewing-classic-confinement-snaps
 registering-your-app-name/ reference/development/registering-your-app-name
@@ -337,3 +337,11 @@ opengl-driver-libs-interface/ reference/interfaces/opengl-driver-libs-interface
 opengles-driver-libs-interface/ reference/interfaces/opengles-driver-libs-interface
 using-in-development-features/ explanation/snap-development/index
 tab-completion/ explanation/snap-development/tab-completion
+how-to-guides/work-with-snaps/fix-common-issues/ how-to-guides/manage-snaps/fix-common-issues/
+reference/development/interfaces/installing-snap-on-zorin-os/ tutorials/install-the-daemon/
+how-to-guides/work-with-snaps/connect-interfaces/ how-to-guides/manage-snaps/connect-interfaces/
+how-to-guides/work-with-snaps/fix-common-issues how-to-guides/manage-snaps/fix-common-issues/
+how-to-guides/manage-snaps/use-snapctl/ how-to-guides/snap-development/use-snapctl/
+reference/operations/data-locations/ reference/administration/data-locations/
+reference/operations/system-architecture/ reference/system-architecture/
+how-to-guides/work-with-snaps/ how-to-guides/
