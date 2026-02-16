@@ -26,13 +26,7 @@ A snap developer can [request permission](https://forum.snapcraft.io/t/permissio
 
 Requires snapd version _2.33+_.
 
-```{tip}
-
-```
-
----
-
-<h2 id='heading--dev'>Developer details</h2>
+## Developer details
 
 **[Auto-Connect](/t/the-interface-connection-mechanism/20179#heading--autoconnect)**:
 -  **yes** on traditional distributions
