@@ -15,6 +15,7 @@
 # RTD reconfiguration
 snapd-api/ reference/development/snapd-rest-api
 get-started tutorials/get-started
+snap-tutorials tutorials
 installing-snapd/ tutorials/install-the-daemon
 installing-snap-on-almalinux/  tutorials/install-the-daemon
 installing-snap-on-arch-linux/ tutorials/install-the-daemon/arch-linux
@@ -37,7 +38,7 @@ snapshots/ how-to-guides/manage-snaps/create-data-snapshots
 quota-groups/ how-to-guides/manage-snaps/use-resource-quotas
 disk-space-awareness/ how-to-guides/manage-snaps/disk-space-awareness
 set-system-options/ reference/administration/system-options
-service-management/management how-to-guides/manage-snaps/control-services
+service-management/ how-to-guides/manage-snaps/control-services
 using-components/ how-to-guides/manage-snaps/using-components
 configure-with-confdb/ reference/interfaces/confdb-interface
 manage-validation-sets/ explanation/how-snaps-work/validation-sets
