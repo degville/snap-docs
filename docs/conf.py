@@ -253,7 +253,9 @@ redirects = {
    "snapcraft-plugins": "https://documentation.ubuntu.com/snapcraft/stable/reference/plugins/",
    "snapcraft-yaml-schema": "https://documentation.ubuntu.com/snapcraft/stable/reference/project-file/snapcraft-yaml/",
    "supported-extensions": "https://documentation.ubuntu.com/snapcraft/stable/reference/extensions/",
-   "supported-plugins": "https://documentation.ubuntu.com/snapcraft/stable/reference/plugins/"
+   "supported-plugins": "https://documentation.ubuntu.com/snapcraft/stable/reference/plugins/",
+   "store-brand-accounts": "https://documentation.ubuntu.com/core/explanation/stores/brand-accounts/",
+   "create-a-new-snap": "https://documentation.ubuntu.com/snapcraft/stable/tutorials/craft-a-snap/"
 }
 
 ###########################
