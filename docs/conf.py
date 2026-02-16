@@ -255,7 +255,20 @@ redirects = {
    "supported-extensions": "https://documentation.ubuntu.com/snapcraft/stable/reference/extensions/",
    "supported-plugins": "https://documentation.ubuntu.com/snapcraft/stable/reference/plugins/",
    "store-brand-accounts": "https://documentation.ubuntu.com/core/explanation/stores/brand-accounts/",
-   "create-a-new-snap": "https://documentation.ubuntu.com/snapcraft/stable/tutorials/craft-a-snap/"
+   "create-a-new-snap": "https://documentation.ubuntu.com/snapcraft/stable/tutorials/craft-a-snap/",
+   "python-apps": "https://documentation.ubuntu.com/snapcraft/stable/how-to/integrations/craft-a-python-app/",
+   "pre-built-apps": "https://documentation.ubuntu.com/snapcraft/stable/how-to/integrations/craft-a-pre-built-app/",
+   "c-c-applications": "https://documentation.ubuntu.com/snapcraft/stable/how-to/integrations/craft-a-c-or-cpp-app/",
+   "go-applications": "https://documentation.ubuntu.com/snapcraft/stable/how-to/integrations/craft-a-go-app/",
+   "java-applications": "https://documentation.ubuntu.com/snapcraft/stable/how-to/integrations/craft-a-java-app/",
+   "node-apps": "https://documentation.ubuntu.com/snapcraft/stable/how-to/integrations/craft-a-node-app/",
+   "electron-apps": "https://documentation.ubuntu.com/snapcraft/stable/how-to/integrations/craft-an-electron-app/",
+   "flutter-applications":  "https://documentation.ubuntu.com/snapcraft/stable/how-to/integrations/craft-a-flutter-app/",
+   "ruby-applications": "https://documentation.ubuntu.com/snapcraft/stable/how-to/integrations/index.html",
+   "rust-applications": "https://documentation.ubuntu.com/snapcraft/stable/how-to/integrations/craft-a-rust-app/",
+   "moos-applications": "https://documentation.ubuntu.com/snapcraft/stable/how-to/integrations/craft-a-moos-app/",
+   "ros-applications": "https://documentation.ubuntu.com/snapcraft/stable/how-to/integrations/craft-an-ros-1-app/",
+   "ros2-applications": "https://documentation.ubuntu.com/snapcraft/stable/how-to/integrations/craft-an-ros-2-app/"
 }
 
 ###########################
