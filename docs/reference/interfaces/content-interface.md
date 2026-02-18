@@ -5,13 +5,11 @@ The `content` interface allows sharing code and data from a slot on a _producer_
 
 Sharing happens at the filesystem level, which means anything that can be expressed as a file can be shared. This includes executables, libraries and data files, but also sockets.
 
-<h2 id='heading--example'>Example</h2>
+## Example
 
 The [Yaru MATE Icons](https://github.com/ubuntu-mate/icon-theme-yaru-mate-snap) snap is a good producer snap example, letting other applications access the wonderful MATE icon theme. But there are many other producer snaps too, including several for [GTK Common Themes](https://snapcraft.io/gtk-common-themes) and [KDE Frameworks](https://snapcraft.io/kde-frameworks-5-core18) for better application integration with the desktop.
 
-
 ## Developer details
-
 
 **Auto-connect**: no, unless connecting to snaps from the same publisher.
 
@@ -24,21 +22,11 @@ The [Yaru MATE Icons](https://github.com/ubuntu-mate/icon-theme-yaru-mate-snap) 
    * **content (slot and plug)**: an arbitrary identifier for content type. Defaults to either local slot name or local plug name for slot/plug definitions respectively.
    * **interface (slot and plug)**: snapd interface name (must be `interface: content`)
 
-**See below for more details on the following:**
-- [**Sharing content**](#heading--sharing-content): how to share filesystem locations, and how they appear to a plug
-- [**Using the source keyword**](#heading--using-course): share one or more sub-directories beneath a target path
-- [**Read-only content sharing**](#heading--read-only): ideal for executables and global graphical themes
-- [**Content identifier obligations**](#heading--identifier):  how the content identifier represents a compatibility contract between the producer and consumer snaps
-- [**Default provider**](#heading--default): define and potentially install a snap with a corresponding slot
-- [**Writable data**](#heading--writable): share data files and sockets between one or more snaps
-- [**Implementation details**](#heading--details): how AppArmor and _bind mounts_ help implement the interface
-- [**Code examples**](#heading--code)
-
-<h2 id='heading--sharing-content'>Sharing content</h2>
+## Sharing content
 
 By default, when multiple directories are shared from a producer snap, or when multiple slots are connected to a single plug, the shared content is merged under the `target` path of the consuming path's plug definition. This behaviour can be modified with the `source` attribute.
 
-Read, write and target should start with either ``$SNAP``, ``$SNAP_DATA`` or ``$SNAP_COMMON`` to refer to the designated directory. See [Environment variables](/) for details on where these point to on the filesystem.
+Read, write and target should start with either ``$SNAP``, ``$SNAP_DATA`` or ``$SNAP_COMMON`` to refer to the designated directory. See [Environment variables](/docs/reference/development/environment-variables) for details on where these point to on the filesystem.
 
 The _content identifier_ specified by the consuming snap (plug) must match the _content_ attribute of the producer snap (slot).
 
@@ -51,7 +39,7 @@ In all of the cases we see a small set of attributes defined on the particular i
 - the consumer uses the `target` attribute to define where the content should become available at runtime.
 - both the producer and consumer use an arbitrary `content` attribute to describe the content. This attribute must match on both sides for the connection to happen.
 
-<h3 id='heading--using-source'>Using <code>source</code></h3>
+### Using <code>source</code>
 
 The `source` attribute presents one or more sub-directories, shared from a slot to a plug, beneath the plug's `target` path. Adding the `source` attribute ensures that sub-directories, shared from one or more producer snaps, are presented separately to the consumer snap beneath its `target` path.
 
@@ -94,11 +82,11 @@ $SNAP/usr/local/bin-2/<executable-name>
 
 Directory names are preserved after a reboot.
 
-<h2 id='heading--read-only'>Read-only content sharing</h2>
+## Read-only content sharing
 
 Read-only content sharing is ideal for executables and files related to global graphical themes and images.
 
-#### Sharing an executable
+### Sharing an executable
 
 When the following two interfaces are connected, the *consumer* snap can invoke executables from `$SNAP/usr/local/bin`:
 
@@ -146,7 +134,7 @@ plugs:
     target: $SNAP/extra-libs
 ```
 
-After [connecting the interface](/), the *consumer* snap can link to libraries from `$SNAP/extra-libs`. The directory can be added to `LD_LIBRARY_PATH` in the wrapper script if desired.
+After connecting the interface, the *consumer* snap can link to libraries from `$SNAP/extra-libs`. The directory can be added to `LD_LIBRARY_PATH` in the wrapper script if desired.
 
 The value of the `content` attribute can be anything, but it is good practice to follow the form `nameAPI-BUILDENV` to remind slot consumers of the API level and build tools used. This naming convention is also _required_ when sharing content between snap publishers.
 
@@ -156,7 +144,7 @@ In the above example:
 
 API and BUILDENV can be anything that is meaningful to the provider and consumers. For example, the GNOME content snap uses `gnome-3-26-1604` to denote the full GNOME 3.26 platform libraries and supporting files built on Ubuntu 16.04 LTS.
 
-<h3 id='heading--identifier'>Content identifier obligations</h3>
+### Content identifier obligations
 
 The content identifier attribute identifies a mostly-immutable compatibility contract (API/ABI or similar) between the snap providing the corresponding content and the snaps consuming it.
 
@@ -166,7 +154,7 @@ Equally, updates to consuming snaps cannot strongly depend on changes of the ide
 
 There is no support in _snapd_ to synchronise updates between consuming and providing snaps. Compatibility breaking changes need to happen under a different content identifier.
 
-<h2 id='heading--default'>Default provider</h2>
+## Default provider
 
 The optional `default-provider` attribute can be used to set to the name of a snap offering a corresponding content slot:
 
@@ -180,11 +168,11 @@ plugs:
     default-provider: lib01604
 ```
 
-If the system does not contain a snap providing a matching slot, installing a consumer snap with a default-provider will trigger the automatic installation of the named provider snap (from _snapd 2.32_).  If the named snap is already installed, the absence of a matching slot will instead trigger an update of the named provider snap (from _snapd 2.53_). The plug and slot will be auto-connected assuming the [auto-connection mechanism](/) is configured properly for this.
+If the system does not contain a snap providing a matching slot, installing a consumer snap with a default-provider will trigger the automatic installation of the named provider snap.  If the named snap is already installed, the absence of a matching slot will instead trigger an update of the named provider snap. The plug and slot will be auto-connected assuming the [auto-connection mechanism](/) is configured properly for this.
 
 For example, a snap consuming the GNOME content snap for GNOME 3.26 can set `default-provider` to `gnome-3-26-1604`.
 
-<h2 id='heading--writable'>Sharing writable data</h2>
+## Sharing writable data
 
 Sharing writable data can be used to share data files, and _UNIX sockets_, between a group of snaps. This allows for the creation of a simple form of IPC between them.
 
@@ -232,12 +220,12 @@ plugs:
 
 When the two interfaces are connected the *consumer* snap can see the socket in `$SNAP_DATA`.
 
-<h2 id='heading--details'>Technical details</h2>
+## Technical details
 
 The content interface is implemented via an interplay between two systems:
 [AppArmor](https://wiki.ubuntu.com/AppArmor) and bind mounts.
 
-By default, the AppArmor sandbox allows _writes_ to `$SNAP_DATA` and _reads_ from `$SNAP` (see [Environment variables](/) for details).
+By default, the AppArmor sandbox allows _writes_ to `$SNAP_DATA` and _reads_ from `$SNAP` (see [Environment variables](/docs/reference/development/environment-variables) for details).
 
 The content interface takes advantage of this feature to map data from other locations to either `$SNAP` or `$SNAP_DATA`.
 
@@ -245,11 +233,10 @@ A bind mount is then created to link `$SNAP` in one snap (e.g. from `/snap/my-sn
 
 The same can be done for particular files, if desired, but it requires a pair of interfaces for each file and is more cumbersome.
 
-<h3 id='heading-code'>Code examples</h3>
+### Code examples
 
 The previously mentioned [Yaru MATE Icons](https://snapcraft.io/icon-theme-yaru-mate) snap is a good example of how this interface can be used to share media with other snaps. Its snapcraft.yaml can be found here:
 [https://github.com/ubuntu-mate/icon-theme-yaru-mate-snap/blob/main/snap/snapcraft.yaml](https://github.com/ubuntu-mate/icon-theme-yaru-mate-snap/blob/main/snap/snapcraft.yaml)
 
 The source code for this interface is in the *snapd* repository:
 <https://github.com/canonical/snapd/blob/master/interfaces/builtin/content.go>
-

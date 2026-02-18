@@ -291,7 +291,6 @@ volumes:
 The following is an example `gadget.yaml` for a Raspberry Pi:
 
 ```{dropdown} Raspberry Pi gadget.yaml
-:closed:
 
 ```yaml
 device-tree: bcm2709-rpi-3-b-plus

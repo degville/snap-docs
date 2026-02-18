@@ -14,4 +14,3 @@ YAML schemas define exactly what a device, kernel and snap is capable of.
 :glob:
 
 *
-*/index

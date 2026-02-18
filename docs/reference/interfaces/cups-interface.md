@@ -5,20 +5,21 @@ The `cups` interface allows access to the CUPS socket for printing via the [`cup
 
 This interface is intended to be used by snap developers who wish to add safe printing functionality to their snapped applications without requiring their users to make make a manual interface connection. This is possible because the cups interface does not permit administration or configuration of printers via the CUPS socket, only the submission of print jobs and auxiliary tasks, such as listing available printers.
 
-Formerly, to print from a snapped application, the [cups control interface](/interfaces/cups-control-interface) was required. This needs either a manual connection or Snap Store permissions to auto-connect. Alongside printer access, the _cups control interface_ also allows any user to create and modify queues, and their permissions, and to read and delete anyone’s print jobs. This isn't ideal in a multi-user environment.
+Formerly, to print from a snapped application, the [cups control interface](/reference/interfaces/cups-control-interface) was required. This needs either a manual connection or Snap Store permissions to auto-connect. Alongside printer access, the _cups control interface_ also allows any user to create and modify queues, and their permissions, and to read and delete anyone’s print jobs. This isn't ideal in a multi-user environment.
 
 The `cups-control` interface will continue to be available to allow printer setup tools (and general system admin tools, like [this one](https://github.com/ubuntu-flutter-community/settings)) to be snapped.
 
 Available since _snapd 2.55.3_.
 
-### On systems with a classically installed CUPS</br>(via a deb, RPM, or from source, for example)
+## On systems with a classically installed CUPS
+(Via a deb, RPM, or from source, for example).
 
 The CUPS snap will run in proxy mode, working as a proxy or firewall between the application snaps and the system’s CUPS. The CUPS snap will replicate the system print queues and pass jobs through to the system’s CUPS. The user will be able to access the same queues and printer drivers when printing from classically installed applications *and* application snaps.
 
-### On systems with no CUPS installed (or using the CUPS snap)
+## On systems with no CUPS installed
+(or using the CUPS snap).
 
 The CUPS snap will run in standalone mode, listening not only on `$SNAP_COMMON/run/cups.sock` but also on `/run/cups/cups.sock`. This way all applications, both classically installed or snapped, print via the CUPS Snap. Queues have to be created on the snapped CUPS, drivers have to be [Printer Applications](https://snapcraft.io/search?q=OpenPrinting). Also here the user sees the same print queues for both classic and snapped applications.
-
 
 ## Developer details
 
@@ -38,14 +39,14 @@ The design of both of these interfaces is based on the idea that the slot implem
 
 ### Current requirements
 
-As the CUPS interface is new, we currently recommend the following additions be made to the top level of your  [snapcraft.yaml](/).
+As the CUPS interface is new, we currently recommend the following additions be made to the top level of your  [snapcraft.yaml](https://documentation.ubuntu.com/snapcraft/stable/reference/project-file/snapcraft-yaml/).
 
 1) Adding _assumes_ will ensure snapd is updated to a CUPS interface compatible version:
 
     ```yaml
     # snapd 2.55 or later is needed for cups interface support
     assumes: [snapd2.55]
-   ```
+    ```
 
 2) The following will trigger the automatic installation of the cups snap:
 
