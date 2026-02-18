@@ -1,11 +1,11 @@
 (interfaces-confdb)=
 #  confdb interface
 
-The `confdb` interface enables snaps to access to specific  [confdb](/interfaces/confdb) views.
+The `confdb` interface enables snaps to access to specific  [confdb](/explanation/how-snaps-work/confdb-configuration-mechanism.md#confdb-views) views.
 
 There are two fields that together identify the view being accessed: `account` and `view`. There is also an optional `role` field which may only take the value of "custodian", if the snap is a custodian for the confdb-schema being accessed.
 
-See the [Confdb configuration mechanism](/interfaces/confdb) for implementation details, and [Configure snaps with confdb](/) to use confdb with your own snaps.
+See the [Confdb configuration mechanism](/explanation/how-snaps-work/confdb-configuration-mechanism) for implementation details, and [Configure snaps with confdb](/how-to-guides/manage-snaps/configure-snaps-with-confdb) to use confdb with your own snaps.
 
 ```
 [...]
@@ -15,13 +15,9 @@ See the [Confdb configuration mechanism](/interfaces/confdb) for implementation 
   view: sensors/read-sensor1-parameters
 ```
 
-[comment]: <> (```{tip})
-
-See [Interface management](/) and [Supported interfaces](/interfaces/index) for further details on how interfaces are used.
-
-[comment]: <> (```)
-
-> ⓘ  Confdb is currently considered an [Experimental feature](https://forum.snapcraft.io/t/experimental-features/41241) and implementation details may change as development progresses.
+```{warning}
+ Confdb is currently considered an [Experimental feature](/reference/development/experimental-features/) and implementation details may change as development progresses.
+```
 
 ## Developer details
 
