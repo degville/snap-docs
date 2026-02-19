@@ -5,7 +5,7 @@ This page describes how developers can implement an [interface](/) that supports
 
 For a general user overview, including enabling this functionality and hotplug interface management, see [Hotplug support](/reference/interfaces/hotplug-support).
 
-> ⓘ  Hotplug support is currently [under active development](/reference/interfaces/snapd-roadmap), and will become widely available with the release of snapd _2.39_. 
+Hotplug support is currently [under active development](/reference/development/experimental-features).
 
 ## Adding hotplug interfaces
 
