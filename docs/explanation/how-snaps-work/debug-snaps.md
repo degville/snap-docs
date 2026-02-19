@@ -5,20 +5,20 @@ Each snap runs inside its own [confined environment](/), also called "sandbox". 
 
 The following techniques can help you investigate and solve these policy violations.
 
-- Use [`snap try`](/reference/interfaces/snap-try) to quickly test changes without rebuilding your snap.
-- Use [`snap run --shell`](#heading--shell) to inspect and test the confined environment.
-- Use [developer mode](#heading--developer) to try your snap without confinement.
+- Use [`snap try`](/how-to-guides/snap-development/snap-try) to quickly test changes without rebuilding your snap.
+- Use `snap run --shell` to inspect and test the confined environment.
+- Use _developer mode_ to try your snap without confinement.
 - Investigating policy violation logs:
   - Use [`snappy-debug`](#heading--snappy-debug) to investigate violation logs and receive suggestions.
-  - [Manually search the raw logs](#heading--manual-log).
-  - [Understanding AppArmor](#heading--apparmor) violations.
-  - [Understanding seccomp](#heading--seccomp) violations.
-- Investigate [file permissions and cgroup device access](#heading--permissions) violations.
-- Use [GDB and gdbserver from within a snap's environment](/) to isolate and identify potential issues.
+  - Manually search the raw logs
+  - Understanding AppArmor
+  - Understanding seccomp
+- Investigate file permissions and cgroup device access violations.
+- Use GDB and gdbserver from within a snap's environment to isolate and identify potential issues.
 
-For more details on how AppArmor, seccomp and device permission security policies are implemented, see [Security policy and sandboxing](/).
+For more details on how AppArmor, seccomp and device permission security policies are implemented, see [Security policy and sandboxing](/explanation/security/security-policies).
 
-<h2 id='heading--shell'>Run a shell in the confined environment</h2>
+## Run a shell in the confined environment
 
 To investigate and test the confined environment of a snap, you can open a `bash` shell in it. After the snap is installed, use the `--shell  <name>.<command>` argument of `snap run`.
 
@@ -28,19 +28,19 @@ To run a command as administrator (user "root"), use "sudo <command>".
 See "man sudo_root" for details.
 ```
 
-This will create the confined environment of the Snap, execute the [command-chain](/t/snapcraft-app-and-service-metadata/8335#heading--command-chain) and then run `bash` inside that environment.
+This will create the confined environment of the Snap, execute the [command-chain](/how-to-guides/manage-snaps/control-services) and then run `bash` inside that environment.
 
 You can then investigate which files your snap has access to by running commands such as `ls` and `cat`.
 
-> ⓘ It's important to put `--shell` _before_ the name of the snap. Otherwise it will be interpreted as an argument to the application instead of an argument to `snap run`.
+It's important to put `--shell` _before_ the name of the snap. Otherwise it will be interpreted as an argument to the application instead of an argument to `snap run`.
 
-<h2 id='heading--strace'>Run a snap under strace</h2>
+## Run a snap under strace
 
 Note that this requires _snapd 2.62_.
 
 Viewing which [system calls](https://en.wikipedia.org/wiki/System_call) are made by an application, and how the Linux kernel responds to them,  can be beneficial in gaining insights into a failure.  This can be accomplished with the widely used [strace](https://strace.io/) utility.
 
-Running the standard _strace_ command on a snapped application, however, can produce confusing results due to the [confined environment](/) most snaps run within. To solve this problem, _snapd_ includes specific support for running an application under strace.
+Running the standard _strace_ command on a snapped application, however, can produce confusing results due to the [confined environment](/explanation/security/snap-confinement) most snaps run within. To solve this problem, _snapd_ includes specific support for running an application under strace.
 
 To use this, you first have to install the [strace-static](https://snapcraft.io/strace-static) snap:
 
@@ -64,7 +64,7 @@ snap run --strace=--raw <snap-name>
 
 Strace is highly versatile. You can learn more about it by reading the manual page [strace(1)](https://www.man7.org/linux/man-pages/man1/strace.1.html).
 
-<h2 id='heading--developer'>Developer mode</h2>
+## Developer mode
 
 To help isolate runtime errors when building and testing a snap, a snap can be installed using _developer mode_.
 
@@ -76,9 +76,9 @@ sudo snap install --devmode mysnap
 
 When a snap is installed with developer mode, violations against a snap's security policy are permitted to proceed but logged via journald.
 
-<h2 id='heading--debugging'>Debugging policy violation logs</h2>
+## Debugging policy violation logs
 
-<h3 id='heading--snappy-debug'>Using snappy-debug to show violations</h3>
+### Using snappy-debug to show violations
 
 The easiest way to find and fix policy violations is to use [the `snappy-debug` tool](https://snapcraft.io/snappy-debug). It
 
@@ -113,7 +113,7 @@ See `snappy-debug --help` for more information about this tool.
 If you believe there is a bug in a security policy or want to request and/or contribute a new interface, please [file a bug](https://bugs.launchpad.net/snappy/+filebug), adding the `snapd-interface` tag, and feel free to discuss policy issues [on the forum](https://forum.snapcraft.io/c/snapd).
 
 
-<h3 id='heading--manual-log'>Manually extracting violation logs</h3>
+### Manually extracting violation logs
 
 > Note that this method does not show _all_ violation logs, since not all logs contain the term "audit" in them. Use `snappy-debug` to see all violation logs.
 
@@ -136,7 +136,7 @@ As shown above, kernel log rate limiting can be disabled manually with:
 $ sudo sysctl -w kernel.printk_ratelimit=0
 ```
 
-<h3 id='heading--apparmor'>Understanding AppArmor violations</h3>
+### Understanding AppArmor violations
 
 An AppArmor violation will look something like the following and include `apparmor=DENIED`:
 
@@ -157,7 +157,7 @@ For example:
 1. use `sudo service snap.<name>.<command> stop/start/etc` as needed for daemons
 1. repeat until AppArmor policy issues are resolved
 
-<h3 id='heading--seccomp'>Understanding seccomp violations</h3>
+### Understanding seccomp violations
 
 A seccomp violation will look something like:
 
@@ -188,7 +188,7 @@ The `snap-confine` command will load the bpf in the `.bin` file for the command 
 
 When done, copy any changes you make to `/var/lib/snapd/apparmor/profiles/snap.<name>.<command>` or `/var/lib/snapd/seccomp/bpf/snap.<name>.<command>.src` to your interface code.
 
-<h4 id='heading--snapseccomp'>snap-seccomp versions and paths</h3>
+#### snap-seccomp versions and paths
 
 Tools such as snap-confine, snap-seccomp and snap-exec are internal to snapd and are initially installed with a distribution's snapd package.
 
@@ -214,7 +214,7 @@ lrwxrwxrwx 1 root root 0 06-05 12:49 /proc/808335/exe -> /usr/lib/snapd/snapd
 
 Correspondingly, `snap-seccomp` will be called using its full path `/usr/lib/snapd/snapd`.
 
-<h2 id='heading--permissions'>File permissions</h2>
+## File permissions
 
 While tradition file permissions are respected and enforced, any violations are not currently logged. Similarly, device cgroups may also block access without logging denials.
 
@@ -258,7 +258,7 @@ In addition to the above, here are some other useful techniques when debugging/d
 The above command has changed to snap-device-helper
 -->
 
-<h2 id='heading--further'>Further reading</h2>
+## Further reading
 
 - https://github.com/canonical/snapd/tree/master/interfaces for existing interface code and policy
 - https://manpages.ubuntu.com/manpages/jammy/man5/apparmor.d.5.html
