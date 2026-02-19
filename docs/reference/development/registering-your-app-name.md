@@ -1,7 +1,7 @@
 (interfaces-registering-your-app-name)=
 # Registering your app name
 
-Now that you've [created a developer account](/interfaces/creating-your-developer-account) on the Snap Store and [built your snap](/) you can register a name for your app.
+Now that you've [created a developer account](/reference/interfaces/creating-your-developer-account) on the Snap Store and [built your snap](/) you can register a name for your app.
 
 ## What name to choose
 

@@ -3,7 +3,7 @@
 
 The `i2c` interface permits access to a specific I2C controller. It's intended to be used with Ubuntu Core and its scope and specification are defined as part of the [gadget snap](https://snapcraft.io/docs/the-gadget-snap) for the deployed Ubuntu Core image.
 
-[Hardware IO interfaces](/interfaces/hardware-io-interfaces) covers some general considerations common to these kinds of devices.
+[Hardware IO interfaces](/reference/interfaces/hardware-io-interfaces) covers some general considerations common to these kinds of devices.
 
 To permit access, the application snaps define an i2c *plug* which is associated with a corresponding and identically-named i2c *slot* in the gadget snap.
 

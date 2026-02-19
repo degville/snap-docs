@@ -1,7 +1,7 @@
 (interfaces-installing-snap-on-red-hat)=
 # Install snap on Red Hat 
 
-Snap is available for [Red Hat Enterprise Linux (RHEL) 9.x](https://developers.redhat.com/products/rhel/overview), RHEL 8 and RHEL 7, from the 7.6 release onwards. It's also available for CentOS 7.6+ (see [Installing snap on CentOS](/interfaces/installing-snap-on-centos)).
+Snap is available for [Red Hat Enterprise Linux (RHEL) 9.x](https://developers.redhat.com/products/rhel/overview), RHEL 8 and RHEL 7, from the 7.6 release onwards. It's also available for CentOS 7.6+ (see [Installing snap on CentOS](/reference/interfaces/installing-snap-on-centos)).
 
 The packages for RHEL are in the distribution's respective [Extra Packages for Enterprise Linux](https://fedoraproject.org/wiki/EPEL) (EPEL) repository. The instructions for adding this repository diverge slightly between RHEL9, RHEL 8 and RHEL 7, which is why they're listed separately below.
 

@@ -29,7 +29,7 @@ Once connected, the consuming snap can use the device via the path specified by 
     * `usb-product` (slot): integer representing the USB Product ID, must be in range 0 <= vid <= 65535
     * `path` (slot): path of the form `/dev/serial-port-...` where a symlink will be created to the device e.g. `/dev/serial-port-mydevice`
 
-[Hardware IO interfaces](/interfaces/hardware-io-interfaces) covers some general considerations common to these kinds of devices.
+[Hardware IO interfaces](/reference/interfaces/hardware-io-interfaces) covers some general considerations common to these kinds of devices.
 
 
 To use a serial-port device, the snap developer must add `plugs: [ serial-port ]` to a snap's [snapcraft.yaml](/). The snap user can then access a specific serial-port device with an [interface connection](/t/interface-management/6154#heading--manual-connections).

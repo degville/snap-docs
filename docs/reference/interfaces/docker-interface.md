@@ -9,7 +9,7 @@ While anyone can rebuild the [Docker snap from source](https://github.com/docker
 
 
 ```{tip}
-See [Interface management](/) and [Supported interfaces](/interfaces/index) for further details on how interfaces are used.
+See [Interface management](/) and [Supported interfaces](/reference/interfaces/index) for further details on how interfaces are used.
 ```
 
 ---
@@ -53,7 +53,7 @@ This snapcraft.yaml will build a [strictly confined](/) snap package which is po
 
 The snap has one [apps definition](/) which contains the `hello-docker` application. This application uses two snap interface plugs, one called _docker_ and the other called _docker-executables_.
 
-The plugs for both are defined in more detail in the `plugs:` section. In this section, _docker_ refers to this specific interface while _docker-executables_ is an example of a [content interface](/interfaces/content-interface). The content interface is further specified to refer to content of type docker-executables. This is important as it has to match what is [provided by the Docker snap](https://github.com/docker-snap/docker-snap/blob/058337577d4172c8919a53a41c38ebe7ee9beab0/snap/snapcraft.yaml#L90C1-L90C22) available in the store.
+The plugs for both are defined in more detail in the `plugs:` section. In this section, _docker_ refers to this specific interface while _docker-executables_ is an example of a [content interface](/reference/interfaces/content-interface). The content interface is further specified to refer to content of type docker-executables. This is important as it has to match what is [provided by the Docker snap](https://github.com/docker-snap/docker-snap/blob/058337577d4172c8919a53a41c38ebe7ee9beab0/snap/snapcraft.yaml#L90C1-L90C22) available in the store.
 
 Plugs of the content interface have the target attribute which defines where the corresponding content is made available. In this case, it is the directory `docker-snap` inside the read-only image of the application snap. It is important that our application snap contains an empty directory with the same name, so that when the Docker snap is installed and the interfaces are connected, we can access the Docker snap's command line tools.
 

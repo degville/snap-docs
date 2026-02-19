@@ -3,7 +3,7 @@
 
 The `netlink-connector` interface allows communication through the kernel Netlink connector.
 
-See also [netlink-driver](/interfaces/netlink-driver-interface) and [netlink-audit](/interfaces/netlink-audit-interface).
+See also [netlink-driver](/reference/interfaces/netlink-driver-interface) and [netlink-audit](/reference/interfaces/netlink-audit-interface).
 
 
 ## Developer details

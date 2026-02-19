@@ -13,7 +13,7 @@ Use of `nfs` requires snapd version *2.67+*
 
 Use of `cifs` requires snapd version *2.68+*
 
-See [Interface management](/) and [Supported interfaces](/interfaces/index) for further details on how interfaces are used.
+See [Interface management](/) and [Supported interfaces](/reference/interfaces/index) for further details on how interfaces are used.
 
 ---
 

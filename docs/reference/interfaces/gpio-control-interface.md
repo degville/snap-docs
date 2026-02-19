@@ -1,7 +1,7 @@
 (interfaces-gpio-control-interface)=
 #  gpio-control interface
 
-The `gpio-control` interface provides privileged access to all aspects of GPIO pins. For accessing specific GPIO pins with limited scope, see [The gpio interface](/interfaces/gpio-interface) instead.
+The `gpio-control` interface provides privileged access to all aspects of GPIO pins. For accessing specific GPIO pins with limited scope, see [The gpio interface](/reference/interfaces/gpio-interface) instead.
 
 Due to its wide-ranging access, it is a [super-privileged interface](/), and as such, is restricted by default. This interface requires modification of its snap declaration for distribution via the Snap Store.
 

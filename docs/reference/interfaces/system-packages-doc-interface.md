@@ -19,7 +19,7 @@ This interface is helpful for *web browsers*, for example, because it enables th
 
 [comment]: <> (```{tip})
 
-See [Interface management](/) and [Supported interfaces](/interfaces/index) for further details on how interfaces are used.
+See [Interface management](/) and [Supported interfaces](/reference/interfaces/index) for further details on how interfaces are used.
 
 [comment]: <> (```)
 
