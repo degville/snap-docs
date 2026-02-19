@@ -32,7 +32,7 @@ snap connect pi-fancontrol:gpio pi:bcm-gpio-14
 **Attributes**:
  * `number` (slot): GPIO pin number to export and expose to consuming snaps
 
-[Hardware IO interfaces](/interfaces/hardware-io-interfaces) covers some general considerations common to these kinds of devices.
+[Hardware IO interfaces](/reference/interfaces/hardware-io-interfaces) covers some general considerations common to these kinds of devices.
 
 To use a gpio device, the snap developer must add `plugs: [ gpio ]` to a snap's [snapcraft.yaml](/). The snap user can then access a specific gpio device with an [interface connection](/t/interface-management/6154#heading--manual-connections).
 

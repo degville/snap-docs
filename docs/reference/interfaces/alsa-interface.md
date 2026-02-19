@@ -3,7 +3,7 @@
 
 `alsa` allows access to raw ALSA audio playback and recording devices. This is equivalent to direct driver access to your audio hardware and may block other applications from recording or playing sound.
 
-To provide better audio sharing and input and output configuration, it's  recommended that most snaps access audio functionality through the system audio layer, such as PulseAudio, via the [audio-playback](/interfaces/audio-playback-interface) and [audio-record](/interfaces/audio-record-interface) interfaces.
+To provide better audio sharing and input and output configuration, it's  recommended that most snaps access audio functionality through the system audio layer, such as PulseAudio, via the [audio-playback](/reference/interfaces/audio-playback-interface) and [audio-record](/reference/interfaces/audio-record-interface) interfaces.
 
 However, raw access to ALSA devices using this interface can provide a slight performance advantage with input and output latency and avoid resampling which can reduce audio quality.
 

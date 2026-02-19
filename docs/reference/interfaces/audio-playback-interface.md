@@ -3,7 +3,7 @@
 
 The `audio-playback` interface allows a snap to play sounds and music, via the supporting audio service running on the system, such as PulseAudio. It's used by many applications and utilities, and as such, is enabled by default.
 
-Audio recording is enabled with the companion [audio-record](/interfaces/audio-record-interface) interface, and unlike `audio-playback`, is not enabled (auto-connected) by default.
+Audio recording is enabled with the companion [audio-record](/reference/interfaces/audio-record-interface) interface, and unlike `audio-playback`, is not enabled (auto-connected) by default.
 
 <h2 id='heading--example'>Example</h2>
 

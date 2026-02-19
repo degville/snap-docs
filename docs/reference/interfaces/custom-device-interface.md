@@ -7,7 +7,7 @@ To permit access, the application snaps define a custom-device plug and the [gad
 
 Under specific and appropriate circumstances, it is possible to define the slot directly from the consuming application itself, together with the plug, which is an acceptable approach for applications that will be widely distributed but support very specific hardware.
 
-Using the custom-device requires [Store approval and permissions](/interfaces/permission-requests), both to allow the presence of the slot, and to set up elements such as the slot self-connecting exactly to the plug on the app. The more specific the tagging information provided by the slot, the easier it will be to allow for this.
+Using the custom-device requires [Store approval and permissions](/reference/interfaces/permission-requests), both to allow the presence of the slot, and to set up elements such as the slot self-connecting exactly to the plug on the app. The more specific the tagging information provided by the slot, the easier it will be to allow for this.
 
 The slot-side of the interface is used to derive which _udev_ rules are provided to the plug-side of the connection:
 

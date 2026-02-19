@@ -6,7 +6,7 @@
 **Auto-connect**: yes
 **Transitional**: yes
 
-See [The desktop interfaces](/interfaces/desktop-interfaces) for further details.
+See [The desktop interfaces](/reference/interfaces/desktop-interfaces) for further details.
 
 **Condition to Connect**: If your snap has a graphical user interface, you *should* connect to this interface.
 

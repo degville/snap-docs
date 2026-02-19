@@ -35,7 +35,7 @@ $ hello-world
 Hello World!
 ```
 
-Snap is now installed and ready to go!  If you're using a desktop, a great next step is to [install the Snap Store app](/interfaces/installing-snap-store-app).
+Snap is now installed and ready to go!  If you're using a desktop, a great next step is to [install the Snap Store app](/reference/interfaces/installing-snap-store-app).
 
 
 ```{tip}

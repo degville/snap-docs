@@ -29,7 +29,7 @@ slots:
 
 Requires snapd 2.72+.
 
-[Hardware IO interfaces](/interfaces/hardware-io-interfaces) covers some general considerations common to these kinds of devices.
+[Hardware IO interfaces](/reference/interfaces/hardware-io-interfaces) covers some general considerations common to these kinds of devices.
 
 When the interface is connected:
 - `snap-gpio-helper` sets up a virtual GPIO device exposing the specified lines defined in the slot as a character device node at `/dev/snap/gpio-chardev/<slot-snap>/<slot-name>`.
@@ -40,7 +40,7 @@ Once connected, the consuming snap can use the device via `/dev/snap/gpio-charde
 [note status="Important notes"]
 
 - Slot definitions are only allowed for gadget snaps.
-- This interface cannot be used if there is an active connection to the older [`gpio`](/interfaces/gpio-interface) interface.
+- This interface cannot be used if there is an active connection to the older [`gpio`](/reference/interfaces/gpio-interface) interface.
 - `source-chip` being a list enables sharing of a gadget snap between a number of devices, for which the same lines are exposed by differently labeled GPIO controllers.
 - `lines` can be expressed by joining them with a comma: *n[,m]* or as a range: *n-m* (inclusive) or a combination of both, assuming the ranges do not overlap, e.g.: `lines: 0,2,4-8`.
 - `lines` are exported in the order of presence in the source GPIO chip device, and not in the order in which they are declared in the attribute.

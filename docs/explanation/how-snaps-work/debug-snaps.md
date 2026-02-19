@@ -5,7 +5,7 @@ Each snap runs inside its own [confined environment](/), also called "sandbox". 
 
 The following techniques can help you investigate and solve these policy violations.
 
-- Use [`snap try`](/interfaces/snap-try) to quickly test changes without rebuilding your snap.
+- Use [`snap try`](/reference/interfaces/snap-try) to quickly test changes without rebuilding your snap.
 - Use [`snap run --shell`](#heading--shell) to inspect and test the confined environment.
 - Use [developer mode](#heading--developer) to try your snap without confinement.
 - Investigating policy violation logs:
@@ -151,7 +151,7 @@ To better understand AppArmor policy for a strictly installed snap, modify the A
 For example:
 
 1. build the  snap
-1. copy the snap to the target device and install it (or use [snap try](/interfaces/snap-try))
+1. copy the snap to the target device and install it (or use [snap try](/reference/interfaces/snap-try))
 1. use the snap (perhaps using [`snap run --shell <name>.<command>`](#heading--shell)), monitoring via journalctl for denials
 1. modifying `/var/lib/snapd/apparmor/profiles/snap.<name>.<command>` as needed (eg, adding rules before the final `'}'`)and running `sudo apparmor_parser -r /var/lib/snapd/apparmor/profiles/snap.<name>.<command>` to compile and load the policy into the kernel
 1. use `sudo service snap.<name>.<command> stop/start/etc` as needed for daemons

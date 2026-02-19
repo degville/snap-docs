@@ -5,7 +5,7 @@ The `microceph-support` interface permits the [microceph](https://snapcraft.io/m
 
 [comment]: <> (```{tip})
 
-See [Interface management](/) and [Supported interfaces](/interfaces/index) for further details on how interfaces are used.
+See [Interface management](/) and [Supported interfaces](/reference/interfaces/index) for further details on how interfaces are used.
 
 [comment]: <> (```)
 

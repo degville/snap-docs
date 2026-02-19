@@ -3,7 +3,7 @@
 
 `kernel-module-load` provides the ability to load, or deny loading, specific kernel modules. This interface gives privileged access to the device.
 
-See also the [kernel-module-control interface](/interfaces/kernel-module-control-interface) for inserting, removing and querying kernel modules.
+See also the [kernel-module-control interface](/reference/interfaces/kernel-module-control-interface) for inserting, removing and querying kernel modules.
 
 
 ## Developer details

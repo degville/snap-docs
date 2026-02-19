@@ -3,7 +3,7 @@
 
 The `netlink-audit` interface allows access to the kernel part of the Linux Audit Subsystem through Netlink.
 
-See also [netlink-driver](/interfaces/netlink-driver-interface) and [netlink-connector]().
+See also [netlink-driver](/reference/interfaces/netlink-driver-interface) and [netlink-connector]().
 
 
 ## Developer details

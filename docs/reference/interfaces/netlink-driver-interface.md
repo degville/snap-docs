@@ -3,7 +3,7 @@
 
 The `netlink-driver` interface allows a kernel module to expose itself to user-space via the Netlink protocol, typically to transfer information between the kernel and user-space processes.
 
-See also [netlink-audit](/interfaces/netlink-audit-interface) and [netlink-connector](/interfaces/netlink-connector-interface).
+See also [netlink-audit](/reference/interfaces/netlink-audit-interface) and [netlink-connector](/reference/interfaces/netlink-connector-interface).
 
 
 ## Developer details

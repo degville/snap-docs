@@ -36,7 +36,7 @@ slots:
  `^/sys/class/gpio/gpio[0-9]+/value$`</br>
    - For LED devices: `^/sys/class/leds/[^/]+/brightness$`
 
-The [gpio interface](/interfaces/gpio-interface)  provides another option for accessing GPIO devices.
+The [gpio interface](/reference/interfaces/gpio-interface)  provides another option for accessing GPIO devices.
 
 To use a boolean file, the snap developer must add `plugs: [ bool-file ]` to a snap's [snapcraft.yaml](/). The snap user can then access a specific boolean file with an [interface connection](/t/interface-management/6154#heading--manual-connections).
 
