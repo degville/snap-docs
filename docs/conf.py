@@ -346,7 +346,7 @@ exclude_patterns = [
 html_css_files = ["css/cookie-banner.css"]
 
 # Used for copying OpenAPI HTML file
-html_extra_path = ["_html_extra"]
+html_extra_path = ["_html_extra/openapi.json"]
 
 # Add redirects, so they can be updated here to land with docs being moved
 rediraffe_branch = "main"
