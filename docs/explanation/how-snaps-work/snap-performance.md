@@ -138,8 +138,7 @@ ID      Status        Doing      Undoing  Label                          Summary
 160188  Done           69ms            -  connect                        Connect chromium:home to snapd:home
 160181  Done           69ms            -  connect                        Connect chromium:audio-playback to snapd:audio-playback
 160202  Done           86ms            -  connect                        Connect chromium:joystick to snapd:joystick
-160192  Done          104ms            -  connect                        Connect chromium:etc-chromium-browser-policies to snapd:system-fi
-les
+160192  Done          104ms            -  connect                        Connect chromium:etc-chromium-browser-policies to snapd:system-files
 160183  Done           68ms            -  connect                        Connect chromium:desktop to snapd:desktop
 160187  Done           67ms            -  connect                        Connect chromium:gnome-42-2204 to gnome-42-2204:gnome-42-2204
 160184  Done           82ms            -  connect                        Connect chromium:icon-themes to gtk-common-themes:icon-themes

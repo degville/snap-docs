@@ -46,7 +46,7 @@ Classic requests generally fall under a number of categories. Below lists catego
 
 #### Unsupported  
 * management snaps
-* 3rd party installer snaps (eg, for native packages, appimages, flatpaks, snaps, etc)
+* 3rd party installer snaps (eg, for native packages, AppImages, Flatpaks, Snaps, etc)
 * difficulty making strict confinement work
 * dependent software only available on host (ship in instead snap (eg, stage-packages, build from source))
 * access to dot files in $HOME (use $HOME instead of getent*, personal-files)
