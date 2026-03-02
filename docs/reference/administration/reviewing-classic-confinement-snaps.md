@@ -15,7 +15,6 @@ Because classic confinement snaps run without restrictions, use of classic confi
 
 ### Definitions
  * reviewers are @reviewers
- * snappy architects are Mark, Gustavo, Samuele, etc
  * advocacy team is @advocacy
  * classic confinement is defined as `confinement: classic` and the upcoming `classic` interface (final name TBD)
  * classic confinement applies to a particular snap ID and may be revoked by the store 
