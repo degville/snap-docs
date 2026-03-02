@@ -143,7 +143,8 @@ A gadget snap's boot assets can also be automatically updated when the snap is r
 
 The following specification defines what is supported in `gadget.yaml`:
 
-``` {dropdown} gadget.yaml
+<details>
+<summary>gadget.yaml</summary>
 
 ```
 # Define the format of this file. The default and latest format is zero.
@@ -287,10 +288,13 @@ volumes:
             preserve:
               - <filename>
 ```
+</details>
 
 The following is an example `gadget.yaml` for a Raspberry Pi:
 
-```{dropdown} Raspberry Pi gadget.yaml
+
+<details>
+<summary>Raspberry Pi gadget.yaml</summary>
 
 ```yaml
 device-tree: bcm2709-rpi-3-b-plus
@@ -341,8 +345,8 @@ connections:
     slot: RmBXKl6HO6YOC2DE4G2q1JzWImC04EUy:service
   - plug: LVkazk0JLrL0ivuHRlv3wp3bK1nAgwtN:shell-config-files
     slot: system:system-files
-
 ```
+</details>
 
 ##  prepare-device hook
 
