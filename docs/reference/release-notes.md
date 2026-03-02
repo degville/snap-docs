@@ -76,7 +76,7 @@ We’re pleased to share that Snapd 2.74 snap is available for testing in the be
 * core-initrd: update dependency from libteec1 to libteec2
 * core-initrd: add new dlopened libs
 * LP: #2116949 Preseeding: add support for preseeding of hybrid systems via the installer API$
-* Preseeding: check whether a path is a mountpoint before remounting
+* Preseeding: check whether a path is a mount point before remounting
 * Confdb: support tagging paths as secret in storage schemas
 * Confdb: support filtering on placeholder sub-keys
 * Confdb: support filtering in API and confdbstate

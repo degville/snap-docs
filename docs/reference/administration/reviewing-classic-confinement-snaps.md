@@ -15,7 +15,6 @@ Because classic confinement snaps run without restrictions, use of classic confi
 
 ### Definitions
  * reviewers are @reviewers
- * snappy architects are Mark, Gustavo, Samuele, etc
  * advocacy team is @advocacy
  * classic confinement is defined as `confinement: classic` and the upcoming `classic` interface (final name TBD)
  * classic confinement applies to a particular snap ID and may be revoked by the store 
@@ -46,7 +45,7 @@ Classic requests generally fall under a number of categories. Below lists catego
 
 #### Unsupported  
 * management snaps
-* 3rd party installer snaps (eg, for native packages, appimages, flatpaks, snaps, etc)
+* 3rd party installer snaps (eg, for native packages, AppImages, Flatpaks, Snaps, etc)
 * difficulty making strict confinement work
 * dependent software only available on host (ship in instead snap (eg, stage-packages, build from source))
 * access to dot files in $HOME (use $HOME instead of getent*, personal-files)

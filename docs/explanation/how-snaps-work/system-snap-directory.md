@@ -7,7 +7,7 @@ It has the following structure:
 
 ```
 /snap/bin                   - Symlinks to snap applications
-/snap/<snapname>/<revision> - Mountpoint for snap content
+/snap/<snapname>/<revision> - Mount point for snap content
 /snap/<snapname>/current    - Symlink to current revision, if enabled
 ```
 
