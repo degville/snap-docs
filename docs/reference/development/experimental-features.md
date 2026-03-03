@@ -1,3 +1,4 @@
+(ref-experimental-features_experimental-features)=
 # Experimental features
 
 Experimental features are part of the _snapd_ development process. They allow engineering teams to test both the viability of an idea and its implementation.

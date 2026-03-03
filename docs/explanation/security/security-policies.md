@@ -166,6 +166,7 @@ Snap security policy permits read and write access for the current revision, and
 
 Before _refresh awareness_ became available, if a refresh occurred while a snap was running, its AppArmor policy would be updated to allow `w` (write) on the new version and `r` (read) on the older versions, including the running version. The policy was applied immediately, which meant that write operations would start to fail for running processes.
 
+(ref-security-policies_refresh-awareness)=
 ### Refresh awareness
 
 By default, a service running from a snap needs to be restarted whenever the snap is refreshed (see [Services and daemons]([/t/services-and-daemons/12601](https://forum.snapcraft.io/t/services-and-daemons/12601)) for more details).

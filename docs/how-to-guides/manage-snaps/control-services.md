@@ -97,6 +97,7 @@ snap start --enable lxd.daemon
 
 User-services cannot be disabled or enabled individually for users currently, they can only be enabled globally or disabled globally (i.e for all users).
 
+(ref-control-services_inspecting-logs)=
 ## Inspecting logs
 
 If you need to see the log output for a snap's services, use the `logs`

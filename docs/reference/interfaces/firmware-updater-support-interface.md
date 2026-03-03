@@ -1,3 +1,4 @@
+(ref-firmware-updater-support-interface_firmware-updater-support-interface)=
 #  firmware-updater-support interface
 
 The `firmware-updater-support` interface allows a snap to operate as the Firmware Updater.

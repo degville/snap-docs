@@ -1,3 +1,4 @@
+(ref-index_interfaces)=
 # Interfaces
 
 [Interfaces](/explanation/interfaces/all-about-interfaces) enable resources from one snap to be shared with another and with the system. The table below lists currently supported interfaces, with links to further details for each interface.

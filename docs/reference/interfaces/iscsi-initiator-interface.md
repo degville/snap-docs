@@ -1,3 +1,4 @@
+(ref-iscsi-initiator-interface_iscsi-initiator-interface)=
 #  iscsi-initiator interface
 
 The `iscsi-initiator` interface allows snaps to act as iSCSI initiators, enabling them to discover, connect to, and manage iSCSI targets for block storage access.

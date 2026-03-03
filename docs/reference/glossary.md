@@ -33,6 +33,7 @@ A branch is an optional finer subdivision of a channel for a published snap that
 
 See [Branches](/explanation/how-snaps-work/channels-and-tracks.md#branches) for more details.
 
+(ref-glossary_brand-store)=
 ### brand store
 
 See [Dedicated Snap Store](#dedicated-snap-store)
@@ -79,6 +80,7 @@ _core20_ is a base snap built from [Ubuntu 20.04 LTS (Focal Fossa)](https://rele
 
 See [Bases](https://documentation.ubuntu.com/snapcraft/stable/reference/bases/) for more details.
 
+(ref-glossary_dedicated-snap-store)=
 ### Dedicated Snap Store
 
 A *Dedicated Snap Store* (formerly known as a *Brand Store* ) allows vendors running Ubuntu Core and snap-based devices to control exactly what snaps are available and when.
@@ -207,6 +209,7 @@ Remote build is a feature in [Snapcraft](https://snapcraft.io/docs/snapcraft-ove
 
 See [Remote build](https://documentation.ubuntu.com/snapcraft/stable/explanation/remote-build/) for further details.
 
+(ref-glossary_revision)=
 ### revision
 
 A snap's *revision* is a number assigned by the [Snap Store](#snap-store) automatically to give each snap a unique identity within and across its channels.
@@ -293,6 +296,7 @@ Snapshots are generated manually with the  `snap save`  command and automaticall
 
 See [Snapshots](/how-to-guides/manage-snaps/create-data-snapshots) for further details.
 
+(ref-glossary_snap-store)=
 ### Snap Store
 
 The Snap Store provides a place to upload your snaps, and for users to browse and install. It hosts thousands of snaps for millions of users on multiple architectures across 40 different Linux distributions.
@@ -321,6 +325,7 @@ See [Tracks](/explanation/how-snaps-work/channels-and-tracks) for more details.
 
 A _transitional interface_ is an [interface](/explanation/interfaces/all-about-interfaces) that can be used by a trusted snap to access traditional Linux desktop environments that were not designed to integrate with [snap confinement](/explanation/security/snap-confinement). These interfaces will become deprecated as replacement or modified technologies that enforce strong application isolation become available.
 
+(ref-glossary_ubuntu-core)=
 ### Ubuntu Core
 
 Ubuntu Core is Ubuntu for embedded devices and built using snaps. The operating system is read-only, and updates are transactional, with an absolute emphasis on maintaining a system’s integrity.

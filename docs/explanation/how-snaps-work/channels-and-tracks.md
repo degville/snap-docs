@@ -140,6 +140,7 @@ refresh-date: yesterday at 19:54 BST
 
 Risk-levels may not match a project's internal conventions. Some projects may use *alpha* instead of *edge*, for instance. However, a project's own release nomenclature should be close enough to a snap's risk-levels to allow you to judge the relative stability of the version you're installing.
 
+(ref-channels-and-tracks_branches)=
 ## Branches
 
 A branch is an optional, fine-grained subdivision of a channel for a published snap that allows for the creation of short-lived sequences of snaps that can be pushed on demand by snap developers to help with fixes or temporary experimentation.

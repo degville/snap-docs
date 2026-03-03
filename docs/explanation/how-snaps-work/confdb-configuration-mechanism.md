@@ -12,6 +12,7 @@ See [How to configure snaps with confdb](/how-to-guides/manage-snaps/configure-s
 
 Confdb is currently considered an [Experimental feature](/reference/development/experimental-features) and implementation details may change as development progresses.
 
+(ref-confdb-configuration-mechanism_confdb-views)=
 ## Confdb views
 
 Settings are exposed via _views_. Views allow for both granular access control and *granular configuration contracts* to enable the evolution of a configuration value.
@@ -200,6 +201,7 @@ If there a change in the configuration data’s layout, only the assertion needs
       access: read
 ```
 
+(ref-confdb-configuration-mechanism_interface-plugs)=
 ## Interface Plugs
 
 Snaps can use the [confdb interface](/) to express their interest in accessing a view through the plug stanza in their snapcraft.yaml (then snap.yaml). For example, a snap wishing to access the same `observe` view would declare it as:
@@ -246,6 +248,7 @@ When snapd detects that a `snap` or `snapctl set` might impact ephemeral data, i
 
 When ephemeral data is read, snapd will similarly schedule `load-view-<plug>` hooks that give custodians an opportunity to read new data outside of snapd and then load into the transaction read with the usual `snapctl set --view ...` commands.
 
+(ref-confdb-configuration-mechanism_hooks)=
 ## Hooks
 
 Confdb supports 5 types of [hooks](https://documentation.ubuntu.com/snapcraft/stable/reference/hooks/):

@@ -21,6 +21,7 @@ Only _classic_ snaps can be installed with the `--classic` argument. However, wh
 
 See [Snap confinement](/explanation/security/snap-confinement) for more details on confinement levels.
 
+(ref-install-modes_dangerous-mode)=
 ## Dangerous mode
 
 The `--dangerous` argument will install a local snap without validating or checking its assertions or signatures. These signatures are used to link a snap to its publisher and store, and to ensure that a snap remains unchanged during delivery and storage.
