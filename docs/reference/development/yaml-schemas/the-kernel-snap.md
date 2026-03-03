@@ -16,7 +16,7 @@ The current layout for a kernel snap is straightforward:
 - `initrd.img` - The respective initrd image
 - `modules/<version>/` - Kernel modules; version must match the one in `snap.yaml`
 - `firmware/` - Optional firmware files.
-- `dtbs/` - Optional binary device-tree files, if [gadget.yaml](/) states `device-tree-origin: kernel`
+- `dtbs/` - Optional binary device-tree files, if gadget.yaml states `device-tree-origin: kernel`
 
-Sample configuration files may be found in the reference gadget snaps.
+Sample configuration files may be found in the reference gadget snaps. For further details, see [Build a kernel snap](https://documentation.ubuntu.com/core/how-to-guides/image-creation/build-a-kernel-snap/) in the Ubuntu Core documentation.
 
