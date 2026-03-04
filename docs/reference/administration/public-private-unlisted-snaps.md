@@ -1,9 +1,9 @@
 (interfaces-public-private-unlisted-snaps)=
 # Public, private and unlisted-snaps
 
-Alongside using [tracks and channels](/) to control which releases are available, and [restrictions per-territory](/t/release-management/12442#heading--distribution), Snap developers can also control _who_ has access to their snaps by marking a published snap as either public, private or unlisted.
+Alongside using [tracks and channels](/explanation/how-snaps-work/channels-and-tracks) to control which releases are available, and [restrictions per-territory](/t/release-management/12442#heading--distribution), Snap developers can also control _who_ has access to their snaps by marking a published snap as either public, private or unlisted.
 
-When [registering a snap](https://forum.snapcraft.io/t/registering-your-app-name/6793), there is an option to make its listing either public or private. After registration, this value can be changed from the _Settings page_ of the [Snap Store web UI](/)  for the  registered snap:
+When [registering a snap](https://forum.snapcraft.io/t/registering-your-app-name/6793), there is an option to make its listing either public or private. After registration, this value can be changed from the _Settings page_ of the Snap Store web UI  for the  registered snap:
 
 ![Snap Store settings tab](https://assets.ubuntu.com/v1/617fa9e2-private_03.png) 
 
@@ -21,7 +21,7 @@ Access to a private snap can be shared by adding individual email addresses to t
 
 ## Visibility from snapcraft
 
-With [Snapcraft](/) installed and logged-in to a developer account, the _snapcraft names_ command can be used to check the visibility status of snaps associated with the developer account:
+With [Snapcraft](https://documentation.ubuntu.com/snapcraft/stable/) installed and logged-in to a developer account, the _snapcraft names_ command can be used to check the visibility status of snaps associated with the developer account:
 
 ```
 $ snapcraft names

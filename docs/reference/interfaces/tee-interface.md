@@ -10,7 +10,7 @@ This interface is primarily intended to be used with [Ubuntu Core](/t/glossary/1
 ## Developer details
 
 **[Auto-connect](/explanation/interfaces/interface-auto-connection)**: no</br>
-**[Super-privileged](/)**: yes</br>
+**[Super-privileged](/explanation/interfaces/super-privileged-interfaces)**: yes</br>
 
 Intended for snaps needing to access the TEE subsystem over `/dev/tee[0-9]*`, `/dev/teepriv[0-0]*` or  the Qualcomm equivalent _qseecom_  (Qualcomm Secure Execution Environment Communicator) at `/dev/qseecom`.
 

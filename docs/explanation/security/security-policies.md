@@ -166,13 +166,14 @@ Snap security policy permits read and write access for the current revision, and
 
 Before _refresh awareness_ became available, if a refresh occurred while a snap was running, its AppArmor policy would be updated to allow `w` (write) on the new version and `r` (read) on the older versions, including the running version. The policy was applied immediately, which meant that write operations would start to fail for running processes.
 
+(ref-security-policies_refresh-awareness)=
 ### Refresh awareness
 
 By default, a service running from a snap needs to be restarted whenever the snap is refreshed (see [Services and daemons]([/t/services-and-daemons/12601](https://forum.snapcraft.io/t/services-and-daemons/12601)) for more details).
 
 Stopping and starting a service is a requirement to support [snap revert]([/t/getting-started/3876#heading--revert](https://forum.snapcraft.io/t/getting-started/3876#heading--revert)) and its copying of a snap’s system data from the current version to the new version.
 
-System data typically includes databases, data files, and configuration files (see [Data locations](/)), although all of this is up to the snap developer.
+System data typically includes databases, data files, and configuration files (see [Data locations](/reference/operations/data-locations)), although all of this is up to the snap developer.
 
 Reverting a snap with `snap revert` restores a snap’s system data to its prior state, and services accessing this data need to be stopped to protect the integrity of the data and also to facilitate changes to security policy that are required when a snap updates its system data location.
 
@@ -188,15 +189,15 @@ Snapd includes the following built-in features that interacts with user informat
 * [System configuration options](/how-to-guides/manage-snaps/set-system-options)
 * [Snap specific configurations options](/how-to-guides/work-with-snaps/configure-snaps)
 * [Snapshots](/how-to-guides/manage-snaps/create-data-snapshots) of snap [user data](/t/data-locations/24905#p-94053-user-data)
-* The [home](/) interface allows access to non-hidden files in the user’s home
-* The [personal-files](/) interface allows access to specified files in the user's home
+* The [home](/reference/interfaces/home-interface/) interface allows access to non-hidden files in the user’s home
+* The [personal-files](/reference/interfaces/personal-files-interface) interface allows access to specified files in the user's home
 * [Persisted data on Ubuntu Core devices](/t/data-locations/24905#p-94053-ubuntu-core)
 
 Snapd is designed to make these interactions secure by default. Developers are expected to implement their own data storage solutions, e.g. database and configuration files, on top of snapd’s secure mechanisms. This means developers share responsibility for ensuring the availability, integrity, confidentiality, and compatibility of user data over the lifetime of a snap or snap-based product.
 
 Snaps that use classic confinement do not benefit from snapd's sandboxing and isolation features, and thus operate with fewer security boundaries. This elevated level of access introduces a higher risk to the confidentiality and integrity of user data. 
 
-To mitigate this risk, snapd enforces an explicit acknowledgment from users by requiring the `--classic` flag at install time. Furthermore, to protect the ecosystem, only publishers who have passed a strict [review and vetting process](/) are permitted to publish classic snaps in the Snap Store.
+To mitigate this risk, snapd enforces an explicit acknowledgment from users by requiring the `--classic` flag at install time. Furthermore, to protect the ecosystem, only publishers who have passed a strict review and vetting process are permitted to publish classic snaps in the Snap Store.
 
 ##  How to establish strict confinement
 
@@ -208,12 +209,12 @@ These guidelines are considered during store approval of permission requests. De
 
 Sometimes it is also required to extend what is allowed by an existing interface or even to implement a new interface. When in doubt, feel free to consult the [snapd team on the snapcraft forum](https://forum.snapcraft.io/c/snapd/5).
 
-* [How to create a simple confined snap](/)
+* [How to create a simple confined snap](https://documentation.ubuntu.com/snapcraft/stable/how-to/crafting/enable-classic-confinement)
 * [How to identify which interfaces are required to solve policy violations](/how-to-guides/fix-common-issues/debug-snaps)
   * [AppArmor violations](/t/18420#heading--apparmor)
   * [Seccomp violations](/t/18420#heading--seccomp)
   * [File permissions and cgroups](/t/18420#heading--permissions)
-* [How to request store approval for snap policy changes](/)
+* [How to request store approval for snap policy changes](/reference/administration/reviewing-classic-confinement-snaps)
 
 To publish a classic snap that operates outside these restrictions it is required to request a classic confinement request that involves a rigorous process for vetting the publisher.
 

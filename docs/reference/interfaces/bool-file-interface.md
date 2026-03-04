@@ -38,7 +38,7 @@ slots:
 
 The [gpio interface](/reference/interfaces/gpio-interface)  provides another option for accessing GPIO devices.
 
-To use a boolean file, the snap developer must add `plugs: [ bool-file ]` to a snap's [snapcraft.yaml](/). The snap user can then access a specific boolean file with an [interface connection](/t/interface-management/6154#heading--manual-connections).
+To use a boolean file, the snap developer must add `plugs: [ bool-file ]` to a snap's [snapcraft.yaml](https://documentation.ubuntu.com/snapcraft/stable/reference/project-file/anatomy-of-snapcraft-yaml/). The snap user can then access a specific boolean file with an [interface connection](/t/interface-management/6154#heading--manual-connections).
 
 Unless a snap specifically expects a set of boolean files that cannot be predefined, the recommended approach is to define distinct plugs for each boolean file the snap wishes to use:
 
@@ -50,7 +50,7 @@ plugs:
     interface: bool-file
 ```
 
-Defining distinct plugs for each boolean file has the advantage of being self-documenting, and 1:1  connections like these are easier to track and setup with [auto-connections](/), if needed.
+Defining distinct plugs for each boolean file has the advantage of being self-documenting, and 1:1  connections like these are easier to track and setup with [auto-connections](/explanation/interfaces/interface-auto-connection), if needed.
 
 Once connected, the consuming snap can use the boolean file via the path mentioned in the `path` attribute specified by the connected slot.
 

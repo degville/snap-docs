@@ -1,7 +1,7 @@
 (interfaces-custom-device-interface)=
 #  custom-device interface
 
-The `custom-device` interface permits access to a device of a specific class and model without requiring the creation of an interface for that device alone. It’s intended to be used with [Ubuntu Core](/t/glossary/14612#heading--ubuntu-core) and its scope and specification are defined as part of the [gadget snap](/) for the deployed Ubuntu Core image.
+The `custom-device` interface permits access to a device of a specific class and model without requiring the creation of an interface for that device alone. It’s intended to be used with [Ubuntu Core](/t/glossary/14612#heading--ubuntu-core) and its scope and specification are defined as part of the [gadget snap](/reference/development/yaml-schemas/the-gadget-snap) for the deployed Ubuntu Core image.
 
 To permit access, the application snaps define a custom-device plug and the [gadget snap](https://documentation.ubuntu.com/core/reference/gadget-snap-format/) defines a custom-device slot, where both the plug and the slot have the identically-named `custom-device` attribute.
 
@@ -50,7 +50,7 @@ Requires snapd version *2.55+*, while `udev-tagging.for-device` attribute suppor
 ## Developer details
 
 **[Auto-connect](/explanation/interfaces/interface-auto-connection)**: no</br>
-**[Super-privileged](/)**: yes</br>
+**[Super-privileged](/explanation/interfaces/super-privileged-interfaces)**: yes</br>
 
 **Attributes**:
 * `custom-device` (optional) (plug, slot): A label for the custom device.</br>

@@ -3,7 +3,7 @@
 
 The `gpio-control` interface provides privileged access to all aspects of GPIO pins. For accessing specific GPIO pins with limited scope, see [The gpio interface](/reference/interfaces/gpio-interface) instead.
 
-Due to its wide-ranging access, it is a [super-privileged interface](/), and as such, is restricted by default. This interface requires modification of its snap declaration for distribution via the Snap Store.
+Due to its wide-ranging access, it is a [super-privileged interface](/explanation/interfaces/super-privileged-interfaces), and as such, is restricted by default. This interface requires modification of its snap declaration for distribution via the Snap Store.
 
 This interface is used for:
 
@@ -14,7 +14,7 @@ This interface is used for:
 ## **Developer Details**
 
 **[Auto-connect](/explanation/interfaces/interface-auto-connection)**: no</br>
-**[Super-privileged](/)**: yes</br>
+**[Super-privileged](/explanation/interfaces/super-privileged-interfaces)**: yes</br>
 
 ## **Path Access**
 

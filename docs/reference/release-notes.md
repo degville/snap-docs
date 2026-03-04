@@ -40,12 +40,13 @@ sudo snap refresh snapd --beta
 
 To ensure you receive latest security updates and bug fixes, ensure you upgrade to a new release of Snapd shortly after it is released.
 
-For the release plan and complete list of changes, please refer to the [snapd roadmap](/). Feel free to provide your test feedback on the [forum](https://forum.snapcraft.io/c/snapd/5), or directly in [Launchpad](https://bugs.launchpad.net/snapd/+filebug).
+For the release plan and complete list of changes, please refer to the [snapd roadmap](/reference/release-notes). Feel free to provide your test feedback on the [forum](https://forum.snapcraft.io/c/snapd/5), or directly in [Launchpad](https://bugs.launchpad.net/snapd/+filebug).
 
 We greatly appreciate your contributions and support!
 
 ---
 
+(ref-release-notes_snapd-2-74-release-notes)=
 ## Snapd 2.74 release notes
 
 We’re pleased to share that Snapd 2.74 snap is available for testing in the beta channel.
@@ -131,6 +132,7 @@ We’re pleased to share that Snapd 2.74 snap is available for testing in the be
 * Interfaces: add AppArmor workaround for mmap MAP_HUGETLB
 * Interfaces: timeserver-control | manage per-link ntp settings via systemd-networkd
 
+(ref-release-notes_snapd-2-73-release-notes)=
 ## Snapd 2.73 release notes
 
 * FDE: do not save incomplete FDE state when resealing was skipped
@@ -202,6 +204,7 @@ We’re pleased to share that Snapd 2.74 snap is available for testing in the be
 * LP: #2127244 snap-confine: update AppArmor profile to allow read/write to journal as workaround for snap-confine fd inheritance prevented by newer AppArmor  
 * LP: #2127766 Add new tracing mechanism with independently running strace and shim synchronization
 
+(ref-release-notes_snapd-2-72-release-notes)=
 ## Snapd 2.72 release notes
 
 ### **Highlights**
@@ -253,6 +256,7 @@ For a broader overview on TPM backed FDE for hybrid Ubuntu 25.10, see: [TPM/FDE 
 
 Feel free to provide your test feedback here or directly in [Launchpad](https://bugs.launchpad.net/snapd/+filebug). To help fast track investigations please provide (1) details about the system, (2) Snapd version(s) and (3) steps to reproduce the issue.
 
+(ref-release-notes_snapd-2-71-release-notes)=
 ## Snapd 2.71 release notes
 
 ## **Highlights**
@@ -281,6 +285,7 @@ The [fwupd](https://snapcraft.io/fwupd) tool is available both as a deb and as a
 
 For an overview on TPM backed FDE for hybrid Ubuntu 25.10, see: [TPM/FDE progress for Ubuntu 25.10](https://discourse.ubuntu.com/t/tpm-fde-progress-for-ubuntu-25-10/65146)
 
+(ref-release-notes_snapd-2-70-release-notes)=
 ## Snapd 2.70 release notes
 
 ### Highlights
@@ -302,6 +307,7 @@ In an effort to increase the security and have better control over the execution
 
 For the release plan and complete list of changes, please refer to the [full release notes](https://forum.snapcraft.io/t/the-snapd-roadmap/1973). Please note that 2.70 includes all the changes in the superseded 2.69 and 2.69.1 releases.
 
+(ref-release-notes_snapd-2-68-release-notes)=
 ## Snapd 2.68 release notes
 
 The official release for this version was Snapd 2.68.4.
@@ -334,6 +340,7 @@ Until all kernel snaps are updated, snapd from latest/edge cannot be used for in
 * Remodeling with a snapd from latest/edge, then doing factory reset.
 * Installing fresh images with snapd from latest/edge
 
+(ref-release-notes_snapd-2-67-release-notes)=
 ## Snapd 2.67 release notes
 
 *Released 13th January 2025*
@@ -362,8 +369,9 @@ Until all kernel snaps are updated, snapd from latest/edge cannot be used for in
 * Extended hardware-observe interface to allow support riscv_hwprobe syscall and mount-observe interface to allow listmount and statmount syscalls
 
 
-For the release plan and the complete list of changes, please refer to the [Snapd roadmap](/).
+For the release plan and the complete list of changes, please refer to the [Snapd roadmap](https://forum.snapcraft.io/t/the-snapd-roadmap/1973).
 
+(ref-release-notes_snapd-2-66-release-notes)=
 ## Snapd 2.66 release notes
 
 *Released 26th November 2024*
@@ -382,6 +390,7 @@ Other highlights include:
 
    This release includes many updates to support _confdb_, formerly known as Registry, which will significantly improve how we handle configuration data and share that data between snaps and devices.
 
+(ref-release-notes_snapd-2-64-release-notes)=
 ## Snapd 2.64 release notes
 
 *Released 26th November 2024*
@@ -392,6 +401,7 @@ Users should see no changes or compatibility issues, and if you are a snapd deve
 
 As part of this release cycle, our `ubuntu-image` and validation-sets documentation also improved.
 
+(ref-release-notes_snapd-2-63-release-notes)=
 ## Snapd 2.63 release notes
 
 *Released 6th June 2024*
@@ -400,6 +410,7 @@ Snap-based [Ubuntu Core](https://ubuntu.com/core) devices will benefit from many
 
 There’s also a new `snap sign` [`--chain`](https://ubuntu.com/core/docs/system-user#heading--generating-auto) argument in this release, that can be used to aggregate all the assertions required to create a new system user.
 
+(ref-release-notes_snapd-2-62-release-notes)=
 ## Snapd 2.62 release notes
 
 *Released 15th April 2024*
@@ -410,6 +421,7 @@ This release also included two significant additions to our documentation. First
 
 Finally, this release included new packages for Arch Linux, Amazon Linux, Debian, Fedora, openSUSE and Solus.
 
+(ref-release-notes_snapd-2-61-release-notes)=
 ## Snapd 2.61 release notes
 
 *Released 3rd January 2024*

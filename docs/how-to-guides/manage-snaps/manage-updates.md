@@ -77,6 +77,7 @@ The refresh hold is:
 
 If no snaps are specified, a hold applies to all snaps installed on the system, however the hold is only effective on auto-refreshes and will not block either general refresh requests from 'snap refresh', or specific snap requests from 'snap refresh target-snap'.
 
+(ref-manage-updates_remove-a-hold)=
 ### Remove a hold
 
 The `snap refresh --unhold` command removes a refresh hold, either for the specified snaps or for all snaps when no snaps are targeted specifically.

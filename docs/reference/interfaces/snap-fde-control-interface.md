@@ -1,3 +1,4 @@
+(ref-snap-fde-control-interface_snap-fde-control-interface)=
 #  snap-fde-control interface
 
 The `snap-fde-control` allows access to the FDE subset of snapd's system-volumes API.

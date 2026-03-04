@@ -12,7 +12,7 @@ Consequently, consumers of this interface require [approval](/t/process-for-alia
 
 
 **[Auto-connect](/explanation/interfaces/interface-auto-connection)**: no</br>
-**[Super-privileged](/)**: yes</br>
+**[Super-privileged](/explanation/interfaces/super-privileged-interfaces)**: yes</br>
 
 **Attributes** :
  * `refresh-schedule` (plug):  can be set to `managed` to signal an intention to permit only manual refreshes for the snap:

@@ -9,7 +9,7 @@ See also the [kernel-module-control interface](/reference/interfaces/kernel-modu
 ## Developer details
 
 **[Auto-connect](/explanation/interfaces/interface-auto-connection)**: no<br />
-**[Super-privileged](/)**: yes</br>
+**[Super-privileged](/explanation/interfaces/super-privileged-interfaces)**: yes</br>
 
 **Attributes**:
   * `name` (plug, required): provides the name of the kernel module to be loaded (eg, '`name: pcspkr`')

@@ -21,7 +21,7 @@ For example, the following command will install two instances of the [hello-worl
 sudo snap install hello-world hello-world_foo
 ```
 
-To specify a specific [channel and track](/) for each instance, install each instance separately.
+To specify a specific [channel and track](/explanation/how-snaps-work/channels-and-tracks) for each instance, install each instance separately.
 
 For example, to install [Juju](https://juju.is/) 2.9 alongside Juju 3.0, run the following commands:
 
@@ -61,7 +61,7 @@ hello-world_foo removed
 
 ### Interfaces
 
-[Interfaces](/) work across multiple snap instances just as they do from any one snap to another. For example, *xkcd-webserver* includes a *network* plug, as will all of its instances, any of which can be connected to the system's *:network* slot:
+[Interfaces](/explanation/interfaces/all-about-interfaces) work across multiple snap instances just as they do from any one snap to another. For example, *xkcd-webserver* includes a *network* plug, as will all of its instances, any of which can be connected to the system's *:network* slot:
 
 ```
 $ snap connections xkcd-webserver_foo
@@ -86,7 +86,7 @@ network-bind  xkcd-webserver_foo:network-bind  :network-bind  -
 
 ### Services
 
-As with Interfaces, [Services](/) function the same with multiple instances of a snap as they do from any one snap to another.
+As with Interfaces, [Services](/how-to-guides/manage-snaps/control-services) function the same with multiple instances of a snap as they do from any one snap to another.
 
 However, with multiple instances, you're more likely to run into port allocation issues, such as two web servers needing access to port 80. In such cases, only the service from one instance will be active.
 

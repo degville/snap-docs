@@ -32,7 +32,7 @@ Once connected, the consuming snap can use the device via the path specified by 
 [Hardware IO interfaces](/reference/interfaces/hardware-io-interfaces) covers some general considerations common to these kinds of devices.
 
 
-To use a serial-port device, the snap developer must add `plugs: [ serial-port ]` to a snap's [snapcraft.yaml](/). The snap user can then access a specific serial-port device with an [interface connection](/t/interface-management/6154#heading--manual-connections).
+To use a serial-port device, the snap developer must add `plugs: [ serial-port ]` to a snap's [snapcraft.yaml](https://documentation.ubuntu.com/snapcraft/stable/reference/project-file/anatomy-of-snapcraft-yaml/). The snap user can then access a specific serial-port device with an [interface connection](/t/interface-management/6154#heading--manual-connections).
 
 <h3 id='heading--code-examples'>Code examples</h3>
 

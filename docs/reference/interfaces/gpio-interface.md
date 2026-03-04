@@ -34,7 +34,7 @@ snap connect pi-fancontrol:gpio pi:bcm-gpio-14
 
 [Hardware IO interfaces](/reference/interfaces/hardware-io-interfaces) covers some general considerations common to these kinds of devices.
 
-To use a gpio device, the snap developer must add `plugs: [ gpio ]` to a snap's [snapcraft.yaml](/). The snap user can then access a specific gpio device with an [interface connection](/t/interface-management/6154#heading--manual-connections).
+To use a gpio device, the snap developer must add `plugs: [ gpio ]` to a snap's [snapcraft.yaml](https://documentation.ubuntu.com/snapcraft/stable/reference/project-file/anatomy-of-snapcraft-yaml/). The snap user can then access a specific gpio device with an [interface connection](/t/interface-management/6154#heading--manual-connections).
 
 Unless the snap is expected to actually use a set of gpio pins that is not predefined,  it is recommended to define distinct plugs for each used gpio pin, like:
 
@@ -46,7 +46,7 @@ plugs:
     interface: gpio
 ```
 
-This has the advantage of being self-documenting and 1-1  connections like these are easier to track and setup with [auto-connections](/), if the latter is needed.
+This has the advantage of being self-documenting and 1-1  connections like these are easier to track and setup with [auto-connections](/explanation/interfaces/interface-auto-connection), if the latter is needed.
 
 When the interface is connected, `"echo (pin number) > /sys/class/gpio/export"`  is run internally to enable access to the GPIO pin.
 

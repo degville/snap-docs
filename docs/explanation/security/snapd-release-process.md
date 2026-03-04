@@ -37,7 +37,7 @@ The following is the typical release process for snapd, starting with creating a
 6. Automated tests are now run and we will put out an internal Canonical call for testing for the new version of snapd.
 7. If no problems are found from the automated testing, we leave the snapd and core snaps in the beta channel for at least 2 weeks.
 8. After this beta testing period, we move the snap to its candidate channel.
-9. If the community and teams report positively on the candidate release, it’s released [progressively](/) to the stable channel.
+9. If the community and teams report positively on the candidate release, it’s released progressively to the stable channel.
 
    A release is almost always finalised for release on a Monday or Tuesday. This optimises bandwidth and allows for a deployment to be halted if problems are encountered by users who get the snap early.
 

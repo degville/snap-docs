@@ -5,7 +5,7 @@ The `ros-opt-data` interface creates a read-only mount from within a snap to the
 
 This interface cannot currently be used on Ubuntu Core. Requires snapd version *2.62+*.
 
-To add this interface to a snap, define a plug in the [app](/) section of its [snapcraft.yaml](/) for the application that requires ROS data access:
+To add this interface to a snap, define a plug in the app section of its [snapcraft.yaml](https://documentation.ubuntu.com/snapcraft/stable/reference/project-file/anatomy-of-snapcraft-yaml/) for the application that requires ROS data access:
 
 ```yaml
 apps:

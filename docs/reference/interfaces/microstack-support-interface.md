@@ -13,7 +13,7 @@ Virtual machines rely on KVM for virtualisation acceleration and the vhost frame
 ## Developer details
 
 **[Auto-connect](/explanation/interfaces/interface-auto-connection)**: no</br>
-**[Super-privileged](/)**: yes</br>
+**[Super-privileged](/explanation/interfaces/super-privileged-interfaces)**: yes</br>
 
 This interface allows MicroStack to operate by allowing the necessary system calls to be used by the following services:
 - libvirt

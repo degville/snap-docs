@@ -9,7 +9,7 @@ This interface is primarily intended to be used with [Ubuntu Core](/t/glossary/1
 ## Developer details
 
 **[Auto-connect](/explanation/interfaces/interface-auto-connection)**: no</br>
-**[Super-privileged](/)**: yes</br>
+**[Super-privileged](/explanation/interfaces/super-privileged-interfaces)**: yes</br>
 
 The device is expected in the following location:
 -  `/dev/ion`

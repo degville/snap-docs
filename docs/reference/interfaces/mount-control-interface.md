@@ -13,12 +13,12 @@ Use of `nfs` requires snapd version *2.67+*
 
 Use of `cifs` requires snapd version *2.68+*
 
-See [Interface management](/) and [Supported interfaces](/reference/interfaces/index) for further details on how interfaces are used.
+See [Interface management](/how-to-guides/manage-snaps/connect-interfaces) and [Supported interfaces](/reference/interfaces/index) for further details on how interfaces are used.
 
 ## Developer details 
 
 **[Auto-connect](/explanation/interfaces/interface-auto-connection)**: no</br>
-**[Super-privileged](/)**: yes</br>
+**[Super-privileged](/explanation/interfaces/super-privileged-interfaces)**: yes</br>
 
 **Attributes**:
 * `persistent` (plug): defines whether the mount can be persistent or not.</br>

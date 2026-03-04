@@ -13,7 +13,7 @@ The `dm-crypt`  interface enables the following access functions to  [dm-crypt](
 ## Developer details
 
 **[Auto-connect](/explanation/interfaces/interface-auto-connection)**: no</br>
-**[Super-privileged](/)**: yes</br>
+**[Super-privileged](/explanation/interfaces/super-privileged-interfaces)**: yes</br>
 
 Often, _dm-crypt_ is statically linked into the kernel (`CONFIG_DM_CRYPT=y`). This is expected when working with custom kernels on projects where disk encryption is required.
 

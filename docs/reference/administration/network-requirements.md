@@ -1,7 +1,7 @@
 (reference-administration-network-requirements)=
 # Network requirements
 
-Both the snap daemon (snapd) and [Snapcraft](/) require network access to install, update, build and publish snaps. This page lists the hosts and ports (`host:port`) that are required to ensure consistent communication.
+Both the snap daemon (snapd) and [Snapcraft](https://documentation.ubuntu.com/snapcraft/stable/) require network access to install, update, build and publish snaps. This page lists the hosts and ports (`host:port`) that are required to ensure consistent communication.
 
 - [API access](#heading--api)
 - [Download CDNs](#heading--cdns)

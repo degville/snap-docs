@@ -1,9 +1,9 @@
 (interfaces-home-interface)=
 #  home interface
 
-The `home` [interface](/) allows access to non-hidden files owned by the user in the user's home ($HOME) directory where a user normally stores their personal files and documents.
+The `home` [interface](/explanation/interfaces/all-about-interfaces) allows access to non-hidden files owned by the user in the user's home ($HOME) directory where a user normally stores their personal files and documents.
 
-The majority of snaps use [strict confinement](/) and do not have arbitrary access a system's resources, including file and directories in the _\/home_ directory. Without this access, _home_ will not be visible in file requesters, or as a destination from within the snap application.
+The majority of snaps use [strict confinement](/explanation/snap-development/install-modes) and do not have arbitrary access a system's resources, including file and directories in the _\/home_ directory. Without this access, _home_ will not be visible in file requesters, or as a destination from within the snap application.
 
 To check whether a snap can connect to $HOME, use the _snap connections_ command:
 

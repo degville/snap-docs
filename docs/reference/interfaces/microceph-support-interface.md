@@ -6,7 +6,7 @@ The `microceph-support` interface permits the [microceph](https://snapcraft.io/m
 ## Developer details
 
 **[Auto-connect](/explanation/interfaces/interface-auto-connection)**: no</br>
-**[Super-privileged](/)**: yes</br>
+**[Super-privileged](/explanation/interfaces/super-privileged-interfaces)**: yes</br>
 
 ### Code examples
 

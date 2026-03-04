@@ -1,7 +1,7 @@
 (reference-development-yaml-schemas-the-snap-format)=
 # The snap format
 
-> ⓘ  This page documents the format of the **built** snaps. See [The snapcraft format](/) for more information about the `snapcraft.yaml` file used to build these snaps. 
+> ⓘ  This page documents the format of the **built** snaps. See [The snapcraft format](https://documentation.ubuntu.com/snapcraft/stable/reference/project-file/snapcraft-yaml) for more information about the `snapcraft.yaml` file used to build these snaps. 
 
 A snap is a *SquashFS* file carrying content alongside metadata to tell the system how it should be manipulated. When installed, the SquashFS file for the snap is mounted read-only at the following location:
 
@@ -257,7 +257,7 @@ See [Supported interfaces](/reference/operations/interfaces/index) for more deta
 
 Layouts enable snap developers to modify the execution environment of their snap. They simplify the process of using pre-compiled binaries and libraries that expect to find files and directories outside of locations referenced by $SNAP or $SNAP_DATA.
 
-For more details, see [Snap layouts](/).
+For more details, see [Snap layouts](https://documentation.ubuntu.com/snapcraft/stable/how-to/crafting/use-layouts/).
 
 <a name="desktop-files"></a>
 

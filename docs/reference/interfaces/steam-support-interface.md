@@ -9,7 +9,7 @@ Only the Steam snap may establish this interface. See [Introducing early access 
 ## Developer details
 
 **[Auto-connect](/explanation/interfaces/interface-auto-connection)**: no</br>
-**[Super-privileged](/)**: yes</br>
+**[Super-privileged](/explanation/interfaces/super-privileged-interfaces)**: yes</br>
 
 
 ### Code examples

@@ -3,9 +3,9 @@
 
 Environment variables are widely used across Linux to provide convenient access to system and application properties.
 
-Both [Snapcraft](/) and snapd consume, set, and pass-through specific environment variables to support building and running snaps. 
+Both Snapcraft and snapd consume, set, and pass-through specific environment variables to support building and running snaps. 
 
-See below for the various environment variables available to snap applications. For environment variables connected to Snapcraft, see [Parts environment variables](/).
+See below for the various environment variables available to snap applications. For environment variables connected to Snapcraft, see [Parts environment variables](https://documentation.ubuntu.com/snapcraft/stable/reference/parts/parts-and-steps/).
 
 ## Snap specific environment variables
 
@@ -159,9 +159,9 @@ Requires _snapd_ 2.59+.
 
 <h3 id='heading--snap-laucnher-arch-triplet'><pre>SNAP_LAUNCHER_ARCH_TRIPLET</pre></h3>
 
-**Only available in snaps built with a [desktop extension](/).**
+**Only available in snaps built with a [desktop extension](https://documentation.ubuntu.com/snapcraft/stable/reference/extensions).**
 
-The host architecture triplet on which the snap is running. For `amd64` it's `x86_64-linux-gnu`. The runtime counterpart of [`CRAFT_ARCH_TRIPLET_BUILD_FOR`](/).
+The host architecture triplet on which the snap is running. For `amd64` it's `x86_64-linux-gnu`. The runtime counterpart of `CRAFT_ARCH_TRIPLET_BUILD_FOR`.
 
 <h3 id='heading--snap-library-path'><pre>SNAP_LIBRARY_PATH</pre></h3>
 

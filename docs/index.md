@@ -1,3 +1,4 @@
+(ref-index_snap-documentation)=
 # Snap documentation
 
 **Snaps** are Linux app packages for **desktop**, **cloud** and **IoT** that are self-contained, simple to install, secure, cross-platform, and dependency-free.

@@ -32,6 +32,7 @@ Set  Snap             Age    Version               Rev   Size   Notes
 
 Both the _saved_ and _check-snapshot_ commands accept a `–users=` option with a comma-separated list of users to filter on.
 
+(ref-create-data-snapshots_what-a-snapshot-stores)=
 ## What a snapshot stores
 
 A snapshot is a copy of the user, system and configuration data stored by *snapd* for one or more snaps on your system. For each snap, this data can be found in `$HOME/snap/<snap-name>` and `/var/snap/<snap-name>`.
@@ -121,6 +122,7 @@ No snapshots found.
 
 By default, this command deletes all the data for all the snaps in a snapshot. You can delete the data for specific snaps by listing them after the command.
 
+(ref-create-data-snapshots_automatic-snapshots)=
 ## Automatic snapshots
 
 Apart from on [Ubuntu Core](https://www.ubuntu.com/core) devices, where the feature is disabled by default, a snapshot is generated automatically when a snap is removed. These snapshots are retained for 31 days before being deleted automatically.
@@ -153,6 +155,7 @@ snap set system snapshots.automatic.retention=no
 
 Automatic snapshots require snap version _2.39+_. 
 
+(ref-create-data-snapshots_inside-a-snapshot)=
 ## Inside a snapshot
 
 On Ubuntu-based systems, snapshots are stored in the `/var/lib/snapd/snapshots` directory and are both stored and exported as a *zip* file. This zip file contains the following:
