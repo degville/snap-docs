@@ -124,7 +124,7 @@ Many interfaces are automatically connected when a snap is installed, and this a
 
 Automatically connecting interfaces include the [network](/reference/interfaces/network-interface), [audio-playback](/reference/interfaces/audio-playback-interface) and [opengl](/reference/interfaces/opengl-interface) interfaces. This _auto-connection_ ability is carefully reviewed for each interface, where permissiveness, security and privacy implications, and the expectations of the user, are all considered.
 
-A snap's developer can also request that an interface is connected automatically through a [manual review process](/). As above, these requests are carefully considered and reviewed before being granted or denied.
+A snap's developer can also request that an interface is connected automatically through a [manual review process](/how-to-guides/manage-snaps/apps-and-aliases). As above, these requests are carefully considered and reviewed before being granted or denied.
 
 Interfaces not connected automatically require the user to make a manual connection (see below), such as the [camera](/reference/interfaces/camera-interface), [removable-media](/reference/interfaces/removable-media-interface) and [audio-record](/reference/interfaces/audio-record-interface) interfaces. Manual connections enable the user to have a complete control over what kind of access they allow.
 

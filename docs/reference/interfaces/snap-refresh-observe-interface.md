@@ -9,7 +9,7 @@ It is intended to be used _only_ to mark the existence of a refresh awareness cl
 ## Developer details
 
 **[Auto-connect](/explanation/interfaces/interface-auto-connection)**: no</br>
-**[Super-privileged](/)**: yes</br>
+**[Super-privileged](/explanation/interfaces/super-privileged-interfaces)**: yes</br>
 
 <h3 id='heading--endpoint-access'>Endpoint access permissions</h3>
 <ul>

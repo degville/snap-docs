@@ -9,13 +9,13 @@ This interface is typically used to provide read-only access to system configura
 
 The [Firefox](https://snapcraft.io/firefox), [Chromium](https://snapcraft.io/chromium) and [Thunderbird](https://snapcraft.io/thunderbird) snaps use this interface to enable access to system-installed policies to customise each respective application.
 
-> See [Interface management](/) and [Supported interfaces](/reference/interfaces/index) for further details on how interfaces are used.
+> See [Interface management](/how-to-guides/manage-snaps/connect-interfaces) and [Supported interfaces](/reference/interfaces/index) for further details on how interfaces are used.
 
 
 ## Developer details
 
 **[Auto-connect](/explanation/interfaces/interface-auto-connection)**: no</br>
-**[Super-privileged](/)**: yes</br>
+**[Super-privileged](/explanation/interfaces/super-privileged-interfaces)**: yes</br>
 
 **Attributes**:
   * `read` (plug): list of files and/or directories for read-only access (eg, '`read: [ /etc/file-read, /etc/dir-read ]`'

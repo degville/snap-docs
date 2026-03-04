@@ -7,7 +7,7 @@ The ` kernel-firmware-control` interface permits the setting of a custom  [kerne
 ## Developer details
 
 **[Auto-connect](/explanation/interfaces/interface-auto-connection)**: no</br>
-**[Super-privileged](/)**: yes</br>
+**[Super-privileged](/explanation/interfaces/super-privileged-interfaces)**: yes</br>
 
 Requires snapd version _2.62+_.
 

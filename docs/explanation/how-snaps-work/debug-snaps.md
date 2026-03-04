@@ -1,7 +1,7 @@
 (interfaces-debug-snaps)=
 # Debug snaps
 
-Each snap runs inside its own [confined environment](/), also called "sandbox". The policy of each sandbox describes what the application is allowed to do. When an application tries to do something that is not allowed, the system logs a policy violation.
+Each snap runs inside its own [confined environment](/explanation/security/snap-confinement), also called "sandbox". The policy of each sandbox describes what the application is allowed to do. When an application tries to do something that is not allowed, the system logs a policy violation.
 
 The following techniques can help you investigate and solve these policy violations.
 

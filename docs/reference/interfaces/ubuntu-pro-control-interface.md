@@ -6,4 +6,4 @@
 This interface lets a connected snap attach or detach the system from Ubuntu Pro, inspect available Pro services and their entitlement/status, and enable or disable individual services.
 
 **[Auto-connect](/explanation/interfaces/interface-auto-connection)**: no</br>
-**[Super-privileged](/)**: yes</br>
+**[Super-privileged](/explanation/interfaces/super-privileged-interfaces)**: yes</br>

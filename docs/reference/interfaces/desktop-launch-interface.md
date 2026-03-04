@@ -1,13 +1,13 @@
 (interfaces-desktop-launch-interface)=
 #  desktop-launch interface
 
-The `desktop-launch` interface allows [strictly confined](/) snaps to identify and launch desktop applications in (or from) other snaps.
+The `desktop-launch` interface allows [strictly confined](/explanation/security/snap-confinement) snaps to identify and launch desktop applications in (or from) other snaps.
 
 
 ## Developer details
 
 **[Auto-connect](/explanation/interfaces/interface-auto-connection)**: no</br>
-**[Super-privileged](/)**: yes</br>
+**[Super-privileged](/explanation/interfaces/super-privileged-interfaces)**: yes</br>
 
 <h3 id='heading--endpoint-access'>Endpoint access permissions</h3>
 <ul>

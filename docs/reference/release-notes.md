@@ -40,7 +40,7 @@ sudo snap refresh snapd --beta
 
 To ensure you receive latest security updates and bug fixes, ensure you upgrade to a new release of Snapd shortly after it is released.
 
-For the release plan and complete list of changes, please refer to the [snapd roadmap](/). Feel free to provide your test feedback on the [forum](https://forum.snapcraft.io/c/snapd/5), or directly in [Launchpad](https://bugs.launchpad.net/snapd/+filebug).
+For the release plan and complete list of changes, please refer to the [snapd roadmap](/reference/release-notes). Feel free to provide your test feedback on the [forum](https://forum.snapcraft.io/c/snapd/5), or directly in [Launchpad](https://bugs.launchpad.net/snapd/+filebug).
 
 We greatly appreciate your contributions and support!
 
@@ -369,7 +369,7 @@ Until all kernel snaps are updated, snapd from latest/edge cannot be used for in
 * Extended hardware-observe interface to allow support riscv_hwprobe syscall and mount-observe interface to allow listmount and statmount syscalls
 
 
-For the release plan and the complete list of changes, please refer to the [Snapd roadmap](/).
+For the release plan and the complete list of changes, please refer to the [Snapd roadmap](https://forum.snapcraft.io/t/the-snapd-roadmap/1973).
 
 (ref-release-notes_snapd-2-66-release-notes)=
 ## Snapd 2.66 release notes

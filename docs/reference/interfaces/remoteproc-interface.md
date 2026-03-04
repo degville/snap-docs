@@ -14,7 +14,7 @@ Requires snapd version _2.62+_.
 ## Developer details
 
 **[Auto-connect](/t/6154#heading--auto-connections)** : no</br>
-**[Super-privileged](/)** : yes
+**[Super-privileged](/explanation/interfaces/super-privileged-interfaces)** : yes
 
 <h3 id='heading-code'>Code examples</h3>
 

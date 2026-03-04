@@ -9,7 +9,7 @@ The `posix-mq` interface enables inter-process communication (IPC) messages to b
 | Permissions |  |  |
 |--|--|--|
 | **[Auto-connect](/t/interface-management/6154#heading--auto-connections)** | **no** by default | **yes** with snaps from the same publisher |
-| **[Super-privileged](/)** | **no** for plugs | **yes** for slots |
+| **[Super-privileged](/explanation/interfaces/super-privileged-interfaces)** | **no** for plugs | **yes** for slots |
 
 **Attributes**:
 

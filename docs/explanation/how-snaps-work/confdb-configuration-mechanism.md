@@ -204,7 +204,7 @@ If there a change in the configuration data’s layout, only the assertion needs
 (ref-confdb-configuration-mechanism_interface-plugs)=
 ## Interface Plugs
 
-Snaps can use the [confdb interface](/) to express their interest in accessing a view through the plug stanza in their snapcraft.yaml (then snap.yaml). For example, a snap wishing to access the same `observe` view would declare it as:
+Snaps can use the [confdb interface](/reference/interfaces/confdb-interface) to express their interest in accessing a view through the plug stanza in their snapcraft.yaml (then snap.yaml). For example, a snap wishing to access the same `observe` view would declare it as:
 
 ```yaml
 plugs:

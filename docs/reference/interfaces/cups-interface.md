@@ -23,7 +23,7 @@ The CUPS snap will run in standalone mode, listening not only on `$SNAP_COMMON/r
 
 ## Developer details
 
-**[Auto-connect](/)**: not applicable
+**[Auto-connect](/explanation/interfaces/interface-auto-connection)**: not applicable
 
 * If you are snapping a **new application** that has print functionality, add the `cups` interface.
 * If you are **maintaining an application snap** currently using `cups-control` for printing, switch to the `cups` interface.

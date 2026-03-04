@@ -182,7 +182,7 @@ fi
 
 Snaps can only query their own plugs and slots because the snap name is implicit and implied by the snapctl execution context.
 
-See [Snapcraft interfaces](/) for more details on manipulating interfaces from a snap.
+See [Snapcraft interfaces](/reference/interfaces/index) for more details on manipulating interfaces from a snap.
 
 ## Model information
 
@@ -196,7 +196,7 @@ The _snap model_ command can be used to return to the active model identificatio
 The requesting snap must be either:
 1. a [gadget snap](/reference/development/yaml-schemas/the-gadget-snap)
 1. published from the same brand as the device model assertion 
-1. have the [snapd-control](/) plug
+1. have the [snapd-control](snapd-control-interface) plug
 
 By default, the output model identification information is presented in a structured yaml-like format:
 
@@ -231,7 +231,7 @@ The raw assertion can also be requested with the `--assertion` flag.
 
 ## Mount control
 
-When the [mount-control interface](/) is connected, a snapped application or service can use the _mount_ command to mount transient (non-persistent) and persistent filesystem mount points:
+When the [mount-control interface](/reference/interfaces/mount-control-interface) is connected, a snapped application or service can use the _mount_ command to mount transient (non-persistent) and persistent filesystem mount points:
 
 ```
 snapctl mount -o <options> -t <fstype> </path/to/device> </target/mount/point>
@@ -249,7 +249,7 @@ A corresponding _umount_ command can be used to remove a mount point:
 snapctl umount </path/to/mount/point>
 ```
 
-See [mount-control interface](/) for further details on permitted filesystems and mount options.
+See [mount-control interface](/reference/interfaces/mount-control-interface) for further details on permitted filesystems and mount options.
 
 
 ##  Reboot control (from the UC20+ install-device hook)
@@ -264,7 +264,7 @@ The gate-auto-refresh hook is executed by snapd for every snap that will be upda
 
 This hook is capable of executing the _snapctl refresh_ command with 3 specific arguments, `hold`, `proceed` and `pending`:
 
-This feature is currently considered experimental. See [Refresh control](/) for further details.
+This feature is currently considered experimental. See [Refresh control](/how-to-guides/manage-snaps/manage-updates) for further details.
 
 ### snapctl refresh --hold
 
@@ -309,7 +309,7 @@ If the hook fails with an error, snapd assumes "hold" as long as the maximum dea
 
 ## Services
 
-As with configuration options (see above), snapctl sub-commands for managing services are the same as those used by the snap command. See [Services and daemons](/) for further details.
+As with configuration options (see above), snapctl sub-commands for managing services are the same as those used by the snap command. See [Services and daemons](/how-to-guides/manage-snaps/control-services) for further details.
 
 To query the startup and running state of a service, for example, use `snapctl services <service-name>`:
 

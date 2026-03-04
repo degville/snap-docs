@@ -7,7 +7,7 @@ The `sd-control` interface allows for the management and control of SD cards on 
 ## Developer details
 
 **[Auto-connect](/explanation/interfaces/interface-auto-connection)**: no</br>
-**[Super-privileged](/)**: yes</br>
+**[Super-privileged](/explanation/interfaces/super-privileged-interfaces)**: yes</br>
 
 The main DualSD device node (`/dev/DualSD`) is used to control certain aspects of SD cards on the system.
 

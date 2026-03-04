@@ -4,7 +4,7 @@
 `docker-support` allows operating as the Docker daemon. This interface is for internal use by the [Docker snap](https://snapcraft.io/docker). You should not need to use this interface in your snap.
 
 **[Auto-connect](/explanation/interfaces/interface-auto-connection)**: no
-**[Super-privileged](/)**: yes
+**[Super-privileged](/explanation/interfaces/super-privileged-interfaces)**: yes
 
 **Attributes:**
    * `privileged-containers` (plug): true|false (defaults to ``false``)

@@ -8,7 +8,7 @@
 
 Requires snapd version _2.43+_.
 
-By design, snaps using `strict` and `devmode` [confinement](/) run with a different root filesystem than the host. Snaps that implement a backup function, however, need access to the host's snap-related files outside of this confinement, and this is where the `system-backup` interface can help.
+By design, snaps using `strict` and `devmode` [confinement](/explanation/security/snap-confinement) run with a different root filesystem than the host. Snaps that implement a backup function, however, need access to the host's snap-related files outside of this confinement, and this is where the `system-backup` interface can help.
 
 The system-backup interface provides read-only access to files under the following location:
 

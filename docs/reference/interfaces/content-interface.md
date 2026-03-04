@@ -168,7 +168,7 @@ plugs:
     default-provider: lib01604
 ```
 
-If the system does not contain a snap providing a matching slot, installing a consumer snap with a default-provider will trigger the automatic installation of the named provider snap.  If the named snap is already installed, the absence of a matching slot will instead trigger an update of the named provider snap. The plug and slot will be auto-connected assuming the [auto-connection mechanism](/) is configured properly for this.
+If the system does not contain a snap providing a matching slot, installing a consumer snap with a default-provider will trigger the automatic installation of the named provider snap.  If the named snap is already installed, the absence of a matching slot will instead trigger an update of the named provider snap. The plug and slot will be auto-connected assuming the [auto-connection mechanism](/explanation/interfaces/interface-auto-connection) is configured properly for this.
 
 For example, a snap consuming the GNOME content snap for GNOME 3.26 can set `default-provider` to `gnome-3-26-1604`.
 
