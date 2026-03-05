@@ -4,9 +4,9 @@
 Extend snap functionality with API access, internal tools, and customised environments for your applications and devices.
 
 * [Use the REST API](/how-to-guides/snap-development/use-the-rest-api): how to access the SnapD REST API.
-* [Use snapctl](snap-development/use-snapctl): use the snapctl tool within a snap application.
+* [Use snapctl](/how-to-guides/snap-development/use-snapctl): use the snapctl tool within a snap application.
 * [Test snapd fixes](/how-to-guides/snap-development/test-snapd-fixes): test out the latest release of the snap daemon.
-* [Debug snaps](snap-development/debug-snaps): solve issues with snapped application.
+* [Debug snaps](/how-to-guides/snap-development/debug-snaps): solve issues with snapped application.
 * [snap try](/how-to-guides/snap-development/debug-snaps): test a snap package on your system.
 * [Using in-development features](/reference/development/experimental-features): learn how to use cutting edge snap features.
 
