@@ -1,9 +1,9 @@
 (explanation-interfaces-interface-hooks)=
 # Interface hooks
 
-Interface hooks are [hooks](/reference/development/supported-snap-hooks) that can be executed when an [interface](/explanation/interfaces/all-about-interfaces) is either connected or disconnected via the interface's plugs and slots mechanism. They can be used to read or write attributes from a connection and, for example, acquire new resources, update internal options or update databases.
+Interface hooks are {ref}`hooks <reference-development-supported-snap-hooks>` that can be executed when an {ref}`interface <explanation-interfaces-all-about-interfaces>` is either connected or disconnected via the interface's plugs and slots mechanism. They can be used to read or write attributes from a connection and, for example, acquire new resources, update internal options or update databases.
 
-> ⓘ An interface consists of a connection between a plug and a slot. The slot is the provider of the interface while the plug is the consumer, and a slot can support multiple plug connections. For more details, see [Interface management](/how-to-guides/manage-snaps/connect-interfaces).
+> ⓘ An interface consists of a connection between a plug and a slot. The slot is the provider of the interface while the plug is the consumer, and a slot can support multiple plug connections. For more details, see {ref}`Interface management <how-to-guides-work-with-snaps-connect-interfaces>`.
 
 ## Connect hooks
 
@@ -24,7 +24,7 @@ If an interface connection fails, all changes are undone and an *undo* hook is r
 - `unprepare-slot-<slotname>`
 - `unprepare-plug-<plugname>`
 
-Interface hooks can read the attributes of the affected plug and slot by using the *snapctl* command, as defined by the snap's  [snap.yaml](/reference/development/yaml-schemas/the-snap-format) file.
+Interface hooks can read the attributes of the affected plug and slot by using the *snapctl* command, as defined by the snap's  {ref}`snap.yaml <reference-development-yaml-schemas-the-snap-format>` file.
 
 When executed by slot hooks:
 - `snapctl get :<slotname> <attribute name>` to read attributes of the local slot

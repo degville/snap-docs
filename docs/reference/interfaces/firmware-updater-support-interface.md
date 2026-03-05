@@ -5,8 +5,8 @@ The `firmware-updater-support` interface allows a snap to operate as the Firmwar
 
 ## Developer details
 
-**[Auto-connect](/explanation/interfaces/interface-auto-connection)**: no</br>
-**[Super-privileged](/explanation/interfaces/super-privileged-interfaces)**: yes</br>
+**{ref}`Auto-connect <explanation-interfaces-interface-auto-connection>`**: no</br>
+**{ref}`Super-privileged <reference-operations-interfaces-super-privileged-interfaces>`**: yes</br>
 
 ### Code examples
 

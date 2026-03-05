@@ -7,7 +7,7 @@ The `kerberos-tickets` interface enables access to [Kerberos tickets](https://we
 
 ## Developer details
 
-**[Auto-connect](/explanation/interfaces/interface-auto-connection)**: no</br>
+**{ref}`Auto-connect <explanation-interfaces-interface-auto-connection>`**: no</br>
 
 ### Code examples
 

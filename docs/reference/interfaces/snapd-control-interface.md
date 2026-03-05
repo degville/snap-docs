@@ -5,14 +5,14 @@ The `snapd-control` interface enables snap management, such as snap installation
 
 Due to its ability to permit the installation any snap at potentially any confinement level, `snapd-control` is primarily intended to be used by [brand store](https://core.docs.ubuntu.com/en/build-store/#brand-stores) owners as they will typically already have full access to their devices.
 
-Consequently, consumers of this interface require [approval](/reference/administration/process-for-aliases-auto-connections-and-tracks) for distribution via the Snap Store, and this approval is only likely to be given under strict and specific circumstances.
+Consequently, consumers of this interface require {ref}`approval <interfaces-process-for-aliases-auto-connections-and-tracks>` for distribution via the Snap Store, and this approval is only likely to be given under strict and specific circumstances.
 
 
 ## Developer details
 
 
-**[Auto-connect](/explanation/interfaces/interface-auto-connection)**: no</br>
-**[Super-privileged](/explanation/interfaces/super-privileged-interfaces)**: yes</br>
+**{ref}`Auto-connect <explanation-interfaces-interface-auto-connection>`**: no</br>
+**{ref}`Super-privileged <reference-operations-interfaces-super-privileged-interfaces>`**: yes</br>
 
 **Attributes** :
  * `refresh-schedule` (plug):  can be set to `managed` to signal an intention to permit only manual refreshes for the snap:

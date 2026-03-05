@@ -9,13 +9,13 @@ This interface is typically used to provide read-only access to system configura
 
 The [Firefox](https://snapcraft.io/firefox), [Chromium](https://snapcraft.io/chromium) and [Thunderbird](https://snapcraft.io/thunderbird) snaps use this interface to enable access to system-installed policies to customise each respective application.
 
-> See [Interface management](/how-to-guides/manage-snaps/connect-interfaces) and [Supported interfaces](/reference/interfaces/index) for further details on how interfaces are used.
+> See {ref}`Interface management <how-to-guides-work-with-snaps-connect-interfaces>` and {ref}`Supported interfaces <ref-index_interfaces>` for further details on how interfaces are used.
 
 
 ## Developer details
 
-**[Auto-connect](/explanation/interfaces/interface-auto-connection)**: no</br>
-**[Super-privileged](/explanation/interfaces/super-privileged-interfaces)**: yes</br>
+**{ref}`Auto-connect <explanation-interfaces-interface-auto-connection>`**: no</br>
+**{ref}`Super-privileged <reference-operations-interfaces-super-privileged-interfaces>`**: yes</br>
 
 **Attributes**:
   * `read` (plug): list of files and/or directories for read-only access (eg, '`read: [ /etc/file-read, /etc/dir-read ]`'
@@ -26,11 +26,11 @@ Requires snapd version _2.37+_.
 Consumers of this interface require a [snap declaration](https://forum.snapcraft.io/t/process-for-aliases-auto-connections-and-tracks/455/) for distribution via the [Snap Store](https://snapcraft.io/store) and acceptance in the store requires that the interface is not be used to access:
 - system files where the snap is not the clear owner (eg, /dev, /proc, /sys, /usr, etc).
 - paths in `/dev`, such as `/dev/sda1`
-  Access to `/dev` device nodes requires both AppArmor policy and device control group inclusion, but the _system-files_ interface does not have enough information to generate the necessary policy to enable these use cases. As such, purpose-specific interfaces should be used instead, such as  [block-devices](/reference/interfaces/block-devices-interface) or [raw-volume](/reference/interfaces/raw-volume-interface).
+  Access to `/dev` device nodes requires both AppArmor policy and device control group inclusion, but the _system-files_ interface does not have enough information to generate the necessary policy to enable these use cases. As such, purpose-specific interfaces should be used instead, such as  {ref}`block-devices <interfaces-block-devices-interface>` or {ref}`raw-volume <interfaces-raw-volume-interface>`.
 
 
 > ⓘ  Do not share data between snaps
-</br>While `system-files` can be used to share data with another snap, such as within a configuration file, this behaviour is not recommended. The [content interface](/reference/interfaces/content-interface) should be used instead.
+</br>While `system-files` can be used to share data with another snap, such as within a configuration file, this behaviour is not recommended. The {ref}`content interface <interfaces-content-interface>` should be used instead.
 
 
 

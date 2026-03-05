@@ -1,7 +1,7 @@
 (explanation-how-snaps-work-revisions)=
 # Revisions
 
-A snap's *revision* is a number assigned automatically by the [Snap Store](/reference/glossary.md#snap-store) with each snap upload, giving each snap binary a unique identity within, and across, its [channels](/explanation/how-snaps-work/channels-and-tracks).
+A snap's *revision* is a number assigned automatically by the {ref}`Snap Store <ref-glossary_snap-store>` with each snap upload, giving each snap binary a unique identity within, and across, its {ref}`channels <explanation-how-snaps-work-channels-and-tracks>`.
 
 The revision number increments with each new upload. But this number is arbitrary, and only used to differentiate between uploads. 
 
@@ -34,7 +34,7 @@ ffmpeg       4.3.1    1286   latest/stable  snapcrafters✪         -
 
 ## Revision package management
 
-The store caches several older revisions of every snap, as does the local system. By default, 2 revisions are stored locally, while Ubuntu Core systems store 3. These defaults can be changed with the [refresh-retain](/how-to-guides/manage-snaps/manage-updates) system option.
+The store caches several older revisions of every snap, as does the local system. By default, 2 revisions are stored locally, while Ubuntu Core systems store 3. These defaults can be changed with the {ref}`refresh-retain <how-to-guides-work-with-snaps-manage-updates>` system option.
 
 The snap `install`, `refresh` and `download` commands can operate on these available revisions with an optional `--revision` argument.
 
@@ -62,7 +62,7 @@ The revision number of the snap being operated upon will appear in the output du
 
 ## Data management
 
-The revision identity is used as a reference for revision-specific data. As described in [Data locations](/reference/administration/data-locations), revision-specific data for a snap is stored in a either system-wide location, or a user-specific home location:
+The revision identity is used as a reference for revision-specific data. As described in {ref}`Data locations <interfaces-data-locations>`, revision-specific data for a snap is stored in a either system-wide location, or a user-specific home location:
 
 * **SNAP_ DATA**: `/var/snap/<snap name>/<revision number>`</br>
 This location is also used to store data, mostly information utilised by background application and services, for logging, and other tasks that require persistence between snap launches.
@@ -73,6 +73,6 @@ This location contains any user data that the snap writes to its own home. This 
 
 When you move from one revision to the next, the revision-specific contents of **SNAP_DATA** and **SNAP_USER_DATA** are copied into new directories for the new revision. This includes moving from a higher revision number to a lower revision number (because revision numbers are arbitrary).
 
-Revision-specific directories are retained inline with the [refresh-retain](/how-to-guides/manage-snaps/manage-updates) system option.
+Revision-specific directories are retained inline with the {ref}`refresh-retain <how-to-guides-work-with-snaps-manage-updates>` system option.
 
-Other than the contents of the common directories, a [Snapshot](/how-to-guides/manage-snaps/create-data-snapshots) stores only the data associated with the currently installed revision. See [What a snapshot stores](/how-to-guides/manage-snaps/create-data-snapshots.md#what-a-snapshot-stores) for more details.
+Other than the contents of the common directories, a {ref}`Snapshot <how-to-guides-manage-snaps-create-data-snapshots>` stores only the data associated with the currently installed revision. See {ref}`What a snapshot stores <ref-create-data-snapshots_what-a-snapshot-stores>` for more details.

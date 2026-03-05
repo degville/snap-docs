@@ -3,12 +3,12 @@
 
 The `gbm-driver-libs` interface allows exposing GBM driver libraries to the system.
 
-For further details on interfaces, see [How to connect interfaces](/explanation/interfaces/all-about-interfaces).
+For further details on interfaces, see {ref}`How to connect interfaces <explanation-interfaces-all-about-interfaces>`.
 
 ## Developer details
 
-**[Auto-connect](/explanation/interfaces/interface-auto-connection)**: no</br>
-**[Super-privileged](/explanation/interfaces/super-privileged-interfaces)**: yes</br>
+**{ref}`Auto-connect <explanation-interfaces-interface-auto-connection>`**: no</br>
+**{ref}`Super-privileged <reference-operations-interfaces-super-privileged-interfaces>`**: yes</br>
 
 ### Code examples
 

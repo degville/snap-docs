@@ -1,7 +1,7 @@
 (how-to-guides-fix-common-issues-index)=
 # Fix common issues
 
-Snaps run on, and are built for, a diverse and constantly evolving set of [operating systems](/tutorials/install-the-daemon/index) and [embedded devices](https://ubuntu.com/core/docs/supported-platforms#heading--supported).
+Snaps run on, and are built for, a diverse and constantly evolving set of {ref}`operating systems <tutorials-install-the-daemon-index>` and [embedded devices](https://ubuntu.com/core/docs/supported-platforms#heading--supported).
 
 The vast majority of our users and developers experience very few issues, but any technology this complex and diverse will likely encounter some issues and incompatibilities.
 
@@ -11,7 +11,7 @@ This page attempts to guide users to either an appropriate solution to their iss
 
 The snap daemon (snapd) requires network access to install, update, build and publish snaps. Local network and port configurations can affect their access.
 
-See [Network requirements](/reference/administration/network-requirements) for which hosts and ports are required to ensure consistent communication.
+See {ref}`Network requirements <reference-administration-network-requirements>` for which hosts and ports are required to ensure consistent communication.
 
 ## Cannot communicate with the server / connection refused
 
@@ -57,7 +57,7 @@ See [Extremely slow snap downloads](https://forum.snapcraft.io/t/extremely-slow-
 
 When the snap daemon is installed, its executable components are added to the system path ($PATH). If this doesn't happen correctly, a warning is issued stating that snapd cannot be found.
 
-The first thing to do is check installation instructions for the specific operating system. See [Installing snapd](/tutorials/install-the-daemon/index) for further details.
+The first thing to do is check installation instructions for the specific operating system. See {ref}`Installing snapd <tutorials-install-the-daemon-index>` for further details.
 
 Linux distributions differ, but most will need a restart after snapd has been installed to refresh paths and system security profiles. 
 

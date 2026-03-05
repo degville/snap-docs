@@ -3,7 +3,7 @@
 
 The `raw-input` interface allows access to raw input devices.
 
-For further details on interfaces, see [How to connect interfaces](/explanation/interfaces/all-about-interfaces).
+For further details on interfaces, see {ref}`How to connect interfaces <explanation-interfaces-all-about-interfaces>`.
 
 ## Developer details
 

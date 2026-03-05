@@ -33,7 +33,7 @@ $  snap connect app:activity-led gadget:led-1
 * `channel` (slot): PWM device channel number to export and expose to consuming snaps
 * `chip-number` (slot): chip base number to export
 
-To use a PWM device, the snap developer must add `plugs:[pwm]` to a snap’s[ snapcraft.yaml](https://documentation.ubuntu.com/snapcraft/stable/reference/project-file/anatomy-of-snapcraft-yaml/). The snap user can then access a specific pwm device with an[ interface connection](/explanation/interfaces/all-about-interfaces).
+To use a PWM device, the snap developer must add `plugs:[pwm]` to a snap’s[ snapcraft.yaml](https://documentation.ubuntu.com/snapcraft/stable/reference/project-file/anatomy-of-snapcraft-yaml/). The snap user can then access a specific pwm device with an{ref}` interface connection <explanation-interfaces-all-about-interfaces>`.
 
 Unless the snap is expected to actually use a set of PWM channels that is not predefined, it is recommended to define distinct plugs for each used pwm channel, like:
 
@@ -45,7 +45,7 @@ plugs:
     interface: pwm
 ```
 
-This has the advantage of being self-documenting and 1-1 connections like these are easier to track and setup with[ auto-connections](/explanation/interfaces/interface-auto-connection), if the latter is needed.
+This has the advantage of being self-documenting and 1-1 connections like these are easier to track and setup with{ref}` auto-connections <explanation-interfaces-interface-auto-connection>`, if the latter is needed.
 
 When the interface is connected, `"echo (channel number) > /sys/class/pwm/pwmchipN/export"` is run internally to enable access to the PWM channel.
 

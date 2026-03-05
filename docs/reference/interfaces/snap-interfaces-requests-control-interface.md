@@ -5,7 +5,7 @@ The `snap-interfaces-requests-control` interface enables the prompting API and i
 
 ```{tip}
 
-See [Interface management](/how-to-guides/manage-snaps/connect-interfaces) and [Supported interfaces](/reference/interfaces/index) for further details on how interfaces are used.
+See {ref}`Interface management <how-to-guides-work-with-snaps-connect-interfaces>` and {ref}`Supported interfaces <ref-index_interfaces>` for further details on how interfaces are used.
 
 ```
 

@@ -31,5 +31,5 @@ Filesystem      Size  Used Avail Use% Mounted on
 [...]
 ```
 
->ⓘ  For a detailed overview of what a snap is, see  [The snap format](/reference/development/yaml-schemas/the-snap-format) documentation.
+>ⓘ  For a detailed overview of what a snap is, see  {ref}`The snap format <reference-development-yaml-schemas-the-snap-format>` documentation.
 

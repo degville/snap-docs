@@ -3,13 +3,13 @@
 
 There are a significant number of terms and definitions that are unique to the snap, snapd, and snapcraft ecosystem. This page defines the terminology and other terms touched by these tools and links to further information when required.
 
-If you're new to using snaps, take a look at [Getting started](/tutorials/get-started), and if you're looking to build your own snaps, take a look at [Craft a snap](https://documentation.ubuntu.com/snapcraft/stable/tutorials/craft-a-snap/).
+If you're new to using snaps, take a look at {ref}`Getting started <tutorials-get-started>`, and if you're looking to build your own snaps, take a look at [Craft a snap](https://documentation.ubuntu.com/snapcraft/stable/tutorials/craft-a-snap/).
 
 ## Terms and definitions
 
 ### appliance
 
-An appliance is a pre-configured [Ubuntu Core](#ubuntu-core) bootable image that includes one or more snaps to provide a specific set of features. The [OpenHAB](https://ubuntu.com/appliance/openhab) smart home system, the [Plex](https://ubuntu.com/appliance/plex) media server, and the [Nextcloud Server](https://ubuntu.com/appliance/nextcloud) platform, are all available as appliances, for example.
+An appliance is a pre-configured {ref}`Ubuntu Core <ref-glossary_ubuntu-core>` bootable image that includes one or more snaps to provide a specific set of features. The [OpenHAB](https://ubuntu.com/appliance/openhab) smart home system, the [Plex](https://ubuntu.com/appliance/plex) media server, and the [Nextcloud Server](https://ubuntu.com/appliance/nextcloud) platform, are all available as appliances, for example.
 
 See [What is an Ubuntu Appliance](https://ubuntu.com/appliance/about) for more details.
 
@@ -19,7 +19,7 @@ An assertion is a digitally signed document that either verifies the validity of
 
 Snapcraft, snapd, Ubuntu Core and the Snap Store all use assertions to handle a variety of functions and processes, including authentication, policy setting, identification and validation.
 
-See [Assertions](/explanation/security/assertions) for more details.
+See {ref}`Assertions <explanation-security-assertions>` for more details.
 
 ### base
 
@@ -31,30 +31,30 @@ See [Bases](https://documentation.ubuntu.com/snapcraft/stable/reference/bases/) 
 
 A branch is an optional finer subdivision of a channel for a published snap that allows for the creation of a short-lived sequences of snaps that can be pushed on demand by snap developers to help with fixes or temporary experimentation.
 
-See [Branches](/explanation/how-snaps-work/channels-and-tracks.md#branches) for more details.
+See {ref}`Branches <ref-channels-and-tracks_branches>` for more details.
 
 (ref-glossary_brand-store)=
 ### brand store
 
-See [Dedicated Snap Store](#dedicated-snap-store)
+See {ref}`Dedicated Snap Store <ref-glossary_dedicated-snap-store>`
 
 ### channel
 
 Channels define which release of a snap is installed and tracked for updates. They consist of, and are subdivided by, tracks (`latest`, or developer defined, e.g `1.0`), risk-levels (stable, candidate, beta and edge), and optional branches. The _tracking_ value for an installed snap shows which channel is being installed and followed.
 
-See [Channels](/explanation/how-snaps-work/channels-and-tracks) for more details.
+See {ref}`Channels <explanation-how-snaps-work-channels-and-tracks>` for more details.
 
 ### classic
 
 _Classic_ is a snap confinement level that allows access to your system’s resources in much the same way traditional packages do. It's used sparingly and only after a manual review.
 
-See [Snap confinement](/explanation/security/snap-confinement) for more details.
+See {ref}`Snap confinement <explanation-security-snap-confinement>` for more details.
 
 ### confinement
 
 A snap’s confinement level is the degree of isolation it has from your system. There are three levels of snap confinement: strict, classic and devmode. The majority of snaps use _strict_ confinement, and run in complete isolation up to a level of minimal access that's always deemed safe, or through access given via explicit interface connections.
 
-See [Snap confinement](/explanation/security/snap-confinement) for more details.
+See {ref}`Snap confinement <explanation-security-snap-confinement>` for more details.
 
 ### core
 
@@ -93,7 +93,7 @@ See [Store overview](https://core.docs.ubuntu.com/en/build-store/#brand-stores) 
 
 _devmode_ is a snap confinement level used by snap developers when creating their snaps. With *devmode*, a snap runs as a strictly confined snap with full access to system resources, and produces debug output to identify unspecified interfaces.
 
-See [Snap confinement](/explanation/security/snap-confinement) for more details.
+See {ref}`Snap confinement <explanation-security-snap-confinement>` for more details.
 
 ### epoch
 
@@ -113,13 +113,13 @@ See [Snapcraft extensions](https://documentation.ubuntu.com/snapcraft/stable/ref
 
 A gadget is a device or other deployment running Ubuntu Core alongside a vendor-specified, managed and maintained set of snaps. A gadget could be a router, for example, a home automation device or even a VM cloud instance. Its properties are defined within an embedded _gadget snap_.
 
-See [The gadget snap](/reference/development/yaml-schemas/the-gadget-snap) for more details.
+See {ref}`The gadget snap <reference-development-yaml-schemas-the-gadget-snap>` for more details.
 
 ### hook
 
 A hook is an executable that runs within a snap’s confined environment when a certain action occurs. Actions include snap installation and removal, changes to its configuration or connection state, and before or after a refresh.
 
-For more details, see [Supported snap hooks](/reference/development/supported-snap-hooks).
+For more details, see {ref}`Supported snap hooks <reference-development-supported-snap-hooks>`.
 
 ### interface
 
@@ -127,7 +127,7 @@ An interface enables resources from one snap to be shared with another and with 
 
 For a snap to use an interface, its developer needs to have first defined its corresponding plugs and slots within a snap’s [snapcraft.yaml](https://documentation.ubuntu.com/snapcraft/stable/reference/project-file/snapcraft-yaml) file.
 
-See [Interfaces](/explanation/interfaces/all-about-interfaces) and [Interface management](/how-to-guides/manage-snaps/connect-interfaces) for more details.
+See {ref}`Interfaces <explanation-interfaces-all-about-interfaces>` and {ref}`Interface management <how-to-guides-work-with-snaps-connect-interfaces>` for more details.
 
 ### Launchpad
 
@@ -171,7 +171,7 @@ See [Set up Snapcraft](https://documentation.ubuntu.com/snapcraft/stable/how-to/
 
 Parallel installs enable you to run multiple instances of the same snap on the same system. Each instance is completely isolated from all other instances, including its name, configuration, interface connections, data locations, services, applications and aliases.
 
-See [Parallel installs](/explanation/how-snaps-work/parallel-installs) for more information.
+See {ref}`Parallel installs <interfaces-parallel-installs>` for more information.
 
 ### part
 
@@ -185,7 +185,7 @@ A platform snap contains the parts, packages, interface connections and environm
 
 Examples include kde-frameworks to provide KDE Plasma compatibility, and WINE to help snaps more easily run Microsoft Windows executables.
 
-A platform snap cannot be installed directly by users. They are instead invoked by snap developers as the `default-provider` in a [content interface](/reference/interfaces/content-interface).
+A platform snap cannot be installed directly by users. They are instead invoked by snap developers as the `default-provider` in a {ref}`content interface <interfaces-content-interface>`.
 
 ### preseeding
 
@@ -201,7 +201,7 @@ Snaps update automatically, and by default, the snapd daemon checks for updates 
 
 When, and how often, these updates occur can be modified with the snap command. Updates can be set to occur on Friday at midnight, for example, or for specific days of the month, such as only the third Monday, or even the last Friday of the month, between 23:00 to 01:00 the next day.
 
-See [How to manage updates](/how-to-guides/manage-snaps/manage-updates) for further details.
+See {ref}`How to manage updates <how-to-guides-work-with-snaps-manage-updates>` for further details.
 
 ### remote build
 
@@ -212,7 +212,7 @@ See [Remote build](https://documentation.ubuntu.com/snapcraft/stable/explanation
 (ref-glossary_revision)=
 ### revision
 
-A snap's *revision* is a number assigned by the [Snap Store](#snap-store) automatically to give each snap a unique identity within and across its channels.
+A snap's *revision* is a number assigned by the {ref}`Snap Store <ref-glossary_snap-store>` automatically to give each snap a unique identity within and across its channels.
 
 It's important to note that there is no real concept of higher or lower snap revisions and the current revision of the snap is simply the one that is released onto a channel.
 
@@ -233,7 +233,7 @@ In the above example output, the latest/edge snap has a revision of `26758` and 
 
 However, neither the revision number (nor its version) enforce an order of release. The local system will simply attempt to install whatever snap is recommended by the publisher in the channel being tracked.
 
-See [Revisions](/explanation/how-snaps-work/revisions) for further details.
+See {ref}`Revisions <explanation-how-snaps-work-revisions>` for further details.
 
 ### seeding
 
@@ -266,7 +266,7 @@ A snap series **is not correlated** to an Ubuntu series, such as _18_ for Ubuntu
 
 Snaps are app packages for desktop, cloud and IoT that are easy to install, secure, cross-platform and dependency-free, and _snap_ is both the command line interface and the application package format. The command is used to install and remove snaps and interact with the wider snap ecosystem.
 
-See [Getting started](/tutorials/get-started) for more details.
+See {ref}`Getting started <tutorials-get-started>` for more details.
 
 ### snapcraft
 
@@ -284,7 +284,7 @@ See [Snap documentation](https://snapcraft.io/docs) for more details.
 
 ### snappy
 
-Snappy was the predecessor to [Ubuntu Core](#heading--ubuntu-core). The term is still occasionally used informally to refer to various aspects of the snap ecosystem, such as the command, the package format, the Snap Store and Ubuntu Core. It's best to avoid using this term; use *Snap* or *the Snap ecosystem* instead.
+Snappy was the predecessor to Ubuntu Core. The term is still occasionally used informally to refer to various aspects of the snap ecosystem, such as the command, the package format, the Snap Store and Ubuntu Core. It's best to avoid using this term; use *Snap* or *the Snap ecosystem* instead.
 
 See [Snap documentation](https://snapcraft.io/docs) for general details about the snap ecosystem.
 
@@ -294,7 +294,7 @@ A  *snapshot*  is a copy of the user, system and configuration data stored by  *
 
 Snapshots are generated manually with the  `snap save`  command and automatically when a snap is removed. A snapshot can be used to backup the state of your snaps, revert snaps to a previous state and to restore a fresh snapd installation to a previously saved state.
 
-See [Snapshots](/how-to-guides/manage-snaps/create-data-snapshots) for further details.
+See {ref}`Snapshots <how-to-guides-manage-snaps-create-data-snapshots>` for further details.
 
 (ref-glossary_snap-store)=
 ### Snap Store
@@ -313,17 +313,17 @@ See [https://github.com/canonical/spread](https://github.com/canonical/spread) f
 
 _Strict_ is the default snap confinement level. It runs snaps in complete isolation, and consequently, with no access your files, network, processes or any other system resource without requesting specific access via an interface.
 
-See [Snap confinement](/explanation/security/snap-confinement) for more details.
+See {ref}`Snap confinement <explanation-security-snap-confinement>` for more details.
 
 ### tracks
 
 Tracks enable snap developers to publish multiple supported releases of their application under the same snap name. They are one of the levels of channel subdivision.
 
-See [Tracks](/explanation/how-snaps-work/channels-and-tracks) for more details.
+See {ref}`Tracks <explanation-how-snaps-work-channels-and-tracks>` for more details.
 
 ### Transitional interface
 
-A _transitional interface_ is an [interface](/explanation/interfaces/all-about-interfaces) that can be used by a trusted snap to access traditional Linux desktop environments that were not designed to integrate with [snap confinement](/explanation/security/snap-confinement). These interfaces will become deprecated as replacement or modified technologies that enforce strong application isolation become available.
+A _transitional interface_ is an {ref}`interface <explanation-interfaces-all-about-interfaces>` that can be used by a trusted snap to access traditional Linux desktop environments that were not designed to integrate with {ref}`snap confinement <explanation-security-snap-confinement>`. These interfaces will become deprecated as replacement or modified technologies that enforce strong application isolation become available.
 
 (ref-glossary_ubuntu-core)=
 ### Ubuntu Core
@@ -346,5 +346,5 @@ The version string typically reflects the general release version of a snap's pr
 
 The version string for the [Nextcloud snap](https://snapcraft.io/nextcloud) in its latest/stable channel, for example, tracks the version of the latest stable release, such as `20.0.7`. The version string for Nextcloud in its latest/edge channel represents its source code branch and build date, such as `master-2021-03-09`.
 
-See [Getting started](/tutorials/get-started) for more details.
+See {ref}`Getting started <tutorials-get-started>` for more details.
 

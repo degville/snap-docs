@@ -1,14 +1,14 @@
 (explanation-how-snaps-work-refresh-awareness)=
 # Refresh awareness
 
-Snaps update automatically, and by default, the *snapd* daemon checks for updates 4 times a day. Each update check is called a *refresh* and is described in more detail in [Managing updates](/how-to-guides/manage-snaps/manage-updates).
+Snaps update automatically, and by default, the *snapd* daemon checks for updates 4 times a day. Each update check is called a *refresh* and is described in more detail in {ref}`Managing updates <how-to-guides-work-with-snaps-manage-updates>`.
 
 If a refresh occurs while an affected desktop application is running, **refresh app awareness** helps to mitigate any potential issues, using a combination of in-place updates, deferred updates, and desktop notifications.
 
 Refresh awareness requires snapd _2.57+_
 
 ```{note}
-[Service management](/how-to-guides/manage-snaps/control-services) is not affected, as services are started and stopped manually as part of the refresh process, unless a specific _endure_ value has been embedded into the snap by the snap developer. See [snapcraft.yaml refresh-mode](https://documentation.ubuntu.com/snapcraft/stable/reference/project-file/snapcraft-yaml/#apps.%3Capp-name%3E.refresh-mode) for further details.
+{ref}`Service management <how-to-guides-manage-snaps-control-services>` is not affected, as services are started and stopped manually as part of the refresh process, unless a specific _endure_ value has been embedded into the snap by the snap developer. See [snapcraft.yaml refresh-mode](https://documentation.ubuntu.com/snapcraft/stable/reference/project-file/snapcraft-yaml/#apps.%3Capp-name%3E.refresh-mode) for further details.
 ```
 
 ## In-place updates
@@ -40,7 +40,7 @@ error: cannot refresh "firefox": snap "firefox" has running apps (firefox), pids
         1639,1854,1912,1932,3514,3632,5814,5870
 ```
 
-See [Managing updates](/how-to-guides/manage-snaps/manage-updates) for more details controlling update frequencies, and holding updates for any period of time.
+See {ref}`Managing updates <how-to-guides-work-with-snaps-manage-updates>` for more details controlling update frequencies, and holding updates for any period of time.
 
 ## Desktop notifications
 
@@ -52,4 +52,4 @@ On the default Ubuntu GNOME desktop, notifications can be modified and disabled 
 
 Other desktop environments have equivalent functionality.
 
-See [Refresh awareness security policy](/explanation/security/security-policies.md#refresh-awareness) for details on how refresh updates accommodate confinement and security policy requirements.
+See {ref}`Refresh awareness security policy <ref-security-policies_refresh-awareness>` for details on how refresh updates accommodate confinement and security policy requirements.

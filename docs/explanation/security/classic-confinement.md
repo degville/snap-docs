@@ -1,7 +1,7 @@
 (explanation-security-classic-confinement)=
 # Classic confinement
 
-Classic confinement is the most permissive level of [snap confinement](/explanation/security/snap-confinement), equivalent to the full system access that traditional, unsandboxed packages have.
+Classic confinement is the most permissive level of {ref}`snap confinement <explanation-security-snap-confinement>`, equivalent to the full system access that traditional, unsandboxed packages have.
 
 It's often used as a stop-gap measure to enable developers to publish apps that need more access than snapd interfaces and permissions allow.
 
@@ -21,7 +21,7 @@ Apps packaged as classic snaps behave similar to software provided and installed
 
 From a security standpoint, classic snaps are inherently riskier than standard snaps, as they lack the protections and guardrails offered by sandboxing. A malicious author could easily compromise a system by incorporating a compromising payload into a classic snap. And as Canonical finds is frequently the case, not all requests for classic confinement are necessary. Some authors misunderstand the snap build process, interfaces, or filesystem, and with some tweaking their snap is made to work without classic confinement.
 
-Canonical must therefore audit and vet all classic snaps prior to distribution on any store. Without approval from the Store team, a classic snap can't be distributed. The review process that determines the eligibility and appropriateness as a classic snap is outlined in [Submit your snap for review](/reference/administration/reviewing-classic-confinement-snaps).
+Canonical must therefore audit and vet all classic snaps prior to distribution on any store. Without approval from the Store team, a classic snap can't be distributed. The review process that determines the eligibility and appropriateness as a classic snap is outlined in {ref}`Submit your snap for review <interfaces-reviewing-classic-confinement-snaps>`.
 
 Canonical only manages risk for its own infrastructure and channels. If a user obtains a classic snap through unofficial channels and they understand the risks, they can manually install it.
 

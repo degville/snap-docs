@@ -7,7 +7,7 @@ The snap daemon, known as *snapd*, is the background service that manages and ma
 
 Fortunately, the snap daemon is pre-installed and running on many distributions by default, and it's easy to install on most other distributions.
 
-See [Troubleshooting](/how-to-guides/manage-snaps/fix-common-issues) for help resolving installation issues.
+See {ref}`Troubleshooting <how-to-guides-fix-common-issues-index>` for help resolving installation issues.
 
 ## Snap pre-installed
 
@@ -26,15 +26,15 @@ For distributions without the snap daemon pre-installed, use the links below for
 
 | | |
 |--|--|
-| [AlmaLinux OS](/tutorials/install-the-daemon/almalinux-os) | [Arch Linux](/tutorials/install-the-daemon/arch-linux)|
-| [CentOS](/tutorials/install-the-daemon/centos) | [Debian](/tutorials/install-the-daemon/debian)|
-| [elementary OS](/tutorials/install-the-daemon/elementary-os) | [Fedora](/tutorials/install-the-daemon/fedora) |
-| [GalliumOS](/tutorials/install-the-daemon/galliumos) | [Kali Linux](/tutorials/install-the-daemon/kali) |
-| [KDE Neon*](/tutorials/install-the-daemon/neon) | [Linux Mint](/tutorials/install-the-daemon/linux-mint) | 
-| [Manjaro*](/tutorials/install-the-daemon/manjaro-linux) | [openSUSE](/tutorials/install-the-daemon/opensuse) |
-| [Parrot Security OS](/tutorials/install-the-daemon/parrot) | [Pop!_OS](/tutorials/install-the-daemon/pop-os) |
-| [Raspberry Pi OS](/tutorials/install-the-daemon/raspberrypios) | | [Rocky Linux](/tutorials/install-the-daemon/rocky-linux) |
-| [Ubuntu*](/tutorials/install-the-daemon/ubuntu) |  |
+| {ref}`AlmaLinux OS <tutorials-install-the-daemon-almalinux-os>` | {ref}`Arch Linux <tutorials-install-the-daemon-arch-linux>`|
+| {ref}`CentOS <interfaces-installing-snap-on-centos>` | {ref}`Debian <tutorials-install-the-daemon-debian>`|
+| {ref}`elementary OS <tutorials-install-the-daemon-elementary-os>` | {ref}`Fedora <tutorials-install-the-daemon-fedora>` |
+| {ref}`GalliumOS <interfaces-installing-snap-on-galliumos>` | {ref}`Kali Linux <interfaces-installing-snap-on-kali>` |
+| {ref}`KDE Neon* <interfaces-installing-snap-on-kde-neon>` | {ref}`Linux Mint <tutorials-install-the-daemon-linux-mint>` | 
+| {ref}`Manjaro* <tutorials-install-the-daemon-manjaro-linux>` | {ref}`openSUSE <tutorials-install-the-daemon-opensuse>` |
+| {ref}`Parrot Security OS <interfaces-installing-snap-on-parrot-security-os>` | {ref}`Pop!_OS <tutorials-install-the-daemon-pop-os>` |
+| {ref}`Raspberry Pi OS <interfaces-installing-snap-on-raspbian>` | | {ref}`Rocky Linux <tutorials-install-the-daemon-rocky-linux>` |
+| {ref}`Ubuntu* <tutorials-install-the-daemon-ubuntu>` |  |
 
 **\*** While snapd is pre-installed on these systems, installation instructions can help if you're using older versions, or want to re-install snap after removing it.
 

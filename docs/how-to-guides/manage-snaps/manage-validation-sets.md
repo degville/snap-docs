@@ -1,14 +1,14 @@
 (how-to-guides-manage-snaps-manage-validation-sets)=
 # Manage validation sets
 
-A [validation sets](/explanation/how-snaps-work/validation-sets) ensures only specific snaps are installed, and optionally, only specific snaps at fixed [revisions](/reference/glossary.md#revision).
+A {ref}`validation sets <explanation-how-snaps-work-validation-sets>` ensures only specific snaps are installed, and optionally, only specific snaps at fixed {ref}`revisions <ref-glossary_revision>`.
 
 For [Landscape](https://ubuntu.com/landscape)-managed devices, see [How to manage snaps in Landscape with validation sets](https://documentation.ubuntu.com/landscape/how-to-guides/iot-for-devices/manage-snaps-with-validation-sets/) after a validation set has been created.
 
 ## Create a validation set
 
 ```{tip}
-For devices running [Ubuntu Core](/reference/glossary.md#ubuntu-core), a validation set can be declared as part of the [model](https://ubuntu.com/core/docs/reference/assertions/model) definition.
+For devices running {ref}`Ubuntu Core <ref-glossary_ubuntu-core>`, a validation set can be declared as part of the [model](https://ubuntu.com/core/docs/reference/assertions/model) definition.
 ```
 
 Ensure you have an [Ubuntu One](https://documentation.ubuntu.com/core/tutorials/build-your-first-image/access-ubuntu-one/) and know your *Developer account id*.

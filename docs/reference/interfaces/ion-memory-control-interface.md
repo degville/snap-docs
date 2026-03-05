@@ -3,13 +3,13 @@
 
 The `ion-memory-control` interface allows access to the Android ION memory allocator, a Linux kernel feature for managing one or more memory pools.
 
-This interface is primarily intended to be used with [Ubuntu Core](/reference/glossary.md#ubuntu-core).
+This interface is primarily intended to be used with {ref}`Ubuntu Core <ref-glossary_ubuntu-core>`.
 
 
 ## Developer details
 
-**[Auto-connect](/explanation/interfaces/interface-auto-connection)**: no</br>
-**[Super-privileged](/explanation/interfaces/super-privileged-interfaces)**: yes</br>
+**{ref}`Auto-connect <explanation-interfaces-interface-auto-connection>`**: no</br>
+**{ref}`Super-privileged <reference-operations-interfaces-super-privileged-interfaces>`**: yes</br>
 
 The device is expected in the following location:
 -  `/dev/ion`

@@ -2,7 +2,7 @@
 
 The REST API provides access to snapd's state and many of its key functions, as listed below.
 
-For general information on how to use the API, including how to access it, its requests and responses, results fields and error types, see [Using the REST API](/how-to-guides/snap-development/use-the-rest-api).
+For general information on how to use the API, including how to access it, its requests and responses, results fields and error types, see {ref}`Using the REST API <how-to-guides-manage-snaps-use-the-rest-api>`.
 
 ## API endpoints
 

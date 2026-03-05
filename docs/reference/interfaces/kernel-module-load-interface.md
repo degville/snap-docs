@@ -3,13 +3,13 @@
 
 `kernel-module-load` provides the ability to load, or deny loading, specific kernel modules. This interface gives privileged access to the device.
 
-See also the [kernel-module-control interface](/reference/interfaces/kernel-module-control-interface) for inserting, removing and querying kernel modules.
+See also the {ref}`kernel-module-control interface <interfaces-kernel-module-control-interface>` for inserting, removing and querying kernel modules.
 
 
 ## Developer details
 
-**[Auto-connect](/explanation/interfaces/interface-auto-connection)**: no<br />
-**[Super-privileged](/explanation/interfaces/super-privileged-interfaces)**: yes</br>
+**{ref}`Auto-connect <explanation-interfaces-interface-auto-connection>`**: no<br />
+**{ref}`Super-privileged <reference-operations-interfaces-super-privileged-interfaces>`**: yes</br>
 
 **Attributes**:
   * `name` (plug, required): provides the name of the kernel module to be loaded (eg, '`name: pcspkr`')
@@ -21,7 +21,7 @@ See also the [kernel-module-control interface](/reference/interfaces/kernel-modu
 
 **In addition to the `name` attribute being required, either `options` or `load` must also be specified.**
 
-Consumers of this interface require a [snap declaration](/reference/administration/process-for-aliases-auto-connections-and-tracks) for distribution via the Snap Store.
+Consumers of this interface require a {ref}`snap declaration <interfaces-process-for-aliases-auto-connections-and-tracks>` for distribution via the Snap Store.
 
 Requires snapd version _2.54+_.
 

@@ -1,7 +1,7 @@
 (reference-development-rest-api-error-responses)=
 # Error responses
 
-When [Using the snapd REST API](/how-to-guides/snap-development/use-the-rest-api), requests sent to the <a href="../api/redoc-static.html">snapd REST API</a> can return both standard HTTP error responses, and a snapd-specific _error kind_, in the body of the response. These are detailed below.
+When {ref}`Using the snapd REST API <how-to-guides-manage-snaps-use-the-rest-api>`, requests sent to the <a href="../api/redoc-static.html">snapd REST API</a> can return both standard HTTP error responses, and a snapd-specific _error kind_, in the body of the response. These are detailed below.
 
 ## Status codes
 
@@ -28,7 +28,7 @@ The following error `kind` values provide extra context on an error response:
 * `auth-cancelled`: authentication was cancelled by the user.
 * `bad-query`: a bad query was provided.
 * `dns-failure`: DNS not responding.
-* `insufficient-disk-space`: returned when [disk space awareness](/how-to-guides/manage-snaps/disk-space-awareness) is enabled and either an install, remove or refresh operation fails due to insufficient free disk space. The error `value`  is an object that contains `snap-names`, an array of affected snaps, and a `change-kind` string with the failed operation.
+* `insufficient-disk-space`: returned when {ref}`disk space awareness <how-to-guides-manage-snaps-disk-space-awareness>` is enabled and either an install, remove or refresh operation fails due to insufficient free disk space. The error `value`  is an object that contains `snap-names`, an array of affected snaps, and a `change-kind` string with the failed operation.
 * `interfaces-unchanged`: the requested interfaces' operation would have no effect.
 * `invalid-auth-data`: the authentication data provided failed to validate (e.g. a malformed email address). The `value` of the error is an object with a key per failed field and a list of the failures on each field.
 * `login-required`: the requested operation cannot be performed without an authenticated user. This is the kind of any other 401 Unauthorized response.

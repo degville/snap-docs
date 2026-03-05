@@ -47,7 +47,7 @@ User-specific locations:
 - **SNAP_USER_COMMON** (`/home/<username>/snap/<snap-name>/common`)
 - **SNAP_USER_DATA** (`/home/<username>/snap/<snap-name>/<revision>`)
 
-It's important to note that **SNAP_DATA** and **SNAP_USER_DATA** place their data within a directory specific to each snap [revision](/explanation/how-snaps-work/revisions), whereas  **SNAP_COMMON** and  **SNAP_USER_COMMON** do not.
+It's important to note that **SNAP_DATA** and **SNAP_USER_DATA** place their data within a directory specific to each snap {ref}`revision <explanation-how-snaps-work-revisions>`, whereas  **SNAP_COMMON** and  **SNAP_USER_COMMON** do not.
 
 You need to be aware of what data is copied forward when you move from one revision to the next and which data will be restored if you switch to a previous snapshot.
 
@@ -58,7 +58,7 @@ When a snapshot is restored:
 
 1. The revision-specific contents of **SNAP_DATA** and  **SNAP_USER_DATA** will be copied into and _overwrite_ the contents of the revision-specific directory of the currently installed revision.
 
-See [Data locations](/reference/administration/data-locations) for more details on how these locations are intended to be used by a snap, and see [Inside a snapshot](#inside-a-snapshot) to see how they're stored within a snapshot.
+See {ref}`Data locations <interfaces-data-locations>` for more details on how these locations are intended to be used by a snap, and see {ref}`Inside a snapshot <ref-create-data-snapshots_inside-a-snapshot>` to see how they're stored within a snapshot.
 
 ## Verifying a snapshot
 
@@ -139,7 +139,7 @@ Set  Snap              Age    Version               Rev   Size   Notes
 
 As with manual snapshots, automatically generated snapshots can be manually deleted with `snap forget <set-id>`.
 
-Automatic snapshot retention time is configured with the `snapshots.automatic.retention` [system option](/how-to-guides/manage-snaps/set-system-options). The value needs to be greater than 24 hours:
+Automatic snapshot retention time is configured with the `snapshots.automatic.retention` {ref}`system option <how-to-guides-manage-snaps-set-system-options>`. The value needs to be greater than 24 hours:
 
 ```
 snap set system snapshots.automatic.retention=30h

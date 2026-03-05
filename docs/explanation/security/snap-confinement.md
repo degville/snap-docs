@@ -11,9 +11,9 @@ A snap's confinement level controls the degree of isolation it has from the user
 
 There are two levels of snap confinement for published snaps:
 - **Strict** 
-   Used by the majority of snaps. Strictly confined snaps run in complete isolation, up to a minimal access level that's deemed always safe. Consequently, strictly confined snaps can not access files, network, processes or any other system resource without requesting specific access via an interface ([see below](#interfaces)).
+   Used by the majority of snaps. Strictly confined snaps run in complete isolation, up to a minimal access level that's deemed always safe. Consequently, strictly confined snaps can not access files, network, processes or any other system resource without requesting specific access via an interface.
 - **Classic**
-   Allows access to the system's resources in much the same way traditional packages do. To safeguard against abuse, publishing a classic snap requires [manual approval](/reference/administration/reviewing-classic-confinement-snaps), and installation requires the `--classic` command line argument.
+   Allows access to the system's resources in much the same way traditional packages do. To safeguard against abuse, publishing a classic snap requires {ref}`manual approval <interfaces-reviewing-classic-confinement-snaps>`, and installation requires the `--classic` command line argument.
 
 An additional mode is useful during the development process:
 - **Devmode**
@@ -21,7 +21,7 @@ An additional mode is useful during the development process:
 
 Strict confinement uses security features of the Linux kernel, including AppArmor, seccomp and namespaces, to prevent applications and services accessing the wider system.
 
-For details on how confinement is implemented, see [Snap system architecture](/reference/system-architecture).
+For details on how confinement is implemented, see {ref}`Snap system architecture <reference-operations-system-architecture>`.
 
 ## Getting the confinement level
 
@@ -48,5 +48,5 @@ wormhole  0.11.2    112   stable    snapcrafters    -
 
 ## Interfaces and confinement
 
-Snaps with strict confinement must use [interfaces](/explanation/interfaces/all-about-interfaces) to access resources on the user's system, including those provided by other snaps.
+Snaps with strict confinement must use {ref}`interfaces <explanation-interfaces-all-about-interfaces>` to access resources on the user's system, including those provided by other snaps.
 

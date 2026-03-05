@@ -3,21 +3,15 @@
 
 Both the snap daemon (snapd) and [Snapcraft](https://documentation.ubuntu.com/snapcraft/stable/) require network access to install, update, build and publish snaps. This page lists the hosts and ports (`host:port`) that are required to ensure consistent communication.
 
-- [API access](#heading--api)
-- [Download CDNs](#heading--cdns)
-- [ Deprecated cdn.snapcraft.io domains](#heading--deprecated)
-
 Uptime tracking for these end-points can be found on [https://status.snapcraft.io/](https://status.snapcraft.io/).
 
----
-
-<h3 id='heading--api'>API access</h3>
+## API access
 
 * api.snapcraft.io:443
 * dashboard.snapcraft.io:443	 
 * login.ubuntu.com:443
 
-<h3 id='heading--cdns'>Download CDNs</h3>
+## Download CDNs
 
  * *.snapcraftcontent.com:443
  * *.cdn.snapcraft.io:443  [_deprecated_]
@@ -42,7 +36,7 @@ Snapcraft also requires:
 Devices being provisioned for brand stores will need the following:
 * serial-vault-partners.canonical.com:443
 
-<h4 id='heading--deprecated'>Deprecated cdn.snapcraft.io domains</h4>
+### Deprecated cdn.snapcraft.io domains
 
 The explicitly deprecated *.cdn.snapcraft.io domains are:
 
@@ -54,6 +48,3 @@ The explicitly deprecated *.cdn.snapcraft.io domains are:
 * fastly.cdn.snapcraftcontent.com:443
 * fastly-global.cdn.snapcraftcontent.com:443
 * cloudfront.cdn.snapcraft.io:443 
-
-<!-- Thanks to @vpetersson for kicking off this list on the [Screenly Support site ](https://support.screenly.io/hc/en-us/articles/360001718113). -->
-

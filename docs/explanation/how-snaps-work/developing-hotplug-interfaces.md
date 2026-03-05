@@ -1,11 +1,11 @@
 (interfaces-developing-hotplug-interfaces)=
 # Developing hotplug interfaces
 
-This page describes how developers can implement an [interface](/explanation/interfaces/all-about-interfaces) that supports [USB hotplugging](https://www.kernel.org/doc/html/v4.13/driver-api/usb/hotplug.html),via snapd's built-in hotplug support.
+This page describes how developers can implement an {ref}`interface <explanation-interfaces-all-about-interfaces>` that supports [USB hotplugging](https://www.kernel.org/doc/html/v4.13/driver-api/usb/hotplug.html),via snapd's built-in hotplug support.
 
-For a general user overview, including enabling this functionality and hotplug interface management, see [Hotplug support](/explanation/how-snaps-work/hotplug-support).
+For a general user overview, including enabling this functionality and hotplug interface management, see {ref}`Hotplug support <interfaces-hotplug-support>`.
 
-Hotplug support is currently [under active development](/reference/development/experimental-features).
+Hotplug support is currently {ref}`under active development <ref-experimental-features_experimental-features>`.
 
 ## Adding hotplug interfaces
 
@@ -131,7 +131,7 @@ E: TAGS=:systemd:
 E: USEC_INITIALIZED=415122796440
 ```
 
-Snapd hardware interfaces, whose slots may appear as part of their [gadget.yaml](/reference/development/yaml-schemas/the-gadget-snap) definition, for example, allowing `gadget` in their `allow-installation` section of the base declaration, must additionally implement the following function:
+Snapd hardware interfaces, whose slots may appear as part of their {ref}`gadget.yaml <reference-development-yaml-schemas-the-gadget-snap>` definition, for example, allowing `gadget` in their `allow-installation` section of the base declaration, must additionally implement the following function:
 
 ```go
 HandledByGadget(deviceInfo *HotplugDeviceInfo, slot *snap.SlotInfo) bool
@@ -162,5 +162,5 @@ Similarly, when the device is disconnected and its slot had been connected to a 
 
 - **`disconnect-plug-<plugname>`**
 
-This mechanism can be used by snaps to react to devices appearing/disappearing from their connected plugs. Please refer to the documentation on [Interface Hooks](/explanation/interfaces/interface-hooks) for more details on this functionality.
+This mechanism can be used by snaps to react to devices appearing/disappearing from their connected plugs. Please refer to the documentation on {ref}`Interface Hooks <explanation-interfaces-interface-hooks>` for more details on this functionality.
 

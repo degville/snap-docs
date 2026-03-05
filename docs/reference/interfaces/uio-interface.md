@@ -11,7 +11,7 @@ The slot is intended to be implemented by a gadget snap and is not provided by t
 
 Requires snapd version *2.44+*.
 
-To use the uio device, the snap developer must add `plugs: [ uio ]` to a snap's [snapcraft.yaml](https://documentation.ubuntu.com/snapcraft/stable/reference/project-file/anatomy-of-snapcraft-yaml/). The snap user can then access a specific disk partition with an [interface connection](/explanation/interfaces/all-about-interfaces).
+To use the uio device, the snap developer must add `plugs: [ uio ]` to a snap's [snapcraft.yaml](https://documentation.ubuntu.com/snapcraft/stable/reference/project-file/anatomy-of-snapcraft-yaml/). The snap user can then access a specific disk partition with an {ref}`interface connection <explanation-interfaces-all-about-interfaces>`.
 
 Use  `snap interface uio` to see which disk partitions are available on the system for snaps to use:
 

@@ -13,8 +13,8 @@ Requires snapd version _2.62+_.
 
 ## Developer details
 
-**[Auto-connect](/explanation/interfaces/interface-auto-connection)** : no</br>
-**[Super-privileged](/explanation/interfaces/super-privileged-interfaces)** : yes
+**{ref}`Auto-connect <explanation-interfaces-interface-auto-connection>`** : no</br>
+**{ref}`Super-privileged <reference-operations-interfaces-super-privileged-interfaces>`** : yes
 
 <h3 id='heading-code'>Code examples</h3>
 

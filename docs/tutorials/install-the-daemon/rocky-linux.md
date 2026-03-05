@@ -3,7 +3,7 @@
 
 Snap is available for [Rocky Linux 8](https://rockylinux.org/), a Linux distribution that's being actively developed to provide binary compatibility with Red Hat Enterprise Linux (RHEL).
 
-See also [Installing snap on Red Hat Enterprise Linux](red-hat).
+See also {ref}`Installing snap on Red Hat Enterprise Linux <interfaces-installing-snap-on-red-hat>`.
 
 The snap packages for Rocky Linux can be found in the [Extra Packages for Enterprise Linux](https://fedoraproject.org/wiki/EPEL) (EPEL) repository.  The EPEL repository can be added to a Rocky Linux system with the following command:
 
@@ -14,7 +14,7 @@ $ sudo dnf upgrade
 
 If you use a root user rather than _sudo_ to handle security privileges, run `su` first and remove _sudo_ from subsequent commands.
 
- > ⓘ  If you're interested in understanding how these packages are built, see  [Building a snap RPM for Red Hat Enterprise Linux (RHEL) 8](/explanation/snap-development/building-snap-rpms-on-rhel).
+ > ⓘ  If you're interested in understanding how these packages are built, see  {ref}`Building a snap RPM for Red Hat Enterprise Linux (RHEL) 8 <interfaces-building-snap-rpms-on-rhel>`.
 
 ## Installing snapd
 

@@ -41,7 +41,7 @@ Archive:  snap-files.zip
   inflating: snapd_2.53.2+git6345be5.6345be5-dirty_amd64.snap
 ```
 
-This resultant snap for the specific pull request we selected earlier can now be installed with snap's [dangerous mode](/explanation/snap-development/install-modes.md#dangerous-mode):
+This resultant snap for the specific pull request we selected earlier can now be installed with snap's {ref}`dangerous mode <ref-install-modes_dangerous-mode>`:
 
 ```
 $ snap install --dangerous snapd_2.53.2+git6345be5.6345be5-dirty_amd64.snap

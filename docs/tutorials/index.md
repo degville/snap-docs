@@ -7,13 +7,13 @@ This section of our documentation contains step-by-step tutorials to help outlin
 
 Snap is installed by default on Ubuntu and many other Linux distributions. Our _Features tour_ is an ideal way to get started.
 
-* [Features tour](get-started): All of snap's main features on a single page
+* {ref}`Features tour <tutorials-get-started>`: All of snap's main features on a single page
 
 ## Installation 
 
 Installation instructions for those distributions that don't include _snap_ by default, and for users who may have previously removed snap from distributions that do.
 
-* [Installing snapd](install-the-daemon/index): Installation instructions for all popular Linux distributions
+* {ref}`Installing snapd <tutorials-install-the-daemon-index>`: Installation instructions for all popular Linux distributions
 
 ### Snap pre-installed
 
@@ -32,15 +32,15 @@ For distributions without the snap daemon pre-installed, use the links below for
 
 | | |
 |--|--|
-| [AlmaLinux OS](/tutorials/install-the-daemon/almalinux-os) | [Arch Linux](/tutorials/install-the-daemon/arch-linux)|
-| [CentOS](/tutorials/install-the-daemon/centos) | [Debian](/tutorials/install-the-daemon/debian)|
-| [elementary OS](/tutorials/install-the-daemon/elementary-os) | [Fedora](/tutorials/install-the-daemon/fedora) |
-| [GalliumOS](/tutorials/install-the-daemon/galliumos) | [Kali Linux](/tutorials/install-the-daemon/kali) |
-| [KDE Neon*](/tutorials/install-the-daemon/neon) | [Linux Mint](/tutorials/install-the-daemon/linux-mint) | 
-| [Manjaro*](/tutorials/install-the-daemon/manjaro-linux) | [openSUSE](/tutorials/install-the-daemon/opensuse) |
-| [Parrot Security OS](/tutorials/install-the-daemon/parrot) | [Pop!_OS](/tutorials/install-the-daemon/pop-os) |
-| [Raspberry Pi OS](/tutorials/install-the-daemon/raspberrypios) | | [Rocky Linux](/tutorials/install-the-daemon/rocky-linux) |
-| [Ubuntu*](/tutorials/install-the-daemon/ubuntu) |  |
+| {ref}`AlmaLinux OS <tutorials-install-the-daemon-almalinux-os>` | {ref}`Arch Linux <tutorials-install-the-daemon-arch-linux>`|
+| {ref}`CentOS <interfaces-installing-snap-on-centos>` | {ref}`Debian <tutorials-install-the-daemon-debian>`|
+| {ref}`elementary OS <tutorials-install-the-daemon-elementary-os>` | {ref}`Fedora <tutorials-install-the-daemon-fedora>` |
+| {ref}`GalliumOS <interfaces-installing-snap-on-galliumos>` | {ref}`Kali Linux <interfaces-installing-snap-on-kali>` |
+| {ref}`KDE Neon* <interfaces-installing-snap-on-kde-neon>` | {ref}`Linux Mint <tutorials-install-the-daemon-linux-mint>` | 
+| {ref}`Manjaro* <tutorials-install-the-daemon-manjaro-linux>` | {ref}`openSUSE <tutorials-install-the-daemon-opensuse>` |
+| {ref}`Parrot Security OS <interfaces-installing-snap-on-parrot-security-os>` | {ref}`Pop!_OS <tutorials-install-the-daemon-pop-os>` |
+| {ref}`Raspberry Pi OS <interfaces-installing-snap-on-raspbian>` | | {ref}`Rocky Linux <tutorials-install-the-daemon-rocky-linux>` |
+| {ref}`Ubuntu* <tutorials-install-the-daemon-ubuntu>` |  |
 
 **\*** While snapd is pre-installed on these systems, installation instructions can help if you're using older versions, or want to re-install snap after removing it.
 

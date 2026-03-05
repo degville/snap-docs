@@ -5,7 +5,7 @@ The snap daemon, _snapd_, can check whether there is enough free disk space befo
 
 - **snap installation**: checks storage required to download a snap
 - **snap refresh and update**: checks storage required to download updates and to store previous snap revisions
-- **snap removal**: checks storage required to create the [automatic snapshot](/how-to-guides/manage-snaps/create-data-snapshots.md#automatic-snapshots) generated when the last revision of a snap is removed (unless disabled)
+- **snap removal**: checks storage required to create the {ref}`automatic snapshot <ref-create-data-snapshots_automatic-snapshots>` generated when the last revision of a snap is removed (unless disabled)
 
 ```{caution}
 Disk space awareness is currently an experimental feature.
@@ -25,7 +25,7 @@ $ snap remove foo
 error: cannot remove "foo" due to low disk space, use --purge to avoid creating a snapshot
 ```
 
-The [REST API](/how-to-guides/snap-development/use-the-rest-api) will also return an `insufficient-disk-space` [error response](/reference/development/error-responses) object when disk space awareness is enabled and an error is encountered.
+The {ref}`REST API <how-to-guides-manage-snaps-use-the-rest-api>` will also return an `insufficient-disk-space` {ref}`error response <reference-development-rest-api-error-responses>` object when disk space awareness is enabled and an error is encountered.
 
 ## Enable disk space awareness
 
@@ -40,5 +40,5 @@ To enable the pre-install check, for example, use the following command:
 snap set system experimental.check-disk-space-install=true
 ```
 
-See [System options](/how-to-guides/manage-snaps/set-system-options) for more details on setting and disabling options.
+See {ref}`System options <how-to-guides-manage-snaps-set-system-options>` for more details on setting and disabling options.
 

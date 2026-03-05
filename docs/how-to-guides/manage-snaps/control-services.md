@@ -1,7 +1,7 @@
 (how-to-guides-manage-snaps-control-services)=
 # Control services
 
-The majority of snaps expose their functionality via applications that run on the local system. Most of these applications are started either from [the command line](/how-to-guides/manage-snaps/apps-and-aliases), the graphical desktop, or as services that run automatically.
+The majority of snaps expose their functionality via applications that run on the local system. Most of these applications are started either from {ref}`the command line <how-to-guides-work-with-snaps-apps-and-aliases>`, the graphical desktop, or as services that run automatically.
 
 A single snap may provide multiple applications and services. With a database snap, for example, you might expect an interactive client application alongside the service daemon. 
 
@@ -135,4 +135,4 @@ Adding the `-f` option will keep log output open so you can follow new entries a
 sudo snap logs lxd -f
 ```
 
-The size and rate of log output can be limited by placing a snap within a quota group. See [Journal log limits](use-resource-quotas.md#journal-log-limits) for more details.
+The size and rate of log output can be limited by placing a snap within a quota group. See {ref}`Journal log limits <ref-use-resource-quotas_journal-log-limits>` for more details.

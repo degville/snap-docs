@@ -9,7 +9,7 @@ Just like a snap, a component is implemented as a squashfs file. If installed, t
 
 Components can be thought of as either an internal implementation detail of the host snap that remains transparent to the user, or as a visible snap component that can be installed, refreshed and removed similarly to snaps.
 
-See [Using components](/how-to-guides/manage-snaps/using-components) for installation, removal and listing options. To control components from within a snap, see [snapctl components](/how-to-guides/snap-development/use-snapctl). Components can also be managed through the <a href="../api/redoc-static.html">Snapd REST API</a>.
+See {ref}`Using components <how-to-guides-manage-snaps-using-components>` for installation, removal and listing options. To control components from within a snap, see {ref}`snapctl components <how-to-guides-manage-snaps-use-snapctl>`. Components can also be managed through the <a href="../api/redoc-static.html">Snapd REST API</a>.
 
 Component requires *snapd 2.67+* .
 
@@ -49,14 +49,14 @@ For further details on packaging, see [How to package and upload a snap with com
 
 ## Revisions
 
-Just like snaps, components have [revisions](/explanation/how-snaps-work/revisions). If a snap defines components, each snap file uploaded to the store will be matched to components with their own specific revisions 
+Just like snaps, components have {ref}`revisions <explanation-how-snaps-work-revisions>`. If a snap defines components, each snap file uploaded to the store will be matched to components with their own specific revisions 
 This forms a unique tuple between the snap and each respective component. 
 
 > ⓘ  While it will become possible to update components in a tuple, the snapcraft functionality required to individually upload an updated component has not yet been implemented.
 
 ## Component hooks
 
-Components can implement the following  [hooks](/reference/development/supported-snap-hooks):
+Components can implement the following  {ref}`hooks <reference-development-supported-snap-hooks>`:
 
 * install
 * pre-refresh
@@ -90,7 +90,7 @@ components:
 
 ## Environment variables
 
-The execution environment for component hooks will be similar to the one defined for snap applications/hooks, with the injection of the following additional [environment variables](/reference/development/environment-variables):
+The execution environment for component hooks will be similar to the one defined for snap applications/hooks, with the injection of the following additional {ref}`environment variables <reference-development-environment-variables>`:
 
 - `SNAP_COMPONENT`: directory where the component is mounted
 - `SNAP_COMPONENT_NAME`: name of the component as specified in component.yaml

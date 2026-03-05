@@ -3,12 +3,12 @@
 
 Extend snap functionality with API access, internal tools, and customised environments for your applications and devices.
 
-* [Use the REST API](/how-to-guides/snap-development/use-the-rest-api): how to access the SnapD REST API.
-* [Use snapctl](/how-to-guides/snap-development/use-snapctl): use the snapctl tool within a snap application.
-* [Test snapd fixes](/how-to-guides/snap-development/test-snapd-fixes): test out the latest release of the snap daemon.
-* [Debug snaps](/how-to-guides/snap-development/debug-snaps): solve issues with snapped application.
-* [snap try](/how-to-guides/snap-development/debug-snaps): test a snap package on your system.
-* [Using in-development features](/reference/development/experimental-features): learn how to use cutting edge snap features.
+* {ref}`Use the REST API <how-to-guides-manage-snaps-use-the-rest-api>`: how to access the SnapD REST API.
+* {ref}`Use snapctl <how-to-guides-manage-snaps-use-snapctl>`: use the snapctl tool within a snap application.
+* {ref}`Test snapd fixes <how-to-guides-fix-common-issues-test-snapd-fixes>`: test out the latest release of the snap daemon.
+* {ref}`Debug snaps <how-to-guides-fix-common-issues-debug-snaps>`: solve issues with snapped application.
+* {ref}`snap try <how-to-guides-fix-common-issues-debug-snaps>`: test a snap package on your system.
+* {ref}`Using in-development features <ref-experimental-features_experimental-features>`: learn how to use cutting edge snap features.
 
 ```{toctree}
 :hidden:

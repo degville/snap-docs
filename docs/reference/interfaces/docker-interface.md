@@ -9,15 +9,15 @@ While anyone can rebuild the [Docker snap from source](https://github.com/docker
 
 
 ```{tip}
-See [Interface management](/how-to-guides/manage-snaps/connect-interfaces) and [Supported interfaces](/reference/interfaces/index) for further details on how interfaces are used.
+See {ref}`Interface management <how-to-guides-work-with-snaps-connect-interfaces>` and {ref}`Supported interfaces <ref-index_interfaces>` for further details on how interfaces are used.
 ```
 
 ---
 
 ## Developer details
 
-**[Auto-connect](/explanation/interfaces/interface-auto-connection)**: no</br>
-**[Super-privileged](/explanation/interfaces/super-privileged-interfaces)**: yes</br>
+**{ref}`Auto-connect <explanation-interfaces-interface-auto-connection>`**: no</br>
+**{ref}`Super-privileged <reference-operations-interfaces-super-privileged-interfaces>`**: yes</br>
 
 For distribution via the [Snap store ](https://snapcraft.io/store), consumers of this interface require an approved [snap declaration](https://forum.snapcraft.io/t/process-for-aliases-auto-connections-and-tracks/455/).
 
@@ -49,11 +49,11 @@ plugs:
     default-provider: docker
 ```
 
-This snapcraft.yaml will build a [strictly confined](/explanation/security/snap-confinement) snap package which is portable across environments and works equally on IoT-centric Ubuntu Core as well as on most commonly used desktop and server distributions.
+This snapcraft.yaml will build a {ref}`strictly confined <explanation-security-snap-confinement>` snap package which is portable across environments and works equally on IoT-centric Ubuntu Core as well as on most commonly used desktop and server distributions.
 
 The snap has one apps definition which contains the `hello-docker` application. This application uses two snap interface plugs, one called _docker_ and the other called _docker-executables_.
 
-The plugs for both are defined in more detail in the `plugs:` section. In this section, _docker_ refers to this specific interface while _docker-executables_ is an example of a [content interface](/reference/interfaces/content-interface). The content interface is further specified to refer to content of type docker-executables. This is important as it has to match what is [provided by the Docker snap](https://github.com/docker-snap/docker-snap/blob/058337577d4172c8919a53a41c38ebe7ee9beab0/snap/snapcraft.yaml#L90C1-L90C22) available in the store.
+The plugs for both are defined in more detail in the `plugs:` section. In this section, _docker_ refers to this specific interface while _docker-executables_ is an example of a {ref}`content interface <interfaces-content-interface>`. The content interface is further specified to refer to content of type docker-executables. This is important as it has to match what is [provided by the Docker snap](https://github.com/docker-snap/docker-snap/blob/058337577d4172c8919a53a41c38ebe7ee9beab0/snap/snapcraft.yaml#L90C1-L90C22) available in the store.
 
 Plugs of the content interface have the target attribute which defines where the corresponding content is made available. In this case, it is the directory `docker-snap` inside the read-only image of the application snap. It is important that our application snap contains an empty directory with the same name, so that when the Docker snap is installed and the interfaces are connected, we can access the Docker snap's command line tools.
 

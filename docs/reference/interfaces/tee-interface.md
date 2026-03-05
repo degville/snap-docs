@@ -4,13 +4,13 @@
 The `tee` interface  permits access to Trusted Execution Environment (TEE) devices via the [TEE subsystem](https://www.kernel.org/doc/html/latest/staging/tee.html) in the Linux kernel.
 
 
-This interface is primarily intended to be used with [Ubuntu Core](/reference/glossary.md#ubuntu-core).
+This interface is primarily intended to be used with {ref}`Ubuntu Core <ref-glossary_ubuntu-core>`.
 
 
 ## Developer details
 
-**[Auto-connect](/explanation/interfaces/interface-auto-connection)**: no</br>
-**[Super-privileged](/explanation/interfaces/super-privileged-interfaces)**: yes</br>
+**{ref}`Auto-connect <explanation-interfaces-interface-auto-connection>`**: no</br>
+**{ref}`Super-privileged <reference-operations-interfaces-super-privileged-interfaces>`**: yes</br>
 
 Intended for snaps needing to access the TEE subsystem over `/dev/tee[0-9]*`, `/dev/teepriv[0-0]*` or  the Qualcomm equivalent _qseecom_  (Qualcomm Secure Execution Environment Communicator) at `/dev/qseecom`.
 

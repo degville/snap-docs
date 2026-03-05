@@ -8,8 +8,8 @@ The `snap-refresh-control` interface allows extended control, via [snapctl](http
 
 ## Developer details
 
-**[Auto-connect](/explanation/interfaces/interface-auto-connection)**: no</br>
-**[Super-privileged](/explanation/interfaces/super-privileged-interfaces)**: yes</br>
+**{ref}`Auto-connect <explanation-interfaces-interface-auto-connection>`**: no</br>
+**{ref}`Super-privileged <reference-operations-interfaces-super-privileged-interfaces>`**: yes</br>
 
 `snap-refresh-control` is a marker interface  (with no associated AppArmor or Seccomp rules).
 

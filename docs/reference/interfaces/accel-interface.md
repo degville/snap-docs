@@ -7,7 +7,7 @@ The `accel` interface allows access to device nodes in `/dev/accel` , which are 
 
 ## Developer details
 
-**[Auto-connect](/explanation/interfaces/interface-auto-connection)**: yes</br>
+**{ref}`Auto-connect <explanation-interfaces-interface-auto-connection>`**: yes</br>
 
 ### Code examples
 
