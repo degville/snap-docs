@@ -35,4 +35,4 @@ $ hello-world
 Hello World!
 ```
 
-See [Missing binaries](/how-to-guides/fix-common-issues/index.md#missing-binaries-command-not-found) if snaps are not added to the system path.
+See [Missing binaries](/how-to-guides/manage-snaps/fix-common-issues) if snaps are not added to the system path.

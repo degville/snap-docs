@@ -21,7 +21,7 @@ See also the [kernel-module-control interface](/reference/interfaces/kernel-modu
 
 **In addition to the `name` attribute being required, either `options` or `load` must also be specified.**
 
-Consumers of this interface require a [snap declaration](/t/process-for-aliases-auto-connections-and-tracks/455/) for distribution via the Snap Store.
+Consumers of this interface require a [snap declaration](/reference/administration/process-for-aliases-auto-connections-and-tracks) for distribution via the Snap Store.
 
 Requires snapd version _2.54+_.
 

@@ -7,7 +7,7 @@ The snap daemon, known as *snapd*, is the background service that manages and ma
 
 Fortunately, the snap daemon is pre-installed and running on many distributions by default, and it's easy to install on most other distributions.
 
-See [Troubleshooting](/how-to-guides/fix-common-issues/index) for help resolving installation issues.
+See [Troubleshooting](/how-to-guides/manage-snaps/fix-common-issues) for help resolving installation issues.
 
 ## Snap pre-installed
 

@@ -3,7 +3,7 @@
 
 This page describes how developers can implement an [interface](/explanation/interfaces/all-about-interfaces) that supports [USB hotplugging](https://www.kernel.org/doc/html/v4.13/driver-api/usb/hotplug.html),via snapd's built-in hotplug support.
 
-For a general user overview, including enabling this functionality and hotplug interface management, see [Hotplug support](/reference/interfaces/hotplug-support).
+For a general user overview, including enabling this functionality and hotplug interface management, see [Hotplug support](/explanation/how-snaps-work/hotplug-support).
 
 Hotplug support is currently [under active development](/reference/development/experimental-features).
 

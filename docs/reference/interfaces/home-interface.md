@@ -28,9 +28,9 @@ Requires snapd version _2.33+_.
 
 ## Developer details
 
-**[Auto-Connect](/t/the-interface-connection-mechanism/20179#heading--autoconnect)**:
+**[Auto-Connect](/explanation/interfaces/interface-auto-connection)**:
 -  **yes** on traditional distributions
--  **no** on all other systems, including [Ubuntu Core](/t/glossary/14612#heading--ubuntu-core)
+-  **no** on all other systems, including [Ubuntu Core](/reference/glossary.md#ubuntu-core)
 
 **Transitional**: yes</br>
 **Attributes**:

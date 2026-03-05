@@ -26,7 +26,7 @@ The [Yaru MATE Icons](https://github.com/ubuntu-mate/icon-theme-yaru-mate-snap) 
 
 By default, when multiple directories are shared from a producer snap, or when multiple slots are connected to a single plug, the shared content is merged under the `target` path of the consuming path's plug definition. This behaviour can be modified with the `source` attribute.
 
-Read, write and target should start with either ``$SNAP``, ``$SNAP_DATA`` or ``$SNAP_COMMON`` to refer to the designated directory. See [Environment variables](/docs/reference/development/environment-variables) for details on where these point to on the filesystem.
+Read, write and target should start with either ``$SNAP``, ``$SNAP_DATA`` or ``$SNAP_COMMON`` to refer to the designated directory. See [Environment variables](/reference/development/environment-variables) for details on where these point to on the filesystem.
 
 The _content identifier_ specified by the consuming snap (plug) must match the _content_ attribute of the producer snap (slot).
 
@@ -225,7 +225,7 @@ When the two interfaces are connected the *consumer* snap can see the socket in 
 The content interface is implemented via an interplay between two systems:
 [AppArmor](https://wiki.ubuntu.com/AppArmor) and bind mounts.
 
-By default, the AppArmor sandbox allows _writes_ to `$SNAP_DATA` and _reads_ from `$SNAP` (see [Environment variables](/docs/reference/development/environment-variables) for details).
+By default, the AppArmor sandbox allows _writes_ to `$SNAP_DATA` and _reads_ from `$SNAP` (see [Environment variables](/reference/development/environment-variables) for details).
 
 The content interface takes advantage of this feature to map data from other locations to either `$SNAP` or `$SNAP_DATA`.
 

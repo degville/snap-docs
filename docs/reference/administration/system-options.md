@@ -71,7 +71,7 @@ The following example asks the system to only refresh snaps between 4.00am and 7
 snap set system refresh.timer=4:00-7:00,19:00-22:10 
 ```
 
-See [Controlling updates](/how-to-guides/work-with-snaps/manage-updates.md#control-updates-with-system-options) for further details on how the above options are used.
+See [Controlling updates](/how-to-guides/manage-snaps/manage-updates) for further details on how the above options are used.
 
 ## system homedirs
 

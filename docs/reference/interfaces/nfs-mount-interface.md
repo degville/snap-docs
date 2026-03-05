@@ -8,7 +8,7 @@ The `nfs-mount` interface allows the mounting and unmounting of Network File Sys
 
 ## Developer details
 
-**[Auto-connect](/t/6154#heading--auto-connections)** : no</br>
+**[Auto-connect](/explanation/interfaces/interface-auto-connection)** : no</br>
 **[Super-privileged](/explanation/interfaces/super-privileged-interfaces)** : no
 
 Requires snapd version _2.62+_.

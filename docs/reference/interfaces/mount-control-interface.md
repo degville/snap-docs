@@ -38,7 +38,7 @@ See [AppArmor globbing syntax](https://gitlab.com/apparmor/apparmor/-/wikis/AppA
 It's the responsibility of the snapped application or service to create and maintain a mount point, using either of the following:
 - the [mount](https://man7.org/linux/man-pages/man8/mount.8.html) command
 - the [mount()](https://man7.org/linux/man-pages/man2/mount.2.html) system call
-- an accompanying [snapctl mount](/t/using-the-snapctl-tool/15002#heading--mount)
+- an accompanying [snapctl mount](/how-to-guides/snap-development/use-snapctl)
 
 The `snapctl mount` command is the only option for creating a persistent mount point via its `--persistent` mount option.
 

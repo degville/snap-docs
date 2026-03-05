@@ -5,7 +5,7 @@ The `iscsi-initiator` interface allows snaps to act as iSCSI initiators, enablin
 
 The interface loads kernel modules required for iSCSI operations including iscsi_tcp for transport and target_core_mod for LIO functionality.
 
-See [Interface management](/t/interface-management/6154) and [Supported interfaces](/t/supported-interfaces/7744) for further details on how interfaces are used.
+See [Interface management](/how-to-guides/manage-snaps/connect-interfaces) and [Supported interfaces](/reference/interfaces) for further details on how interfaces are used.
 
 ## Developer details
 

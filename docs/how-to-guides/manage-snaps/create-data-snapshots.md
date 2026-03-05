@@ -58,7 +58,7 @@ When a snapshot is restored:
 
 1. The revision-specific contents of **SNAP_DATA** and  **SNAP_USER_DATA** will be copied into and _overwrite_ the contents of the revision-specific directory of the currently installed revision.
 
-See [Data locations](/reference/operations/data-locations) for more details on how these locations are intended to be used by a snap, and see [Inside a snapshot](#inside-a-snapshot) to see how they're stored within a snapshot.
+See [Data locations](/reference/administration/data-locations) for more details on how these locations are intended to be used by a snap, and see [Inside a snapshot](#inside-a-snapshot) to see how they're stored within a snapshot.
 
 ## Verifying a snapshot
 

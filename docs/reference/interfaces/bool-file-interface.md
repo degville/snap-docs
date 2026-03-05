@@ -3,7 +3,7 @@
 
 The `bool-file` interface allows access to a specific class of file that contains boolean semantics, typically used to toggle or represent the state of binary hardware values.
 
-This interface is primarily intended to be used with [Ubuntu Core](/t/glossary/14612#heading--ubuntu-core) devices, it's also restricted because it provides privileged access to hardware.
+This interface is primarily intended to be used with [Ubuntu Core](/reference/glossary.md#ubuntu-core) devices, it's also restricted because it provides privileged access to hardware.
 
 These kinds of file are located within specific directories inside the [sysfs](https://man7.org/linux/man-pages/man5/sysfs.5.html) filesystem (`/sys`) and this  interface allows a file to be _read_, to obtaining a current value, or _written to_, setting a new value.
 
@@ -38,7 +38,7 @@ slots:
 
 The [gpio interface](/reference/interfaces/gpio-interface)  provides another option for accessing GPIO devices.
 
-To use a boolean file, the snap developer must add `plugs: [ bool-file ]` to a snap's [snapcraft.yaml](https://documentation.ubuntu.com/snapcraft/stable/reference/project-file/anatomy-of-snapcraft-yaml/). The snap user can then access a specific boolean file with an [interface connection](/t/interface-management/6154#heading--manual-connections).
+To use a boolean file, the snap developer must add `plugs: [ bool-file ]` to a snap's [snapcraft.yaml](https://documentation.ubuntu.com/snapcraft/stable/reference/project-file/anatomy-of-snapcraft-yaml/). The snap user can then access a specific boolean file with an [interface connection](/explanation/interfaces/all-about-interfaces).
 
 Unless a snap specifically expects a set of boolean files that cannot be predefined, the recommended approach is to define distinct plugs for each boolean file the snap wishes to use:
 

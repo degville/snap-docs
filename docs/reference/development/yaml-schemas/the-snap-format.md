@@ -249,7 +249,7 @@ Hooks provide a mechanism for snapd to alert snaps that something has happened, 
 
 Interfaces allow snaps to communicate or share resources according to the protocol established by the interface. They play an important part in security policy configuration. 
 
-See [Supported interfaces](/reference/operations/interfaces/index) for more details.
+See [Supported interfaces](/reference/interfaces) for more details.
 
 <a name="layouts"></a>
 

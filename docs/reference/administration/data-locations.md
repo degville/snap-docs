@@ -1,7 +1,7 @@
 (interfaces-data-locations)=
 # Data locations
 
-A vast majority of snaps use strict confinement to isolate both their execution environments and their data from your system (see [Snap Confinement](/explanation/security/snap-confinement/) for further details).
+A vast majority of snaps use strict confinement to isolate both their execution environments and their data from your system (see [Snap Confinement](/explanation/security/snap-confinement) for further details).
 
 This confinement is an important security feature, but it can affect how and where you access a snap's files, including:
 
@@ -16,12 +16,12 @@ Access to files like these is fundamental to the operation of most applications 
 Within the snap environment, environment variables are used to reference different accessible locations.  The following variables and default referenced locations are used to store system data:
 
 * **SNAP_COMMON**: `/var/snap/<snap name>/common`</br>
-This directory is owned and writable by root and is used to store data that is common across multiple [revisions](/t/glossary/14612#heading--revision) of the snap (e.g.: revision 6, revision 7, etc.).
+This directory is owned and writable by root and is used to store data that is common across multiple [revisions](/explanation/how-snaps-work/revisions) of the snap (e.g.: revision 6, revision 7, etc.).
 
 * **SNAP_ DATA**: `/var/snap/<snap name>/<revision number>`</br>
 This location it is also used to store data, mostly information utilised by background application and services, for logging, and other tasks that require persistence between snap launches.
 
-A [snapshot](/how-to-guides/manage-snaps/create-data-snapshots) of `SNAP_DATA` and `SNAP_COMMON` is created and restored when performing a snap update (refresh) or revert operation. The contents of `SNAP_DATA` is specific to the snap revision, while the contents of `SNAP_COMMON` is applicable to all revisions and will overwrite the contents of `SNAP_COMMON` when restored. See [What a snapshot stores](/t/snapshots/9468#heading--what-is-stored) for more details.
+A [snapshot](/how-to-guides/manage-snaps/create-data-snapshots) of `SNAP_DATA` and `SNAP_COMMON` is created and restored when performing a snap update (refresh) or revert operation. The contents of `SNAP_DATA` is specific to the snap revision, while the contents of `SNAP_COMMON` is applicable to all revisions and will overwrite the contents of `SNAP_COMMON` when restored. See [What a snapshot stores](/how-to-guides/manage-snaps/create-data-snapshots.md#what-a-snapshot-stores) for more details.
 
 ## User data
 
@@ -66,9 +66,9 @@ There are several other directories you should be aware of:
 
 ## Snap installation locations
 
-When a user [installs a snap](/t/getting-started/3876#heading--install-snap) from the [Snap Store](https://snapcraft.io/store), the following happens:
+When a user [installs a snap](/tutorials/get-started) from the [Snap Store](https://snapcraft.io/store), the following happens:
 
-1. The [snapd services](/t/glossary/14612#heading--snapd) downloads the snap as a single file – a SquashFS archive with a _.snap_ suffix.
+1. The [snapd services](/how-to-guides/manage-snaps/control-services) downloads the snap as a single file – a SquashFS archive with a _.snap_ suffix.
 1. The snap file is stored in `/var/lib/snaps/snaps`. It is then *loop mounted* to `/snap` from where its contents become readable by the system. See [The snap format](/reference/development/yaml-schemas/the-snap-format) for further details on what is included in a snap.
 
 By design, the read-only filesystem cannot provide a persistent experience between application launches, which is why snaps also have writable parts for system data and for user data.

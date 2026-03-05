@@ -1,13 +1,13 @@
 (interfaces-custom-device-interface)=
 #  custom-device interface
 
-The `custom-device` interface permits access to a device of a specific class and model without requiring the creation of an interface for that device alone. It’s intended to be used with [Ubuntu Core](/t/glossary/14612#heading--ubuntu-core) and its scope and specification are defined as part of the [gadget snap](/reference/development/yaml-schemas/the-gadget-snap) for the deployed Ubuntu Core image.
+The `custom-device` interface permits access to a device of a specific class and model without requiring the creation of an interface for that device alone. It’s intended to be used with [Ubuntu Core](/reference/glossary.md#ubuntu-core) and its scope and specification are defined as part of the [gadget snap](/reference/development/yaml-schemas/the-gadget-snap) for the deployed Ubuntu Core image.
 
 To permit access, the application snaps define a custom-device plug and the [gadget snap](https://documentation.ubuntu.com/core/reference/gadget-snap-format/) defines a custom-device slot, where both the plug and the slot have the identically-named `custom-device` attribute.
 
 Under specific and appropriate circumstances, it is possible to define the slot directly from the consuming application itself, together with the plug, which is an acceptable approach for applications that will be widely distributed but support very specific hardware.
 
-Using the custom-device requires [Store approval and permissions](/reference/interfaces/permission-requests), both to allow the presence of the slot, and to set up elements such as the slot self-connecting exactly to the plug on the app. The more specific the tagging information provided by the slot, the easier it will be to allow for this.
+Using the custom-device requires [Store approval and permissions](/reference/administration/process-for-aliases-auto-connections-and-tracks), both to allow the presence of the slot, and to set up elements such as the slot self-connecting exactly to the plug on the app. The more specific the tagging information provided by the slot, the easier it will be to allow for this.
 
 The slot-side of the interface is used to derive which _udev_ rules are provided to the plug-side of the connection:
 

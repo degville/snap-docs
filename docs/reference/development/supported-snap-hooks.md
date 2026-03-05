@@ -32,7 +32,7 @@ The following hooks are currently implemented:
 
 ## Accessing resources
 
-If a hook requires access to system resources outside of a snap's confined environment, it will need to use [slots and plugs](/t/interface-management/6154#slots-plugs) via the [interface](/how-to-guides/work-with-snaps/connect-interfaces) mechanism to access those resources.
+If a hook requires access to system resources outside of a snap's confined environment, it will need to use [slots and plugs](/how-to-guides/manage-snaps/connect-interfaces) via the [interface](/explanation/interfaces/all-about-interfaces) mechanism to access those resources.
 
 When using *Snapcraft* to build the snap, the interface definition will go inside [snapcraft.yaml](https://documentation.ubuntu.com/snapcraft/stable/reference/project-file/anatomy-of-snapcraft-yaml/), and the *snapcraft* command create a [snap.yaml](/reference/development/yaml-schemas/the-snap-format) within the snap to hold the required metadata.
 
@@ -47,7 +47,7 @@ hooks:
         plugs: [network]
 ```
 
-Hooks are called with no parameters. When a hook needs to request or modify information within *snapd*,  they can do so via the *snapctl* tool, which is always available within a snap's environment. See [Using the snapctl tool](/how-to-guides/manage-snaps/use-snapctl) for further details.
+Hooks are called with no parameters. When a hook needs to request or modify information within *snapd*,  they can do so via the *snapctl* tool, which is always available within a snap's environment. See [Using the snapctl tool](/how-to-guides/snap-development/use-snapctl) for further details.
 
 ### Transactions and rollback
 
@@ -95,13 +95,13 @@ echo "username: $username" > $SNAP_DATA/options/credentials
 echo "password: $password" >> $SNAP_DATA/options/credentials
 ```
 
-The same hook can also modify the configuration of a snap within the context of the current transaction. This is accomplished using `snapctl set` and `snapctl unset`. For more information see [Adding Snap configuration](set-system-options) and [Using the snapctl tool](/how-to-guides/manage-snaps/use-snapctl).
+The same hook can also modify the configuration of a snap within the context of the current transaction. This is accomplished using `snapctl set` and `snapctl unset`. For more information see [Adding Snap configuration](/how-to-guides/manage-snaps/set-system-options) and [Using the snapctl tool](/how-to-guides/snap-development/use-snapctl).
 
 > ⓘ Note that configuration options do not need to be defined anywhere. `snapctl set` and `snap set` will accept any (valid) option name.
 
 <h2 id='heading--default-configure'>The default-configure hook</h2>
 
-The default-configure-hook is an optional extension to the [configure hook](/t/supported-snap-hooks/3795#heading--the-configure-hook) that executes only on snap installation and _before_ services are started to provide access to the default configuration values stored in a device’s [gadget snap](/reference/development/yaml-schemas/the-gadget-snap).
+The default-configure-hook is an optional extension to the [configure hook](/reference/development/supported-snap-hooks) that executes only on snap installation and _before_ services are started to provide access to the default configuration values stored in a device’s [gadget snap](/reference/development/yaml-schemas/the-gadget-snap).
 
 The default-configure hook should be located within `meta/hooks` and requires a configure hook to be present. A missing configure hook will result in an error.
 
@@ -123,7 +123,7 @@ mkdir -m 0600 $SNAP_DATA/options
 echo "option: $gadget_option" > $SNAP_DATA/options/gadget
 ```
 
-For more information see [Adding Snap configuration](set-system-options) and [Using the snapctl tool](/how-to-guides/manage-snaps/use-snapctl).
+For more information see [Adding Snap configuration](/how-to-guides/manage-snaps/set-system-options) and [Using the snapctl tool](/how-to-guides/snap-development/use-snapctl).
 
 <h2 id='heading--fde'>The full-disk-encryption hook</h2>
 
@@ -175,7 +175,7 @@ This hook is executed for the already installed revision of the snap with its se
 
 This hook is a good place for any maintenance or cleanup actions that prepare the snap for switching to the new revision. It's also a good place to test whether a refresh will succeed,  because if the test causes the hook to fail, the refresh will not proceed.
 
-The `pre-refresh` hook is not executed when [snap revert](/how-to-guides/work-with-snaps/manage-updates) is used to install an earlier revision of a snap. If such an operation affects snap functionality, the snap needs to detect this action and manually perform whatever actions may be necessary.
+The `pre-refresh` hook is not executed when [snap revert](/tutorials/get-started) is used to install an earlier revision of a snap. If such an operation affects snap functionality, the snap needs to detect this action and manually perform whatever actions may be necessary.
 
 <h2 id='heading--post-refresh'>The post-refresh hook</h2>
 
@@ -183,7 +183,7 @@ The `post-refresh` hook is similar to `pre-refresh` (above) in that it is called
 
 This hook is executed for the newly installed revision of the snap, before starting new services (if applicable). This hook is a good place for any extra actions that need to be performed for the new revision of the snap. It's also a good place to test whether a refresh has succeeded, because if the test causes the hook to fail, the refresh will be rolled-back and the original state of the snap restored.
 
-The `post-refresh` hook is not executed when [snap revert](/how-to-guides/work-with-snaps/manage-updates) is used to install an earlier revision of a snap. If such an operation affects snap functionality, the snap needs to detect this action and manually perform whatever actions may be necessary.
+The `post-refresh` hook is not executed when [snap revert](/tutorials/get-started) is used to install an earlier revision of a snap. If such an operation affects snap functionality, the snap needs to detect this action and manually perform whatever actions may be necessary.
 
 <h2 id='heading--remove'>The remove hook</h2>
 

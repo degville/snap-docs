@@ -224,7 +224,7 @@ $ snapctl get --view :observe-status snaps.firefox.status
 enabled
 ```
 
-confdb supports the same commands and options as the [original configuration mechanism](/how-to-guides/work-with-snaps/configure-snaps). This includes unsetting data using `snapctl --view unset ...` or by using `snapctl --view set` with a `\!` prefixed to the request path.
+confdb supports the same commands and options as the [original configuration mechanism](/how-to-guides/manage-snaps/configure-snaps). This includes unsetting data using `snapctl --view unset ...` or by using `snapctl --view set` with a `\!` prefixed to the request path.
 
 ### Custodians
 

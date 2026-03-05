@@ -205,7 +205,7 @@ See [How to manage updates](/how-to-guides/manage-snaps/manage-updates) for furt
 
 ### remote build
 
-Remote build is a feature in [Snapcraft](https://snapcraft.io/docs/snapcraft-overview) (from  *[Snapcraft 3.9+](/t/snapcraft-release-notes)* onwards) that enables anyone to run a multi-architecture snap build process on remote servers using [Launchpad](https://launchpad.net/). With remote build, you can build snaps for hardware you don’t have access to and free up your local machine for other tasks.
+Remote build is a feature in [Snapcraft](https://snapcraft.io/docs/snapcraft-overview) (from  *[Snapcraft 3.9+](https://documentation.ubuntu.com/snapcraft/stable/release-notes/)* onwards) that enables anyone to run a multi-architecture snap build process on remote servers using [Launchpad](https://launchpad.net/). With remote build, you can build snaps for hardware you don’t have access to and free up your local machine for other tasks.
 
 See [Remote build](https://documentation.ubuntu.com/snapcraft/stable/explanation/remote-build/) for further details.
 

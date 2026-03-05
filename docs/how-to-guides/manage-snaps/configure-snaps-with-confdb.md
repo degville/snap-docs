@@ -231,7 +231,7 @@ plugs:
 
 The other component that must be defined in the snap are the [hooks](/reference/development/supported-snap-hooks). 
 
-Snaps interact with confdb through [snapctl](/how-to-guides/manage-snaps/use-snapct) and, in turn, snapd invokes various hooks when confdb is read from or written to.
+Snaps interact with confdb through [snapctl](/how-to-guides/snap-development/use-snapctl) and, in turn, snapd invokes various hooks when confdb is read from or written to.
 
 In this case, the custodian snap will only define the `change-view-<plug>`, which provides an opportunity for the snap to modify values being set.
 

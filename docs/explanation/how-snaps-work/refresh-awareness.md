@@ -1,7 +1,7 @@
 (explanation-how-snaps-work-refresh-awareness)=
 # Refresh awareness
 
-Snaps update automatically, and by default, the *snapd* daemon checks for updates 4 times a day. Each update check is called a *refresh* and is described in more detail in [Managing updates](/how-to-guides/work-with-snaps/manage-updates).
+Snaps update automatically, and by default, the *snapd* daemon checks for updates 4 times a day. Each update check is called a *refresh* and is described in more detail in [Managing updates](/how-to-guides/manage-snaps/manage-updates).
 
 If a refresh occurs while an affected desktop application is running, **refresh app awareness** helps to mitigate any potential issues, using a combination of in-place updates, deferred updates, and desktop notifications.
 
@@ -40,7 +40,7 @@ error: cannot refresh "firefox": snap "firefox" has running apps (firefox), pids
         1639,1854,1912,1932,3514,3632,5814,5870
 ```
 
-See [Managing updates](/how-to-guides/work-with-snaps/manage-updates) for more details controlling update frequencies, and holding updates for any period of time.
+See [Managing updates](/how-to-guides/manage-snaps/manage-updates) for more details controlling update frequencies, and holding updates for any period of time.
 
 ## Desktop notifications
 

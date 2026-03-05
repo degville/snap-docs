@@ -16,7 +16,7 @@ See the [Confdb configuration mechanism](/explanation/how-snaps-work/confdb-conf
 ```
 
 ```{warning}
- Confdb is currently considered an [Experimental feature](/reference/development/experimental-features/) and implementation details may change as development progresses.
+ Confdb is currently considered an [Experimental feature](/reference/development/experimental-features) and implementation details may change as development progresses.
 ```
 
 ## Developer details

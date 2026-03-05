@@ -23,7 +23,7 @@ Specifying a directory in `read` and `write` allows access to the directory and 
 
 ## Approval process
 
-For distribution via the [Snap store](https://snapcraft.io/store), snaps that use the personal-files interface need an approved [snap declaration](/t/process-for-aliases-auto-connections-and-tracks/455/). For acceptance, the publisher needs to make a descriptive interface reference, as used by `snap connections|interfaces|connect|disconnect` commands.
+For distribution via the [Snap store](https://snapcraft.io/store), snaps that use the personal-files interface need an approved [snap declaration](/reference/administration/process-for-aliases-auto-connections-and-tracks). For acceptance, the publisher needs to make a descriptive interface reference, as used by `snap connections|interfaces|connect|disconnect` commands.
 
 ## Code examples
 

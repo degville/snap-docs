@@ -11,7 +11,7 @@ The following column names are used:
 
 - **Categories** are used to split interfaces into broad types, and also to indicate what kind of access they permit. Video, graphics and audio are typical desktop requirements, for example, while VM, Container, Kernel and Developer imply more specific roles. The Ubuntu Core category is used to denote when an interface is intended for [Ubuntu Core](https://forum.snapcraft.io/t/glossary/14612#heading--ubuntu-core), and _Super privileged_ is used when an interface requires extra security scrutiny. See [Super-privileged interfaces](/explanation/interfaces/super-privileged-interfaces) for more information.
 
-- **Auto-connect** indicates that the interface will be connected by default when the snap is first installed, requiring no further user action. If `Auto-connect=no`, an interface can still be automatically connected if the snap developer has requested, and been granted, explicit permission. See [Interface connection mechanism](/explanation/interface-auto-connection) for details.
+- **Auto-connect** indicates that the interface will be connected by default when the snap is first installed, requiring no further user action. If `Auto-connect=no`, an interface can still be automatically connected if the snap developer has requested, and been granted, explicit permission. See [Interface connection mechanism](/explanation/interfaces/all-about-interfaces) for details.
 
 ---
 
@@ -20,7 +20,7 @@ The following column names are used:
 | [accel-interface](accel-interface) | permits access to the Linux compute accelerators subsystem | System | yes |
 | [account-control](account-control-interface) | add/remove user accounts or change passwords | System, Account | no |
 | [accounts-service](accounts-service-interface) | allows communication with the accounts service | System, Account | no |
-| [acrn](acrn-interface) | allows access to user VMs using the ACRN hypervisor | VM, Hypervisor, Developer | no |
+| [acrn](/reference/interfaces/adb-support-interface) | allows access to user VMs using the ACRN hypervisor | VM, Hypervisor, Developer | no |
 | [adb-support](adb-support-interface) | allows operating as Android Debug Bridge service | ADB, Developer | no |
 | [allegro-vcu](allegro-vcu-interface) | access the Allegro Video Core Unit | Video, Graphics | no |
 | [alsa](alsa-interface) | play or record sound | Audio, Media | no |
@@ -37,7 +37,7 @@ The following column names are used:
 | [bool-file](bool-file-interface) | allows access to specific file with bool semantics | System, Low level, Privileged | no |
 | [broadcom-asic-control](broadcom-asic-control-interface) | control Broadcom network switches | Network, System | no |
 | [browser-support](browser-support-interface) | use functions essential for Web browsers | Browser, Network | no when allow-sandbox: true, yes otherwise |
-| [calendar-services](calendar-services-interface) | allows communication with Evolution Data Server calendar | Personal data, Contacts and calendar | no |
+| [calendar-services](/reference/interfaces/calendar-service-interface) | allows communication with Evolution Data Server calendar | Personal data, Contacts and calendar | no |
 | [camera](camera-interface) | use your camera or webcam | Camera, Media, Personal data | no |
 | [can-bus](can-bus-interface) | allows access to the CAN bus | System, Developer | no |
 | [checkbox-support](checkbox-support-interface) | access for the Canonical checkbox test and certification system | Super privileged | no |
@@ -66,7 +66,7 @@ The following column names are used:
 | [docker-support](docker-support-interface) | allows operating as the Docker daemon | Super privileged, Containers | no |
 | [dsp](dsp-interface) | enables the control of digital signal processors (DSPs) | Hardware, Developer | no |
 | [dvb](dvb-interface) | allows access to all DVB devices and APIs | Hardware, Developer, Media | no |
-| [egl-driver](egl-driver-interface) | access to EGL the graphics sub-system | Under development | no |
+| [egl-driver](/reference/interfaces/egl-driver-libs-interface) | access to EGL the graphics sub-system | Under development | no |
 | [empty](empty-interface) | allows testing without additional permissions | System, Other | no |
 | [firewall-control](firewall-control-interface) | configure a network firewall | Network | no |
 | [firmware-update-support](firmware-updater-support-interface) | allows a snap to operate as the Firmware Updater | Super privileged | no |
@@ -124,7 +124,7 @@ The following column names are used:
 |  [microceph](microceph-interface) |  permits access to the MicroCeph socket, which is used internally by the microceph snap | Super privileged, Container | no |
 | [microceph-support](microceph-support-interface) | permits the microceph snap to operate as the MicroCeph service | Super privileged, Container | no |
 | [microovn](microovn-interface) | used only by the MicroOVN snap for socket access | Network, Super privileged | no |
-| [microstack-support](microstack-support-interfacet/the-microstack-support-interface/26505/) | multiple service access to the Microstack infrastructure | Super privileged, Container, Discrete | no |
+| [microstack-support](/reference/interfaces/microceph-support-interface) | multiple service access to the Microstack infrastructure | Super privileged, Container, Discrete | no |
 | [mir](mir-interface) | enables access to the Mir display service | Display | yes |
 | [modem-manager](modem-manager-interface) | use and configure modems | Network | no |
 | [mount-control](mount-control-interface) | mount and unmount transient and persistent filesystem mount points | Super privileged, Storage | no |
@@ -211,7 +211,7 @@ The following column names are used:
 | [timeserver-control](timeserver-control-interface) | change time server settings | Time | no |
 | [timezone-control](timezone-control-interface) | change the time zone | Time | no |
 | [tpm](tpm-interface) | allows access to the Trusted Platform Module device | Kernel, Security | no |
-| [u2f-devices](u2f-devices-interfacet/the-u2f-devices-interface/9722/) | use any U2F devices | Security, Hardware, Developer | no |
+| [u2f-devices](/reference/interfaces/u2f-devices-interface) | use any U2F devices | Security, Hardware, Developer | no |
 | [ubuntu-pro-control](ubuntu-pro-control-interface) | control the Ubuntu Pro desktop daemon | Super privileged, System | no |
 | [ubuntu-download-manager](ubuntu-download-manager-interface) | use the Ubuntu Download Manager | System, Developer, Manage software | yes |
 | [udisks2](udisks2-interface) | access the UDisks2 service | Storage | no |

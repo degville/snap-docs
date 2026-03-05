@@ -62,5 +62,5 @@ The FileChooser portal also contains a few bugs:
 * `org.freedesktop.portal.Flatpak.Spawn` only works in a Flatpak. If your application needs to run arbitrary binaries on the host system, you can use [classic confinement](/explanation/security/classic-confinement).
 * Portal support depends on the version of `xdg-desktop-portal` in the host system. Older versions do not support all portals. [Repology](https://repology.org/project/xdg-desktop-portal/versions) shows what version of `xdg-desktop-portal` each distribution has and the [portals NEWS](https://github.com/flatpak/xdg-desktop-portal/blob/master/NEWS) file explains what portals each version supports.
 
-> ⓘ See [Desktop applications](/reference/interfaces/desktop-applications) for more information on how to snap a desktop application.
+> ⓘ See Desktop applications for more information on how to snap a desktop application.
 

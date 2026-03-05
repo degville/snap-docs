@@ -3,7 +3,7 @@
 
 The `snap-fde-control` allows access to the FDE subset of snapd's system-volumes API.
 
-For further details on interfaces, see [How to connect interfaces](/how-to-guides/work-with-snaps/connect-interfaces).
+For further details on interfaces, see [How to connect interfaces](/explanation/interfaces/all-about-interfaces).
 
 ## Developer details
 

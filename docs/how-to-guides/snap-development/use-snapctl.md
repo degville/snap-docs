@@ -5,7 +5,7 @@ The `snapctl` tool is bundled with _snapd_ to provide specific environmental fee
 
 `snapctl` is typically run from a script _within a snap_, rather than on the host system. These scripts are used by snap developers to implement [hooks](/reference/development/supported-snap-hooks), or from within [snapcraft.yaml](https://documentation.ubuntu.com/snapcraft/stable/reference/project-file/snapcraft-yaml/), to augment a snap's execution environment.
 
-For details on using _snapctl_ to add user options to a snap, see [Adding snap configuration](set-system-options).
+For details on using _snapctl_ to add user options to a snap, see [Adding snap configuration](/how-to-guides/manage-snaps/set-system-options).
 
 ## Configuration options
 
@@ -49,7 +49,7 @@ To see this in action, look at the [NextCloud snap](https://github.com/nextcloud
 
 ## Confdb
 
-The `snapctl get`, `snapctl set` and `snapctl unset` commands can also be used to access and modify [confdb configurations](/explanation/how-snaps-work/confdb-configuration-mechanism.md). To use `snapctl` to access confdb, you can include the `--view` flag as well as the name of the snap's [interface plug](/explanation/how-snaps-work/confdb-configuration-mechanism.md/#interface-plugs) that refers to the [confdb view](https://documentation.ubuntu.com/core/reference/assertions/confdb-schema/) being accessed, prefixed with a colon.
+The `snapctl get`, `snapctl set` and `snapctl unset` commands can also be used to access and modify [confdb configurations](/explanation/how-snaps-work/confdb-configuration-mechanism.md). To use `snapctl` to access confdb, you can include the `--view` flag as well as the name of the snap's [interface plug](/explanation/interfaces/all-about-interfaces) that refers to the [confdb view](https://documentation.ubuntu.com/core/reference/assertions/confdb-schema/) being accessed, prefixed with a colon.
 
 ```sh
 $ snapctl get --view :setup-wifi ssid
@@ -196,7 +196,7 @@ The _snap model_ command can be used to return to the active model identificatio
 The requesting snap must be either:
 1. a [gadget snap](/reference/development/yaml-schemas/the-gadget-snap)
 1. published from the same brand as the device model assertion 
-1. have the [snapd-control](snapd-control-interface) plug
+1. have the [snapd-control](/reference/interfaces/snapd-control-interface) plug
 
 By default, the output model identification information is presented in a structured yaml-like format:
 
@@ -362,4 +362,4 @@ The following keys and values can potentially be returned:
 - **seed-loaded**: `true` </br>
     Set when the installation of seeded snaps for the model has finished.
 - **factory**: `true`</br>
-   Only possible on a [UC20+](https://ubuntu.com/core/docs/uc20) system in install mode (`system-mode: install`) with the factory image hint set. This  value can be used to govern whether factory-only resources may be available. See [Factory image hint](  https://ubuntu.com/core/docs/uc20/installation-process#heading--factory) for more details.
+   Only possible on a [UC20+](https://ubuntu.com/core/docs/uc20) system in install mode (`system-mode: install`) with the factory image hint set. This  value can be used to govern whether factory-only resources may be available. See [Factory image hint](https://documentation.ubuntu.com/core/explanation/how-installation-works/) for more details.

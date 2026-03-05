@@ -83,7 +83,7 @@ Typical value: `/var/snap/hello-world/common`
 
 <h3 id='heading--snap-save-data'><pre>SNAP_SAVE_DATA</pre></h3>
 
-**This variable is only exposed on [Ubuntu Core](/t/glossary/14612#heading--ubuntu-core) systems.**
+**This variable is only exposed on [Ubuntu Core](/reference/glossary.md#ubuntu-core) systems.**
 
 It points to a snap-specific location on the ubuntu-save partition where the snap is allowed to store persistent files (like certificates or configuration files) that will survive a [factory reset](https://ubuntu.com/core/docs/recovery-modes#heading--factory) of the Ubuntu Core device.
 
@@ -137,7 +137,7 @@ Other values are: `i386`, `armhf`, `arm64`.
 
 This variable contains the user ID (uid) of the user running this snap instance. See also [SNAP_EUID](#heading--snap-euid).
 
-For this variable to be exposed by a snap, the snap developer will need to include the following [`assumes`](/t/snapcraft-top-level-metadata/8334#heading--assumes) value:
+For this variable to be exposed by a snap, the snap developer will need to include the following `assumes` value:
 
 ```yaml
 assumes: [snap-uid-envvars]
@@ -149,7 +149,7 @@ Requires _snapd_ 2.59+.
 
 This variable contains the _effective_ user ID (euid) of the user running the snap instance. See also [SNAP_UID](#heading--snap-uid).
 
-For this variable to be exposed by a snap, the snap developer will need to include the following [`assumes`](/t/snapcraft-top-level-metadata/8334#heading--assumes) value:
+For this variable to be exposed by a snap, the snap developer will need to include the following `assumes` value:
 
 ```yaml
 assumes: [snap-uid-envvars]

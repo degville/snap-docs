@@ -3,7 +3,7 @@
 
 Hotplug support gives snaps the ability to integrate with Linux's [USB hotplugging](https://www.kernel.org/doc/html/v4.13/driver-api/usb/hotplug.html) and Udev device management subsystem. This enables snaps to recognise specific classes of device and create corresponding system slots when a device is connected.
 
-Developers wishing to add hotplug functionality to their own interfaces should see [Developing hotplug interfaces](/reference/interfaces/developing-hotplug-interfaces).
+Developers wishing to add hotplug functionality to their own interfaces should see [Developing hotplug interfaces](/explanation/how-snaps-work/developing-hotplug-interfaces).
 
 Initially, only USB serial port adapters using the [serial-port interface](/reference/interfaces/serial-port-interface) are supported. Other types of device, such as USB cameras, will be added in the future.
 

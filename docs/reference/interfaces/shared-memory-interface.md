@@ -10,7 +10,7 @@ Requires snapd version *2.54+* .
 
 | Permissions |  |  |
 |--|--|--|
-| **[Auto-connect](/t/interface-management/6154#heading--auto-connections)** | **no** by default | **yes** when `private` is enabled, or with snaps from the same publisher |
+| **[Auto-connect](/explanation/interfaces/interface-auto-connection)** | **no** by default | **yes** when `private` is enabled, or with snaps from the same publisher |
 | **[Super-privileged](/explanation/interfaces/super-privileged-interfaces)** | **no** for plugs | **yes** for slots |
 
 **Attributes**:

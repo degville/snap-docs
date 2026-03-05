@@ -151,7 +151,7 @@ To better understand AppArmor policy for a strictly installed snap, modify the A
 For example:
 
 1. build the  snap
-1. copy the snap to the target device and install it (or use [snap try](/reference/interfaces/snap-try))
+1. copy the snap to the target device and install it (or use [snap try](/how-to-guides/snap-development/snap-try))
 1. use the snap (perhaps using [`snap run --shell <name>.<command>`](#heading--shell)), monitoring via journalctl for denials
 1. modifying `/var/lib/snapd/apparmor/profiles/snap.<name>.<command>` as needed (eg, adding rules before the final `'}'`)and running `sudo apparmor_parser -r /var/lib/snapd/apparmor/profiles/snap.<name>.<command>` to compile and load the policy into the kernel
 1. use `sudo service snap.<name>.<command> stop/start/etc` as needed for daemons

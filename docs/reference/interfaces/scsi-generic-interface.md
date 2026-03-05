@@ -5,7 +5,7 @@ The `scsi-generic` interface allows read and write access to [SCSI Generic drive
 
 ## Developer details
 
-**[Auto-connect](/t/6154#heading--auto-connections)** : no</br>
+**[Auto-connect](/explanation/interfaces/interface-auto-connection)** : no</br>
 **[Super-privileged](/explanation/interfaces/super-privileged-interfaces)** : yes
  * `shared-memory` (slot and plug):
 

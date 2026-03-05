@@ -4,7 +4,7 @@
 The `tee` interface  permits access to Trusted Execution Environment (TEE) devices via the [TEE subsystem](https://www.kernel.org/doc/html/latest/staging/tee.html) in the Linux kernel.
 
 
-This interface is primarily intended to be used with [Ubuntu Core](/t/glossary/14612#heading--ubuntu-core).
+This interface is primarily intended to be used with [Ubuntu Core](/reference/glossary.md#ubuntu-core).
 
 
 ## Developer details

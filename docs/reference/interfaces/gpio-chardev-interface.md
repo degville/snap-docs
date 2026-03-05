@@ -27,7 +27,7 @@ slots:
 
 Requires snapd 2.72+.
 
-[Hardware IO interfaces](/reference/interfaces/hardware-io-interfaces) covers some general considerations common to these kinds of devices.
+Hardware IO interfaces covers some general considerations common to these kinds of devices.
 
 When the interface is connected:
 - `snap-gpio-helper` sets up a virtual GPIO device exposing the specified lines defined in the slot as a character device node at `/dev/snap/gpio-chardev/<slot-snap>/<slot-name>`.

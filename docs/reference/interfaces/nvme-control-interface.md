@@ -7,7 +7,7 @@ This interface provides access to enumerate devices, create/delete/attach/detach
 
 Access is limited to NVMe management operations through sysfs, nvme-fabrics char device, and controller/namespace device nodes. Raw block I/O remains constrained by device cgroups. The nvme and nvme-tcp kernel modules may auto-load as needed.
 
-For further details on interfaces, see [How to connect interfaces](/how-to-guides/work-with-snaps/connect-interfaces).
+For further details on interfaces, see [How to connect interfaces](/explanation/interfaces/all-about-interfaces).
 
 ## Developer details
 

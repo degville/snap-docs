@@ -60,7 +60,7 @@ Two YAML keys are used to describe your target device:
 
 Defaults only become available during snap installation.</br></br>
 
-Values in `defaults:` (other than `system:`) are not consumed and do not become available until either the `configure hook` or the `default-configure hook` are run as part of the corresponding snap installation. See [Supported snap hooks]( reference/development/supported-snap-hooks.md) for further details. `system:` values are set immediately.
+Values in `defaults:` (other than `system:`) are not consumed and do not become available until either the `configure hook` or the `default-configure hook` are run as part of the corresponding snap installation. See [Supported snap hooks](/reference/development/supported-snap-hooks) for further details. `system:` values are set immediately.
 
 - **volumes** (YAML sub-section, required): the volumes layout, where each disk image is represented as a YAML sub-section.
 
@@ -96,7 +96,7 @@ The structure section lists entities with gadget data inside the image, most of 
 
 ### Dynamic kernel parameters
 
-There are two [system options](/reference/operations/system-options) that can be used to add new kernel boot parameters to a system that has been deployed and is running:
+There are two [system options](/how-to-guides/manage-snaps/set-system-options) that can be used to add new kernel boot parameters to a system that has been deployed and is running:
 
 1. [system.kernel.cmdline-append](https://snapcraft.io/docs/system-options#heading--kernel-cmdline-append)
 2. [system.kernel.dangerous-cmdline-append](https://snapcraft.io/docs/system-options#heading--kernel-dangerous-cmdline-append)

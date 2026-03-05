@@ -103,5 +103,5 @@ $ snap try /home/user/hello-world/prime
 hello-world 0.1 mounted from /home/user/hello-world/prime
 ```
 
-For further help on testing and debugging a snap, see [Iterating over a build](https://documentation.ubuntu.com/snapcraft/stable/how-to/debugging/debug-a-snap/) and [Debugging snaps](/reference/interfaces/debug-snaps).
+For further help on testing and debugging a snap, see [Iterating over a build](https://documentation.ubuntu.com/snapcraft/stable/how-to/debugging/debug-a-snap/) and [Debugging snaps](/how-to-guides/snap-development/debug-snaps).
 

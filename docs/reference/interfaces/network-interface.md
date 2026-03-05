@@ -6,7 +6,7 @@ The `network` interface allows client access to the network.
 
 ## Developer details
 
-**[Auto-connect](/t/6154#heading--auto-connections)** : yes</br>
+**[Auto-connect](/explanation/interfaces/interface-auto-connection)** : yes</br>
 
 The `network` interface allows all outbound network access from the application as a client. Should the application bind to a port, for example to run a server, then the [network-bind](/reference/interfaces/network-bind-interface) interface should also be used.
 

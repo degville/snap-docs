@@ -3,7 +3,7 @@
 
 The `opengl-driver-libs` interface allows exposing OpenGL driver libraries to the system
 
-For further details on interfaces, see [How to connect interfaces](/how-to-guides/work-with-snaps/connect-interfaces).
+For further details on interfaces, see [How to connect interfaces](/explanation/interfaces/all-about-interfaces).
 
 ## Developer details
 

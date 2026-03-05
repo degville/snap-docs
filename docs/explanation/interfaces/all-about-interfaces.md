@@ -39,5 +39,5 @@ mount-observe     vlc:mount-observe     -                  -
 
 In the above example,  we can see that the `vlc:camera` interface is disconnected because it has an empty *Slot* entry.
 
-See [Interface management](/how-to-guides/work-with-snaps/connect-interfaces) for further interface details, including how to disconnect interfaces and make manual connections, and [Security policy and sandboxing](/explanation/security/security-policies) for more information on how confinement is implemented.
+See [Interface management](/how-to-guides/manage-snaps/connect-interfaces) for further interface details, including how to disconnect interfaces and make manual connections, and [Security policy and sandboxing](/explanation/security/security-policies) for more information on how confinement is implemented.
 
