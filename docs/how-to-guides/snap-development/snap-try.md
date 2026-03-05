@@ -7,8 +7,8 @@ Ordinarily, snaps cannot be modified. They are distributed as, and executed from
 
 But it’s sometimes useful to be able to experiment with a snap locally, to help debug an issue, or to make changes to a snap when you don’t have upstream access to the packaging process. This is when `snap try` is useful.
 
-* If you only have access to the packaged snap itself, you first need to [unsquash the snap](#heading--unsquash) and then [use snap try to test it](#heading--snaptry).
-* If, instead, you are a developer with access to the source code of the snap, you first need to [use snapcraft try to build an unpacked snap](#heading--snapcrafttry), and then [use snap try to test it](#heading--snaptry).
+* If you only have access to the packaged snap itself, you first need to _unsquash_ the snap and then use `snap try` to test it.
+* If, instead, you are a developer with access to the source code of the snap, you first need to use `snapcraft try` to build an unpacked snap, and then use `snap try` to test it.
 
 ## Unsquashing a snap
 

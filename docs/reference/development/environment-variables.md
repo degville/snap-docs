@@ -135,7 +135,7 @@ Other values are: `i386`, `armhf`, `arm64`.
 
 ### <pre>SNAP_UID</pre>
 
-This variable contains the user ID (uid) of the user running this snap instance. See also [SNAP_EUID](#heading--snap-euid).
+This variable contains the user ID (uid) of the user running this snap instance. See also SNAP_EUID.
 
 For this variable to be exposed by a snap, the snap developer will need to include the following `assumes` value:
 
@@ -147,7 +147,7 @@ Requires _snapd_ 2.59+.
 
 ### <pre>SNAP_EUID</pre>
 
-This variable contains the _effective_ user ID (euid) of the user running the snap instance. See also [SNAP_UID](#heading--snap-uid).
+This variable contains the _effective_ user ID (euid) of the user running the snap instance. See also SNAP_UID.
 
 For this variable to be exposed by a snap, the snap developer will need to include the following `assumes` value:
 

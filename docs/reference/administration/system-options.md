@@ -223,7 +223,7 @@ Dynamically add permitted kernel boot parameters to the default kernel command l
 ```
 snap set system system.kernel.cmdline-append=”opt1=val1 opt2=val2”
 ```
-Proposed kernel boot parameters are verified against an _allow list_ in the {ref}`gadget snap <reference-development-yaml-schemas-the-gadget-snap>`. See [gadget.yaml](/reference/development/yaml-schemas/the-gadget-snap) for further details on the list syntax.
+Proposed kernel boot parameters are verified against an _allow list_ in the {ref}`gadget snap <reference-development-yaml-schemas-the-gadget-snap>`. See {ref}`gadget.yaml <reference-development-yaml-schemas-the-gadget-snap>` for further details on the list syntax.
 
 This options requires the system or device to be manually restarted. The system will not restart automatically.
 
