@@ -5,7 +5,7 @@ The `mount-control` interface allows the mounting and unmounting of both transie
 
 This interface gives privileged access to the device.
 
-To mount a local filesystem, `mount-control` must be used together with the [block-devices interface](/reference/interfaces/block-devices-interface).
+To mount a local filesystem, `mount-control` must be used together with the {ref}`block-devices interface <interfaces-block-devices-interface>`.
 
 Requires snapd version *2.54+*.
 
@@ -13,23 +13,23 @@ Use of `nfs` requires snapd version *2.67+*
 
 Use of `cifs` requires snapd version *2.68+*
 
-See [Interface management](/how-to-guides/manage-snaps/connect-interfaces) and [Supported interfaces](/reference/interfaces/index) for further details on how interfaces are used.
+See {ref}`Interface management <how-to-guides-work-with-snaps-connect-interfaces>` and {ref}`Supported interfaces <ref-index_interfaces>` for further details on how interfaces are used.
 
 ## Developer details 
 
-**[Auto-connect](/explanation/interfaces/interface-auto-connection)**: no</br>
-**[Super-privileged](/explanation/interfaces/super-privileged-interfaces)**: yes</br>
+**{ref}`Auto-connect <explanation-interfaces-interface-auto-connection>`**: no</br>
+**{ref}`Super-privileged <reference-operations-interfaces-super-privileged-interfaces>`**: yes</br>
 
 **Attributes**:
 * `persistent` (plug): defines whether the mount can be persistent or not.</br>
  Either `true` or `false`. Defaults to `false`.
-* `type` (plug): lists one or more [acceptable filesystems](#heading--filesystems) for this mount.</br>
+* `type` (plug): lists one or more acceptable filesystems for this mount.</br>
    Example: `[ext2, ext3, ext4]`
 * `what` (plug): absolute path of what to mount using a matching wildcard.</br>
   Example: `/dev/sd*`
 * `where` (plug): either an absolute destination path for the mount, or a starting reference to  `$SNAP_COMMON` or `$SNAP_DATA` optionally followed by a path. Wildcards are also supported.</br>
   Example: `/media/$USER/**`
-* `options` (plug, required): a list of one or more [permitted options](#heading--options).</br>
+* `options` (plug, required): a list of one or more permitted options.</br>
   Example: `[rw, sync]`</br>
 * `namespace` (plug): either `snap`, for locations within the snap, `host`, for locations outside the snap,  or `auto` to set the namespace according to the _where_ pattern. Defaults to `auto`.
 
@@ -38,7 +38,7 @@ See [AppArmor globbing syntax](https://gitlab.com/apparmor/apparmor/-/wikis/AppA
 It's the responsibility of the snapped application or service to create and maintain a mount point, using either of the following:
 - the [mount](https://man7.org/linux/man-pages/man8/mount.8.html) command
 - the [mount()](https://man7.org/linux/man-pages/man2/mount.2.html) system call
-- an accompanying [snapctl mount](/t/using-the-snapctl-tool/15002#heading--mount)
+- an accompanying {ref}`snapctl mount <how-to-guides-manage-snaps-use-snapctl>`
 
 The `snapctl mount` command is the only option for creating a persistent mount point via its `--persistent` mount option.
 

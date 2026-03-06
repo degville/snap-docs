@@ -5,7 +5,7 @@ The `cups` interface allows access to the CUPS socket for printing via the [`cup
 
 This interface is intended to be used by snap developers who wish to add safe printing functionality to their snapped applications without requiring their users to make make a manual interface connection. This is possible because the cups interface does not permit administration or configuration of printers via the CUPS socket, only the submission of print jobs and auxiliary tasks, such as listing available printers.
 
-Formerly, to print from a snapped application, the [cups control interface](/reference/interfaces/cups-control-interface) was required. This needs either a manual connection or Snap Store permissions to auto-connect. Alongside printer access, the _cups control interface_ also allows any user to create and modify queues, and their permissions, and to read and delete anyone’s print jobs. This isn't ideal in a multi-user environment.
+Formerly, to print from a snapped application, the {ref}`cups control interface <interfaces-cups-control-interface>` was required. This needs either a manual connection or Snap Store permissions to auto-connect. Alongside printer access, the _cups control interface_ also allows any user to create and modify queues, and their permissions, and to read and delete anyone’s print jobs. This isn't ideal in a multi-user environment.
 
 The `cups-control` interface will continue to be available to allow printer setup tools (and general system admin tools, like [this one](https://github.com/ubuntu-flutter-community/settings)) to be snapped.
 
@@ -23,15 +23,15 @@ The CUPS snap will run in standalone mode, listening not only on `$SNAP_COMMON/r
 
 ## Developer details
 
-**[Auto-connect](/explanation/interfaces/interface-auto-connection)**: not applicable
+**{ref}`Auto-connect <explanation-interfaces-interface-auto-connection>`**: not applicable
 
 * If you are snapping a **new application** that has print functionality, add the `cups` interface.
 * If you are **maintaining an application snap** currently using `cups-control` for printing, switch to the `cups` interface.
-* If you are creating or maintaining a **snap of a printer setup tool**, you have to plug [cups-control interface](/reference/interfaces/cups-control-interface) and ask your users to manually connect the interface, or request an auto-connection from the Snap Store team.
+* If you are creating or maintaining a **snap of a printer setup tool**, you have to plug {ref}`cups-control interface <interfaces-cups-control-interface>` and ask your users to manually connect the interface, or request an auto-connection from the Snap Store team.
 
 The slot side of the interface is intended to be provided by a reference snap, such as the [`cups` snap](https://snapcraft.io/cups). The reference snap will permit any connecting snap to connect automatically, which snaps with the `cups` plug can _auto-connect_ to the reference snap's `cups` slot, and print, without any further action from the user.
 
-On systems where this slot is provided by a snap application, the _cups_ interface is the companion interface to the [cups control interface](/reference/interfaces/cups-control-interface).
+On systems where this slot is provided by a snap application, the _cups_ interface is the companion interface to the {ref}`cups control interface <interfaces-cups-control-interface>`.
 
 However, the _cups_ interface and the _cups-control_ interface should not be used as plugs in the same snap.
 

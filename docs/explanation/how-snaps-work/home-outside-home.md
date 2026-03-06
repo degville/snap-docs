@@ -1,7 +1,7 @@
 (interfaces-home-outside-home)=
 # Home outside home
 
-The snap daemon (snapd) looks for a user's home directory ($HOME) under `/home` on the local filesystem. However, from _snapd 2.59_ onwards, the snap daemon can access an additional location using the `homedirs` [system option](/reference/operations/system-options):
+The snap daemon (snapd) looks for a user's home directory ($HOME) under `/home` on the local filesystem. However, from _snapd 2.59_ onwards, the snap daemon can access an additional location using the `homedirs` {ref}`system option <how-to-guides-manage-snaps-set-system-options>`:
 
 ```
 sudo snap set system homedirs=<destination-directory>

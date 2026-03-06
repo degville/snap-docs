@@ -3,7 +3,7 @@
 
 The `raw-input` interface allows access to raw input devices.
 
-For further details on interfaces, see [How to connect interfaces](/how-to-guides/work-with-snaps/connect-interfaces).
+For further details on interfaces, see {ref}`How to connect interfaces <explanation-interfaces-all-about-interfaces>`.
 
 ## Developer details
 

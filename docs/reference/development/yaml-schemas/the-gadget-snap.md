@@ -10,7 +10,7 @@ The gadget metadata and content defines:
 -  Interface connections configured in the `connections:` section are executed on the device’s first boot only. Later changes to this section -- that is, changes added to the device at run time through gadget refreshes -- are not applied.
 -   Optional hooks that are invoked to control and customise the behaviour over the device lifecycle, e.g. installation, initialisation and establishing device identity, factory reset.
 
-See [Build a gadget snap](https://ubuntu.com/core/docs/gadget-building) for details on how a gadget snap can be built. For store deployment, gadget snaps must be produced by the device [brand store](/reference/glossary.md#brand-store), as defined in the [model assertion](https://ubuntu.com/core/docs/reference/assertions/model), or a reference gadget must be used. It is perfectly possible for different models to share a gadget snap.
+See [Build a gadget snap](https://ubuntu.com/core/docs/gadget-building) for details on how a gadget snap can be built. For store deployment, gadget snaps must be produced by the device {ref}`brand store <ref-glossary_brand-store>`, as defined in the [model assertion](https://ubuntu.com/core/docs/reference/assertions/model), or a reference gadget must be used. It is perfectly possible for different models to share a gadget snap.
 
 ## Setup files
 
@@ -60,7 +60,7 @@ Two YAML keys are used to describe your target device:
 
 Defaults only become available during snap installation.</br></br>
 
-Values in `defaults:` (other than `system:`) are not consumed and do not become available until either the `configure hook` or the `default-configure hook` are run as part of the corresponding snap installation. See [Supported snap hooks]( reference/development/supported-snap-hooks.md) for further details. `system:` values are set immediately.
+Values in `defaults:` (other than `system:`) are not consumed and do not become available until either the `configure hook` or the `default-configure hook` are run as part of the corresponding snap installation. See {ref}`Supported snap hooks <reference-development-supported-snap-hooks>` for further details. `system:` values are set immediately.
 
 - **volumes** (YAML sub-section, required): the volumes layout, where each disk image is represented as a YAML sub-section.
 
@@ -96,7 +96,7 @@ The structure section lists entities with gadget data inside the image, most of 
 
 ### Dynamic kernel parameters
 
-There are two [system options](/reference/operations/system-options) that can be used to add new kernel boot parameters to a system that has been deployed and is running:
+There are two {ref}`system options <how-to-guides-manage-snaps-set-system-options>` that can be used to add new kernel boot parameters to a system that has been deployed and is running:
 
 1. [system.kernel.cmdline-append](https://snapcraft.io/docs/system-options#heading--kernel-cmdline-append)
 2. [system.kernel.dangerous-cmdline-append](https://snapcraft.io/docs/system-options#heading--kernel-dangerous-cmdline-append)

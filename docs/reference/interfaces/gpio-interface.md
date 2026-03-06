@@ -32,9 +32,9 @@ snap connect pi-fancontrol:gpio pi:bcm-gpio-14
 **Attributes**:
  * `number` (slot): GPIO pin number to export and expose to consuming snaps
 
-[Hardware IO interfaces](/reference/interfaces/hardware-io-interfaces) covers some general considerations common to these kinds of devices.
+Hardware IO interfaces covers some general considerations common to these kinds of devices.
 
-To use a gpio device, the snap developer must add `plugs: [ gpio ]` to a snap's [snapcraft.yaml](https://documentation.ubuntu.com/snapcraft/stable/reference/project-file/anatomy-of-snapcraft-yaml/). The snap user can then access a specific gpio device with an [interface connection](/t/interface-management/6154#heading--manual-connections).
+To use a gpio device, the snap developer must add `plugs: [ gpio ]` to a snap's [snapcraft.yaml](https://documentation.ubuntu.com/snapcraft/stable/reference/project-file/anatomy-of-snapcraft-yaml/). The snap user can then access a specific gpio device with an {ref}`interface connection <explanation-interfaces-all-about-interfaces>`.
 
 Unless the snap is expected to actually use a set of gpio pins that is not predefined,  it is recommended to define distinct plugs for each used gpio pin, like:
 
@@ -46,7 +46,7 @@ plugs:
     interface: gpio
 ```
 
-This has the advantage of being self-documenting and 1-1  connections like these are easier to track and setup with [auto-connections](/explanation/interfaces/interface-auto-connection), if the latter is needed.
+This has the advantage of being self-documenting and 1-1  connections like these are easier to track and setup with {ref}`auto-connections <explanation-interfaces-interface-auto-connection>`, if the latter is needed.
 
 When the interface is connected, `"echo (pin number) > /sys/class/gpio/export"`  is run internally to enable access to the GPIO pin.
 
@@ -54,9 +54,9 @@ Once connected, the consuming snap can use the device via `/sys/class/gpio/gpioN
 
 Finally, when the interface is disconnected,  `"echo (pin number) > /sys/class/gpio/unexport"`  is run internally to disable access to the GPIO pin.
 
-<h3 id='heading-code'>Code examples</h3>
+### Code examples
 
-The hook and control scripts for _pi-fancontrol_ can be found in the project's GitHub repository: [https://github.com/ogra1/pi-fancontrol-snap]( https://github.com/ogra1/pi-fancontrol-snap)
+The hook and control scripts for _pi-fancontrol_ can be found in the project's GitHub repository: [https://github.com/ogra1/pi-fancontrol-snap](https://github.com/ogra1/pi-fancontrol-snap)
 
 The source code for the GPIO interface is in the _snapd_ repository: [https://github.com/canonical/snapd/blob/master/interfaces/builtin/gpio.go](https://github.com/canonical/snapd/blob/master/interfaces/builtin/gpio.go).
 

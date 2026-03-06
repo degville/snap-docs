@@ -9,7 +9,7 @@ On devices running Ubuntu Core, a [kernel boot parameter](https://ubuntu.com/cor
 
 ## Snap debug timing
 
-Timing output from a snap can be a useful measure of overall performance, but it can also reveal performance bottlenecks and targets for improvement. The [snap debug](/how-to-guides/work-with-snaps/fix-common-issues.md#generate-debug-info) command includes several options to produce timing output for execution time, internal _ensure_ activities and subsystem startup times.
+Timing output from a snap can be a useful measure of overall performance, but it can also reveal performance bottlenecks and targets for improvement. The {ref}`snap debug <how-to-guides-fix-common-issues-debug-snaps>` command includes several options to produce timing output for execution time, internal _ensure_ activities and subsystem startup times.
 
 ### Execution time
 

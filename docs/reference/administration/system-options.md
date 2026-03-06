@@ -3,7 +3,7 @@
 
 Snap supports a set of system-wide options that allow you to customise your snap or Ubuntu Core environment. These are listed below.
 
-See [Setting system options](/how-to-guides/manage-snaps/set-system-options) for further details on how they they are viewed and configured.
+See {ref}`Setting system options <how-to-guides-manage-snaps-set-system-options>` for further details on how they they are viewed and configured.
 
 ## pi-config
 
@@ -71,7 +71,7 @@ The following example asks the system to only refresh snaps between 4.00am and 7
 snap set system refresh.timer=4:00-7:00,19:00-22:10 
 ```
 
-See [Controlling updates](/how-to-guides/work-with-snaps/manage-updates.md#control-updates-with-system-options) for further details on how the above options are used.
+See {ref}`Controlling updates <how-to-guides-work-with-snaps-manage-updates>` for further details on how the above options are used.
 
 ## system homedirs
 
@@ -81,7 +81,7 @@ Allows a snap’s user data to be stored in a user’s home location other under
 snap set system homedirs=<destination-directory>
 ```
 
-See [Home directories outside of ‘/home’](/explanation/how-snaps-work/home-outside-home) for further details.
+See {ref}`Home directories outside of ‘/home’ <interfaces-home-outside-home>` for further details.
 
 Available since snapd 2.59.
 
@@ -112,7 +112,7 @@ May be set to _true_ on devices running Ubuntu Core to disable the console-conf 
 snap set system service.console-conf.disable=true
 ```
 
-This option is defined in the [gadget snap](/reference/development/yaml-schemas/the-gadget-snap) and cannot be changed at runtime.
+This option is defined in the {ref}`gadget snap <reference-development-yaml-schemas-the-gadget-snap>` and cannot be changed at runtime.
 
 ## system service.ssh.disable
 
@@ -140,7 +140,7 @@ Available since snapd _2.59_, and only on Ubuntu Core 20 or later.
 
 ## system snapshots.automatic.retention
 
-[Automatic snapshot](/how-to-guides/manage-snaps/create-data-snapshots) retention time is configured with the `snapshots.automatic.retention` system option. The default value is 31 days, and the value needs to be greater than 24 hours:
+{ref}`Automatic snapshot <how-to-guides-manage-snaps-create-data-snapshots>` retention time is configured with the `snapshots.automatic.retention` system option. The default value is 31 days, and the value needs to be greater than 24 hours:
 
 ```
 snap set system snapshots.automatic.retention=30h
@@ -199,7 +199,7 @@ Value can be any integer multiple of a megabyte that is either larger than or eq
 snap set system swap.size=200M
 ```
 
-This option is typically defined in the [gadget.yaml](/reference/development/yaml-schemas/the-gadget-snap) file when building an Ubuntu Core image:
+This option is typically defined in the {ref}`gadget.yaml <reference-development-yaml-schemas-the-gadget-snap>` file when building an Ubuntu Core image:
 
 ```yaml
 defaults:
@@ -223,11 +223,11 @@ Dynamically add permitted kernel boot parameters to the default kernel command l
 ```
 snap set system system.kernel.cmdline-append=”opt1=val1 opt2=val2”
 ```
-Proposed kernel boot parameters are verified against an _allow list_ in the [gadget snap](/reference/development/yaml-schemas/the-gadget-snap). See [gadget.yaml](reference/development/yaml-schemas/the-gadget-snap) for further details on the list syntax.
+Proposed kernel boot parameters are verified against an _allow list_ in the {ref}`gadget snap <reference-development-yaml-schemas-the-gadget-snap>`. See {ref}`gadget.yaml <reference-development-yaml-schemas-the-gadget-snap>` for further details on the list syntax.
 
 This options requires the system or device to be manually restarted. The system will not restart automatically.
 
-Consider using [system.kernel.dangerous-cmdline-append](#heading--system.kernel.dangerous-cmdline-append) instead if:
+Consider using `system.kernel.dangerous-cmdline-append` instead if:
 
  - the gadget snap on your device is either the pc-gadget or pi-gadget, as the allow list isn’t defined.
  - you need to add kernel boot parameters without any verification filter.
@@ -240,7 +240,7 @@ Dynamically add any kernel boot parameters to the default kernel command line on
 snap set system system.kernel.dangerous-cmdline-append=”opt1=val1 opt2=val2”
 ```
 
-This system setting is considered **dangerous** because any boot parameter is permitted, potentially making devices vulnerable. To add only permitted or filtered options, see [system.kernel.cmdline-append](#heading--system.kernel.cmdline-append) above.
+This system setting is considered **dangerous** because any boot parameter is permitted, potentially making devices vulnerable. To add only permitted or filtered options, see `system.kernel.cmdline-append` above.
 
 This options requires the system or device to be manually restarted. The system will not restart automatically.
 
@@ -260,7 +260,7 @@ kernel.printk = 1 4 1 7
 
 ## system system.motd
 
-Ubuntu Core systems come with a default message of the day. From Ubuntu Core 24 onwards, the message of the day can be customized from the defaults configuration section in the [gadget.yaml](/reference/development/yaml-schemas/the-gadget-snap) file to set a custom message available since first boot:
+Ubuntu Core systems come with a default message of the day. From Ubuntu Core 24 onwards, the message of the day can be customized from the defaults configuration section in the {ref}`gadget.yaml <reference-development-yaml-schemas-the-gadget-snap>` file to set a custom message available since first boot:
 
 ```yaml
 defaults:

@@ -3,7 +3,7 @@
 
 The `power-control` interface allows the reading and setting of system power settings.
 
-This interface is primarily intended to be used with [Ubuntu Core](/t/glossary/14612#heading--ubuntu-core).
+This interface is primarily intended to be used with {ref}`Ubuntu Core <ref-glossary_ubuntu-core>`.
 
 
 ## Developer details

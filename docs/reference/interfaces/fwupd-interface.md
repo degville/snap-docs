@@ -4,6 +4,6 @@
 `fwupd` allows operating as the fwupd service, enabling privileged access to update UEFI firmware.
 
 
-**[Auto-connect](/explanation/interfaces/interface-auto-connection)**: no</br>
+**{ref}`Auto-connect <explanation-interfaces-interface-auto-connection>`**: no</br>
 
 

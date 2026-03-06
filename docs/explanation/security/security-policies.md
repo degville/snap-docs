@@ -1,19 +1,19 @@
 (explanation-security-security-policies)=
 # Security policies
 
-Without [custom flags at installation](https://snapcraft.io/docs/install-modes), or subsequent [interface connections](/how-to-guides/work-with-snaps/connect-interfaces), snaps remain confined to a restrictive security sandbox, preventing access to system resources outside the snap.
+Without [custom flags at installation](https://snapcraft.io/docs/install-modes), or subsequent {ref}`interface connections <how-to-guides-work-with-snaps-connect-interfaces>`, snaps remain confined to a restrictive security sandbox, preventing access to system resources outside the snap.
 
 Snap developers need to be aware which system resources their applications depend on from within the snap.
 
 Security policies and store policies work together to allow developers to quickly confine and update their applications to provide safety to end users. This document provides an overview of core mechanisms that underpins the secure snap sandbox as well as information on how to configure and work with the security policies for snaps you publish.
 
-For more general details on what confinement entails, see [Snap confinement](/explanation/security/snap-confinement), and see below for implementation details.
+For more general details on what confinement entails, see {ref}`Snap confinement <explanation-security-snap-confinement>`, and see below for implementation details.
 
 ## Security overview
 
 Application developers should not need to know about, or understand, the low-level implementation details of how a security policy is enforced.
 
-Each command declared with the `apps` [snap metadata](/t/the-snap-format/698#heading--snapyaml) is tracked by the system assigning a security label to the command.
+Each command declared with the `apps` {ref}`snap metadata <reference-development-yaml-schemas-the-snap-format>` is tracked by the system assigning a security label to the command.
 
 This security label takes the form of `snap.<snap>.<app>` where `<snap>` is the name of the snap, and `<app>` is the application name. 
 
@@ -109,7 +109,7 @@ AppArmor profiles are generated for each command. These have the appropriate sec
 
 As already mentioned, each command runs under an app-specific default policy that may be extended through declared interfaces which are expressed in the metadata as `plugs` and `slots`. AppArmor policy violations in strict mode snaps will be denied access, and typically have errno set to `EACCES`. The violation will typically be logged.
 
-See [AppArmor violations](/t/debugging-snaps/18420#heading--apparmor) for help tracking AppArmor problems.
+See {ref}`AppArmor violations <how-to-guides-fix-common-issues-debug-snaps>` for help tracking AppArmor problems.
 
 #### Seccomp
 
@@ -117,7 +117,7 @@ A seccomp filter is generated for each command in a snap to run under, enabling 
    
 Processes with seccomp policy violations will be denied access to the system call with errno set to `EPERM` (snapd releases prior to 2.32 receive `SIGSYS`) and the violation is logged.
 
-See [Seccomp violations](/t/debugging-snaps/18420#heading--seccomp) for help tracking Seccomp problems.
+See {ref}`Seccomp violations <explanation-security-security-policies>` for help tracking Seccomp problems.
 
 #### Device cgroup
 
@@ -158,7 +158,7 @@ Interfaces can be declared either per-snap or per-command:
 - if declared per-snap, all the commands within the snap have the interface security policy added to each command’s security policy when the interface is connected
 - if declared per-command, only the commands within the snap that declare use of the interface have the specified interface security policy added to them
 
-An interface may either auto-connect upon install, or require the user to manually connect them. Interface connections and disconnections are performed via the  `snap connect`  and  `snap disconnect` commands. See [interfaces](/how-to-guides/work-with-snaps/connect-interfaces) for details.
+An interface may either auto-connect upon install, or require the user to manually connect them. Interface connections and disconnections are performed via the  `snap connect`  and  `snap disconnect` commands. See {ref}`interfaces <explanation-interfaces-all-about-interfaces>` for details.
 
 ### Policy switch during refresh
 
@@ -169,11 +169,11 @@ Before _refresh awareness_ became available, if a refresh occurred while a snap 
 (ref-security-policies_refresh-awareness)=
 ### Refresh awareness
 
-By default, a service running from a snap needs to be restarted whenever the snap is refreshed (see [Services and daemons]([/t/services-and-daemons/12601](https://forum.snapcraft.io/t/services-and-daemons/12601)) for more details).
+By default, a service running from a snap needs to be restarted whenever the snap is refreshed (see {ref}`Services and daemons <explanation-security-security-policies>`) for more details).
 
-Stopping and starting a service is a requirement to support [snap revert]([/t/getting-started/3876#heading--revert](https://forum.snapcraft.io/t/getting-started/3876#heading--revert)) and its copying of a snap’s system data from the current version to the new version.
+Stopping and starting a service is a requirement to support {ref}`snap revert <explanation-security-security-policies>`) and its copying of a snap’s system data from the current version to the new version.
 
-System data typically includes databases, data files, and configuration files (see [Data locations](/reference/operations/data-locations)), although all of this is up to the snap developer.
+System data typically includes databases, data files, and configuration files (see {ref}`Data locations <interfaces-data-locations>`), although all of this is up to the snap developer.
 
 Reverting a snap with `snap revert` restores a snap’s system data to its prior state, and services accessing this data need to be stopped to protect the integrity of the data and also to facilitate changes to security policy that are required when a snap updates its system data location.
 
@@ -181,17 +181,17 @@ To help mitigate any potential issues when a restart is required, _snapd_ will c
 
 * if **no processes are running**, the refresh is performed.
 * if **systemd-initiated processes** are detected, their associated units are first stopped, the snap refreshed, and those units started again.
-* if other **snap-initiated processes** are detected, [refresh awareness](/explanation/how-snaps-work/refresh-awareness) is used to mediate the update.
+* if other **snap-initiated processes** are detected, {ref}`refresh awareness <explanation-how-snaps-work-refresh-awareness>` is used to mediate the update.
 
 ##  Information security
 Snapd includes the following built-in features that interacts with user information:
 
-* [System configuration options](/how-to-guides/manage-snaps/set-system-options)
-* [Snap specific configurations options](/how-to-guides/work-with-snaps/configure-snaps)
-* [Snapshots](/how-to-guides/manage-snaps/create-data-snapshots) of snap [user data](/t/data-locations/24905#p-94053-user-data)
-* The [home](/reference/interfaces/home-interface/) interface allows access to non-hidden files in the user’s home
-* The [personal-files](/reference/interfaces/personal-files-interface) interface allows access to specified files in the user's home
-* [Persisted data on Ubuntu Core devices](/t/data-locations/24905#p-94053-ubuntu-core)
+* {ref}`System configuration options <how-to-guides-manage-snaps-set-system-options>`
+* {ref}`Snap specific configurations options <how-to-guides-work-with-snaps-configure-snaps>`
+* {ref}`Snapshots <how-to-guides-manage-snaps-create-data-snapshots>` of snap {ref}`user data <interfaces-data-locations>`
+* The {ref}`home <interfaces-home-interface>` interface allows access to non-hidden files in the user’s home
+* The {ref}`personal-files <interfaces-personal-files-interface>` interface allows access to specified files in the user's home
+* {ref}`Persisted data on Ubuntu Core devices <interfaces-data-locations>`
 
 Snapd is designed to make these interactions secure by default. Developers are expected to implement their own data storage solutions, e.g. database and configuration files, on top of snapd’s secure mechanisms. This means developers share responsibility for ensuring the availability, integrity, confidentiality, and compatibility of user data over the lifetime of a snap or snap-based product.
 
@@ -203,18 +203,18 @@ To mitigate this risk, snapd enforces an explicit acknowledgment from users by r
 
 The correct mindset is to request the minimum set of permissions necessary for a snap to function as currently required. When multiple interfaces provide overlapping permissions, choose the most restrictive one that still satisfies the requirements.
 
-Avoid defining [top-level plugs](/t/snapcraft-yaml-schema/4276#p-21225-plugs) or slots that implicitly apply an interface to all apps and daemons in the snap. Instead, declare permissions as narrowly as possible.
+Avoid defining [top-level plugs](https://documentation.ubuntu.com/snapcraft/stable/reference/project-file/snapcraft-yaml/) or slots that implicitly apply an interface to all apps and daemons in the snap. Instead, declare permissions as narrowly as possible.
 
 These guidelines are considered during store approval of permission requests. Deviations from best practice will require a justification.
 
 Sometimes it is also required to extend what is allowed by an existing interface or even to implement a new interface. When in doubt, feel free to consult the [snapd team on the snapcraft forum](https://forum.snapcraft.io/c/snapd/5).
 
 * [How to create a simple confined snap](https://documentation.ubuntu.com/snapcraft/stable/how-to/crafting/enable-classic-confinement)
-* [How to identify which interfaces are required to solve policy violations](/how-to-guides/fix-common-issues/debug-snaps)
-  * [AppArmor violations](/t/18420#heading--apparmor)
-  * [Seccomp violations](/t/18420#heading--seccomp)
-  * [File permissions and cgroups](/t/18420#heading--permissions)
-* [How to request store approval for snap policy changes](/reference/administration/reviewing-classic-confinement-snaps)
+* {ref}`How to identify which interfaces are required to solve policy violations <how-to-guides-fix-common-issues-debug-snaps>`
+  * {ref}`AppArmor violations <how-to-guides-fix-common-issues-debug-snaps>`
+  * {ref}`Seccomp violations <how-to-guides-fix-common-issues-debug-snaps>`
+  * {ref}`File permissions and cgroups <explanation-security-security-policies>`
+* {ref}`How to request store approval for snap policy changes <interfaces-reviewing-classic-confinement-snaps>`
 
 To publish a classic snap that operates outside these restrictions it is required to request a classic confinement request that involves a rigorous process for vetting the publisher.
 

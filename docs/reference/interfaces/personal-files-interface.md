@@ -5,15 +5,15 @@ The `personal-files` interface provides access to specified files in the user's 
 
 This interface is typically used to provide read-only access to top-level hidden data directories (directories starting with a dot) within a user's real home directory in order to support importing data from existing applications where the snap is the clear owner of the target directory. 
 
-By default, snaps have access to everything under `~/snap/<snap name>/<revision>` and it's this path stored in the `$SNAP_USER_DATA` [environment variable](/reference/development/environment-variables). For non-daemon commands within the snap, this location is also where the `$HOME` environment variable points to, and where they can read and write to hidden files freely.
+By default, snaps have access to everything under `~/snap/<snap name>/<revision>` and it's this path stored in the `$SNAP_USER_DATA` {ref}`environment variable <reference-development-environment-variables>`. For non-daemon commands within the snap, this location is also where the `$HOME` environment variable points to, and where they can read and write to hidden files freely.
 
 Requires snapd version _2.37+_.
 
 
 ## Developer details
 
-**[Auto-connect](/explanation/interfaces/interface-auto-connection)**: no</br>
-**[Super-privileged](/explanation/interfaces/super-privileged-interfaces)**: yes</br>
+**{ref}`Auto-connect <explanation-interfaces-interface-auto-connection>`**: no</br>
+**{ref}`Super-privileged <reference-operations-interfaces-super-privileged-interfaces>`**: yes</br>
 **Transitional**: no</br>
 **Attributes**:</br>
   * `read` (plug): list of files and/or directories for read-only access (eg, '`read: [ $HOME/.file-read, $HOME/.dir-read ]`'
@@ -23,7 +23,7 @@ Specifying a directory in `read` and `write` allows access to the directory and 
 
 ## Approval process
 
-For distribution via the [Snap store](https://snapcraft.io/store), snaps that use the personal-files interface need an approved [snap declaration](/t/process-for-aliases-auto-connections-and-tracks/455/). For acceptance, the publisher needs to make a descriptive interface reference, as used by `snap connections|interfaces|connect|disconnect` commands.
+For distribution via the [Snap store](https://snapcraft.io/store), snaps that use the personal-files interface need an approved {ref}`snap declaration <interfaces-process-for-aliases-auto-connections-and-tracks>`. For acceptance, the publisher needs to make a descriptive interface reference, as used by `snap connections|interfaces|connect|disconnect` commands.
 
 ## Code examples
 

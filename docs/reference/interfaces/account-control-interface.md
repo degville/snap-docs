@@ -7,7 +7,7 @@ This interface enables the management of the `extrausers` table in the Name Serv
 
 The interface **does not** allow the management of users and groups for the system NSS databases in */etc*.
 
-Due to the privileged nature of access enabled by this interface, its use is reserved exclusively for "management snaps" from [brand stores](/t/glossary/14612#heading--brand-store).
+Due to the privileged nature of access enabled by this interface, its use is reserved exclusively for "management snaps" from [brand stores](https://ubuntu.com/core/docs/brand-stores).
 
 
 

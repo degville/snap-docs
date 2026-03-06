@@ -9,7 +9,7 @@ The following sections describe how to work with such snap applications.
 
 ## Running applications
 
-As covered in [Get started](/tutorials/get-started), a snap's installed application(s) can be found under `/snap/bin`, and subsequently, often added to _$PATH_. This makes commands directly accessible from the command line. 
+As covered in {ref}`Get started <tutorials-get-started>`, a snap's installed application(s) can be found under `/snap/bin`, and subsequently, often added to _$PATH_. This makes commands directly accessible from the command line. 
 
 If executing a command directly doesn't work, try prefixing it with the */snap/bin* path:
 

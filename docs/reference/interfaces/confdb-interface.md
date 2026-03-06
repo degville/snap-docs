@@ -1,11 +1,11 @@
 (interfaces-confdb)=
 #  confdb interface
 
-The `confdb` interface enables snaps to access to specific  [confdb](/explanation/how-snaps-work/confdb-configuration-mechanism.md#confdb-views) views.
+The `confdb` interface enables snaps to access to specific  {ref}`confdb <ref-confdb-configuration-mechanism_confdb-views>` views.
 
 There are two fields that together identify the view being accessed: `account` and `view`. There is also an optional `role` field which may only take the value of "custodian", if the snap is a custodian for the confdb-schema being accessed.
 
-See the [Confdb configuration mechanism](/explanation/how-snaps-work/confdb-configuration-mechanism) for implementation details, and [Configure snaps with confdb](/how-to-guides/manage-snaps/configure-snaps-with-confdb) to use confdb with your own snaps.
+See the {ref}`Confdb configuration mechanism <explanation-how-snaps-work-confdb-configuration-mechanism>` for implementation details, and {ref}`Configure snaps with confdb <how-to-guides-manage-snaps-configure-snaps-with-confdb>` to use confdb with your own snaps.
 
 ```
 [...]
@@ -16,7 +16,7 @@ See the [Confdb configuration mechanism](/explanation/how-snaps-work/confdb-conf
 ```
 
 ```{warning}
- Confdb is currently considered an [Experimental feature](/reference/development/experimental-features/) and implementation details may change as development progresses.
+ Confdb is currently considered an {ref}`Experimental feature <ref-experimental-features_experimental-features>` and implementation details may change as development progresses.
 ```
 
 ## Developer details

@@ -3,18 +3,18 @@
 
 The `i2c` interface permits access to a specific I2C controller. It's intended to be used with Ubuntu Core and its scope and specification are defined as part of the [gadget snap](https://snapcraft.io/docs/the-gadget-snap) for the deployed Ubuntu Core image.
 
-[Hardware IO interfaces](/reference/interfaces/hardware-io-interfaces) covers some general considerations common to these kinds of devices.
+Hardware IO interfaces covers some general considerations common to these kinds of devices.
 
 To permit access, the application snaps define an i2c *plug* which is associated with a corresponding and identically-named i2c *slot* in the gadget snap.
 
-Using the `i2c` interface does not require Store approval and permission, but usage **is** restricted because it provides privileged access to hardware devices. Enabling the `i2c` interface to auto-connect can be managed in the [dashboard](https://dashboard.snapcraft.io). The snap user can also access a specific i2c device with a [manual interface connection](/t/interface-management/6154#heading--manual-connections).
+Using the `i2c` interface does not require Store approval and permission, but usage **is** restricted because it provides privileged access to hardware devices. Enabling the `i2c` interface to auto-connect can be managed in the [dashboard](https://dashboard.snapcraft.io). The snap user can also access a specific i2c device with a {ref}`manual interface connection <explanation-interfaces-all-about-interfaces>`.
 
 
 ---
 
 ## Developer details
 
-**[Auto-connect](/explanation/interfaces/interface-auto-connection)**: no</br>
+**{ref}`Auto-connect <explanation-interfaces-interface-auto-connection>`**: no</br>
 
 **Attributes**:
  * **`path` (plug, slot)**: path to i2c device node.</br>

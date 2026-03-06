@@ -1,7 +1,7 @@
 (interfaces-system-usernames)=
 # System usernames
 
-System usernames can be used by snap developers to enable them to [control services](/how-to-guides/manage-snaps/control-services) as a user other than the default `root`.
+System usernames can be used by snap developers to enable them to {ref}`control services <how-to-guides-manage-snaps-control-services>` as a user other than the default `root`.
 
 Outside of snaps, applications traditionally adopt the concept of users and groups from the host operating system to use as a security mechanism that grants access to specific system and software resources.
 
@@ -75,7 +75,7 @@ When developing a snap, care must therefore be taken to drop privileges _before_
  
 For example, a management process that runs as root may fork off worker processes that drop privileges to the snap_daemon user. Whenever this management process wants to send a signal to its workers, it must drop privileges to the snap_daemon user first. Alternatively, the snap could use `plugs: [ process-control ]`, which among other things, grants CAP_KILL.
 
-Since the [process-control](/reference/interfaces/process-control-interface) interface grants considerable access for system-wide process management, best practice dictates that privileges _must_ be dropped as needed when sending signals to other processes in the snap.
+Since the {ref}`process-control <interfaces-process-control-interface>` interface grants considerable access for system-wide process management, best practice dictates that privileges _must_ be dropped as needed when sending signals to other processes in the snap.
 
 ## Ownership (discretionary access controls)
 

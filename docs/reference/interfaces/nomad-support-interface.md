@@ -3,7 +3,7 @@
 
 The `nomad-support` interface provides permissions to enable [HashiCorp Nomad](https://www.nomadproject.io/) to access [cpuset](https://man7.org/linux/man-pages/man7/cpuset.7.html) CPU and memory management, alongside Nomad-specific capabilities such as the NVIDIA plugin support, slice functions, and Nomad running as a service.
 
-See [Interface management](/how-to-guides/manage-snaps/connect-interfaces) and [Supported interfaces](/reference/interfaces/index) for further details on how interfaces are used.
+See {ref}`Interface management <how-to-guides-work-with-snaps-connect-interfaces>` and {ref}`Supported interfaces <ref-index_interfaces>` for further details on how interfaces are used.
 
 ## Developer details
 

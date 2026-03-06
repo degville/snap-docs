@@ -12,7 +12,7 @@ The `hardware-observe` interface allows for getting hardware information from th
 
 ## Developer details
 
-**[Auto-connect](/explanation/interfaces/interface-auto-connection)**: no</br>
+**{ref}`Auto-connect <explanation-interfaces-interface-auto-connection>`**: no</br>
 
 ### Path access
 

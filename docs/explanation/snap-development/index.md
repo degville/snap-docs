@@ -3,10 +3,10 @@
 
 Extend snap functionality with API access and customised environments for your applications and devices.
 
-* [Install modes](install-modes): Test your snap builds with separate installation modes.
-* [System username](system-usernames): The user that manages system services.
-* [Tab completion](tab-completion): How tab completion works from snap applications.
-* [Building snap on RHEL](building-snap-rpms-on-rhel): Build a SnapD RPM package for RHEL.
+* {ref}`Install modes <interfaces-install-modes>`: Test your snap builds with separate installation modes.
+* {ref}`System username <interfaces-system-usernames>`: The user that manages system services.
+* {ref}`Tab completion <interfaces-tab-completion>`: How tab completion works from snap applications.
+* {ref}`Building snap on RHEL <interfaces-building-snap-rpms-on-rhel>`: Build a SnapD RPM package for RHEL.
 
 ```{toctree}
 :hidden:

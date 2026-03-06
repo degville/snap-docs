@@ -3,12 +3,6 @@
 
 Channels are an important snap concept. They define which release of a snap is installed and tracked for updates.
 
-A channel consists of, and is subdivided by, tracks, risk-levels and branches:
-
-- [Tracks](#heading--tracks) enable snap developers to publish multiple supported releases of their application under the same snap name.
-- [Risk-levels](#heading--risk-levels) represent a progressive potential trade-off between stability and new features.
-- [Branches](#heading--branches) are optional and hold temporary releases intended to help with bug-fixing.
-
 The complete channel name can be structured as three distinct parts separated by slashes:
 
 ```

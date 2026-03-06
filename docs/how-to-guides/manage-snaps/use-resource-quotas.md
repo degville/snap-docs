@@ -1,7 +1,7 @@
 (how-to-guides-manage-snaps-use-resource-quotas)=
 # Use resource quotas
 
-A quota group sets resource limits on [services](/how-to-guides/manage-snaps/control-services) running inside snaps.
+A quota group sets resource limits on {ref}`services <how-to-guides-manage-snaps-control-services>` running inside snaps.
 
 Resource limits can be set for the following attributes:
 - **Journal log messages**: as a maximum size for the log and as a rate limit
@@ -48,7 +48,7 @@ See below for details on which limiting attributes are supported by quota groups
 (ref-use-resource-quotas_journal-log-limits)=
 ### Journal log limits
 
-While the `snap logs` command is used to retrieve the _systemd journal_ logs for a specific service, or for all services within a snap (see [Inspecting logs](/how-to-guides/manage-snaps/control-services.md#inspecting-logs) for further details), a quota can be used to limit the output.
+While the `snap logs` command is used to retrieve the _systemd journal_ logs for a specific service, or for all services within a snap (see {ref}`Inspecting logs <ref-control-services_inspecting-logs>` for further details), a quota can be used to limit the output.
 
 Log output can be limited by both size and rate within a quota group.
 

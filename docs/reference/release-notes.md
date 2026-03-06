@@ -7,30 +7,30 @@ This page outlines the release notes of all recent versions of Snapd, summarisin
 
 ### Latest stable release
 
-* **[Snapd 2.73](#snapd-2-73-release-notes)** (27th November 2025)
+* **{ref}`Snapd 2.73 <ref-release-notes_snapd-2-73-release-notes>`** (27th November 2025)
 
 ### Latest beta release
-* [Snapd 2.74](#snapd-2-74-release-notes) (21st January 2026)
+* {ref}`Snapd 2.74 <ref-release-notes_snapd-2-74-release-notes>` (21st January 2026)
 
 ### Older releases
-* [Snapd 2.73](#snapd-2-73-release-notes) (27th November 2025)
-* [Snapd 2.72](#snapd-2-72-release-notes) (30th September 2025)
-* [Snapd 2.71](#snapd-2-71-release-notes) (14th August 2025)
-* [Snapd 2.70](#snapd-2-70-release-notes) (31th June 2025)
-* [Snapd 2.68](#snapd-2-68-release-notes) (31st March 2025)
-* [Snapd 2.67](#snapd-2-67-release-notes) (13th January 2025)
-* [Snapd 2.66](#snapd-2-66-release-notes) (26th November 2024)
-* [Snapd 2.65](#snapd-2-65-release-notes) (8th October 2024)
-* [Snapd 2.64](#snapd-2-64-release-notes) (25th July 2024)
-* [Snapd 2.63](#snapd-2-63-release-notes) (6th June 2024)
-* [Snapd 2.62](#snapd-2-62-release-notes) (15th April 2024)
-* [Snapd 2.61](#snapd-2-61-release-notes) (3rd January 2024)
+* {ref}`Snapd 2.73 <ref-release-notes_snapd-2-73-release-notes>` (27th November 2025)
+* {ref}`Snapd 2.72 <ref-release-notes_snapd-2-72-release-notes>` (30th September 2025)
+* {ref}`Snapd 2.71 <ref-release-notes_snapd-2-71-release-notes>` (14th August 2025)
+* {ref}`Snapd 2.70 <ref-release-notes_snapd-2-70-release-notes>` (31th June 2025)
+* {ref}`Snapd 2.68 <ref-release-notes_snapd-2-68-release-notes>` (31st March 2025)
+* {ref}`Snapd 2.67 <ref-release-notes_snapd-2-67-release-notes>` (13th January 2025)
+* {ref}`Snapd 2.66 <ref-release-notes_snapd-2-66-release-notes>` (26th November 2024)
+* {ref}`Snapd 2.65 <ref-release-notes_snapd-2-65-release-notes>` (8th October 2024)
+* {ref}`Snapd 2.64 <ref-release-notes_snapd-2-64-release-notes>` (25th July 2024)
+* {ref}`Snapd 2.63 <ref-release-notes_snapd-2-63-release-notes>` (6th June 2024)
+* {ref}`Snapd 2.62 <ref-release-notes_snapd-2-62-release-notes>` (15th April 2024)
+* {ref}`Snapd 2.61 <ref-release-notes_snapd-2-61-release-notes>` (3rd January 2024)
 
 ## Release policy and schedule
 
-The snapd package updates automatically, and by default, checks for updates 4 times a day. To manually update or modify this process, see [Managing updates](/how-to-guides/work-with-snaps/manage-updates).
+The snapd package updates automatically, and by default, checks for updates 4 times a day. To manually update or modify this process, see {ref}`Managing updates <how-to-guides-work-with-snaps-manage-updates>`.
 
-[Channels](/explanation/how-snaps-work/channels-and-tracks) are used to distinguish between stable releases, which are always available from the stable channel, and beta and testing releases, which can be installed from the candidate, beta and edge channels.
+{ref}`Channels <explanation-how-snaps-work-channels-and-tracks>` are used to distinguish between stable releases, which are always available from the stable channel, and beta and testing releases, which can be installed from the candidate, beta and edge channels.
 
 To install snapd from the beta channel, for example, use the following command:
 
@@ -40,7 +40,7 @@ sudo snap refresh snapd --beta
 
 To ensure you receive latest security updates and bug fixes, ensure you upgrade to a new release of Snapd shortly after it is released.
 
-For the release plan and complete list of changes, please refer to the [snapd roadmap](/reference/release-notes). Feel free to provide your test feedback on the [forum](https://forum.snapcraft.io/c/snapd/5), or directly in [Launchpad](https://bugs.launchpad.net/snapd/+filebug).
+For the release plan and complete list of changes, please refer to the {ref}`snapd roadmap <reference-release-notes>`. Feel free to provide your test feedback on the [forum](https://forum.snapcraft.io/c/snapd/5), or directly in [Launchpad](https://bugs.launchpad.net/snapd/+filebug).
 
 We greatly appreciate your contributions and support!
 

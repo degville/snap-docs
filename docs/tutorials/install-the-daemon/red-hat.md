@@ -1,7 +1,7 @@
 (interfaces-installing-snap-on-red-hat)=
 # Install snap on Red Hat 
 
-Snap is available for [Red Hat Enterprise Linux (RHEL) 9.x](https://developers.redhat.com/products/rhel/overview), RHEL 8 and RHEL 7, from the 7.6 release onwards. It's also available for CentOS 7.6+ (see [Installing snap on CentOS](/reference/interfaces/installing-snap-on-centos)).
+Snap is available for [Red Hat Enterprise Linux (RHEL) 9.x](https://developers.redhat.com/products/rhel/overview), RHEL 8 and RHEL 7, from the 7.6 release onwards. It's also available for CentOS 7.6+ (see {ref}`Installing snap on CentOS <interfaces-installing-snap-on-centos>`).
 
 The packages for RHEL are in the distribution's respective [Extra Packages for Enterprise Linux](https://fedoraproject.org/wiki/EPEL) (EPEL) repository. The instructions for adding this repository diverge slightly between RHEL9, RHEL 8 and RHEL 7, which is why they're listed separately below.
 
@@ -40,7 +40,7 @@ Adding the *optional* and *extras* repositories is also recommended:
 sudo subscription-manager repos --enable "rhel-*-optional-rpms" --enable "rhel-*-extras-rpms"
 sudo yum update
 ```
-If you're interested in understanding how these packages are built, see  [Building a snap RPM for Red Hat Enterprise Linux (RHEL)](/explanation/snap-development/building-snap-rpms-on-rhel).
+If you're interested in understanding how these packages are built, see  {ref}`Building a snap RPM for Red Hat Enterprise Linux (RHEL) <interfaces-building-snap-rpms-on-rhel>`.
 
 ## Installing snapd
 

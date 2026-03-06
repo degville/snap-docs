@@ -3,13 +3,13 @@
 
 The `snapctl` tool is bundled with _snapd_ to provide specific environmental feedback and a limited set of controls from **within the context** of a snap's execution environment in relation to snapd. It can be used, for example, to retrieve and set snap configuration options, check the status of a running snap, and reboot an Ubuntu Core 20 environment.
 
-`snapctl` is typically run from a script _within a snap_, rather than on the host system. These scripts are used by snap developers to implement [hooks](/reference/development/supported-snap-hooks), or from within [snapcraft.yaml](https://documentation.ubuntu.com/snapcraft/stable/reference/project-file/snapcraft-yaml/), to augment a snap's execution environment.
+`snapctl` is typically run from a script _within a snap_, rather than on the host system. These scripts are used by snap developers to implement {ref}`hooks <reference-development-supported-snap-hooks>`, or from within [snapcraft.yaml](https://documentation.ubuntu.com/snapcraft/stable/reference/project-file/snapcraft-yaml/), to augment a snap's execution environment.
 
-For details on using _snapctl_ to add user options to a snap, see [Adding snap configuration](set-system-options).
+For details on using _snapctl_ to add user options to a snap, see {ref}`Adding snap configuration <how-to-guides-manage-snaps-set-system-options>`.
 
 ## Configuration options
 
-A snap's configuration options can be queried and altered with the `snapctl get`, `snapctl set` and `snapctl unset` commands. These work very similar to the analogous [`snap get/set/..` commands](/how-to-guides/manage-snaps/configure-snaps) outside the snap. The main difference is that using these commands from within a snap will *not* trigger [the `configure` hook](/reference/development/supported-snap-hooks).
+A snap's configuration options can be queried and altered with the `snapctl get`, `snapctl set` and `snapctl unset` commands. These work very similar to the analogous {ref}``snap get/set/..` commands <how-to-guides-work-with-snaps-configure-snaps>` outside the snap. The main difference is that using these commands from within a snap will *not* trigger {ref}`the `configure` hook <reference-development-supported-snap-hooks>`.
 
 The `snapctl` command uses the same get, set and unset syntax as the snap command:
 
@@ -49,14 +49,14 @@ To see this in action, look at the [NextCloud snap](https://github.com/nextcloud
 
 ## Confdb
 
-The `snapctl get`, `snapctl set` and `snapctl unset` commands can also be used to access and modify [confdb configurations](/explanation/how-snaps-work/confdb-configuration-mechanism.md). To use `snapctl` to access confdb, you can include the `--view` flag as well as the name of the snap's [interface plug](/explanation/how-snaps-work/confdb-configuration-mechanism.md/#interface-plugs) that refers to the [confdb view](https://documentation.ubuntu.com/core/reference/assertions/confdb-schema/) being accessed, prefixed with a colon.
+The `snapctl get`, `snapctl set` and `snapctl unset` commands can also be used to access and modify {ref}`confdb configurations <explanation-how-snaps-work-confdb-configuration-mechanism>`. To use `snapctl` to access confdb, you can include the `--view` flag as well as the name of the snap's {ref}`interface plug <explanation-interfaces-all-about-interfaces>` that refers to the [confdb view](https://documentation.ubuntu.com/core/reference/assertions/confdb-schema/) being accessed, prefixed with a colon.
 
 ```sh
 $ snapctl get --view :setup-wifi ssid
 foo
 ```
 
-When using `snapctl get` in [confdb hooks](/explanation/how-snaps-work/confdb-configuration-mechanism.md#hooks), the data returned will reflect the changes being committed as part of the ongoing transaction that resulted in the hooks being invoked. To read the state of the confdb without the uncommitted changes, you can use the `--previous` flag.
+When using `snapctl get` in {ref}`confdb hooks <ref-confdb-configuration-mechanism_hooks>`, the data returned will reflect the changes being committed as part of the ongoing transaction that resulted in the hooks being invoked. To read the state of the confdb without the uncommitted changes, you can use the `--previous` flag.
 
 ```sh
 $ snapctl get --view --previous :setup-wifi ssid
@@ -83,13 +83,13 @@ $ snapctl get --view :setup-wifi routes --with to=default
 }
 ```
 
-For further information on confdb, see [Configure snaps with confdb](/how-to-guides/manage-snaps/configure-snaps-with-confdb.md) and [Confdb configuration mechanism](/explanation/how-snaps-work/confdb-configuration-mechanism.md).
+For further information on confdb, see {ref}`Configure snaps with confdb <how-to-guides-manage-snaps-configure-snaps-with-confdb>` and {ref}`Confdb configuration mechanism <explanation-how-snaps-work-confdb-configuration-mechanism>`.
 
 ## Components
 
 Component support requires *snapd 2.67+* .
 
-[Components](/explanation/how-snaps-work/snap-components) are exposed in the snap mountspace under `/snap/<snap_name>/components/<snap_revision>/<component_name>`. This is a symlink to `/snap/<snap_name>/components/mnt/<component_name>/<component_revision>`.
+{ref}`Components <explanation-how-snaps-work-snap-components>` are exposed in the snap mountspace under `/snap/<snap_name>/components/<snap_revision>/<component_name>`. This is a symlink to `/snap/<snap_name>/components/mnt/<component_name>/<component_revision>`.
 
 There is only one component revision active for a snap revision at a given time.
 
@@ -100,7 +100,7 @@ snapctl install +<comp_name>
 snapctl remove +<comp_name>
 ```
 
-If these commands are run from a [hook](/reference/development/supported-snap-hooks), the components will be installed/removed after the hook itself has run if it ended successfully.
+If these commands are run from a {ref}`hook <reference-development-supported-snap-hooks>`, the components will be installed/removed after the hook itself has run if it ended successfully.
 
 ## snapctl commands
 
@@ -182,7 +182,7 @@ fi
 
 Snaps can only query their own plugs and slots because the snap name is implicit and implied by the snapctl execution context.
 
-See [Snapcraft interfaces](/reference/interfaces/index) for more details on manipulating interfaces from a snap.
+See {ref}`Snapcraft interfaces <ref-index_interfaces>` for more details on manipulating interfaces from a snap.
 
 ## Model information
 
@@ -194,9 +194,9 @@ fundamental definition of a snap-based device, such as a device running [Ubuntu 
 The _snap model_ command can be used to return to the active model identification for the device, and `snapctl model` returns the equivalent to `snap model --verbose` from within a snap. However, for this to work, the requesting snap needs to meet _one_ of the following criteria:
 
 The requesting snap must be either:
-1. a [gadget snap](/reference/development/yaml-schemas/the-gadget-snap)
+1. a {ref}`gadget snap <reference-development-yaml-schemas-the-gadget-snap>`
 1. published from the same brand as the device model assertion 
-1. have the [snapd-control](snapd-control-interface) plug
+1. have the {ref}`snapd-control <interfaces-snapd-control-interface>` plug
 
 By default, the output model identification information is presented in a structured yaml-like format:
 
@@ -231,7 +231,7 @@ The raw assertion can also be requested with the `--assertion` flag.
 
 ## Mount control
 
-When the [mount-control interface](/reference/interfaces/mount-control-interface) is connected, a snapped application or service can use the _mount_ command to mount transient (non-persistent) and persistent filesystem mount points:
+When the {ref}`mount-control interface <interfaces-mount-control-interface>` is connected, a snapped application or service can use the _mount_ command to mount transient (non-persistent) and persistent filesystem mount points:
 
 ```
 snapctl mount -o <options> -t <fstype> </path/to/device> </target/mount/point>
@@ -249,7 +249,7 @@ A corresponding _umount_ command can be used to remove a mount point:
 snapctl umount </path/to/mount/point>
 ```
 
-See [mount-control interface](/reference/interfaces/mount-control-interface) for further details on permitted filesystems and mount options.
+See {ref}`mount-control interface <interfaces-mount-control-interface>` for further details on permitted filesystems and mount options.
 
 
 ##  Reboot control (from the UC20+ install-device hook)
@@ -264,7 +264,7 @@ The gate-auto-refresh hook is executed by snapd for every snap that will be upda
 
 This hook is capable of executing the _snapctl refresh_ command with 3 specific arguments, `hold`, `proceed` and `pending`:
 
-This feature is currently considered experimental. See [Refresh control](/how-to-guides/manage-snaps/manage-updates) for further details.
+This feature is currently considered experimental. See {ref}`Refresh control <how-to-guides-work-with-snaps-manage-updates>` for further details.
 
 ### snapctl refresh --hold
 
@@ -309,7 +309,7 @@ If the hook fails with an error, snapd assumes "hold" as long as the maximum dea
 
 ## Services
 
-As with configuration options (see above), snapctl sub-commands for managing services are the same as those used by the snap command. See [Services and daemons](/how-to-guides/manage-snaps/control-services) for further details.
+As with configuration options (see above), snapctl sub-commands for managing services are the same as those used by the snap command. See {ref}`Services and daemons <how-to-guides-manage-snaps-control-services>` for further details.
 
 To query the startup and running state of a service, for example, use `snapctl services <service-name>`:
 
@@ -362,4 +362,4 @@ The following keys and values can potentially be returned:
 - **seed-loaded**: `true` </br>
     Set when the installation of seeded snaps for the model has finished.
 - **factory**: `true`</br>
-   Only possible on a [UC20+](https://ubuntu.com/core/docs/uc20) system in install mode (`system-mode: install`) with the factory image hint set. This  value can be used to govern whether factory-only resources may be available. See [Factory image hint](  https://ubuntu.com/core/docs/uc20/installation-process#heading--factory) for more details.
+   Only possible on a [UC20+](https://ubuntu.com/core/docs/uc20) system in install mode (`system-mode: install`) with the factory image hint set. This  value can be used to govern whether factory-only resources may be available. See [Factory image hint](https://documentation.ubuntu.com/core/explanation/how-installation-works/) for more details.

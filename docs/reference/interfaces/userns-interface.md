@@ -6,8 +6,8 @@ The `userns` interface permits a snap to create new user [namespaces](https://ma
 
 ## Developer details
 
-**[Auto-connect](/explanation/interfaces/interface-auto-connection)**: no</br>
-**[Super-privileged](/explanation/interfaces/super-privileged-interfaces)**: yes
+**{ref}`Auto-connect <explanation-interfaces-interface-auto-connection>`**: no</br>
+**{ref}`Super-privileged <reference-operations-interfaces-super-privileged-interfaces>`**: yes
 
 This interface  supports the inclusion of the appropriate AppArmor and seccomp policies to allow user namespaces to be created when this interface is plugged.
 

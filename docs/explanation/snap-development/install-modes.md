@@ -3,7 +3,7 @@
 
 A snap can be installed with the following optional arguments, typically used to help test a snap under development, troubleshoot interface issues, or debug application crashes.
 
-In addition to the modes described below, `--transaction` can be used to install a set of snaps as a single transaction. See [Transactional updates](/explanation/how-snaps-work/transactional-updates) for more details.
+In addition to the modes described below, `--transaction` can be used to install a set of snaps as a single transaction. See {ref}`Transactional updates <explanation-how-snaps-work-transactional-updates>` for more details.
 				      
 ## Classic confinement
 
@@ -19,7 +19,7 @@ sudo snap install snapcraft --classic
 
 Only _classic_ snaps can be installed with the `--classic` argument. However, while the argument is silently accepted when installing a strict snap, it won't make any difference to its confinement. The snap will still be strictly confined.
 
-See [Snap confinement](/explanation/security/snap-confinement) for more details on confinement levels.
+See {ref}`Snap confinement <explanation-security-snap-confinement>` for more details on confinement levels.
 
 (ref-install-modes_dangerous-mode)=
 ## Dangerous mode
@@ -32,7 +32,7 @@ The `snap refresh --ammend` command can be used to replace a locally installed s
 
 ## Developer mode
 
-The `--devmode` argument grants the snap **full access to system resources** but will also report each access when no appropriate interface has been specified. This report is sent to the system log. This mode is intended to help snap developers identify the [interfaces](/explanation/interfaces/all-about-interfaces) an application needs.
+The `--devmode` argument grants the snap **full access to system resources** but will also report each access when no appropriate interface has been specified. This report is sent to the system log. This mode is intended to help snap developers identify the {ref}`interfaces <explanation-interfaces-all-about-interfaces>` an application needs.
 
 This feature allows developers to iterate over their snap, selectively adding interfaces to their application before switching to _strict mode_ after all necessary interfaces have been specified.
 

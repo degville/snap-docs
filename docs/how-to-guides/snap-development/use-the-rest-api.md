@@ -17,7 +17,7 @@ http://localhost/v2/snaps/hello \
 -X POST -d '{"action": "install", "channel": "edge"}'
 ```
 
-Similarly, the following curl command will remove a [quota group](/how-to-guides/manage-snaps/use-resource-quotas) called _allquotas_:
+Similarly, the following curl command will remove a {ref}`quota group <how-to-guides-manage-snaps-use-resource-quotas>` called _allquotas_:
 
 ```
 sudo curl -sS --unix-socket /run/snapd.socket \

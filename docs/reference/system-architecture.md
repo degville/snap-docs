@@ -16,7 +16,7 @@ The snap daemon, **snapd**,  handles **snap management** to configure and mainta
 
 The snap daemon also maintains the **security configuration** that creates the **sandbox** for both snap executables and data. This is implemented using various **security modules** of the **Linux kernel**, including Seccomp, AppArmor and Cgroups.
 
-Snaps have the least possible privileges by default. Additional system resources are permitted through the **[interfaces](t/35928)** mechanism which changes the security profile for each snap.
+Snaps have the least possible privileges by default. Additional system resources are permitted through the **{ref}`interfaces <explanation-interfaces-all-about-interfaces>`** mechanism which changes the security profile for each snap.
 
 A **snap package** is a self-contained and immutable _SquashFS_ file carrying application-specific content alongside metadata to tell the system how it should be manipulated. 
 

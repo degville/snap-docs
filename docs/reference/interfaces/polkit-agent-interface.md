@@ -1,15 +1,15 @@
 (interfaces-polkit-agent-interface)=
 #  polkit-agent interface
 
-The `polkit-agent` interface is a low level interface that permits applications to register with the [polkit authorisation manager](https://www.freedesktop.org/software/polkit/docs/latest/polkit.8.html), _polkitd_,  as a polkit agent. It's primarily intended for systems running [Ubuntu Core](/t/14612#heading--ubuntu-core).
+The `polkit-agent` interface is a low level interface that permits applications to register with the [polkit authorisation manager](https://www.freedesktop.org/software/polkit/docs/latest/polkit.8.html), _polkitd_,  as a polkit agent. It's primarily intended for systems running {ref}`Ubuntu Core <ref-glossary_ubuntu-core>`.
 
-This interface enables the higher level [polkit interface](/reference/interfaces/polkit-interface) to make access control decisions for requests from unprivileged clients.
+This interface enables the higher level {ref}`polkit interface <interfaces-polkit-interface>` to make access control decisions for requests from unprivileged clients.
 
 
 ## Developer details
 
-**[Auto-connect](/explanation/interfaces/interface-auto-connection)**: no</br>
-**[Super-privileged](/explanation/interfaces/super-privileged-interfaces)**: yes</br>
+**{ref}`Auto-connect <explanation-interfaces-interface-auto-connection>`**: no</br>
+**{ref}`Super-privileged <reference-operations-interfaces-super-privileged-interfaces>`**: yes</br>
 
 This interface primarily intended for systems running Ubuntu Core. This is because polkit agents make use of a _setuid_ executable, `polkit-agent-helper-1`, which uses PAM. Outside of Ubuntu Core, the PAM environment inside the sandbox is unlikely to match that of the host system on classic. The only Ubuntu Core system currently shipping polkitd  is the Ubuntu Core Desktop.
 

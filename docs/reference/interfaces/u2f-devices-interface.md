@@ -3,7 +3,7 @@
 
 `u2f-devices` allows read and write access to U2F devices exposed as hidraw devices.
 
-**[Auto-connect](/explanation/interfaces/interface-auto-connection)**: no</br>
+**{ref}`Auto-connect <explanation-interfaces-interface-auto-connection>`**: no</br>
 
 Requires snapd version _2.37.2+_.
 

@@ -3,7 +3,7 @@
 
 The `classic-support` interface sets special permissions for the [classic snap](https://snapcraft.io/classic), effectively giving device ownership to its connected snaps.
 
-This interface is intended to be used only with [Ubuntu Core](/t/glossary/14612#heading--ubuntu-core).
+This interface is intended to be used only with {ref}`Ubuntu Core <ref-glossary_ubuntu-core>`.
 
 Requires snapd version _2.23+_.
 
@@ -11,8 +11,8 @@ Requires snapd version _2.23+_.
 ## Developer details
 
 
-**[Auto-connect](/explanation/interfaces/interface-auto-connection)**: no</br>
-**[Super-privileged](/explanation/interfaces/super-privileged-interfaces)**: yes</br>
+**{ref}`Auto-connect <explanation-interfaces-interface-auto-connection>`**: no</br>
+**{ref}`Super-privileged <reference-operations-interfaces-super-privileged-interfaces>`**: yes</br>
 
 ### Code examples
 

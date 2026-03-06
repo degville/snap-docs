@@ -1,16 +1,16 @@
 (explanation-how-snaps-work-confdb-configuration-mechanism)=
 # Confdb configuration mechanism
 
-*Confdb* is a configuration mechanism that replaces individual [snap-specific configuration](/how-to-guides/manage-snaps/set-system-options) with an external [confdb-schema](https://documentation.ubuntu.com/core/reference/assertions/confdb-schema/) assertion, separating the configuration data from the snap installation. This allows for advanced configuration functionality, including:
+*Confdb* is a configuration mechanism that replaces individual {ref}`snap-specific configuration <how-to-guides-manage-snaps-set-system-options>` with an external [confdb-schema](https://documentation.ubuntu.com/core/reference/assertions/confdb-schema/) assertion, separating the configuration data from the snap installation. This allows for advanced configuration functionality, including:
 
 * device onboarding and management
 * cross-snap configuration
 * precise access control
 * evolving configuration settings without changing the affected snaps
 
-See [How to configure snaps with confdb](/how-to-guides/manage-snaps/configure-snaps-with-confdb) for instructions on using confdb with your own snaps, and read on for specific implementation details.
+See {ref}`How to configure snaps with confdb <how-to-guides-manage-snaps-configure-snaps-with-confdb>` for instructions on using confdb with your own snaps, and read on for specific implementation details.
 
-Confdb is currently considered an [Experimental feature](/reference/development/experimental-features) and implementation details may change as development progresses.
+Confdb is currently considered an {ref}`Experimental feature <ref-experimental-features_experimental-features>` and implementation details may change as development progresses.
 
 (ref-confdb-configuration-mechanism_confdb-views)=
 ## Confdb views
@@ -35,7 +35,7 @@ Multiple views can have the same “request” field, but different “storage�
 
 #### Example implementation
 
-The following is almost the simplest confdb-schema assertion that could be defined to obtain some information about installed snaps, although we omit the other headers and the body for brevity. See [Configure snaps with confdb](/how-to-guides/manage-snaps/configure-snaps-with-confdb) for the full details.
+The following is almost the simplest confdb-schema assertion that could be defined to obtain some information about installed snaps, although we omit the other headers and the body for brevity. See {ref}`Configure snaps with confdb <how-to-guides-manage-snaps-configure-snaps-with-confdb>` for the full details.
 
 
 ##### Basic example
@@ -204,7 +204,7 @@ If there a change in the configuration data’s layout, only the assertion needs
 (ref-confdb-configuration-mechanism_interface-plugs)=
 ## Interface Plugs
 
-Snaps can use the [confdb interface](/reference/interfaces/confdb-interface) to express their interest in accessing a view through the plug stanza in their snapcraft.yaml (then snap.yaml). For example, a snap wishing to access the same `observe` view would declare it as:
+Snaps can use the {ref}`confdb interface <interfaces-confdb>` to express their interest in accessing a view through the plug stanza in their snapcraft.yaml (then snap.yaml). For example, a snap wishing to access the same `observe` view would declare it as:
 
 ```yaml
 plugs:
@@ -224,7 +224,7 @@ $ snapctl get --view :observe-status snaps.firefox.status
 enabled
 ```
 
-confdb supports the same commands and options as the [original configuration mechanism](/how-to-guides/work-with-snaps/configure-snaps). This includes unsetting data using `snapctl --view unset ...` or by using `snapctl --view set` with a `\!` prefixed to the request path.
+confdb supports the same commands and options as the {ref}`original configuration mechanism <how-to-guides-work-with-snaps-configure-snaps>`. This includes unsetting data using `snapctl --view unset ...` or by using `snapctl --view set` with a `\!` prefixed to the request path.
 
 ### Custodians
 
