@@ -20,7 +20,7 @@ This page outlines the release notes of all recent versions of Snapd, summarisin
 * {ref}`Snapd 2.68 <ref-release-notes_snapd-2-68-release-notes>` (31st March 2025)
 * {ref}`Snapd 2.67 <ref-release-notes_snapd-2-67-release-notes>` (13th January 2025)
 * {ref}`Snapd 2.66 <ref-release-notes_snapd-2-66-release-notes>` (26th November 2024)
-* {ref}`Snapd 2.65 <ref-release-notes_snapd-2-65-release-notes>` (8th October 2024)
+* Snapd 2.65  (8th October 2024)
 * {ref}`Snapd 2.64 <ref-release-notes_snapd-2-64-release-notes>` (25th July 2024)
 * {ref}`Snapd 2.63 <ref-release-notes_snapd-2-63-release-notes>` (6th June 2024)
 * {ref}`Snapd 2.62 <ref-release-notes_snapd-2-62-release-notes>` (15th April 2024)
