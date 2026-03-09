@@ -38,9 +38,9 @@ If your application is not using one of those toolkits, you will need to use the
 > ⓘ Both the [`gnome` extension](https://snapcraft.io/docs/gnome-extension) and the  [`kde-neon` extension](https://snapcraft.io/docs/kde-neon-extension) automatically enable portal support for GTK 3 and Qt applications on GTK-based desktops. If your snap uses either extension, you only need to do step 1.
 
 
-<h2 id="heading--portal-vs-home">File chooser portal vs home interface<sup><a href=#heading--portal-vs-home>⚓</a></sup></h2>
+## File chooser portal vs home interface
 
-It is recommended to use the file chooser portal instead of the {ref}``home` <interfaces-home-interface>` and {ref}``removable-media` <interfaces-removable-media-interface>` interfaces for the following reasons:
+It is recommended to use the file chooser portal instead of the {ref}`home <interfaces-home-interface>` and {ref}`removable-media <interfaces-removable-media-interface>` interfaces for the following reasons:
 
 * The portal gives the user complete control over what exact files your application should access while the interfaces are all-or-nothing toggles.
 * The portal works with hidden files and folders in the home directory. If a user chooses a hidden file, the portal will give your application access to it. The `home` interface does not give your app access to hidden files and folders in the home directory for security reasons. Note that the `home` interface does give access to hidden files and folders elsewhere, just not in the home directory itself.

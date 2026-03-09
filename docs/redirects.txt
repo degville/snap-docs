@@ -48,7 +48,7 @@ using-the-api/ how-to-guides/snap-development/use-the-rest-api
 using-snapctl/ how-to-guides/snap-development/use-snapctl
 fix-common-issues/ how-to-guides/manage-snaps/fix-common-issues
 snapd-testing/testing how-to-guides/snap-development/using-in-development-features
-debug-snaps/ explanation/how-snaps-work/debug-snaps
+debug-snaps/ how-to-guides/snap-development/debug-snaps
 snap-reference/ reference
 glossary/ reference/glossary
 system-options/ reference/administration/system-options
