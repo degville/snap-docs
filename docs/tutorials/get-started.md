@@ -1,3 +1,10 @@
+---
+myst:
+  html_meta:
+    description: Learn how to list, find, install, run, update and remove snap packages with a hands-on introduction to using snap packages for new users.
+---
+
+
 (tutorials-get-started)=
 # Get started
 

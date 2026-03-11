@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: Explanatory and conceptual guides for snap packages - discussion and clarification of key topics for snap users and snap package developers, including how snaps work, interface connections, update management and security.
+---
+
 (explanation-how-snaps-work-index)=
 # How snaps work
 

@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: Installation instructions for the snap daemon (snapd) - the background service that manages and maintains your snaps. Snapd is pre-installed on many Linux distributions, and easy to install on most others. Find installation instructions for your distribution here.
+---
+
 (tutorials-install-the-daemon-index)=
 # Install the daemon
 

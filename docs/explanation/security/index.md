@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: Learn about how snaps use standard Linux security policies to isolate themselves from the system, and from each other. Understand snap confinement, security policies and the snapd release process.
+---
+
 (explanation-security-index)=
 # Security
 

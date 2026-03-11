@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: YAML schemas for snap packages, including the snap.yaml format, and the gadget and kernel snap formats for device development.
+---
+
 (reference-development-yaml-schemas-index)=
 # YAML schemas
 

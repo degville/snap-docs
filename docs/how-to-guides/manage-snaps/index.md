@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: Step-by-step guides on how to manage snap packages - control when snaps update, connect interfaces, set system options, control services and more for snap users and snap package developers.
+---
+
 (how-to-guides-manage-snaps-index)=
 # Manage snaps
 
