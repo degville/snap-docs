@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:  
+    description: Extend snap functionality with API access and customised environments for your applications and devices. Learn about environment variables, the SnapD REST API, YAML schemas and more for snap users and snap package developers.
+---
+
 (reference-development-index)=
 # Development
 

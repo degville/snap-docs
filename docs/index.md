@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: Official snap packaging documentation - comprehensive guides for installation, configuration, security, package updates and removal management, alongside technical details on all snap packaging features for snap users and snap package developers.
+---
+
 (ref-index_snap-documentation)=
 # Snap documentation
 

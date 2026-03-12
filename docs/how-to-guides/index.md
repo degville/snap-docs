@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: Step-by-step guides covering key operations and common tasks for snap users and snap package developers, including how to manage updates, connect interfaces, control services and more.
+---
+
 (how-to-guides-index)=
 # How-to guides
 

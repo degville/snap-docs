@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: Getting started with snap packages - learn how to install the snap daemon, and install and configure your first snap packages with step-by-step tutorials.
+---
+
 (tutorials-index)=
 # Tutorials
 
