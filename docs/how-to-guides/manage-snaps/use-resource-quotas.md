@@ -70,7 +70,7 @@ sudo snap set-quota loggroup --journal-size=64MB
 
 Limit the number of messages logged to a maximum per time period. This is a useful way of limiting the number of messages for snaps.
 
-The time period is can be nanoseconds(us), milliseconds (ms), seconds(s), minutes (m), and hours(h), including aggregated periods:
+The time period can be milliseconds (ms), seconds(s), minutes (m), and hours(h), including aggregated periods:
 
 ```
 sudo snap set-quota loggroup --journal-rate-limit=10/1h2m3s4ms5us
