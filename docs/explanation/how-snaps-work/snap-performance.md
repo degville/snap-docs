@@ -1,3 +1,9 @@
+---
+myst:
+  html_meta:
+    description: Snap performance analysis, including snap debug timing and SquashFS performance and compression.
+---
+
 (explanation-how-snaps-work-snap-performance)=
 # Snap performance
 
@@ -45,9 +51,6 @@ The ID represents a numerical identifier for tasks spawned by the change logic, 
 The following charts were produced from the `Doing` column output of  `snap debug timings --last=install` after installing the [Chromium snap](https://snapcraft.io/chromium), first from the cache, and secondly after a fresh install:
 
 ![Chromium snap cached install timing data](https://assets.ubuntu.com/v1/54cae8e8-chromium-cached-install-pie.png)
-
-
-```{dropdown} Debug timing data for cached install of Chromium snap
 
 ```
 ID      Status        Doing      Undoing  Label                          Summary
@@ -113,8 +116,6 @@ ID      Status        Doing      Undoing  Label                          Summary
 ```
 
 ![Chromium snap cold install timing data](https://assets.ubuntu.com/v1/49e70e0e-chromium-cold-install-pie.png)
-
-```{dropdown} Debug timing data for cold install of Chromium snap
 
 ```
 ID      Status        Doing      Undoing  Label                          Summary
@@ -247,4 +248,3 @@ Compression ratios for various compression algorithms are also affected by the s
 ![compression ratios comparison](https://assets.ubuntu.com/v1/ddc43d34-compression-ratios-barchart.png)
 
 These comparisons ultimately led to the addition of lzo as an optional compression algorithm, but its use with snaps is entirely dependent on the type and structure of the files within the SquashFS archive.
-
