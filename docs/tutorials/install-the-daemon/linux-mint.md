@@ -7,10 +7,10 @@ You can find out which version of Linux Mint you're running by opening *System i
 
 From Linux Mint 20 onwards, installing Snap is blocked by a file called `nosnap.pref` in the directory `/etc/apt/preferences.d/`; this file needs to be either moved or removed from the directory, or renamed with an extension other than `.pref` before Snap can be installed.
 
-This can be accomplished from the command line, and the following command (for example) renames `nosnap.pref` to `nosnap.backup`:
+This can be accomplished from the command line, and the following command (for example) renames `nosnap.pref` to `nosnap.bak`:
 
 ```
-sudo mv /etc/apt/preferences.d/nosnap.pref /etc/apt/preferences.d/nosnap.backup
+sudo mv /etc/apt/preferences.d/nosnap.pref /etc/apt/preferences.d/nosnap.bak
 ```
 
 With the file renamed, the package database needs to be updated next:
