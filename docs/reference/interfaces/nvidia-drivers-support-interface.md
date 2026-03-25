@@ -1,9 +1,9 @@
 (interfaces-nvidia-drivers-support-interface)=
 #  nvidia-drivers-support interface
 
-The `nvidia-drivers-support` interface is for internal Ubuntu Core use only.
+The `nvidia-drivers-support` interface is for internal Ubuntu Core use only and is meant to be used exclusively by kernel snaps.
 
-This interface permits the [nvidia-assemble](https://snapcraft.io/nvidia-assemble) snap to access to NVIDIA char devices, `/dev/nvidiactl` and `/dev/nvidia-uvmfrom`, which it needs to assemble and load the NVIDIA kernel drives.
+This interface permits the [nvidia-assemble](https://snapcraft.io/nvidia-assemble) snap to access to NVIDIA char devices, `/dev/nvidiactl` and `/dev/nvidia-uvmfrom`, which it needs to assemble and load the NVIDIA kernel driver.
 
 
 ---
@@ -11,7 +11,7 @@ This interface permits the [nvidia-assemble](https://snapcraft.io/nvidia-assembl
 ## Developer details
 
 **{ref}`Auto-connect <explanation-interfaces-interface-auto-connection>`**: no</br>
-**{ref}`Super-privileged <reference-operations-interfaces-super-privileged-interfaces>`**: no</br>
+**{ref}`Super-privileged <reference-operations-interfaces-super-privileged-interfaces>`**: yes</br>
 
 ### Code examples
 
