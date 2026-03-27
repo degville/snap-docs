@@ -2,22 +2,27 @@
 
 # Configuration
 REPO="canonical/snapd"
-# Ensure this matches the actual filename of your YAML workflow in the snapd repo
 WORKFLOW="build-documentation.yaml" 
-ARTIFACT_NAME="openapi-spec" # Updated to match the new GitHub Action output
+ARTIFACT_NAME="openapi-spec"
 TARGET_DIR="${SOURCEDIR}/_html_extra/reference/api"
+N_RUNS=100
 
 mkdir -p "${TARGET_DIR}"
 
-echo "Searching for the latest successful run that has artifact '${ARTIFACT_NAME}'..."
+echo "Searching for the latest successful ${WORKFLOW} run that has artifact '${ARTIFACT_NAME}'..."
 
 RUN_IDS=$(gh run list \
   -R "${REPO}" \
   --workflow "${WORKFLOW}" \
   --status success \
-  --limit 100 \
+  --branch master \
+  --limit "${N_RUNS}" \
   --json databaseId \
   -q '.[].databaseId')
+
+if [ -z "$RUN_IDS" ]; then
+  echo "Warning: No successful runs found for '${WORKFLOW}' workflow from the master branch of '${REPO}' repo."
+fi
 
 DOWNLOAD_SUCCESS=false
 
@@ -37,8 +42,10 @@ for id in $RUN_IDS; do
 done
 
 if [ "$DOWNLOAD_SUCCESS" = false ]; then
-  echo "Error: Checked the last 100 successful runs, but none contained the artifact '${ARTIFACT_NAME}'."
-  exit 1
+  RUNS_FOUND=$(echo "$RUN_IDS" | wc -l)
+  echo "Warning: Checked the last ${RUNS_FOUND} successful runs, but none contained the artifact '${ARTIFACT_NAME}'."
+  mv ${SOURCEDIR}/_html_extra/reference/development/snapd-rest-api/openapi.json ${TARGET_DIR}/openapi.json
+  echo "Using local copy of openapi.json instead."
 fi
 
 echo "OpenAPI spec successfully downloaded to ${TARGET_DIR}/openapi.json"
