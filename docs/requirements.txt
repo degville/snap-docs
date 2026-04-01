@@ -33,3 +33,4 @@ vale
 
 # For snap-docs
 sphinxext-rediraffe
+sphinxcontrib-mermaid
