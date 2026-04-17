@@ -12,6 +12,9 @@
 # Example:
 # redirect/from/file/ redirect/to/file/
 
+# Redirects added after RTD migration
+quickstart-tour/ tutorials/get-started/
+
 # RTD reconfiguration
 how-to-guides/snap-development/api/redoc-static.html reference/development/snapd-rest-api
 snapd-api/ reference/development/snapd-rest-api
