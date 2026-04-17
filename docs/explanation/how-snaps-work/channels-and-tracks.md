@@ -27,43 +27,40 @@ snap install vlc --channel=latest/edge
 
 Developers can optionally choose whether to supplement the default _latest_ track with additional tracks. The developer is also free to designate one of these as the default track to be installed when no further preference is given.
 
-Microsoft's [Skype snap](https://snapcraft.io/skype) is a good example of how tracks can be used. It contains two tracks: the default _latest_ track for the majority of users, and an  _insider_ track for Microsoft's QA team and users interested in testing the latest Skype developments ahead of a stable release.
+Mozilla's [Firefox snap](https://snapcraft.io/firefox) is a good example of how tracks can be used. It contains two tracks: the default _latest_ track for the majority of users, and an  _esr_ track for the version of Firefox with [extended support](https://www.firefox.com/en-GB/browsers/enterprise/).
 
 Equally, a track could also be used to track minor updates (2.0.1, 2.0.2), major updates (2.1, 2.2), or releases held for long-term support (3.2, 4.1).
 
 Tracks are listed in the *channels* section of the output from the `snap info` command:
 
 ```
-$ snap info skype
+$ snap info firefox
 [...]
-channels:                                  
-  stable:            8.28.0.41  (51) 148MB classic
-  candidate:         ↑                     
-  beta:              ↑                     
-  edge:              ↑                     
-  insider/stable:    8.30.76.41 (53) 151MB classic
-  insider/candidate: ↑                     
-  insider/beta:      ↑                     
-  insider/edge:      ↑  
+hannels:
+  latest/stable:    149.0.2-1     2026-04-08 (8107) 287MB -
+  latest/candidate: 150.0-1       2026-04-16 (8172) 288MB -
+  latest/beta:      150.0b10-1    2026-04-15 (8166) 288MB -
+  latest/edge:      151.0a1       2026-04-17 (8175) 310MB -
+  esr/stable:       140.9.1esr-1  2026-04-07 (8106) 259MB -
+  esr/candidate:    140.10.0esr-1 2026-04-15 (8162) 259MB -
+  esr/beta:         ↑                                     
+  esr/edge:         ↑                                     
 [...]
 ```
 
-In the above output, the [Skype](https://snapcraft.io/skype) snap includes the custom *insider* track. You can also see which tracks a snap supports by clicking *Other versions* from its online Store entry.
+In the above output, the Firefox snap includes the custom *esr* track. You can also see which tracks a snap supports by clicking *Other versions* from its online Store entry.
 
-To install Skype from its *insider* track, for example, use the following
-command:
-
-```
-snap install skype --channel=insider/stable
-```
-
-A user who already has Skype installed can switch channel with the ``snap refresh`` command:
+To install Firefox from its *insider* track, for example, use the following command:
 
 ```
-snap refresh skype --channel=insider/stable
+snap install firefox --channel=esr/stable
 ```
 
-Alternatively if using GNOME Software, select the ‘stable’ channel in the store page for Skype, and select a channel to switch to.
+If you already have Firefox installed, you can switch channel with the ``snap refresh`` command:
+
+```
+snap refresh firefox --channel=esr/stable
+```
 
 Developers must currently make a request for tracks to be added to their snap via the [#store-requests](https://forum.snapcraft.io/c/store-requests) forum category. Releases are verified and checked to ensure that reasonable user expectations are being  met. For example, only _3.2.*_ versions are accepted into a _3.2_ track.
 

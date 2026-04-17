@@ -19,9 +19,12 @@ Snap deltas are completely transparent to the developer and there is no way to d
 
 Download deltas are enabled by default in _snapd 2.23+_.
 
-### Saving space with deltas
+## Upload deltas
+
+Upload deltas effectively use the same mechanism as download deltas, with the main difference being that the delta is generated locally by Snapcraft when a developer initiates an upload for a new version of their snap. The delta contains only the differences between the most recently uploaded revision and the new local revision. Once uploaded, the Snap Store applies the delta to reconstruct the complete snap, verifying its integrity via its digital signature.
+
+## Saving space with deltas
 
 The space savings provided by deltas vary depending on the size of the snap, how often it gets updated, and how compressible the snap is (snaps that can be compressed into a small size will benefit less from deltas than snaps that are difficult to compress). In practice, the delta download size is around 30% of the full snap size.
 
 The exact size of a delta can be determined with `snap refresh`.
-
