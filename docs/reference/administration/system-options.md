@@ -91,6 +91,23 @@ See {ref}`Home directories outside of ‘/home’ <interfaces-home-outside-home>
 
 > ⓘ Available since snapd _2.59_.
 
+## system interface
+
+Permits specific interfaces options to be changed . The only option currently supported is interface [auto-connection](https://snapcraft.io/docs/explanation/interfaces/interface-auto-connection/).
+
+- **interface.allow-auto-connection**: configure auto-connection rules for the interface, options are `{false|true|verified}`.
+  * `false` or `true` controls whether auto-connections are permitted.
+  * `verified` means that only snaps carrying a snap declaration can auto-connect this interface.
+
+The following example would configure the `x11` interface
+to deny all auto-connections:
+
+```
+snap set system interface.x11.allow-auto-connection=false
+```
+
+> ⓘ Available since snapd _2.73_.
+
 ## system resilience.vitality-hint
 
 This option adjusts the Linux kernel's out-of-memory ([OOM](https://www.kernel.org/doc/gorman/html/understand/understand016.html)) killer behaviour for specific snap services.
