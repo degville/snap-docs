@@ -7,10 +7,18 @@ Our documentation is a community effort, published on [snapcraft.io/docs](https:
 
 Contributing to documentation can be a fantastic way to get started as a contributor to open source projects, no matter your level of experience!
 
+We hope to make it as easy as possible to contribute. If you need help at all with the contribution process, please let us know!
+
+
+## Publishing and hosting
+
 The documentation for _snap_ is
 [hosted in GitHub](https://github.com/canonical/snap-docs) and
-rendered, via [Read the Docs](https://about.readthedocs.com/), to [https://snapcraft.io/docs/](https://snapcraft.io/docs/). We hope to make it as easy as possible to contribute. If you need help at all
-with the contribution process, please let us know!
+rendered, via [Read the Docs](https://about.readthedocs.com/), to [https://snapcraft.io/docs/](https://snapcraft.io/docs/).
+
+We use the [Sphinx documentation generator](https://www.sphinx-doc.org/) to create our documentation, which is written in [MyST Markdown](https://mystmd.org/) and built from [Canonical's Sphinx Starter Pack](https://github.com/canonical/sphinx-docs-starter-pack).
+
+For further details, see the [Starter Pack documentation](https://canonical-starter-pack.readthedocs-hosted.com/stable/).
 
 ## The Open Documentation Academy
 
@@ -98,3 +106,10 @@ Lastly, we would like to thank you for spending your time to help make the
 SnapD documentation better. Every step in the right direction is a step
 worth taking, no matter how large or small.
 
+```{toctree}
+:maxdepth: 1
+:hidden:
+
+self
+local-development
+```

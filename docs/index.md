@@ -2,6 +2,7 @@
 myst:
   html_meta:
     description: Official snap packaging documentation - comprehensive guides for installation, configuration, security, package updates and removal management, alongside technical details on all snap packaging features for snap users and snap package developers.
+    google-site-verification: "ptZ-UgCb6UjBHQ60paTDvhjC36oELGPKMvOxpEJJv4g"
 ---
 
 (ref-index_snap-documentation)=
@@ -49,4 +50,11 @@ Tutorials <tutorials/index>
 How-to guides <how-to-guides/index>
 Reference <reference/index>
 Explanation <explanation/index>
-How to contribute <contributing>
+```
+
+```{toctree}
+:hidden:
+:maxdepth: 2
+
+Contributing <contributing/index.md>
+```

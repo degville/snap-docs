@@ -14,6 +14,7 @@
 
 # Redirects added after RTD migration
 quickstart-tour/ tutorials/get-started/
+contributing/ contributing/index
 
 # RTD reconfiguration
 how-to-guides/snap-development/api/redoc-static.html reference/development/snapd-rest-api
