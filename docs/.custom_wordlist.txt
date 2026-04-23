@@ -20,6 +20,7 @@ bootloader
 bpf
 Broadcom
 bugfix
+Canonical's
 CDN
 CDNs
 [Cc]group
@@ -62,6 +63,7 @@ dvipng
 eg
 equivolent
 errno
+esr
 euid
 fd
 fde
@@ -198,6 +200,7 @@ pwm
 Pygments
 QEMU
 readthedocs
+Rediraffe
 Reexec
 reexec
 remoteproc
