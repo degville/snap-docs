@@ -24,7 +24,6 @@ page before you begin contributing.
 
 - {ref}`Find an issue to work on <finding-issues>`
 - {ref}`Pick your workflow <choose-workflow>`
-- Work on the issue ({ref}`get help <get-help>` if you need it!)
 - {ref}`Test your contribution <doc-testing>`
 - {ref}`Submit it for review <submit-work>`
 
@@ -182,12 +181,6 @@ You can also use these commands for different purposes:
 - `make clean-doc` -- Clean all built files to start fresh
 
 Run `make` by itself to see a list of all available commands.
-
-### Writing guidance
-
-Once your environment is set up and you have got your local copy running without
-any build errors, check out our {ref}`guidance for writing <writing-guidance>`
-section to find out about our style guide and other important information.
 
 (doc-testing)=
 ## Test your changes
