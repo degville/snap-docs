@@ -46,6 +46,8 @@ cryptographically
 css
 cupsd
 damon
+databag
+databags
 DBus
 dev
 Devmode
