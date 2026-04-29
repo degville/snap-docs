@@ -1,4 +1,4 @@
-(explanation-index)=
+(explanation-index-snap-development)=
 # Snap development
 
 Extend snap functionality with API access and customised environments for your applications and devices.
