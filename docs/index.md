@@ -46,6 +46,8 @@ Understand how snaps use Linux security technologies to isolate applications and
 
 ### Snap development
 
+For guidance on building snaps, see the [Snapcraft build-tool documentation](https://documentation.ubuntu.com/snapcraft/stable/).
+
 Extend snap functionality using the REST API, internal tooling, and in-development features.
 
 * **APIs and tools**: {ref}`REST API <how-to-guides-manage-snaps-use-the-rest-api>` • {ref}`Use snapctl <how-to-guides-manage-snaps-use-snapctl>` • {ref}`Environment variables <reference-development-environment-variables>` • {ref}`Supported snap hooks <reference-development-supported-snap-hooks>` • {ref}`API authentication and authorization <explanation-security-api-authentication-and-authorization>`
@@ -66,10 +68,10 @@ Understand how the snap system works: updates, channels, confinement, storage, a
 
 This documentation uses the [Diátaxis documentation structure](https://diataxis.fr/).
 
-* [{ref}`Tutorials <tutorials-index>`](tutorials/index.md) take you step-by-step through building and deploying your first Ubuntu Core image.
-* [{ref}`How-to guides <ref-index_how-to-guides>`](how-to-guides/index.md) provide instructions for specific tasks like customizing snaps, deploying to platforms, and managing devices.
-* [{ref}`Reference <ref-index_reference>`](reference/index.md) provides technical specifications, formats, and details you need while working.
-* [{ref}`Explanation <ref-index_explanation>`](explanation/index.md) provides conceptual context about architecture, security, storage, and update mechanisms.
+* {ref}`Tutorials <tutorials-index>` take you step-by-step through building and deploying your first Ubuntu Core image.
+* {ref}`How-to guides <how-to-guides-index>` provide instructions for specific tasks like customizing snaps, deploying to platforms, and managing devices.
+* {ref}`Reference <reference-index>` provides technical specifications, formats, and details you need while working.
+* {ref}`Explanation <explanation-index>` provides conceptual context about architecture, security, storage, and update mechanisms.
 
 ## Project and community
 
