@@ -141,6 +141,7 @@ LEDs
 libcomposite
 libgpiod
 libs
+libsecret
 listmount
 LLMs
 loopback
